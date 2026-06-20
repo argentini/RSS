@@ -13,7 +13,7 @@ You will be:
 - Removing posts from the existing file based on the rules below
 - Pruning the RSS file based on the maximum retention age
 
-The folder is a git repository. Commit the changed file with message "Updated on {yyyy-mm-dd}" where {yyyy-mm-dd} is the current date, and push the current branch to origin.
+The folder is a git repository. Commit the changed file with message "Updated {RSS filename} on {yyyy-mm-dd}" where {RSS filename} is the RSS file name and {yyyy-mm-dd} is the current date, and push the current branch to origin.
 
 ## GIT REPO RULES
 
