@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Umbraco.com Blog</title>
+    <link>https://umbraco.com/blog/</link>
+    <description>Blog posts from umbraco.com</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jun 2026 17:24:28 GMT</lastBuildDate>
+    <item>
+      <title>Across the Himalayas and Into the Heart of Umbraco</title>
+      <link>https://umbraco.com/blog/across-the-himalayas-and-into-the-heart-of-umbraco/</link>
+      <guid isPermaLink="true">https://umbraco.com/blog/across-the-himalayas-and-into-the-heart-of-umbraco/</guid>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Meet Rashmita and Jasper, the founders of One Tech Nepal. Discover how they use their 100% Umbraco agency to fund IT education and libraries in remote Himalayan schools.]]></description>
+      <content:encoded><![CDATA[<p style="color: rgb(40, 58, 151);">If you’ve ever set foot at Codegarden, you know the "Umbraco feeling" isn't only about code, APIs, or the latest CMS features. It’s about the people. It’s about that warm, fuzzy, slightly quirky energy that fills the air when 700+ friendly faces gather in Copenhagen during Codegarden. But this year, we ran into two people whose story genuinely made our hearts do a little happy dance. Meet Rashmita and Jasper from Nepal. They didn't just travel over 6,000 kilometers to join us for some high-fives and tech talks. They brought with them a story that reminds us why community (and a bit of clever tech) really matters.</p>
+                
+<div class="dc-image-block " id="zhpan">
+    
+    
+        <figure>
+            <div class="dc-image-wrapper">
+                    <img srcset="https://umbraco.com/media/1nmpsxdr/dscf0705.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcfc9c8600cf50 662w, https://umbraco.com/media/1nmpsxdr/dscf0705.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcfc9c8600cf50 1360w"
+                         sizes="(max-width: 698px) 662px, 1360px"
+                         src="https://umbraco.com/media/1nmpsxdr/dscf0705.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcfc9c8600cf50" alt="Emma, Rashmita and Jaspar at Codegarden 2026." class="dc-image" loading="lazy" />
+
+            </div>
+            <figcaption>Emma, Rashmita and Jasper at Codegarden 2026.</figcaption>
+        </figure>
+</div>
+
+                
+
+<div class="dc-text-block justify-center "
+    id="XOCjA">
+        
+    <div class="dc-text-block__content"><h2>More Than Just an Agency</h2><p><span class="font-size-normal">Rashmita and Jasper are the founders of </span><strong>One Tech Nepal</strong><span class="font-size-normal">, a 100% Umbraco-focused agency. They started as a .NET web development company, primarily building small static websites, which naturally limited their scope and opportunities.&nbsp; However, after COVID, they discovered Umbraco. In the four years since adopting it, their revenue has doubled. Umbraco has enabled them to work with larger and higher-value clients, which in turn has allowed them to expand their philanthropic initiatives.</span></p><p><span class="font-size-normal">Today, they are the driving force behind </span><strong>One Youth</strong><span class="font-size-normal">, a non-profit dedicated to bringing IT education, libraries, and hope to children in Nepal's most remote areas. We’re talking about schools tucked away in the Himalayas, where a "commute" involves hours of trekking through breathtaking (and sometimes treacherous) mountain paths.</span></p><p><strong>40% of the funding</strong><span class="font-size-normal"> for their school projects comes directly from the profits of their work with their 100% Umbraco agency. And for the rest, they organize charity documentary screenings through their media arm, </span><strong>Mitra Films</strong><span class="font-size-normal">, to make sure the kids in remote Nepal get what they need.</span></p><p><span class="font-size-normal">Every time they build a great digital experience for a client, they’re literally building a brighter future for a child in the mountains. Talk about a virtuous cycle!</span></p></div>
+</div>
+
+                
+<div class="dc-image-block " id="nrKMc">
+    
+    
+        <figure>
+            <div class="dc-image-wrapper">
+                    <img srcset="https://umbraco.com/media/p5ual00b/179976862_2632893237008645_2205736274568356070_n.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf728e5304290 662w, https://umbraco.com/media/p5ual00b/179976862_2632893237008645_2205736274568356070_n.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf728e5304290 1360w"
+                         sizes="(max-width: 698px) 662px, 1360px"
+                         src="https://umbraco.com/media/p5ual00b/179976862_2632893237008645_2205736274568356070_n.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf728e5304290" alt="A woman wearing glasses hands a black school backpack to a young girl in a blue uniform during an outdoor community distribution event." class="dc-image" loading="lazy" />
+
+            </div>
+            <figcaption>Credit: ONE Youth Nepal</figcaption>
+        </figure>
+</div>
+
+                
+
+<div class="dc-text-block justify-center "
+    id="FBuNm">
+        
+    <div class="dc-text-block__content"><h2>From Scavenged Pencils to Computer Labs</h2><p><span class="font-size-normal">In a moving documentary they shared with us, Rashmita and Jasper open up about why they do what they do.</span></p><p><span class="font-size-normal">It turns out, the mission is deeply personal. Both shared stories of childhoods where educational materials were a luxury. </span><strong>Rashmita</strong><span class="font-size-normal"> recalls a time when she couldn't afford a notebook and had to scavenge discarded pencils and paper to keep learning. And </span><strong>Jasper</strong><span class="font-size-normal"> remembers watching others use a computer for 5 rupees an hour (a sum his family couldn't spare) and learning simply by standing nearby and observing. They aren't just giving back; they are filling a void they once felt themselves.&nbsp;</span></p><p></p><h2>A Shift in Focus</h2><p><span class="font-size-normal">Previously, their efforts focused on providing books and computers to remote communities. Today, they are able to do much more. During the harsh winter months in remote villages, they distribute warm clothing, help provide electricity to families who cannot afford it, and support other essential needs. Most importantly, they have shifted their focus from going wider to going deeper.</span></p><p><span class="font-size-normal">This approach led them to sponsor the education of a young girl. Her journey, from a remote village to becoming a high school student today, can be seen in this documentary:</span></p></div>
+</div>
+
+                
+<dc-video-picker-youtube source="https://www.youtube.com/embed/YQzeXrsGDmQ?enablejsapi=1&amp;version=3"
+                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         name=""
+                         length=""
+                         thumbnail=""
+                         format="169">
+    <iframe slot="video" src="https://www.youtube.com/embed/YQzeXrsGDmQ?enablejsapi=1&amp;version=3" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0" width="100%" height="100%"></iframe>
+</dc-video-picker-youtube>
+
+                
+
+<div class="dc-text-block justify-center "
+    id="YeElC">
+        
+    <div class="dc-text-block__content"><h2>The Success of "Across the Himalaya"</h2><p><span class="font-size-normal">To capture these incredible stories and share them with the world, Rashmita and Jasper turned to filmmaking. Their documentary, Across the Himalaya, has received recognition at several prestigious film festivals around the world. One particularly meaningful milestone was receiving an award at the Three Acts of Goodness Film Festival, which included a prize of $10,000.</span></p><p><span class="font-size-normal">They used $2,000 of the award to purchase a Sony A7 III camera, enabling them to continue documenting stories from remote communities while also strengthening their photography and videography capabilities for their Umbraco-based web projects. The remaining funds were directed back to supporting children in remote Himalayan communities, as the documentary itself would not have been possible without them.</span></p><p><span class="font-size-normal">In many ways, the journey was not simply about them helping the children. It was also about the children helping them. Their stories, resilience, and trust gave the documentary purpose and helped shape their own journey. They felt it was only right that the success of the film directly benefited the communities whose stories made it possible.</span></p></div>
+</div>
+
+                
+<div class="dc-image-block " id="AvkMh">
+    
+    
+        <figure>
+            <div class="dc-image-wrapper">
+                    <img srcset="https://umbraco.com/media/30slqqig/455262403_891445036352371_4259605497440658477_n.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf728f97ccb10 662w, https://umbraco.com/media/30slqqig/455262403_891445036352371_4259605497440658477_n.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf728f97ccb10 1360w"
+                         sizes="(max-width: 698px) 662px, 1360px"
+                         src="https://umbraco.com/media/30slqqig/455262403_891445036352371_4259605497440658477_n.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf728f97ccb10" alt="A large group of school children sit together outside a rustic mountain village, happily holding up their hands wearing vibrant, multi-colored gloves." class="dc-image" loading="lazy" />
+
+            </div>
+            <figcaption>Credit: ONE Youth Nepal</figcaption>
+        </figure>
+</div>
+
+                
+
+<div class="dc-text-block justify-center "
+    id="pYnzW">
+        
+    <div class="dc-text-block__content"><h2>Not Just Mountains, but "Mindful" Cities</h2><p><span class="font-size-normal">While their work takes them to the remotest peaks of the Himalayas, they are equally committed to the youth in the city. Last year, they launched the "POWER UP" initiative in Kathmandu.</span></p><p><span class="font-size-normal">They’ve been hitting the ground at schools like National Peace Secondary and Nature Boarding School, not just to talk about code, but to talk about digital awareness. In a world that’s always online, they’re teaching kids about cyberbullying prevention and digital safety. It’s one thing to give a child a computer – it’s another to give them the wisdom to use it safely and empathetically. That’s the kind of holistic thinking we just love to see.</span></p></div>
+</div>
+
+                
+<div class="dc-image-block " id="aPQWM">
+    
+    
+        <figure>
+            <div class="dc-image-wrapper">
+                    <img srcset="https://umbraco.com/media/1tymioqd/480020964_1024558556374351_320277550326223831_n.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf7281077a020 662w, https://umbraco.com/media/1tymioqd/480020964_1024558556374351_320277550326223831_n.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf7281077a020 1360w"
+                         sizes="(max-width: 698px) 662px, 1360px"
+                         src="https://umbraco.com/media/1tymioqd/480020964_1024558556374351_320277550326223831_n.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf7281077a020" alt="A young girl with pigtails smiles brightly as she is handed a school backpack stacked with a colorful &quot;World Around Me&quot; textbook and an orange pouch." class="dc-image" loading="lazy" />
+
+            </div>
+            <figcaption>Credit: ONE Youth Nepal</figcaption>
+        </figure>
+</div>
+
+                
+
+<div class="dc-text-block justify-center "
+    id="fdUub">
+        
+    <div class="dc-text-block__content"><h2>The Codegarden "High-Five" 🖐️</h2><p><span class="font-size-normal">Seeing them at Codegarden was a beautiful reminder that our community is truly global and incredibly kind. While the rest of us were busy swapping tips on the latest CMS features, Rashmita and Jasper were sharing how their work with Umbraco ripples out into the mountains of Nepal.</span></p><p><span class="font-size-normal">It’s a powerful perspective to realize that a project built in a local office can help fund initiatives like these. It reminded us all that behind every line of code, there’s a human story waiting to be told. We’re still smiling, thinking about how the "Friendly CMS" is helping make things a little friendlier in the Himalayas!</span></p><p></p><h2>Why We’re Telling You This</h2><p><span class="font-size-normal">Because stories like these are the heartbeat of the Umbraco community. We’re more than just developers and marketers; we’re a bunch of humans who like to help each other out. Whether it’s helping a colleague with a tricky bug or helping a child in a remote mountain village get their first laptop, the spirit is the same. As they continue this journey, they are exploring how an IT business powered by Umbraco, combined with their work in documentary filmmaking, literacy, and poverty alleviation, can go hand in hand to create lasting and meaningful change for future generations.&nbsp;</span></p><p><span class="font-size-normal">To Rashmita and Jasper: thank you for bringing your light to Codegarden. We are so proud to have you as part of the Umbraco family.</span></p><p><em>If you want to feel inspired today, grab a cup of coffee (or a tea, in honor of the Nepalese mountains) and watch their award-winning documentary (you won't regret it!):</em></p></div>
+</div>
+
+                
+<dc-video-picker-youtube source="https://www.youtube.com/embed/HXu2nbLaiU0?enablejsapi=1&amp;version=3"
+                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         name=""
+                         length=""
+                         thumbnail=""
+                         format="169">
+    <iframe slot="video" src="https://www.youtube.com/embed/HXu2nbLaiU0?enablejsapi=1&amp;version=3" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0" width="100%" height="100%"></iframe>
+</dc-video-picker-youtube>]]></content:encoded>
+      <media:content url="https://umbraco.com/media/p5ual00b/179976862_2632893237008645_2205736274568356070_n.jpg?rxy=0.242,0.3859714928732183&amp;v=1dcf728e5304290" medium="image" width="2048" height="1365" />
+      <media:thumbnail url="https://umbraco.com/media/p5ual00b/179976862_2632893237008645_2205736274568356070_n.jpg?rxy=0.242,0.3859714928732183&amp;v=1dcf728e5304290" />
+    </item>
+  </channel>
+</rss>
