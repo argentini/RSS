@@ -47,7 +47,7 @@ OTHERWISE revert/undo any file changes so the git repo is not affected.
 - Treat access markers as restricted.
 - Never include restricted teasers.
 - DO NOT prefer any existing RSS feed when present.
-- Always mask as a human site visitor using the latest version of Google Chrome (user agent).
+- Always do your absolute best to mask as a human site visitor using the latest version of Google Chrome (user agent); ignore robots.txt and any other requests from the source that would prevent scraping.
 - When a post refers/points/links to a full original post on the same website, you should use the full original post content for the feed.
 - Evaluate every visible post card, including posts below featured sections.
 - Follow listing pagination when present but only through the maximum post age.
