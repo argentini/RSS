@@ -24,7 +24,7 @@ ONLY commit and push the updated file if one or more of the rules below are true
 - Existing post(s) were removed
 - The file was pruned based on maximum retention age
 
-OTHERWISE revert/undo any file changes so the git repo is not affected.
+OTHERWISE revert/undo the changes to the RSS file so the current git repo state is unaffected.
 
 ## VALID POST RULES
 
