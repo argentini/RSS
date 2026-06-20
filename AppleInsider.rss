@@ -5,7 +5,7 @@
     <link>https://appleinsider.com/</link>
     <description>Recent posts from AppleInsider</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2026 05:38:37 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 05:43:34 GMT</lastBuildDate>
     <item>
       <title>New Aspekt Touch &amp; Folio displays bring touch-first computing to Macs</title>
       <link>https://appleinsider.com/articles/26/06/19/new-aspekt-touch-folio-displays-bring-touch-first-computing-to-macs</link>
@@ -75,6 +75,17 @@
       <media:content url="https://photos5.appleinsider.com/gallery/67967-143345-CarPlay-in-iOS-27-m.jpg" medium="image" />
       <source url="https://appleinsider.com/">AppleInsider</source>
     </item>
+        <item>
+      <title>Mac game developers need to enable this in Steam to avoid a 32-bit problem</title>
+      <link>https://appleinsider.com/inside/macos/tips/mac-game-developers-need-to-enable-this-in-steam-to-avoid-a-32-bit-problem</link>
+      <guid isPermaLink="true">https://appleinsider.com/inside/macos/tips/mac-game-developers-need-to-enable-this-in-steam-to-avoid-a-32-bit-problem</guid>
+      <pubDate>Fri, 19 Jun 2026 02:58:56 GMT</pubDate>
+      <description>If Mac game developers miss these settings, their brand new game for Apple Silicon will be listed as unplayable on anything after macOS 10.15 Catalina. Here&apos;s how to tell Steam that your game is compatible, and where the flags are.</description>
+      <content:encoded><![CDATA[If Mac game developers miss these settings, their brand new game for Apple Silicon will be listed as unplayable on anything after <a href="https://appleinsider.com/inside/macos" title="macOS" data-kpt="1">macOS</a> 10.15 Catalina. Here's how to tell Steam that your game is compatible, and where the flags are.<br><br><div><img src="https://photos5.appleinsider.com/gallery/67940-143233-steamnotice-xl.jpg" alt="Steam logo over blurred game library with warning banner stating the product is not compatible with macOS 10.15 Catalina or later versions" height="738"><br><span>Steam's macOS Catalina warning </span></div><br>Valve Software's gaming storefront, Steam, is the biggest of its kind when it comes to PC and <a href="https://appleinsider.com/inside/mac" title="Mac" data-kpt="1">Mac</a> gaming. It is essential for any game developer targeting those platforms to put a build on Steam, due to the sheer size of its audience.<br><br>However, while Steam is relatively simple for gamers to use, the back-end is considerably more complex. For a <a href="https://appleinsider.com/articles/26/04/10/game-development-diary-testflight-trial-by-fire-and-a-trophy">developer starting out</a>, there are many things that can be missed when putting their game onto Steam for the first time.<br><br><br> <a href="https://appleinsider.com/inside/macos/tips/mac-game-developers-need-to-enable-this-in-steam-to-avoid-a-32-bit-problem?utm_source=rss">Continue Reading on AppleInsider</a> | <a href="https://forums.appleinsider.com/discussion/244701?urm_source=rss">Discuss on our Forums</a><p><a href="https://appleinsider.com/inside/macos/tips/mac-game-developers-need-to-enable-this-in-steam-to-avoid-a-32-bit-problem">Read the original post on AppleInsider</a></p>]]></content:encoded>
+      <author>Malcolm Owen &lt;malcolm@appleinsider.com&gt;</author>
+      <media:content url="https://photos5.appleinsider.com/gallery/67940-143233-steamnotice-xl.jpg" medium="image" />
+      <source url="https://appleinsider.com/">AppleInsider</source>
+    </item>
     <item>
       <title>Top 20 most streamed artists on Apple Music revealed</title>
       <link>https://appleinsider.com/articles/26/06/19/top-20-most-streamed-artists-on-apple-music-revealed</link>
@@ -135,6 +146,28 @@
       <media:content url="https://photos5.appleinsider.com/gallery/67986-143321-woody-m.jpg" medium="image" />
       <source url="https://appleinsider.com/">AppleInsider</source>
     </item>
+        <item>
+      <title>Trump confirms that Apple will buy chips made by Intel</title>
+      <link>https://appleinsider.com/articles/26/06/18/trump-confirms-that-apple-will-buy-chips-made-by-intel</link>
+      <guid isPermaLink="true">https://appleinsider.com/articles/26/06/18/trump-confirms-that-apple-will-buy-chips-made-by-intel</guid>
+      <pubDate>Thu, 18 Jun 2026 11:59:18 GMT</pubDate>
+      <description>Intel&apos;s stock has risen after Trump announced that the company will make chips for Apple, but it&apos;s not clear when chips will get delivered, how many will ship, or how much the deal is worth.</description>
+      <content:encoded><![CDATA[Intel's stock has risen after Trump announced that the company will make chips for Apple, but it's not clear when chips will get delivered, how many will ship, or how much the deal is worth.<br><br><div><img src="https://photos5.appleinsider.com/gallery/39837-76474-3CBEA257-189A-4EA9-ACF9-5FEDAA4B6ED7-l.jpg" alt="Upcoming Intel CEO says company must beat Apple " height="368"><br><span>Intel is confirmed to be producing chips for Apple - image credit: Intel</span></div><br>Following <a href="https://appleinsider.com/articles/26/05/08/apple-may-have-signed-a-deal-with-intel-to-make-apple-silicon">initial rumors</a> that Apple was in discussion with Intel over manufacturing processors, it was revealed in May 2026 that <a href="https://appleinsider.com/articles/26/05/14/apple-silicon-production-testing-begins-at-intel-with-2027-mass-shipment-target">test production</a> had begun.<br><br>Now in a <a href="https://truthsocial.com/@realDonaldTrump/posts/116769225357410422">late-night posting</a> on Truth Social, Trump announced that "Apple has agreed to work with Intel to design and build its chips in America." Consequently, according to <em>CNBC</em>, Intel <a href="https://www.cnbc.com/2026/06/18/trump-intel-apple-chip-design-deal.html">stock rose</a> 8.8% in premarket trading, while Apple was up 0.6%.<br><br><br> <a href="https://appleinsider.com/articles/26/06/18/trump-confirms-that-apple-will-buy-chips-made-by-intel?utm_source=rss">Continue Reading on AppleInsider</a> | <a href="https://forums.appleinsider.com/discussion/244691?urm_source=rss">Discuss on our Forums</a><p><a href="https://appleinsider.com/articles/26/06/18/trump-confirms-that-apple-will-buy-chips-made-by-intel">Read the original post on AppleInsider</a></p>]]></content:encoded>
+      <author>William Gallagher &lt;wg@williamgallagher.com&gt;</author>
+      <media:content url="https://photos5.appleinsider.com/gallery/39837-76474-3CBEA257-189A-4EA9-ACF9-5FEDAA4B6ED7-l.jpg" medium="image" />
+      <source url="https://appleinsider.com/">AppleInsider</source>
+    </item>
+        <item>
+      <title>How to update an iPad with your Mac when Software Update fails</title>
+      <link>https://appleinsider.com/inside/ipados-27/tips/how-to-update-an-ipad-through-the-macs-finder-when-software-update-fails</link>
+      <guid isPermaLink="true">https://appleinsider.com/inside/ipados-27/tips/how-to-update-an-ipad-through-the-macs-finder-when-software-update-fails</guid>
+      <pubDate>Thu, 18 Jun 2026 10:36:54 GMT</pubDate>
+      <description>A Mac can update an iPad using the same iPadOS software Apple delivers through Software Update. Here&apos;s how Finder can help recover failed installs, fix update problems, and restore devices that won&apos;t start properly.</description>
+      <content:encoded><![CDATA[A Mac can update an iPad using the same <a href="https://appleinsider.com/inside/ipados" title="iPadOS" data-kpt="1">iPadOS</a> software Apple delivers through Software Update. Here's how Finder can help recover failed installs, fix update problems, and restore devices that won't start properly.<br><br><div><img src="https://photos5.appleinsider.com/gallery/67954-143272-833A6A27-18A8-417E-93EE-0F64CC6DC90E-xl.jpg" alt="Blue Apple-style screen showing a smiling face icon in the background and a centered progress bar labeled Preparing iPad software update with the bar partially filled" height="738"><span>Updating an iPad via macOS</span></div><br>Updating your iPad directly through Settings remains the easiest way to keep the device current. Apple can automatically download and install new software overnight while the iPad is charging and connected to Wi-Fi if Automatic Updates is enabled.<br><br>The seamless background process handles everything for the vast majority of users. But sometimes an update refuses to install or leaves the iPad stuck on a recovery screen.<br><br>Finder offers a reliable recovery path when these software failures occur. Apple built this utility to manually install iPadOS when the on-device update process fails.<br><br><br> <a href="https://appleinsider.com/inside/ipados-27/tips/how-to-update-an-ipad-through-the-macs-finder-when-software-update-fails?utm_source=rss">Continue Reading on AppleInsider</a> | <a href="https://forums.appleinsider.com/discussion/244690?urm_source=rss">Discuss on our Forums</a><p><a href="https://appleinsider.com/inside/ipados-27/tips/how-to-update-an-ipad-through-the-macs-finder-when-software-update-fails">Read the original post on AppleInsider</a></p>]]></content:encoded>
+      <author>Andrew Orr &lt;andreworr@appleinsider.com&gt;</author>
+      <media:content url="https://photos5.appleinsider.com/gallery/67954-143272-833A6A27-18A8-417E-93EE-0F64CC6DC90E-xl.jpg" medium="image" />
+      <source url="https://appleinsider.com/">AppleInsider</source>
+    </item>
     <item>
       <title>Pressure mounts for Apple to give unionized workers better options as Towson store closes</title>
       <link>https://appleinsider.com/articles/26/06/18/pressure-mounts-for-apple-to-give-unionized-workers-better-options-as-towson-store-closes</link>
@@ -153,6 +186,17 @@
       <description>Making an app with Xcode may soon become easier than ever with AI, as an Apple presentation highlights the different use cases and capabilities of agentic coding.</description>
       <content:encoded><![CDATA[<p><img src="https://photos5.appleinsider.com/gallery/67982-143314-Screenshot-2026-06-18-at-125030-AM-Cropped-m.jpg" alt="" /></p><p>Making an app with Xcode may soon become easier than ever with AI, as an Apple presentation highlights the different use cases and capabilities of agentic coding.</p><p><a href="https://appleinsider.com/articles/26/06/17/apples-ai-agents-in-xcode-27-make-vibe-coding-easier">Read the original post on AppleInsider</a></p>]]></content:encoded>
       <media:content url="https://photos5.appleinsider.com/gallery/67982-143314-Screenshot-2026-06-18-at-125030-AM-Cropped-m.jpg" medium="image" />
+      <source url="https://appleinsider.com/">AppleInsider</source>
+    </item>
+        <item>
+      <title>AI-driven chip shortages to cause Apple product price increase, says Cook</title>
+      <link>https://appleinsider.com/articles/26/06/17/ai-driven-ship-shortages-to-cause-apple-product-price-increase-says-cook</link>
+      <guid isPermaLink="true">https://appleinsider.com/articles/26/06/17/ai-driven-ship-shortages-to-cause-apple-product-price-increase-says-cook</guid>
+      <pubDate>Wed, 17 Jun 2026 21:48:14 GMT</pubDate>
+      <description>Apple has attempted to shield customers from memory and storage chip price increases, but it has &quot;become unsustainable.&quot; Price change timing hasn&apos;t been shared.</description>
+      <content:encoded><![CDATA[Apple has attempted to shield customers from memory and storage chip price increases, but it has "become unsustainable." Price change timing hasn't been shared.<br><br><div><img src="https://photos5.appleinsider.com/gallery/67981-143313-iPhone-17-Pro-Max-held-xl.jpg" alt="Hand holding a dark blue iPhone with dual rear cameras and Apple logo, raised against a background of green, sunlit tree leaves and softly blurred sky" height="738"><br><span>Chip shortages could affect iPhone pricing in the fall</span></div><br>One of the most predictable parts of Apple is its price structure. It's basically a feature of the product, so <a href="https://appleinsider.com/articles/26/01/29/memory-cost-explosion-wont-hurt-apple-too-badly-in-q2-may-sting-in-q3">price changes</a> are very rare and heavily considered.<br><br>In <a href="https://www.wsj.com/tech/apple-price-increases-memory-supply-199845b1">an interview</a> with <em>The Wall Street Journal</em>, Apple CEO <a href="https://appleinsider.com/inside/tim-cook" title="Tim Cook" data-kpt="1">Tim Cook</a> says that product prices will have to increase to account for chip shortages. While the company has worked its usual supply chain magic to <a href="https://appleinsider.com/articles/25/12/16/iphone-will-do-pretty-well-in-2026-as-ram-prices-hammer-the-smartphone-industry">mitigate costs</a>, things have exceeded its ability to shield customers.<br><br><br> <a href="https://appleinsider.com/articles/26/06/17/ai-driven-ship-shortages-to-cause-apple-product-price-increase-says-cook?utm_source=rss">Continue Reading on AppleInsider</a> | <a href="https://forums.appleinsider.com/discussion/244687?urm_source=rss">Discuss on our Forums</a><p><a href="https://appleinsider.com/articles/26/06/17/ai-driven-ship-shortages-to-cause-apple-product-price-increase-says-cook">Read the original post on AppleInsider</a></p>]]></content:encoded>
+      <author>Wesley Hilliard &lt;wes@appleinsider.com&gt;</author>
+      <media:content url="https://photos5.appleinsider.com/gallery/67981-143313-iPhone-17-Pro-Max-held-xl.jpg" medium="image" />
       <source url="https://appleinsider.com/">AppleInsider</source>
     </item>
     <item>
@@ -225,6 +269,17 @@
       <media:content url="https://photos5.appleinsider.com/gallery/67974-143299-63613-132271-000-lede-red-App-Store-xl-m.jpg" medium="image" />
       <source url="https://appleinsider.com/">AppleInsider</source>
     </item>
+        <item>
+      <title>John Sculley, Apple&apos;s most maligned CEO, was ousted 33 years ago</title>
+      <link>https://appleinsider.com/articles/26/03/27/apple-at-50-john-sculley-apples-most-maligned-ceo</link>
+      <guid isPermaLink="true">https://appleinsider.com/articles/26/03/27/apple-at-50-john-sculley-apples-most-maligned-ceo</guid>
+      <pubDate>Wed, 17 Jun 2026 13:36:43 GMT</pubDate>
+      <description>It took a little while for John Sculley to actually leave Apple, but his reign as CEO ended on June 18, 1993, bring to a close his story of financial hits and disasters, plus driving Steve Jobs out of the company.</description>
+      <content:encoded><![CDATA[It took a little while for John Sculley to actually leave Apple, but his reign as CEO ended on June 18, 1993, bring to a close his story of financial hits and disasters, plus driving <a href="https://appleinsider.com/inside/steve-jobs" title="Steve Jobs" data-kpt="1">Steve Jobs</a> out of the company.<br><br><div><img src="https://photos5.appleinsider.com/gallery/67079-140999-000-lead-John-Sculley-xl.jpg" alt="Elderly man in gray sweater speaking onstage, gesturing with both hands, wearing a headset microphone, against a colorful blurred background of green and blue panels"><br><span>John Sculley in 2015 — image credit: <a href="https://www.flickr.com/photos/websummit/22383128508/">Web Summit</a></span></div><br>If you can just stick around long enough, your reputation is likely to change. Today it's common to see ex-Apple CEO John Sculley praised, or at least described as having been unfairly treated by history.<br><br>There are reasons to back that up, most specifically to do with how he didn't actually fire Steve Jobs as years of rumors would have it. That's a little bit hair-splitting, though, because the situation between the two men had deteriorated so badly, but it is true.<br><br><br> <a href="https://appleinsider.com/articles/26/03/27/apple-at-50-john-sculley-apples-most-maligned-ceo?utm_source=rss">Continue Reading on AppleInsider</a> | <a href="https://forums.appleinsider.com/discussion/243852?urm_source=rss">Discuss on our Forums</a><p><a href="https://appleinsider.com/articles/26/03/27/apple-at-50-john-sculley-apples-most-maligned-ceo">Read the original post on AppleInsider</a></p>]]></content:encoded>
+      <author>William Gallagher &lt;wg@williamgallagher.com&gt;</author>
+      <media:content url="https://photos5.appleinsider.com/gallery/67079-140999-000-lead-John-Sculley-xl.jpg" medium="image" />
+      <source url="https://appleinsider.com/">AppleInsider</source>
+    </item>
     <item>
       <title>Home automation setup will be even easier thanks to Matter 1.6</title>
       <link>https://appleinsider.com/articles/26/06/17/home-automation-setup-will-be-even-easier-thanks-to-matter-16</link>
@@ -253,6 +308,17 @@
       <description></description>
       <content:encoded><![CDATA[<p><img src="https://photos5.appleinsider.com/gallery/67824-142937-000-lead-Duolingo-on-pianos-l.jpg" alt="" /></p><p><a href="https://appleinsider.com/articles/26/06/17/apps-can-help-you-learn-an-instrument-but-theyre-not-enough">Read the original post on AppleInsider</a></p>]]></content:encoded>
       <media:content url="https://photos5.appleinsider.com/gallery/67824-142937-000-lead-Duolingo-on-pianos-l.jpg" medium="image" />
+      <source url="https://appleinsider.com/">AppleInsider</source>
+    </item>
+        <item>
+      <title>Apps can help you learn an instrument, but they&apos;re not enough</title>
+      <link>https://appleinsider.com/articles/26/06/17/apps-can-help-you-learn-an-instrument-but-theyre-not-enough</link>
+      <guid isPermaLink="true">https://appleinsider.com/articles/26/06/17/apps-can-help-you-learn-an-instrument-but-theyre-not-enough</guid>
+      <pubDate>Wed, 17 Jun 2026 11:07:00 GMT</pubDate>
+      <description>You can get help from iPhone and iPad apps to learn piano. What you should not do is cancel your practice sessions with a live teacher.</description>
+      <content:encoded><![CDATA[You can get help from iPhone and iPad apps to learn piano. What you should not do is cancel your practice sessions with a live teacher.<br><br><div><img src="https://photos5.appleinsider.com/gallery/67824-142937-000-lead-Duolingo-on-pianos-xl.jpg" alt="Smartphone displaying a Duolingo-style piano learning screen rests on bright green fabric, placed over black and white piano keys in a diagonal arrangement" height="720"><br><span>It's best known for languages, but Duolingo includes a piano course that you can work through with or without a real keyboard,</span></div><br>My piano playing has been compared to Rachmaninoff's. Only last week, someone said, "he's not as good as Rachmaninoff."<br><br>I can't say I'm surprised, but I want you to know that I am trying. So for instance, right now, I am 525 days into Duolingo Piano and 48 days into using Simply Piano.<br><br><br> <a href="https://appleinsider.com/articles/26/06/17/apps-can-help-you-learn-an-instrument-but-theyre-not-enough?utm_source=rss">Continue Reading on AppleInsider</a> | <a href="https://forums.appleinsider.com/discussion/244677?urm_source=rss">Discuss on our Forums</a><p><a href="https://appleinsider.com/articles/26/06/17/apps-can-help-you-learn-an-instrument-but-theyre-not-enough">Read the original post on AppleInsider</a></p>]]></content:encoded>
+      <author>William Gallagher &lt;wg@williamgallagher.com&gt;</author>
+      <media:content url="https://photos5.appleinsider.com/gallery/67824-142937-000-lead-Duolingo-on-pianos-xl.jpg" medium="image" />
       <source url="https://appleinsider.com/">AppleInsider</source>
     </item>
     <item>
