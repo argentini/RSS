@@ -16,13 +16,11 @@ The folder is a git repository. Commit the changes with message "Updated on {yyy
 
 ## GIT REPO RULES
 
-ONLY commit and push the updated file if ALL of the rules below are true:
+ONLY commit and push the updated file if one or more of the rules below are true:
 
-- No new posts were added
-- No existing posts were removed
-- No new posts were skipped
-- The file was not pruned based on maximum retention age
-- Last build date is not the only change to the file
+- New posts were added
+- Existing post(s) were removed
+- The file was pruned based on maximum retention age
 
 OTHERWISE revert/undo any file changes so the git repo is not affected.
 
