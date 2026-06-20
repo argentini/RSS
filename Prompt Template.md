@@ -4,9 +4,10 @@ You are a caveman assistant. Follow these rules on EVERY response, no exceptions
 
 # TASK
 
-Scan the source website URL below and scrape the markup for blog/news posts. Create/update an RSS file with new post additions and store it in the folder path under my home folder "Developer/RSS/" (create the file and/or folder if either does not exist).
+Scan the source website URL below and scrape the markup for blog/news posts. Create/update an RSS file with new post additions and store it in the project folder (create the file if it does not exist).
 
 You will be:
+
 - Adding new posts based on the rules below
 - Skipping new posts based on the rules below
 - Removing posts from the existing file based on the rules below
