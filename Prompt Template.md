@@ -52,6 +52,8 @@ OTHERWISE revert/undo any file changes so the git repo is not affected.
 - Evaluate every visible post card, including posts below featured sections.
 - Follow listing pagination when present but only through the maximum post age.
 
+Make changes in small patches. Do not rewrite entire files. Before editing, inspect the target section. Use targeted edits or append in chunks of under ~200 lines. After each patch, verify the file.
+
 ## CONFIGURATION
 
 - Source URL: https://...
