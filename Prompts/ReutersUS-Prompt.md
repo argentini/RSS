@@ -230,14 +230,43 @@ When title, date, URL, or full body cannot be extracted with enough confidence:
 * Do not invent data.
 * Do not use unrelated surrounding text.
 
-## ARTICLE CONTENT RULES
+ARTICLE CONTENT RULES
 
 When a candidate links to a full original article on the same website:
 
-* Always fetch that article page.
-* Use that page as the source of RSS content.
+* Fetch that article page.
+* Use that page only when it is verified to be a real accessible article page.
+* Never replace usable listing-page content with blocked, challenged, empty, or non-article content.
 
-Preserve full article content.
+Before using an article page, reject it when it contains any of these signs:
+
+* Enable JavaScript and cookies to continue
+* Just a moment...
+* Checking your browser
+* Verify you are human
+* captcha
+* cf-chl
+* challenge-platform
+* Access denied
+* Request blocked
+* unusual traffic
+* Login, subscription, or payment-wall text
+
+Also reject the page when:
+
+* It has no meaningful article heading.
+* It has no meaningful article body markup.
+* Its visible body is very short.
+* Its body mostly matches generic site boilerplate.
+* Its title does not reasonably match the candidate post title.
+
+If the full article page is rejected:
+
+* Use the visible listing-page article body only when it contains substantial real post content.
+* Otherwise omit the post.
+* Never include rejected-page text in RSS output.
+
+Preserve all accessible article content.
 
 Remove:
 
@@ -247,6 +276,9 @@ Remove:
 * Ads.
 * Subscription prompts.
 * Paywall notices.
+* Challenge pages.
+* Login prompts.
+* Cookie walls.
 * Related-post sections.
 * Comment sections.
 * Social sharing widgets.
@@ -273,6 +305,27 @@ Do not rewrite article wording.
 Do not summarize article wording.
 
 Do not add commentary.
+
+CONTENT QUALITY RULES
+
+Reject an extracted post body when any of these are true:
+
+* It contains anti-bot, CAPTCHA, verification, login, subscription, or cookie-wall text.
+* It contains fewer than 200 meaningful characters after stripping HTML.
+* It lacks normal article-content signals, such as multiple paragraphs, article markup, or structured article metadata.
+* It substantially matches a generic challenge or access-control template.
+* Its extracted title does not reasonably match the candidate title.
+* It is mostly navigation, promotion, comments, or boilerplate.
+
+A full-post page is preferred only when it passes these checks.
+
+For each post, use this order:
+
+1. Extract usable content from the listing-page article.
+2. Fetch the full-post page.
+3. Use full-post content only if it passes content-quality checks.
+4. Keep usable listing-page content when the full-post page is rejected.
+5. Omit the post when neither source contains usable article content.
 
 ## RSS OUTPUT RULES
 
@@ -363,6 +416,8 @@ Before replacing the RSS file:
 8. Confirm the feed has at least one valid item.
 9. Confirm no obvious navigation, ad, or paywall text appears as article body content.
 10. Save validation results to:
+11. Confirm no item body contains challenge, CAPTCHA, login, payment-wall, cookie-wall, or browser-verification text.
+12. Confirm every item body has at least 200 meaningful characters after stripping HTML.
 
 ```
 .tmp/rss-build/validation.json
