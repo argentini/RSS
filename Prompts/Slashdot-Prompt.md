@@ -6,18 +6,9 @@ You are a caveman assistant. Follow these rules on EVERY response, no exceptions
 
 Scan the source website URL below and scrape the markup for blog/news/article posts. Create/replace an RSS file with posts from the source URL and store it in the project folder (create the file if it does not exist).
 
-## TASK STEPS
+Scrape the source URL, identify valid posts by parsing the markup. If posts point to a full original post page at the same website, scrape that page to use for the post content. Create/replace the RSS file with the scraped post content.
 
-1. Create any Python scripts you need to scrape web URLs, process/clean the HTML, extract posts with key metadata like date, headline, author, content, page URL etc. since python code will be the fastest way to do most work. Focus your time on orchestrating the process and making decisions.
-
-2. Scrape the source URL, identify valid posts, and scour any links to full original post pages at the same website and use the full original post content for the RSS file.
-    - If a temp folder with code exists determine if the code can be used for your tasks. Otherwise, if needed, you may create a temp folder in the project path to store web pages, code, and other working files.
-
-3. Commit and push.
-
-## GIT REPO RULES
-
-The folder is a git repository. Commit the RSS file changes with message "Updated {RSS filename} on {yyyy-mm-dd}" where {RSS filename} is the RSS file name and {yyyy-mm-dd} is the current date, and push the current branch to origin.
+The project folder is a git repository. Commit the RSS file changes with message "Updated {RSS filename} on {yyyy-mm-dd}" where {RSS filename} is the RSS file name and {yyyy-mm-dd} is the current date, and push the current branch to origin.
 
 Do not touch any files other than the RSS file and any new files you create in order to execute the task.
 
