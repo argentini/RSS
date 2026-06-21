@@ -57,7 +57,7 @@ Make changes in small patches. Do not rewrite entire files. Before editing, insp
 
 ## CONFIGURATION
 
-- Source URL: https://...
-- RSS file name: filename.rss
+- Source URL: `https://www.reuters.com/world/us/`
+- RSS file name: `ReutersUS.rss`
 - Maximum post age: 30 days
 - Maximum retention age: 1 year
