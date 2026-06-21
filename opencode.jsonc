@@ -1,32 +1,16 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "disabled_providers": [
-  ],
   "provider": {
-    "lm-studio-gemma4-31b-8bit": {
-      "name": "LM Studio Gemma 4",
-      "npm": "@ai-sdk/openai-compatible",
-      "options": {
-        "baseURL": "http://10.0.10.2:1234/v1",
-        "timeout": 1800000,
-        "chunkTimeout": 600000
-      },
-      "models": {
-        "david8899/gemma-4-31b-it": {
-          "name": "Gemma 4 31B 8bit"
-        }
-      }
-    },
-    "lm-studio-gemma-4-31b-qat": {
+    "lm-studio-gemma-4-31b-qat-4bit": {
       "name": "LM Studio Gemma 4 31B QAT",
       "npm": "@ai-sdk/openai-compatible",
       "options": {
-        "baseURL": "http://10.0.10.2:1234/v1",
+        "baseURL": "http://10.0.10.3:1234/v1",
         "timeout": 1800000,
         "chunkTimeout": 600000
       },
       "models": {
-        "google/gemma-4-31b-qat": {
+        "gemma-4-31b-it-qat": {
           "name": "Gemma 4 31B QAT"
         }
       }
