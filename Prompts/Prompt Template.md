@@ -64,6 +64,7 @@ OTHERWISE revert/undo the changes to the RSS file so the current git repo state 
 - When a post links to a full original post on the same website, you should always follow the link to the full original post page and use its content for the feed instead.
 - Evaluate every visible post card, including posts below featured sections.
 - Follow listing pagination when present but only through the maximum post age.
+- Always include ALL post content; DO NOT create shorter excerpts or otherwise abridge the content.
 
 ## CONFIGURATION
 
