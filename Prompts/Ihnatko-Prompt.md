@@ -14,15 +14,22 @@ Do not touch any files other than the RSS file and any new files you create in o
 
 ## TOOLCHAIN
 
-- Prefer installed command-line tools and browser automation over creating one-off Python scrapers.
-- Use `curl` to fetch static pages; `htmlq` for CSS-selector extraction; `lynx -dump -listonly` or `htmlq -a href 'a[href]'` for link discovery; `wget --recursive --no-parent --domains <domain>` for bounded crawling; and `jq` for JSON and JSON-LD.
-- For JavaScript-rendered pages, use Playwright rather than writing Selenium or ad hoc browser scripts.
-- Only write custom code when authentication, complex pagination/session state, nonstandard interaction flows, or a repeated transformation cannot be handled by these tools.
-- Before crawling, respect the site’s robots.txt, terms of use, rate limits, and access controls. Use a descriptive User-Agent, limit concurrency, add delays, and restrict crawls to the intended domain and path.
-- Assume Homebrew is installed. Install missing command-line dependencies with Homebrew; install Playwright and its browser runtime through Node/npm when needed.
+- Prefer installed command-line tools and browser automation over one-off Python scrapers.
+- For static pages, use:
+  - `curl` for HTTP fetching.
+  - `htmlq` for CSS-selector extraction and link discovery.
+  - `jq` for JSON, JSON-LD, and API responses.
+  - `wget2` only for carefully bounded static crawls.
+- For JavaScript-rendered pages or interactive flows, use Playwright with its CLI or an existing automation wrapper before writing custom code.
+- Use `tidy-html5` only when malformed HTML prevents reliable parsing.
+- Do not use recursive crawling by default. First discover and filter relevant links, then fetch only the needed pages.
+- Before crawling, respect robots.txt, site terms, rate limits, and access controls. Use a descriptive User-Agent, low concurrency, delays, and explicit same-domain and path boundaries.
+- Assume Homebrew is installed. Install missing CLI tools with Homebrew. Install Playwright and browser binaries through Node/npm.
+- Write custom code only when authentication, complex stateful pagination, nonstandard interactions, or repeated transformations cannot be handled by the installed tools.
 
 ## VALID POST RULES
 
+- Valid posts have headlines, dates, and content; some have author bylines, some have preview images.
 - Valid posts have dates at or newer than the maximum post age.
 - Valid posts are not subscriber-only content.
 - Valid posts are not paywalled content.
