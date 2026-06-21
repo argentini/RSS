@@ -12,6 +12,15 @@ The project folder is a git repository. Commit the RSS file changes with message
 
 Do not touch any files other than the RSS file and any new files you create in order to execute the task.
 
+## TOOLCHAIN
+
+- Prefer installed command-line tools and browser automation over creating one-off Python scrapers.
+- Use `curl` to fetch static pages; `htmlq` for CSS-selector extraction; `lynx -dump -listonly` or `htmlq -a href 'a[href]'` for link discovery; `wget --recursive --no-parent --domains <domain>` for bounded crawling; and `jq` for JSON and JSON-LD.
+- For JavaScript-rendered pages, use Playwright rather than writing Selenium or ad hoc browser scripts.
+- Only write custom code when authentication, complex pagination/session state, nonstandard interaction flows, or a repeated transformation cannot be handled by these tools.
+- Before crawling, respect the site’s robots.txt, terms of use, rate limits, and access controls. Use a descriptive User-Agent, limit concurrency, add delays, and restrict crawls to the intended domain and path.
+- Assume Homebrew is installed. Install missing command-line dependencies with Homebrew; install Playwright and its browser runtime through Node/npm when needed.
+
 ## VALID POST RULES
 
 - Valid posts have dates at or newer than the maximum post age.
