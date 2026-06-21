@@ -18,9 +18,10 @@ You will be:
 
 1. Create any Python scripts you need to scrape web URLs, process/clean the HTML, extract posts with key metadata like date, headline, author, content, page URL etc. since python code will be the fastest way to do most work. Focus your time on orchestrating the process and making decisions.
 2. Scrape the source URL, identify posts within the maximum age limit, and scour any links to full original post pages. If a temp folder with code exists determine if the code can be used for your tasks. Otherwise, if needed, you may create a temp folder in the project path to store web pages, code, and other working files.
-3. Process the posts based on the rules, and create/update the RSS file accordingly. Let me know as each post change is made in the RSS file.
+3. Process the posts based on the rules, and create/update the RSS file accordingly.
 4. If needed, truncate the RSS file according to the maximum retention age.
 5. Commit and push, or revert the changes, as per the rules.
+6. Tell me exactly what you did
 
 ## GIT REPO RULES
 
