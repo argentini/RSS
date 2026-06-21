@@ -480,11 +480,11 @@ Do not paste raw HTML, article bodies, command output, screenshots, or intermedi
 
 # CONFIGURATION
 
-- {Source URL}: `https://www.reuters.com/world/us/`
-- {RSS file}: `ReutersUS.rss`
+- {Source URL}: `https://www.propublica.org/`
+- {RSS file}: `Propublica.rss`
 - {Project folder}: `~/Developer/RSS/`
 - {RSS path}: `{Project folder}/{RSS file}`
 - {Maximum post age}: `7 days`
 - {Current-date timezone}: `UTC`
 - {Current UTC date}: current date in `{Current-date timezone}`, formatted as `yyyy-mm-dd`
-- {Temporary workspace}: `.tmp/rss-build/reuters/`
+- {Temporary workspace}: `.tmp/rss-build/propublica/`
