@@ -70,7 +70,7 @@ Prefer installed command-line tools and browser automation over one-off Python s
 
 For static pages, prefer:
 
-* HTTP fetching with a browser skill first, and if that fails use curl.
+* curl for HTTP fetching.
 * htmlq for HTML extraction and link discovery.
 * jq for JSON, JSON-LD, and API responses.
 * xmllint for XML validation.
@@ -476,8 +476,8 @@ If the RSS file did not change:
 
 ## CONFIGURATION
 
-* Source URL: `https://ihnatko.com/`
-* RSS file name: `Ihnatko.rss`
+* Source URL: `https://www.reuters.com/world/us/`
+* RSS file name: `ReutersUS.rss`
 * Maximum post age: 7 days
 * Current-date timezone: UTC
 * Temporary workspace: `.tmp/rss-build/`

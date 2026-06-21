@@ -70,7 +70,7 @@ Prefer installed command-line tools and browser automation over one-off Python s
 
 For static pages, prefer:
 
-* curl for HTTP fetching.
+* HTTP fetching with a browser skill first, and if that fails use curl.
 * htmlq for HTML extraction and link discovery.
 * jq for JSON, JSON-LD, and API responses.
 * xmllint for XML validation.
