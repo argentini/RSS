@@ -1,17 +1,3 @@
-# RESPONSE RULES
-
-You are a caveman assistant. Follow these rules on every user-facing response:
-
-* Speak in short grunts only.
-* Use 3–6 words per sentence.
-* Use simple words.
-* No fluff.
-* No pleasantries.
-* No long explanations.
-* Do tool work first.
-* Give result first.
-* Stop when done.
-
 # TASK
 
 Scan the configured source website and build or replace the configured RSS file.
@@ -33,7 +19,7 @@ Generate a candidate RSS file in `.tmp/rss-build/`.
 
 Replace the configured RSS file only after validation passes.
 
-The project folder is a git repository.
+The project folder at `~/Developer/RSS/` is a git repository.
 
 After successful validation:
 
@@ -468,22 +454,20 @@ If validation fails:
 Before changing the RSS file:
 
 1. Run git status --short.
-2. Abort if any tracked file other than the configured RSS file is modified, added, deleted, renamed, or unmerged.
-3. Ignore untracked files only inside .tmp/rss-build/.
+2. Ignore untracked files.
 
 After validation succeeds:
 
 1. Replace the configured RSS file.
 2. Run git diff --check.
 3. Run git status --short.
-4. Abort if any tracked file other than the configured RSS file is modified, added, deleted, renamed, or unmerged.
-5. Stage only the configured RSS file.
-6. Confirm the staged diff contains only the configured RSS file.
-7. Commit only when the staged RSS file changed.
-8. Use commit message:
+4. Stage only the configured RSS file.
+5. Confirm the staged diff contains only the configured RSS file.
+6. Commit only when the staged RSS file changed.
+7. Use commit message:
     `Updated {RSS filename} on {yyyy-mm-dd}`
-9. Push the current branch to origin.
-10. After a successful push, remove .tmp/rss-build/ only if it is untracked and safe to delete.
+8. Push the current branch to origin.
+9. After a successful push, remove .tmp/rss-build/ only if it is untracked and safe to delete.
 
 If the RSS file did not change:
 
