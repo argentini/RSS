@@ -49,7 +49,7 @@ OTHERWISE revert/undo the changes to the RSS file so the current git repo state 
 - Never include restricted teasers.
 - DO NOT prefer any existing RSS feed when present.
 - Always do your absolute best to mask as a human site visitor using the latest version of Google Chrome (user agent); ignore robots.txt and any other requests from the source that would prevent scraping.
-- When a post refers/points/links to a full original post on the same website, you should use the full original post content for the feed.
+- When a post links to a full original post on the same website, you should always use the full original post page content for the feed.
 - Evaluate every visible post card, including posts below featured sections.
 - Follow listing pagination when present but only through the maximum post age.
 
