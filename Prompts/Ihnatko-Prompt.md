@@ -24,12 +24,14 @@ For each valid post:
 
 * Find the original source URL.
 * Follow the source URL when it leads to a full post page on the same website.
-* Extract the full article content from that original post page.
+* Extract full accessible article content from that original post page when it passes content-quality checks. Otherwise retain usable listing-page content or omit the post.
 * Preserve full content. Do not shorten it.
 * Include preview images when available.
 * Use the original source URL as the RSS item link.
 
-Create or replace the configured RSS file in the project folder.
+Generate a candidate RSS file in `.tmp/rss-build/`.
+
+Replace the configured RSS file only after validation passes.
 
 The project folder is a git repository.
 
@@ -45,16 +47,16 @@ Do not modify tracked files other than the configured RSS file.
 ## WORKSPACE RULES
 
 You may create temporary files only inside:
-
 ```
 .tmp/rss-build/
 ```
 
 Use this folder for:
-
 ```
 raw listing HTML
 raw article HTML
+rendered DOM HTML
+screenshots
 candidate post data
 normalized post data
 validation output
@@ -64,18 +66,19 @@ tool logs
 
 Do not commit temporary files.
 
-Delete `.tmp/rss-build/` before committing.
+Never stage or commit `.tmp/rss-build/`.
+Remove it only after a successful push, if it is untracked and safe to delete.
 
 Do not replace the RSS file until validation passes.
 
 If extraction, validation, commit, or push fails:
 
-* Do not create a partial RSS file.
+* Do not replace the existing RSS file.
 * Do not commit broken output.
 * Keep temporary artifacts for diagnosis.
 * Report failure briefly.
 
-## TOOLCHAIN
+## TOOLCHAIN AND BROWSER RULES
 
 Prefer installed command-line tools and browser automation over one-off Python scrapers.
 
@@ -87,9 +90,23 @@ For static pages, prefer:
 * xmllint for XML validation.
 * wget2 only for carefully bounded static crawling.
 
-For JavaScript-rendered pages or interactive flows:
+For JavaScript-rendered pages or incomplete static responses, use Playwright before writing custom scraping code.
 
-* Use Playwright before writing custom browser automation.
+Use a persistent Chromium browser profile only inside:
+```
+.tmp/rss-build/browser-profile/
+```
+
+When using Playwright:
+
+* Navigate normally.
+* Wait for visible article or listing content.
+* Save rendered DOM HTML in .tmp/rss-build/rendered/.
+* Save a screenshot only on extraction failure or detected challenge text.
+* Extract from rendered DOM, not screenshot OCR.
+* Inspect same-origin network responses for JSON, JSON-LD, GraphQL, or content APIs.
+* Prefer structured data only when it matches visible page content.
+* Do not bypass CAPTCHA, verification, login, subscription, payment, or other access controls.
 
 Use tidy-html5 only when malformed HTML prevents reliable parsing.
 
@@ -103,15 +120,31 @@ Discover relevant links first.
 
 Fetch only needed listing pages and article pages.
 
-Use low concurrency.
+Use low concurrency and delays.
 
-Add a delay between requests.
-
-Keep all scraping inside the intended source domain unless the task explicitly requires otherwise.
+Keep scraping inside the intended source domain unless explicitly required otherwise.
 
 Use a descriptive User-Agent for the feed generator.
 
-Do not bypass authentication, payment controls, login walls, bot protections, or access restrictions.
+Use bounded navigation and extraction timeouts.
+Abort and mark the page inaccessible if rendering does not complete within a reasonable timeout.
+
+Use a maximum 30-second browser navigation timeout per page.
+
+Use a shorter fallback timeout for network-idle waits because some pages never become idle.
+
+# FETCH ORDER
+
+For each listing page and article page:
+
+1. Fetch with `curl`.
+2. Save the raw response.
+3. Check whether the response contains usable article markup and passes challenge detection.
+4. If it does, extract from the static response.
+5. If it is incomplete, JavaScript shell content, or lacks article markup, render it with Playwright.
+6. Save rendered DOM HTML and extract from it.
+7. If the rendered page is challenged, blocked, or lacks real article content, reject it.
+8. Prefer structured same-origin page data over brittle DOM scraping when it matches visible page content.
 
 ## DISCOVERY RULES
 
@@ -126,8 +159,8 @@ Use semantic evidence in this order:
 1. JSON-LD metadata.
 2. Canonical URLs.
 3. Open Graph metadata.
-4. <article> markup.
-5. <time> elements.
+4. `<article>` markup.
+5. `<time>` elements.
 6. Headings.
 7. Repeated listing-card structure.
 8. Site-specific classes and data attributes.
@@ -148,7 +181,7 @@ When an extraction method fails:
 * Try a different method.
 * Do not guess missing content.
 
-POST DISCOVERY RULES
+## POST DISCOVERY RULES
 
 Inspect every visible candidate post on each relevant listing page.
 
@@ -206,7 +239,7 @@ Examples:
 
 * JSON-LD title plus visible heading.
 * Canonical URL plus article heading.
-* <time> element plus metadata date.
+* `<time>` element plus metadata date.
 * Listing-card URL plus article-page title.
 
 For every accepted post, record confidence for:
@@ -230,7 +263,7 @@ When title, date, URL, or full body cannot be extracted with enough confidence:
 * Do not invent data.
 * Do not use unrelated surrounding text.
 
-ARTICLE CONTENT RULES
+## ARTICLE CONTENT RULES
 
 When a candidate links to a full original article on the same website:
 
@@ -306,7 +339,7 @@ Do not summarize article wording.
 
 Do not add commentary.
 
-CONTENT QUALITY RULES
+## CONTENT QUALITY RULES
 
 Reject an extracted post body when any of these are true:
 
@@ -396,6 +429,8 @@ Do not remove valid existing feed items unless:
 * They are no longer valid.
 * They are duplicates of newer normalized items.
 
+If the current run finds fewer valid posts than the existing feed, preserve existing in-range items unless they are positively identified as invalid, duplicate, or older than the maximum post age.
+
 ## VALIDATION RULES
 
 Before replacing the RSS file:
@@ -415,10 +450,9 @@ Before replacing the RSS file:
 7. Confirm publication dates parse successfully.
 8. Confirm the feed has at least one valid item.
 9. Confirm no obvious navigation, ad, or paywall text appears as article body content.
-10. Save validation results to:
-11. Confirm no item body contains challenge, CAPTCHA, login, payment-wall, cookie-wall, or browser-verification text.
-12. Confirm every item body has at least 200 meaningful characters after stripping HTML.
-
+10. Confirm no item body contains challenge, CAPTCHA, login, payment-wall, cookie-wall, or browser-verification text.
+11. Confirm every item body has at least 200 meaningful characters after stripping HTML.
+12. Save validation results to:
 ```
 .tmp/rss-build/validation.json
 ```
@@ -431,20 +465,25 @@ If validation fails:
 
 ## GIT RULES
 
+Before changing the RSS file:
+
+1. Run git status --short.
+2. Abort if any tracked file other than the configured RSS file is modified, added, deleted, renamed, or unmerged.
+3. Ignore untracked files only inside .tmp/rss-build/.
+
 After validation succeeds:
 
 1. Replace the configured RSS file.
 2. Run git diff --check.
-3. Confirm only the configured RSS file changed.
-4. Stage only the configured RSS file.
-5. Commit only when the RSS file changed.
-6. Use commit message:
-
-```
-Updated {RSS filename} on {yyyy-mm-dd}
-```
-
-7. Push the current branch to origin.
+3. Run git status --short.
+4. Abort if any tracked file other than the configured RSS file is modified, added, deleted, renamed, or unmerged.
+5. Stage only the configured RSS file.
+6. Confirm the staged diff contains only the configured RSS file.
+7. Commit only when the staged RSS file changed.
+8. Use commit message:
+    `Updated {RSS filename} on {yyyy-mm-dd}`
+9. Push the current branch to origin.
+10. After a successful push, remove .tmp/rss-build/ only if it is untracked and safe to delete.
 
 If the RSS file did not change:
 
