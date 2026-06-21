@@ -9,22 +9,13 @@ Scan the source website URL below and scrape the markup for blog/news posts. Cre
 You will be:
 
 - Adding new posts based on the rules below
-- Updating existing posts when they have updated content
 - Skipping new posts based on the rules below
 - Removing posts from the existing file based on the rules below
 - Pruning the RSS file based on the maximum retention age
 
-## TASK SEQUENCE
-
-1. Create any Python scripts you need to scrape web URLs, process/clean the HTML, extract posts with key metadata like date, headline, author, content, page URL etc. since python code will be the fastest way to do most work. Focus your time on orchestrating the process and making decisions.
-2. Scrape the source URL, identify posts within the maximum age limit, and scour any links to full original post pages. If a temp folder with code exists determine if the code can be used for your tasks. Otherwise, if needed, you may create a temp folder in the project path to store web pages, code, and other working files.
-3. Process the posts based on the rules, and make create/update the RSS file accordingly. Let me know as each post change is made in the RSS file.
-4. If needed, t`runcate the RSS file according to the maximum retention age.
-5. Commit, push or revert the changes as per the rules.
+The folder is a git repository. Commit the changed file with message "Updated {RSS filename} on {yyyy-mm-dd}" where {RSS filename} is the RSS file name and {yyyy-mm-dd} is the current date, and push the current branch to origin.
 
 ## GIT REPO RULES
-
-The folder is a git repository. Commit the changed file with message "Updated {RSS filename} on {yyyy-mm-dd}" where {RSS filename} is the RSS file name and {yyyy-mm-dd} is the current date, and push the current branch to origin.
 
 Do not touch any files other than the RSS file and any new files you create in order to execute the task.
 
@@ -38,7 +29,7 @@ OTHERWISE revert/undo the changes to the RSS file so the current git repo state 
 
 ## VALID POST RULES
 
-- Only include posts that are not in the existing file with dates at or newer than the maximum post age.
+- Only include posts that are not in the existing file (identified by date and headline) with dates at or newer than the maximum post age.
 - Skip new posts older than the maximum retention age.
 - Skip new subscriber-only posts.
 - Skip new paywalled posts.
@@ -52,7 +43,6 @@ OTHERWISE revert/undo the changes to the RSS file so the current git repo state 
 ## SCRAPING RULES
 
 - Use the original source for each post; the feed link should be the same as the source URL.
-- Identify unique posts by date and headline
 - Include post preview images when available.
 - Ignore available preview length.
 - Treat access markers as restricted.
@@ -67,7 +57,7 @@ Make changes in small patches. Do not rewrite entire files. Before editing, insp
 
 ## CONFIGURATION
 
-- Source URL: `https://www.reuters.com/world/us/`
-- RSS file name: `ReutersUS.rss`
+- Source URL: `https://ihnatko.com/`
+- RSS file name: `Ihnatko.rss`
 - Maximum post age: 30 days
 - Maximum retention age: 1 year
