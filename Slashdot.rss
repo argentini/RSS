@@ -3,96 +3,50 @@
   <channel>
     <title>Slashdot</title>
     <link>https://slashdot.org/</link>
-    <description>News for nerds</description>
+    <description>News for nerds, stuff that matters, &amp; software</description>
     <item>
-      <title>Polymarket Paid Dozens to Post Videos of Themselves 'Winning' With Fake Bets</title>
-      <link>https://slashdot.org//tech.slashdot.org/story/26/06/21/0429257/polymarket-paid-dozens-to-post-videos-of-themselves-winning-with-fake-bets</link>
-      <pubDate>Sun, 21 Jun 2026 00:34:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
+      <title>Slashdot</title>
+      <link>https://slashdot.org//slashdot.org</link>
+      <guid isPermaLink="true">https://slashdot.org//slashdot.org</guid>
+      <pubDate>Unknown</pubDate>
+      <description>
+If you feel like it, mail the url, and where ya came from to feedback@slashdot.org.
+
+If you feel like it, mail the url, and where ya came from to feedback@slashdot.org.
+
+The sooner you make your first 5000 mistakes, the sooner you will be
+able to correct them.
+		-- Nicolaides...</description>
+      <ns0:encoded>
+If you feel like it, mail the url, and where ya came from to feedback@slashdot.org.
+
+If you feel like it, mail the url, and where ya came from to feedback@slashdot.org.
+
+The sooner you make your first 5000 mistakes, the sooner you will be
+able to correct them.
+		-- Nicolaides</ns0:encoded>
     </item>
     <item>
-      <title>Gamers Sue PlayStation:  It's Not Clear They're Selling Licenses Rather Than Ownership of Games</title>
-      <link>https://slashdot.org//games.slashdot.org/story/26/06/21/0027229/gamers-sue-playstation-its-not-clear-theyre-selling-licenses-rather-than-ownership-of-games</link>
-      <pubDate>Sat, 20 Jun 2026 21:34:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>How Millions of Digital Home Devices Are Secretly Powering Cyberattacks</title>
-      <link>https://slashdot.org//it.slashdot.org/story/26/06/20/2321236/how-millions-of-digital-home-devices-are-secretly-powering-cyberattacks</link>
-      <pubDate>Sat, 20 Jun 2026 19:23:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>OpenAI Announces Benchmarks for AI Life Sciences Research. Its Best Model Failed 63.9% of the Test</title>
-      <link>https://slashdot.org//science.slashdot.org/story/26/06/20/202204/openai-announces-benchmarks-for-ai-life-sciences-research-its-best-model-failed-639-of-the-test</link>
-      <pubDate>Sat, 20 Jun 2026 17:34:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>Remembering When Alan Turing Developed a Portable Voice Encryption Device</title>
-      <link>https://slashdot.org//it.slashdot.org/story/26/06/20/059229/remembering-when-alan-turing-developed-a-portable-voice-encryption-device</link>
-      <pubDate>Sat, 20 Jun 2026 16:34:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>Tech Pundit Cringely Co-Founds Startup '2Brains Inc' to Solve LLM Hallucinations</title>
-      <link>https://slashdot.org//slashdot.org/story/26/06/20/0556251/tech-pundit-cringely-co-founds-startup-2brains-inc-to-solve-llm-hallucinations</link>
-      <pubDate>Sat, 20 Jun 2026 15:34:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>Waymo Recalls About 3,900 Robotaxis After Some Drove Into 'Freeway Construction Zones'</title>
-      <link>https://slashdot.org//tech.slashdot.org/story/26/06/20/0621217/waymo-recalls-about-3900-robotaxis-after-some-drove-into-freeway-construction-zones</link>
-      <pubDate>Sat, 20 Jun 2026 14:34:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>Cellphone Alert System Breached in Brazil, Message Sent in Leetspeak</title>
-      <link>https://slashdot.org//mobile.slashdot.org/story/26/06/20/175205/cellphone-alert-system-breached-in-brazil-message-sent-in-leetspeak</link>
-      <pubDate>Sat, 20 Jun 2026 13:34:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>SMPTE Opens Entire Standards Catalog for Free, Removing Century-Old Paywall</title>
-      <link>https://slashdot.org//news.slashdot.org/story/26/06/20/0429254/smpte-opens-entire-standards-catalog-for-free-removing-century-old-paywall</link>
-      <pubDate>Sat, 20 Jun 2026 12:34:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>Microsoft Discovers Cryptocurrency Stealer That Spreads Through USB Drives and Uses Tor</title>
-      <link>https://slashdot.org//it.slashdot.org/story/26/06/20/0347206/microsoft-discovers-cryptocurrency-stealer-that-spreads-through-usb-drives-and-uses-tor</link>
-      <pubDate>Sat, 20 Jun 2026 11:34:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>FSF Patches Two-Year-Old Vulnerability Found by AI Researchers in GNU Savannah Repository</title>
-      <link>https://slashdot.org//news.slashdot.org/story/26/06/20/0321205/fsf-patches-two-year-old-vulnerability-found-by-ai-researchers-in-gnu-savannah-repository</link>
-      <pubDate>Sat, 20 Jun 2026 10:34:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>Student Loan Borrowers Will Get Interest Rate Cut If They Sign Up For Auto Pay</title>
-      <link>https://slashdot.org//news.slashdot.org/story/26/06/19/232209/student-loan-borrowers-will-get-interest-rate-cut-if-they-sign-up-for-auto-pay</link>
-      <pubDate>Sat, 20 Jun 2026 07:00:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>Amazon Retaliated Against Workers Who Supported Regulating Data Centers, Complaint Says</title>
-      <link>https://slashdot.org//slashdot.org/story/26/06/19/2248239/amazon-retaliated-against-workers-who-supported-regulating-data-centers-complaint-says</link>
-      <pubDate>Sat, 20 Jun 2026 03:00:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>Using Sound Waves To Make Espresso Could Cut Coffee-Brewing Energy Use By 75%</title>
-      <link>https://slashdot.org//developers.slashdot.org/story/26/06/19/2159245/using-sound-waves-to-make-espresso-could-cut-coffee-brewing-energy-use-by-75</link>
-      <pubDate>Fri, 19 Jun 2026 23:30:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
-    </item>
-    <item>
-      <title>Amazon Drops Sam Altman Movie After Announcing OpenAI Partnership</title>
-      <link>https://slashdot.org//entertainment.slashdot.org/story/26/06/19/2146253/amazon-drops-sam-altman-movie-after-announcing-openai-partnership</link>
-      <pubDate>Fri, 19 Jun 2026 19:00:00 GMT</pubDate>
-      <ns0:encoded>&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;</ns0:encoded>
+      <title>Science</title>
+      <link>https://slashdot.org//science.slashdot.org</link>
+      <guid isPermaLink="true">https://slashdot.org//science.slashdot.org</guid>
+      <pubDate>Unknown</pubDate>
+      <description>
+If you feel like it, mail the url, and where ya came from to feedback@slashdot.org.
+
+If you feel like it, mail the url, and where ya came from to feedback@slashdot.org.
+
+The sooner you make your first 5000 mistakes, the sooner you will be
+able to correct them.
+		-- Nicolaides...</description>
+      <ns0:encoded>
+If you feel like it, mail the url, and where ya came from to feedback@slashdot.org.
+
+If you feel like it, mail the url, and where ya came from to feedback@slashdot.org.
+
+The sooner you make your first 5000 mistakes, the sooner you will be
+able to correct them.
+		-- Nicolaides</ns0:encoded>
     </item>
   </channel>
 </rss>
