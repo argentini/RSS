@@ -26,6 +26,7 @@ Do not touch any files other than the RSS file and any new files you create in o
 - Before crawling, respect robots.txt, site terms, rate limits, and access controls. Use a descriptive User-Agent, low concurrency, delays, and explicit same-domain and path boundaries.
 - Assume Homebrew is installed. Install missing CLI tools with Homebrew. Install Playwright and browser binaries through Node/npm.
 - Write custom code only when authentication, complex stateful pagination, nonstandard interactions, or repeated transformations cannot be handled by the installed tools.
+- When homebrew taps are not trusted, run `brew trust {name}` to trust them and reinstall.
 
 ## VALID POST RULES
 
