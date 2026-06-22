@@ -1,1558 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Umbraco.com Blog</title>
     <link>https://umbraco.com/blog/</link>
     <description>Blog posts from umbraco.com</description>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Jun 2026 17:47:52 -0000</lastBuildDate>
-<item>
-      <title>Across the Himalayas and Into the Heart of Umbraco</title>
-      <link>https://umbraco.com/blog/across-the-himalayas-and-into-the-heart-of-umbraco/</link>
-      <guid isPermaLink="true">https://umbraco.com/blog/across-the-himalayas-and-into-the-heart-of-umbraco/</guid>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[Meet Rashmita and Jasper, the founders of One Tech Nepal. Discover how they use their 100% Umbraco agency to fund IT education and libraries in remote Himalayan schools.]]></description>
-      <content:encoded><![CDATA[<p style="color: rgb(40, 58, 151);">If you’ve ever set foot at Codegarden, you know the "Umbraco feeling" isn't only about code, APIs, or the latest CMS features. It’s about the people. It’s about that warm, fuzzy, slightly quirky energy that fills the air when 700+ friendly faces gather in Copenhagen during Codegarden. But this year, we ran into two people whose story genuinely made our hearts do a little happy dance. Meet Rashmita and Jasper from Nepal. They didn't just travel over 6,000 kilometers to join us for some high-fives and tech talks. They brought with them a story that reminds us why community (and a bit of clever tech) really matters.</p>
+    <lastBuildDate>Mon, 22 Jun 2026 22:37:50 GMT</lastBuildDate>
+    <item>
+      <title>uProfile June 2026 - Ben Szymanski</title>
+      <link>https://umbraco.com/blog/uprofile-june-2026-ben-szymanski/</link>
+      <guid isPermaLink="true">https://umbraco.com/blog/uprofile-june-2026-ben-szymanski/</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p>From restoring vintage Macs to catching waves and building backoffice magic - meet 2026 Umbraco MVP Ben Szymanski.</p>]]></description>
+      <content:encoded><![CDATA[<div class="teaser"><p>When he isn't building game-changing packages for Umbraco, you can find Ben Szymanski gliding across the Florida coast on an eFoil, restoring vintage 90s Macs, or training for the U.S. Coast Guard Reserve. This year marks Ben's tenth anniversary with the Friendly CMS - and what a year it is! Read on to meet this multi-talented software engineer and learn how he went from admiring the community from the sidelines to diving in headfirst, culminating in his well-deserved recognition as a 2026 Umbraco MVP.</p></div><div class="dc-block-list">
+<div class="dc-columns no-outline has-bg rounded" id="CCiGU">
 
-<div class="dc-image-block " id="zhpan">
-
-
-        <figure>
-            <div class="dc-image-wrapper">
-                    <img srcset="https://umbraco.com/media/1nmpsxdr/dscf0705.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcfc9c8600cf50 662w, https://umbraco.com/media/1nmpsxdr/dscf0705.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcfc9c8600cf50 1360w"
-                         sizes="(max-width: 698px) 662px, 1360px"
-                         src="https://umbraco.com/media/1nmpsxdr/dscf0705.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcfc9c8600cf50" alt="Emma, Rashmita and Jaspar at Codegarden 2026." class="dc-image" loading="lazy" />
-
-            </div>
-            <figcaption>Emma, Rashmita and Jasper at Codegarden 2026.</figcaption>
-        </figure>
-</div>
-
-
-
-<div class="dc-text-block justify-center "
-    id="XOCjA">
-
-    <div class="dc-text-block__content"><h2>More Than Just an Agency</h2><p><span class="font-size-normal">Rashmita and Jasper are the founders of </span><strong>One Tech Nepal</strong><span class="font-size-normal">, a 100% Umbraco-focused agency. They started as a .NET web development company, primarily building small static websites, which naturally limited their scope and opportunities.&nbsp; However, after COVID, they discovered Umbraco. In the four years since adopting it, their revenue has doubled. Umbraco has enabled them to work with larger and higher-value clients, which in turn has allowed them to expand their philanthropic initiatives.</span></p><p><span class="font-size-normal">Today, they are the driving force behind </span><strong>One Youth</strong><span class="font-size-normal">, a non-profit dedicated to bringing IT education, libraries, and hope to children in Nepal's most remote areas. We’re talking about schools tucked away in the Himalayas, where a "commute" involves hours of trekking through breathtaking (and sometimes treacherous) mountain paths.</span></p><p><strong>40% of the funding</strong><span class="font-size-normal"> for their school projects comes directly from the profits of their work with their 100% Umbraco agency. And for the rest, they organize charity documentary screenings through their media arm, </span><strong>Mitra Films</strong><span class="font-size-normal">, to make sure the kids in remote Nepal get what they need.</span></p><p><span class="font-size-normal">Every time they build a great digital experience for a client, they’re literally building a brighter future for a child in the mountains. Talk about a virtuous cycle!</span></p></div>
-</div>
-
-
-<div class="dc-image-block " id="nrKMc">
-
-
-        <figure>
-            <div class="dc-image-wrapper">
-                    <img srcset="https://umbraco.com/media/p5ual00b/179976862_2632893237008645_2205736274568356070_n.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf728e5304290 662w, https://umbraco.com/media/p5ual00b/179976862_2632893237008645_2205736274568356070_n.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf728e5304290 1360w"
-                         sizes="(max-width: 698px) 662px, 1360px"
-                         src="https://umbraco.com/media/p5ual00b/179976862_2632893237008645_2205736274568356070_n.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf728e5304290" alt="A woman wearing glasses hands a black school backpack to a young girl in a blue uniform during an outdoor community distribution event." class="dc-image" loading="lazy" />
-
-            </div>
-            <figcaption>Credit: ONE Youth Nepal</figcaption>
-        </figure>
-</div>
-
-
-
-<div class="dc-text-block justify-center "
-    id="FBuNm">
-
-    <div class="dc-text-block__content"><h2>From Scavenged Pencils to Computer Labs</h2><p><span class="font-size-normal">In a moving documentary they shared with us, Rashmita and Jasper open up about why they do what they do.</span></p><p><span class="font-size-normal">It turns out, the mission is deeply personal. Both shared stories of childhoods where educational materials were a luxury. </span><strong>Rashmita</strong><span class="font-size-normal"> recalls a time when she couldn't afford a notebook and had to scavenge discarded pencils and paper to keep learning. And </span><strong>Jasper</strong><span class="font-size-normal"> remembers watching others use a computer for 5 rupees an hour (a sum his family couldn't spare) and learning simply by standing nearby and observing. They aren't just giving back; they are filling a void they once felt themselves.&nbsp;</span></p><p></p><h2>A Shift in Focus</h2><p><span class="font-size-normal">Previously, their efforts focused on providing books and computers to remote communities. Today, they are able to do much more. During the harsh winter months in remote villages, they distribute warm clothing, help provide electricity to families who cannot afford it, and support other essential needs. Most importantly, they have shifted their focus from going wider to going deeper.</span></p><p><span class="font-size-normal">This approach led them to sponsor the education of a young girl. Her journey, from a remote village to becoming a high school student today, can be seen in this documentary:</span></p></div>
-</div>
-
-
-<dc-video-picker-youtube source="https://www.youtube.com/embed/YQzeXrsGDmQ?enablejsapi=1&amp;version=3"
-                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                         name=""
-                         length=""
-                         thumbnail=""
-                         format="169">
-    <iframe slot="video" src="https://www.youtube.com/embed/YQzeXrsGDmQ?enablejsapi=1&amp;version=3" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0" width="100%" height="100%"></iframe>
-</dc-video-picker-youtube>
-
-
-
-<div class="dc-text-block justify-center "
-    id="YeElC">
-
-    <div class="dc-text-block__content"><h2>The Success of "Across the Himalaya"</h2><p><span class="font-size-normal">To capture these incredible stories and share them with the world, Rashmita and Jasper turned to filmmaking. Their documentary, Across the Himalaya, has received recognition at several prestigious film festivals around the world. One particularly meaningful milestone was receiving an award at the Three Acts of Goodness Film Festival, which included a prize of $10,000.</span></p><p><span class="font-size-normal">They used $2,000 of the award to purchase a Sony A7 III camera, enabling them to continue documenting stories from remote communities while also strengthening their photography and videography capabilities for their Umbraco-based web projects. The remaining funds were directed back to supporting children in remote Himalayan communities, as the documentary itself would not have been possible without them.</span></p><p><span class="font-size-normal">In many ways, the journey was not simply about them helping the children. It was also about the children helping them. Their stories, resilience, and trust gave the documentary purpose and helped shape their own journey. They felt it was only right that the success of the film directly benefited the communities whose stories made it possible.</span></p></div>
-</div>
-
-
-<div class="dc-image-block " id="AvkMh">
-
-
-        <figure>
-            <div class="dc-image-wrapper">
-                    <img srcset="https://umbraco.com/media/30slqqig/455262403_891445036352371_4259605497440658477_n.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf728f97ccb10 662w, https://umbraco.com/media/30slqqig/455262403_891445036352371_4259605497440658477_n.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf728f97ccb10 1360w"
-                         sizes="(max-width: 698px) 662px, 1360px"
-                         src="https://umbraco.com/media/30slqqig/455262403_891445036352371_4259605497440658477_n.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf728f97ccb10" alt="A large group of school children sit together outside a rustic mountain village, happily holding up their hands wearing vibrant, multi-colored gloves." class="dc-image" loading="lazy" />
-
-            </div>
-            <figcaption>Credit: ONE Youth Nepal</figcaption>
-        </figure>
-</div>
-
-
-
-<div class="dc-text-block justify-center "
-    id="pYnzW">
-
-    <div class="dc-text-block__content"><h2>Not Just Mountains, but "Mindful" Cities</h2><p><span class="font-size-normal">While their work takes them to the remotest peaks of the Himalayas, they are equally committed to the youth in the city. Last year, they launched the "POWER UP" initiative in Kathmandu.</span></p><p><span class="font-size-normal">They’ve been hitting the ground at schools like National Peace Secondary and Nature Boarding School, not just to talk about code, but to talk about digital awareness. In a world that’s always online, they’re teaching kids about cyberbullying prevention and digital safety. It’s one thing to give a child a computer – it’s another to give them the wisdom to use it safely and empathetically. That’s the kind of holistic thinking we just love to see.</span></p></div>
-</div>
-
-
-<div class="dc-image-block " id="aPQWM">
-
-
-        <figure>
-            <div class="dc-image-wrapper">
-                    <img srcset="https://umbraco.com/media/1tymioqd/480020964_1024558556374351_320277550326223831_n.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf7281077a020 662w, https://umbraco.com/media/1tymioqd/480020964_1024558556374351_320277550326223831_n.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf7281077a020 1360w"
-                         sizes="(max-width: 698px) 662px, 1360px"
-                         src="https://umbraco.com/media/1tymioqd/480020964_1024558556374351_320277550326223831_n.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf7281077a020" alt="A young girl with pigtails smiles brightly as she is handed a school backpack stacked with a colorful &quot;World Around Me&quot; textbook and an orange pouch." class="dc-image" loading="lazy" />
-
-            </div>
-            <figcaption>Credit: ONE Youth Nepal</figcaption>
-        </figure>
-</div>
-
-
-
-<div class="dc-text-block justify-center "
-    id="fdUub">
-
-    <div class="dc-text-block__content"><h2>The Codegarden "High-Five" 🖐️</h2><p><span class="font-size-normal">Seeing them at Codegarden was a beautiful reminder that our community is truly global and incredibly kind. While the rest of us were busy swapping tips on the latest CMS features, Rashmita and Jasper were sharing how their work with Umbraco ripples out into the mountains of Nepal.</span></p><p><span class="font-size-normal">It’s a powerful perspective to realize that a project built in a local office can help fund initiatives like these. It reminded us all that behind every line of code, there’s a human story waiting to be told. We’re still smiling, thinking about how the "Friendly CMS" is helping make things a little friendlier in the Himalayas!</span></p><p></p><h2>Why We’re Telling You This</h2><p><span class="font-size-normal">Because stories like these are the heartbeat of the Umbraco community. We’re more than just developers and marketers; we’re a bunch of humans who like to help each other out. Whether it’s helping a colleague with a tricky bug or helping a child in a remote mountain village get their first laptop, the spirit is the same. As they continue this journey, they are exploring how an IT business powered by Umbraco, combined with their work in documentary filmmaking, literacy, and poverty alleviation, can go hand in hand to create lasting and meaningful change for future generations.&nbsp;</span></p><p><span class="font-size-normal">To Rashmita and Jasper: thank you for bringing your light to Codegarden. We are so proud to have you as part of the Umbraco family.</span></p><p><em>If you want to feel inspired today, grab a cup of coffee (or a tea, in honor of the Nepalese mountains) and watch their award-winning documentary (you won't regret it!):</em></p></div>
-</div>
-
-
-<dc-video-picker-youtube source="https://www.youtube.com/embed/HXu2nbLaiU0?enablejsapi=1&amp;version=3"
-                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                         name=""
-                         length=""
-                         thumbnail=""
-                         format="169">
-    <iframe slot="video" src="https://www.youtube.com/embed/HXu2nbLaiU0?enablejsapi=1&amp;version=3" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0" width="100%" height="100%"></iframe>
-</dc-video-picker-youtube>]]></content:encoded>
-      <media:content url="https://umbraco.com/media/p5ual00b/179976862_2632893237008645_2205736274568356070_n.jpg?rxy=0.242,0.3859714928732183&amp;v=1dcf728e5304290" medium="image" width="2048" height="1365"/>
-      <media:thumbnail url="https://umbraco.com/media/p5ual00b/179976862_2632893237008645_2205736274568356070_n.jpg?rxy=0.242,0.3859714928732183&amp;v=1dcf728e5304290"/>
-    </item>
-<item>
-      <title>Umbraco Product Update/Codegarden Keynote Highlights, Q2 2026</title>
-      <link>https://umbraco.com/blog/umbraco-product-updatecodegarden-keynote-highlights-q2-2026/</link>
-      <guid isPermaLink="true">https://umbraco.com/blog/umbraco-product-updatecodegarden-keynote-highlights-q2-2026/</guid>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[Explore highlights from the Umbraco Codegarden Keynote 2026. Learn about new CMS and Cloud features, Umbraco Automate (new upcoming product!), and the latest Umbraco.AI updates.]]></description>
-      <content:encoded><![CDATA[<p>It’s June 10, 2026, and I, Mats, Emma, and other brilliant Umbraco HQ colleagues have just stepped down from Codegarden stage after hosting the yearly  Keynote. A keynote packed with a lot of great news across many of our Umbraco Products - and even the announcement of a new one! Yes, we sure like to make a Keynote exciting 😉 To make sure you’re all up to date, we’ll fill you in here, giving you more details, links, etc., so you can dive a bit deeper into all the stuff that’s coming and what’s already here:</p>
-
-
-<div class="dc-text-block justify-center " id="oykgr">
-
-    <div class="dc-text-block__content">
-<h2>“A mature platform that developers love and business trust” </h2>
-<p><span class="font-size-normal">If you caught the Codegarden keynote live, or are planning a re-watch, you probably heard me say the above sentence a few times. In recent years, Umbraco has evolved significantly and hit major milestones, such as the ISO 27001 Certification, 100% SLA commitment, and fantastic reviews and awards on G2. These achievements continue to build the confidence you and your customers place in our platform. And with the announcements during the Keynote, I hope it’s clear we’re committed to continuing on this path.</span></p>
-<p><span class="font-size-normal">Because maturity is also seen “inside” our products, with new upcoming features like </span><strong>Elements</strong><span class="font-size-normal"> and new </span><strong>Search</strong><span class="font-size-normal"> to the CMS, </span><strong>Load Balancing</strong><span class="font-size-normal">, and </span><strong>Scheduled Upgrades</strong><span class="font-size-normal"> for Cloud, and with the launch of our new </span><strong>open-source automation add-on: Umbraco Automate</strong><span class="font-size-normal">.</span></p>
-<p><span class="font-size-normal">And with AI still on everyone's lips, we’ve also made sure to follow along - the Umbraco way. It’s been inspiring to see the community embrace </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><strong>Umbraco.AI</strong></a><span class="font-size-normal"> with a clear spike of new packages on the Umbraco Marketplace. By launching </span><strong>Remote MCP on Cloud </strong><span class="font-size-normal">and introducing </span><strong>new guardrails and testing capabilities, </strong><span class="font-size-normal">we’re helping you leverage AI’s efficiency while ensuring you stay compliant and always keep a human in control.</span><br><br><span class="font-size-normal">Now, as promised, let’s dive deeper into the latest news and upcoming features across the Umbraco platform:</span><strong><br></strong></p>
-</div>
-</div>
-
-
-
-<div class="dc-text-block justify-left " id="uuvRV">
-
-    <div class="dc-text-block__content">
-<ul>
-<li>
-<p><strong>Product News Overview:</strong></p>
-<ul>
-<li><p><a data-router-slot="disabled" data-anchor="#Automate" href="https://umbraco.com#Automate" title="#Automate" type="external">Automate</a></p></li>
-<li><p><a data-router-slot="disabled" data-anchor="#AIin" href="https://umbraco.com#AIin" title="#AIin" type="external">AI in Umbraco</a></p></li>
-<li><p><a data-router-slot="disabled" data-anchor="#inAI" href="https://umbraco.com#inAI" title="#inAI" type="external">Umbraco in AI</a></p></li>
-<li><p><a data-router-slot="disabled" data-anchor="#CMS" href="https://umbraco.com#CMS" title="#CMS" type="external">CMS</a></p></li>
-<li><p><a data-router-slot="disabled" data-anchor="#Cloud" href="https://umbraco.com#Cloud" title="#Cloud" type="external">Cloud</a></p></li>
-<li><p><a data-router-slot="disabled" data-anchor="#Compose" href="https://umbraco.com#Compose" title="#Compose" type="external">Compose</a></p></li>
-<li><p><a data-router-slot="disabled" data-anchor="#Commerce" href="https://umbraco.com#Commerce" title="#Commerce" type="external">Commerce</a></p></li>
-<li><p><a data-router-slot="disabled" data-anchor="#Engage" href="https://umbraco.com#Engage" title="#Engage" type="external">Engage</a></p></li>
-<li><p><a data-router-slot="disabled" data-anchor="#Deploy" href="https://umbraco.com#Deploy" title="#Deploy" type="external">Deploy</a><br></p></li>
-</ul>
-</li>
-<li>
-<p><strong>In other news:</strong></p>
-<ul>
-<li><p><a data-router-slot="disabled" data-anchor="#Codegarden" href="https://umbraco.com#Codegarden" title="#Codegarden" type="external">When will Codegarden talks be available?</a></p></li>
-<li><p><a data-router-slot="disabled" data-anchor="#Security" href="https://umbraco.com#Security" title="#Security" type="external">Security Advisory: Umbraco AI</a></p></li>
-</ul>
-</li>
-</ul>
-<p></p>
-</div>
-</div>
-
-
-
-<div class="dc-text-block justify-center " id="Jlmfi">
-
-    <div class="dc-text-block__content">
-<h2>
-<a id="Automate"></a>New open-source product: Umbraco Automate</h2>
-<h3>Automate journeys, connect tools, and plug in AI.</h3>
-<p><span class="font-size-normal">Meet </span><strong>Umbraco Automate</strong><span class="font-size-normal"> 👋 A drag-and-drop automation engine native in the Umbraco backoffice. The steps you used to wire up in external tools, or do by manually, can now run where your content already lives.</span></p>
-</div>
-</div>
-
-
-<div class="dc-image-block " id="vordm">
-
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/m5jcwona/drag_drop_automate.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf7ea226ed8d0 662w, https://umbraco.com/media/m5jcwona/drag_drop_automate.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf7ea226ed8d0 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/m5jcwona/drag_drop_automate.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf7ea226ed8d0" alt="drag_drop_Automate.png" class="dc-image" loading="lazy">
-
-        </div>
-</div>
-
-
-
-<div class="dc-text-block justify-center " id="VpZWu">
-
-    <div class="dc-text-block__content">
-<h3>Why Automate matters for your business</h3>
-<ul>
-<li><p><strong>Automate in minutes, not sprints.</strong><span class="font-size-normal"> Technical growth teams and website owners can build "if this, then that" flows like onboarding emails, sales alerts, and discount codes, without pulling in developers.<br></span></p></li>
-<li><p><strong>Native triggers and actions, out of the box.</strong><span class="font-size-normal"> Get ready to work with Automate from day one with native tiggers and actions across the platform, the CMS, plus Forms, Commerce, Workflow, and Engage.<br></span></p></li>
-<li><p><strong>Connect your whole stack and plug in AI.</strong><span class="font-size-normal"> Two ways to extend a flow: hook into external services via </span><strong>webhooks</strong><span class="font-size-normal"> to react to events from any third-party system, or bring </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><strong>Umbraco.AI</strong></a><span class="font-size-normal"> into your automations, calling AI agents as steps to do work, or have an automation react to the result of an AI task. </span><br></p></li>
-<li><p><strong>A human safety net.</strong><span class="font-size-normal"> Human-in-the-loop approval steps keep a person in control before anything external or AI-generated goes live.</span><br></p></li>
-<li><p><strong>You control your data by default.</strong><span class="font-size-normal"> Unlike Zapier or Make, Automate runs entirely inside your own Umbraco infrastructure, whether that's Umbraco Cloud, a dedicated Azure SQL database, or self-hosted. Your data only leaves your environment when </span><em>you</em><span class="font-size-normal"> choose to send it to an external service, and Automate itself is already covered by your existing hosting agreement. </span></p></li>
-</ul>
-<p></p>
-</div>
-</div>
-
-
-
-
-<div class="dc-columns no-outline " id="eGHQg">
-
-        <div class="column-block">
-            <div class="dc-block-list">
-
-
-<div class="dc-text-block justify-center " id="KkqkE">
-
-    <div class="dc-text-block__content">
-<p><strong>Umbraco Automate</strong><span class="font-size-normal"> is open source and endlessly extensible, build custom triggers and actions from templates, list them on Umbraco Marketplace, and move automations across environments with Umbraco Deploy support. No limits on runs, triggers, actions, or users. </span></p>
-<p></p>
-</div>
-</div>
-
-            </div>
-        </div>
-        <div class="column-block">
-            <div class="dc-block-list">
-
-<div class="dc-image-block " id="dcuxM">
-
-
-        <div class="dc-image-wrapper">
-                <img src="https://umbraco.com/media/xlqkdpda/vertical_logo_umbraco_automate.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf7262c932150" alt="Vertical_Logo_Umbraco_Automate.png" class="dc-image" loading="lazy">
-
-        </div>
-</div>
-
-            </div>
-        </div>
-</div>
-
-
-
-
-<div class="dc-text-block justify-center " id="xErOQ">
-
-    <div class="dc-text-block__content">
-<p><span class="font-size-normal">If you want to know more about Umbraco Automate, check out </span><a data-router-slot="disabled" href="https://codegarden.umbraco.com/program/" target="_blank" title="codegarden.umbraco.com" type="external"><span class="font-size-normal">Matt Brailsfords Codegarden talk, Thursday, June 11 at 10 UCT+2 </span></a><span class="font-size-normal">or catch on YouTube in the weeks following Codegarden. </span></p>
-<p><span class="font-size-normal">Or check out the</span><a data-router-slot="disabled" href="https://umbraco.com/products/add-ons/automate/" target="_blank" title="Automate"><span class="font-size-normal"> Automate Product page </span></a><span class="font-size-normal">where you can take a quick-click tour, sign up for a dedicated newsletter, and learn all about the main features of Automate. </span></p>
-<p><strong>Availability:</strong><span class="font-size-normal"> Beta release for Umbraco 17 ready from today; final release </span><strong>July 9</strong><span class="font-size-normal">.</span></p>
-<ul>
-<li><p><a data-router-slot="disabled" href="https://www.nuget.org/packages/Umbraco.Automate" target="_blank" title="www.nuget.org" type="external"><span class="font-size-normal">Download Automate Beta release here</span></a></p></li>
-<li><p><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-automate" target="_blank" title="docs.umbraco.com" type="external"><span class="font-size-normal">Check out the Automate documentation</span></a></p></li>
-<li><p><a data-router-slot="disabled" href="https://github.com/umbraco/Umbraco.Automate" target="_blank" title="github.com" type="external"><span class="font-size-normal">Provide feedback on github </span></a></p></li>
-</ul>
-<h2>
-<br><a id="AIin"></a>AI in Umbraco</h2>
-<p><span class="font-size-normal">Since the announcement of AI in Umbraco, this part of the Umbraco platform has matured from vision to production. The vision of </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><span class="font-size-normal">Umbraco.AI</span></a><span class="font-size-normal"> has always been to give you the foundation for you to stay in control of which model you want to use, how it behaves, and what it is allowed to touch. Sprinkled with HQ maintained AI features, such as property prompts and a Copilot inside the backoffice.</span></p>
-<h3>Aligned with the platform</h3>
-<p><span class="font-size-normal">With Umbraco 18, the </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><span class="font-size-normal">Umbraco.AI</span></a><span class="font-size-normal"> packages move onto the same version line as the platform, compatible with </span><strong>Umbraco 17 and 18</strong><span class="font-size-normal">. </span></p>
-<h3>Governance built for platform owners</h3>
-<p><span class="font-size-normal">New </span><strong>guardrails</strong><span class="font-size-normal"> inspect both prompts and AI output, before or after generation, so content stays on-brand and sensitive data stays protected. And with new model connections in the platform (including Hugging Face, Fireworks, Mistral, and DeepSeek), you choose the LLM and model that fits your project, budget, and compliance needs. </span></p>
-<p></p>
-</div>
-</div>
-
-
-<dc-video-picker-media source="https://umbraco.com/media/gvdjb3nj/guardrails-for-product-update.mp4" name="" length="" thumbnail="https://umbraco.com/media/n3dcthai/screenshot-2026-06-08-at-111145.png?width=1360&amp;height=765&amp;format=webp&amp;quality=85&amp;v=1dcf726df998370" format="169">
-    <video slot="video" controls="controls" poster="https://umbraco.com/media/n3dcthai/screenshot-2026-06-08-at-111145.png?width=1360&amp;height=765&amp;format=webp&amp;quality=85&amp;v=1dcf726df998370" preload="none" width="100%" height="100%">
-        <source></source>
-        <p>
-            Your browser does not support HTML5 videos.
-            <a href="https://umbraco.com/media/gvdjb3nj/guardrails-for-product-update.mp4">Here is a link to the video</a> instead.
-        </p>
-    </video>
-</dc-video-picker-media>
-
-
-
-<div class="dc-text-block justify-center " id="MRwrc">
-
-    <div class="dc-text-block__content">
-<p><em><span class="font-size-small">Pre-generated guardrails protect emails from being shared with the LLM provider.</span></em></p>
-<p><span class="font-size-normal">A new </span><strong>test-and-run</strong><span class="font-size-normal"> capability lets you measure agent and prompt output against defined standards ("graders"), catch model regressions, compare models, and you can run against mock data before AI meets your content. In short: Quality-check the AI in your backoffice. </span></p>
-<p><span class="font-size-normal">Check out some of the </span><a data-router-slot="disabled" href="https://umbraco.com/products/ai/ai-governance/" target="_blank" title="https://umbraco.com/products/ai/ai-governance/" type="external"><u>key features that allow AI governance in Umbraco</u></a></p>
-<h3>A Copilot for editors</h3>
-<p><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><span class="font-size-normal">Umbraco.AI</span></a><span class="font-size-normal">'s </span><strong>Copilot</strong><span class="font-size-normal"> is out in a final release. It picks up speech-to-text dictation, drag-and-drop file uploads, semantic search with Umbraco Search, and can now work with more complex structures, such as blocks, and it can save and publish, with a manual approval step, so an editor always signs off before anything goes live. </span></p>
-</div>
-</div>
-
-
-<dc-video-picker-media source="https://umbraco.com/media/wtgnr4qa/copilot-feature-for-product-update.mp4" name="" length="" thumbnail="https://umbraco.com/media/vxtldpe2/screenshot-2026-06-08-at-111558.png?width=1360&amp;height=765&amp;format=webp&amp;quality=85&amp;v=1dcf7278ade9360" format="169">
-    <video slot="video" controls="controls" poster="https://umbraco.com/media/vxtldpe2/screenshot-2026-06-08-at-111558.png?width=1360&amp;height=765&amp;format=webp&amp;quality=85&amp;v=1dcf7278ade9360" preload="none" width="100%" height="100%">
-        <source></source>
-        <p>
-            Your browser does not support HTML5 videos.
-            <a href="https://umbraco.com/media/wtgnr4qa/copilot-feature-for-product-update.mp4">Here is a link to the video</a> instead.
-        </p>
-    </video>
-</dc-video-picker-media>
-
-
-
-<div class="dc-text-block justify-center " id="MiXSY">
-
-    <div class="dc-text-block__content">
-<p><em><span class="font-size-small">Drag-and-drop files into Copilot and work together on creating or updating content.</span></em></p>
-<h2>
-<a id="inAI"></a>Umbraco in AI</h2>
-<p><strong>Umbraco in AI </strong><span class="font-size-normal">is making Umbraco a first-class citizen in the AI-native tools your team already works in. Today, that starts with the </span><strong>CMS </strong><span class="font-size-normal">- agent-ready through MCP and Agent Skills, so partners and developers don't build integrations from scratch - with the commercial Umbraco products set to follow soon.  </span></p>
-<h3>Your backoffice, inside any AI client</h3>
-<p><span class="font-size-normal">The headline here is the </span><strong>Umbraco Editor MCP</strong><span class="font-size-normal">: a remote MCP server that Umbraco hosts for you on Umbraco Cloud. In plain terms, your editors can open their preferred LLM client and </span><strong>draft, find, update, and publish content directly in the Umbraco backoffice,</strong><span class="font-size-normal"> just by describing what they want. </span></p>
-<p><span class="font-size-normal">What makes it genuinely low-effort:</span></p>
-<ul>
-<li><p><strong>We host it, you just connect.</strong><span class="font-size-normal"> Nothing to install, patch, or maintain; updates ship from us.<br></span></p></li>
-<li><p><strong>Secure by default.</strong><span class="font-size-normal"> Each Cloud project gets its own authenticated (OAuth) endpoint, and it's already covered by your existing Umbraco Cloud Data Processing Agreement; no new DPA or compliance review is needed.</span></p></li>
-</ul>
-<p><span class="font-size-normal">And because it runs as part of Umbraco Cloud, editors can connect their </span><em>other</em><span class="font-size-normal"> tools' MCP servers - Google Drive, Figma, Slack, Dropbox - into the same workflow, all cloud-based with nothing running locally. The takeaway: editors can bring their preferred AI client to Umbraco, one that can act on your content and reach all your other tools, with nothing to install.  </span></p>
-</div>
-</div>
-
-
-<dc-video-picker-media source="https://umbraco.com/media/r3tj3emr/connecting-claude-to-website-hosted-on-umbraco-cloud.mp4" name="" length="" thumbnail="https://umbraco.com/media/3zegcuzz/screenshot-2026-06-08-at-111901.png?width=1360&amp;height=765&amp;format=webp&amp;quality=85&amp;v=1dcf727e79725e0" format="169">
-    <video slot="video" controls="controls" poster="https://umbraco.com/media/3zegcuzz/screenshot-2026-06-08-at-111901.png?width=1360&amp;height=765&amp;format=webp&amp;quality=85&amp;v=1dcf727e79725e0" preload="none" width="100%" height="100%">
-        <source></source>
-        <p>
-            Your browser does not support HTML5 videos.
-            <a href="https://umbraco.com/media/r3tj3emr/connecting-claude-to-website-hosted-on-umbraco-cloud.mp4">Here is a link to the video</a> instead.
-        </p>
-    </video>
-</dc-video-picker-media>
-
-
-
-<div class="dc-text-block justify-center " id="ipAUT">
-
-    <div class="dc-text-block__content">
-<p><em><span class="font-size-small">Connecting Claude to a website hosted on Umbraco Cloud.</span></em></p>
-<p><span class="font-size-normal">Both the </span><strong>CMS Developer MCP</strong><span class="font-size-normal"> and the new </span><strong>CMS Editor MCP</strong><span class="font-size-normal"> will be available as hosted remote MCPs on Umbraco Cloud this summer, </span><strong>beta in July, and general availability later this summer. </strong><span class="font-size-normal">This will be for all Cloud plans - no additional cost. </span><br><br><strong>For developers:</strong><span class="font-size-normal"> dig into the </span><a data-router-slot="disabled" href="https://umbraco.com/products/developer-mcp/" target="_blank" title="https://umbraco.com/products/developer-mcp/" type="external"><u>Developer MCP</u></a><span class="font-size-normal">, and the </span><a data-router-slot="disabled" href="https://umbraco.com/blog/the-agent-ready-cms-what-are-agent-skills/" target="_blank" title="https://umbraco.com/blog/the-agent-ready-cms-what-are-agent-skills/" type="external"><u>Agent-Ready CMS series</u></a><span class="font-size-normal">.</span></p>
-</div>
-</div>
-
-
-
-<div class="dc-text-block justify-center " id="Udzip">
-
-    <div class="dc-text-block__content">
-<h2>
-<a id="CMS"></a>Umbraco CMS</h2>
-<p><span class="font-size-normal">The content engine of your platform keeps getting leaner and more capable, with two highlights landing across the recent Umbraco 17 minor releases, available to you today: </span></p>
-<h3>Better support for AI in Umbraco</h3>
-<p><span class="font-size-normal">Recent Umbraco 17 minor updates have added improvements that let AI agents interact with the CMS far more </span><strong>granularly, </strong><span class="font-size-normal">understanding how your content is built, and making precise changes to it. These improvements power </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><span class="font-size-normal">Umbraco.AI</span></a><span class="font-size-normal"> features like Copilot, but they live in the CMS itself, so they're </span><strong>open to any AI agent, </strong><span class="font-size-normal">including your own LLM or tooling, if you'd rather bring your own.</span></p>
-<ul>
-<li><p><strong>Agents can understand your content.</strong><span class="font-size-normal"> An AI agent can now read the exact structure of your content and data types before it writes anything, so it makes valid changes instead of guessing.<br></span></p></li>
-<li><p><strong>Agents can edit with precision.</strong><span class="font-size-normal"> Rather than rewriting a whole page, an agent can make a targeted change, even deep inside a Block List, for faster, more precise, and more granular edits.</span></p></li>
-</ul>
-<p><strong>For developers:</strong><span class="font-size-normal"> see the</span><a data-router-slot="disabled" href="https://github.com/umbraco/Umbraco-CMS/pull/21771" target="_blank" title="https://github.com/umbraco/Umbraco-CMS/pull/21771" type="external"><span class="font-size-normal"> </span><u>JSON Schema support</u></a><span class="font-size-normal"> and</span><a data-router-slot="disabled" href="https://github.com/umbraco/Umbraco-CMS/pull/22104" target="_blank" title="https://github.com/umbraco/Umbraco-CMS/pull/22104" type="external"><span class="font-size-normal"> </span><u>document patch endpoint</u></a><span class="font-size-normal"> PRs.</span></p>
-<h3>Lightweight, external-only members</h3>
-<p><span class="font-size-normal">If your site signs members in through a third-party identity provider, via social logins, SSO, or a customer identity platform, Umbraco has traditionally created a full member record for each one, carrying fields you may never use. On membership-heavy sites, that adds up fast: more storage, more to index, and a heavier system to keep performant.</span></p>
-<p><span class="font-size-normal">Now you can opt those members into a lighter footprint. Set external only = true, and Umbraco stores just the minimal record it needs while keeping the third-party authentication integration fully intact. The payoff is significantly less overhead and better performance as your membership grows, with no change to how your members actually sign in.</span></p>
-<p><span class="font-size-normal">Want to read more, </span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cms/run-in-production/security/lightweight-external-members" target="_blank" title="https://docs.umbraco.com/umbraco-cms/run-in-production/security/lightweight-external-members" type="external"><u>check out the documentation here.</u></a></p>
-<h2>Umbraco CMS: Coming up</h2>
-<h3>Umbraco version 18</h3>
-<p><span class="font-size-normal">Umbraco 18 lands June 25 🎉It's a smaller, low-friction major release; most projects won't need significant changes to upgrade, but it sets up a couple of things worth knowing about: </span></p>
-<p><span class="font-size-normal">Elements: create content once, reuse it everywhere. Think of the content you repeat across page after page, calls-to-action, promotional banners, contact details and opening hours, author bios, or legal disclaimers. With Elements, you create that content once in the new </span><strong>Library</strong><span class="font-size-normal"> section and drop it onto as many pages as you need with the new element picker. Update it in one place and it updates everywhere, a single source of truth your editors can manage with confidence.</span></p>
-</div>
-</div>
-
-
-<dc-video-picker-media source="https://umbraco.com/media/e0gp0ntq/elements-short-demo.mp4" name="Demo of Elements - Phase One" length="" thumbnail="https://umbraco.com/media/zxpbtx5o/screenshot-2026-05-26-at-135133.png?width=1360&amp;height=765&amp;format=webp&amp;quality=85&amp;v=1dced061280f460" format="169">
-    <video slot="video" controls="controls" poster="https://umbraco.com/media/zxpbtx5o/screenshot-2026-05-26-at-135133.png?width=1360&amp;height=765&amp;format=webp&amp;quality=85&amp;v=1dced061280f460" preload="none" width="100%" height="100%">
-        <source></source>
-        <p>
-            Your browser does not support HTML5 videos.
-            <a href="https://umbraco.com/media/e0gp0ntq/elements-short-demo.mp4">Here is a link to the video</a> instead.
-        </p>
-    </video>
-</dc-video-picker-media>
-
-
-
-<div class="dc-text-block justify-center " id="BsxAB">
-
-    <div class="dc-text-block__content">
-<p><span class="font-size-normal">In practice, the reusable content most teams work with is built using </span><strong>blocks, </strong><span class="font-size-normal">and the full Block Editor integration, so you can reuse blocks directly from the Library, is </span><strong>coming later this year.</strong></p>
-<p><span class="font-size-normal">If you want all the details about Umbraco 18, find it in </span><a data-router-slot="disabled" href="https://umbraco.com/blog/umbraco-18-release-candidate/" target="_blank" title="https://umbraco.com/blog/umbraco-18-release-candidate/" type="external"><u>the Release Candidate blog post here.</u></a></p>
-<h3>From NPoco to Entity Framework Core</h3>
-<p><span class="font-size-normal">We're updating how Umbraco talks to the database, moving from the NPoco micro-ORM (object relation-mapper) to </span><strong>Entity Framework Core</strong><span class="font-size-normal">. It's an under-the-hood shift with a few benefits:</span></p>
-<ul>
-<li><p><strong>A more standard experience for .NET developers.</strong><span class="font-size-normal"> EF Core is the default data-access layer in modern .NET, so developers already know its LINQ querying, migrations, and patterns, with far less Umbraco-specific plumbing to learn.<br></span></p></li>
-<li><p><strong>Easier, faster testing.</strong><span class="font-size-normal"> EF Core's in-memory and SQLite providers let developers test data-access logic without a full database, making tests quicker to write and more reliable.<br></span></p></li>
-<li><p><strong>More flexibility in where your data lives. </strong><span class="font-size-normal">A cleaner data-access abstraction opens the door to storage options beyond what's supported today.</span></p></li>
-</ul>
-<p><strong>Entity Framework is targeting Umbraco 19.</strong></p>
-<h3>The Umbraco Search abstraction is final: ready to bring your search engine to Umbraco?</h3>
-<p><span class="font-size-normal">Umbraco Search introduces a new, </span><strong>provider-based</strong><span class="font-size-normal"> search architecture. The headline is that the </span><strong>search abstraction layer has</strong><span class="font-size-normal"> reached a </span><strong>final release.</strong><span class="font-size-normal"> It gives developers one consistent way to express advanced search: full-text querying, filtering, faceting, sorting, language and segment support, results that respect protected-content access, and indexing of Umbraco's property editors, and, because it's provider-based, the freedom to plug in the search engine of your choice. </span></p>
-<p><span class="font-size-normal">Examine will remain the default search provider out of the box with Umbraco, and its support for all the search features above is currently in beta.</span></p>
-<p><span class="font-size-normal">If you're ready to build on the abstraction layer with a search provider other than Examine, this final release is for you. A stable API you can adopt and code against today.</span></p>
-<p><span class="font-size-normal">Looking ahead, the plan is to bring Umbraco Search into the CMS core from Umbraco 19, eventually replacing today's built-in search. </span></p>
-<p><strong>For developers:</strong><span class="font-size-normal"> available now for Umbraco 17 and soon for Umbraco 18. See the</span><a data-router-slot="disabled" href="https://github.com/umbraco/Umbraco.Cms.Search/" type="external"><span class="font-size-normal"> </span></a><a data-router-slot="disabled" href="http://Umbraco.Cms.Search" target="_blank" title="http://Umbraco.Cms.Search" type="external"><u>Umbraco.Cms.Search</u></a><a data-router-slot="disabled" href="https://github.com/umbraco/Umbraco.Cms.Search/" type="external"><u> package</u></a><span class="font-size-normal"> and the</span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-search" target="_blank" title="https://docs.umbraco.com/umbraco-search" type="external"><span class="font-size-normal"> </span><u>Umbraco Search docs</u></a><span class="font-size-normal">, plus Kenn Jacobsen's walkthrough with working </span><a data-router-slot="disabled" href="https://kjac.dev/posts/mix-and-match-search-providers/" target="_blank" title="https://kjac.dev/posts/mix-and-match-search-providers/" type="external"><u>Elasticsearch and Typesense providers</u></a><span class="font-size-normal">. </span></p>
-<h2>
-<a id="Cloud"></a>Umbraco Cloud</h2>
-<p><span class="font-size-normal">This quarter, Umbraco Cloud is all about </span><strong>self-service, </strong><span class="font-size-normal">ensuring you can get the information you need immediately and act proactively. Here's what's recently landed, and what you can look forward to next.</span></p>
-<p><span class="font-size-normal">Running a portfolio of client solutions? Arnold Visser recently covered the bigger picture behind these updates:</span><a data-router-slot="disabled" href="https://umbraco.com/blog/more-visibility-more-control-whats-new-in-umbraco-cloud/" target="_blank" title="https://umbraco.com/blog/more-visibility-more-control-whats-new-in-umbraco-cloud/" type="external"><span class="font-size-normal"> </span><u>More Visibility, More Control: What's New in Umbraco Cloud</u></a><span class="font-size-normal">.</span></p>
-<h3>See everything, before anyone has to ask</h3>
-<p><span class="font-size-normal">When traffic shifts or a campaign goes live, you want answers in seconds, not a support ticket. The new </span><strong>Traffic &amp; Performance</strong><span class="font-size-normal"> dashboard brings that insight straight into the Cloud Portal: a customizable graph for CPU, memory, and requests, plus KPI cards for requests, data transfer, cache hit rate, and more. You can break traffic down by cache status, country, and device. </span></p>
-<p><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cloud/optimize-and-maintain-your-site/monitor-and-troubleshoot/traffic-and-performance" target="_blank" title="https://docs.umbraco.com/umbraco-cloud/optimize-and-maintain-your-site/monitor-and-troubleshoot/traffic-and-performance" type="external"><u>Traffic &amp; Performance docs →</u></a><span class="font-size-normal"> </span></p>
-</div>
-</div>
-
-
-<div class="dc-image-block " id="oXBce">
-
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/4hecs2io/traffic-and-peformance.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf1b1fa6f3610 662w, https://umbraco.com/media/4hecs2io/traffic-and-peformance.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf1b1fa6f3610 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/4hecs2io/traffic-and-peformance.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf1b1fa6f3610" alt="traffic and peformance.png" class="dc-image" loading="lazy">
-
-        </div>
-</div>
-
-
-
-<div class="dc-text-block justify-center " id="iuAUa">
-
-    <div class="dc-text-block__content">
-<p><span class="font-size-normal">It combines </span><strong>Azure Monitor</strong><span class="font-size-normal"> application metrics with </span><strong>Cloudflare</strong><span class="font-size-normal"> edge analytics in a single view, so you see your application and the edge in front of it together. No extra tooling, no manual exports.</span></p>
-<h3>Deploy on your terms - to any environment</h3>
-<p><span class="font-size-normal">Your pipeline should land each change exactly where you want it. With </span><strong>CI/CD: Deploy to any environment</strong><span class="font-size-normal">, it now does. Previously, your pipeline was pushed to your development environment, and you promoted through the Portal from there. Now, a single push from your own CI/CD pipeline lands in any environment you choose. Be it dev, staging, or straight to production for that urgent fix, all without disturbing work-in-progress elsewhere - one push, done.</span></p>
-<p><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cloud/build-and-customize-your-solution/handle-deployments-and-environments/umbraco-cicd" target="_blank" title="https://docs.umbraco.com/umbraco-cloud/build-and-customize-your-solution/handle-deployments-and-environments/umbraco-cicd" type="external"><u>CI/CD on Umbraco Cloud docs →</u></a></p>
+<div class="column-block">
+<div class="dc-block-list">
+<div class="dc-text-block justify-center" id="mWhbE">
+<div class="dc-text-block__content"><p><strong>Name:</strong> Ben Szymanski</p><p><strong>Pronouns:</strong> He/him</p><p><strong>Company name: </strong>HyperFast Interactive</p><p><strong>Job title: </strong><span class="font-size-normal">Software Engineer</span></p><p><strong>Country/Region: </strong>Florida, United States</p><p><strong>How long have you been working with Umbraco?: </strong>Exactly ten years!</p></div>
 </div>
 </div>
-
-
-<div class="dc-image-block " id="JVfCo">
-
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/13yfxw0j/pu_clouddeploy_6.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcb14de663ca90 662w, https://umbraco.com/media/13yfxw0j/pu_clouddeploy_6.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcb14de663ca90 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/13yfxw0j/pu_clouddeploy_6.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcb14de663ca90" alt='A settings page for "More options" regarding CI/CD Flow deployments. It includes a toggle for "Deployments to any target" and a table listing supported environment types like Flexible and Mainline.' class="dc-image" loading="lazy">
-
-        </div>
 </div>
+<div class="column-block">
+<div class="dc-block-list">
+<div class="dc-image-block" id="ihYeo">
 
-
-
-<div class="dc-text-block justify-center " id="dJQjF">
-
-    <div class="dc-text-block__content">
-<h3>A sharper Sustainability Dashboard</h3>
-<p><span class="font-size-normal">For teams with ESG reporting to answer to, the </span><strong>Sustainability Dashboard</strong><span class="font-size-normal"> has been rebuilt on an improved carbon-emissions methodology for more accurate reporting. The update adds multiple component tracking, date-range filtering, and period-on-period comparisons, with an organisation-level overview and per-project drill-down. So the numbers behind your client conversations are both more accurate and easier to work with.</span></p>
+<div class="dc-image-wrapper">
+<img alt="Ben Szymanski Profile picture" class="dc-image" loading="lazy" src="https://umbraco.com/media/akchhyhq/szymanski_ben_073124.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a9ae56630"/>
 </div>
-</div>
-
-
-<div class="dc-image-block " id="gyJBu">
-
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/lhtozvxc/cloud_sustainability_dashboard.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf733378c3300 662w, https://umbraco.com/media/lhtozvxc/cloud_sustainability_dashboard.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf733378c3300 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/lhtozvxc/cloud_sustainability_dashboard.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf733378c3300" alt="Cloud_Sustainability_Dashboard.png" class="dc-image" loading="lazy">
-
-        </div>
 </div>
-
-
-
-<div class="dc-text-block justify-center " id="HzAOW">
-
-    <div class="dc-text-block__content">
-<h3>More self-service wins</h3>
-<p><span class="font-size-normal">A handful of smaller improvements that take the support ticket out of everyday operations:</span></p>
-<ul>
-<li><p><strong>Custom error pages</strong><span class="font-size-normal"> make it possible to upload your own branded HTML and assign it per hostname, so visitors see your page during brief pauses instead of a generic error.</span></p></li>
-<li><p><strong>Start and stop environments</strong><span class="font-size-normal"> and </span><strong>opt out of automatic patch upgrades</strong><span class="font-size-normal">, all directly from the Portal, on your schedule.</span></p></li>
-<li><p><span class="font-size-normal">The </span><strong>Windows Event</strong><span class="font-size-normal"> </span><strong>log messages</strong><span class="font-size-normal"> are now visible on the environment log page and can be downloaded without going through Kudu.</span></p></li>
-<li><p><strong>Basic Authentication on all plans </strong><span class="font-size-normal">improves access control, and </span><strong>anonymized backoffice users on team removal</strong><span class="font-size-normal"> ensures audit history is preserved, and personal data is cleared.</span></p></li>
-</ul>
-<p><span class="font-size-normal">See it all in the</span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cloud/release-notes/overview-2026" type="external"><span class="font-size-normal"> </span><u>Umbraco Cloud release notes for 2026 →</u></a></p>
-<h2>Umbraco Cloud: Coming up</h2>
-<p><span class="font-size-normal">The self-service focus continues into the second half of the year, with more impactful improvements on the way. Scaling and performance are also high on the agenda, with some of the most highly requested features and workflows already in development. The </span><a data-router-slot="disabled" href="https://umbraco.com/products/knowledge-center/roadmap/" type="external"><u>product roadmap</u></a><span class="font-size-normal"> has been updated to reflect all of this, and you can find more details right here: </span></p>
-<h3>Scale on demand: Load Balancing &amp; Dedicated Redis Cache</h3>
-<p><span class="font-size-normal">A high-stakes campaign or a sudden traffic spike shouldn't be a capacity gamble. From </span><strong>July 1</strong><span class="font-size-normal">, 2026, it won't be.</span></p>
-<p><strong>Load Balancing</strong><span class="font-size-normal"> distributes your project's traffic across multiple instances on scaling App Service Plans, so when demand climbs during a launch, a campaign, or a heavy workload, your site spreads the load instead of straining a single server. It's one of the most requested capabilities in Umbraco Cloud, built for projects with demanding traffic requirements.</span></p>
-<p><span class="font-size-normal">Launching alongside it is the </span><strong>Dedicated Redis Cache</strong><span class="font-size-normal"> that powers reliable multi-instance scaling: out-of-process sessions that survive recycles and a coordination layer ready before you scale out. And it's worth adding, even if you never load balance as a second-level cache, it reduces database load and improves response times on a single-instance project too. </span></p>
-<p><span class="font-size-normal">A couple of honest details: Load Balancing runs on dedicated resources, and at launch, it uses sticky sessions, with round-robin routing to follow. Building for it now? Write your code as if it's round-robin; round-robin-safe code always works on sticky, but not the other way around.</span></p>
-<p><strong><span class="font-size-normal">ETA: July 1, 2026</span></strong></p>
 </div>
 </div>
-
-
-<div class="dc-image-block " id="nFRBR">
-
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/0oalhnps/cloud_load_balancing.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf73348fc7690 662w, https://umbraco.com/media/0oalhnps/cloud_load_balancing.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf73348fc7690 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/0oalhnps/cloud_load_balancing.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf73348fc7690" alt="Cloud_Load_Balancing.png" class="dc-image" loading="lazy">
-
-        </div>
 </div>
-
-
-
-<div class="dc-text-block justify-center " id="oRxBq">
+<div class="dc-text-block justify-center" id="ooFeE">
 
-    <div class="dc-text-block__content">
-<h3>Peace of mind for operations</h3>
-<p><span class="font-size-normal">Three updates land in the fall that take the guesswork out of running your projects:</span></p>
-<h4>
-<strong>Notifications &amp; Alerting</strong> </h4>
-<p><span class="font-size-normal">Subscribe to platform events via email or webhook and route alerts into the tools your team already uses, like Slack. Get notified about hostname-monitoring failures, DDoS mitigations, and other events that need your attention, delivered where they'll actually be seen.</span></p>
-<h4>
-<strong>Recommendations based on health checks</strong> </h4>
-<p><span class="font-size-normal">Proactive health checks for your hosting setup, right in the Portal. Think Umbraco CMS Health Checks, but for your Cloud project: clear guidance across security, performance, operations, and best practices, with scores you can track over time.</span></p>
-<h4>
-<strong>Scheduled Upgrades</strong> </h4>
-<p><span class="font-size-normal">Pick the timeframe for automatic upgrades of Umbraco CMS, Forms, and Deploy, so you get the convenience of automated handling on a schedule that suits you. (Security patches still ship as soon as they're available.)</span></p>
-<p><strong>ETA: Q3 2026</strong></p>
-<h3>Deploy like any other .NET app: Artifact Deployments &amp; Rolling Updates</h3>
-<p><span class="font-size-normal">Looking a little further out, </span><strong>Artifact Deployments</strong><span class="font-size-normal"> brings the .NET deployment standard to Umbraco Cloud. Use your existing CI/CD tools to build a final, ready-to-run artifact and push it to Umbraco Cloud. From there, we handle deployment and infrastructure. You get full control over your build process and more predictable deployments, with Git Deployments staying fully supported for teams that prefer them.</span></p>
-<p><span class="font-size-normal">It also unlocks </span><strong>Rolling Updates</strong><span class="font-size-normal">: new versions are staged alongside the live environment and traffic cuts over automatically, keeping your site fully available throughout. No more working around low-traffic windows. Your team ships when it makes sense.</span></p>
-<p><strong>ETA: Q4 2026</strong></p>
-<h2>
-<a id="Compose"></a>Umbraco Compose</h2>
-<p><span class="font-size-normal">Since the launch of Umbraco Compose on February 3, 2026, we’ve been focusing on improving the visibility, flexibility, predictability, and developer experience of the platform.</span></p>
-<p><span class="font-size-normal">Whether you are managing complex data structures, setting up new integrations, or querying your content, these new releases are all about putting you in control and making your workflows smoother. This includes major updates to the portal UI, more granular control over your data ingestion, and leveling up our GraphQL capabilities.</span></p>
-<p><span class="font-size-normal">Let’s take a look at what has changed.</span></p>
-<h3>A Better Experience in the Portal</h3>
-<p><span class="font-size-normal">In the portal, you now have a dedicated visual space to manage your </span><strong>API applications</strong><span class="font-size-normal"> - including the handling of scopes - so that you can control which environment and how much access a set of ClientID and Client Secret should have. We’ve also introduced </span><strong>Ingested Content Diagnosis</strong><span class="font-size-normal">. This new UI feature gives you clear visibility into your ingested data - no matter if a TypeSchema covers your data and thereby makes it queryable through the GraphQL API. You’ll be able to filter on properties like environment, collection, and TypeSchema, and you’ll be able to dig into a specific payload and see the stored JSON. This way, you can easily debug and track down issues, and ensure your content from external systems is mapped and flowing exactly as it should.<br></span></p>
+<div class="dc-text-block__content"><h2>How did you first stumble into the Umbraco Community—and what made you stay?</h2><p>I was blindly thrown into it!</p><p>I took my first agency job in 2016, and my new manager happened to be leaving for vacation the week after I started. He left me a laundry list of stuff to do while he was away, and I think it was kind of a test of how I would actually perform, if I was resourceful, if I could work independently and handle the chaos of agency life.</p><p>One of those tasks was enhancing the website’s search results by including uploaded PDF media. I had never even heard of Umbraco before, but was quickly impressed with the organization of the backoffice, the ergonomics of how the content is organized and the APIs for accessing the content, and the amount of control the entire system enables for developers.</p><p>It was a tall order, as I didn’t even know what a doc type was. Fortunately, I happened to find one of Shannon Deminick’s tweets (<a data-router-slot="disabled" href="https://nitter.net/shazwazza/status/45369082240974848" type="external">https://nitter.net/shazwazza/status/45369082240974848</a>) about how he had implemented multi-search indexing in Examine. I found the commit on GitHub, got an understanding of how it worked and then tried it on the client’s website.</p><p>It all worked, and it worked far better than trying to combine two indexes into a single collection or any other approach. I was immediately impressed.</p><p>As for what made me stay, I always appreciated how the Umbraco community was over the top (in a good way), had a zany energy, but was simultaneously churning out a tasteful, sophisticated, world-class product. I knew that was my crew.</p><p></p></div>
 </div>
-</div>
-
-
-<div class="dc-image-block " id="MNAwd">
-
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/qitcbtva/compose_portal.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf733590b2e50 662w, https://umbraco.com/media/qitcbtva/compose_portal.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf733590b2e50 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/qitcbtva/compose_portal.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf733590b2e50" alt="Compose_portal.png" class="dc-image" loading="lazy">
+<div class="dc-text-block justify-center" id="ojnpx">
 
-        </div>
+<div class="dc-text-block__content"><h2>What do you do in the Community? Any special areas you’re passionate about?</h2><p>I was most recently part of the 2025 Community Docs team and was so grateful for the experience! Working directly with HQ and alongside other Umbracians around the world - people I might never have met otherwise as a solo developer - was super cool.</p><p>I think for a lot of people, they expect that to “contribute” to Umbraco, you’ll need serious chops to sling code and get it merged into the core Umbraco project. While I love the art of software engineering, I struggle to jump from paid development work to sending in development contributions. I need a little more variety in my daily activities, and working on the platform documentation gave me just that!</p></div>
 </div>
+<div class="dc-image-block" id="WivBC">
 
-
-
-<div class="dc-text-block justify-center " id="BnNxO">
-
-    <div class="dc-text-block__content">
-<h3>Focus on Integrations</h3>
-<p><span class="font-size-normal">Umbraco Compose is all about bringing your content together, no matter where they come from. However, for the Umbraco CMS, we have now open-sourced the two </span><strong>Umbraco CMS Integrations</strong><span class="font-size-normal">. Besides using the source code for inspiration or contributing more features, you’ll also find example integrations to third-party systems, and it will hold an upcoming CLI tool.</span></p>
-<p><span class="font-size-normal">To supplement the connection to external tools, you can now take advantage of </span><strong>Outbound Webhook Functions</strong><span class="font-size-normal">. These allow your Compose projects to manipulate the outbound webhook through a JavaScript function, in a similar way as you can do it through the Ingestion Functions when data is sent to Compose. One important use case for the Outbound Webhook Functions is integration with a third-party search engine, so that you have full control of what’s sent to the search index.</span></p>
-<h3>Advanced Ingestion Control</h3>
-<p><span class="font-size-normal">When managing content at scale, you need granular control over your data limits and lifecycles. We’ve added the ability to perform </span><strong>Ingestion Filter Deletes</strong><span class="font-size-normal"> using a where clause. This way, you can easily delete a batch of data based on your custom criteria. This keeps your database clean, your queries fast, and your data orchestration highly accurate.</span></p>
-<p><span class="font-size-normal">Sometimes you might need to update the same piece of content from multiple systems - e.g. a price on your products that will be updated in the ERP while other product properties are maintained in a PIM. With the new support for </span><strong>Ingestion Patch</strong><span class="font-size-normal"> and </span><strong>Merge-patch</strong><span class="font-size-normal">, you no longer need to know and send the full payload, as you can now apply partial updates to your ingested content. This gives you flexibility in your integrations, and it saves bandwidth.</span></p>
-<h3>Empowering Developers</h3>
-<p><span class="font-size-normal">For the frontend developers consuming your orchestrated data, we’ve added support for </span><strong>Interfaces</strong><span class="font-size-normal"> and </span><strong>Unions</strong><span class="font-size-normal"> in our GraphQL API.</span></p>
-<p><span class="font-size-normal">What does this mean for you?</span></p>
-<ul>
-<li><p><strong>Interfaces</strong><span class="font-size-normal">: You can now define shared fields across multiple TypeSchemas. This makes your queries much more flexible, allows for cleaner code on the frontend, and simplifies your overall schema.<br></span></p></li>
-<li><p><strong>Support for Unions</strong><span class="font-size-normal">: Unlike interfaces, where all types implementing it can be queried, unions allow you to tell GraphQL that only a specific set of types can be returned from a field, without the types having to implement a common interface.</span></p></li>
-</ul>
-<p><span class="font-size-normal">All this means smarter, more predictable, and strongly typed API responses as the standard.</span></p>
-<h3>Updated tiers with more ingestions - no additional cost</h3>
-<p><span class="font-size-normal">Last, but definitely not least, we’ve listened to many of you, and have today announced new and </span><strong>much higher ingestion limits for our tiers</strong><span class="font-size-normal">. Previously, our Professional tier included 30.000 ingestions - this is now 100.000 and for Enterprise, we’ve upgraded from 300.000 to 1.000.000. We can’t wait to see what you’ll build with Umbraco Compose. </span></p>
-<h2>Umbraco Compose: Coming up</h2>
-<p><span class="font-size-normal">As we look toward the next quarter, here is a sneak peek at what we are actively working on or expect to start working on in the near future:</span></p>
-<ul>
-<li><p><strong>Ingestion Functions</strong><span class="font-size-normal">: A dedicated UI space to easily configure, manage, and monitor your ingestion functions. </span><br></p></li>
-<li><p><strong>US Region Support</strong><span class="font-size-normal">: Expanding our infrastructure to offer a dedicated US Region, ensuring lower latency and regional compliance for our North American users.</span><br></p></li>
-<li><p><strong>CLI Tool</strong><span class="font-size-normal">: A command-line interface to supercharge your local setup, automation, and AI developer workflows.</span><br></p></li>
-<li>
-<p><strong>Environment Synchronization</strong><span class="font-size-normal">: Tools to seamlessly manage and synchronize your Compose configurations across multiple environments (Dev, Staging, Live).</span></p>
-<p></p>
-</li>
-</ul>
-<h2>
-<a id="Commerce"></a>Umbraco Commerce: Coming up</h2>
-<h3>Customer Management: a single customer view for Umbraco Commerce</h3>
-<p></p>
+<figure>
+<div class="dc-image-wrapper">
+<img alt="People sitting around a table with flying confetti" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/dhbe2bvu/community-docs-team.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a95c831f0" srcset="/media/dhbe2bvu/community-docs-team.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a95c831f0 662w, /media/dhbe2bvu/community-docs-team.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a95c831f0 1360w"/>
 </div>
-</div>
-
-
-<div class="dc-image-block " id="ArkEr">
-
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/3lhkrdwg/commerce_management.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf7336738a2f0 662w, https://umbraco.com/media/3lhkrdwg/commerce_management.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf7336738a2f0 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/3lhkrdwg/commerce_management.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf7336738a2f0" alt="Commerce_management.png" class="dc-image" loading="lazy">
-
-        </div>
+<figcaption>We had a lot to celebrate in our Community Docs Team (2025) meetup! (I’m still finding confetti in my bags!)</figcaption>
+</figure>
 </div>
-
+<div class="dc-text-block justify-center" id="JXwDg">
 
-
-<div class="dc-text-block justify-center " id="GQUkU">
-
-    <div class="dc-text-block__content">
-<p><span class="font-size-normal">One of the most requested capabilities for Umbraco Commerce has been a better way to understand and manage customers beyond individual orders. We’re excited to share that Customer Management is now approaching partner testing.</span></p>
-<p><span class="font-size-normal">Customer Management introduces a dedicated customer entity and a new customer workspace in Umbraco Commerce. Instead of viewing customer information across multiple orders, you can now access a consolidated customer profile containing customer details, order history, communication records, addresses, tags, and key customer metrics in one place.</span></p>
-<h4>A complete customer overview</h4>
-<p><span class="font-size-normal">The new Customers section provides a dedicated overview of all customers in your store. You can search, sort, filter, and export customer data while gaining quick access to important business metrics such as:</span></p>
-<ul>
-<li><p><span class="font-size-normal">Active customers</span></p></li>
-<li><p><span class="font-size-normal">Average Customer Lifetime Value (CLV)</span></p></li>
-<li><p><span class="font-size-normal">Average Order Value (AOV)</span></p></li>
-<li><p><span class="font-size-normal">Total customer count</span></p></li>
-</ul>
-<p><span class="font-size-normal">The overview is designed to help customer service, sales, and ecommerce teams quickly identify valuable customers and understand purchasing behaviour across the store.</span></p>
-<h4>Rich customer profiles</h4>
-<p><span class="font-size-normal">When you select a customer, a dedicated customer profile opens where all relevant information is gathered into a single experience.</span></p>
-<p><span class="font-size-normal">You can view:</span></p>
-<ul>
-<li><p><span class="font-size-normal">Customer details and communication preferences</span></p></li>
-<li><p><span class="font-size-normal">Customer Lifetime Value (CLV)</span></p></li>
-<li><p><span class="font-size-normal">Average Order Value (AOV)</span></p></li>
-<li><p><span class="font-size-normal">Purchase frequency</span></p></li>
-<li><p><span class="font-size-normal">Return statistics</span></p></li>
-<li><p><span class="font-size-normal">Tags and segmentation</span></p></li>
-<li><p><span class="font-size-normal">Complete order history</span></p></li>
-<li><p><span class="font-size-normal">Communication timeline</span></p></li>
-<li><p><span class="font-size-normal">Shipping and billing addresses</span></p></li>
-</ul>
-<p><span class="font-size-normal">The profile also includes visual indicators that compare individual customer performance against store-wide averages, making it easier to identify high-value customers and customers that may require additional attention.</span></p>
-<h4>Communication history</h4>
-<p><span class="font-size-normal">Customer Management introduces a built-in communication timeline.</span></p>
-<p><span class="font-size-normal">Backoffice users can log customer interactions such as:</span></p>
-<ul>
-<li><p><span class="font-size-normal">Phone calls</span></p></li>
-<li><p><span class="font-size-normal">Emails</span></p></li>
-<li><p><span class="font-size-normal">Chat conversations</span></p></li>
-<li><p><span class="font-size-normal">WhatsApp messages</span></p></li>
-</ul>
-<p><span class="font-size-normal">Each communication moment is attributed to the Umbraco backoffice user who created it and can optionally be linked to a specific order. This creates a lightweight CRM-style history directly inside Umbraco Commerce and helps teams maintain context across customer interactions.</span></p>
-<h4>Customer tagging and segmentation</h4>
-<p><span class="font-size-normal">Customers can be tagged directly from their profile, making it easier to organise and filter customer groups.</span></p>
-<p><span class="font-size-normal">Tags are available throughout the customer management experience and can be used when filtering customers in the customer overview. This provides a simple but effective way to create operational customer segments such as VIP customers, loyal customers, wholesale customers, or region-specific customer groups.</span></p>
-<h4>Address management</h4>
-<p><span class="font-size-normal">Customer Management introduces dedicated shipping and billing address management.</span></p>
-<p><span class="font-size-normal">During migration, existing customer addresses can be extracted from historical orders and consolidated into customer profiles. Teams can maintain multiple shipping and billing addresses, define defaults, and manage addresses independently from historical order data.</span></p>
-<h4>Flexible integrations</h4>
-<p><span class="font-size-normal">Customer Management is designed to work both as a standalone Commerce feature and as part of larger solution architectures.</span></p>
-<p><span class="font-size-normal">Customer information can be owned directly by Umbraco Commerce or provided through external systems using the Customer Adapter architecture. This allows businesses to keep CRM systems as the source of truth while still giving customer service teams visibility inside Umbraco Commerce.</span></p>
-<p><span class="font-size-normal">Where customers are linked to Umbraco Members, Customer Management also provides direct navigation between Commerce and Membership data.</span></p>
-<p><strong><em>Customer Management is currently being prepared for partner testing</em></strong></p>
-<h2>
-<a id="Engage"></a>Umbraco Engage</h2>
-<h3>Traffic Filter</h3>
-<p><span class="font-size-normal">Keep your analytics clean and trustworthy. With the Traffic filter, you can set up rules to exclude unwanted visits - such as bots, internal staff or specific countries - based on IP address, IP range, user agent and more. Available since Engage 17.2</span></p>
+<div class="dc-text-block__content"><h2>Favorite memory, proudest moment, or wildest experience?</h2><p>I hope this doesn’t seem overly predictable, but I’d have to say my proudest Umbraco moment was being selected as an Umbraco MVP (class of 2026!). I spent years mostly admiring the community from the sidelines, so being recognized by that same ecosystem felt surreal.</p></div>
 </div>
-</div>
-
-
-<div class="dc-image-block " id="kYgrx">
+<div class="dc-text-block justify-left" id="wTUnr">
 
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/yw0hknsz/engage_traffic_filter.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf73376d055f0 662w, https://umbraco.com/media/yw0hknsz/engage_traffic_filter.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf73376d055f0 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/yw0hknsz/engage_traffic_filter.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf73376d055f0" alt="Engage_traffic_Filter.png" class="dc-image" loading="lazy">
-
-        </div>
+<div class="dc-text-block__content"><h2>What are you working on right now?</h2><p>I have been burning the midnight oil building a package for Umbraco called FastGooey, and I view it as the most important piece of software I’ve ever written.</p><p>The concept itself, server-driven user interface (or SDUI), isn’t particularly new. It has existed in the form of TV Markup Language (TVML) on the Apple TV platform for well over a decade and was later adopted by Airbnb, Lyft and Spotify in their native mobile applications.</p><p>This architecture gives native apps the kind of rapid publishing workflow we’ve all gotten used to on the web: updating content, rearranging or redesigning layouts, or changing the representation altogether without recompiling or pushing a new App Store update. FastGooey applies that same idea to Umbraco, so those changes can be managed from the backoffice.</p><p>SDUI is a super powerful concept, but we usually only see these kinds of systems being built by large engineering organizations. In other words, it’s been highly inaccessible to most. If we take the same concept and apply it on top of something extremely accessible, like Umbraco, I think it has the potential to change the landscape, at least in terms of how people view the use cases, limits, and purposes of CMSes today.</p><p>It took a lot of trial and error to figure out how to apply principles of hypermedia systems on top of Umbraco, and be useful to where I could say “this is good enough that I’d use it myself.” It also took layers of simplification on top of simplification, until I had a system that was “copy-paste” easy.</p><p>Dare I say, it kind of feels like magic.</p><p></p></div>
 </div>
-
+<div class="dc-text-block justify-left" id="WyuCU">
 
-
-<div class="dc-text-block justify-center " id="EwzXe">
-
-    <div class="dc-text-block__content">
-<h2>Umbraco Engage: Coming up</h2>
-<h3>AI-powered insights for Umbraco Engage</h3>
-<p><span class="font-size-normal">We're excited to share the first steps of bringing </span><strong>Agent Copilot to Umbraco Engage</strong><span class="font-size-normal">.</span></p>
-<p><span class="font-size-normal">Understanding audience behavior often means navigating dashboards and reports to find the answers you're looking for. With Agent Copilot, we're making it easier to interact with Engage data using natural language.</span></p>
-<p><span class="font-size-normal">Instead of searching through analytics, users can ask questions such as:</span></p>
-<ul>
-<li><p><span class="font-size-normal">Which content is performing best?</span></p></li>
-<li><p><span class="font-size-normal">What are the most visited pages?</span></p></li>
-<li><p><span class="font-size-normal">Which campaigns drive the most conversions?</span></p></li>
-<li><p><span class="font-size-normal">How has audience engagement changed over time?</span></p></li>
-</ul>
-<p><span class="font-size-normal">This first phase focuses on enabling Agent Copilot to understand and interact with data collected by Umbraco Engage. By connecting Engage data with the selected LLM, marketers, editors, product owners, and agency teams can explore insights through conversation rather than traditional reporting interfaces.</span></p>
-<h3>Looking ahead</h3>
-<p><span class="font-size-normal">This is the first step in a broader vision for AI within Umbraco Engage. Future iterations will focus on helping users move from insights to action, including deeper analysis, audience segmentation, and personalized content experiences.</span></p>
-<p><span class="font-size-normal">We're looking forward to sharing more as we continue developing Agent Copilot for Engage together with our partners and community.</span></p>
-<p><span class="font-size-normal">Expected to be released in Q3</span></p>
-<h2>
-<a id="Deploy"></a>Umbraco Deploy: Coming up</h2>
-<h3>Umbraco Deploy UX overhaul</h3>
-<p><span class="font-size-normal">Umbraco Deploy gets a major UX overhaul in the Umbraco 18 release. A reimagined Deploy overview now shows environment titles, item counts, live progress, and entity icons for queued items, while the Settings area moves into a cleaner left-hand menu spanning Status, Schema, and Configuration. You can now export items and full environments straight from the tree or overview, import an environment ZIP, and restore directly from the content dashboard. Add to that wider dialogs, friendlier toggles and clearer wording - making everyday deployments faster and far more intuitive.</span></p>
-</div>
+<div class="dc-text-block__content"><h2>Your top 3 tips for someone new to Umbraco or the Community?</h2><p><strong>Tip 1: Start showing up to events!</strong></p><p>I have been a fan of Umbraco since 2016, but lurked in the shadows, watching events like CodeGarden, thinking that they were too “big” and too cool for me. I finally got myself to Umbraco US Fest in 2024 and was shocked at how awesome and welcoming everyone was in person.</p><p>I’d also say that people in the Umbraco community aren’t just friendly, but also intelligent and usually have fascinating personal lives/stories.</p><p><strong>Tip 2: There’s Plenty To Do</strong></p><p>Get “stuck in” as my UK friends would say. Ask Umbracians, either who work for HQ or visible non-HQ Umbracians around in the community. There’s tons of ways to contribute, give back and find even more Umbraco friends. It’s a great feeling to write code or documentation, or a helpful forum post that other Umbracians around the world use and reference. You can also find these opportunities on the new community website, too.</p><p><strong>Tip 3: Subscribe to </strong><a data-router-slot="disabled" href="http://UMB.FYI" type="external"><strong>UMB.FYI</strong></a></p><p>There are so many different online places to visit to keep up with Umbraco news and happenings - articles on Skrift, blog posts on Substack or Medium or <a data-router-slot="disabled" href="http://dev.to" type="external">dev.to</a>, Discord, the Umbraco Forums… <a data-router-slot="disabled" href="http://UMB.FYI" type="external">UMB.FYI</a> is the easiest way to stay in the loop!</p><p></p></div>
 </div>
+<div class="dc-image-block" id="mYDJj">
 
-
-<div class="dc-image-block " id="dhbVu">
-
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/k13pyewi/deploy_overview.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf733940fd2d0 662w, https://umbraco.com/media/k13pyewi/deploy_overview.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf733940fd2d0 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/k13pyewi/deploy_overview.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf733940fd2d0" alt="Deploy_overview.png" class="dc-image" loading="lazy">
-
-        </div>
+<figure>
+<div class="dc-image-wrapper">
+<img alt="Smiling people at an after party" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/a4ynbneh/us-fest-2025.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1aa64b7d70" srcset="/media/a4ynbneh/us-fest-2025.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1aa64b7d70 662w, /media/a4ynbneh/us-fest-2025.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1aa64b7d70 1360w"/>
 </div>
-
-
-<div class="dc-image-block " id="RLRjI">
-
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/wrcl4afy/deploy_overview2.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf733a0ec3660 662w, https://umbraco.com/media/wrcl4afy/deploy_overview2.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf733a0ec3660 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/wrcl4afy/deploy_overview2.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf733a0ec3660" alt="Deploy_overview2.png" class="dc-image" loading="lazy">
-
-        </div>
+<figcaption>The after-after party from Umbraco US Festival 2025</figcaption>
+</figure>
 </div>
-
+<div class="dc-text-block justify-center" id="hxXnx">
 
-
-<div class="dc-text-block justify-center " id="LsaNJ">
-
-    <div class="dc-text-block__content">
-<h2>In other news… </h2>
-<h3>
-<a id="Codegarden"></a>When will all the Codegarden talks be available?</h3>
-<p><span class="font-size-normal">Codegarden is the best place to get your Umbraco product news - if you’re here with us now, lucky you; if not, remember that you can </span><a data-router-slot="disabled" href="https://codegarden.umbraco.com/tickets/" target="_blank" title="https://codegarden.umbraco.com/tickets/" type="external"><u>grab an online ticket! </u></a><span class="font-size-normal">This gives you access to the talks in our streaming app. </span></p>
-<p><span class="font-size-normal">Later this summer (ETA mid-August), all talks will be uploaded to the </span><a data-router-slot="disabled" href="https://www.youtube.com/@UmbracoHQ" target="_blank" title="https://www.youtube.com/@UmbracoHQ" type="external"><u>Umbraco YouTube channel</u></a><span class="font-size-normal"> (with a few exceptions coming sooner - Codegarden Keynote to name one). </span></p>
-<h3>
-<a id="Security"></a>Security Advisory: <a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><u>Umbraco.AI</u></a>
-</h3>
-<p><span class="font-size-normal">A moderate-severity vulnerability has been found and fixed in the </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><span class="font-size-normal">Umbraco.AI</span></a><span class="font-size-normal"> package, affecting the </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><span class="font-size-normal">Umbraco.AI</span></a><span class="font-size-normal"> core package, versions 1.0.0 through 1.13.x (all releases prior to the patch). </span><a data-router-slot="disabled" href="https://umbraco.com/blog/security-advisory-june-4-2026-security-patch-for-umbracoai-is-now-available/" target="_blank" title="https://umbraco.com/blog/security-advisory-june-4-2026-security-patch-for-umbracoai-is-now-available/" type="external"><u>Find all the details in the Security Advisory blog post</u></a><br></p>
-<h3>… Until next time</h3>
-<p><span class="font-size-normal">Remember that you can always keep yourself updated on what we’re working on “Now”, “Next”, and “Later” on the </span><a data-router-slot="disabled" href="https://umbraco.com/products/knowledge-center/roadmap/" title="umbraco.com" type="external"><span class="font-size-normal">Umbraco Product Roadmap</span></a><span class="font-size-normal"> as well as check up on all released features in the </span><a data-router-slot="disabled" href="https://umbraco.com/products/knowledge-center/roadmap/roadmap-history/" title="umbraco.com" type="external"><span class="font-size-normal">Umbraco Roadmap History. </span></a></p>
-<p><span class="font-size-normal">A large part of the work we do is inspired by the feedback we get from you. If you find issues or have specific feature requests, you can find the issue trackers for our products on the </span><a data-router-slot="disabled" href="https://github.com/umbraco" title="github.com" type="external"><span class="font-size-normal">Umbraco Github account.</span></a><span class="font-size-normal"> If you have product feedback, you’re welcome to reach out to us at </span><a data-router-slot="disabled" href="mailto:product@umbraco.com" type="external"><span class="font-size-normal">product@umbraco.com</span></a><span class="font-size-normal">.</span></p>
+<div class="dc-text-block__content"><h2>What’s next for you—any dreams, goals, or exciting plans?</h2><p>I’m also working toward joining the U.S. Coast Guard Reserve as a part-time officer. I was originally interested in response missions, like search and rescue and disaster response, both of which are very obviously different from my civilian life (hey, I said I like variety, right?). I’ve also heard the words “digital modernization initiatives” uttered (which I wouldn’t be disappointed with).</p><p>It’s a very competitive accession path, and I’m applying again after being placed on the alternate list last year. That was disappointing, but people who have been in the same spot I am right now have said that it’s a great sign to have made any list at all. Nevertheless, I continue to work on this goal.</p><p></p></div>
 </div>
-</div>
-
-        ]]></content:encoded>
-      <media:content url="https://umbraco.com/media/gmrb3q0o/some.png?width=1200&amp;height=628&amp;quality=85&amp;v=1dcf722b1e38920" medium="image"/>
-      <media:thumbnail url="https://umbraco.com/media/gmrb3q0o/some.png?width=1200&amp;height=628&amp;quality=85&amp;v=1dcf722b1e38920"/>
-    </item>
-<item>
-      <title>Umbraco Awards Winners 2026 🏆</title>
-      <link>https://umbraco.com/blog/umbraco-awards-winners-2026/</link>
-      <guid isPermaLink="true">https://umbraco.com/blog/umbraco-awards-winners-2026/</guid>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[Umbraco Awards 2026 winners are announced! Discover the outstanding projects and celebrate the amazing work within the Umbraco ecosystem.]]></description>
-      <content:encoded><![CDATA[<p data-start="115" data-end="432">The winners of the <strong data-path-to-node="0" data-index-in-node="19">Umbraco Awards 2026</strong> have just been crowned live on stage at <strong data-path-to-node="0" data-index-in-node="79">Codegarden</strong> 🏆 From Best Designed Site to Best Cloud Solution, this year’s projects capture the absolute finest in creativity, collaboration, and digital innovation across our community 👏 Dive in to see who earned the honors!</p>
-
+<div class="dc-image-block" id="MYAvZ">
 
-<div class="dc-text-block justify-center " id="uUUgn">
-
-    <div class="dc-text-block__content">
-<p>It’s <strong data-path-to-node="1" data-index-in-node="5">June 10, 2026</strong>. The lights have dimmed, the music is pumping, and the winners of the Umbraco Awards 2026 are officially stepping onto the stage at this year’s Codegarden. What an unforgettable moment!</p>
-<p data-path-to-node="2">Each year, the Umbraco Awards celebrate the most exceptional work within our global ecosystem - and this cohort has truly set a brand-new standard. From beautifully fluid user journeys to incredibly complex technical builds, these solutions demonstrate exactly what happens when imagination meets the power of the Umbraco platform.</p>
-<p data-path-to-node="3">A massive congratulations to all of tonight's winners. Your dedication, forward-thinking ideas, and craftsmanship continue to push the entire Umbraco community forward 🧡</p>
-<p data-path-to-node="4">Keep scrolling to explore the full list of winners 👇</p>
+<figure>
+<div class="dc-image-wrapper">
+<img alt="Ben standing in front of a boat " class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/hodb2cn0/us-coast-guard.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a9bd1e910" srcset="/media/hodb2cn0/us-coast-guard.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a9bd1e910 662w, /media/hodb2cn0/us-coast-guard.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a9bd1e910 1360w"/>
 </div>
+<figcaption>Volunteering with the US Coast Guard when USCGC Eagle visited downtown Pensacola</figcaption>
+</figure>
 </div>
-
+<div class="dc-text-block justify-center" id="HgVYO">
 
-
-<div class="dc-text-block justify-center " id="NqfNH">
-
-    <div class="dc-text-block__content">
-<h2>Best Accessibility &amp; Security Solution</h2>
-<p><em>Winner:</em></p>
-<p><strong>Perplex Digital with </strong><a data-router-slot="disabled" href="https://www.visio.org/" target="_blank" title="www.visio.org" type="external"><strong>Koninklijke Visio</strong></a><a data-router-slot="disabled" href="https://danishagro.dk/" type="external"><br></a>A highly accessible website that features an innovative voice-enabled search tool to foster user independence.</p>
-<p><strong data-start="293" data-end="313">Why it stood out: </strong>Perplex Digital secured the top spot by seamlessly uniting robust security with groundbreaking accessibility. Going far beyond basic compliance, the project truly stood out for its innovative voice-enabled search - hailed by judges as a "gateway to independence" - while proving its real-world impact with hard evidence of measurable success.</p>
-<p><em>Runner‑ups:</em></p>
-<ul>
-<li><p><strong style="box-sizing: border-box;">Infocaster BV with </strong><a data-router-slot="disabled" href="http://bkwi.nl/" target="_blank" title="http://bkwi.nl/" type="external" style="box-sizing: border-box; color: rgb(22, 35, 53);"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">BKWI</u></strong></a></p></li>
-<li><p><strong style="box-sizing: border-box;">Blend Interactive with </strong><a data-router-slot="disabled" href="https://ujs.sd.gov/" target="_blank" title="https://ujs.sd.gov/" type="external" style="box-sizing: border-box; color: rgb(22, 35, 53);"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">South Dakota Unified Justice System</u></strong></a> <br><a data-router-slot="disabled" href="https://www.regulatormarine.com/" type="external"><br></a></p></li>
-</ul>
-<h2>Best Cloud Solution</h2>
-<p><em>Winner:</em></p>
-<p><strong style="box-sizing: border-box;">Zeroseven with </strong><a data-router-slot="disabled" href="https://iconcancercentre.com.au/" target="_blank" title="https://iconcancercentre.com.au/" type="external" style="box-sizing: border-box; color: rgb(22, 35, 53);"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">Icon Group Build</u></strong></a> <a data-router-slot="disabled" href="https://autolease.centraalbeheer.nl" type="external"><br></a>Zeroseven developed a highly scalable, multi-site cloud infrastructure for healthcare provider Icon Group to seamlessly manage and grow their expanding global network of medical centers.</p>
-<p><strong data-start="293" data-end="313">Why it stood out: </strong>This entry completely won over the judges by utilizing Umbraco Cloud to its absolute fullest potential, particularly through its masterclass use of Baselines to instantly spin up new regional websites. It stood out as a premier example of enterprise-level cloud transformation, delivering high-impact, beautifully designed digital experiences backed by a robust architecture built for rapid global deployment.</p>
-<p><em>Runner‑ups:</em></p>
-<ul>
-<li><p><strong style="box-sizing: border-box;">Toxic Interactive Solutions AB with </strong><a data-router-slot="disabled" href="http://www.kabe.se/" target="_blank" title="http://www.kabe.se/" type="external" style="box-sizing: border-box; color: rgb(22, 35, 53);"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">KABE</u></strong></a></p></li>
-<li><p><strong style="box-sizing: border-box;">Cyber-Solutions Software GmbH with </strong><a data-router-slot="disabled" href="https://www.verbund.com/" target="_blank" title="https://www.verbund.com/" type="external" style="box-sizing: border-box; color: rgb(22, 35, 53);"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">Verbund Digital Power GmbH</u></strong></a><br><br></p></li>
-</ul>
-<h2>Best Innovation with AI</h2>
-<p><em>Winner:</em></p>
-<p><strong>NXT Digital Solutions Ltd with </strong><a data-router-slot="disabled" href="https://www.exclusive-networks.com/" target="_blank" title="www.google.com" type="external"><strong>Exclusive Networks</strong></a><a data-router-slot="disabled" href="https://www.dansani.co.uk/" type="external"><br></a>NXT Digital Solutions Ltd developed a powerful, direct AI integration within Umbraco for Exclusive Networks to automate and streamline complex content tasks, including advanced multi-lingual translations and redirect management.</p>
-<p><strong data-start="293" data-end="313">Why it stood out: </strong>The project captured the top spot by deeply embedding AI capabilities directly into the CMS interface, maximizing and extending Umbraco's native multi-lingual features. It stood out for doing immense heavy lifting behind the scenes, making simultaneous, complex translations across numerous languages fundamentally possible and highly efficient. Ultimately, its ability to tackle demanding operational tasks seamlessly within the platform made it a clear leader in practical AI innovation.</p>
-<p><em>Runner‑ups:</em></p>
-<ul>
-<li><p><strong style="box-sizing: border-box;">Knowit Experience with BEWI RAW</strong></p></li>
-<li><p><strong style="box-sizing: border-box;">Perplex Digital with Talk to your Website</strong><br><br></p></li>
-</ul>
-<h2>Best Designed Site</h2>
-<p><em>Winner:</em></p>
-<p><strong>Yoyo Design with </strong><a data-router-slot="disabled" href="https://www.demelza.org.uk/" target="_blank" title="www.google.com" type="external"><strong>Demelza UK</strong></a><a data-router-slot="disabled" href="https://www.artis.nl" type="external"><br></a>Yoyo Design crafted a warm, playful, and approachable website for children’s charity Demelza UK that beautifully mirrors the organization's physical spaces while providing a highly flexible editing experience for the back-office team.</p>
-<p><strong data-start="293" data-end="313">Why it stood out: </strong>The project won over judges by intentionally softening the typical "clinical" feel of healthcare sites with a conscientious, accessible design and a smart, uplifting balloon theme that perfectly captures the charity's heart. It stood out because its design excellence runs both ways: it gives front-end visitors a clean, un-cluttered experience with clear paths to donate, while empowering back-office editors with an incredibly thoughtful and intuitive block-grid setup.</p>
-<p><em>Runner‑ups:</em></p>
-<ul>
-<li><p><strong style="box-sizing: border-box;">Digital Layers with </strong><a data-router-slot="disabled" href="https://papendal.nl/" target="_blank" title="https://papendal.nl/" type="external" style="box-sizing: border-box; color: rgb(22, 35, 53);"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">Papendal </u></strong></a></p></li>
-<li><p><strong>Phases with Umbraco </strong><a data-router-slot="disabled" href="https://uiug.in/" target="_blank" title="" type="external"><strong>India User Group</strong></a><br><br></p></li>
-</ul>
-<h2>Best Editing Experience</h2>
-<p><em>Winner:</em></p>
-<p><strong>Kraftvaerk with DR's Article Platform</strong><a data-router-slot="disabled" href="http://isolatiehandel.nl" type="external"><br></a>Kraftvaerk engineered a highly tailored, enterprise-grade article platform for DR using Umbraco's Bellissima backoffice to seamlessly support a massive network of over 800 content editors.</p>
-<p><strong data-start="293" data-end="313">Why it stood out: </strong>The project absolutely blew judges away with its "mind-blowing" level of backoffice customization, pushing the boundaries of the platform to handle extreme data volumes and intense collaborative workflows. It stood out by brilliantly mirroring traditional print publishing workflows in a modern digital environment, making complex, high-speed journalism intuitive for hundreds of daily users. Ultimately, it secured the win as a masterclass in digital transformation, proving just how far the Umbraco editing experience can be stretched to fit massive, large-scale enterprise needs.</p>
-<p><em>Runner‑ups:</em></p>
-<ul>
-<li><p><strong style="box-sizing: border-box;">Charlie Tango with </strong><a data-router-slot="disabled" href="https://www.viaplaysportnews.dk/" target="_blank" title="https://www.viaplaysportnews.dk/" type="external" style="box-sizing: border-box; color: rgb(22, 35, 53);"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">Viaplay Sports News</u></strong></a></p></li>
-<li><p><strong style="box-sizing: border-box;">Ecreo with </strong><a data-router-slot="disabled" href="http://BioMar.com" target="_blank" title="http://BioMar.com" type="external"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">BioMar.com</u></strong></a><br><br></p></li>
-</ul>
-<h2>Best Commerce Solution </h2>
-<p><em>Winner:</em></p>
-<p><strong>Dotcraft with Renault - Dacia Alpine Aftersales Platform</strong><a data-router-slot="disabled" href="https://www.regulatormarine.com/" type="external"><br></a>Dotcraft engineered a sophisticated, enterprise-level B2B e-commerce and aftersales platform for Renault - Dacia Alpine, leveraging live API data integrations to streamline and solve a massive operational challenge for the automotive giant.</p>
-<p><strong data-start="293" data-end="313">Why it stood out: </strong>The project delivered a seamless, high-performance customer journey that generated amazing, measurable results in a remarkably short timeframe. It stood out for its brilliant handling of complex enterprise architecture, including a clever "hidden" implementation of Umbraco Compose to manage data-heavy business workflows. Ultimately, the judges were won over by how effectively the platform transformed a highly intricate B2B process into a clean, data-driven commerce experience.</p>
-<p><em>Runner‑ups:</em></p>
-<ul>
-<li><p><strong style="box-sizing: border-box;">ipsis with </strong><a data-router-slot="disabled" href="https://www.shop2print.nl/" target="_blank" title="https://www.shop2print.nl/" type="external" style="box-sizing: border-box; color: rgb(22, 35, 53);"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">Primex Textiles</u></strong></a></p></li>
-<li><p><strong style="box-sizing: border-box;">Dear Friends with </strong><a data-router-slot="disabled" href="https://nordicwellness.se/" target="_blank" title="https://nordicwellness.se/" type="external" style="box-sizing: border-box; color: rgb(22, 35, 53);"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">Nordic Wellness</u></strong></a><br><br></p></li>
-</ul>
-<h2>Best Enterprise Solution</h2>
-<p><em>Winner:</em></p>
-<p><strong style="box-sizing: border-box;">Diagram with </strong><a data-router-slot="disabled" href="https://www.natptax.com/" target="_blank" title="https://www.natptax.com/" type="external" style="box-sizing: border-box; color: rgb(22, 35, 53);"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">National Association of Tax Professionals (NATP)</u></strong></a><a data-router-slot="disabled" href="https://bondjewellery.co.uk/" type="external"><br></a>Diagram orchestrated a powerful enterprise ecosystem for the National Association of Tax Professionals (NATP), utilizing a composable architecture that positions Umbraco as the central hub integrated with five core business systems, single sign-on, and a custom queuing network.</p>
-<p><strong data-start="293" data-end="313">Why it stood out: </strong>The project stood out as a masterclass in enterprise orchestration, proving Umbraco can handle massive technical complexity far beyond a traditional CMS. Judges were won over by how seamlessly it untangled and united multiple external systems—including advanced commerce and SSO - while keeping Umbraco products proudly at the heart of a rock-solid, unified digital ecosystem.</p>
-<p><em>Runner‑ups:</em></p>
-<ul>
-<li><p><strong style="box-sizing: border-box;">ITWorx with DoZen Digital Workplace</strong></p></li>
-<li>
-<p><strong style="box-sizing: border-box;">dotcraft with Renault Group - Digital Enterprise Transformation</strong><br></p>
-<p>             </p>
-</li>
-</ul>
-<h2>Best Umbraco Engage Solution</h2>
-<p><em>Winner:</em></p>
-<p><strong style="box-sizing: border-box;">Webwonders with </strong><a data-router-slot="disabled" href="https://www.cosmetique-totale.com/" target="_blank" title="https://www.cosmetique-totale.com/" type="external" style="box-sizing: border-box; color: rgb(22, 35, 53);"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">Cosmetique Totale</u></strong></a><a data-router-slot="disabled" href="https://bondjewellery.co.uk/" type="external"><br></a>Webwonders engineered an advanced marketing ecosystem for Cosmetique Totale, utilizing Umbraco Engage to connect real customer data and cross-platform behaviors into automated personalization, custom dashboards, and AI-driven data analysis.</p>
-<p><strong data-start="293" data-end="313">Why it stood out: </strong>Hailed by judges as "the dream of marketing automation," this project stood out for solving the classic marketer dilemma of fragmented data and blurred campaign attribution. It won over the panel by heavily extending Umbraco Engage’s capabilities with a custom MCP server and external system integrations, giving the marketing team direct power to track sales back to specific campaigns. Ultimately, it secured the top spot for beautifully turning raw behavioral data into highly personalized user journeys and tangible business outcomes.</p>
-<p><em>Runner‑ups:</em></p>
-<ul>
-<li><p><strong style="box-sizing: border-box;">LOGISZ with </strong><a data-router-slot="disabled" href="https://www.bribus.nl/" target="_blank" title="https://www.bribus.nl/" type="external" style="box-sizing: border-box; color: rgb(22, 35, 53);"><strong style="box-sizing: border-box;"><u style="box-sizing: border-box;">Bribus</u></strong></a></p></li>
-<li><p><strong style="box-sizing: border-box;">ITWorx with A UAE Defense Group</strong></p></li>
-</ul>
-<p>                     </p>
-<h2>
-<strong>📦</strong> Package Award</h2>
-<p><em>Winner:</em></p>
-<p><strong>Block Filter, by Kraftvaerk</strong><br>Dynamically hide blocks based on document type, user group, or runtime context—configurable in code or the UI. No more creating redundant Block List or Block Grid data types just to restrict block options.</p>
-<p><strong data-start="293" data-end="313">Why it stood out: </strong>The jury noted that while Umbraco 14's backoffice UI overhaul offers a much cleaner approach, it made certain tasks - like conditionally showing blocks - significantly harder. Kraftvaerk's open-source package solves this pain point, not only restoring that lost functionality but extending it with a native-feeling, no-code setup. It’s a prime example of the community stepping up to help Umbraco evolve.</p>
-<p><em>Runner‑ups:</em></p>
-<ul>
-<li><p><span class="font-size-normal">Block​Preview, by Rick Butterfield</span></p></li>
-<li><p><span class="font-size-normal">Clean, by Paul Seal</span></p></li>
-<li><p><span class="font-size-normal">Favourites, by Gibe Digital</span></p></li>
-<li><p><span class="font-size-normal">Rollback ​Previewer, by Richard Ockerby and Mike Masey</span></p></li>
-<li><p><span class="font-size-normal">SeoToolkit, by Patrick de Mooij</span></p></li>
-</ul>
-<p>       </p>
-<h2 data-pm-slice="1 3 []">The Umbraco AI Package Award</h2>
-<p><em>Winner:</em></p>
-<p><strong>AI Log Analyser, by Justin Neville</strong><br>This package adds an 'Analyse with AI' button right next to every Umbraco log error. With a single click, the AI diagnoses the error, context, frequency, and site setup - delivering a plain-English explanation and fix right where you're already looking.</p>
-<p><strong data-start="293" data-end="313">Why it stood out: </strong>The jurors praised it for feeling “the most stable in our hands.” They noted how naturally it integrates into the backoffice – as if it had always been part of Umbraco – while solving a real, recurring challenge for teams running Umbraco in production. For those reasons, they agreed it was a worthy winner of the first AI Package Award.</p>
-<p><em>Runner‑ups:</em></p>
-<ul>
-<li><p><span class="font-size-normal">AgentRun, by Adam Shallcross</span></p></li>
-<li><p><span class="font-size-normal">Umbraco.​​A​I ​Page ​Evaluator, by Proworks</span></p></li>
-</ul>
-<p>     </p>
-<div>Explore the winners, runner-ups, and nominees from the <a data-router-slot="disabled" href="https://marketplace.umbraco.com/awards/2026" target="_blank" title="marketplace.umbraco.com" type="external">2026 Umbraco Package Awards here</a>.</div>
-<div class="filter-panel" style="display: grid; grid-auto-columns: 1fr 1fr 1fr 1fr 1fr min-content; gap: 2px; margin-bottom: 44px;">            <strong>A huge congratulations to all the winners and nominees! Your passion and dedication inspire us every day, and your work truly shines in the Umbraco ecosystem. Thank you for pushing boundaries and creating amazing Umbraco solutions. We can’t wait to see what you create next!</strong>
-</div>
-<p><strong> </strong></p>
-<p> </p>
-<p><strong> </strong></p>
-<p> </p>
-</div>
+<div class="dc-text-block__content"><h2>Got a fun fact, secret, or unexpected talent?</h2><p>Plenty! Most people might be surprised that I am trained (and decent)  at ballroom dance. I also play piano, and eFoil along the Florida coasts on my weekends.</p><p>Yes, more variety!</p><p></p></div>
 </div>
+<div class="dc-image-block" id="FqRoH">
 
-        ]]></content:encoded>
-      <media:content url="https://umbraco.com/media/slzlehfc/awards.jpg?width=1200&amp;height=628&amp;quality=85&amp;v=1db04941fcc1160" medium="image"/>
-      <media:thumbnail url="https://umbraco.com/media/slzlehfc/awards.jpg?width=1200&amp;height=628&amp;quality=85&amp;v=1db04941fcc1160"/>
-    </item>
-<item>
-      <title>The Umbraco MVPs 2026</title>
-      <link>https://umbraco.com/blog/the-umbraco-mvps-2026/</link>
-      <guid isPermaLink="true">https://umbraco.com/blog/the-umbraco-mvps-2026/</guid>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[Meet our Umbraco MVPs for 2026. These are our Most Valuable People, people who have a passion for contributing to Umbraco and the Umbraco Community.]]></description>
-      <content:encoded><![CDATA[<p data-start="0" data-end="241">We’re excited to introduce 25 new MVPs and welcome back 102 renewed MVPs – 127 passionate Most Valuable People who generously share their time, knowledge, and experience to help make <span class="whitespace-normal">Umbraco</span> better for everyone.</p>
-<p data-start="243" data-end="341" data-is-last-node="" data-is-only-node="">Take a moment to explore who they are and join us in celebrating their incredible contributions 👇</p>
-<div class="z-0 flex min-h-[46px] justify-start"></div>
-<div class="mt-3 w-full empty:hidden"></div>
-<div class="text-center"></div>
-<div class="pointer-events-none -mt-px h-px translate-y-[calc(var(--scroll-root-safe-area-inset-bottom)-14*var(--spacing))]"></div>
-<p></p>
-
-
-<div class="dc-text-block justify-center " id="PYmgv">
-
-    <div class="dc-text-block__content">
-<p data-start="110" data-end="364">At today’s Codegarden keynote, we’re proud to celebrate 127 Umbraco MVPs within <span class="whitespace-normal">Umbraco</span> – 25 of them stepping into the MVP role for the first time, and 102 returning MVPs who continue to give their time, knowledge, and energy year after year.</p>
-<p data-start="449" data-end="691">These MVPs sit at the heart of the community. They don’t just use Umbraco – they actively shape it. They answer questions late at night in forums, share real-world solutions, contribute fixes, and help others move forward when they get stuck.</p>
-<p data-start="693" data-end="950">What they do often happens quietly, but the impact is anything but small. Each contribution builds on the next – a suggestion that removes friction for someone else, a fix that saves hours of work, a conversation that helps someone see a better way forward.</p>
-<p data-start="952" data-end="1118" data-is-last-node="" data-is-only-node="">Together, they create momentum that lifts the whole community. And it’s driven by something simple and powerful: a genuine desire to help others succeed with Umbraco.</p>
+<figure>
+<div class="dc-image-wrapper">
+<img alt="Ben ballroom dancing" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/smmj1uoo/ballroom-dancing.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a951a3eb0" srcset="/media/smmj1uoo/ballroom-dancing.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a951a3eb0 662w, /media/smmj1uoo/ballroom-dancing.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a951a3eb0 1360w"/>
 </div>
-</div>
-
-
-<div class="dc-image-block " id="sqfXr">
-
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/of1lasgg/55328199103_095102bea8_k.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf98b97874fb0 662w, https://umbraco.com/media/of1lasgg/55328199103_095102bea8_k.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf98b97874fb0 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/of1lasgg/55328199103_095102bea8_k.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf98b97874fb0" alt="55328199103_095102bea8_k.jpg" class="dc-image" loading="lazy">
-
-        </div>
+<figcaption>Performing latin socials at the studio’s winter showcase. I Feel the Earth Move / Shinedown (cover of Carole King)</figcaption>
+</figure>
 </div>
-
+<div class="dc-text-block justify-center" id="DbZCn">
 
-
-<div class="dc-text-block justify-center " id="TZVBk">
-
-    <div class="dc-text-block__content">
-<h2>New MVPs for 2026</h2>
-<p></p>
+<div class="dc-text-block__content"><h2>What’s currently living on your desk?</h2><p>I’ll take the nerdy route here.</p><p>I’m writing this on a 24” M4 iMac (Orange, 32GB RAM, 1 TB SSD, nano texture), paired with an Apple Studio Display (2022), a magic trackpad and a Matias Ergo Pro keyboard. </p><p>I finally let go of my old, tattered Microsoft Sculpt and replaced it with the Matias and I absolutely love it. It’s a split mechanical keyboard with keycaps modeled after the old Apple Extended Keyboard II (but quieter).</p><p>On the other/second desk to my right, I’ve got:</p><ul><li><p>Insta360 X5</p></li><li><p>iPhone 4S (White, still running iOS 6)</p></li><li><p>24” iMac (Late 2006, Mac OS X 10.6)</p></li><li><p>15” MacBook Pro (Early 2008, Mac OS X 10.9)</p></li><li><p>PowerMac G4 Digital Audio (733 MHz, Mac OS X 10.4) + Apple Studio Display (17-inch LCD)</p></li></ul><p>These old machines are all thrift-store or Facebook marketplace rescues that I’ve lovingly deep cleaned and restored to working order. All in all, I’ve collected and restored 24 machines, spanning back to 1990/Macintosh Classic with System 7.</p><p>Aside from looking cool and being great conversation starters on video calls, I actually do use these machines as references on software design, information architecture, reading period developer documentation and inspecting things. These machines are actually where much of the inspiration for FastGooey was pulled from.</p><p>There’s also a bunch of Umbraco stickers all over the place.</p><p></p></div>
 </div>
-</div>
-
-
+<div class="dc-image-block" id="zRMBC">
 
-
-<div class="dc-columns no-outline " id="JcFWl">
-
-        <div class="column-block">
-            <div class="dc-block-list">
-
-
-<div class="dc-text-block justify-center " id="zAGvq">
-
-    <div class="dc-text-block__content">
-<p>Chris Thompson</p>
-<p>Peter Solow</p>
-<p>Silvano Lenti </p>
-<p>Anju Babu</p>
-<p>Asha Chaudhary</p>
-<p> Girish Sasikumar</p>
-<p> Nathaniel Nunes</p>
-<p>Bishal Tim</p>
+<figure>
+<div class="dc-image-wrapper">
+<img alt="24” iMac, 15” MacBook Pro and Apple Studio Display (17”) " class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/l5mhtcly/reference-machines.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a98ef6290" srcset="/media/l5mhtcly/reference-machines.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a98ef6290 662w, /media/l5mhtcly/reference-machines.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a98ef6290 1360w"/>
 </div>
+<figcaption>My 24” iMac, 15” MacBook Pro and Apple Studio Display (17”) that I use to inspect older software.</figcaption>
+</figure>
 </div>
-
-            </div>
-        </div>
-        <div class="column-block">
-            <div class="dc-block-list">
+<div class="dc-columns no-outline" id="BuBif">
 
+<div class="column-block">
+<div class="dc-block-list">
+<div class="dc-image-block" id="gZbes">
 
-<div class="dc-text-block justify-center " id="lpgSF">
-
-    <div class="dc-text-block__content">
-<p>Luuk Peters</p>
-<p>Patrick	de Mooij</p>
-<p>Pete Lister</p>
-<p>Daniel	Andersson</p>
-<p>Ian	Grieve</p>
-<p> Jonathan	Wood </p>
-<p>Justin	Neville </p>
-<p>Kirstie	Buchanan </p>
-<p>Lili	Rossiter </p>
-</div>
+<figure>
+<div class="dc-image-wrapper">
+<img alt="Restoration of a powermac g4" class="dc-image" loading="lazy" src="https://umbraco.com/media/ei2ncobq/restoring-powermac-g4.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a9a0120b0"/>
 </div>
-
-            </div>
-        </div>
-        <div class="column-block">
-            <div class="dc-block-list">
-
-
-<div class="dc-text-block justify-center " id="zRUpG">
-
-    <div class="dc-text-block__content">
-<p>Pete	Williams </p>
-<p>Simon	Steed </p>
-<p>Steven	Harland</p>
-<p>Aaron	Sawyer </p>
-<p>Ben	Szymanski </p>
-<p>Chris	Osterhout </p>
-<p>Chris	Houston</p>
-<p> </p>
+<figcaption>Doing a deep clean on a PowerMac G4 that I rescued. It was previously used in one of the most abusive environments possible - a classroom lab.</figcaption>
+</figure>
 </div>
 </div>
-
-            </div>
-        </div>
 </div>
-
-
-
+<div class="column-block">
+<div class="dc-block-list">
+<div class="dc-image-block" id="QTROd">
 
-<div class="dc-text-block justify-center " id="aIMGj">
-
-    <div class="dc-text-block__content">
-<h2>Renewed MVPs for 2026</h2>
-<p></p>
-</div>
+<figure>
+<div class="dc-image-wrapper">
+<img alt="Restored powermac g4" class="dc-image" loading="lazy" src="https://umbraco.com/media/audmlpin/restored-powermac-g4.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a99827ad0"/>
 </div>
-
-
-
-
-<div class="dc-columns no-outline " id="YbiGm">
-
-        <div class="column-block">
-            <div class="dc-block-list">
-
-
-<div class="dc-text-block justify-center " id="dYmlO">
-
-    <div class="dc-text-block__content">
-<p><span>Aaron Sadler</span></p>
-<div></div>
-<p><span>Adam Prendergast</span></p>
-<div></div>
-<p><span>Adam Werner</span></p>
-<div></div>
-<p><span>Afreed CP</span></p>
-<div></div>
-<p><span>Alex Skrypnyk</span></p>
-<div></div>
-<p><span>Alex Vilmur</span></p>
-<div></div>
-<p><span>Amy Czuba</span></p>
-<div></div>
-<p><span>Anders Bjerner</span></p>
-<div></div>
-<p><span>Anders Brohäll</span></p>
-<div></div>
-<p><span>Andy Boot</span></p>
-<div></div>
-<p><span>Andy Eva-Dale</span></p>
-<div></div>
-<p><span>Bjarne Fyrstenborg</span></p>
-<div></div>
-<p><span>Blake Watt</span></p>
-<div></div>
-<p><span>Büşra Şengül</span></p>
-<div></div>
-<p><span>Callum Whyte</span></p>
-<div></div>
-<p><span>Carl Sargunar</span></p>
-<div></div>
-<p><span>Carole Logan</span></p>
-<div></div>
-<p><span>Cat Todd</span></p>
-<div></div>
-<p><span>Chriztian Steinmeier</span></p>
-<div></div>
-<p><span>Danny Lancaster</span></p>
-<div></div>
-<p><span>Dave Woestenborghs</span></p>
-<div></div>
-<p><span>Dean Leigh</span></p>
-<div></div>
-<p><span>Debasish Gracias</span></p>
-<div></div>
-<p><span>Dennis Adolfi</span></p>
-<div></div>
-<p><span>Dennis Heutinck</span></p>
-<div></div>
-<p><span>Dhanesh MJ Kumar</span></p>
-<div></div>
-<p><span>Emma Garland</span></p>
-<div></div>
-<p><span>Erica Quessenberry</span></p>
-<div></div>
-<p><span>Erik-Jan Westendorp</span></p>
-<div></div>
-<p><span>Frans de Jong</span></p>
-<p></p>
-<p><span>Georgina Bidder</span></p>
-<div></div>
-<p><span>Grey Muir</span></p>
-<div></div>
-<p><span>Heather Floyd</span></p>
-<div></div>
-<p></p>
+<figcaption>The end result of cleaning up a very dirty, very abused machine!</figcaption>
+</figure>
 </div>
 </div>
-
-            </div>
-        </div>
-        <div class="column-block">
-            <div class="dc-block-list">
-
-
-<div class="dc-text-block justify-center " id="mgBlt">
-
-    <div class="dc-text-block__content">
-<p><span>Huw Reddick</span></p>
-<div></div>
-<p><span>Ibrahim Nada</span></p>
-<div></div>
-<p><span>James Carter</span></p>
-<div></div>
-<p><span>James Hobbs</span></p>
-<div></div>
-<p><span>Jan Skovgaard</span></p>
-<div></div>
-<p><span>Janae Cram</span></p>
-<div></div>
-<p><span>Jason Elkin</span></p>
-<div></div>
-<p><span>Jason Prothero</span></p>
-<div></div>
-<p><span>Jeavon Leopold</span></p>
-<div></div>
-<p><span>Jeffrey Schoemaker</span></p>
-<div></div>
-<p><span>Jen Wolke</span></p>
-<div></div>
-<p><span>Jeroen Breuer</span></p>
-<div></div>
-<p><span>Joe Glombek</span></p>
-<div></div>
-<p><span>Joe Kepley</span></p>
-<div></div>
-<p><span>Johan Reitsma</span></p>
-<div></div>
-<p><span>Joke Van Hamme</span></p>
-<div></div>
-<p><span>Jon Whitter</span></p>
-<div></div>
-<p><span>Jonny Muir</span></p>
-<div></div>
-<p><span>Karl Tynan</span></p>
-<div></div>
-<p><span>Karla Santi</span></p>
-<div></div>
-<p><span>Kaspar Kjeldsen</span></p>
-<div></div>
-<p><span>Kenneth Solberg</span></p>
-<div></div>
-<p><span>Kevin Jump</span></p>
-<div></div>
-<p><span>Kevin Meilander</span></p>
-<div></div>
-<p><span>Kyle Brigham</span></p>
-<div></div>
-<p><span>Kyle Weems</span></p>
-<div></div>
-<p><span>Lennard Fonteijn</span></p>
-<div></div>
-<p><span>Marc Goodson</span></p>
-<div></div>
-<p><span>Marc Love</span></p>
-<div></div>
-<p><span>Marcin Zajkowski</span></p>
-<div></div>
-<p><span>Mario Lopez</span></p>
-<div></div>
-<p><span>Markus Johansson</span></p>
-<div></div>
-<p><span>Matt Begent</span></p>
-<div></div>
-<p></p>
 </div>
 </div>
-
-            </div>
-        </div>
-        <div class="column-block">
-            <div class="dc-block-list">
+<div class="dc-columns no-outline" id="xjKOv">
 
+<div class="column-block">
+<div class="dc-block-list">
+<div class="dc-image-block" id="JmpJJ">
 
-<div class="dc-text-block justify-center " id="IeFmE">
-
-    <div class="dc-text-block__content">
-<p><span>Matt Bliss</span></p>
-<div></div>
-<p><span>Matt Swain</span></p>
-<p></p>
-<p><span>Matt Hart</span></p>
-<div></div>
-<p><span>Matt Sutherland</span></p>
-<div></div>
-<p><span>Matt Wise</span></p>
-<div></div>
-<p><span>Michael Latouche</span></p>
-<div></div>
-<p><span>Mike Masey</span></p>
-<div></div>
-<p><span>Nik Rimington</span></p>
-<div></div>
-<p><span>Nikhil Prajapati</span></p>
-<div></div>
-<p><span>Nurhak Kaya</span></p>
-<div></div>
-<p><span>Oliver Picton</span></p>
-<div></div>
-<p><span>Owain Jones</span></p>
-<div></div>
-<p><span>Owain Williams</span></p>
-<div></div>
-<p><span>Paul Seal</span></p>
-<div></div>
-<p><span>Paul Sterling</span></p>
-<div></div>
-<p><span>Peter Gregory</span></p>
-<div></div>
-<p><span>Rachel Breeze</span></p>
-<div></div>
-<p><span>Ravi Motha</span></p>
-<div></div>
-<p><span>Richard Jackson</span></p>
-<div></div>
-<p><span>Richard Metcalfe</span></p>
-<div></div>
-<p><span>Richard Ockerby</span></p>
-<div></div>
-<p><span>Richard Soeteman</span></p>
-<div></div>
-<p><span>Robert Foster</span></p>
-<div></div>
-<p><span>Rune Grønkjær</span></p>
-<div></div>
-<p><span>Sean Thorne</span></p>
-<div></div>
-<p><span>Shannon Deminick</span></p>
-<div></div>
-<p><span>Sophie Neale</span></p>
-<div></div>
-<p><span>Søren Kottal</span></p>
-<div></div>
-<p><span>Steve Temple</span></p>
-<div></div>
-<p><span>Taylor Lopour</span></p>
-<div></div>
-<p><span>Tim Payne</span></p>
-<div></div>
-<p><span>Tobias Høst</span></p>
-<div></div>
-<p><span>Warren Buckley</span></p>
-<div></div>
-<p><span>Yari Mariën</span></p>
+<figure>
+<div class="dc-image-wrapper">
+<img alt="Macintosh Classic" class="dc-image" loading="lazy" src="https://umbraco.com/media/wwup23yq/mac-classic.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a96c88af0"/>
 </div>
+<figcaption>I’m still working on rehabbing this Macintosh Classic, but that didn’t stop me from doing a photoshoot with it.</figcaption>
+</figure>
 </div>
-
-            </div>
-        </div>
 </div>
-
-
-
-
-<div class="dc-text-block justify-center " id="uneen">
-
-    <div class="dc-text-block__content"><p data-start="909" data-end="1127"><strong>To all 127 MVPs: thank you for your commitment, your passion, and for being the heart of this community - your contributions make Umbraco what it is today. Huge congratulations!</strong></p></div>
 </div>
-
-        ]]></content:encoded>
-      <media:content url="https://umbraco.com/media/of1lasgg/55328199103_095102bea8_k.jpg?rxy=0.512,0.5806572068707991&amp;width=1200&amp;height=628&amp;quality=85&amp;v=1dcf98b97874fb0" medium="image"/>
-      <media:thumbnail url="https://umbraco.com/media/of1lasgg/55328199103_095102bea8_k.jpg?rxy=0.512,0.5806572068707991&amp;width=1200&amp;height=628&amp;quality=85&amp;v=1dcf98b97874fb0"/>
-    </item>
-<item>
-      <title>Umbraco.AI Security Advisory, June 4, 2026</title>
-      <link>https://umbraco.com/blog/security-advisory-june-4-2026-security-patch-for-umbracoai-is-now-available/</link>
-      <guid isPermaLink="true">https://umbraco.com/blog/security-advisory-june-4-2026-security-patch-for-umbracoai-is-now-available/</guid>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[Security patches are available for Umbraco.AI core package, versions 1.0.0 through 1.13.x versions fix a moderate vulnerability. Find the fix here]]></description>
-      <content:encoded><![CDATA[<p><span class="font-size-normal">A moderate-severity vulnerability has been found and fixed in the </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><span class="font-size-normal">Umbraco.AI</span></a><span class="font-size-normal"> package. Today, we have released a patch for the affected versions and recommend updating at your earliest convenience. Please note that the update contains a breaking change, and that projects hosted on Umbraco Cloud need to update manually, as this is a vulnerability in an add-on package rather than the CMS.</span></p>
-<p></p>
-
-
-<div class="dc-text-block justify-center " id="pcILX">
+<div class="column-block">
+<div class="dc-block-list">
+<div class="dc-image-block" id="PWYXh">
 
-    <div class="dc-text-block__content">
-<p><span class="font-size-normal">We have released a security patch for the </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><strong>Umbraco.AI</strong></a><span class="font-size-normal"> package. We recommend that all users running an affected version update at their earliest convenience. As always, we take security seriously and want to give you the information you need to assess the impact on your installation and to update with confidence.</span></p>
-<h2><strong>Who's affected?</strong></h2>
-<p><span class="font-size-normal">The issue affects the </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><strong>Umbraco.AI</strong></a><span class="font-size-normal"> core package, versions </span><strong>1.0.0 through 1.13.x</strong><span class="font-size-normal"> (all releases prior to the patch). Provider and add-on packages (OpenAI, Anthropic, Agent, Prompt, Search, Deploy, and others) are affected only by way of their dependency on </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><span class="font-size-normal">Umbraco.AI</span></a><span class="font-size-normal"> Core — updating </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><span class="font-size-normal">Umbraco.AI</span></a><span class="font-size-normal"> Core resolves the issue for all of them.</span></p>
-<h2><strong>Solution</strong></h2>
-<p><span class="font-size-normal">To resolve this issue, a security patch has been released on NuGet. Update the </span><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><strong>Umbraco.AI</strong></a><span class="font-size-normal"> package to </span><strong>1.14.0</strong><span class="font-size-normal"> or later.</span></p>
-<p><strong>Note — this update contains a breaking change.</strong></p>
-<p><span class="font-size-normal">Configuration references in connection and context settings (the </span><em><span class="font-size-normal">$Key:Path</span></em><span class="font-size-normal"> syntax) are now resolved on a strict allow-list. After updating, references only resolve when the key sits under one of the allowed sections — by default</span><em><span class="font-size-normal"> Umbraco:AI:Secrets</span></em><span class="font-size-normal"> (for sensitive values such as API keys) and </span><em><span class="font-size-normal">Umbraco:AI:Variables </span></em><span class="font-size-normal">(for non-sensitive per-environment values).</span></p>
-<p><span class="font-size-normal">If you currently reference configuration from other sections — for example </span><em><span class="font-size-normal">$OpenAI:ApiKey </span></em><span class="font-size-normal">— you must either:</span></p>
-<ol>
-<li><p><strong>Move the value</strong><span class="font-size-normal"> under an allowed section, e.g. store it as </span><em><span class="font-size-normal">Umbraco:AI:Secrets:OpenAIApiKey</span></em><span class="font-size-normal"> and reference </span><em><span class="font-size-normal">$Umbraco:AI:Secrets:OpenAIApiKey;</span></em><span class="font-size-normal"> or</span><br></p></li>
-<li><p><strong>Opt the section back in</strong><span class="font-size-normal"> by adding its prefix to </span><em><span class="font-size-normal">Umbraco:AI:AllowedConfigurationKeyPrefixes</span></em><span class="font-size-normal"> in </span><em><span class="font-size-normal">appsettings.json:</span></em></p></li>
-</ol>
-<p><span class="font-size-normal">Secret references (keys under </span><em><span class="font-size-normal">Umbraco:AI:Secrets</span></em><span class="font-size-normal">) may only be used in fields marked as sensitive, such as the </span><strong>API Key</strong><span class="font-size-normal"> field. This setting lives in app configuration by design and is not editable from the backoffice.</span></p>
-<p><span class="font-size-normal">See the </span><a data-router-slot="disabled" href="https://github.com/umbraco/Umbraco.AI/releases/tag/2026.06.2" target="_blank" title="github.com" type="external"><span class="font-size-normal">release notes for 1.14.0</span></a><span class="font-size-normal"> for the full list of changes.</span></p>
+<figure>
+<div class="dc-image-wrapper">
+<img alt="Powermac g4 and powermac g3" class="dc-image" loading="lazy" src="https://umbraco.com/media/m3fhjmgs/powermac-g4-vs-powermac-g3.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a974ed1f0"/>
 </div>
+<figcaption>Fully restored PowerMac G4 Digital Audio (2001) and a PowerMac G3 Blue &amp; White (1999)</figcaption>
+</figure>
 </div>
-
-
-
-<div class="dc-text-block justify-center " id="GEihS">
-
-    <div class="dc-text-block__content">
-<h2><strong>What we know about the vulnerability</strong></h2>
-<h3><strong>Restricted configuration reference resolution in editable model settings</strong></h3>
-<p><a data-router-slot="disabled" href="http://Umbraco.AI" type="external"><span class="font-size-normal">Umbraco.AI</span></a><span class="font-size-normal"> connection and context settings can resolve certain values from the application's configuration at runtime, so that credentials and per-environment values can be kept in configuration rather than in the database.</span></p>
-<p><span class="font-size-normal">In affected versions, this resolution was not sufficiently scoped to AI-related configuration. As a result, a backoffice user with access to the AI section — a privileged position, but one that can be delegated to non-administrator user groups — could read application configuration values they would not otherwise be entitled to. This is an information-disclosure issue across a trust boundary, affecting confidentiality only.</span></p>
-<p><span class="font-size-normal">The vulnerability requires an authenticated, AI-section–privileged user. There is no unauthenticated vector, and no impact to integrity or availability.</span></p>
-<p><span class="font-size-normal">The patch makes configuration reference resolution </span><strong>default-deny</strong><span class="font-size-normal">: a reference only resolves when its key falls under an allow-listed prefix, and references to secret sections are additionally confined to sensitive fields. The allow-list is configured in application settings, so only someone who already has access to the configuration decides which sections may be referenced.</span></p>
-<p><span class="font-size-normal">Full details are available in the published </span><a data-router-slot="disabled" href="https://github.com/umbraco/Umbraco.AI/security/advisories/GHSA-q3v2-xj35-9grx" target="_blank" title="github.com" type="external"><span class="font-size-normal">GitHub Security Advisory.</span></a></p>
-<h2><strong>Any questions?</strong></h2>
-<p><span class="font-size-normal">If you have any questions about this advisory, please reach out to the Umbraco security team at </span><a data-router-slot="disabled" href="mailto:security@umbraco.com" type="external"><strong>security@umbraco.com</strong></a><span class="font-size-normal">.</span></p>
-<p><span class="font-size-normal">To be notified of future security advisories, sign up for the </span><a data-router-slot="disabled" href="https://umbraco.activehosted.com/f/33" type="external"><u>Umbraco security mailing list.</u></a></p>
-<p></p>
 </div>
-</div>
-
-        ]]></content:encoded>
-      <media:content url="https://umbraco.com/media/0wyn34pn/umbraco-security-advisory-moderate.jpg?cc=0,0.21413697023023903,0,0&amp;width=1200&amp;height=628&amp;quality=85&amp;v=1dc68f1de933a70" medium="image"/>
-      <media:thumbnail url="https://umbraco.com/media/0wyn34pn/umbraco-security-advisory-moderate.jpg?cc=0,0.21413697023023903,0,0&amp;width=1200&amp;height=628&amp;quality=85&amp;v=1dc68f1de933a70"/>
-    </item>
-<item>
-      <title>More Visibility, More Control. What's New in Umbraco Cloud</title>
-      <link>https://umbraco.com/blog/more-visibility-more-control-whats-new-in-umbraco-cloud/</link>
-      <guid isPermaLink="true">https://umbraco.com/blog/more-visibility-more-control-whats-new-in-umbraco-cloud/</guid>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[Let Arnold Visser fill you in on the latest Cloud functionality including, new performance insights, security enhancements, and flexible scaling options for agencies.]]></description>
-      <content:encoded><![CDATA[<p><em>A successful Umbraco project is not only measured on launch day. It is measured in the months and years that follow, when content teams need to publish daily, campaigns go live under pressure, traffic spikes arrive without warning, and client expectations quietly keep rising. For Umbraco agencies, the space between a great build and a well-run long-term platform is where much of the real operational work happens. It is also where strong client relationships are built. Recently, more of that direction has become visible with new functionality added in Umbraco Cloud. </em></p>
-
-
-<div class="dc-text-block justify-center " id="GQdRI">
-
-    <div class="dc-text-block__content">
-<p><span class="font-size-normal">What these new functionalities have in common is that they help agencies support long-term scale, stability, and client confidence. And we still have more to come just around the corner.</span></p>
-<p><span class="font-size-normal">Let’s take a look at what has changed, and what is coming next:</span></p>
-<h2>Know what is happening before your client asks</h2>
-<p><span class="font-size-normal">When a client asks about performance, traffic, or availability, it helps to have clear signals close at hand.</span></p>
-<p><span class="font-size-normal">Most of the time, those signals are not about fixing something that is broken. They are about understanding how a project behaves over time, spotting patterns earlier, and having better conversations with clients when traffic changes, campaigns go live, or usage grows.</span></p>
-<h3>Traffic and Performance Insights </h3>
-<p></p>
 </div>
 </div>
-
-
-<div class="dc-image-block " id="fjkbv">
+<div class="dc-text-block justify-center" id="MFJpO">
 
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/4hecs2io/traffic-and-peformance.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf1b1fa6f3610 662w, https://umbraco.com/media/4hecs2io/traffic-and-peformance.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf1b1fa6f3610 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/4hecs2io/traffic-and-peformance.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf1b1fa6f3610" alt="A screenshot of a Traffic and Performance dashboard displaying server analytics with a timeline graph. The screen contains data cards showing metrics for failed origin requests, app performance, CPU usage, and memory usage." class="dc-image" loading="lazy">
-
-        </div>
+<div class="dc-text-block__content"><h2>What book/series/game are you into right now?</h2><p>I recently watched the Fallout series after realizing I needed something non-work-related to help me wind down. I knew about the games, but I never invested any time into playing them, so I thought the TV show would allow me a glimpse into the Fallout story in a very low-effort way.</p><p>Just how does an advanced society collapse? How and why would the people in the Fallout universe have gotten to such a precarious existence? What does day to day life look and feel like? Why did all of this culminate in nuclear dawn? The game and the TV show pick at these fascinating questions, but in truth, we’ve already seen some of these same patterns throughout western history.</p><p>I expected a fun game adaptation and unintentionally found myself thinking about energy systems, resource constraints, peak oil theory, debates around Malthusian economics, and why advanced societies become fragile. I don’t think the TV show always goes as deep as its premise deserves, but that may be why it stuck in my head.</p><p>I will warn that the TV show didn’t work well as bedtime viewing, because each episode left my brain racing with thoughts. I’ll have to go back to rewatching the black and white Twilight Zone episodes.</p><p></p></div>
 </div>
-
-
-
-<div class="dc-text-block justify-center " id="ECAJj">
+<div class="dc-text-block justify-center" id="XfPbV">
 
-    <div class="dc-text-block__content"><p><span class="font-size-normal">Traffic and Performance Insights brings operational context directly into the Cloud portal. Teams can analyze traffic patterns, response behavior, and resource signals to better understand how a project is performing and where attention may be needed.</span><br><span class="font-size-normal"><br></span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cloud/optimize-and-maintain-your-site/monitor-and-troubleshoot/traffic-and-performance" type="external"><u>Learn more about Traffic and Performance in the official documentation. </u></a></p></div>
+<div class="dc-text-block__content"><h2>If you had a superpower, what would it be?</h2><p>Hmmm. The obvious pick would be flying, but think about when you’re on a rollercoaster and all that air flowing up your nostrils makes it difficult to breathe - just miserable! Now imagine doing that journey from Pensacola, Florida, to Odense like that. No sir/ma’am, I’ll pass! Indeed, the most chill way to get to HQ or CodeGarden would be with teleportation.</p><p>A runner up would be time travel. I love finding forgotten details and strange corners of history, which is why I picked Latin on Duolingo.</p></div>
 </div>
+<div class="dc-columns no-outline" id="RgDKD">
 
+<div class="column-block">
+<div class="dc-block-list">
+<div class="dc-image-block" id="ydhkC">
 
-
-<div class="dc-text-block justify-center " id="LvNbG">
-
-    <div class="dc-text-block__content">
-<h3 data-pm-slice="1 1 []">Hostname Monitoring </h3>
-<p><span class="font-size-normal">Hostname Monitoring lets agencies track availability and uptime history across their client portfolio, directly from the portal. It can even be used for sites hosted outside of Umbraco Cloud, making it useful for agencies managing multiple projects across different hosting setups.</span></p>
-<p><span class="font-size-normal">It is a quiet feature, but a surprisingly practical one for anyone responsible for a growing client portfolio.</span></p>
-<p><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cloud/optimize-and-maintain-your-site/monitor-and-troubleshoot/hostname-monitoring" type="external"><u>Learn more about Hostname Monitoring in the official documentation. </u></a></p>
-<p><span class="font-size-normal">And if your next question is whether Cloud can also alert you when something needs attention, that is a very good question… We may have something to share about that at </span><a data-router-slot="disabled" href="https://codegarden.umbraco.com/" type="external"><u>Codegarden</u></a><span class="font-size-normal"> in just under 2 weeks. </span></p>
-<h2>Control what visitors see when things pause</h2>
-<p><span class="font-size-normal">Deployments happen. Restarts occur. Brief pauses are part of running modern web applications.</span></p>
-<p><span class="font-size-normal">But what visitors see in those moments still reflects on your work and your clients’ brand, as a generic server error screen is exactly the kind of thing clients screenshot.</span></p>
-<p><strong>Custom Error and Maintenance Pages</strong><span class="font-size-normal"> let teams configure polished, branded holding pages that maintain a professional visitor experience, even during brief operational pauses.</span></p>
-<p><span class="font-size-normal">A small thing, until it matters.</span></p>
-<p><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cloud/build-and-customize-your-solution/handle-deployments-and-environments/error-pages" target="_blank" title="docs.umbraco.com" type="external"><u>Learn more about Custom Error and Maintenance Pages in the official documentation. </u></a></p>
+<figure>
+<div class="dc-image-wrapper">
+<img alt="Ben on an eFoil at Pensacola Beach" class="dc-image" loading="lazy" src="https://umbraco.com/media/tjwnev42/efoil-pensacola-beach.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a96518630"/>
 </div>
-</div>
-
-
-<div class="dc-image-block " id="VGbLR">
-
-
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/annicsr0/error-pages.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf1b1f9abe610 662w, https://umbraco.com/media/annicsr0/error-pages.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf1b1f9abe610 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/annicsr0/error-pages.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf1b1f9abe610" alt='A screenshot of the Umbraco Cloud web management interface showing the "Error Pages" configuration dashboard. The dashboard lists several custom and default error page options with configuration details and action buttons.' class="dc-image" loading="lazy">
-
-        </div>
+<figcaption>Out on the water with my Lift eFoil at Pensacola Beach.</figcaption>
+</figure>
 </div>
-
-
-
-<div class="dc-text-block justify-center " id="pKMnQ">
-
-    <div class="dc-text-block__content">
-<h2>Hosting that grows with your clients</h2>
-<p><span class="font-size-normal">Projects rarely scale in neat, predictable steps.</span></p>
-<p><span class="font-size-normal">A customer starts with a straightforward setup, then the project becomes more important. Traffic grows. Campaigns become more ambitious. The platform supports more markets, more content, or more business-critical journeys. At some point, the conversation is no longer only about more capacity. It is also about isolation, predictability, and confidence.</span></p>
-<p><span class="font-size-normal">That is why we are making dedicated resources a more accessible and easier-to-position option in Umbraco Cloud. For some projects, shared Cloud is exactly right. For others, dedicated resources provide a stronger operational setup without the agency needing to move away from Umbraco Cloud or build a custom hosting model.</span></p>
-<p><span class="font-size-normal">At </span><a data-router-slot="disabled" href="https://codegarden.umbraco.com/" type="external"><u>Codegarden,</u></a><span class="font-size-normal"> we will share more about the next step in this direction, including updated dedicated options and an update on load-balanced setups for projects that need additional capacity. These are among the most requested features in Cloud right now, and we cannot wait to make them available.</span></p>
-<p><span class="font-size-normal">There is also a more immediate way to support growing projects. </span><strong>Plan Extensions</strong><span class="font-size-normal"> allow you to add extra bandwidth or media storage via additional resource packages as content expands or traffic increases. This helps Cloud adapt to client growth without forcing a structural change every time. </span></p>
-<p><span class="font-size-normal">For now, configuring these packages runs through your Partner Manager, but they mark a clear product direction toward more granular and flexible scaling options directly in the Cloud interface over time. If you are not an Umbraco Partner and are interested in Plan Extensions, please reach out, and we will find a solution.</span><br></p>
-<h2>Security that works for you in the background</h2>
-<p><span class="font-size-normal">Client expectations around security are rising steadily, and much of the burden of meeting those expectations falls on agencies. Several foundational improvements over the past two years are designed to reduce that overhead without adding complexity to your team’s daily work.</span></p>
-<ul>
-<li><p><span class="font-size-normal">The built-in </span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cloud/build-and-customize-your-solution/set-up-your-project/security/web-application-firewall" type="external"><u>Web Application Firewall (WAF)</u></a><span class="font-size-normal"> automatically filters common malicious traffic before it reaches the application.</span></p></li>
-<li><p><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cloud/build-and-customize-your-solution/set-up-your-project/security/managing-transport-security" type="external"><u>Managed Challenges</u></a><span class="font-size-normal"> help handle unusual traffic surges by verifying human users without adding unnecessary friction for legitimate visitors.</span></p></li>
-<li><p><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cloud/go-live/manage-hostnames/hostname-pre-validation" type="external"><u>Hostname Pre-Validation</u></a><span class="font-size-normal"> removes much of the last-minute scramble on go-live day by letting teams map domains and prepare TLS certificates before traffic is switched over.</span></p></li>
-</ul>
-<p></p>
 </div>
 </div>
-
-
-<div class="dc-image-block " id="KfwuJ">
-
+<div class="column-block">
+<div class="dc-block-list">
+<div class="dc-image-block" id="IEeGt">
 
-        <div class="dc-image-wrapper">
-                <img srcset="https://umbraco.com/media/h4jiq1wi/security-settings.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcf1b1f9fec100 662w, https://umbraco.com/media/h4jiq1wi/security-settings.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf1b1f9fec100 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/h4jiq1wi/security-settings.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcf1b1f9fec100" alt="A screenshot of a security settings configuration screen displaying default transport security options. The page includes toggle switches for HTTP/2, TLS 1.3, and WAF, along with checkbox selections for geographic regions under a managed challenge." class="dc-image" loading="lazy">
-
-        </div>
+<figure>
+<div class="dc-image-wrapper">
+<img alt="Ben in snowing weather" class="dc-image" loading="lazy" src="https://umbraco.com/media/owvd0clk/snow-pensacola.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a9a85e110"/>
 </div>
-
-
-
-<div class="dc-text-block justify-center " id="IGPMV">
-
-    <div class="dc-text-block__content">
-<p><span class="font-size-normal">Beyond perimeter security, access control is also evolving. For agencies working with larger client organizations, </span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cloud/begin-your-cloud-journey/the-cloud-portal/organizations/organization-login-providers" type="external"><u>Custom Identity Provider support</u></a><span class="font-size-normal"> brings Single Sign-On to both the Cloud portal and the CMS backoffice. This allows teams to connect Umbraco to Microsoft, Google, Auth0, and other external login systems.</span></p>
-<h2>Sustainability reporting, built in</h2>
-<p data-pm-slice="0 0 []"><span class="font-size-normal">ESG conversations are increasingly part of how clients talk about their digital infrastructure, particularly for organizations with formal reporting requirements.</span></p>
-<p><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cloud/optimize-and-maintain-your-site/monitor-and-troubleshoot/sustainability-dashboard" type="external"><u>The Sustainability Dashboard</u></a><span class="font-size-normal">, introduced in 2024, tracks estimated carbon emissions from hosting infrastructure directly in the portal. It provides historical data that can support those client conversations without requiring a separate tool or manual process.</span></p>
-<p><span class="font-size-normal">We are also working on improvements that should make this data more detailed and easier to use, including clearer breakdowns across different parts of the hosting setup.</span></p>
-<h2>Where Cloud is heading</h2>
-<p><span class="font-size-normal">These updates reflect a consistent direction: making Cloud more visible, more flexible, and more useful in the long-term operation of client solutions.</span></p>
-<p><span class="font-size-normal">There is more in the works, and </span><a data-router-slot="disabled" href="https://codegarden.umbraco.com/" type="external"><u>Codegarden 2026</u></a><span class="font-size-normal"> is where we will share more of that direction.</span></p>
-<p><span class="font-size-normal">Among the Cloud-related sessions this year, two Umbraco HQ talks are especially relevant to this story:</span></p>
-<p><a data-router-slot="disabled" href="https://codegarden.umbraco.com/program/?session=1080026" type="external"><u>Running Umbraco in a Changing World</u></a><span class="font-size-normal"> (Bjarke Berg, VP Engineering &amp; Head of Cloud) looks at what running Umbraco actually means in 2026. The internet landscape has changed, especially with the rise of automated traffic. Bjarke will look at security, performance, operations, and what every agency should be checking on the sites they operate today.</span></p>
-<p><a data-router-slot="disabled" href="https://codegarden.umbraco.com/program/?session=1080021" type="external"><u>Build. Scale. Grow. From Running Projects to Growing Portfolios with Umbraco Cloud</u></a><span class="font-size-normal"> (Arnold Visser, Head of Business Development) picks up where this post leaves off. Most Umbraco projects are built well, but managing a growing portfolio requires a shift in how delivery and operations are handled. This session explores how Umbraco Cloud is evolving to support agencies as they move from managing individual projects to running a growing portfolio of client solutions with confidence.</span></p>
-<p><span class="font-size-normal">Both sessions will be available to attend in person or watch online.</span></p>
-<p><span class="font-size-normal">Because building great Umbraco projects is only part of the story. Running them well, growing them over time, and supporting them together is where Umbraco Cloud makes you stronger. </span><br><br></p>
+<figcaption>We broke records in early 2025, with over 9 inches (that’s 22cm) of snowfall in Florida.</figcaption>
+</figure>
 </div>
 </div>
-
-        ]]></content:encoded>
-      <media:content url="https://umbraco.com/media/chjpw3ep/some.png?width=1200&amp;height=628&amp;quality=85&amp;v=1dcef6732d08ab0" medium="image"/>
-      <media:thumbnail url="https://umbraco.com/media/chjpw3ep/some.png?width=1200&amp;height=628&amp;quality=85&amp;v=1dcef6732d08ab0"/>
-    </item>
-<item>
-      <title>Umbraco 18 Release Candidate</title>
-      <link>https://umbraco.com/blog/umbraco-18-release-candidate/</link>
-      <guid isPermaLink="true">https://umbraco.com/blog/umbraco-18-release-candidate/</guid>
-      <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[Discover and test what’s coming to the final Umbraco 18 release, including Phase One of Elements for reusable content management, and typed OpenAPI schemas for the Delivery API.]]></description>
-      <content:encoded><![CDATA[<p><span class="font-size-normal">Today, we're publishing the Umbraco 18 release candidate. As usual, this marks the beginning of 4 weeks of internal testing and community review, culminating in the final release on </span><strong>25 June 2026</strong><span class="font-size-normal">. In this post, you'll discover what to look forward to if you upgrade to 18, including some nice 17.X features you might have missed. We look forward to hearing your feedback</span></p>
-
-
-<div class="dc-text-block justify-center " id="UuVbU">
-
-    <div class="dc-text-block__content">
-<p><span class="font-size-normal">This Release Candidate follows on from the beta releases that started a couple of weeks ago. Since then, we've spent the time looking into reported issues, bringing in some additional bug fixes, and generally polishing to get to the point of releasing the RC today. That'll continue over the next period, but we'll be limiting change now to only the resolution of issues found or reported in regression testing.</span></p>
-<p><span class="font-size-normal">Umbraco 18 has a familiar shape to it: one headline feature that arrives in its first stage, a handful of focused improvements, and a steady stream of polish underneath. There's a fair bit to cover, so I've split this post into three. First, what's new in 18 that you'll see when you upgrade. Then a look at some work in progress that's worth knowing about, even though it isn't in the release. And finally, a quick recap of things that have landed in the 17.x minor releases you may not have caught, and will be available in Umbraco 18 as well.</span></p>
-<h2>What's new in 18</h2>
-<h3>Elements - Phase One</h3>
-<p><span class="font-size-normal">The main new feature in 18 is </span><strong>Elements</strong><span class="font-size-normal">: a way to manage reusable content that lives outside the document tree.</span></p>
-<p><span class="font-size-normal">For some time now, editors have leaned on documents to hold things that aren't </span><em>really</em><span class="font-size-normal"> pages — site-wide settings, footer data, reusable promotion blocks, and so on. It works, but it stretches what documents are designed for, and it doesn't give editors a clear mental model for "this isn't a page, it's a piece of content I want to reuse."</span></p>
-<p><span class="font-size-normal">What you'll find in 18 is the foundation for Elements: a dedicated Library section in the backoffice for managing elements, which exhibit all the features you'd expect from a first-class content type — reference tracking, workspace validation, scheduled publishing, rollback, permissions, audit logs, recycle bin, and global search integration.</span></p>
-<p><span class="font-size-normal">We also provide an element picker, configurable by start node, along with user permissions to control which editors can access the Library, and what they can do within it.</span></p>
-<p><span class="font-size-normal">Already this is useful for non-routable content that editors need to manage — settings, taxonomy-style data, anything you'd rather not have to model as a page.</span></p>
 </div>
 </div>
-
+<div class="dc-text-block justify-center" id="RSdgd">
 
-<dc-video-picker-media source="https://umbraco.com/media/e0gp0ntq/elements-short-demo.mp4" name="Demo of Elements - Phase One" length="" thumbnail="https://umbraco.com/media/zxpbtx5o/screenshot-2026-05-26-at-135133.png?width=1360&amp;height=765&amp;format=webp&amp;quality=85&amp;v=1dced061280f460" format="169">
-    <video slot="video" controls="controls" poster="https://umbraco.com/media/zxpbtx5o/screenshot-2026-05-26-at-135133.png?width=1360&amp;height=765&amp;format=webp&amp;quality=85&amp;v=1dced061280f460" preload="none" width="100%" height="100%">
-        <source></source>
-        <p>
-            Your browser does not support HTML5 videos.
-            <a href="https://umbraco.com/media/e0gp0ntq/elements-short-demo.mp4">Here is a link to the video</a> instead.
-        </p>
-    </video>
-</dc-video-picker-media>
-
-
-
-<div class="dc-text-block justify-center " id="LmMwf">
-
-    <div class="dc-text-block__content">
-<p><span class="font-size-small">See how to define element types, prepare and publish element instances and associate them with pages using the element picker.</span></p>
-<p><span class="font-size-normal">It is, however, phase one of a larger feature. The bigger payoff — being able to mix and match Elements alongside standalone blocks in the Block Editor, convert blocks into reusable library elements, and customize them per page — is targeted for Umbraco 19 later in 2026. If you'd like the full picture of where this is heading, the </span><a data-router-slot="disabled" data-anchor="#CMS" href="https://umbraco.com/blog/umbraco-product-update-q1-2026/#CMS" target="_blank" title="https://umbraco.com/blog/umbraco-product-update-q1-2026/#CMS" type="external"><u>Q1 2026 product update</u></a><span class="font-size-normal"> walks through the roadmap.</span></p>
-<h3>Typed OpenAPI schemas for the Delivery API</h3>
-<p><span class="font-size-normal">The Delivery API now has an opt-in option to generate typed OpenAPI schemas for each Document Type, Element Type, and Media Type in your project. Enable it via configuration, and the OpenAPI document will include dedicated schemas for each content type, expressed as a discriminated union keyed on </span><em><span class="font-size-normal">contentType</span></em><span class="font-size-normal"> (or </span><em><span class="font-size-normal">mediaType</span></em><span class="font-size-normal"> for media).</span></p>
-<p><span class="font-size-normal">It's worth being clear that this only changes the OpenAPI document — the Delivery API responses themselves are unchanged. So if you're consuming the API directly, there's nothing to gain. If you're generating clients from the specification, though, there's a real benefit: TypeScript types, Swift models, or C# DTOs can now be shaped to your actual content model, rather than a loosely-typed bag of properties, with concrete property access once you narrow on the discriminator.</span></p>
-<p><span class="font-size-normal">One caveat — the schemas use OpenAPI 3.1 patterns (</span><em><span class="font-size-normal">oneOf</span></em><span class="font-size-normal"> with discriminators and </span><em><span class="font-size-normal">allOf)</span></em><span class="font-size-normal">, and not every client generator supports those equally well, so it's worth verifying the output against your chosen tool before relying on it in production. The </span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cms/18.latest/develop-with-umbraco/headless-and-apis/content-delivery-api/content-type-schemas-in-openapi" target="_blank" title="https://docs.umbraco.com/umbraco-cms/18.latest/develop-with-umbraco/headless-and-apis/content-delivery-api/content-type-schemas-in-openapi" type="external"><u>content type schemas in OpenAPI documentation</u></a><span class="font-size-normal"> walk through the details with a configuration example and sample TypeScript usage.</span></p>
-<h3>Replacing Swashbuckle with Microsoft.AspNetCore.OpenApi</h3>
-<p><span class="font-size-normal">The other big change in 18 is one most editors will never see, but package and extension developers will want to read carefully: we've replaced Swashbuckle with the built-in </span><em><span class="font-size-normal">Microsoft.AspNetCore.OpenApi.</span></em></p>
-<p><span class="font-size-normal">The motivation is reasonably straightforward — fewer third-party dependencies, native OpenAPI 3.1 support, and a more sustainable path forward as the .NET platform evolves. The practical impact, though, is that any extension that wired up its own OpenAPI document on Umbraco 17 won't compile against Umbraco 18, because the Swashbuckle types it relied on are gone.</span></p>
-<p><span class="font-size-normal">For most cases, the migration is small. Umbraco 18 ships a new helper, </span><em><span class="font-size-normal">AddBackOfficeOpenApiDocument( )</span></em><span class="font-size-normal">, that handles naming conventions, Swagger UI registration, and JSON serialization in one call. The OpenAPI endpoint also moves from </span><em><span class="font-size-normal">/umbraco/swagger/{documentName}/swagger.json</span></em><span class="font-size-normal"> to </span><em><span class="font-size-normal">/umbraco/openapi/{documentName}.json</span></em><span class="font-size-normal">, so any client-generation scripts you have will need updating.</span></p>
-<p><span class="font-size-normal">If you maintain a package or backoffice extension, this is one to test against the RC. Laura Neto has written a </span><a data-router-slot="disabled" href="https://dev.to/lauraneto/umbraco-18-and-openapi-a-heads-up-for-extension-developers-1k7" target="_blank" title="https://dev.to/lauraneto/umbraco-18-and-openapi-a-heads-up-for-extension-developers-1k7" type="external"><u>practical heads-up for extension developers</u></a><span class="font-size-normal"> that walks through exactly what changes and how to adapt.</span></p>
-<h3>Other breaking changes</h3>
-<p><span class="font-size-normal">There are a handful of other breaking changes in 18 where we have taken the opportunity to remove deprecated code. </span><em><span class="font-size-normal">UmbracoApiController</span></em><span class="font-size-normal"> is gone in favor of standard </span><em><span class="font-size-normal">[ApiController], ILocalizationService </span></em><span class="font-size-normal">is split into </span><em><span class="font-size-normal">ILanguageService</span></em><span class="font-size-normal"> and </span><em><span class="font-size-normal">IDictionaryItemService, IFileService </span></em><span class="font-size-normal">splits into four focused services, more methods are async-only, </span><em><span class="font-size-normal">IPublishedContent.Parent</span></em><span class="font-size-normal"> and </span><em><span class="font-size-normal">.Children </span></em><span class="font-size-normal">move to extension methods, and a few configuration defaults shift (notably, </span><em><span class="font-size-normal">EnableMediaRecycleBinProtection</span></em><span class="font-size-normal"> is now</span><em><span class="font-size-normal"> true)</span></em><span class="font-size-normal">.</span></p>
-<p><span class="font-size-normal">Rather than enumerate them all here, the </span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cms/18.latest/get-started/upgrading-and-migrating/version-specific" target="_blank" title="https://docs.umbraco.com/umbraco-cms/18.latest/get-started/upgrading-and-migrating/version-specific" type="external"><u>version-specific upgrade documentation</u></a><span class="font-size-normal"> contains the full details. When you come to upgrade your projects, that's the page to bookmark.</span></p>
-<h2></h2>
-<h2>Things in Umbraco 17 you may have missed</h2>
-<p><span class="font-size-normal">A fair bit has shipped in the 17.x minor releases - up to and including 17.5, which ships alongside 18.0. If you're on an earlier minor, it's worth catching up on what's been added since, all of which you'll also find in 18.</span></p>
-<h3>Better support for AI</h3>
-<p><span class="font-size-normal">17.4 introduced JSON Schema endpoints for the Management API, which can be a great help for AI tools interacting with the API. Until now, a tool like Umbraco MCP had no reliable way to know the shape of a property's value.</span></p>
-<p><span class="font-size-normal">With schema endpoints in place, an LLM, or indeed any external tool, can request the schema for a Data Type or Document Type, understand the required structure, and construct valid values deterministically - rather than guessing and hoping the API accepts what's been generated. Combined with a new document patch endpoint, that improves AI-driven content editing from "best effort" into something you can much more safely rely on.</span></p>
-<p><span class="font-size-normal">Matt Brailsford has written about </span><a data-router-slot="disabled" href="https://mattbrailsford.dev/why-umbraco-1740-is-a-big-deal-for-ai" target="_blank" title="https://mattbrailsford.dev/why-umbraco-1740-is-a-big-deal-for-ai" type="external"><u>why this is a big deal for AI</u></a><span class="font-size-normal">, and it's worth reading if you're building or using AI integrations on top of Umbraco.</span></p>
-<h3>Configurable website output caching</h3>
-<p><span class="font-size-normal">17.4 added server-side output caching for template-rendered pages, with intelligent invalidation based on content keys, ancestors, content types, and related items. Turn it on via configuration, and concurrent requests within the cache window collapse into a single render - so CPU stops scaling linearly with traffic spikes, and cache eviction happens automatically when content publishes.</span></p>
-<p><span class="font-size-normal">It's opt-in, configurable, and pairs neatly with the corresponding extension points added to the Delivery API. See the </span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/caching/website-output-caching" target="_blank" title="https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/caching/website-output-caching" type="external"><u>website output caching documentation</u></a><span class="font-size-normal"> for the details.</span></p>
-<h3>Lightweight external-only members</h3>
-<p><span class="font-size-normal">If you authenticate members through Entra ID, Auth0, Google, or any other external identity provider, the new lightweight external-only members option is worth a look. Instead of storing each member as a full content entity, with versions, content table writes, and search re-indexing on every registration, Umbraco can now keep just a minimal identity record with the fields needed for authentication and role membership.</span></p>
-<p><span class="font-size-normal">The result is much better throughput under high-concurrency login and registration scenarios, because you're no longer hitting write contention on content tables and search indexes. The trade-off is that you can't edit profiles in the backoffice or store member-specific content properties, which is appropriate when the external provider is the source of truth for member identity. The </span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cms/run-in-production/security/lightweight-external-members" target="_blank" title="https://docs.umbraco.com/umbraco-cms/run-in-production/security/lightweight-external-members" type="external"><u>lightweight external members documentation</u></a><span class="font-size-normal"> has the full picture.</span></p>
-<h3>Modular Umbraco deployments</h3>
-<p><span class="font-size-normal">17.3 introduced the ability to run Umbraco with different combinations of the backoffice, website front-end, and Delivery API enabled or disabled. So you can deploy a backoffice-only authoring environment, a front-end-only delivery environment, or any other combination that fits your topology, useful for scaling, isolating concerns, or reducing the attack surface of public-facing nodes.</span></p>
-<p><span class="font-size-normal">17.4 followed up with a standalone login page for front-end-only deployments, so authentication still works when there's no backoffice running, useful, for example, when protecting a restricted environment with Basic Authentication. Together, these give a lot more flexibility in how a multi-environment Umbraco deployment can be architected.</span></p>
-<h3>Load balancing improvements</h3>
-<p><span class="font-size-normal">Load balancing the backoffice was a standout feature in Umbraco 17, and we've improved that support over the subsequent releases. A couple of performance concerns have been resolved, and we've added configurable SignalR transport settings, making it possible to run load-balanced deployments where session stickiness isn't available or desired.</span></p>
-<h3>Background jobs and operability</h3>
-<p><span class="font-size-normal">Unattended upgrades - the migrations that run automatically when you deploy a new version - moved into a background task, with liveness and readiness health probes signalling whether the application is ready to take traffic. For containerized or autoscaled deployments, where a slow startup migration could otherwise cause cascading failures or premature restarts, this provides a nice operability improvement.</span></p>
-<p><span class="font-size-normal">Distributed background jobs now pass the cancellation token through to job implementations, so long-running work can shut down gracefully when the application stops, rather than being abandoned mid-execution. Recurring background jobs also gain on-demand triggering, with control over what happens to the next scheduled execution. Pending documentation for the background jobs updates is </span><a data-router-slot="disabled" href="https://github.com/umbraco/UmbracoDocs/pull/8082" target="_blank" title="https://github.com/umbraco/UmbracoDocs/pull/8082" type="external"><u>available in this pull request to the docs repo</u></a><span class="font-size-normal">.</span></p>
-<p><span class="font-size-normal">On the database side, a new SQL Server health check detects untrusted foreign key and check constraints - a condition that can quietly hurt query optimizer performance and which is seen on upgraded sites following historical use of bulk imports. The check surfaces in the existing health check dashboard so it's easy to spot and remediate.</span></p>
-<h3>Performance improvements</h3>
-<p><span class="font-size-normal">If you've upgraded through the 17.x minors, you will have picked up a long list of performance improvements. These include work to reduce and de-duplicate backoffice requests, and optimizations for front-end rendering and backoffice operations. All of these are wrapped up and available in 18.</span></p>
-<h3>Backoffice improvements</h3>
-<p><span class="font-size-normal">Across the 17.x minors and into 18, we've also brought many editor-experience improvements, including:</span></p>
-<ul>
-<li><p><strong>Icon thesaurus</strong><span class="font-size-normal">: the icon picker now supports keyword search using alternative names, so searching for "picture" finds the image icon rather than nothing.</span></p></li>
-<li><p><strong>Media cards and table views</strong><span class="font-size-normal">: a view switcher in the media picker, so editors can choose between cards and a denser table view.</span></p></li>
-<li><p><strong>Inline folder creation and selection in pickers</strong><span class="font-size-normal">: media and entity pickers now support creating folders inline, and selecting a folder itself rather than only its contents — handy when the folder is what you actually want to reference.</span></p></li>
-<li><p><strong>Thumbnail generation by file extension</strong><span class="font-size-normal">: smarter thumbnails that respect file type, so non-image media gets a useful preview.</span></p></li>
-<li><p><strong>User group descriptions</strong><span class="font-size-normal">: a small thing, but groups can now carry a description, which is useful when "Editors" and "Senior Editors" need explaining to a new team member.</span></p></li>
-<li><p><strong>Current user workspace</strong><span class="font-size-normal">: a dedicated modal for managing your own profile, so you no longer have to ask an administrator to update your preferred language.</span></p></li>
-<li><p><strong>Document picker breadcrumbs</strong><span class="font-size-normal">: search results in the document picker now show the ancestor breadcrumb path, so it's clear which "Home" or "Settings" you're picking when several documents share a name.</span></p></li>
-<li><p><strong>Rich text editor</strong><span class="font-size-normal">: the Tiptap RTE now supports resizing images and embeds.</span></p></li>
-<li><p><strong>New extension points for backoffice developers</strong><span class="font-size-normal">: a Block Action extension type lets package authors add custom actions to individual blocks in the Block List and Block Grid editors, and new Value Type and Value Summary extensions let you customize how property values are displayed in summary contexts like card and collection views.</span></p></li>
-</ul>
-<p><span class="font-size-normal">Alongside the visible features, there's been a steady stream of accessibility work across the backoffice, labels added to controls that were previously missing them, improvements to keyboard navigation, and small refinements that make the experience smoother for screen-reader users. It's not the kind of work that headlines a release, but it adds up.</span></p>
-<h3>Community contributions</h3>
-<p><span class="font-size-normal">Two of the items above have particularly nice community stories behind them.</span></p>
-<p><span class="font-size-normal">Lightweight external members started as Jeroen Breuer's "virtual members" proof-of-concept back in 2022, a community experiment that identified a real problem and eventually landed in core in 17.4. Jeroen wrote about </span><a data-router-slot="disabled" href="https://www.linkedin.com/posts/jeroen-breuer-3b135031_umbraco-opensource-community-activity-7462439610225258496-HJWN/" target="_blank" title="https://www.linkedin.com/posts/jeroen-breuer-3b135031_umbraco-opensource-community-activity-7462439610225258496-HJWN/" type="external"><u>the journey from community PR to shipped feature</u></a><span class="font-size-normal">, and it's a good read.</span></p>
-<p><span class="font-size-normal">The icon thesaurus has an even longer arc. Joe Glombek started Umbicosaurus back in 2021 as a package, with contributions to the icon dictionary from various community members. After it stalled in 2022, categorizing hundreds of icons turning out to be more work than any one person could realistically finish, Niels Lyngsø reached out about bringing the idea into core, where it could benefit from broader community maintenance. The thesaurus shipped in 17.4 with fuzzy search added on top. Joe has written about </span><a data-router-slot="disabled" href="https://joe.gl/ombek/blog/umbicosaurus-deextinction/" target="_blank" title="https://joe.gl/ombek/blog/umbicosaurus-deextinction/" type="external"><u>Umbicosaurus's de-extinction</u></a><span class="font-size-normal"> and it's a lovely example of how community and core work meet.</span></p>
-<h2>Try the RC and let us know what you find</h2>
-<p><span class="font-size-normal">Between now and the 25th of June, we'd really value your help testing the RC against real projects, packages and websites.</span></p>
-<p><span class="font-size-normal">If you do find anything, after a quick look to see if the problem is already reported, please provide details in the </span><a data-router-slot="disabled" href="https://github.com/umbraco/Umbraco-CMS/issues" target="_blank" title="https://github.com/umbraco/Umbraco-CMS/issues" type="external"><u>CMS tracker</u></a><span class="font-size-normal">, indicating which version you've discovered an issue in.</span></p>
-<p><span class="font-size-normal">You'll find the release candidate on </span><a data-router-slot="disabled" href="https://www.nuget.org/packages/Umbraco.Cms/18.0.0-rc1" target="_blank" title="https://www.nuget.org/packages/Umbraco.Cms/18.0.0-rc1" type="external"><u>NuGet</u></a><span class="font-size-normal"> and details of the release on both </span><a data-router-slot="disabled" href="https://github.com/umbraco/Umbraco-CMS/releases/tag/release-18.0.0-rc1" target="_blank" title="https://github.com/umbraco/Umbraco-CMS/releases/tag/release-18.0.0-rc1" type="external"><u>GitHub</u></a><span class="font-size-normal"> and </span><a data-router-slot="disabled" href="http://releases.umbraco.com" target="_blank" title="http://releases.umbraco.com" type="external"><u>releases.umbraco.com</u></a><span class="font-size-normal">.</span></p>
-<p><span class="font-size-normal">And, as always, thank you to everyone who has contributed code, ideas, bug reports, and conversations to this release.</span></p>
+<div class="dc-text-block__content"><h2>What’s on repeat in your headphones?</h2><p>I like to surf bandcamp every so often, which is a really nice way to escape algorithmic streaming. I’ll usually do this when I’m stuck in airports, and I’ve found gem after gem from tiny indie artists this way. I’ll give you some of the highlights of what I’ve found:</p><ul><li><p>A Million Miles Away - FM Attack</p></li><li><p>Engage - Hypixi !!!, Jasper De Ceuster</p></li><li><p>Forever - Stick Figure</p></li><li><p>Fire on the Horizon (Johnny Cosmic Remix) - Stick Figure</p></li><li><p>Shelter Song - Temples</p></li><li><p>Porcelain - The Hip Abduction</p></li><li><p>The Dreamer - Pale Blue Eyes</p></li><li><p>Dripfield - Goose</p></li></ul><p> </p><h2>How can we find you?</h2><p><strong>LinkedIn:</strong> <a data-router-slot="disabled" href="https://www.linkedin.com/in/ben-s-47b138113/" type="external">https://www.linkedin.com/in/ben-s-47b138113/</a></p><p><strong>Instagram: </strong><a data-router-slot="disabled" href="https://www.instagram.com/nanokernel/" type="external">https://www.instagram.com/nanokernel/</a></p><p><strong>Substack:</strong> <a data-router-slot="disabled" href="https://ben1777.substack.com/" type="external">https://ben1777.substack.com/</a></p><p></p></div>
 </div>
-</div>
-
-        ]]></content:encoded>
-      <media:content url="https://umbraco.com/media/xhwhszxh/some_18rc.png?width=1200&amp;height=628&amp;quality=85&amp;v=1dced047aece5b0" medium="image"/>
-      <media:thumbnail url="https://umbraco.com/media/xhwhszxh/some_18rc.png?width=1200&amp;height=628&amp;quality=85&amp;v=1dced047aece5b0"/>
+</div>]]></content:encoded>
+      <media:content url="https://umbraco.com/media/dhbe2bvu/community-docs-team.jpeg?v=1dcff1a95c831f0" medium="image" />
     </item>
   </channel>
 </rss>
