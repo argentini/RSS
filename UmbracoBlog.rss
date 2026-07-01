@@ -5,321 +5,155 @@
     <link>https://umbraco.com/blog/</link>
     <description>Blog posts from umbraco.com</description>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jun 2026 20:04:08 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Going from Umbraco 13 to 17</title>
+      <link>https://umbraco.com/blog/going-from-umbraco-13-to-17/</link>
+      <guid isPermaLink="true">https://umbraco.com/blog/going-from-umbraco-13-to-17/</guid>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<div class="teaser"><p><span class="citation-4">Why walk when you can leap?</span><span class="citation-4 citation-end-4"> As Umbraco 13 is nearing End-Of-Life, many are looking into the next move for their projects. Umbraco 17 LTS is an obvious one - but what are your options? And is there a way to smooth the migration/upgrade process? There is, using Umbraco Cloud. And this choice is not just short-term beneficial for you or your clients, but will provide you with a solid platform for stability and growth for many years. In this blog post, I'll explain the paths you can choose to follow when you go from Umbraco 13 to 17 so you can make the right decision before Umbraco 13 reaches EOL on December 14, 2026. </span></p></div>]]></description>
+      <content:encoded><![CDATA[<div class="teaser"><p><span class="citation-4">Why walk when you can leap?</span><span class="citation-4 citation-end-4"> As Umbraco 13 is nearing End-Of-Life, many are looking into the next move for their projects. Umbraco 17 LTS is an obvious one - but what are your options? And is there a way to smooth the migration/upgrade process? There is, using Umbraco Cloud. And this choice is not just short-term beneficial for you or your clients, but will provide you with a solid platform for stability and growth for many years. In this blog post, I'll explain the paths you can choose to follow when you go from Umbraco 13 to 17 so you can make the right decision before Umbraco 13 reaches EOL on December 14, 2026. </span></p></div><div class="dc-block-list">
+<div class="dc-image-block" id="WRimv">
+
+<div class="dc-image-wrapper">
+<img alt="SoMe.png (1)" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/jtonk3cu/some.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd07bb3375f470"/>
+</div>
+</div>
+<div class="dc-text-block justify-center" id="yhdLC">
+
+<div class="dc-text-block__content"><h2>Which path is right for you? </h2><p>I<span class="font-size-normal">f you are looking to move your own projects or that of your clients from Umbraco 13 LTS to Umbraco 17 LTS, there are 2 realistic upgrade paths to consider:</span></p><p><span class="font-size-normal">1. Upgrade the existing solution and run the required migrations in the upgraded instance</span></p><p><span class="font-size-normal">2. Prepare a fresh Umbraco 17 solution and move content and schema using Umbraco Deploy import/export</span></p><p><span class="font-size-normal">Both routes can work well. The right choice depends on the shape of the current solution, the amount of legacy in the implementation, and whether this is simply a version upgrade or a chance to modernize the delivery and hosting setup around it.</span></p><p><span class="font-size-normal">For many with older backoffice patterns, custom extensions, or legacy data structures, Path 2 can be especially relevant for moving from Umbraco 13 to 17. This is partly because Umbraco 14 introduced a new backoffice architecture and extension model, creating a natural moment to modernise parts of the solution.</span></p><p><span class="font-size-normal">Whether you follow Path 1 or Path 2, a major upgrade is also an ideal time to consider Umbraco Cloud. If they are already investing in the move to Umbraco 17, it is a natural moment to evaluate Umbraco Cloud, the platform managed by Umbraco HQ. It gives you a clearer operational setup, includes Umbraco Deploy as part of the platform, and adds Umbraco Support around your migration journey and beyond.</span></p><p>Thus, Umbraco Cloud can help make the migration journey smoother, while give you a stable, secure platform for the long haul.</p></div>
+</div>
+<div class="dc-text-block justify-center" id="RROVK">
+
+<div class="dc-text-block__content"><h2>A major version upgrade is rarely “just” a technical update</h2><p><span class="font-size-normal">In practice, it is usually the point where you need to evaluate the full picture: custom code, package compatibility, integrations, hosting, deployment flow, and how much of the current implementation should be carried forward. That is what makes the move from Umbraco 13 to Umbraco 17 more than a version change. For most cases, it makes more sense to build fresh on Umbraco 17, and this is where the benefits of Umbraco Deploy and Umbraco Cloud come in.</span></p><p></p><h2>Choosing path 2: Build fresh on Umbraco 17 and save time with Umbraco Deploy</h2><p><span class="font-size-normal">This is what we’ll describe as the clean option. Instead of upgrading the full implementation, you set up a fresh Umbraco 17-ready solution on Umbraco Cloud in just a few clicks and use the Umbraco Deploy import/export feature to move content and schema across in a more structured way. For agencies, this can be especially valuable when the project has built up technical debt over time, when property editors or content structures have evolved, or when the implementation would benefit from a cleaner architecture rather than a direct continuation of the old one.</span></p></div>
+</div>
+<div class="dc-text-block justify-center" id="dddlw">
+
+<div class="dc-text-block__content"><h2>What Umbraco Deploy can help with</h2><p><span class="font-size-normal">Umbraco Deploy adds flexibility to the standard CMS migrations. The CMS upgrade path already handles core version-to-version migrations, but Umbraco Deploy transforms legacy content and schema during import, including through custom migrators for project-specific data models. This is especially useful for older client solutions, where part of the standard migration is handled by the CMS itself, while Umbraco Deploy gives you extra control to transform legacy or custom data structures into a cleaner Umbraco 17 setup.r</span></p><p>It is also a very natural route when the upgrade is combined with a move to Umbraco Cloud. You can be sure of a smoother migration process and with the Umbraco Cloud support team there to answer any questions you might have during the migration, you’ll have the best setup from the very beginning.</p><h3><span class="font-size-normal">Path 2 is often the ideal fit when:</span></h3><ul><li><p><span class="font-size-normal">The existing solution has grown more complex over time (as with the jump from version 13 to 17)</span></p></li><li><p><span class="font-size-normal">The client wants to modernize and take advantage of new features, not only upgrade</span></p></li><li><p><span class="font-size-normal">The content is valuable, but the implementation should improve</span></p></li><li><p><span class="font-size-normal">You want to save development time moving content and schema</span></p></li><li><p><span class="font-size-normal">Hosting and operational setup are also being reconsidered to ensure long-term benefits</span></p></li></ul><h4><span class="font-size-normal">Main benefit of path 2</span></h4><p><span class="font-size-normal">You get a cleaner target setup and more freedom to improve the implementation.</span></p><h4><span class="font-size-normal">Main trade-off of path 2</span></h4><p><span class="font-size-normal">It usually needs more planning and clearer scoping up front. But setting up a solid foundation on a stable, well-supported platform will become a long-term benefit for you and your client.</span></p><p></p></div>
+</div>
+<div class="dc-image-block" id="eSWlS">
+
+<div class="dc-image-wrapper">
+<img alt="paper-cloud-held-in-hand-against-green-backdrop-2026-03-17-05-33-02-utc.jpg" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/5nrfzaml/paper-cloud-held-in-hand-against-green-backdrop-2026-03-17-05-33-02-utc.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcedce8f4434d0"/>
+</div>
+</div>
+<div class="dc-text-block justify-center" id="nPNzL">
+
+<div class="dc-text-block__content"><h2>Comparison table - path 1 vs path 2</h2><p></p><table><colgroup><col/><col/><col/></colgroup><tbody><tr><td colspan="1" rowspan="1"><p>TOPIC</p></td><td colspan="1" rowspan="1"><p>PATH 1: UPGRADE EXISTING SOLUTION</p></td><td colspan="1" rowspan="1"><p>PATH 2: FRESH BUILD + UMBRACO CLOUD, DEPLOY IMPORT/EXPORT</p></td></tr><tr><td colspan="1" rowspan="1"><p>Core approach</p></td><td colspan="1" rowspan="1"><p>Upgrade the current project and run migrations</p></td><td colspan="1" rowspan="1"><p>Build on Umbraco 17 and move content/schema across</p></td></tr><tr><td colspan="1" rowspan="1"><p>Best fit</p></td><td colspan="1" rowspan="1"><p>Healthier and well-understood projects</p></td><td colspan="1" rowspan="1"><p>Older, more complex, or more legacyheavy projects</p></td></tr><tr><td colspan="1" rowspan="1"><p>Continuity</p></td><td colspan="1" rowspan="1"><p>High</p></td><td colspan="1" rowspan="1"><p>Medium</p></td></tr><tr><td colspan="1" rowspan="1"><p>Opportunity to clean up</p></td><td colspan="1" rowspan="1"><p>Limited</p></td><td colspan="1" rowspan="1"><p>Strong</p></td></tr><tr><td colspan="1" rowspan="1"><p>Technical debt carried forward</p></td><td colspan="1" rowspan="1"><p>More likely</p></td><td colspan="1" rowspan="1"><p>Less likely</p></td></tr><tr><td colspan="1" rowspan="1"><p>Initial effort</p></td><td colspan="1" rowspan="1"><p>Usually lower</p></td><td colspan="1" rowspan="1"><p>Usually higher</p></td></tr><tr><td colspan="1" rowspan="1"><p>Strategic flexibility</p></td><td colspan="1" rowspan="1"><p>Lower</p></td><td colspan="1" rowspan="1"><p>Higher</p></td></tr><tr><td colspan="1" rowspan="1"><p>Fit with Umbraco Cloud</p></td><td colspan="1" rowspan="1"><p>Good</p></td><td colspan="1" rowspan="1"><p>Very strong, Umbraco Deploy is included with every Umbraco Cloud plan</p></td></tr></tbody></table><p></p></div>
+</div>
+<div class="dc-text-block justify-center" id="aizfc">
+
+<div class="dc-text-block__content"><h2>Why is it the ideal time to go Cloud?</h2><p><span class="font-size-normal">If you are already guiding a client through a major upgrade, this is one of the most natural moments to revisit the hosting and operational setup as well. This is not (only) about using Umbraco Cloud because an upgrade can be challenging. It is about using a natural project moment to improve the operational setup around the solution.</span></p></div>
+</div>
+<div class="dc-text-block justify-center has-bg rounded" id="Kfluj">
+
+<div class="dc-text-block__content"><p>“<em>Umbraco Cloud makes our work a lot easier, and it gives stability to our end clients…We like to work on what we are good at, creating great solutions for our customers. And we don’t want to be bothered with tooling, hosting solutions and setup.</em>”</p><p>Frans de Jong Webwonders, Umbraco Platinum Partner</p></div>
+</div>
+<div class="dc-text-block justify-center" id="spirP">
+
+<div class="dc-text-block__content"><h2 data-pm-slice="1 1 []">The benefits for agencies</h2><p><span class="font-size-normal">You stay focused on delivering the right solution for your client, while Umbraco provides the hosting and project management platform, and as a very helpful cherry on top, you have access to the Umbraco Cloud Support Team if any guidance is needed during the migration and after go-live. And remember, partner credits can be used to purchase Cloud plans. </span></p><p></p><h2>World-class support is here for you on Cloud</h2><p>With Umbraco Cloud, your client is not only moving to a solid hosting setup, but they are also moving to a platform where you have access to Umbraco Cloud Support. Major upgrades often involve questions around package compatibility, deployment flow, migrations, environment setup, and validation. Having Umbraco Support available gives both you and your client an additional layer of confidence throughout the process - and beyond!</p></div>
+</div>
+<div class="dc-image-block" id="xJVXN">
+
+<div class="dc-image-wrapper">
+<img alt="Screenshot 2026-06-29 at 10.51.16.png" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/wujhvrzn/screenshot-2026-06-29-at-105116.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd07a49127f990"/>
+</div>
+</div>
+<div class="dc-text-block justify-center" id="UWeml">
+
+<div class="dc-text-block__content"><h2>What if I need more time? </h2><p>Whether you're looking at path 1 or 2, the timing for upgrading from 13 to 17 might not be ideal for you or your clients. That's where Umbraco 13 Extended Long-Term-Support (XLTS) comes in. This is a temporary bridge that’ll buy you time to plan and complete an upgrade. You can extend the support period for 6,12, or 24 months - <a data-router-slot="disabled" href="https://umbraco.com/products/knowledge-center/long-term-support-and-end-of-life/xlts/umbraco-13-xlts/" title="Umbraco 13 XLTS detail link" type="external">view all the Umbraco 13 XLTS details here.</a></p><h2></h2><h2>What if I need a bit more guidance?</h2><p>If you want to talk though your Umbraco 13 options with an Umbraco specialist, our team is ready for you.</p><p>Learn more about <a data-router-slot="disabled" href="https://umbraco.com/products/knowledge-center/long-term-support-and-end-of-life/umbraco-13-end-of-life-eol/" title="Umbraco 13 End-of-Life (EOL)">Umbraco 13 EOL, options and consequences, and book a call </a>with us to help make the right plan for your projects. </p><p></p><p></p></div>
+</div>
+<div class="dc-image-block" id="dbyZt">
+
+<div class="dc-image-wrapper">
+<img alt="Umbraco13_17_2.png" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/tzfoxzyp/umbraco13_17_2.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd07cd14703150"/>
+</div>
+</div>
+</div>]]></content:encoded>
+      <media:content url="https://umbraco.com/media/jqql4l50/thumbnail.png?v=1dd07bb33de5330" medium="image" />
+    </item>
     <item>
       <title>Umbraco 18 Release</title>
       <link>https://umbraco.com/blog/umbraco-18-release/</link>
       <guid isPermaLink="true">https://umbraco.com/blog/umbraco-18-release/</guid>
       <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>The latest Major Release of Umbraco is here: Umbraco 18. Including Phase One of Elements for reusable content management, and typed OpenAPI schemas for the Delivery API. Upgrade today</p>]]></description>
+      <description><![CDATA[<div class="teaser"><p>Umbraco 18 is a short and sweet release. Short, because there's not a lot of new ground to cover. One headline feature, Elements, and we'll get to it. Sweet, because the headline feature isn’t the only good news here: Umbraco 17 LTS is still the home to many projects, still supported, and still where the focus is - and all the great improvements to 17 are of course also in 18. L<span class="font-size-normal">et's start with the “sweet” part:</span></p></div>]]></description>
       <content:encoded><![CDATA[<div class="teaser"><p>Umbraco 18 is a short and sweet release. Short, because there's not a lot of new ground to cover. One headline feature, Elements, and we'll get to it. Sweet, because the headline feature isn’t the only good news here: Umbraco 17 LTS is still the home to many projects, still supported, and still where the focus is - and all the great improvements to 17 are of course also in 18. L<span class="font-size-normal">et's start with the “sweet” part:</span></p></div><div class="dc-block-list">
-<div class="dc-text-block justify-center" id="orXdG">
+<div class="dc-text-block justify-center" id="zNQfj">
 
 <div class="dc-text-block__content"><p><span class="font-size-normal">Or go straight to the Unboxing Umbraco 18 video for a tour of this new major version:</span></p></div>
 </div>
 <dc-video-picker-youtube allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" format="169" length="" name="" source="https://www.youtube.com/embed/PmSAsJMs_lw?si=bhJf6GhVru_hrKvx?enablejsapi=1&amp;version=3&amp;autoplay=1" thumbnail="/media/5ahpktm1/screenshot-2026-06-24-at-132500.png?width=1360&amp;height=765&amp;format=webp&amp;quality=85&amp;v=1dd03cca3a404f0">
-<iframe allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen="allowfullscreen" frameborder="0" height="100%" slot="video" src="https://www.youtube.com/embed/PmSAsJMs_lw?si=bhJf6GhVru_hrKvx%3Fenablejsapi%3D1&amp;version=3&amp;autoplay=1" width="100%"></iframe>
+<iframe allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen="allowfullscreen" frameborder="0" height="100%" slot="video" src="https://www.youtube.com/embed/PmSAsJMs_lw?si=bhJf6GhVru_hrKvx?enablejsapi=1&amp;version=3&amp;autoplay=1" width="100%"></iframe>
 </dc-video-picker-youtube>
-<div class="dc-text-block justify-center" id="umUuH">
+<div class="dc-text-block justify-center" id="UNAGD">
 
 <div class="dc-text-block__content"><h2>The sweet part: Umbraco 17 LTS is still home</h2><p><span class="font-size-normal">Most teams are on Umbraco 17, or heading there, and that's exactly where we want them to be. Umbraco 17 is our Long-Term Supported version, and we're keeping our focus on it with new minor releases roughly every six weeks. So Umbraco 17 stays maintained, supported, and evolving throughout its lifetime.</span></p><p><span class="font-size-normal">That has a practical upside worth being clear about: many of the improvements arriving around this release land in Umbraco 17 minors too, not only in 18. So staying on or upgrading to 17 doesn't mean missing out. For agencies guiding clients through an upgrade decision,  especially those still on Umbraco 13 (EOL, Dec 14, 2026), Umbraco 17 remains the stable, well-supported place to land.</span></p></div>
 </div>
-<div class="dc-text-block justify-center" id="GGbSR">
+<div class="dc-text-block justify-center" id="HSLui">
 
-<div class="dc-text-block__content"><table style="min-width: 50px;"><colgroup><col style="min-width: 25px;"/><col style="min-width: 25px;"/></colgroup><tbody><tr><td colspan="1" rowspan="1"><p><strong>Your situation</strong></p></td><td colspan="1" rowspan="1"><p><strong>What version to pick </strong></p></td></tr><tr><td colspan="1" rowspan="1"><p><span class="font-size-normal">Settled on Umbraco 17 LTS, no immediate need for Elements</span></p></td><td colspan="1" rowspan="1"><p><span class="font-size-normal">Stay on Umbraco 17 LTS</span></p></td></tr><tr><td colspan="1" rowspan="1"><p>You want the new Library and Elements features now</p></td><td colspan="1" rowspan="1"><p>Move to Umbraco 18</p></td></tr><tr><td colspan="1" rowspan="1"><p>You're waiting for fully reusable blocks</p></td><td colspan="1" rowspan="1"><p>Plan for Umbraco 19, Q4 2026</p></td></tr><tr><td colspan="1" rowspan="1"><p>Still on Umbraco 13</p></td><td colspan="1" rowspan="1"><p>Upgrade to Umbraco 17 +, <a data-router-slot="disabled" href="https://umbraco.com/products/knowledge-center/long-term-support-and-end-of-life/xlts/umbraco-13-xlts/" title="Umbraco 13 XLTS">book Extended Long-Term Support</a></p></td></tr></tbody></table><p></p></div>
+<div class="dc-text-block__content"><table><colgroup><col/><col/></colgroup><tbody><tr><td colspan="1" rowspan="1"><p><strong>Your situation</strong></p></td><td colspan="1" rowspan="1"><p><strong>What version to pick </strong></p></td></tr><tr><td colspan="1" rowspan="1"><p><span class="font-size-normal">Settled on Umbraco 17 LTS, no immediate need for Elements</span></p></td><td colspan="1" rowspan="1"><p><span class="font-size-normal">Stay on Umbraco 17 LTS</span></p></td></tr><tr><td colspan="1" rowspan="1"><p>You want the new Library and Elements features now</p></td><td colspan="1" rowspan="1"><p>Move to Umbraco 18</p></td></tr><tr><td colspan="1" rowspan="1"><p>You're waiting for fully reusable blocks</p></td><td colspan="1" rowspan="1"><p>Plan for Umbraco 19, Q4 2026</p></td></tr><tr><td colspan="1" rowspan="1"><p>Still on Umbraco 13</p></td><td colspan="1" rowspan="1"><p>Upgrade to Umbraco 17 +, <a data-router-slot="disabled" href="https://umbraco.com/products/knowledge-center/long-term-support-and-end-of-life/xlts/umbraco-13-xlts/" title="Umbraco 13 XLTS">book Extended Long-Term Support</a></p></td></tr></tbody></table><p></p></div>
 </div>
-<div class="dc-text-block justify-center" id="cOVmS">
+<div class="dc-text-block justify-center" id="xgpHi">
 
 <div class="dc-text-block__content"><p><span class="font-size-normal">Umbraco 18 is a Standard-Term Support release. Moving to it is straightforward if you want what's new, and staying on 17 is just as valid a choice. Both are sweet places to be. </span><br/></p><h2>The short part: Introducing the Library </h2><p><span class="font-size-normal">The one feature headline of Umbraco 18 is a new section in the backoffice,  the </span><strong>Library, </strong><span class="font-size-normal"> and the first thing to live there is </span><strong>Elements.</strong></p></div>
 </div>
-<div class="dc-image-block" id="PFYcO">
+<div class="dc-image-block" id="Mgrpj">
 
 <figure>
 <div class="dc-image-wrapper">
-<img alt="Umbraco_18_Library.png" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/kyibiklw/umbraco_18_library.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd02ff0acd5dd0" srcset="https://umbraco.com/media/kyibiklw/umbraco_18_library.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd02ff0acd5dd0 662w, https://umbraco.com/media/kyibiklw/umbraco_18_library.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd02ff0acd5dd0 1360w"/>
+<img alt="Umbraco_18_Library.png" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/kyibiklw/umbraco_18_library.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd02ff0acd5dd0"/>
 </div>
 <figcaption>Create and manage Elements in the new Library section in Umbraco Backoffice</figcaption>
 </figure>
 </div>
-<div class="dc-text-block justify-center" id="rsCOa">
+<div class="dc-text-block justify-center" id="HmNOX">
 
 <div class="dc-text-block__content"><p><span class="font-size-normal">Elements are content pieces that don't have a URL of their own, but that get reused across a site. The underlying model will be familiar if you've been building with Umbraco for a while. Element Types have existed for years, but they've only supported the structure of Blocks. From Umbraco 18, Element types can be used to create Elements, a new entity that can be managed on its own.</span></p><p><span class="font-size-normal">In practice: on an Element Type, there's a new </span><strong>"allow in Library"</strong><span class="font-size-normal"> toggle. Switch it on, and editors can create instances of that type directly in the Library. Those instances are Elements.</span></p></div>
 </div>
-<div class="dc-image-block" id="VRPdW">
+<div class="dc-image-block" id="CRCAX">
 
 <figure>
 <div class="dc-image-wrapper">
-<img alt="Umbraco_18_Elements.png" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/mrigm1rk/umbraco_18_elements.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd02ff0a4dcd90" srcset="https://umbraco.com/media/mrigm1rk/umbraco_18_elements.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd02ff0a4dcd90 662w, https://umbraco.com/media/mrigm1rk/umbraco_18_elements.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd02ff0a4dcd90 1360w"/>
+<img alt="Umbraco_18_Elements.png" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/mrigm1rk/umbraco_18_elements.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd02ff0a4dcd90"/>
 </div>
 <figcaption>Pick your Element on any piece of content, with the new Element Picker.</figcaption>
 </figure>
 </div>
-<div class="dc-text-block justify-center" id="kBnWJ">
+<div class="dc-text-block justify-center" id="paxhm">
 
 <div class="dc-text-block__content"><h2><span class="font-size-normal">What ships in Umbraco 18:</span></h2><ul><li><p><strong>Elements</strong><span class="font-size-normal">,  the first non-routable content type to live in the Library</span><br/></p></li><li><p><strong>Full management, </strong><span class="font-size-normal"> create, delete, move, and publish, with the same permissions and rollback you already rely on elsewhere in the CMS</span><br/></p></li><li><p><strong>An Element Picker, </strong><span class="font-size-normal">for selecting Elements on whatever page you need them</span></p></li></ul><p></p></div>
 </div>
-<div class="dc-text-block justify-center" id="VEkfQ">
+<div class="dc-text-block justify-center" id="GAnZJ">
 
 <div class="dc-text-block__content"><h3 data-pm-slice="1 1 []">Why this matters for the sites you build</h3><p><span class="font-size-normal">If you build for clients, you've probably solved this problem yourself already. To handle reusable content, a promotional teaser, a repeated call-to-action, a snippet that appears in ten places, teams have long created a "library" or "global" node in the content tree and tucked template-less doc types inside it. It works, but those items were never meant to be routable, never going to have a template, never really meant to sit in the content tree. It was a workaround, repeated project after project.</span></p><p><span class="font-size-normal">Umbraco 18 turns that into a feature instead of a pattern you reinvent each time. Reusable content now has a native, governed place to belong, with the management and permissions your editors already understand. For agencies, that's less custom scaffolding to build and maintain, and a more consistent foundation to hand to the editors using the site every day.</span></p><h3><br/>Setting expectations: this is the foundation</h3><p><span class="font-size-normal">It's worth being precise about scope, because it shapes how you talk to clients about it. Umbraco 18 introduces the Library and the Element Picker. That's the foundation.</span></p><p><span class="font-size-normal">The point where reusable content really proves itself is </span><strong>Umbraco 19</strong><span class="font-size-normal">, when Elements integrate directly into the Block Editors, because blocks are where reuse matters most. Picture a Black Friday teaser that gets copy-pasted across pages today. In that future, you create it once in the Library, insert it where it's needed, and when "Black Friday" becomes "Summer Sale," you update it once, and it changes everywhere.</span></p><p><span class="font-size-normal">So if a client's main interest is that connected, edit-once-update-everywhere experience, Umbraco 19 is the version to plan toward. What you get in 18 is the native foundation it's built on,  and a genuinely useful place to manage reusable content in its own right.</span></p><p><span class="font-size-normal">The Library is also designed to grow. Over time, we expect it to become the central home for reusable, non-routable content, with room for things like tag management, document blueprints, and translations alongside Elements.</span></p><p><span class="font-size-normal">Short and sweet. A new place for reusable content if you want it, and if Umbraco 17 is already home or the ideal home for your project, you can stay right where you are. </span></p><h2><br/>Want to dive deeper?</h2><p><span class="font-size-normal">This post is the short version on purpose. If you'd like more, two recent posts pick up where this one stops:</span></p><p><a data-router-slot="disabled" href="https://umbraco.com/blog/umbraco-18-release-candidate/" type="external"><strong><u>Umbraco 18 Release Candidate</u></strong></a><span class="font-size-normal">. The technical companion to this release. It covers Elements in more depth, the developer-facing changes (typed OpenAPI schemas for the Delivery API, the move from Swashbuckle to Microsoft.AspNetCore.OpenApi, and the breaking changes to plan for), </span><strong>plus a thorough rundown of everything that landed in the Umbraco 17.x minors </strong><span class="font-size-normal">and ships with 18 too, including performance improvements, configurable output caching, lightweight external-only members, better AI support, modular deployments, and a long list of backoffice refinements. If you're scoping an upgrade or </span><a data-router-slot="disabled" href="https://umbraco.com/blog/umbraco-18-release-candidate/" type="external"><u>want the full feature list, start here.</u></a></p><p><span class="font-size-normal">If you want to dive deeper into the new Element functionality, I highly recommend</span><strong> watching the Codegarden session </strong><a data-router-slot="disabled" href="https://youtu.be/wx7Qiyi2Y90" target="_blank" title="youtu.be" type="external"><strong>“It’s Elemental; reuse your content!”</strong></a><strong> </strong><span class="font-size-normal">by Kenn Jacobsen, Principal Engineer at Umbraco. </span></p></div>
 </div>
 <dc-video-picker-youtube allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" format="169" length="" name="" source="https://www.youtube.com/embed/wx7Qiyi2Y90?enablejsapi=1&amp;version=3" thumbnail="">
 <iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen="allowfullscreen" frameborder="0" height="100%" slot="video" src="https://www.youtube.com/embed/wx7Qiyi2Y90?enablejsapi=1&amp;version=3" width="100%"></iframe>
 </dc-video-picker-youtube>
-<div class="dc-text-block justify-center" id="fPrcs">
+<div class="dc-text-block justify-center" id="nHPrP">
 
 <div class="dc-text-block__content"><p><span class="font-size-normal">If you want to be updated more broadly on new and upcoming features in Umbraco CMS, the Codegarden talk </span><strong>“</strong><a data-router-slot="disabled" href="https://youtu.be/HO0BsEebTys" type="external"><strong><u>Our Roadmap, Your CMS: Umbraco 17 Released and What We're Building Next”</u></strong></a><strong> </strong><span class="font-size-normal">by Andy Butland, Head of CMS,  is a must-watch!</span></p></div>
 </div>
 <dc-video-picker-youtube allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" format="169" length="" name="" source="https://www.youtube.com/embed/HO0BsEebTys?enablejsapi=1&amp;version=3" thumbnail="">
 <iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen="allowfullscreen" frameborder="0" height="100%" slot="video" src="https://www.youtube.com/embed/HO0BsEebTys?enablejsapi=1&amp;version=3" width="100%"></iframe>
 </dc-video-picker-youtube>
-<div class="dc-text-block justify-center" id="vkbuQ">
+<div class="dc-text-block justify-center" id="qopyi">
 
 <div class="dc-text-block__content"><p><a data-router-slot="disabled" href="https://umbraco.com/blog/umbraco-product-updatecodegarden-keynote-highlights-q2-2026/" type="external"><strong><u>Q2 2026 Product Update — Codegarden Keynote Highlights</u></strong></a><span class="font-size-normal">. The wider view across the whole platform. Beyond the CMS, it covers what's coming on Umbraco Cloud (including load balancing), the new open-source automation product Umbraco Automate, the latest on AI in Umbraco, and updates across Commerce, Engage, Deploy, and Compose. If you want to know where the platform as a whole is heading,</span><a data-router-slot="disabled" href="https://umbraco.com/blog/umbraco-product-updatecodegarden-keynote-highlights-q2-2026/" type="external"><span class="font-size-normal"> </span><u>this is the one to read.</u></a></p></div>
 </div>
-<div class="dc-image-block" id="iGiMc">
+<div class="dc-image-block" id="QBxDv">
 
 <div class="dc-image-wrapper">
-<img alt="Umbraco_18_SoMe.png" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/2dahpil2/umbraco_18_some.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd0222fe439b10" srcset="https://umbraco.com/media/2dahpil2/umbraco_18_some.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0222fe439b10 662w, https://umbraco.com/media/2dahpil2/umbraco_18_some.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd0222fe439b10 1360w"/>
+<img alt="Umbraco_18_SoMe.png" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/2dahpil2/umbraco_18_some.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd0222fe439b10"/>
 </div>
 </div>
-<div class="dc-text-block justify-center" id="qJCaZ">
+<div class="dc-text-block justify-center" id="iqAVP">
 
 <div class="dc-text-block__content"><h2>Start using Umbraco 18 today</h2><p>If you want to get your hands on the new Library section and Elements features, you can get your hands on 18 today: </p><p>Get started quickly:</p><h3>Spin up a new project on Umbraco Cloud </h3><p>One-click setup and hosting for Umbraco projects, fully updated for Umbraco 18. <a data-router-slot="disabled" href="https://try.umbraco.com/cloud" target="_blank" title="try.umbraco.com" type="external">Take a trial </a>or <a data-router-slot="disabled" href="https://umbraco.io/" target="_blank" title="umbraco.io" type="external">sign in on Umbraco Cloud.</a></p><h3>Download Umbraco 18</h3><p>The latest version is <a data-router-slot="disabled" href="https://www.nuget.org/packages/Umbraco.Cms/" target="_blank" title="www.nuget.org" type="external">available on NuGet.</a></p><h3>Explore the documentation</h3><p>Our documentation for Umbraco 18 covers everything you need to know to get started and set things up. Start reading and learning at <a data-router-slot="disabled" href="http://docs.umbraco.com" type="external">docs.umbraco.com</a>.</p></div>
 </div>
 </div>]]></content:encoded>
       <media:content url="https://umbraco.com/media/i5unwxvb/umbraco_18_thumbnail.png?v=1dd0222fee55950" medium="image" />
-    </item>
-    <item>
-      <title>The Pragmatic Enterprise: Balancing AI Innovation with Predictable TCO</title>
-      <link>https://umbraco.com/blog/the-pragmatic-enterprise-balancing-ai-innovation-with-predictable-tco/</link>
-      <guid isPermaLink="true">https://umbraco.com/blog/the-pragmatic-enterprise-balancing-ai-innovation-with-predictable-tco/</guid>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>The Pragmatic Enterprise: Balancing AI Innovation with Predictable TCO The Pragmatic Enterprise: Balancing AI Innovation with Predictable TCO June 23, 2026</p>]]></description>
-      <content:encoded><![CDATA[<div class="teaser"><p><span class="font-size-normal">Lately, there’s been a significant wave of rebranding in the enterprise digital experience platform (DXP) space. Legacy players are suddenly rewriting their taglines, painting over old architectural cracks, and shouting about "agentic AI workflow freedom."</span></p></div><div class="dc-block-list">
-<div class="dc-text-block justify-center" id="DYVhn">
-
-<div class="dc-text-block__content"><p><span class="font-size-normal">This shift is a clear realization that heavy, rigid suites no longer resonate with the market. But if you look past the fresh paint and the promise of being "free to grow," a critical question remains for enterprise leaders and decision-makers: </span><strong>Are you paying for actual business value, or are you paying a massive premium to fund a legacy vendor's restructuring?</strong></p><h3><strong>The Risk of Proprietary AI Walled Gardens</strong></h3><p><span class="font-size-normal">The reality of 2026 is that 95% of enterprise customers don’t need a heavy, closed-source, proprietary AI ecosystem that dictates how their workflows operate. In fact, locking your organization into a single legacy vendor's proprietary AI framework is a massive strategic and financial risk.</span></p><p><span class="font-size-normal">The LLMs, agents, and automation tools your team relies on today will look completely different twelve months from now. Tying your data strategy to a closed black box means you are betting your entire digital future on that single vendor keeping pace with the entire open-source AI community.</span></p><p><span class="font-size-normal">True enterprise maturity isn't about buying into the loudest, most expensive AI hype. It’s about being patient, smart, and building a stable, predictable, and open foundation that allows your business to pivot as fast as the tech does.</span></p><h3><strong>Moving Forward: AI on Your Terms</strong></h3><p><span class="font-size-normal">When we hosted our annual Codegarden conference earlier this year, our message to the digital industry was clear: </span><strong>The future of digital experience must be Agent-Ready, but it must be executed entirely on your terms.</strong></p><p><span class="font-size-normal">For Umbraco, that means moving past theoretical hype and focusing on three practical, high-value pillars designed for real enterprise execution:</span></p><ul><li><p><a data-router-slot="disabled" href="https://umbraco.com/products/ai/ai-for-editors/" type="external"><strong><u>AI for Editors</u></strong></a><strong>:</strong><span class="font-size-normal"> Enhancing human productivity and accelerating workflows directly inside the CMS, rather than attempting to replace human oversight with experimental bots.</span></p></li><li><p><a data-router-slot="disabled" href="https://umbraco.com/products/ai/the-agent-ready-cms/" type="external"><strong><u>The Agent-Ready CMS</u></strong></a><strong>:</strong><span class="font-size-normal"> Keeping your core architecture completely open and .NET-native so you can securely plug into </span><em>any</em><span class="font-size-normal"> AI model, LLM, or automation framework you choose today—and swap it out tomorrow.</span></p></li><li><p><a data-router-slot="disabled" href="https://www.google.com/search?q=https%3A%2F%2Fumbraco.com%2Fproducts%2Fai%2Fai-governance%2F" type="external"><strong><u>Rock-Solid AI Governance</u></strong></a><strong>:</strong><span class="font-size-normal"> Giving enterprise IT, compliance, and legal teams absolute control over data privacy, prompt logging, compliance, and custom execution guardrails.</span></p></li></ul><h3><strong>Retiring Complexity with Dignity</strong></h3><p><span class="font-size-normal">An enterprise shouldn't have to pay a 400% closed-source software premium just to buy architectural freedom. True freedom comes from a composable, modern ecosystem where you maintain full financial predictability, massive total cost of ownership (TCO) savings, and absolute control of your data.</span></p><p><span class="font-size-normal">Let the legacy giants spend millions trying to rebrand old stacks to look agile. At Umbraco, we will continue to focus on what truly matters to our customers and our global agency partner network: delivering enterprise stability, modern open innovation, and substantial, measurable ROI without the complexity of legacy systems.</span></p><p><strong>Ready to see what true architectural freedom looks like?</strong><span class="font-size-normal"> Explore our native</span><a data-router-slot="disabled" href="https://umbraco.com/products/ai/the-agent-ready-cms/" type="external"><span class="font-size-normal"> </span><u>Agent-Ready CMS framework</u></a><span class="font-size-normal"> or chat with our enterprise team today to evaluate your platform's long-term TCO.</span></p></div>
-</div>
-</div>]]></content:encoded>
-      <media:content url="https://umbraco.com/media/bchcfxkk/thumbnail_mats.png?v=1dd02f141bc8270" medium="image" />
-    </item>
-    <item>
-      <title>uProfile June 2026 - Ben Szymanski</title>
-      <link>https://umbraco.com/blog/uprofile-june-2026-ben-szymanski/</link>
-      <guid isPermaLink="true">https://umbraco.com/blog/uprofile-june-2026-ben-szymanski/</guid>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>From restoring vintage Macs to catching waves and building backoffice magic - meet 2026 Umbraco MVP Ben Szymanski.</p>]]></description>
-      <content:encoded><![CDATA[<div class="teaser"><p>When he isn't building game-changing packages for Umbraco, you can find Ben Szymanski gliding across the Florida coast on an eFoil, restoring vintage 90s Macs, or training for the U.S. Coast Guard Reserve. This year marks Ben's tenth anniversary with the Friendly CMS - and what a year it is! Read on to meet this multi-talented software engineer and learn how he went from admiring the community from the sidelines to diving in headfirst, culminating in his well-deserved recognition as a 2026 Umbraco MVP.</p></div><div class="dc-block-list">
-<div class="dc-columns no-outline has-bg rounded" id="kEHPV">
-
-<div class="column-block">
-<div class="dc-block-list">
-<div class="dc-text-block justify-center" id="fJKrl">
-<div class="dc-text-block__content"><p><strong>Name:</strong> Ben Szymanski</p><p><strong>Pronouns:</strong> He/him</p><p><strong>Company name: </strong>HyperFast Interactive</p><p><strong>Job title: </strong><span class="font-size-normal">Software Engineer</span></p><p><strong>Country/Region: </strong>Florida, United States</p><p><strong>How long have you been working with Umbraco?: </strong>Exactly ten years!</p></div>
-</div>
-</div>
-</div>
-<div class="column-block">
-<div class="dc-block-list">
-<div class="dc-image-block" id="ihAjC">
-
-<div class="dc-image-wrapper">
-<img alt="Ben Szymanski Profile picture" class="dc-image" loading="lazy" src="https://umbraco.com/media/akchhyhq/szymanski_ben_073124.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a9ae56630"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="dc-text-block justify-center" id="PLFRV">
-
-<div class="dc-text-block__content"><h2>How did you first stumble into the Umbraco Community—and what made you stay?</h2><p>I was blindly thrown into it!</p><p>I took my first agency job in 2016, and my new manager happened to be leaving for vacation the week after I started. He left me a laundry list of stuff to do while he was away, and I think it was kind of a test of how I would actually perform, if I was resourceful, if I could work independently and handle the chaos of agency life.</p><p>One of those tasks was enhancing the website’s search results by including uploaded PDF media. I had never even heard of Umbraco before, but was quickly impressed with the organization of the backoffice, the ergonomics of how the content is organized and the APIs for accessing the content, and the amount of control the entire system enables for developers.</p><p>It was a tall order, as I didn’t even know what a doc type was. Fortunately, I happened to find one of Shannon Deminick’s tweets (<a data-router-slot="disabled" href="https://nitter.net/shazwazza/status/45369082240974848" type="external">https://nitter.net/shazwazza/status/45369082240974848</a>) about how he had implemented multi-search indexing in Examine. I found the commit on GitHub, got an understanding of how it worked and then tried it on the client’s website.</p><p>It all worked, and it worked far better than trying to combine two indexes into a single collection or any other approach. I was immediately impressed.</p><p>As for what made me stay, I always appreciated how the Umbraco community was over the top (in a good way), had a zany energy, but was simultaneously churning out a tasteful, sophisticated, world-class product. I knew that was my crew.</p><p></p></div>
-</div>
-<div class="dc-text-block justify-center" id="OLfwF">
-
-<div class="dc-text-block__content"><h2>What do you do in the Community? Any special areas you’re passionate about?</h2><p>I was most recently part of the 2025 Community Docs team and was so grateful for the experience! Working directly with HQ and alongside other Umbracians around the world - people I might never have met otherwise as a solo developer - was super cool.</p><p>I think for a lot of people, they expect that to “contribute” to Umbraco, you’ll need serious chops to sling code and get it merged into the core Umbraco project. While I love the art of software engineering, I struggle to jump from paid development work to sending in development contributions. I need a little more variety in my daily activities, and working on the platform documentation gave me just that!</p></div>
-</div>
-<div class="dc-image-block" id="GyVox">
-
-<figure>
-<div class="dc-image-wrapper">
-<img alt="People sitting around a table with flying confetti" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/dhbe2bvu/community-docs-team.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a95c831f0" srcset="https://umbraco.com/media/dhbe2bvu/community-docs-team.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a95c831f0 662w, https://umbraco.com/media/dhbe2bvu/community-docs-team.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a95c831f0 1360w"/>
-</div>
-<figcaption>We had a lot to celebrate in our Community Docs Team (2025) meetup! (I’m still finding confetti in my bags!)</figcaption>
-</figure>
-</div>
-<div class="dc-text-block justify-center" id="ReVKU">
-
-<div class="dc-text-block__content"><h2>Favorite memory, proudest moment, or wildest experience?</h2><p>I hope this doesn’t seem overly predictable, but I’d have to say my proudest Umbraco moment was being selected as an Umbraco MVP (class of 2026!). I spent years mostly admiring the community from the sidelines, so being recognized by that same ecosystem felt surreal.</p></div>
-</div>
-<div class="dc-text-block justify-left" id="METyD">
-
-<div class="dc-text-block__content"><h2>What are you working on right now?</h2><p>I have been burning the midnight oil building a package for Umbraco called FastGooey, and I view it as the most important piece of software I’ve ever written.</p><p>The concept itself, server-driven user interface (or SDUI), isn’t particularly new. It has existed in the form of TV Markup Language (TVML) on the Apple TV platform for well over a decade and was later adopted by Airbnb, Lyft and Spotify in their native mobile applications.</p><p>This architecture gives native apps the kind of rapid publishing workflow we’ve all gotten used to on the web: updating content, rearranging or redesigning layouts, or changing the representation altogether without recompiling or pushing a new App Store update. FastGooey applies that same idea to Umbraco, so those changes can be managed from the backoffice.</p><p>SDUI is a super powerful concept, but we usually only see these kinds of systems being built by large engineering organizations. In other words, it’s been highly inaccessible to most. If we take the same concept and apply it on top of something extremely accessible, like Umbraco, I think it has the potential to change the landscape, at least in terms of how people view the use cases, limits, and purposes of CMSes today.</p><p>It took a lot of trial and error to figure out how to apply principles of hypermedia systems on top of Umbraco, and be useful to where I could say “this is good enough that I’d use it myself.” It also took layers of simplification on top of simplification, until I had a system that was “copy-paste” easy.</p><p>Dare I say, it kind of feels like magic.</p><p></p></div>
-</div>
-<div class="dc-text-block justify-left" id="tMGiR">
-
-<div class="dc-text-block__content"><h2>Your top 3 tips for someone new to Umbraco or the Community?</h2><p><strong>Tip 1: Start showing up to events!</strong></p><p>I have been a fan of Umbraco since 2016, but lurked in the shadows, watching events like CodeGarden, thinking that they were too “big” and too cool for me. I finally got myself to Umbraco US Fest in 2024 and was shocked at how awesome and welcoming everyone was in person.</p><p>I’d also say that people in the Umbraco community aren’t just friendly, but also intelligent and usually have fascinating personal lives/stories.</p><p><strong>Tip 2: There’s Plenty To Do</strong></p><p>Get “stuck in” as my UK friends would say. Ask Umbracians, either who work for HQ or visible non-HQ Umbracians around in the community. There’s tons of ways to contribute, give back and find even more Umbraco friends. It’s a great feeling to write code or documentation, or a helpful forum post that other Umbracians around the world use and reference. You can also find these opportunities on the new community website, too.</p><p><strong>Tip 3: Subscribe to </strong><a data-router-slot="disabled" href="http://UMB.FYI" type="external"><strong>UMB.FYI</strong></a></p><p>There are so many different online places to visit to keep up with Umbraco news and happenings - articles on Skrift, blog posts on Substack or Medium or <a data-router-slot="disabled" href="http://dev.to" type="external">dev.to</a>, Discord, the Umbraco Forums… <a data-router-slot="disabled" href="http://UMB.FYI" type="external">UMB.FYI</a> is the easiest way to stay in the loop!</p><p></p></div>
-</div>
-<div class="dc-image-block" id="DGMGU">
-
-<figure>
-<div class="dc-image-wrapper">
-<img alt="Smiling people at an after party" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/a4ynbneh/us-fest-2025.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1aa64b7d70" srcset="https://umbraco.com/media/a4ynbneh/us-fest-2025.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1aa64b7d70 662w, https://umbraco.com/media/a4ynbneh/us-fest-2025.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1aa64b7d70 1360w"/>
-</div>
-<figcaption>The after-after party from Umbraco US Festival 2025</figcaption>
-</figure>
-</div>
-<div class="dc-text-block justify-center" id="ZaCuN">
-
-<div class="dc-text-block__content"><h2>What’s next for you—any dreams, goals, or exciting plans?</h2><p>I’m also working toward joining the U.S. Coast Guard Reserve as a part-time officer. I was originally interested in response missions, like search and rescue and disaster response, both of which are very obviously different from my civilian life (hey, I said I like variety, right?). I’ve also heard the words “digital modernization initiatives” uttered (which I wouldn’t be disappointed with).</p><p>It’s a very competitive accession path, and I’m applying again after being placed on the alternate list last year. That was disappointing, but people who have been in the same spot I am right now have said that it’s a great sign to have made any list at all. Nevertheless, I continue to work on this goal.</p><p></p></div>
-</div>
-<div class="dc-image-block" id="ihDkC">
-
-<figure>
-<div class="dc-image-wrapper">
-<img alt="Ben standing in front of a boat " class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/hodb2cn0/us-coast-guard.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a9bd1e910" srcset="https://umbraco.com/media/hodb2cn0/us-coast-guard.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a9bd1e910 662w, https://umbraco.com/media/hodb2cn0/us-coast-guard.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a9bd1e910 1360w"/>
-</div>
-<figcaption>Volunteering with the US Coast Guard when USCGC Eagle visited downtown Pensacola</figcaption>
-</figure>
-</div>
-<div class="dc-text-block justify-center" id="MzJRB">
-
-<div class="dc-text-block__content"><h2>Got a fun fact, secret, or unexpected talent?</h2><p>Plenty! Most people might be surprised that I am trained (and decent)  at ballroom dance. I also play piano, and eFoil along the Florida coasts on my weekends.</p><p>Yes, more variety!</p><p></p></div>
-</div>
-<div class="dc-image-block" id="HZvqB">
-
-<figure>
-<div class="dc-image-wrapper">
-<img alt="Ben ballroom dancing" class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/smmj1uoo/ballroom-dancing.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a951a3eb0" srcset="https://umbraco.com/media/smmj1uoo/ballroom-dancing.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a951a3eb0 662w, https://umbraco.com/media/smmj1uoo/ballroom-dancing.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a951a3eb0 1360w"/>
-</div>
-<figcaption>Performing latin socials at the studio’s winter showcase. I Feel the Earth Move / Shinedown (cover of Carole King)</figcaption>
-</figure>
-</div>
-<div class="dc-text-block justify-center" id="CezZr">
-
-<div class="dc-text-block__content"><h2>What’s currently living on your desk?</h2><p>I’ll take the nerdy route here.</p><p>I’m writing this on a 24” M4 iMac (Orange, 32GB RAM, 1 TB SSD, nano texture), paired with an Apple Studio Display (2022), a magic trackpad and a Matias Ergo Pro keyboard. </p><p>I finally let go of my old, tattered Microsoft Sculpt and replaced it with the Matias and I absolutely love it. It’s a split mechanical keyboard with keycaps modeled after the old Apple Extended Keyboard II (but quieter).</p><p>On the other/second desk to my right, I’ve got:</p><ul><li><p>Insta360 X5</p></li><li><p>iPhone 4S (White, still running iOS 6)</p></li><li><p>24” iMac (Late 2006, Mac OS X 10.6)</p></li><li><p>15” MacBook Pro (Early 2008, Mac OS X 10.9)</p></li><li><p>PowerMac G4 Digital Audio (733 MHz, Mac OS X 10.4) + Apple Studio Display (17-inch LCD)</p></li></ul><p>These old machines are all thrift-store or Facebook marketplace rescues that I’ve lovingly deep cleaned and restored to working order. All in all, I’ve collected and restored 24 machines, spanning back to 1990/Macintosh Classic with System 7.</p><p>Aside from looking cool and being great conversation starters on video calls, I actually do use these machines as references on software design, information architecture, reading period developer documentation and inspecting things. These machines are actually where much of the inspiration for FastGooey was pulled from.</p><p>There’s also a bunch of Umbraco stickers all over the place.</p><p></p></div>
-</div>
-<div class="dc-image-block" id="XkxDi">
-
-<figure>
-<div class="dc-image-wrapper">
-<img alt="24” iMac, 15” MacBook Pro and Apple Studio Display (17”) " class="dc-image" loading="lazy" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/l5mhtcly/reference-machines.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a98ef6290" srcset="https://umbraco.com/media/l5mhtcly/reference-machines.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a98ef6290 662w, https://umbraco.com/media/l5mhtcly/reference-machines.jpeg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dcff1a98ef6290 1360w"/>
-</div>
-<figcaption>My 24” iMac, 15” MacBook Pro and Apple Studio Display (17”) that I use to inspect older software.</figcaption>
-</figure>
-</div>
-<div class="dc-columns no-outline" id="Herht">
-
-<div class="column-block">
-<div class="dc-block-list">
-<div class="dc-image-block" id="BuROO">
-
-<figure>
-<div class="dc-image-wrapper">
-<img alt="Restoration of a powermac g4" class="dc-image" loading="lazy" src="https://umbraco.com/media/ei2ncobq/restoring-powermac-g4.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a9a0120b0"/>
-</div>
-<figcaption>Doing a deep clean on a PowerMac G4 that I rescued. It was previously used in one of the most abusive environments possible - a classroom lab.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="column-block">
-<div class="dc-block-list">
-<div class="dc-image-block" id="iQweI">
-
-<figure>
-<div class="dc-image-wrapper">
-<img alt="Restored powermac g4" class="dc-image" loading="lazy" src="https://umbraco.com/media/audmlpin/restored-powermac-g4.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a99827ad0"/>
-</div>
-<figcaption>The end result of cleaning up a very dirty, very abused machine!</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="dc-columns no-outline" id="YJHtr">
-
-<div class="column-block">
-<div class="dc-block-list">
-<div class="dc-image-block" id="hAqCO">
-
-<figure>
-<div class="dc-image-wrapper">
-<img alt="Macintosh Classic" class="dc-image" loading="lazy" src="https://umbraco.com/media/wwup23yq/mac-classic.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a96c88af0"/>
-</div>
-<figcaption>I’m still working on rehabbing this Macintosh Classic, but that didn’t stop me from doing a photoshoot with it.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="column-block">
-<div class="dc-block-list">
-<div class="dc-image-block" id="EdBCV">
-
-<figure>
-<div class="dc-image-wrapper">
-<img alt="Powermac g4 and powermac g3" class="dc-image" loading="lazy" src="https://umbraco.com/media/m3fhjmgs/powermac-g4-vs-powermac-g3.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a974ed1f0"/>
-</div>
-<figcaption>Fully restored PowerMac G4 Digital Audio (2001) and a PowerMac G3 Blue &amp; White (1999)</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="dc-text-block justify-center" id="Kgctj">
-
-<div class="dc-text-block__content"><h2>What book/series/game are you into right now?</h2><p>I recently watched the Fallout series after realizing I needed something non-work-related to help me wind down. I knew about the games, but I never invested any time into playing them, so I thought the TV show would allow me a glimpse into the Fallout story in a very low-effort way.</p><p>Just how does an advanced society collapse? How and why would the people in the Fallout universe have gotten to such a precarious existence? What does day to day life look and feel like? Why did all of this culminate in nuclear dawn? The game and the TV show pick at these fascinating questions, but in truth, we’ve already seen some of these same patterns throughout western history.</p><p>I expected a fun game adaptation and unintentionally found myself thinking about energy systems, resource constraints, peak oil theory, debates around Malthusian economics, and why advanced societies become fragile. I don’t think the TV show always goes as deep as its premise deserves, but that may be why it stuck in my head.</p><p>I will warn that the TV show didn’t work well as bedtime viewing, because each episode left my brain racing with thoughts. I’ll have to go back to rewatching the black and white Twilight Zone episodes.</p><p></p></div>
-</div>
-<div class="dc-text-block justify-center" id="YPhTj">
-
-<div class="dc-text-block__content"><h2>If you had a superpower, what would it be?</h2><p>Hmmm. The obvious pick would be flying, but think about when you’re on a rollercoaster and all that air flowing up your nostrils makes it difficult to breathe - just miserable! Now imagine doing that journey from Pensacola, Florida, to Odense like that. No sir/ma’am, I’ll pass! Indeed, the most chill way to get to HQ or CodeGarden would be with teleportation.</p><p>A runner up would be time travel. I love finding forgotten details and strange corners of history, which is why I picked Latin on Duolingo.</p></div>
-</div>
-<div class="dc-columns no-outline" id="djTZA">
-
-<div class="column-block">
-<div class="dc-block-list">
-<div class="dc-image-block" id="dRLse">
-
-<figure>
-<div class="dc-image-wrapper">
-<img alt="Ben on an eFoil at Pensacola Beach" class="dc-image" loading="lazy" src="https://umbraco.com/media/tjwnev42/efoil-pensacola-beach.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a96518630"/>
-</div>
-<figcaption>Out on the water with my Lift eFoil at Pensacola Beach.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="column-block">
-<div class="dc-block-list">
-<div class="dc-image-block" id="QMBnc">
-
-<figure>
-<div class="dc-image-wrapper">
-<img alt="Ben in snowing weather" class="dc-image" loading="lazy" src="https://umbraco.com/media/owvd0clk/snow-pensacola.jpeg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dcff1a9a85e110"/>
-</div>
-<figcaption>We broke records in early 2025, with over 9 inches (that’s 22cm) of snowfall in Florida.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="dc-text-block justify-center" id="sdSlw">
-
-<div class="dc-text-block__content"><h2>What’s on repeat in your headphones?</h2><p>I like to surf bandcamp every so often, which is a really nice way to escape algorithmic streaming. I’ll usually do this when I’m stuck in airports, and I’ve found gem after gem from tiny indie artists this way. I’ll give you some of the highlights of what I’ve found:</p><ul><li><p>A Million Miles Away - FM Attack</p></li><li><p>Engage - Hypixi !!!, Jasper De Ceuster</p></li><li><p>Forever - Stick Figure</p></li><li><p>Fire on the Horizon (Johnny Cosmic Remix) - Stick Figure</p></li><li><p>Shelter Song - Temples</p></li><li><p>Porcelain - The Hip Abduction</p></li><li><p>The Dreamer - Pale Blue Eyes</p></li><li><p>Dripfield - Goose</p></li></ul><p> </p><h2>How can we find you?</h2><p><strong>LinkedIn:</strong> <a data-router-slot="disabled" href="https://www.linkedin.com/in/ben-s-47b138113/" type="external">https://www.linkedin.com/in/ben-s-47b138113/</a></p><p><strong>Instagram: </strong><a data-router-slot="disabled" href="https://www.instagram.com/nanokernel/" type="external">https://www.instagram.com/nanokernel/</a></p><p><strong>Substack:</strong> <a data-router-slot="disabled" href="https://ben1777.substack.com/" type="external">https://ben1777.substack.com/</a></p><p></p></div>
-</div>
-<div class="dc-text-block justify-center has-bg rounded" id="hpUHz">
-
-<div class="dc-text-block__content"><p> </p>
-<p><strong>Is there someone you'd like to nominate for a uProfile?</strong></p>
-<p>Do you know someone who deserves a spotlight on their Umbraco journey? To nominate a friend, peer, or colleague, reach out to Mathilde Høst in the DevRel Team at <a href="mailto:ema@umbraco.com">community@umbraco.com</a> and explain why!</p>
-<p> </p></div>
-</div>
-<div class="dc-text-block justify-center" id="xEfKK">
-
-<div class="dc-text-block__content"><p> </p>
-<p> </p></div>
-</div>
-</div>]]></content:encoded>
-      <media:content url="https://umbraco.com/media/dhbe2bvu/community-docs-team.jpeg?v=1dcff1a95c831f0" medium="image" />
     </item>
   </channel>
 </rss>
