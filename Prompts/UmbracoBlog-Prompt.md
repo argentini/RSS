@@ -196,6 +196,7 @@ A post may also include:
 Reject posts that are:
 
 - Older than {Maximum post age}.
+- Written in a language other than English.
 - Subscriber-only.
 - Paywalled.
 - Login-required.
