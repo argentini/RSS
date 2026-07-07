@@ -1,6 +1,16 @@
 # TASK
 
-Scan {Source URL} and build or replace {RSS file}.
+For each configured website in WEBSITES, scan that website's {Source URL} and build or replace that website's {RSS file}.
+
+Process each configured website independently.
+
+For the current website, treat the website's configured values as:
+
+- {Website name}
+- {Source URL}
+- {RSS file}
+- {RSS path}
+- {Temporary workspace}
 
 Find blog, news, or article posts from {Source URL}. Use website markup, metadata, and visible page content to identify valid posts.
 
@@ -20,13 +30,21 @@ Do not replace {RSS path} until validation passes.
 
 {Project folder} is a Git repository.
 
-After successful validation:
+After successful validation for the current website:
 
 - Commit only {RSS file}.
 - Use commit message: `Updated {RSS file} on {Current UTC date}`.
 - Push the current branch to origin.
 
-Do not modify tracked files other than {RSS file}.
+Do not modify tracked files other than configured RSS files.
+
+If one website fails extraction, validation, commit, or push:
+
+- Do not replace that website's {RSS path}.
+- Do not commit broken output for that website.
+- Keep that website's {Temporary workspace} for diagnosis.
+- Continue processing the remaining configured websites when repository state is still safe.
+- Report the concise failure reason for that website.
 
 # REFERENCE RULE
 
@@ -37,15 +55,18 @@ Examples:
 - Use `{Temporary workspace}`, not its literal directory.
 - Use `{RSS file}`, not its literal filename.
 - Use `{Project folder}`, not its literal repository path.
+- Use `{Website name}`, not a repeated literal website label.
 - Use `{Source URL}`, not its literal URL.
 - Use `{Maximum post age}`, not its literal duration.
 - Use `{Current UTC date}`, not an inline date calculation.
 
 Treat configuration labels as authoritative variables.
 
+When processing a website from WEBSITES, references to {Source URL}, {RSS file}, {RSS path}, and {Temporary workspace} mean the values for the current website only.
+
 # WORKSPACE RULES
 
-Create temporary files only inside {Temporary workspace}.
+Create temporary files only inside the current website's {Temporary workspace}.
 
 Use {Temporary workspace} for:
 
@@ -65,16 +86,17 @@ Do not commit temporary files.
 
 Never stage or commit {Temporary workspace}.
 
-Remove {Temporary workspace} only after a successful push, and only when it is untracked and safe to delete.
+Remove a website's {Temporary workspace} only after that website's successful push, and only when it is untracked and safe to delete.
 
 Do not replace {RSS path} until validation passes.
 
-If extraction, validation, commit, or push fails:
+If extraction, validation, commit, or push fails for the current website:
 
 - Do not replace {RSS path}.
 - Do not commit broken output.
 - Keep {Temporary workspace} for diagnosis.
 - Report the concise failure reason.
+- Continue with the next configured website when possible.
 
 # EXECUTION STRATEGY
 
@@ -104,7 +126,7 @@ Use low concurrency, bounded retries, delays, and timeouts.
 
 Use a descriptive User-Agent for the feed generator.
 
-Keep requests inside the domain of {Source URL} unless explicitly required otherwise.
+Keep requests inside the domain of the current website's {Source URL} unless explicitly required otherwise.
 
 Use a maximum 30-second browser navigation timeout per page.
 
@@ -415,7 +437,7 @@ Before replacing {RSS path}:
    - `pubDate`
    - non-empty `description`
    - non-empty `content:encoded`
-4. Confirm every item link is a source-domain URL.
+4. Confirm every item link belongs to the current website's {Source URL} domain.
 5. Confirm no duplicate normalized date-plus-headline pairs exist.
 6. Confirm no item exceeds {Maximum post age}.
 7. Confirm publication dates parse successfully.
@@ -448,8 +470,8 @@ After validation succeeds:
 1. Replace {RSS path}.
 2. Run `git diff --check`.
 3. Run `git status --short`.
-4. Stage only {RSS file}.
-5. Confirm the staged diff contains only {RSS file}.
+4. Stage only the current website's {RSS file}.
+5. Confirm the staged diff contains only the current website's {RSS file}.
 6. Commit only when the staged version of {RSS file} changed.
 7. Use commit message:
 
@@ -463,10 +485,42 @@ If {RSS file} did not change:
 - Do not create an empty commit.
 - Do not push a new commit.
 
+# MULTI-WEBSITE RULES
+
+Process websites in the order listed in WEBSITES.
+
+For each website:
+
+1. Resolve {RSS path} from {Project folder} and that website's {RSS file}.
+2. Use only that website's {Source URL} for discovery and same-domain article fetches.
+3. Use only that website's {Temporary workspace} for temporary files.
+4. Generate and validate that website's candidate RSS file independently.
+5. Replace, stage, commit, push, and cleanup only that website's {RSS file} after validation succeeds.
+
+Do not let selectors, temporary scripts, rendered pages, candidate data, validation data, or browser profiles from one website affect another website.
+
+Do not combine posts from different websites into one RSS file.
+
+Do not use one website's {Source URL} as the source-domain validator for another website's RSS items.
+
+If repository status shows tracked changes outside configured RSS files before processing starts:
+
+- Stop before modifying any RSS file.
+- Report the unsafe tracked files.
+
+If repository status shows tracked changes outside the current website's {RSS file} after a website has been processed:
+
+- Do not stage or commit for that website.
+- Preserve that website's {Temporary workspace}.
+- Continue only when the unrelated tracked changes are configured RSS files already changed by this run.
+
 # OUTPUT
 
-Return only:
+Return one concise result block per configured website, and then a total summary.
 
+For each website, return only:
+
+- {Website name}.
 - Valid item count.
 - Added count.
 - Updated count.
@@ -477,15 +531,52 @@ Return only:
 - Concise failure reason when unsuccessful.
 - {Temporary workspace} location when unsuccessful.
 
+For the total summary, return only:
+
+- Websites processed count.
+- Websites succeeded count.
+- Websites failed count.
+- RSS files changed count.
+- Commit hashes and push results when applicable.
+
 Do not paste raw HTML, article bodies, command output, screenshots, or intermediate reasoning unless necessary to explain a failure.
 
 # CONFIGURATION
 
-- {Source URL}: `https://apnews.com/hub/latest-news/`
-- {RSS file}: `APNews.rss`
 - {Project folder}: `~/Developer/RSS/`
 - {RSS path}: `{Project folder}/{RSS file}`
 - {Maximum post age}: `7 days`
 - {Current-date timezone}: `UTC`
 - {Current UTC date}: current date in `{Current-date timezone}`, formatted as `yyyy-mm-dd`
-- {Temporary workspace}: `.tmp/rss-build/apnews/`
+- {Temporary workspace root}: `.tmp/rss-build`
+
+# WEBSITES
+
+- {Website name}: `AP News`
+  - {Source URL}: `https://apnews.com/hub/latest-news/`
+  - {RSS file}: `APNews.rss`
+  - {Temporary workspace}: `{Temporary workspace root}/apnews/`
+- {Website name}: `AppleInsider`
+  - {Source URL}: `https://appleinsider.com/`
+  - {RSS file}: `AppleInsider.rss`
+  - {Temporary workspace}: `{Temporary workspace root}/appleinsider/`
+- {Website name}: `Ihnatko`
+  - {Source URL}: `https://ihnatko.com/`
+  - {RSS file}: `Ihnatko.rss`
+  - {Temporary workspace}: `{Temporary workspace root}/ihnatko/`
+- {Website name}: `ProPublica`
+  - {Source URL}: `https://www.propublica.org/`
+  - {RSS file}: `Propublica.rss`
+  - {Temporary workspace}: `{Temporary workspace root}/propublica/`
+- {Website name}: `Reuters US`
+  - {Source URL}: `https://www.reuters.com/world/us/`
+  - {RSS file}: `ReutersUS.rss`
+  - {Temporary workspace}: `{Temporary workspace root}/reutersus/`
+- {Website name}: `Slashdot`
+  - {Source URL}: `https://slashdot.org/`
+  - {RSS file}: `Slashdot.rss`
+  - {Temporary workspace}: `{Temporary workspace root}/slashdot/`
+- {Website name}: `Umbraco Blog`
+  - {Source URL}: `https://umbraco.com/blog/`
+  - {RSS file}: `UmbracoBlog.rss`
+  - {Temporary workspace}: `{Temporary workspace root}/umbracoblog/`
