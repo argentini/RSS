@@ -32,13 +32,12 @@ Do not replace {RSS path} until validation passes.
 
 After successful validation for the current website:
 
-- Commit only {RSS file}.
-- Use commit message: `Updated {RSS file} on {Current UTC date}`.
-- Push the current branch to origin.
+- Replace that website's {RSS path}.
+- Defer commit and push until all configured websites have been processed.
 
 Do not modify tracked files other than configured RSS files.
 
-If one website fails extraction, validation, commit, or push:
+If one website fails extraction or validation:
 
 - Do not replace that website's {RSS path}.
 - Do not commit broken output for that website.
@@ -58,7 +57,7 @@ Examples:
 - Use `{Website name}`, not a repeated literal website label.
 - Use `{Source URL}`, not its literal URL.
 - Use `{Maximum post age}`, not its literal duration.
-- Use `{Current UTC date}`, not an inline date calculation.
+- Use `{Current UTC timestamp}`, not an inline timestamp calculation.
 
 Treat configuration labels as authoritative variables.
 
@@ -86,11 +85,11 @@ Do not commit temporary files.
 
 Never stage or commit {Temporary workspace}.
 
-Remove a website's {Temporary workspace} only after that website's successful push, and only when it is untracked and safe to delete.
+Remove a website's {Temporary workspace} only after the final successful push, and only when it is untracked and safe to delete.
 
 Do not replace {RSS path} until validation passes.
 
-If extraction, validation, commit, or push fails for the current website:
+If extraction or validation fails for the current website:
 
 - Do not replace {RSS path}.
 - Do not commit broken output.
@@ -463,27 +462,40 @@ Before changing {RSS file}:
 
 1. Run `git status --short` from {Project folder}.
 2. Ignore untracked files.
-3. Confirm no tracked file other than {RSS file} will be modified.
+3. Confirm there are no tracked changes outside configured RSS files.
+4. Confirm any configured RSS files already changed are files changed earlier in this run.
 
 After validation succeeds:
 
 1. Replace {RSS path}.
 2. Run `git diff --check`.
 3. Run `git status --short`.
-4. Stage only the current website's {RSS file}.
-5. Confirm the staged diff contains only the current website's {RSS file}.
-6. Commit only when the staged version of {RSS file} changed.
-7. Use commit message:
+4. Do not stage, commit, push, or remove {Temporary workspace} yet.
 
-`Updated {RSS file} on {Current UTC date}`
+After all configured websites have been processed:
 
-8. Push the current branch to origin.
-9. After a successful push, remove {Temporary workspace} only when it is untracked and safe to delete.
+1. Run `git diff --check`.
+2. Run `git status --short`.
+3. Stage only configured RSS files that changed during this run.
+4. Confirm the staged diff contains only configured RSS files changed during this run.
+5. Commit only when at least one staged configured RSS file changed.
+6. Use commit message:
 
-If {RSS file} did not change:
+`Updated on {Current UTC timestamp}`
+
+7. Push the current branch to origin.
+8. After a successful push, remove successful websites' {Temporary workspace} directories only when they are untracked and safe to delete.
+
+If no configured RSS file changed:
 
 - Do not create an empty commit.
 - Do not push a new commit.
+- Remove successful websites' {Temporary workspace} directories only when they are untracked and safe to delete.
+
+If final staging, commit, or push fails:
+
+- Do not remove any {Temporary workspace}.
+- Report the concise failure reason.
 
 # MULTI-WEBSITE RULES
 
@@ -495,7 +507,7 @@ For each website:
 2. Use only that website's {Source URL} for discovery and same-domain article fetches.
 3. Use only that website's {Temporary workspace} for temporary files.
 4. Generate and validate that website's candidate RSS file independently.
-5. Replace, stage, commit, push, and cleanup only that website's {RSS file} after validation succeeds.
+5. Replace only that website's {RSS file} after validation succeeds.
 
 Do not let selectors, temporary scripts, rendered pages, candidate data, validation data, or browser profiles from one website affect another website.
 
@@ -508,9 +520,9 @@ If repository status shows tracked changes outside configured RSS files before p
 - Stop before modifying any RSS file.
 - Report the unsafe tracked files.
 
-If repository status shows tracked changes outside the current website's {RSS file} after a website has been processed:
+If repository status shows tracked changes outside configured RSS files after a website has been processed:
 
-- Do not stage or commit for that website.
+- Do not stage, commit, or push yet.
 - Preserve that website's {Temporary workspace}.
 - Continue only when the unrelated tracked changes are configured RSS files already changed by this run.
 
@@ -527,7 +539,6 @@ For each website, return only:
 - Preserved count.
 - Rejected count.
 - Whether {RSS file} changed.
-- Commit hash and push result when applicable.
 - Concise failure reason when unsuccessful.
 - {Temporary workspace} location when unsuccessful.
 
@@ -547,7 +558,7 @@ Do not paste raw HTML, article bodies, command output, screenshots, or intermedi
 - {RSS path}: `{Project folder}/{RSS file}`
 - {Maximum post age}: `7 days`
 - {Current-date timezone}: `UTC`
-- {Current UTC date}: current date in `{Current-date timezone}`, formatted as `yyyy-mm-dd`
+- {Current UTC timestamp}: current timestamp in `{Current-date timezone}`, formatted as `yyyy-mm-dd HH:MM:SS UTC`
 - {Temporary workspace root}: `.tmp/rss-build`
 
 # WEBSITES
