@@ -310,6 +310,7 @@ Never include rejected-page text in RSS output.
 
 Preserve useful article HTML where possible:
 
+- Decode entity-encoded HTML tags before sanitizing and writing RSS output.
 - Paragraphs.
 - Headings.
 - Lists.
@@ -405,6 +406,18 @@ Use CDATA for HTML in:
 - `description`
 - `content:encoded`
 
+Inside CDATA, write sanitized HTML as real tags, not XML-escaped tag text.
+
+Examples:
+
+- Use `<a href="...">text</a>`, not `&lt;a href="..."&gt;text&lt;/a&gt;`.
+- Use `<br>`, not `&lt;br&gt;`.
+- Use `<div><img ...></div>`, not `&lt;div&gt;&lt;img ...&gt;&lt;/div&gt;`.
+
+Do not double-escape HTML. Decode entity-encoded allowed tags before wrapping them in CDATA.
+
+Only protect the CDATA terminator sequence if it appears in article content.
+
 Use `description` for a safe HTML preview or article opening.
 
 Use `content:encoded` for full sanitized article HTML.
@@ -443,8 +456,9 @@ Before replacing {RSS path}:
 8. Confirm the feed has at least one valid item.
 9. Confirm no obvious navigation, ad, or paywall text appears in article bodies.
 10. Confirm no article body contains challenge, CAPTCHA, login, payment-wall, cookie-wall, or browser-verification text.
-11. Confirm every article body contains at least 200 meaningful characters after stripping HTML.
-12. Save validation results to:
+11. Confirm `description` and `content:encoded` do not contain entity-encoded HTML tag markers such as `&lt;a`, `&lt;br`, `&lt;div`, `&lt;p`, `&lt;img`, `&lt;strong`, `&lt;/`, or `&gt;`.
+12. Confirm every article body contains at least 200 meaningful characters after stripping HTML.
+13. Save validation results to:
 
 `{Temporary workspace}/validation.json`
 
