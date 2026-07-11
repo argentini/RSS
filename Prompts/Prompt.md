@@ -107,7 +107,7 @@ If no suitable script exists, create a temporary script only inside {Temporary w
 
 Use local command-line tools for repeatable work:
 
-- `curl` for fetching.
+- `curl` for fetching when browser is not available.
 - `htmlq` for HTML extraction and link discovery.
 - `jq` for JSON, JSON-LD, and API responses.
 - `xmllint` for XML validation.
@@ -137,7 +137,16 @@ Abort and reject a page when rendering does not complete within the configured t
 
 For every listing page and article page:
 
-1. Fetch with `curl`.
+1. Fetch with built-in browser first.
+    - Do not use curl first. Only use curl when browser is not a viable option.
+    - Open {Source URL} visibly.
+    - Wait for article cards.
+    - Save rendered DOM.
+    - Extract from rendered DOM.
+    - Fetch article pages in browser.
+    - Save each rendered article DOM.
+    - Use browser cookies/session.
+    - Do not bypass CAPTCHA.
 2. Save the raw response inside {Temporary workspace}.
 3. Check whether the response contains usable markup and does not contain challenge or access-control indicators.
 4. Extract from the static response when it contains usable article or listing content.
@@ -597,10 +606,6 @@ Do not paste raw HTML, article bodies, command output, screenshots, or intermedi
   - {Source URL}: `https://www.reuters.com/world/us/`
   - {RSS file}: `ReutersUS.rss`
   - {Temporary workspace}: `{Temporary workspace root}/reutersus/`
-- {Website name}: `Slashdot`
-  - {Source URL}: `https://slashdot.org/`
-  - {RSS file}: `Slashdot.rss`
-  - {Temporary workspace}: `{Temporary workspace root}/slashdot/`
 - {Website name}: `Umbraco Blog`
   - {Source URL}: `https://umbraco.com/blog/`
   - {RSS file}: `UmbracoBlog.rss`
