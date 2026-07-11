@@ -14,6 +14,8 @@ For the current website, treat the website's configured values as:
 
 Find blog, news, or article posts from {Source URL}. Use website markup, metadata, and visible page content to identify valid posts.
 
+If a site (e.g. Reuters) uses an anit-bot service like DataDome, index the content anyway since we're using the built-in web browser to ingest markup.
+
 For each valid post:
 
 - Find the original source URL.
