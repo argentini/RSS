@@ -215,6 +215,35 @@ For Reuters-style Arc/Fusion pages:
 - Parse relative timestamps such as `2 hours ago` against {Current UTC timestamp}.
 - Fetch each article page and prefer JSON-LD `NewsArticle` metadata plus visible paragraph nodes such as `[data-testid="paragraph"]`, `article p`, or `main p`.
 
+# HARD FRESHNESS GATE
+
+Before preserving existing RSS items, collect all visible same-domain article candidates from {Source URL} rendered DOM.
+
+For every visible candidate newer than the newest generated RSS item:
+
+- Extract it into the feed, or
+- Record a concrete rejection reason in {Temporary workspace}/posts.json.
+
+Validation must fail when:
+
+- The feed contains only preserved existing items, and
+- The rendered listing contains newer valid-looking article candidates.
+
+Do not treat preserved items as proof of success.
+
+If freshness validation fails:
+
+- Do not replace {RSS path}.
+- Do not commit.
+- Keep {Temporary workspace}.
+- Report the newest skipped candidate and rejection reason.
+
+For Reuters, parse listing links matching `a[href*="2026-"]`.
+Use closest story/card container.
+Parse relative timestamps like `3 days ago`.
+Fetch each article page.
+Prefer JSON-LD plus visible article paragraphs.
+
 # POST VALIDITY RULES
 
 A valid post must have:
