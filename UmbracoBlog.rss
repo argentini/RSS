@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>Umbraco Blog</title>
-    <link>https://umbraco.com/</link>
-    <description>Umbraco Blog latest posts</description>
-    <lastBuildDate>Sat, 11 Jul 2026 04:23:16 GMT</lastBuildDate>
-    <item>
-      <title>Security Advisory, July 7, 2026: Security Patches are now available</title>
-      <link>https://umbraco.com/blog/security-advisory-july-7-2026-security-patches-are-now-available/</link>
-      <guid isPermaLink="true">https://umbraco.com/blog/security-advisory-july-7-2026-security-patches-are-now-available/</guid>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>Summary: A vulnerability classified as high has been found and fixed in Umbraco 13, 17, and 18. For all versions, only the delivery API functionality is affected. Today, we have released patches for the affected versions and recommend upgrading. Projects hosted on Umbraco Cloud will receive the fix automatically. Umbraco 13.0.0 - 13.15.0 Umbraco 17.0.0 - 17.5.2 Umbraco 18.0.0 - 18.0.1 Umbraco 13.0.0 - 13.15.0 Umbraco 17.0.0 - 17.5.2 Umbraco 18.0.0 - 18.0.1 Unsupported versions can be subject to </p>]]></description>
-      <content:encoded><![CDATA[<div><img src="https://umbraco.com/media/3oykfdkr/security_advisory_high_severity_blog_some.jpg?v=1dd0dd94e2eb0d0" /></div>
+<channel>
+  <title>Umbraco Blog</title>
+  <link>https://umbraco.com/blog/</link>
+  <description>Umbraco Blog feed</description>
+  <lastBuildDate>Sat, 11 Jul 2026 04:32:41 GMT</lastBuildDate>
+  <item>
+    <title>Security Advisory, July 7, 2026: Security Patches are now available</title>
+    <link>https://umbraco.com/blog/security-advisory-july-7-2026-security-patches-are-now-available/</link>
+    <guid isPermaLink="true">https://umbraco.com/blog/security-advisory-july-7-2026-security-patches-are-now-available/</guid>
+    <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[<p>Summary: A vulnerability classified as high has been found and fixed in Umbraco 13, 17, and 18. For all versions, only the delivery API functionality is affected. Today, we have released patches for the affected versions and recommend upgrading. Projects hosted on Umbraco Cloud will receive the fix automatically. Umbraco 13.0.0 - 13.15.0 Umbraco 17.0.0 - 17.5.2 Umbraco 18.0.0 - 18.0.1 Umbraco 13.0.0 - 13.15.0 Umbraco 17.0.0 - 17.5.2 Umbraco 18.0.0 - 18.0.1 Unsupported versions can be subject to </p>]]></description>
+    <content:encoded><![CDATA[<div><img src="https://umbraco.com/media/3oykfdkr/security_advisory_high_severity_blog_some.jpg?v=1dd0dd94e2eb0d0" /></div>
 <p><span>Summary: A vulnerability classified as high has been found and fixed in Umbraco 13, 17, and 18. For all versions, only the delivery API functionality is affected. Today, we have released patches for the affected versions and recommend upgrading. Projects hosted on Umbraco Cloud will receive the fix automatically.</span></p>
 <ul><li><p><span>Umbraco 13.0.0 - 13.15.0</span></p></li><li><p><span>Umbraco 17.0.0 - 17.5.2</span></p></li><li><p><span>Umbraco 18.0.0 - 18.0.1</span><br></p></li></ul>
 <p><span>Umbraco 13.0.0 - 13.15.0</span></p>
@@ -54,15 +54,14 @@
 <ul>
                                 <li><a href="https://umbraco.com/blog/?tag=security">security</a></li>
                         </ul>]]></content:encoded>
-      <media:content url="https://umbraco.com/media/3oykfdkr/security_advisory_high_severity_blog_some.jpg?v=1dd0dd94e2eb0d0" medium="image" />
-    </item>
-    <item>
-      <title>uProfile July 2026 - Georgina Bidder</title>
-      <link>https://umbraco.com/blog/uprofile-july-2026-georgina-bidder/</link>
-      <guid isPermaLink="true">https://umbraco.com/blog/uprofile-july-2026-georgina-bidder/</guid>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>Meet Georgina: Core Collaborator, 3x Codegarden speaker and skilled DIY Home Renovator! Five years ago, Georgina Bidder stepped into the Bristol-based agency true without a background in development, but with a serious eagerness to learn. This is where her journey with Umbraco started. Fast forward to today - Georgina is now a Backend Developer at true and a vital pillar of the open-source Umbraco community, both as a valued team member of the Core Collaborators, a 3x Codegarden speaker, and mos</p>]]></description>
-      <content:encoded><![CDATA[<div><img src="https://umbraco.com/media/yicnq131/shared-image-1.jpg?v=1dd0a1fbdc7ba30" /></div>
+  </item>
+  <item>
+    <title>uProfile July 2026 - Georgina Bidder</title>
+    <link>https://umbraco.com/blog/uprofile-july-2026-georgina-bidder/</link>
+    <guid isPermaLink="true">https://umbraco.com/blog/uprofile-july-2026-georgina-bidder/</guid>
+    <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[<p>Meet Georgina: Core Collaborator, 3x Codegarden speaker and skilled DIY Home Renovator! Five years ago, Georgina Bidder stepped into the Bristol-based agency true without a background in development, but with a serious eagerness to learn. This is where her journey with Umbraco started. Fast forward to today - Georgina is now a Backend Developer at true and a vital pillar of the open-source Umbraco community, both as a valued team member of the Core Collaborators, a 3x Codegarden speaker, and mos</p>]]></description>
+    <content:encoded><![CDATA[<div><img src="https://umbraco.com/media/yicnq131/shared-image-1.jpg?v=1dd0a1fbdc7ba30" /></div>
 <h2>Meet Georgina: Core Collaborator, 3x Codegarden speaker and skilled DIY Home Renovator!</h2>
 <p>Five years ago, Georgina Bidder stepped into the Bristol-based agency <a href="https://www.truedigital.co.uk/" target="_blank" title="www.truedigital.co.uk" type="external">true</a> without a background in development, but with a serious eagerness to learn. This is where her journey with Umbraco started. Fast forward to today - Georgina is now a Backend Developer at true and a vital pillar of the open-source Umbraco community, both as a valued team member of the Core Collaborators, a 3x Codegarden speaker, and most recently, a member of the Package Awards Jury for the Codegarden Package Awards.</p>
 <p><strong>Name:</strong> Georgina Bidder</p>
@@ -160,7 +159,6 @@
                                 <li><a href="https://umbraco.com/blog/?tag=community">community</a></li>
                                 <li><a href="https://umbraco.com/blog/?tag=uProfile">uProfile</a></li>
                         </ul>]]></content:encoded>
-      <media:content url="https://umbraco.com/media/yicnq131/shared-image-1.jpg?v=1dd0a1fbdc7ba30" medium="image" />
-    </item>
-  </channel>
+  </item>
+</channel>
 </rss>

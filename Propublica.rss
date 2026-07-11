@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>ProPublica</title>
-    <link>https://www.propublica.org/</link>
-    <description>ProPublica latest posts</description>
-    <lastBuildDate>Sat, 11 Jul 2026 04:23:14 GMT</lastBuildDate>
-    <item>
-      <title>Sospechan que contrató a una pandilla venezolana para un asesinato politico. El gobierno Trump sigue trabajando con él.</title>
-      <link>https://www.propublica.org/article/chile-sospechosos-venezuela-cabello-asesinato</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/chile-sospechosos-venezuela-cabello-asesinato</guid>
-      <pubDate>Fri, 10 Jul 2026 11:05:00 GMT</pubDate>
-      <description><![CDATA[<p>ProPublica es un medio independiente y sin ánimo de lucro que produce periodismo de investigación en pro del interés público. Suscríbase para recibir nuestras historias más importantes en su correo electrónico tan pronto como sean publicadas. Reporting Highlights Presuntos Nexos con Pandilla: La administración Trump trabaja directamente con un poderoso líder venezolano quien está bajo investigación por un presunto asesinato politíco en Chile. Figura Clave en Venezuela: Diosdado Cabello todavía es ministro del interior y justicia, aunque enfrenta cargos por narcotráfico y hay una recompensa de $25 millones de EEUU sobre su cabeza. Implícito Acuerdo Geopolítico: Washington usa los cargos crimi</p>]]></description>
-      <content:encoded><![CDATA[<div><img src="https://www.propublica.org/wp-content/uploads/2026/06/AP25043827675108-SOCIAL_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?w=1200" /></div>
+<channel>
+  <title>ProPublica</title>
+  <link>https://www.propublica.org/</link>
+  <description>ProPublica feed</description>
+  <lastBuildDate>Sat, 11 Jul 2026 04:35:09 GMT</lastBuildDate>
+  <item>
+    <title>Sospechan que contrató a una pandilla venezolana para un asesinato politico. El gobierno Trump sigue trabajando con él.</title>
+    <link>https://www.propublica.org/article/chile-sospechosos-venezuela-cabello-asesinato</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/chile-sospechosos-venezuela-cabello-asesinato</guid>
+    <pubDate>Fri, 10 Jul 2026 11:05:00 GMT</pubDate>
+    <description><![CDATA[<p>ProPublica es un medio independiente y sin ánimo de lucro que produce periodismo de investigación en pro del interés público. Suscríbase para recibir nuestras historias más importantes en su correo electrónico tan pronto como sean publicadas. Reporting Highlights Presuntos Nexos con Pandilla: La administración Trump trabaja directamente con un poderoso líder venezolano quien está bajo investigación por un presunto asesinato politíco en Chile. Figura Clave en Venezuela: Diosdado Cabello todavía es ministro del interior y justicia, aunque enfrenta cargos por narcotráfico y hay una recompensa de $25 millones de EEUU sobre su cabeza. Implícito Acuerdo Geopolítico: Washington usa los cargos crimi</p>]]></description>
+    <content:encoded><![CDATA[<div><img src="https://www.propublica.org/wp-content/uploads/2026/06/AP25043827675108-SOCIAL_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?w=1200" /></div>
 <div>
 <div>
 <div>
@@ -140,15 +140,14 @@
 </div>
 
 </div>]]></content:encoded>
-      <media:content url="https://www.propublica.org/wp-content/uploads/2026/06/AP25043827675108-SOCIAL_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?w=1200" medium="image" />
-    </item>
-    <item>
-      <title>He’s Suspected of Hiring a Venezuelan Gang for a Political Killing. Trump Officials Still Work With Him.</title>
-      <link>https://www.propublica.org/article/chile-suspects-venezuela-cabello-killing</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/chile-suspects-venezuela-cabello-killing</guid>
-      <pubDate>Fri, 10 Jul 2026 11:00:00 GMT</pubDate>
-      <description><![CDATA[<p>ProPublica is a nonprofit newsroom that investigates abuses of power. Sign up to receive our biggest stories as soon as they’re published. Reporting Highlights Suspected of Hiring Gang: The Trump administration is working directly with a powerful Venezuelan leader under investigation for an alleged political killing in Chile. Crucial Figure in Venezuela: Diosdado Cabello remains the interior and justice minister, even though he is the target of U.S. drug trafficking charges and a $25 million bounty. Implicit Geopolitical Deal: Washington exploits the U.S. indictment to ensure Cabello’s cooperation, while he shields himself with his power over Venezuela’s stability, former officials say. Thes</p>]]></description>
-      <content:encoded><![CDATA[<div><img src="https://www.propublica.org/wp-content/uploads/2026/06/AP25043827675108-SOCIAL_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?w=1200" /></div>
+  </item>
+  <item>
+    <title>He’s Suspected of Hiring a Venezuelan Gang for a Political Killing. Trump Officials Still Work With Him.</title>
+    <link>https://www.propublica.org/article/chile-suspects-venezuela-cabello-killing</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/chile-suspects-venezuela-cabello-killing</guid>
+    <pubDate>Fri, 10 Jul 2026 11:00:00 GMT</pubDate>
+    <description><![CDATA[<p>ProPublica is a nonprofit newsroom that investigates abuses of power. Sign up to receive our biggest stories as soon as they’re published. Reporting Highlights Suspected of Hiring Gang: The Trump administration is working directly with a powerful Venezuelan leader under investigation for an alleged political killing in Chile. Crucial Figure in Venezuela: Diosdado Cabello remains the interior and justice minister, even though he is the target of U.S. drug trafficking charges and a $25 million bounty. Implicit Geopolitical Deal: Washington exploits the U.S. indictment to ensure Cabello’s cooperation, while he shields himself with his power over Venezuela’s stability, former officials say. Thes</p>]]></description>
+    <content:encoded><![CDATA[<div><img src="https://www.propublica.org/wp-content/uploads/2026/06/AP25043827675108-SOCIAL_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?w=1200" /></div>
 <div>
 <div>
 <div>
@@ -277,15 +276,14 @@
 </div>
 
 </div>]]></content:encoded>
-      <media:content url="https://www.propublica.org/wp-content/uploads/2026/06/AP25043827675108-SOCIAL_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?w=1200" medium="image" />
-    </item>
-    <item>
-      <title>Lawmakers Call for CDC to Track Vitamin K Shot Refusals, Cite ProPublica Report</title>
-      <link>https://www.propublica.org/article/vitamin-k-cdc-rfk-jr-lawmakers-letter</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/vitamin-k-cdc-rfk-jr-lawmakers-letter</guid>
-      <pubDate>Fri, 10 Jul 2026 09:00:00 GMT</pubDate>
-      <description><![CDATA[<p>Cengiz Yar/ProPublica. Source images: Documents obtained by ProPublica and Getty Images. A Simple Shot Lawmakers Call for CDC to Track Vitamin K Shot Refusals, Cite ProPublica Report Two members of Congress are urging federal officials to monitor vitamin K shot refusals by parents and the potential consequences for their newborns, including severe bleeding or death. by Duaa Eldeib July 10, 2026, 5:00 am Listen 06:19 Contrast Change Appearance Auto Light Dark ProPublica is a nonprofit newsroom that investigates abuses of power. , a newsletter that spotlights wrongdoing around the country, to</p>]]></description>
-      <content:encoded><![CDATA[<div>
+  </item>
+  <item>
+    <title>Lawmakers Call for CDC to Track Vitamin K Shot Refusals, Cite ProPublica Report</title>
+    <link>https://www.propublica.org/article/vitamin-k-cdc-rfk-jr-lawmakers-letter</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/vitamin-k-cdc-rfk-jr-lawmakers-letter</guid>
+    <pubDate>Fri, 10 Jul 2026 09:00:00 GMT</pubDate>
+    <description><![CDATA[<p>Cengiz Yar/ProPublica. Source images: Documents obtained by ProPublica and Getty Images. A Simple Shot Lawmakers Call for CDC to Track Vitamin K Shot Refusals, Cite ProPublica Report Two members of Congress are urging federal officials to monitor vitamin K shot refusals by parents and the potential consequences for their newborns, including severe bleeding or death. by Duaa Eldeib July 10, 2026, 5:00 am Listen 06:19 Contrast Change Appearance Auto Light Dark ProPublica is a nonprofit newsroom that investigates abuses of power. , a newsletter that spotlights wrongdoing around the country, to</p>]]></description>
+    <content:encoded><![CDATA[<div>
 
 <div>
 
@@ -703,15 +701,14 @@
     </div>
 </div>
 </div>]]></content:encoded>
-      <media:content url="https://www.propublica.org/wp-content/uploads/2026/07/VitaminKV3_maxHeight_3000_maxWidth_3000.jpg?resize=2000,1333" medium="image" />
-    </item>
-    <item>
-      <title>Trump Pushes Out Remaining Members of Bipartisan Election Commission Ahead of Midterms</title>
-      <link>https://www.propublica.org/article/federal-election-assistance-commission-trump-dismantled</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/federal-election-assistance-commission-trump-dismantled</guid>
-      <pubDate>Fri, 10 Jul 2026 03:00:00 GMT</pubDate>
-      <description><![CDATA[<p>iStockphoto Trump Pushes Out Remaining Members of Bipartisan Election Commission Ahead of Midterms President Donald Trump has fired Benjamin Hovland and Thomas Hicks, the Democrats on the federal Election Assistance Commission, while Christy McCormick, the Republican, was allowed to resign, sources tell ProPublica. by Jen Fifield July 9, 2026, 11:00 pm Listen 04:29 Contrast Change Appearance Auto Light Dark President Donald Trump has pushed out the three remaining members of the Election Assistance Commission, leaving the bipartisan agency in limbo as he rushes to remake how elections are</p>]]></description>
-      <content:encoded><![CDATA[<div>
+  </item>
+  <item>
+    <title>Trump Pushes Out Remaining Members of Bipartisan Election Commission Ahead of Midterms</title>
+    <link>https://www.propublica.org/article/federal-election-assistance-commission-trump-dismantled</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/federal-election-assistance-commission-trump-dismantled</guid>
+    <pubDate>Fri, 10 Jul 2026 03:00:00 GMT</pubDate>
+    <description><![CDATA[<p>iStockphoto Trump Pushes Out Remaining Members of Bipartisan Election Commission Ahead of Midterms President Donald Trump has fired Benjamin Hovland and Thomas Hicks, the Democrats on the federal Election Assistance Commission, while Christy McCormick, the Republican, was allowed to resign, sources tell ProPublica. by Jen Fifield July 9, 2026, 11:00 pm Listen 04:29 Contrast Change Appearance Auto Light Dark President Donald Trump has pushed out the three remaining members of the Election Assistance Commission, leaving the bipartisan agency in limbo as he rushes to remake how elections are</p>]]></description>
+    <content:encoded><![CDATA[<div>
 
 <div>
 
@@ -1060,15 +1057,14 @@
     </div>
 </div>
 </div>]]></content:encoded>
-      <media:content url="https://www.propublica.org/wp-content/uploads/2026/07/GettyImages-1428092811_maxWidth_3000_maxHeight_3000_ppi_72_quality_95_embedColorProfile_true.jpg?resize=2000,1125" medium="image" />
-    </item>
-    <item>
-      <title>New York Hasn’t Raised Housing Allowances for Needy Residents in Decades. That’s Unconstitutional, a Lawsuit Says.</title>
-      <link>https://www.propublica.org/article/new-york-shelter-assistance-lawsuit</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/new-york-shelter-assistance-lawsuit</guid>
-      <pubDate>Thu, 09 Jul 2026 19:00:00 GMT</pubDate>
-      <description><![CDATA[<p>Minerva Pacumio, 54, said she is facing eviction from her Queens, New York, apartment because the welfare allowance the state provides for rent is so low that it can’t pay for a modest apartment anywhere in the state. She is a plaintiff in a lawsuit filed against New York last month that seeks an increase in the allowance. Zaydee Sanchez/ProPublica New York Hasn’t Raised Housing Allowances for Needy Residents in Decades. That’s Unconstitutional, a Lawsuit Says. The state constitution makes an unusual promise to residents: to provide care and support for the needy. But a recent lawsuit</p>]]></description>
-      <content:encoded><![CDATA[<div><img src="https://www.propublica.org/wp-content/uploads/2026/07/NY-FOCUS-101-SOCIAL_maxHeight_3000_maxWidth_3000.jpg?w=1200" /></div>
+  </item>
+  <item>
+    <title>New York Hasn’t Raised Housing Allowances for Needy Residents in Decades. That’s Unconstitutional, a Lawsuit Says.</title>
+    <link>https://www.propublica.org/article/new-york-shelter-assistance-lawsuit</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/new-york-shelter-assistance-lawsuit</guid>
+    <pubDate>Thu, 09 Jul 2026 19:00:00 GMT</pubDate>
+    <description><![CDATA[<p>Minerva Pacumio, 54, said she is facing eviction from her Queens, New York, apartment because the welfare allowance the state provides for rent is so low that it can’t pay for a modest apartment anywhere in the state. She is a plaintiff in a lawsuit filed against New York last month that seeks an increase in the allowance. Zaydee Sanchez/ProPublica New York Hasn’t Raised Housing Allowances for Needy Residents in Decades. That’s Unconstitutional, a Lawsuit Says. The state constitution makes an unusual promise to residents: to provide care and support for the needy. But a recent lawsuit</p>]]></description>
+    <content:encoded><![CDATA[<div><img src="https://www.propublica.org/wp-content/uploads/2026/07/NY-FOCUS-101-SOCIAL_maxHeight_3000_maxWidth_3000.jpg?w=1200" /></div>
 
 <div>
 
@@ -1458,15 +1454,14 @@
     </div>
 </div>
 </div>]]></content:encoded>
-      <media:content url="https://www.propublica.org/wp-content/uploads/2026/07/NY-FOCUS-101-SOCIAL_maxHeight_3000_maxWidth_3000.jpg?w=1200" medium="image" />
-    </item>
-    <item>
-      <title>“No tenía por qué morir”: cómo un centro de detención falló una y otra vez ante una crisis de salud mental</title>
-      <link>https://www.propublica.org/article/camp-east-montana-salud-mental-inmigracion</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/camp-east-montana-salud-mental-inmigracion</guid>
-      <pubDate>Thu, 09 Jul 2026 15:55:00 GMT</pubDate>
-      <description><![CDATA[<p>Esta historia contiene descripciones de suicidio e intento de suicidio, incluidos los métodos utilizados. ProPublica es un medio independiente y sin ánimo de lucro que produce periodismo de investigación en pro del interés público. Suscríbase para recibir nuestras historias más importantes en su correo electrónico tan pronto como sean publicadas. Este artículo se publica conjuntamente con The Texas Tribune, un medio informativo y apartidista comprometido con los texanos. Suscríbase a The Brief Weekly para estar al tanto de la información esencial sobre las cuestiones que afectan a Texas. Los guardias de un centro de detención migratoria en El Paso, Texas, podían ver a un detenido en su celda</p>]]></description>
-      <content:encoded><![CDATA[<div><img src="https://www.propublica.org/wp-content/uploads/2026/07/Camp-MontanaV2_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?resize=2000%2C1333" /></div>
+  </item>
+  <item>
+    <title>“No tenía por qué morir”: cómo un centro de detención falló una y otra vez ante una crisis de salud mental</title>
+    <link>https://www.propublica.org/article/camp-east-montana-salud-mental-inmigracion</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/camp-east-montana-salud-mental-inmigracion</guid>
+    <pubDate>Thu, 09 Jul 2026 15:55:00 GMT</pubDate>
+    <description><![CDATA[<p>Esta historia contiene descripciones de suicidio e intento de suicidio, incluidos los métodos utilizados. ProPublica es un medio independiente y sin ánimo de lucro que produce periodismo de investigación en pro del interés público. Suscríbase para recibir nuestras historias más importantes en su correo electrónico tan pronto como sean publicadas. Este artículo se publica conjuntamente con The Texas Tribune, un medio informativo y apartidista comprometido con los texanos. Suscríbase a The Brief Weekly para estar al tanto de la información esencial sobre las cuestiones que afectan a Texas. Los guardias de un centro de detención migratoria en El Paso, Texas, podían ver a un detenido en su celda</p>]]></description>
+    <content:encoded><![CDATA[<div><img src="https://www.propublica.org/wp-content/uploads/2026/07/Camp-MontanaV2_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?resize=2000%2C1333" /></div>
 <div>
 <div>
 <div>
@@ -1577,15 +1572,14 @@ Primera sección: “Pacient" src="https://www.propublica.org/wp-content/uploads
 </div>
 
 </div>]]></content:encoded>
-      <media:content url="https://www.propublica.org/wp-content/uploads/2026/07/Camp-MontanaV2_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?resize=2000%2C1333" medium="image" />
-    </item>
-    <item>
-      <title>A Puerto Rico Government Agency Exposed 1 Million Social Security Numbers</title>
-      <link>https://www.propublica.org/article/puerto-rico-crim-data-breach</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/puerto-rico-crim-data-breach</guid>
-      <pubDate>Thu, 09 Jul 2026 09:00:00 GMT</pubDate>
-      <description><![CDATA[<p>This article was produced for ProPublica’s Local Reporting Network in partnership with Centro de Periodismo Investigativo . Sign up for Dispatches to get our stories in your inbox every week. The government agency that collects property taxes in Puerto Rico inadvertently exposed the Social Security numbers of approximately 1 million people, Centro de Periodismo Investigativo and ProPublica learned. It was the latest cybersecurity lapse for the Puerto Rico government, which in the past three years has seen technology breaches interrupt government services, take websites offline and lead to citizens’ personal information being published on the dark web. CPI and ProPublica became aware of the v</p>]]></description>
-      <content:encoded><![CDATA[<div><img src="https://www.propublica.org/wp-content/uploads/2026/06/20260626-Gordon-PR-SSN-breach-3x2_maxHeight_3000_maxWidth_3000.jpg?resize=2000%2C1333" /></div>
+  </item>
+  <item>
+    <title>A Puerto Rico Government Agency Exposed 1 Million Social Security Numbers</title>
+    <link>https://www.propublica.org/article/puerto-rico-crim-data-breach</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/puerto-rico-crim-data-breach</guid>
+    <pubDate>Thu, 09 Jul 2026 09:00:00 GMT</pubDate>
+    <description><![CDATA[<p>This article was produced for ProPublica’s Local Reporting Network in partnership with Centro de Periodismo Investigativo . Sign up for Dispatches to get our stories in your inbox every week. The government agency that collects property taxes in Puerto Rico inadvertently exposed the Social Security numbers of approximately 1 million people, Centro de Periodismo Investigativo and ProPublica learned. It was the latest cybersecurity lapse for the Puerto Rico government, which in the past three years has seen technology breaches interrupt government services, take websites offline and lead to citizens’ personal information being published on the dark web. CPI and ProPublica became aware of the v</p>]]></description>
+    <content:encoded><![CDATA[<div><img src="https://www.propublica.org/wp-content/uploads/2026/06/20260626-Gordon-PR-SSN-breach-3x2_maxHeight_3000_maxWidth_3000.jpg?resize=2000%2C1333" /></div>
 <div>
 <div>
 <div>
@@ -1630,15 +1624,14 @@ Primera sección: “Pacient" src="https://www.propublica.org/wp-content/uploads
 
 
 </div>]]></content:encoded>
-      <media:content url="https://www.propublica.org/wp-content/uploads/2026/06/20260626-Gordon-PR-SSN-breach-3x2_maxHeight_3000_maxWidth_3000.jpg?resize=2000%2C1333" medium="image" />
-    </item>
-    <item>
-      <title>Top Legal Adviser to Joint Chiefs Is Stepping Down Nearly a Year Before Completing Term</title>
-      <link>https://www.propublica.org/article/eric-widmar-retiring-joint-chiefs-legal-adviser</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/eric-widmar-retiring-joint-chiefs-legal-adviser</guid>
-      <pubDate>Wed, 08 Jul 2026 22:25:00 GMT</pubDate>
-      <description><![CDATA[<p>The senior legal counsel to the chair of the Joint Chiefs of Staff — the principal military adviser to President Donald Trump and Defense Secretary Pete Hegseth — is stepping down nearly a year before his term is over, the latest in an exodus of the military’s top leaders and lawyers over the last 18 months.</p>]]></description>
-      <content:encoded><![CDATA[<div>
+  </item>
+  <item>
+    <title>Top Legal Adviser to Joint Chiefs Is Stepping Down Nearly a Year Before Completing Term</title>
+    <link>https://www.propublica.org/article/eric-widmar-retiring-joint-chiefs-legal-adviser</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/eric-widmar-retiring-joint-chiefs-legal-adviser</guid>
+    <pubDate>Wed, 08 Jul 2026 22:25:00 GMT</pubDate>
+    <description><![CDATA[<p>The senior legal counsel to the chair of the Joint Chiefs of Staff — the principal military adviser to President Donald Trump and Defense Secretary Pete Hegseth — is stepping down nearly a year before his term is over, the latest in an exodus of the military’s top leaders and lawyers over the last 18 months.</p>]]></description>
+    <content:encoded><![CDATA[<div>
 
 <div>
 <p>The senior legal counsel to the chair of the Joint Chiefs of Staff — the principal military adviser to President Donald Trump and Defense Secretary Pete Hegseth — is stepping down nearly a year before his term is over, the latest in an exodus of the military’s top leaders and lawyers over the last 18 months.</p>
@@ -1669,15 +1662,15 @@ Primera sección: “Pacient" src="https://www.propublica.org/wp-content/uploads
 <p>A West Point graduate who advised operations in Iraq and Afghanistan, Widmar departs after more than 28 years in the service. Prior to his most recent role, he was staff judge advocate for Central Command in support of U.S. interests across the Middle East and Asia.</p>
 <p>The Senate confirmed Widmar as legal counsel to the Joint Chiefs of Staff in 2024. In an announcement at the time, the Army’s then-top lawyer, <a href="https://www.linkedin.com/posts/ericwidmar_tjag-special-announcement-42-03-ugcPost-7225336338684751873-acso">Lt. Gen. Joseph Berger III, praised his “strategic vision and moral courage</a>.”</p>
 <p>Berger has since been <a href="https://www.cnn.com/2025/10/15/politics/pentagon-lawyers-sidelined-jags">fired by Hegseth</a>.</p></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Wall Street Wants to Change the Rules for Your 401(k). It Could Put Your Retirement at Risk.</title>
-      <link>https://www.propublica.org/article/401k-retirement-investment-plan-risk-trump</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/401k-retirement-investment-plan-risk-trump</guid>
-      <pubDate>Wed, 08 Jul 2026 10:00:00 GMT</pubDate>
-      <description><![CDATA[<h2>
+  </item>
+  <item>
+    <title>Wall Street Wants to Change the Rules for Your 401(k). It Could Put Your Retirement at Risk.</title>
+    <link>https://www.propublica.org/article/401k-retirement-investment-plan-risk-trump</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/401k-retirement-investment-plan-risk-trump</guid>
+    <pubDate>Wed, 08 Jul 2026 10:00:00 GMT</pubDate>
+    <description><![CDATA[<h2>
     Financial firms want a bigger piece of the $10 trillion in America’s 401(k) plans, and the Trump administration is planning a regulatory rollback to encourage  less-regulated — and often riskier — investments.</h2><p>Most Americans don’t look to their 401(k) plans for excitement or experimentation, instead relying on the promise that steady saving and sober planning will guarantee security in their golden years. But the Trump administration wants to transform the well-worn patterns of retirement investing.</p>]]></description>
-      <content:encoded><![CDATA[<figure>
+    <content:encoded><![CDATA[<figure>
 <img alt="An illustration shows people in suits surrounding a roasting piggy bank. One man is lighting wood under the piggy bank while the others prepare for a meal with a large fork, utensils and plates." src="https://www.propublica.org/wp-content/uploads/2026/06/401k-propublica-main-16x9-1.jpg?w=1149"/>
 <figcaption>
 
@@ -1720,14 +1713,14 @@ Primera sección: “Pacient" src="https://www.propublica.org/wp-content/uploads
             We do not generally permit translation of our stories into another language.</li>
 <li>
             Any website our stories appear on must include a prominent and effective way to contact you.</li></ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>Estos jóvenes inmigrantes antes estaban protegidos. Con Trump, sus deportaciones se han triplicado.</title>
-      <link>https://www.propublica.org/article/no-acompanados-menores-deportaciones-elder-chavez</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/no-acompanados-menores-deportaciones-elder-chavez</guid>
-      <pubDate>Wed, 08 Jul 2026 09:30:00 GMT</pubDate>
-      <description><![CDATA[<p>ProPublica es un medio independiente y sin ánimo de lucro que produce periodismo de investigación en pro del interés público. Suscríbase para recibir nuestras historias más importantes en su correo electrónico tan pronto como sean publicadas. Reporting Highlights Retroceso de protecciones: El gobierno de Trump eliminó las políticas que dan acceso legal y protección contra la deportación a menores migrantes en tanto regularizan su situación en EE. UU. Detenidos y deportados: Un análisis de ProPublica encontró que los menores no acompañados son detenidos y deportados a un ritmo tres veces mayor que al final del primer mandato de Trump. Oleada de deportaciones: Las cortes emiten mensualmente má</p>]]></description>
-      <content:encoded><![CDATA[<div><img src="https://www.propublica.org/wp-content/uploads/2026/07/ProPublica-Elder-Final-Yellow_maxHeight_3000_maxWidth_3000-1.jpg?resize=2000%2C1333" /></div>
+  </item>
+  <item>
+    <title>Estos jóvenes inmigrantes antes estaban protegidos. Con Trump, sus deportaciones se han triplicado.</title>
+    <link>https://www.propublica.org/article/no-acompanados-menores-deportaciones-elder-chavez</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/no-acompanados-menores-deportaciones-elder-chavez</guid>
+    <pubDate>Wed, 08 Jul 2026 09:30:00 GMT</pubDate>
+    <description><![CDATA[<p>ProPublica es un medio independiente y sin ánimo de lucro que produce periodismo de investigación en pro del interés público. Suscríbase para recibir nuestras historias más importantes en su correo electrónico tan pronto como sean publicadas. Reporting Highlights Retroceso de protecciones: El gobierno de Trump eliminó las políticas que dan acceso legal y protección contra la deportación a menores migrantes en tanto regularizan su situación en EE. UU. Detenidos y deportados: Un análisis de ProPublica encontró que los menores no acompañados son detenidos y deportados a un ritmo tres veces mayor que al final del primer mandato de Trump. Oleada de deportaciones: Las cortes emiten mensualmente má</p>]]></description>
+    <content:encoded><![CDATA[<div><img src="https://www.propublica.org/wp-content/uploads/2026/07/ProPublica-Elder-Final-Yellow_maxHeight_3000_maxWidth_3000-1.jpg?resize=2000%2C1333" /></div>
 <div>
 <div>
 <div>
@@ -1873,17 +1866,16 @@ Jeff Ernsthausen/ProPublica
 </div>
 
 </div>]]></content:encoded>
-      <media:content url="https://www.propublica.org/wp-content/uploads/2026/07/ProPublica-Elder-Final-Yellow_maxHeight_3000_maxWidth_3000-1.jpg?resize=2000%2C1333" medium="image" />
-    </item>
-    <item>
-      <title>Washington Law Says to Alert the Public When Doctors Are Accused of Misconduct. It Can Take Months.</title>
-      <link>https://www.propublica.org/article/washington-doctor-misconduct-failed-disclosure</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/washington-doctor-misconduct-failed-disclosure</guid>
-      <pubDate>Wed, 08 Jul 2026 09:00:00 GMT</pubDate>
-      <description><![CDATA[<h2>
+  </item>
+  <item>
+    <title>Washington Law Says to Alert the Public When Doctors Are Accused of Misconduct. It Can Take Months.</title>
+    <link>https://www.propublica.org/article/washington-doctor-misconduct-failed-disclosure</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/washington-doctor-misconduct-failed-disclosure</guid>
+    <pubDate>Wed, 08 Jul 2026 09:00:00 GMT</pubDate>
+    <description><![CDATA[<h2>
     In the case of Mark Mulholland, who was repeatedly accused of sexual misconduct, the board waited six weeks to announce that it had filed charges. He was allowed to keep seeing patients during that time, and one alleges he abused her in the interim.</h2><p>
                 Co-published with <a href="https://www.kuow.org/">KUOW</a></p><p>This story describes detailed allegations of sexual violence and other sexual misconduct.</p>]]></description>
-      <content:encoded><![CDATA[<figure>
+    <content:encoded><![CDATA[<figure>
 <img alt="A stethoscope wraps around a megaphone and blocks the opening." src="https://www.propublica.org/wp-content/uploads/2026/04/20260427-Gordon-Wash-Ob-Gyn-Notifications-megaphone-3x2-1.jpg?w=1149"/>
 <figcaption>
 
@@ -1916,14 +1908,14 @@ Jeff Ernsthausen/ProPublica
             We do not generally permit translation of our stories into another language.</li>
 <li>
             Any website our stories appear on must include a prominent and effective way to contact you.</li></ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>The First Major Overhaul of Public Lands Grazing Regulations in a Generation Looks to Cut Out Public Involvement</title>
-      <link>https://www.propublica.org/article/public-land-livestock-grazing-ranching-access</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/public-land-livestock-grazing-ranching-access</guid>
-      <pubDate>Tue, 07 Jul 2026 09:00:00 GMT</pubDate>
-      <description><![CDATA[<p>ProPublica is a nonprofit newsroom that investigates abuses of power. <a href="https://www.propublica.org/newsletters/dispatches?source=%25source%25">Sign up for Dispatches</a>, a newsletter that spotlights wrongdoing around the country, to receive our stories in your inbox every week.</p><p>The federal government is rewriting its rules governing ranching on public lands to increase the number of cattle, sheep and other livestock grazing on 155 million acres in the West, an area twice the size of New Mexico.</p>]]></description>
-      <content:encoded><![CDATA[<div>
+  </item>
+  <item>
+    <title>The First Major Overhaul of Public Lands Grazing Regulations in a Generation Looks to Cut Out Public Involvement</title>
+    <link>https://www.propublica.org/article/public-land-livestock-grazing-ranching-access</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/public-land-livestock-grazing-ranching-access</guid>
+    <pubDate>Tue, 07 Jul 2026 09:00:00 GMT</pubDate>
+    <description><![CDATA[<p>ProPublica is a nonprofit newsroom that investigates abuses of power. <a href="https://www.propublica.org/newsletters/dispatches?source=%25source%25">Sign up for Dispatches</a>, a newsletter that spotlights wrongdoing around the country, to receive our stories in your inbox every week.</p><p>The federal government is rewriting its rules governing ranching on public lands to increase the number of cattle, sheep and other livestock grazing on 155 million acres in the West, an area twice the size of New Mexico.</p>]]></description>
+    <content:encoded><![CDATA[<div>
 
 <div><div>
 <p>ProPublica is a nonprofit newsroom that investigates abuses of power. , a newsletter that spotlights wrongdoing around the country, to receive our stories in your inbox every week.</p></div>
@@ -1975,14 +1967,14 @@ Jeff Ernsthausen/ProPublica
 <p>The Trump administration has also prioritized restocking vacant areas, which may be without cows and sheep because they are far from a water source, they need time to recover from wildfire or the agency is attempting to eradicate invasive species. Within months of President Donald Trump returning to the White House, political appointees instructed staff to build lists of every vacant plot that might be eligible for more livestock.</p>
 <p>“By the end of next year,” Budd-Falen said in her discussion with Lummis, “every single vacant allotment will be filled by a rancher.”</p>
 <figure><img alt="A blurred yellow sign reading “Please close gate” is mounted on a wire fence in the foreground. Through the fence, a sharp view reveals a winding dirt road cutting through a dry, hilly landscape under" src="https://www.propublica.org/wp-content/uploads/2026/07/250428_HCN_5308_maxHeight_3000_maxWidth_3000.jpg?w=1149"/><figcaption>Grazing is allowed on the BLM’s Horseshoe Allotment in Arizona’s Agua Fria National Monument.</figcaption></figure></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Amid Mounting War Casualties, Pete Hegseth “Defunded and Impeded” Efforts to Protect Civilians, Lawmakers Say</title>
-      <link>https://www.propublica.org/article/hegseth-trump-war-civilian-casualties-elizabeth-warren-pentagon</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/hegseth-trump-war-civilian-casualties-elizabeth-warren-pentagon</guid>
-      <pubDate>Mon, 06 Jul 2026 16:00:00 GMT</pubDate>
-      <description><![CDATA[<p>ProPublica is a nonprofit newsroom that investigates abuses of power. Sign up to receive <a href="https://www.propublica.org/newsletters/the-big-story?source=%25source%25">our biggest stories</a> as soon as they’re published.</p><p>Ten Democratic lawmakers told Defense Secretary Pete Hegseth <a href="https://embed.documentcloud.org/documents/28405945/pages/1?embed=1">in a letter</a> Sunday that his gutting of a program focused on protecting civilians is a leadership failure that imperils service members and erodes the military’s moral standing.</p>]]></description>
-      <content:encoded><![CDATA[<div>
+  </item>
+  <item>
+    <title>Amid Mounting War Casualties, Pete Hegseth “Defunded and Impeded” Efforts to Protect Civilians, Lawmakers Say</title>
+    <link>https://www.propublica.org/article/hegseth-trump-war-civilian-casualties-elizabeth-warren-pentagon</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/hegseth-trump-war-civilian-casualties-elizabeth-warren-pentagon</guid>
+    <pubDate>Mon, 06 Jul 2026 16:00:00 GMT</pubDate>
+    <description><![CDATA[<p>ProPublica is a nonprofit newsroom that investigates abuses of power. Sign up to receive <a href="https://www.propublica.org/newsletters/the-big-story?source=%25source%25">our biggest stories</a> as soon as they’re published.</p><p>Ten Democratic lawmakers told Defense Secretary Pete Hegseth <a href="https://embed.documentcloud.org/documents/28405945/pages/1?embed=1">in a letter</a> Sunday that his gutting of a program focused on protecting civilians is a leadership failure that imperils service members and erodes the military’s moral standing.</p>]]></description>
+    <content:encoded><![CDATA[<div>
 
 <div><div>
 <p>ProPublica is a nonprofit newsroom that investigates abuses of power. Sign up to receive  as soon as they’re published.</p></div>
@@ -2025,14 +2017,14 @@ Jeff Ernsthausen/ProPublica
 <p>The secretary’s sweeping terminations of high-ranking officers without public explanation has drawn bipartisan criticism and accusations that the moves are rooted in political vengeance, racism and bias against women. Hegseth has repeatedly condemned military officers for comments lauding diversity, <a href="https://www.war.gov/News/Transcripts/Transcript/article/4318689/secretary-of-war-pete-hegseth-addresses-general-and-flag-officers-at-quantico-v">saying in one speech,</a> “We became ‘the woke department.’ … We’re done with that shit.”</p>
 <p>Hegseth <a href="https://www.youtube.com/watch?v=OE9N-7zmKRU">has said</a> that out of respect for the officers he won’t speak about why they were fired. He said it was “very difficult to change the culture of a department that was destroyed by the wrong perspectives with the same officers that were there.”</p>
 <p>Public rebukes followed Hegseth’s decision last month to effectively fire Gen. Chris Donahue, a respected four-star commander who came up the ranks through the special forces. In 2023, <a href="https://x.com/DefenseBaron/status/2069777592253641170?s=20">Donahue said</a> that any concerns over wokeness were “BS,” adding: “We’re focused on people, war-fighting and making sure that we’re prepared for the next fight. There ain’t no ‘woke’ here.”</p></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>These Immigrant Kids Were Once Protected. Under Trump, Their Deportations Have Tripled.</title>
-      <link>https://www.propublica.org/article/unaccompanied-minors-deportations-elder-chavez</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/unaccompanied-minors-deportations-elder-chavez</guid>
-      <pubDate>Mon, 06 Jul 2026 10:00:00 GMT</pubDate>
-      <description><![CDATA[<p>ProPublica is a nonprofit newsroom that investigates abuses of power. Sign up to receive <a href="https://www.propublica.org/newsletters/the-big-story?source=www.propublica.org&amp;placement=top-note&amp;region=national">our biggest stories</a> as soon as they’re published.</p><h3>Reporting Highlights</h3><li><strong>Rollback of Protections:</strong>The Trump administration has gutted policies that gave immigrant minors access to legal counsel and relief from deportation while they applied to stay in the U.S.</li>]]></description>
-      <content:encoded><![CDATA[<figure>
+  </item>
+  <item>
+    <title>These Immigrant Kids Were Once Protected. Under Trump, Their Deportations Have Tripled.</title>
+    <link>https://www.propublica.org/article/unaccompanied-minors-deportations-elder-chavez</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/unaccompanied-minors-deportations-elder-chavez</guid>
+    <pubDate>Mon, 06 Jul 2026 10:00:00 GMT</pubDate>
+    <description><![CDATA[<p>ProPublica is a nonprofit newsroom that investigates abuses of power. Sign up to receive <a href="https://www.propublica.org/newsletters/the-big-story?source=www.propublica.org&amp;placement=top-note&amp;region=national">our biggest stories</a> as soon as they’re published.</p><h3>Reporting Highlights</h3><li><strong>Rollback of Protections:</strong>The Trump administration has gutted policies that gave immigrant minors access to legal counsel and relief from deportation while they applied to stay in the U.S.</li>]]></description>
+    <content:encoded><![CDATA[<figure>
 <img alt="A photo collage features a young person with glasses looking over their shoulder in a classroom. It is layered with a “Special Immigrant Juvenile” form, a handwritten note in Spanish mentioning “Elder" src="https://www.propublica.org/wp-content/uploads/2026/07/ProPublica-Elder-Final-Yellow_maxHeight_3000_maxWidth_3000-1.jpg?w=1149"/>
 <figcaption>
 
@@ -2052,15 +2044,15 @@ Jeff Ernsthausen / ProPublica</figcaption></figure><p>Sometimes the deportation 
  <figcaption>
 Source: ProPublica analysis of court data from the Executive Office for Immigration Review
 Jeff Ernsthausen/ProPublica</figcaption></figure><p>It’s not just the overhaul of the immigration courts that is having an effect on immigrant kids. Early on in Trump’s second term, officials moved to curb funding for advocacy groups that provide legal services to unaccompanied minors. It also put an end to a Biden-era policy known as “deferred action,”<strong></strong>which protected minors who had been granted SIJ from deportation. SIJ on its own does not confer legal status, and the deferred action policy was implemented to cover those with SIJ until they could get their green cards.</p><p>After advocacy groups took the administration to court, federal judges ordered the government to restore funding for legal assistance andaccess to deferred action for SIJ recipients. Despite those rulings, some legal advocates say they still have not been paid what they’re owed. And in June, several groups said federal agents appeared at their Washington-area offices, seeking to look at client files, even though they didn’t have warrants. The advocates said they saw the move as an attempt to intimidate them<em>.</em></p><p>As for granting deferred action, U.S. Citizenship and Immigration Services said in a statement that the agency would do so only under “compelling circumstances on a case-by-case basis.” DHS, which oversees USCIS and ICE, emphasized in an email that having SIJ “does NOT confer lawful status,” adding that “any recipient may be subject to removal.” The agency did not respond to a question about the agents who visited advocates’ offices.</p><p>Over the last year, the administration says it has tracked down 146,000 of the unaccompanied minors who entered the country under Biden in order to check on their well-being. The majority of all the minors who entered the country in recent years had been released to one or both parents in the United States or to other close relatives.</p><p>Homeland Security Secretary Markwayne Mullin said at a June press conference that some of the welfare checks found minors were doing fine with their families. But he asserted that he’d also tracked down children who were in the hands of rapists and other criminals. “We start digging into these cases and you start hearing absolute horrific things,” he said.</p><p>When asked for verifiable details about some of the cases Mullin mentioned, DHS did not respond. A DHS spokesperson later sent a list of 16 people who had sponsored immigrant minors and had previously been charged with crimes including assault, drug trafficking or domestic violence. Meanwhile, Justice Department officials said they’d indicted less than a handful of people on charges of smuggling or exploiting immigrant minors.</p><p>No officials from DHS or the Justice Department explained what had become of any of the children connected to those indictments. As for immigrants who had entered the U.S. as children and are now adults, Mullin said, “we are working on the process of sending them back.”</p><figure><img alt="A three-paneled sequence shows a young man with dark hair speaking on a black landline telephone. Across the frames, his expressions shift from focused to serious to smiling, captured inside what appe" src="https://www.propublica.org/wp-content/uploads/2026/06/ElderDpt_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?w=1149"/><figcaption>ProPublica spoke with Chavez over video calls from a Louisiana detention center, where he’s been locked up for six months. ProPublica</figcaption></figure><p>Soon after Chavez arrived in detention, one of the men in his cell recognized the teen’s pattern of sleeping through the day as a silent cry for help. Carlos Della Valle, who had migrated to the United States from Mexico, was attuned to Chavez’s struggles because he had a son around the same age. Even in detention, Chavez, with a head full of  tousled black hair and big brown eyes, had an easy laugh and smile. Della Valle worried that Chavez was “losing valuable time that he’s never going to get back.”</p><p>Winn <a href="https://static1.squarespace.com/static/5a33042eb078691c386e7bce/t/6019dd452f75af0a17bec824/1612307782021/Redacted_CRCL_Complaint_Winn.pdf">was a tough place</a>, advocates and detainees said. Two migrants died there<strong></strong>earlier this year. One of the deaths was reportedly caused <a href="https://apnews.com/article/ice-detainee-death-winn-a1ab66753aa4a1effdff0b7abef2240f">by cardiovascular disease, and authorities have not determined</a> a cause for the other.</p><p>A recent report by the <a href="https://www.oig.dhs.gov/sites/default/files/assets/2026-06/OIG-26-08-Jun26.pdf">Department of Homeland Security’s Office of Inspector General</a> described unsafe and unsanitary conditions at Winn, including leaking ceilings, dirty food prep areas and an incident in which a guard put a detainee in a prohibited choke hold. A DHS spokesperson said that the agency is working to address the issues raised in the report, adding, “our death rates are lower than most state prisons.”</p><p>Della Valle began nudging young Chavez out of bed in the mornings and put him to work helping keep their cellblock clean.</p><p>Detainees were given an hour a day outside, sometimes less than that. Della Valle told Chavez that keeping himself busy, in whatever constructive ways possible, was the only way to make it through the monotony with his sanity intact.</p><p>Chavez briefly took a job in the barber shop that paid the standard wage for someone in detention —  $1 a day — but he said that giving haircuts to around 80 men in a shift was so grueling that he only lasted a month. Instead, Chavez and Della Valle pored over passages from the Bible together. They sat together for most every meal. Chavez learned to mix packets of powdered juice just the way Della Valle liked it.</p><p>Della Valle offered to help Chavez navigate the immigration system. He knew it well. In 1997 he’d twice illegally entered the United States. He was deported the first time but illegally entered again, married a U.S. citizen soon after and settled in Pennsylvania.</p><p>Because of his reentry, which is a felony, he has been ineligible to regularize his status. But he lived underground with little worry. Immigration authorities generally avoided targeting immigrants with long ties to their communities, like him. Not anymore.</p><p>Authorities intercepted Della Valle when he and his wife were returning from a Virgin Islands<strong></strong>vacation, though they released him on bond at the time. Months later, however, he was taken into ICE detention. By the time he met Chavez, he had spent months being <a href="https://www.miamiherald.com/news/local/immigration/article313309443.html">transferred among close to a dozen holding facilities</a>. He worried about what detention might do to Chavez. Other men in his cellblock, who nicknamed Chavez “El Niño,” worried too.</p><p>“It was hard to see him, you know, because he’s just a boy. He’s not a grown man,”  Della Valle said. “I had to do whatever I could for him.”</p><figure><img alt="A close-up profile portrait of a man with short hair and light stubble looking thoughtfully out a window beside a dark curtain." src="https://www.propublica.org/wp-content/uploads/2026/06/20260602-Sanchez-Philly-4_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?w=752"/><figcaption>After noticing how Chavez was handling detention, Carlos Della Valle befriended the teenager and tried to comfort him. Now released and back home with his wife, Della Valle is advocating for Chavez’s release as well. Zaydee Sanchez/ProPublica</figcaption></figure><p>While the administration has made progress bending immigration courts to its will, there’s evidence that federal courts, where <a href="https://projects.propublica.org/habeas-tracker">tens of thousands of immigrants have challenged their detentions as illegal</a>, are pushing back.</p><p>The National Immigration Project, a nonprofit legal advocacy group, tracked the cases of 263 immigrants who entered the country as unaccompanied minors and SIJ applicants. The group found that federal judges ordered releases or bond hearings in all but 12 of them since the start of the second Trump administration. In March, U.S. District Judge Gary Brown issued a scathing rebuke in one such case, writing, “The laws of human decency condemn such villainy.”</p><p>The administration can set policy, he wrote, but he added that “it is forbidden from trampling our system of laws — a system which has safeguarded this nation for close to 250 years.”</p><p>Among those recently released was 20-year-old Fredy Martinez. Born in Honduras, he was a teenager when he crossed the border as an unaccompanied minor. He had graduated from high school in Texas and was delivering a DoorDash order on his bike when he was detained, according to court documents about his case. He was held for eight months at a sprawling and deeply troubled tent detention camp in El Paso, Texas — which has seen <a href="https://www.texastribune.org/2026/03/03/texas-ice-detention-measles-east-montana-dilley-el-paso">a measles outbreak</a> and <a href="https://www.gao.gov/products/gao-26-108886">detainee deaths</a>, including one ruled a homicide — before a federal judge found his detention was illegal and ordered him released. DHS did not respond to a question about the center.</p><p>Another teenager named Carlos from Guatemala said in an interview that he was detained on his way to work at a car wash in Rockland County, New York, when he was 18, despite having been granted SIJ and deferred action. He was flown over 1,000 miles to a detention facility in Louisiana, though not the same one as Chavez. Carlos asked to be identified only by his first name because of his ongoing immigration case.</p><p>After his arrest, he said, “I was just thinking that I would never see my family again.” Carlos was held for more than two months before a federal judge set him free.</p><p>The DHS spokesperson did not answer questions about any individual cases. They said federal court rulings against the administration “should come as no surprise,” since “many activist judges have attempted to thwart President Trump from fulfilling the American people’s mandate.”</p><figure><img alt="A person holds a smartphone displaying an active call screen and keypad, with a blue patterned bedspread and stuffed animals blurred in the background." src="https://www.propublica.org/wp-content/uploads/2026/07/20260528-Sanchez-Alabama-Sister-101-43_maxHeight_3000_maxWidth_3000-1.jpg?w=1149"/><figcaption>Chavez and his sister try to speak daily when he calls from detention, helping each other cope with the separation. Zaydee Sanchez/ProPublica</figcaption></figure><p>Six months into his detention, Chavez is on his own. He was ordered deported but is appealing the decision and filed a habeas petition.</p><p><a href="https://www.miamiherald.com/news/local/immigration/article315572355.html">Della Valle has been released</a>, thanks to his wife’s outspoken advocacy. His release was bittersweet for Chavez. But Della Valle has not forgotten him.</p><p>Della Valle and his wife, Angela Della Valle, have helped Chavez’s sister, Mayuri Chavez, to pay off his outstanding traffic tickets and prepare his defense. The couple started a letter-writing campaign for him. They’ve passed out flyers with a picture of a chair Chavez made in carpentry class, asking people to color it in and send him messages of encouragement.</p><p>Della Valle said he feels pangs of guilt about leaving Chavez behind. He still speaks to Chavez most days and tries to keep the teen’s spirits up, but worries his words don’t carry the same weight now that he’s out. Della Valle tries to convince himself that Chavez will be OK, saying, “I think me being out might be good for him because he knows that there’s hope.”</p><figure><img alt="Several decorated coloring pages are arranged on a wooden table, each featuring a drawing of a simple wooden plank chair with the phrase “bring Elder home” in colorful lettering at the top." src="https://www.propublica.org/wp-content/uploads/2026/06/drawings_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?w=527"/><figcaption>Children in an Alabama classroom colored pages to support Chavez. Courtesy</figcaption></figure><p>Meanwhile, Chavez has been moved to different cells multiple times. One had only a single functional shower for dozens of men. The video call system often malfunctioned. Someone stole his small notebook, where he had carefully written down all the telephone numbers of the people he was in touch with outside. One night he dreamt he was free. When he woke up and realized he was still in detention, he panicked and had trouble breathing.</p><p>He said he has been trying to keep up the routine he started when Della Valle was there, but each passing week makes it harder.</p><p>In a series of interviews from detention, Chavez worried about losing half his junior year of high school. He missed a required English test and a deadline to turn in a history project, and now that the school year is over, he is unclear if he will be able to make the assignments up to be able to graduate on time. His sister spent a lot of money to get him braces, and without regular adjustments he worries it will all be for nothing. He missed the birth of his new nephew, and he is unsure if he will be able to meet him.</p><p>“I had so many plans,” he said, “but now everything is ruined.”</p><h3>How We Identified Young People in the Immigration System</h3><p>For this story, ProPublica analyzed several datasets released by the federal government under the Freedom of Information Act.</p><p>To calculate the number of minors being ordered deported or granted voluntary removal each month in immigration court, ProPublica analyzed immigration court data released by the U.S. Department of Justice’s Executive Office for Immigration Review.</p><p>For that calculation, we counted someone as a minor if they were under 18 at the time they received a removal or voluntary departure decision from an immigration judge. If someone did not have a birthdate listed in the data, we did not count them as a minor. Our results did not meaningfully change when we estimated how many of the people missing birthdates were likely to be minors.</p>]]></content:encoded>
-    </item>
-    <item>
-      <title>Left in the Dust: How a Billionaire-Owned Concrete Plant Took Over a Detroit Community</title>
-      <link>https://www.propublica.org/article/detroit-kronos-morouns-concrete-neighborhood-takeover</link>
-      <guid isPermaLink="true">https://www.propublica.org/article/detroit-kronos-morouns-concrete-neighborhood-takeover</guid>
-      <pubDate>Mon, 06 Jul 2026 09:00:00 GMT</pubDate>
-      <description><![CDATA[<p>The abandoned house next door meant a lot to Christina Kary. For years, she tended to it, planting purple flowers, removing weeds and picking up trash. She attached locks to the doors to prevent trespassers from entering. </p>
+  </item>
+  <item>
+    <title>Left in the Dust: How a Billionaire-Owned Concrete Plant Took Over a Detroit Community</title>
+    <link>https://www.propublica.org/article/detroit-kronos-morouns-concrete-neighborhood-takeover</link>
+    <guid isPermaLink="true">https://www.propublica.org/article/detroit-kronos-morouns-concrete-neighborhood-takeover</guid>
+    <pubDate>Mon, 06 Jul 2026 09:00:00 GMT</pubDate>
+    <description><![CDATA[<p>The abandoned house next door meant a lot to Christina Kary. For years, she tended to it, planting purple flowers, removing weeds and picking up trash. She attached locks to the doors to prevent trespassers from entering. </p>
 <p>She had considered buying the property, located on the Cadillac Heights block where her family built the first houses in the early 1900s. Several years ago, she learned that the small home with a front porch was owned by the Detroit Land Bank Authority, which manages the city’s vacant properties. Kary, 86, said she told a land bank inspector she wanted to purchase it but didn’t follow up, thinking she would eventually hear back.</p>]]></description>
-      <content:encoded><![CDATA[<figure><img alt="A view from a house front porch shows a street and a fenced-in lot with cars, concrete-mixing trucks and industrial buildings." src="https://www.propublica.org/wp-content/uploads/2027/04/20251027-Greeson-DetroitConcrete_34_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?w=1149"/><figcaption><small>A view of the Kronos concrete mixing plant from the front porch of longtime resident Christina Kary. Her family built the first homes on her block, and she is determined to stay in the neighborhood. Brittany Greeson for ProPublica</small></figcaption></figure>
+    <content:encoded><![CDATA[<figure><img alt="A view from a house front porch shows a street and a fenced-in lot with cars, concrete-mixing trucks and industrial buildings." src="https://www.propublica.org/wp-content/uploads/2027/04/20251027-Greeson-DetroitConcrete_34_preview_maxWidth_3000_maxHeight_3000_ppi_72_embedColorProfile_true_quality_95.jpg?w=1149"/><figcaption><small>A view of the Kronos concrete mixing plant from the front porch of longtime resident Christina Kary. Her family built the first homes on her block, and she is determined to stay in the neighborhood. Brittany Greeson for ProPublica</small></figcaption></figure>
 <p>The abandoned house next door meant a lot to Christina Kary. For years, she tended to it, planting purple flowers, removing weeds and picking up trash. She attached locks to the doors to prevent trespassers from entering. </p>
 <p>She had considered buying the property, located on the Cadillac Heights block where her family built the first houses in the early 1900s. Several years ago, she learned that the small home with a front porch was owned by the Detroit Land Bank Authority, which manages the city’s vacant properties. Kary, 86, said she told a land bank inspector she wanted to purchase it but didn’t follow up, thinking she would eventually hear back.</p>
 <p>Then, one morning in 2024, she heard a commotion as heavy equipment squeezed through the alley. Kary watched from her backyard as the house was demolished, her feet vibrating beneath her. She marked the day in yellow highlighter on her paper wall calendar where she records other notable events like birthdays, doctor appointments and Bible study meetups. She would later learn that the city had sold the home to Crown Enterprises, a real estate firm owned by members of the Detroit area’s wealthy and politically connected Moroun family.</p>
@@ -2168,6 +2160,6 @@ Jeff Ernsthausen/ProPublica</figcaption></figure><p>It’s not just the overhaul
 <p>“It’s home,” she said. “I’m not leaving.”</p>
 <figure><img alt="Green lawns, bushes, streets and sidewalks, with a large industrial structure with the word “Kronos” written on it in the background, overlooking the neighborhood." src="https://www.propublica.org/wp-content/uploads/2027/04/20251010-Maney-Detroit-Concrete-100-PDedit2_maxHeight_3000_maxWidth_3000.jpg?w=1149"/><figcaption><span>The Kronos plant overlooks the Cadillac Heights neighborhood.</span> <span>Sarahbeth Maney/ProPublica</span></figcaption></figure>
 <p>The post <a href="https://www.propublica.org/article/detroit-kronos-morouns-concrete-neighborhood-takeover">Left in the Dust: How a Billionaire-Owned Concrete Plant Took Over a Detroit Community</a> appeared first on <a href="https://www.propublica.org">ProPublica</a>.</p>]]></content:encoded>
-    </item>
-  </channel>
+  </item>
+</channel>
 </rss>
