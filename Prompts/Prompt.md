@@ -209,6 +209,12 @@ Follow listing pagination when present.
 
 Stop following pagination once all remaining dated posts are older than {Maximum post age}.
 
+For Reuters-style Arc/Fusion pages:
+- Extract visible listing cards from rendered DOM links matching `a[href*="2026-"]`.
+- Use the closest story/card container for headline, summary, image, and relative timestamp.
+- Parse relative timestamps such as `2 hours ago` against {Current UTC timestamp}.
+- Fetch each article page and prefer JSON-LD `NewsArticle` metadata plus visible paragraph nodes such as `[data-testid="paragraph"]`, `article p`, or `main p`.
+
 # POST VALIDITY RULES
 
 A valid post must have:
@@ -472,6 +478,12 @@ Before replacing {RSS path}:
 13. Save validation results to:
 
 `{Temporary workspace}/validation.json`
+
+14. Confirm listing freshness coverage:
+    - From the rendered listing DOM, collect all visible same-domain article links that appear to be posts.
+    - Treat dated URL slugs like `/2026-07-11/` and visible relative timestamps like `2 hours ago`, `Yesterday`, or `N days ago` as listing-date evidence.
+    - If the rendered listing contains newer valid-looking article candidates than the newest generated RSS item, validation fails unless those candidates are explicitly recorded as rejected with a concrete content-quality reason.
+    - A feed must not pass validation when all or nearly all items are preserved existing items and the rendered listing contains newer candidates.
 
 If validation fails:
 
