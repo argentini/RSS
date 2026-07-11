@@ -107,7 +107,8 @@ If no suitable script exists, create a temporary script only inside {Temporary w
 
 Use local command-line tools for repeatable work:
 
-- `curl` for fetching when browser is not available.
+- Always fetch with built-in browser first.
+  • `curl` for fetching when built-in browser is not available.
 - `htmlq` for HTML extraction and link discovery.
 - `jq` for JSON, JSON-LD, and API responses.
 - `xmllint` for XML validation.
@@ -138,7 +139,7 @@ Abort and reject a page when rendering does not complete within the configured t
 For every listing page and article page:
 
 1. Fetch with built-in browser first.
-    - Do not use curl first. Only use curl when browser is not a viable option.
+    - Only fall back to `curl` when the built-in browser cannot be used.
     - Open {Source URL} visibly.
     - Wait for article cards.
     - Save rendered DOM.
