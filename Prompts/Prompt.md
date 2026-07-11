@@ -119,7 +119,8 @@ Do not use recursive crawling by default.
 
 Discover relevant links first.
 
-Fetch only necessary listing pages and article pages.
+Fetch only necessary listing pages and article pages. 
+When presented with buttons, links, or options to load more content, activate that feature to traverse pages of results and index until the post dates exceed the maximum post age rule.
 
 Use low concurrency, bounded retries, delays, and timeouts.
 
