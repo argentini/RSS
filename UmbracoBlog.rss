@@ -1,158 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Umbraco Blog</title><link>https://umbraco.com/blog/</link><description><![CDATA[Umbraco Blog generated feed]]></description><lastBuildDate>Sat, 11 Jul 2026 02:19:01 GMT</lastBuildDate><item><title>Security Advisory, July 7, 2026: Security Patches are now available</title><link>https://umbraco.com/blog/security-advisory-july-7-2026-security-patches-are-now-available</link><guid isPermaLink="true">https://umbraco.com/blog/security-advisory-july-7-2026-security-patches-are-now-available</guid><pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate><description><![CDATA[<p>Summary: A vulnerability classified as high has been found and fixed in Umbraco 13, 17, and 18. For all versions, only the delivery API functionality is affected. Today, we have released patches for the affected versions and recommend upgrading. Projects hosted on Umbraco Cloud will receive the fix automatically.</p>]]></description><content:encoded><![CDATA[<div></div>
-<img src="https://umbraco.com/media/i5cf25un/security_advisory_blog_medium_severity_header.jpg?width=800&amp;height=200&amp;format=webp&amp;quality=85&amp;v=1db00454cb90960"/>
-<div>
-</div>
-<div>
-<div>
-<img alt="Andy Butland" src="https://umbraco.com/media/opuanzqk/andy_butland_02-square.jpg?width=100&amp;height=100&amp;format=webp&amp;quality=85"/>
-<div>
-Written by
-Andy Butland
-</div>
-</div>
-<div><p>Summary: A vulnerability classified as high has been found and fixed in Umbraco 13, 17, and 18. For all versions, only the delivery API functionality is affected. Today, we have released patches for the affected versions and recommend upgrading. Projects hosted on Umbraco Cloud will receive the fix automatically.</p></div>
-<div>
-<div>
-<div><h2>Who’s affected?</h2><p>Versions affected:</p><ul><li><p>Umbraco 13.0.0 - 13.15.0</p></li><li><p>Umbraco 17.0.0 - 17.5.2</p></li><li><p>Umbraco 18.0.0 - 18.0.1<br/></p></li></ul><p>Unsupported versions can be subject to the vulnerability, but will not receive a patch. We recommend upgrading to a supported major version if you are using the affected features.</p><p>For 13.15.1, we have also bumped the dependency of <strong>MessagePack</strong> to a newer patch version, to move off a version that is marked as vulnerable.</p><h2>How to fix the vulnerability</h2><p>A patch is available for the latest minor versions of Umbraco 13, 17 and 18. As we are looking at a patch upgrade, and the fix is straightforward, we expect the update to only require minimal effort per project.</p><p>Instructions on patch availability and how to upgrade can be found in the release notes for <a href="https://releases.umbraco.com/release/umbraco/Umbraco-CMS/13.15.1">Umbraco 13.15.1</a>, <a href="https://releases.umbraco.com/release/umbraco/Umbraco-CMS/17.5.3">Umbraco 17.5.3</a> and <a href="https://releases.umbraco.com/release/umbraco/Umbraco-CMS/18.0.2">Umbraco 18.0.2</a>.</p><h2>Automatic fix on Umbraco Cloud</h2><p>All Umbraco Cloud sites running the latest minor version of a supported version are patched via the automated patch feature. The security patches will be rolled out to Umbraco Cloud today to ensure all sites have been fixed.</p><p>If a project is not running the latest minor version (13.15.x, 17.5.x, 18.0.x), the patch can be applied using the minor upgrade feature.</p></div>
-</div>
-<div>
-<figure>
-<div>
-<img alt="ℹ️ Note that Umbraco Cloud also supports automated minor upgrades. This can be enabled on a per-project level and ensures you're always ready to receive the latest patch." src="https://umbraco.com/media/gucpbbak/automatic_minor_upgrade.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1db00454d1bc2d0"/>
-</div>
-<figcaption>ℹ️ Note that Umbraco Cloud also supports automated minor upgrades. This can be enabled on a per-project level and ensures you're always ready to receive the latest patch.</figcaption>
-</figure>
-</div>
-<div>
-<div><h2>What we know about the vulnerability</h2><p>The vulnerability impacts the delivery API and allows the retrieval of <a href="https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/headless-and-apis/content-delivery-api/protected-content-in-the-delivery-api">protected content</a> by unauthorized users when that content is picked on an unprotected document and included in the output via <a href="https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/headless-and-apis/content-delivery-api/property-expansion-and-limiting">output expansion</a>.  Via a similar mechanism, it also allows retrieval of referenced content items that are restricted by type via <a href="https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/headless-and-apis/content-delivery-api">configuration</a>.</p><p>You can read more in the <a href="https://github.com/umbraco/Umbraco-CMS/security/advisories/GHSA-wr57-hqmp-fgvh">published security advisory</a>.</p><h2>Credit</h2><p>We'd like to thank <a href="https://suryadina.com/">Ardya Suryadinata</a> for reporting the issues and for responsible disclosure of details regarding the vulnerability.</p><p></p><h2>Any questions?</h2><p>If you have any questions or comments about this advisory, make sure to get in touch with us directly on the Security Advisories. Alternatively, you can reach out to the dedicated security email address listed at <a href="https://umbraco.com/security">https://umbraco.com/security</a>. Here you can also find information on how we handle security-related issues.</p><p>For direct communication related to security in Umbraco products, please <a href="https://umbraco.activehosted.com/f/33">sign up for the dedicated security mailing list</a>.</p></div>
-</div>
-</div>
-</div>
-<div>
-<div>
-<ul>
-<li><strong>Published:</strong> July 7, 2026</li>
-<li><strong>Read time:</strong> 2 min. read</li>
-<li><strong>Category:</strong> <a href="https://umbraco.com/blog/category/security">Security</a></li>
-<li>
-<ul>
-<li><a href="https://umbraco.com/?tag=security">security</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>]]></content:encoded><media:content url="https://umbraco.com/media/3oykfdkr/security_advisory_high_severity_blog_some.jpg?v=1dd0dd94e2eb0d0" medium="image" /></item><item><title>uProfile July 2026 - Georgina Bidder</title><link>https://umbraco.com/blog/uprofile-july-2026-georgina-bidder</link><guid isPermaLink="true">https://umbraco.com/blog/uprofile-july-2026-georgina-bidder</guid><pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate><description><![CDATA[<p>Five years ago, Georgina Bidder stepped into the Bristol-based agency <a href="https://www.truedigital.co.uk/">true</a> without a background in development, but with a serious eagerness to learn. This is where her journey with Umbraco started. Fast forward to today - Georgina is now a Backend Developer at true and a vital pillar of the open-source Umbraco community, both as a valued team member of the Core Collaborators, a 3x Codegarden speaker, and most recently, a member of the Package Awards Jury for the Codegarden Package Awards.</p>]]></description><content:encoded><![CDATA[<div>
-<div>
-<img alt="Georgina Bidder" src="https://umbraco.com/media/5buhw5yd/headshot.jpg?width=100&amp;height=100&amp;format=webp&amp;quality=85"/>
-<div>
-Written by
-Georgina Bidder</div></div>
-<div><p>Five years ago, Georgina Bidder stepped into the Bristol-based agency <a href="https://www.truedigital.co.uk/">true</a> without a background in development, but with a serious eagerness to learn. This is where her journey with Umbraco started. Fast forward to today - Georgina is now a Backend Developer at true and a vital pillar of the open-source Umbraco community, both as a valued team member of the Core Collaborators, a 3x Codegarden speaker, and most recently, a member of the Package Awards Jury for the Codegarden Package Awards.</p></div>
-<div>
-<div>
-
-<div>
-<div>
-<div>
-<div><p><strong>Name:</strong> Georgina Bidder</p><p><strong>Pronouns:</strong> She/her</p><p><strong>Company name:</strong>true</p><p><strong>Job title:</strong>Backend Developer</p><p><strong>Country/Region:</strong>Bristol, UK</p><p><strong>How long have you been working with Umbraco?:</strong>Around 5 years</p></div></div></div></div>
-<div>
-<div>
-<div>
-
-<div>
-<img alt="Georgina Bidder profile picture" src="https://umbraco.com/media/5buhw5yd/headshot.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbd7e7c30"/></div></div></div></div></div>
-<div>
-
-<div><h2>How did you first stumble into the Umbraco Community—and what made you stay?</h2><p>When I joined true five years ago, I didn’t start out as a Developer, but I arrived eager to learn. I’d used CMS platforms before as a back‑office user, but nothing too thorough, so jumping straight into CMS‑focused projects at true felt like being thrown into the deep end. As I learned more, I started fixing small bugs across different projects, and I quickly realised I always gravitated toward the Umbraco ones. They felt “easier”, not just in terms of code, but because the CMS itself was genuinely enjoyable to use compared to others I’d worked with. That’s probably what first sparked my interest.</p><p>A few people at true talked about the Umbraco community, and one colleague was part of a community team, which I found intriguing. I joined hackathons, contributed where I could, and enjoyed it,  but it wasn’t until my first Umbraco event that I felt like I truly got it.</p><p>That event was ‘Umbraco Together’ in London in 2023. From the start, it was the perfect introduction to what the Umbraco Community is all about. It really cemented the importance of open‑source collaboration. I met so many community members in person for the first time, and spent the day writing Playwright tests for the Umbraco CMS repo. I remember feeling daunted by the size of the codebase, but also amazed that anyone (including me?!) - could submit a PR and eventually have their name in the project. That experience was a turning point. It’s what ultimately encouraged me to apply for the Core Collaborators community team.</p></div></div>
-<div>
-
-<div><h2>What do you do in the Community? Any special areas you’re passionate about?</h2><p>I’m part of the Core Collaborators community team, which means I spend time reviewing community PRs and helping out wherever I can - whether that’s supporting hackathons, giving feedback, or brainstorming new ways to make contributing easier and more accessible for everyone.</p><p>Outside of that, I’ve spent the last few years speaking at different events. I’ve now had the chance to speak at Codegarden three times, which has been such a fun and rewarding way to contribute to the community. This year, I also had the opportunity to be part of the Package Awards Jury for the Codegarden Package Awards. I absolutely loved it, I got to test so many brilliant packages and see all the creative ways people extend Umbraco. I’ve already added a few of them to my own toolbox.</p></div></div>
-<div>
-
-<figure>
-<div>
-<img alt="3 Core Collaborators working together" src="https://umbraco.com/media/rh1eztkz/the-core-collaborators.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbe1c42d0"/></div>
-<figcaption>The community teams trips are great for getting the Core Collaborators back in a room together!</figcaption></figure></div>
-<div>
-
-<div><h2>Favorite memory, proudest moment, or wildest experience?</h2><p>My favourite and proudest memory has to be the moment I finished giving my first talk at Codegarden in 2024. I still remember opening the email saying my lightning talk had been accepted and immediately thinking, “oh god… I actually have to do this!”</p><p>I spoke about the bittersweet reality of diabetes tech - a very personal topic for me, and I’m so glad I chose it. The talk went really well, and standing on that stage felt great. It meant a lot to represent the diabetes community, to share my lived experience, and to voice some of the frustrations I have with diabetes technology. Walking off stage afterwards, knowing I’d done it, is still one of my proudest moments.</p></div></div>
-<div>
-
-<figure>
-<div>
-<img alt="Georgina Bidder speaking at Codegarden" src="https://umbraco.com/media/yicnq131/shared-image-1.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbdc7ba30"/></div>
-<figcaption>First time on stage at Codegarden</figcaption></figure></div>
-<div>
-
-<div><h2>What are you working on right now—Community-wise or professionally?</h2><p>I think I’m still decompressing from Codegarden this year! I left feeling incredibly motivated and inspired, and I even told my team that out of the three years I’ve attended, this one was my favourite. The talks were fantastic, and I kept finding myself walking away from each session with a head full of new ideas.</p><p>I also spoke at Codegarden this year, alongside my colleague Matt Sutherland. Our talk focused on AI and “product readiness” - how teams can make the most of tools like a PIM, and how Umbraco AI can even utilise your “source of truth” as a context.  We had a great time on stage… and yes, we even had our own alcohol bar up there!</p><p>Outside of decompressing, I’m trying to carve out time to explore the new features announced at Codegarden, especially Umbraco Automate and the new features of Umbraco AI. I still need to upgrade my package to Umbraco 17, so that’s high on my list for the next couple of months.</p><p>Professionally, I’ve recently had the chance to work with Azure AI Search, which has been super interesting. I’m excited to dig deeper into it - and I’m hoping to explore the new Umbraco AI Search soon as well.</p></div></div>
-<div>
-
-<div>
-<div>
-<div>
-
-<figure>
-<div>
-<img alt="Umbraco beers" src="https://umbraco.com/media/hembaglk/55341571477_fc657a3f16_c.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbcec9c70"/></div>
-<figcaption>Those are definitely Umbraco Beers, and not beers we've stuck stickers over 😋</figcaption></figure></div></div></div>
-<div>
-<div>
-<div>
-
-<figure>
-<div>
-<img alt="Georgina Bidder and Matt Sutherland on stage at Codegarden" src="https://umbraco.com/media/r0vpm0gz/55342916880_96fdc75517_c.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0a1fde2a7010"/></div>
-<figcaption>On stage at Codegarden 2026 with Matt Sutherland</figcaption></figure></div></div></div></div>
-<div>
-
-<div><h2>Your top 3 tips for someone new to Umbraco or the Community?</h2><p>Jump in, don’t be shy and expect the unexpected!</p></div></div>
-<div>
-
-<div>
-<div>
-<div>
-
-<div><h2>What’s currently living on your desk?</h2><p>My desk at home is pretty empty, but I do use the back of my monitor as a place to hold all of my lanyards from all of the tech events I have attended! And since Codegarden 2023, I’ve had my lego person that was kindly given to me by <a href="https://owain.codes/">Owain Williams</a>!</p></div></div></div></div>
-<div>
-<div>
-<div>
-
-<figure>
-<div>
-<img alt="Event lanyards and a lego version of Georgina Bidder" src="https://umbraco.com/media/iyioj1ir/68dd3573-f44a-4d46-b70c-298faab6fb59.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbc0cc3c0"/></div>
-<figcaption>My Lanyards from (mostly!) Umbraco events I've been to over the last few years! Oh, and Lego me - thanks Owain 🙂</figcaption></figure></div></div></div></div>
-<div>
-
-<div>
-<div>
-<div>
-
-<div><h2>Got a fun fact, secret, or unexpected talent?</h2><p>Possibly a slightly unexpected talent or two that I’ve picked up over the last year or so, have been my ‘DIY’ skills, I’ve been renovating my house for the last 18 months - and I’ve found I am particularly good at tiling, and when it comes to painting, I seem to be better when I don’t use tape!</p></div></div></div></div>
-<div>
-<div>
-<div>
-
-<figure>
-<div>
-<img alt="Georgina in a pile of rubble during a home renovation" src="https://umbraco.com/media/r4ansv30/551c8888-74a7-4260-b928-68df79ee0e94.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbc5d2db0"/></div>
-<figcaption>My kitchen mid-reno! Luckily, we have a roof and a kitchen again now.</figcaption></figure></div></div></div></div>
-<div>
-
-<div><h2>What book/series/game are you into right now?</h2><p>Over the years I tend to dip in and out of reading, it’s usually an all‑or‑nothing thing for me. Recently I’ve realised I stick with it much more when I read short stories or shorter books. One that I finished not long ago, and that really stayed with me, is “A Short Stay in Hell” by Steven L. Peck.</p><p>The premise is wild: a religious man dies, discovers he backed the “wrong” religion, and ends up in hell, which is essentially an infinite library. The only way out is to find the book of your life, and it has to match exactly, word‑for‑word and letter‑for‑letter. It’s such a simple concept, but it really gets to you.</p><p>When I looked up the author afterwards, I found a Reddit post titled: “Just finished A Short Stay in Hell by Steven L. Peck, and I no longer know if life has any meaning.” And honestly… that’s exactly how I felt when I put the book down. It’s short, unsettling, and absolutely worth reading.</p><h2>What’s on repeat in your headphones?</h2><p>It’s gotta be Lily Allen’s most recent album - West End Girl. I’ve listened to this non-stop since she released it at the end of last year, and that’s ramped up even more as I’ve just seen her live in Cardiff. I’ve loved her since her early days, and its been really nostalgic having her on repeat again!</p><h2>How can we find you?</h2><p>LinkedIn: <a href="http://www.linkedin.com/in/georgina-bidder">www.linkedin.com/in/georgina-bidder</a></p><p>Github: <a href="https://github.com/georgebid">https://github.com/georgebid</a></p></div></div>
-<div>
-
-<div><h2>Is there someone you'd like to nominate for a uProfile?</h2><p>Do you know someone who deserves a spotlight on their Umbraco journey? To nominate a friend, peer, or colleague, reach out to Mathilde Høst in the DevRel Team at <a href="mailto:ema@umbraco.com">community@umbraco.com</a> and explain why!</p></div></div>
-<div>
-
-<div>
-</div></div></div></div>
-<div>
-<div>
-<ul>
-<li><strong>Published:</strong> July 7, 2026</li>
-<li><strong>Read time:</strong> 6 min. read</li>
-<li><strong>Category:</strong> <a href="https://umbraco.com/blog/category/community">Community</a></li>
-<li>
-<ul>
-<li><a href="https://umbraco.com/?tag=community">community</a></li>
-<li><a href="https://umbraco.com/?tag=uProfile">uProfile</a></li></ul></li></ul></div></div>]]></content:encoded><media:content url="https://umbraco.com/media/yicnq131/shared-image-1.jpg?v=1dd0a1fbdc7ba30" medium="image" /></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>Umbraco Blog</title>
+<link>https://umbraco.com/blog/</link>
+<description>Umbraco Blog generated feed</description>
+<lastBuildDate>Sat, 11 Jul 2026 02:47:20 GMT</lastBuildDate>
+<item>
+<title>Launching Umbraco Automate</title>
+<link>https://umbraco.com/blog/launching-umbraco-automate</link>
+<guid isPermaLink="true">https://umbraco.com/blog/launching-umbraco-automate</guid>
+<pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
+<description><![CDATA[<p>Streamline your CMS workflows with Umbraco Automate. Create unlimited drag-and-drop automations, triggers, and AI tool integrations in Umbraco 17+.</p>]]></description>
+<content:encoded><![CDATA[<p>From Running Projects to Growing Portfolios</p>
+<p>“I’m so excited for Automate! I can just imagine all of the different things I can do with it.” That’s just some of the fantastic feedback we’ve got after announcing Umbraco Automate at Codegarden. Today, it’s officially here. Here for you to start creating efficient and helpful automations within the CMS - with no limitations to the number of runs, automations, users, and with easy extendability to your entire stack and favourite AI tools. It’s time to start Automate-ing:</p>
+<p>Let&#x27;s hand the mic over to our CTO, Filip Bech-Larsen, for this one. During the opening keynote at Codegarden, he gave a sharp 8 min presentation, including demos, of this new product that really shows what Automate is and what’s possible for you to build with it:</p>
+<p>TLDW: In short, Umbraco Automate is your new drag-and-drop Automation tool in Umbraco. It lets you create automations using triggers and actions to help you optimize content production, customer journeys, and setup approval steps. Automate comes with a set of native triggers and actions and is fully extendable, allowing you to build custom triggers and actions that benefit your exact workflows. Automate is open source and available today for Umbraco 17+.</p>
+<p>Think about your current digital setup: when a new customer signs in, an onboarding email needs to go out. Simultaneously, your sales team needs a Slack notification, and a unique discount code must be generated. Historically, setting up these multi-step sequences meant jumping between external SaaS platforms, paying third-party middleware, keeping an eye on limited runs, or waiting for a developer deployment.</p>
+<p>Umbraco Automate changes that entire setup from day one.</p>
+<p>With an intuitive, built-in drag-and-drop canvas and native triggers and actions already available, developers and growth teams can build simple or highly complex &quot; if this, then that&quot; paths directly inside the CMS UI. For digital teams, this changes how campaign logic is executed, giving you full operational autonomy over customer journeys, reducing your time-to-market for new optimization loops from weeks to minutes.</p>
+<p>You never have to worry about hitting an operational ceiling. Umbraco Automate comes with zero limits on your runs, triggers, users, or actions. This changes how you manage your automated logic, giving you the freedom to design a setup that fits your exact business processes without worrying about volume caps or hidden subscription penalties.</p>
+<p>Our 3 favourite Umbraco words ;) And possibly yours as well. Like the majority of our offerings, you get full flexibility to automate processes in a way that suits your business.</p>
+<p>The open-source nature of Automate lets you connect your entire tech stack and allows you to build your own triggers and actions both within the CMS and between software. Since the beta announcement at Codegarden, we’ve already seen community members taking advantage of this. Take a look at Owain Willams, for example, he’s already built an automation that lets you post directly from Umbraco to LinkedIn without ever leaving the backoffice. Or Paul Wright, who’s built a package that lets Umbraco Automate send instant push notifications straight to your phone.</p>
+<p>On the Umbraco Marketplace, you can get an overview of all the current packages you can connect to Umbraco Automate. And if you’re missing something, why not do like Paul and Owain and create a package that solves the problem - not just for you, but for everyone in the Umbraco ecosystem 🙌</p>
+<p>We’re sure the Marketplace will get more helpful packages that support Automate in the coming months. But rest assured that some of the biggest ones are already out, including:</p>
+<p>Umbraco Forms - Lets you, for example, post to a channel when a form is submitted, or export entries on a schedule.</p>
+<p>Umbraco Deploy - Lets you do content exports and imports, task completions and failures, disk operations, and more.</p>
+<p>Umbraco Engage - E.g., fire a goal when a form is submitted, or react when an A/B test goes live.</p>
+<p>Umbraco Commerce - Set up automation for e.g. tagging an order when a discount code is redeemed, or notifying a channel when stock runs low.</p>
+<p>Umbraco Workflow - E.g., notify a channel when a workflow is rejected, or escalate when reminder emails pile up.</p>
+<p>Umbraco UI Builder - E.g., notify a channel when a record is created, sync data when an entry is updated, or clean up related records when an item is deleted.</p>
+<p>Automate is a perfect match with AI. You can set up automations within the CMS that call your favorite AI agent to e.g., write an ALT text for an image, transcribe a media file, or create a summary of a blog post - all without having to leave the backoffice.</p>
+<p>An automation is exposed as a tool that Umbraco.AI .Agent can call. So when an editor makes a request in Umbraco Copilot, the agent invokes that automation tool to kick off the corresponding steps. For example, “add these pictures to the Black Friday campaign” triggers an automation that generates ALT text and SEO caption, files the images in the right folder, and notifies the folder owner.</p>
+<p>For content editors and marketing teams, this speeds up the “boring-but-necessary” parts of content production, and with the right approval flow, you can always make sure that your team reviews every output from AI before it goes live to protect your brand.</p>
+<p>If you want to explore these functionalities, check out the Umbraco AI Automate package.</p>
+<p>Take a quick tour and learn more about this product on the Umbraco Automate product page.</p>
+<p>Or if you’re ready: Download Umbraco Automate now</p>
+<p>It’s June 10, 2026, and I, Mats, Emma, and other brilliant Umbraco HQ colleagues have just stepped down from Codegarden stage after hosting the yearly  Keynote. A keynote packed with a lot of great news across many of our Umbraco Products - and even the announcement of a new one! Yes, we sure like to make a Keynote exciting 😉 To make sure you’re all up to date, we’ll fill you in here, giving you more details, links, etc., so you can dive a bit deeper into all the stuff that’s coming and what’s already here:</p>]]></content:encoded>
+<media:content url="https://umbraco.com/media/b0fjcuwd/thumbnail.png?v=1dd0931d97c4370" medium="image" />
+</item>
+<item>
+<title>Security Advisory, July 7, 2026: Security Patches are now available</title>
+<link>https://umbraco.com/blog/security-advisory-july-7-2026-security-patches-are-now-available</link>
+<guid isPermaLink="true">https://umbraco.com/blog/security-advisory-july-7-2026-security-patches-are-now-available</guid>
+<pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+<description><![CDATA[<p>Summary: A vulnerability classified as high has been found and fixed in Umbraco 13, 17, and 18.</p>]]></description>
+<content:encoded><![CDATA[<p>From Running Projects to Growing Portfolios</p>
+<p>Summary: A vulnerability classified as high has been found and fixed in Umbraco 13, 17, and 18. For all versions, only the delivery API functionality is affected. Today, we have released patches for the affected versions and recommend upgrading. Projects hosted on Umbraco Cloud will receive the fix automatically.</p>
+<p>Unsupported versions can be subject to the vulnerability, but will not receive a patch. We recommend upgrading to a supported major version if you are using the affected features.</p>
+<p>For 13.15.1, we have also bumped the dependency of MessagePack to a newer patch version, to move off a version that is marked as vulnerable.</p>
+<p>A patch is available for the latest minor versions of Umbraco 13, 17 and 18. As we are looking at a patch upgrade, and the fix is straightforward, we expect the update to only require minimal effort per project.</p>
+<p>Instructions on patch availability and how to upgrade can be found in the release notes for Umbraco 13.15.1 , Umbraco 17.5.3 and Umbraco 18.0.2 .</p>
+<p>All Umbraco Cloud sites running the latest minor version of a supported version are patched via the automated patch feature. The security patches will be rolled out to Umbraco Cloud today to ensure all sites have been fixed.</p>
+<p>If a project is not running the latest minor version (13.15.x, 17.5.x, 18.0.x), the patch can be applied using the minor upgrade feature.</p>
+<p>The vulnerability impacts the delivery API and allows the retrieval of protected content by unauthorized users when that content is picked on an unprotected document and included in the output via output expansion .  Via a similar mechanism, it also allows retrieval of referenced content items that are restricted by type via configuration .</p>
+<p>You can read more in the published security advisory .</p>
+<p>We&#x27;d like to thank Ardya Suryadinata for reporting the issues and for responsible disclosure of details regarding the vulnerability.</p>
+<p>If you have any questions or comments about this advisory, make sure to get in touch with us directly on the Security Advisories. Alternatively, you can reach out to the dedicated security email address listed at https://umbraco.com/security . Here you can also find information on how we handle security-related issues.</p>]]></content:encoded>
+<media:content url="https://umbraco.com/media/3oykfdkr/security_advisory_high_severity_blog_some.jpg?v=1dd0dd94e2eb0d0" medium="image" />
+</item>
+<item>
+<title>uProfile July 2026 - Georgina Bidder</title>
+<link>https://umbraco.com/blog/uprofile-july-2026-georgina-bidder</link>
+<guid isPermaLink="true">https://umbraco.com/blog/uprofile-july-2026-georgina-bidder</guid>
+<pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+<description><![CDATA[<p>Meet Georgina: From the deep end to the Codegarden stage: Meet Core Collaborator Georgina Bidder!</p>]]></description>
+<content:encoded><![CDATA[<p>From Running Projects to Growing Portfolios</p>
+<p>Five years ago, Georgina Bidder stepped into the Bristol-based agency true without a background in development, but with a serious eagerness to learn. This is where her journey with Umbraco started. Fast forward to today - Georgina is now a Backend Developer at true and a vital pillar of the open-source Umbraco community, both as a valued team member of the Core Collaborators, a 3x Codegarden speaker, and most recently, a member of the Package Awards Jury for the Codegarden Package Awards.</p>
+<p>How long have you been working with Umbraco?: Around 5 years</p>
+<p>A few people at true talked about the Umbraco community, and one colleague was part of a community team, which I found intriguing. I joined hackathons, contributed where I could, and enjoyed it,  but it wasn’t until my first Umbraco event that I felt like I truly got it.</p>
+<p>That event was ‘Umbraco Together’ in London in 2023. From the start, it was the perfect introduction to what the Umbraco Community is all about. It really cemented the importance of open‑source collaboration. I met so many community members in person for the first time, and spent the day writing Playwright tests for the Umbraco CMS repo. I remember feeling daunted by the size of the codebase, but also amazed that anyone (including me?!) - could submit a PR and eventually have their name in the project. That experience was a turning point. It’s what ultimately encouraged me to apply for the Core Collaborators community team.</p>
+<p>I’m part of the Core Collaborators community team, which means I spend time reviewing community PRs and helping out wherever I can - whether that’s supporting hackathons, giving feedback, or brainstorming new ways to make contributing easier and more accessible for everyone.</p>
+<p>Outside of that, I’ve spent the last few years speaking at different events. I’ve now had the chance to speak at Codegarden three times, which has been such a fun and rewarding way to contribute to the community. This year, I also had the opportunity to be part of the Package Awards Jury for the Codegarden Package Awards. I absolutely loved it, I got to test so many brilliant packages and see all the creative ways people extend Umbraco. I’ve already added a few of them to my own toolbox.</p>
+<p>My favourite and proudest memory has to be the moment I finished giving my first talk at Codegarden in 2024. I still remember opening the email saying my lightning talk had been accepted and immediately thinking, “oh god… I actually have to do this!”</p>
+<p>I spoke about the bittersweet reality of diabetes tech - a very personal topic for me, and I’m so glad I chose it. The talk went really well, and standing on that stage felt great. It meant a lot to represent the diabetes community, to share my lived experience, and to voice some of the frustrations I have with diabetes technology. Walking off stage afterwards, knowing I’d done it, is still one of my proudest moments.</p>
+<p>I think I’m still decompressing from Codegarden this year! I left feeling incredibly motivated and inspired, and I even told my team that out of the three years I’ve attended, this one was my favourite. The talks were fantastic, and I kept finding myself walking away from each session with a head full of new ideas.</p>
+<p>I also spoke at Codegarden this year, alongside my colleague Matt Sutherland. Our talk focused on AI and “product readiness” - how teams can make the most of tools like a PIM, and how Umbraco AI can even utilise your “source of truth” as a context.  We had a great time on stage… and yes, we even had our own alcohol bar up there!</p>
+<p>Outside of decompressing, I’m trying to carve out time to explore the new features announced at Codegarden, especially Umbraco Automate and the new features of Umbraco AI. I still need to upgrade my package to Umbraco 17, so that’s high on my list for the next couple of months.</p>
+<p>Professionally, I’ve recently had the chance to work with Azure AI Search, which has been super interesting. I’m excited to dig deeper into it - and I’m hoping to explore the new Umbraco AI Search soon as well.</p>
+<p>Jump in, don’t be shy and expect the unexpected!</p>
+<p>My desk at home is pretty empty, but I do use the back of my monitor as a place to hold all of my lanyards from all of the tech events I have attended! And since Codegarden 2023, I’ve had my lego person that was kindly given to me by Owain Williams !</p>
+<p>Possibly a slightly unexpected talent or two that I’ve picked up over the last year or so, have been my ‘DIY’ skills, I’ve been renovating my house for the last 18 months - and I’ve found I am particularly good at tiling, and when it comes to painting, I seem to be better when I don’t use tape!</p>
+<p>Over the years I tend to dip in and out of reading, it’s usually an all‑or‑nothing thing for me. Recently I’ve realised I stick with it much more when I read short stories or shorter books. One that I finished not long ago, and that really stayed with me, is “A Short Stay in Hell” by Steven L. Peck.</p>
+<p>The premise is wild: a religious man dies, discovers he backed the “wrong” religion, and ends up in hell, which is essentially an infinite library. The only way out is to find the book of your life, and it has to match exactly, word‑for‑word and letter‑for‑letter. It’s such a simple concept, but it really gets to you.</p>
+<p>When I looked up the author afterwards, I found a Reddit post titled: “Just finished A Short Stay in Hell by Steven L. Peck, and I no longer know if life has any meaning.” And honestly… that’s exactly how I felt when I put the book down. It’s short, unsettling, and absolutely worth reading.</p>
+<p>It’s gotta be Lily Allen’s most recent album - West End Girl. I’ve listened to this non-stop since she released it at the end of last year, and that’s ramped up even more as I’ve just seen her live in Cardiff. I’ve loved her since her early days, and its been really nostalgic having her on repeat again!</p>
+<p>LinkedIn: www.linkedin.com/in/georgina-bidder</p>
+<p>Github: https://github.com/georgebid</p>
+<p>Do you know someone who deserves a spotlight on their Umbraco journey? To nominate a friend, peer, or colleague, reach out to Mathilde Høst in the DevRel Team at community@umbraco.com and explain why!</p>]]></content:encoded>
+<media:content url="https://umbraco.com/media/yicnq131/shared-image-1.jpg?v=1dd0a1fbdc7ba30" medium="image" />
+</item>
+</channel>
+</rss>
