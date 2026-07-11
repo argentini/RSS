@@ -107,8 +107,7 @@ If no suitable script exists, create a temporary script only inside {Temporary w
 
 Use local command-line tools for repeatable work:
 
-- Always fetch with built-in browser first.
-  • `curl` for fetching when built-in browser is not available.
+- Always fetch page markup with built-in browser. I don't want you to record the screen or call an external web browser. I want you to use the built-in browser to get web page markup.
 - `htmlq` for HTML extraction and link discovery.
 - `jq` for JSON, JSON-LD, and API responses.
 - `xmllint` for XML validation.
@@ -138,8 +137,7 @@ Abort and reject a page when rendering does not complete within the configured t
 
 For every listing page and article page:
 
-1. Fetch with built-in browser first.
-    - Only fall back to `curl` when the built-in browser cannot be used.
+1. Fetch page markup with built-in browser. I don't want you to record the screen or call an external web browser. I want you to use the built-in browser to get web page markup.
     - Open {Source URL} visibly.
     - Wait for article cards.
     - Save rendered DOM.
