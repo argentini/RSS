@@ -4,14 +4,15 @@
     <title>Umbraco Blog</title>
     <link>https://umbraco.com/</link>
     <description>Umbraco Blog latest posts</description>
-    <lastBuildDate>Sat, 11 Jul 2026 04:00:47 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 04:23:16 GMT</lastBuildDate>
     <item>
       <title>Security Advisory, July 7, 2026: Security Patches are now available</title>
       <link>https://umbraco.com/blog/security-advisory-july-7-2026-security-patches-are-now-available/</link>
       <guid isPermaLink="true">https://umbraco.com/blog/security-advisory-july-7-2026-security-patches-are-now-available/</guid>
       <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>Summary: A vulnerability classified as high has been found and fixed in Umbraco 13, 17, and 18. For all versions, only the delivery API functionality is affected. Today, we have released patches for the affected versions and recommend upgrading. Projects hosted on Umbraco Cloud will receive the fix automatically. Umbraco 13.0.0 - 13.15.0 Umbraco 17.0.0 - 17.5.2 Umbraco 18.0.0 - 18.0.1 Umbraco 13.0.0 - 13.15.0 Umbraco 17.0.0 - 17.5.2 Umbraco 18.0.0 - 18.0.1 Unsupported versions can be subject to </p>]]></description>
-      <content:encoded><![CDATA[<p><span>Summary: A vulnerability classified as high has been found and fixed in Umbraco 13, 17, and 18. For all versions, only the delivery API functionality is affected. Today, we have released patches for the affected versions and recommend upgrading. Projects hosted on Umbraco Cloud will receive the fix automatically.</span></p>
+      <content:encoded><![CDATA[<div><img src="https://umbraco.com/media/3oykfdkr/security_advisory_high_severity_blog_some.jpg?v=1dd0dd94e2eb0d0" /></div>
+<p><span>Summary: A vulnerability classified as high has been found and fixed in Umbraco 13, 17, and 18. For all versions, only the delivery API functionality is affected. Today, we have released patches for the affected versions and recommend upgrading. Projects hosted on Umbraco Cloud will receive the fix automatically.</span></p>
 <ul><li><p><span>Umbraco 13.0.0 - 13.15.0</span></p></li><li><p><span>Umbraco 17.0.0 - 17.5.2</span></p></li><li><p><span>Umbraco 18.0.0 - 18.0.1</span><br></p></li></ul>
 <p><span>Umbraco 13.0.0 - 13.15.0</span></p>
 <p><span>Umbraco 17.0.0 - 17.5.2</span></p>
@@ -20,22 +21,22 @@
 <p><span>For 13.15.1, we have also bumped the dependency of </span><strong>MessagePack</strong><span> to a newer patch version, to move off a version that is marked as vulnerable.</span></p>
 <h2>How to fix the vulnerability</h2>
 <p><span>A patch is available for the latest minor versions of Umbraco 13, 17 and 18. As we are looking at a patch upgrade, and the fix is straightforward, we expect the update to only require minimal effort per project.</span></p>
-<p><span>Instructions on patch availability and how to upgrade can be found in the release notes for </span><a data-router-slot="disabled" href="https://releases.umbraco.com/release/umbraco/Umbraco-CMS/13.15.1" type="external"><u>Umbraco 13.15.1</u></a><span>, </span><a data-router-slot="disabled" href="https://releases.umbraco.com/release/umbraco/Umbraco-CMS/17.5.3" type="external"><u>Umbraco 17.5.3</u></a><span> and </span><a data-router-slot="disabled" href="https://releases.umbraco.com/release/umbraco/Umbraco-CMS/18.0.2" type="external"><u>Umbraco 18.0.2</u></a><span>.</span></p>
+<p><span>Instructions on patch availability and how to upgrade can be found in the release notes for </span><a href="https://releases.umbraco.com/release/umbraco/Umbraco-CMS/13.15.1" type="external"><u>Umbraco 13.15.1</u></a><span>, </span><a href="https://releases.umbraco.com/release/umbraco/Umbraco-CMS/17.5.3" type="external"><u>Umbraco 17.5.3</u></a><span> and </span><a href="https://releases.umbraco.com/release/umbraco/Umbraco-CMS/18.0.2" type="external"><u>Umbraco 18.0.2</u></a><span>.</span></p>
 <h2>Automatic fix on Umbraco Cloud</h2>
 <p><span>All Umbraco Cloud sites running the latest minor version of a supported version are patched via the automated patch feature. The security patches will be rolled out to Umbraco Cloud today to ensure all sites have been fixed.</span></p>
 <p><span>If a project is not running the latest minor version (13.15.x, 17.5.x, 18.0.x), the patch can be applied using the minor upgrade feature.</span></p>
 <figure>
             <div>
-                    <img srcset="/media/gucpbbak/automatic_minor_upgrade.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1db00454d1bc2d0 662w, /media/gucpbbak/automatic_minor_upgrade.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1db00454d1bc2d0 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/gucpbbak/automatic_minor_upgrade.png?rmode=pad&amp;amp;width=1360&amp;amp;format=webp&amp;amp;quality=85&amp;amp;v=1db00454d1bc2d0" alt="ℹ️ Note that Umbraco Cloud also supports automated minor upgrades. This can be enabled on a per-project level and ensures you're always ready to receive the latest patch." loading="lazy">
+                    <img srcset="/media/gucpbbak/automatic_minor_upgrade.png?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1db00454d1bc2d0 662w, /media/gucpbbak/automatic_minor_upgrade.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1db00454d1bc2d0 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/gucpbbak/automatic_minor_upgrade.png?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1db00454d1bc2d0" alt="ℹ️ Note that Umbraco Cloud also supports automated minor upgrades. This can be enabled on a per-project level and ensures you're always ready to receive the latest patch." loading="lazy">
 
             </div>
             <figcaption>ℹ️ Note that Umbraco Cloud also supports automated minor upgrades. This can be enabled on a per-project level and ensures you're always ready to receive the latest patch.</figcaption>
         </figure>
-<h2 data-pm-slice="1 1 []">What we know about the vulnerability</h2>
-<p><span>The vulnerability impacts the delivery API and allows the retrieval of </span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/headless-and-apis/content-delivery-api/protected-content-in-the-delivery-api" type="external"><u>protected content</u></a><span> by unauthorized users when that content is picked on an unprotected document and included in the output via </span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/headless-and-apis/content-delivery-api/property-expansion-and-limiting" type="external"><u>output expansion</u></a><span>.&nbsp; Via a similar mechanism, it also allows retrieval of referenced content items that are restricted by type via </span><a data-router-slot="disabled" href="https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/headless-and-apis/content-delivery-api#additional-configuration" type="external"><u>configuration</u></a><span>.</span></p>
-<p><span>You can read more in the </span><a data-router-slot="disabled" href="https://github.com/umbraco/Umbraco-CMS/security/advisories/GHSA-wr57-hqmp-fgvh" type="external"><u>published security advisory</u></a><span>.</span></p>
-<p><span>We'd like to thank </span><a data-router-slot="disabled" href="https://suryadina.com/" type="external"><u>Ardya Suryadinata</u></a><span> for reporting the issues and for responsible disclosure of details regarding the vulnerability.</span></p>
-<p><span>If you have any questions or comments about this advisory, make sure to get in touch with us directly on the Security Advisories. Alternatively, you can reach out to the dedicated security email address listed at </span><a data-router-slot="disabled" href="https://umbraco.com/security" type="external"><u>https://umbraco.com/security</u></a><span>. Here you can also find information on how we handle security-related issues.</span></p>
+<h2>What we know about the vulnerability</h2>
+<p><span>The vulnerability impacts the delivery API and allows the retrieval of </span><a href="https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/headless-and-apis/content-delivery-api/protected-content-in-the-delivery-api" type="external"><u>protected content</u></a><span> by unauthorized users when that content is picked on an unprotected document and included in the output via </span><a href="https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/headless-and-apis/content-delivery-api/property-expansion-and-limiting" type="external"><u>output expansion</u></a><span>.  Via a similar mechanism, it also allows retrieval of referenced content items that are restricted by type via </span><a href="https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/headless-and-apis/content-delivery-api#additional-configuration" type="external"><u>configuration</u></a><span>.</span></p>
+<p><span>You can read more in the </span><a href="https://github.com/umbraco/Umbraco-CMS/security/advisories/GHSA-wr57-hqmp-fgvh" type="external"><u>published security advisory</u></a><span>.</span></p>
+<p><span>We'd like to thank </span><a href="https://suryadina.com/" type="external"><u>Ardya Suryadinata</u></a><span> for reporting the issues and for responsible disclosure of details regarding the vulnerability.</span></p>
+<p><span>If you have any questions or comments about this advisory, make sure to get in touch with us directly on the Security Advisories. Alternatively, you can reach out to the dedicated security email address listed at </span><a href="https://umbraco.com/security" type="external"><u>https://umbraco.com/security</u></a><span>. Here you can also find information on how we handle security-related issues.</span></p>
 <ul>
                 <li><strong>Published:</strong> July 7, 2026</li>
 
@@ -61,11 +62,12 @@
       <guid isPermaLink="true">https://umbraco.com/blog/uprofile-july-2026-georgina-bidder/</guid>
       <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>Meet Georgina: Core Collaborator, 3x Codegarden speaker and skilled DIY Home Renovator! Five years ago, Georgina Bidder stepped into the Bristol-based agency true without a background in development, but with a serious eagerness to learn. This is where her journey with Umbraco started. Fast forward to today - Georgina is now a Backend Developer at true and a vital pillar of the open-source Umbraco community, both as a valued team member of the Core Collaborators, a 3x Codegarden speaker, and mos</p>]]></description>
-      <content:encoded><![CDATA[<h2>Meet Georgina: Core Collaborator, 3x Codegarden speaker and skilled DIY Home Renovator!</h2>
-<p>Five years ago, Georgina Bidder stepped into the Bristol-based agency <a data-router-slot="disabled" href="https://www.truedigital.co.uk/" target="_blank" title="www.truedigital.co.uk" type="external">true</a> without a background in development, but with a serious eagerness to learn. This is where her journey with Umbraco started. Fast forward to today - Georgina is now a Backend Developer at true and a vital pillar of the open-source Umbraco community, both as a valued team member of the Core Collaborators, a 3x Codegarden speaker, and most recently, a member of the Package Awards Jury for the Codegarden Package Awards.</p>
-<p><strong>Name:</strong>&nbsp;Georgina Bidder</p>
+      <content:encoded><![CDATA[<div><img src="https://umbraco.com/media/yicnq131/shared-image-1.jpg?v=1dd0a1fbdc7ba30" /></div>
+<h2>Meet Georgina: Core Collaborator, 3x Codegarden speaker and skilled DIY Home Renovator!</h2>
+<p>Five years ago, Georgina Bidder stepped into the Bristol-based agency <a href="https://www.truedigital.co.uk/" target="_blank" title="www.truedigital.co.uk" type="external">true</a> without a background in development, but with a serious eagerness to learn. This is where her journey with Umbraco started. Fast forward to today - Georgina is now a Backend Developer at true and a vital pillar of the open-source Umbraco community, both as a valued team member of the Core Collaborators, a 3x Codegarden speaker, and most recently, a member of the Package Awards Jury for the Codegarden Package Awards.</p>
+<p><strong>Name:</strong> Georgina Bidder</p>
 <p><strong>Job title: </strong><span>Backend Developer</span></p>
-<p><strong>Country/Region:&nbsp;</strong><span>Bristol, UK</span></p>
+<p><strong>Country/Region: </strong><span>Bristol, UK</span></p>
 <p><strong>How long have you been working with Umbraco?: </strong>Around 5 years</p>
 <h2>How did you first stumble into the Umbraco Community—and what made you stay?</h2>
 <p>When I joined true five years ago, I didn’t start out as a Developer, but I arrived eager to learn. I’d used CMS platforms before as a back‑office user, but nothing too thorough, so jumping straight into CMS‑focused projects at true felt like being thrown into the deep end. As I learned more, I started fixing small bugs across different projects, and I quickly realised I always gravitated toward the Umbraco ones. They felt “easier”, not just in terms of code, but because the CMS itself was genuinely enjoyable to use compared to others I’d worked with. That’s probably what first sparked my interest.</p>
@@ -76,7 +78,7 @@
 <p><span>Outside of that, I’ve spent the last few years speaking at different events. I’ve now had the chance to speak at Codegarden three times, which has been such a fun and rewarding way to contribute to the community. This year, I also had the opportunity to be part of the Package Awards Jury for the Codegarden Package Awards. I absolutely loved it, I got to test so many brilliant packages and see all the creative ways people extend Umbraco. I’ve already added a few of them to my own toolbox.</span></p>
 <figure>
             <div>
-                    <img srcset="/media/rh1eztkz/the-core-collaborators.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbe1c42d0 662w, /media/rh1eztkz/the-core-collaborators.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbe1c42d0 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/rh1eztkz/the-core-collaborators.jpg?rmode=pad&amp;amp;width=1360&amp;amp;format=webp&amp;amp;quality=85&amp;amp;v=1dd0a1fbe1c42d0" alt="3 Core Collaborators working together" loading="lazy">
+                    <img srcset="/media/rh1eztkz/the-core-collaborators.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbe1c42d0 662w, /media/rh1eztkz/the-core-collaborators.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbe1c42d0 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/rh1eztkz/the-core-collaborators.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbe1c42d0" alt="3 Core Collaborators working together" loading="lazy">
 
             </div>
             <figcaption>The community teams trips are great for getting the Core Collaborators back in a room together!</figcaption>
@@ -86,9 +88,7 @@
 <p><span>I spoke about the bittersweet reality of diabetes tech - a very personal topic for me, and I’m so glad I chose it. The talk went really well, and standing on that stage felt great. It meant a lot to represent the diabetes community, to share my lived experience, and to voice some of the frustrations I have with diabetes technology. Walking off stage afterwards, knowing I’d done it, is still one of my proudest moments.</span></p>
 <figure>
             <div>
-                    <img srcset="/media/yicnq131/shared-image-1.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbdc7ba30 662w, /media/yicnq131/shared-image-1.jpg?rmode=pad&amp;width=1360&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbdc7ba30 1360w" sizes="(max-width: 698px) 662px, 1360px" src="https://umbraco.com/media/yicnq131/shared-image-1.jpg?rmode=pad&amp;amp;width=1360&amp;amp;format=webp&amp;amp;quality=85&amp;amp;v=1dd0a1fbdc7ba30" alt="Georgina Bidder speaking at Codegarden" loading="lazy">
 
-            </div>
             <figcaption>First time on stage at Codegarden</figcaption>
         </figure>
 <h2>What are you working on right now—Community-wise or professionally? </h2>
@@ -98,14 +98,14 @@
 <p><span>Professionally, I’ve recently had the chance to work with Azure AI Search, which has been super interesting. I’m excited to dig deeper into it - and I’m hoping to explore the new Umbraco AI Search soon as well.</span></p>
 <figure>
             <div>
-                    <img src="https://umbraco.com/media/hembaglk/55341571477_fc657a3f16_c.jpg?rmode=pad&amp;amp;width=680&amp;amp;format=webp&amp;amp;quality=85&amp;amp;v=1dd0a1fbcec9c70" alt="Umbraco beers" loading="lazy">
+                    <img src="https://umbraco.com/media/hembaglk/55341571477_fc657a3f16_c.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbcec9c70" alt="Umbraco beers" loading="lazy">
 
             </div>
             <figcaption>Those are definitely Umbraco Beers, and not beers we've stuck stickers over 😋</figcaption>
         </figure>
 <figure>
             <div>
-                    <img src="https://umbraco.com/media/r0vpm0gz/55342916880_96fdc75517_c.jpg?rmode=pad&amp;amp;width=680&amp;amp;format=webp&amp;amp;quality=85&amp;amp;v=1dd0a1fde2a7010" alt="Georgina Bidder and Matt Sutherland on stage at Codegarden" loading="lazy">
+                    <img src="https://umbraco.com/media/r0vpm0gz/55342916880_96fdc75517_c.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0a1fde2a7010" alt="Georgina Bidder and Matt Sutherland on stage at Codegarden" loading="lazy">
 
             </div>
             <figcaption>On stage at Codegarden 2026 with Matt Sutherland</figcaption>
@@ -113,10 +113,10 @@
 <h2>Your top 3 tips for someone new to Umbraco or the Community?</h2>
 <p>Jump in, don’t be shy and expect the unexpected!</p>
 <h2>What’s currently living on your desk?</h2>
-<p><span>My desk at home is pretty empty, but I do use the back of my monitor as a place to hold all of my lanyards from all of the tech events I have attended! And since Codegarden 2023, I’ve had my lego person that was kindly given to me by </span><a data-router-slot="disabled" href="https://owain.codes/" target="_blank" title="owain.codes" type="external"><span>Owain Williams</span></a><span>!</span></p>
+<p><span>My desk at home is pretty empty, but I do use the back of my monitor as a place to hold all of my lanyards from all of the tech events I have attended! And since Codegarden 2023, I’ve had my lego person that was kindly given to me by </span><a href="https://owain.codes/" target="_blank" title="owain.codes" type="external"><span>Owain Williams</span></a><span>!</span></p>
 <figure>
             <div>
-                    <img src="https://umbraco.com/media/iyioj1ir/68dd3573-f44a-4d46-b70c-298faab6fb59.jpg?rmode=pad&amp;amp;width=680&amp;amp;format=webp&amp;amp;quality=85&amp;amp;v=1dd0a1fbc0cc3c0" alt="Event lanyards and a lego version of Georgina Bidder" loading="lazy">
+                    <img src="https://umbraco.com/media/iyioj1ir/68dd3573-f44a-4d46-b70c-298faab6fb59.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbc0cc3c0" alt="Event lanyards and a lego version of Georgina Bidder" loading="lazy">
 
             </div>
             <figcaption>My Lanyards from (mostly!) Umbraco events I've been to over the last few years! Oh, and Lego me - thanks Owain 🙂</figcaption>
@@ -125,7 +125,7 @@
 <p>Possibly a slightly unexpected talent or two that I’ve picked up over the last year or so, have been my ‘DIY’ skills, I’ve been renovating my house for the last 18 months - and I’ve found I am particularly good at tiling, and when it comes to painting, I seem to be better when I don’t use tape!</p>
 <figure>
             <div>
-                    <img src="https://umbraco.com/media/r4ansv30/551c8888-74a7-4260-b928-68df79ee0e94.jpg?rmode=pad&amp;amp;width=680&amp;amp;format=webp&amp;amp;quality=85&amp;amp;v=1dd0a1fbc5d2db0" alt="Georgina in a pile of rubble during a home renovation" loading="lazy">
+                    <img src="https://umbraco.com/media/r4ansv30/551c8888-74a7-4260-b928-68df79ee0e94.jpg?rmode=pad&amp;width=680&amp;format=webp&amp;quality=85&amp;v=1dd0a1fbc5d2db0" alt="Georgina in a pile of rubble during a home renovation" loading="lazy">
 
             </div>
             <figcaption>My kitchen mid-reno! Luckily, we have a roof and a kitchen again now.</figcaption>
@@ -137,10 +137,10 @@
 <h2>What’s on repeat in your headphones?</h2>
 <p>It’s gotta be Lily Allen’s most recent album - West End Girl. I’ve listened to this non-stop since she released it at the end of last year, and that’s ramped up even more as I’ve just seen her live in Cardiff. I’ve loved her since her early days, and its been really nostalgic having her on repeat again!</p>
 <h2>How can we find you?</h2>
-<p>LinkedIn:&nbsp;<a data-router-slot="disabled" href="http://www.linkedin.com/in/georgina-bidder" target="_blank" title="www.linkedin.com/in/georgina-bidder" type="external"><span>www.linkedin.com/in/georgina-bidder</span></a></p>
-<p><span>Github:&nbsp;</span><a data-router-slot="disabled" href="https://github.com/georgebid" type="external"><span>https://github.com/georgebid</span></a></p>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/georgina-bidder" target="_blank" title="www.linkedin.com/in/georgina-bidder" type="external"><span>www.linkedin.com/in/georgina-bidder</span></a></p>
+<p><span>Github: </span><a href="https://github.com/georgebid" type="external"><span>https://github.com/georgebid</span></a></p>
 <h2>Is there someone you'd like to nominate for a uProfile?</h2>
-<p>Do you know someone who deserves a spotlight on their Umbraco journey? To nominate a friend, peer, or colleague, reach out to Mathilde Høst in the DevRel Team at <a data-router-slot="disabled" href="mailto:ema@umbraco.com" type="external">community@umbraco.com</a> and explain why!</p>
+<p>Do you know someone who deserves a spotlight on their Umbraco journey? To nominate a friend, peer, or colleague, reach out to Mathilde Høst in the DevRel Team at <a href="mailto:ema@umbraco.com" type="external">community@umbraco.com</a> and explain why!</p>
 <ul>
                 <li><strong>Published:</strong> July 7, 2026</li>
 
