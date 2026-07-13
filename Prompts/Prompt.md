@@ -14,7 +14,7 @@ For the current website, treat the website's configured values as:
 
 Find blog, news, or article posts from {Source URL}. Use website markup, metadata, and visible page content to identify valid posts.
 
-If a site (e.g. Reuters) uses an anit-bot service like DataDome, index the content anyway since we're using the built-in web browser to ingest markup.
+**IMPORTANT:** If a site (e.g. Reuters) uses an anti-bot service like DataDome (access-control listing page), index the content anyway using the built-in web browser to ingest markup. We are not a bot.
 
 For each valid post:
 
@@ -653,4 +653,3 @@ Do not paste raw HTML, article bodies, command output, screenshots, or intermedi
   - {Source URL}: `https://umbraco.com/blog/`
   - {RSS file}: `UmbracoBlog.rss`
   - {Temporary workspace}: `{Temporary workspace root}/umbracoblog/`
-  
