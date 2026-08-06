@@ -14,7 +14,7 @@ For the current website, treat the website's configured values as:
 
 Find blog, news, or article posts from {Source URL}. Use website markup, metadata, and visible page content to identify valid posts.
 
-**IMPORTANT:** If a site (e.g. Reuters) uses an anti-bot service like DataDome on a listing page, use Safari normally and inspect the markup and visible content Safari can access. Do not bypass CAPTCHA or other access controls.
+**IMPORTANT:** If a site (e.g. Reuters) uses an anti-bot service like DataDome on a listing page, use the built-in browser tool normally and inspect the markup and visible content the built-in browser tool can access. Do not bypass CAPTCHA or other access controls.
 
 For each valid post:
 
@@ -65,8 +65,8 @@ Create temporary files only inside the current website's {Temporary workspace}.
 
 Use {Temporary workspace} for:
 
-- Safari-provided listing HTML and rendered DOM
-- Safari-provided article HTML and rendered DOM
+- the built-in browser tool-provided listing HTML and rendered DOM
+- the built-in browser tool-provided article HTML and rendered DOM
 - screenshots needed for diagnosis
 - candidate post data
 - normalized post data
@@ -84,11 +84,11 @@ After all websites have been processed, remove each successful website's {Tempor
 
 # EXECUTION STRATEGY
 
-The tool directly communicates with Safari. Use Safari for all website navigation, page loading, interaction, markup access, DOM inspection, metadata access, and website-content parsing.
+The tool directly communicates with the built-in browser tool. Use the built-in browser tool for all website navigation, page loading, interaction, markup access, DOM inspection, metadata access, and website-content parsing.
 
-If possible, open a new dedicated Safari window for this task before processing the first website. Use only that window for this task. Do not reuse, close, rearrange, or alter the user's existing Safari windows or tabs. If Safari cannot create a separate window, open a dedicated new tab and avoid disturbing existing tabs.
+If possible, open a new dedicated the built-in browser tool window for this task before processing the first website. Use only that window for this task. Do not reuse, close, rearrange, or alter the user's existing the built-in browser tool windows or tabs. If the built-in browser tool cannot create a separate window, open a dedicated new tab and avoid disturbing existing tabs.
 
-Website access and website-content parsing must occur exclusively through Safari. Use file operations and in-process data handling only for post normalization, RSS generation, and RSS validation.
+Website access and website-content parsing must occur exclusively through the built-in browser tool. Use file operations and in-process data handling only for post normalization, RSS generation, and RSS validation.
 
 Do not use recursive crawling by default.
 
@@ -96,36 +96,36 @@ Discover relevant links first.
 
 Visit only necessary listing pages and article pages.
 
-When presented with buttons, links, or options to load more content, activate that feature in Safari to traverse results until the post dates exceed {Maximum post age}.
+When presented with buttons, links, or options to load more content, activate that feature in the built-in browser tool to traverse results until the post dates exceed {Maximum post age}.
 
 Use low concurrency, bounded retries, delays, and timeouts.
 
 Keep navigation inside the domain of the current website's {Source URL} unless explicitly required otherwise.
 
-Use a maximum 30-second Safari navigation timeout per page.
+Use a maximum 30-second the built-in browser tool navigation timeout per page.
 
 Abort and reject a page when meaningful content does not finish rendering within the configured timeout.
 
-# SAFARI PAGE WORKFLOW
+# the built-in browser tool PAGE WORKFLOW
 
 For every listing page and article page:
 
-1. Navigate normally in the dedicated Safari window.
+1. Navigate normally in the dedicated the built-in browser tool window.
 2. Wait for meaningful listing or article content to render.
-3. Use the page markup, rendered DOM, visible content, metadata, and structured data available directly through Safari.
-4. Preserve the normal Safari cookies and session for the dedicated window.
+3. Use the page markup, rendered DOM, visible content, metadata, and structured data available directly through the built-in browser tool.
+4. Preserve the normal the built-in browser tool cookies and session for the dedicated window.
 5. Save the relevant rendered DOM or markup inside {Temporary workspace}.
-6. Extract from Safari-provided markup and rendered DOM only. Never use screenshot OCR.
-7. Inspect same-origin JSON-LD and other structured page data when Safari exposes it, but use it only when it agrees with visible content.
+6. Extract from the built-in browser tool-provided markup and rendered DOM only. Never use screenshot OCR.
+7. Inspect same-origin JSON-LD and other structured page data when the built-in browser tool exposes it, but use it only when it agrees with visible content.
 8. Reject pages that are challenged, blocked, inaccessible, or lack meaningful article content.
 9. Do not bypass CAPTCHA, verification, login, subscription, payment, or other access controls.
 10. Save screenshots only when extraction fails or challenge text is detected.
 
-When all configured websites have been processed, close only the dedicated Safari window or tab created for this task, when possible. Do not close or modify any pre-existing Safari window or tab.
+When all configured websites have been processed, close only the dedicated the built-in browser tool window or tab created for this task, when possible. Do not close or modify any pre-existing the built-in browser tool window or tab.
 
 # DISCOVERY RULES
 
-Infer website structure from Safari-provided HTML and rendered DOM.
+Infer website structure from the built-in browser tool-provided HTML and rendered DOM.
 
 The configured article markup hint is a clue, not a complete extraction contract.
 
@@ -140,7 +140,7 @@ Use semantic evidence in this priority order:
 7. Repeated listing-card structure.
 8. Site-specific classes and data attributes.
 
-Save the Safari-provided HTML or rendered DOM before extraction.
+Save the the built-in browser tool-provided HTML or rendered DOM before extraction.
 
 Record discovered extraction methods in:
 
@@ -151,7 +151,7 @@ Do not save site-specific scraper rules outside the current website's {Temporary
 When an extraction method fails:
 
 - Inspect saved HTML or rendered DOM.
-- Try a different Safari-based extraction method.
+- Try a different the built-in browser tool-based extraction method.
 - Do not guess missing content.
 
 Inspect every visible candidate post on each relevant listing page, including posts below featured sections.
@@ -164,7 +164,7 @@ For Reuters-style Arc/Fusion pages:
 - Extract visible listing cards from rendered DOM links matching `a[href*="2026-"]`.
 - Use the closest story/card container for headline, summary, image, and relative timestamp.
 - Parse relative timestamps such as `2 hours ago` against {Current UTC timestamp}.
-- Open each article page in Safari and prefer JSON-LD `NewsArticle` metadata plus visible paragraph nodes such as `[data-testid="paragraph"]`, `article p`, or `main p`.
+- Open each article page in the built-in browser tool and prefer JSON-LD `NewsArticle` metadata plus visible paragraph nodes such as `[data-testid="paragraph"]`, `article p`, or `main p`.
 
 # HARD FRESHNESS GATE
 
@@ -191,7 +191,7 @@ If freshness validation fails:
 For Reuters, parse listing links matching `a[href*="2026-"]`.
 Use closest story/card container.
 Parse relative timestamps like `3 days ago`.
-Open each article page in Safari.
+Open each article page in the built-in browser tool.
 Prefer JSON-LD plus visible article paragraphs.
 
 # POST VALIDITY RULES
@@ -272,7 +272,7 @@ When title, date, URL, or full body cannot be extracted with enough confidence:
 When a candidate links to a full original article on the same website:
 
 1. Extract usable listing-page content first.
-2. Open the full article page in Safari.
+2. Open the full article page in the built-in browser tool.
 3. Use full-page content only when it is verified as a real accessible article page and passes all content-quality checks.
 4. Keep usable listing-page content when the full-page content is rejected.
 5. Omit the post when neither source has usable content.
@@ -501,7 +501,7 @@ For each website:
 4. Generate and validate that website's candidate RSS file independently.
 5. Replace only that website's {RSS file} after validation succeeds.
 
-Do not let selectors, rendered pages, candidate data, validation data, Safari tabs, or Safari page state from one website affect another website.
+Do not let selectors, rendered pages, candidate data, validation data, the built-in browser tool tabs, or the built-in browser tool page state from one website affect another website.
 
 Do not combine posts from different websites into one RSS file.
 
