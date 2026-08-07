@@ -2,7 +2,7 @@
    "version" : "https://jsonfeed.org/version/1.1",
    "title" : "AP News",
    "home_page_url" : "https://apnews.com/hub/latest-news/",
-   "feed_url" : "https://raw.githubusercontent.com/argentini/RSS/refs/heads/main/APNews.rss",
+   "feed_url" : "https://raw.githubusercontent.com/argentini/RSS/refs/heads/main/APNews.json",
    "icon" : "https://apnews.com/apple-touch-icon.png",
    "favicon" : "https://apnews.com/favicon-32x32.png",
    "items" : [
