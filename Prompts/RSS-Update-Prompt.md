@@ -284,6 +284,22 @@ When a candidate links to a full original article on the same website:
 4. Keep usable listing-page content when the full-page content is rejected.
 5. Omit the post when neither source has usable content.
 
+# PRIMARY ARTICLE BODY SELECTION
+
+When extracting full article content, identify the primary narrative article body, not the largest text container.
+
+Prefer content that:
+- Appears after the headline, byline, date, and hero media.
+- Forms a continuous sequence of prose paragraphs.
+- Advances the reported story, analysis, review, or argument.
+- Shares the article headline/topic semantically.
+- Has normal sentence structure and paragraph length.
+- Appears in the central reading flow.
+
+Exclude content that functions as metadata, navigation, promotion, attribution, recommendation, sidebar, entity cards, topic lists, follow widgets, ads, media-player chrome, licensing text, trust notices, footer text, or related links.
+
+Do not treat bylines, datelines alone, topic chips, entity widgets, sidebar cards, sign-offs, or recommendation modules as article body.
+
 Reject a full article page when it contains any of:
 
 - Enable JavaScript and cookies to continue
@@ -343,6 +359,17 @@ Remove:
 - Styles.
 - Tracking pixels.
 - Repeated boilerplate.
+- Sidebar modules.
+- Entity cards.
+- Company, stock, person, place, or topic widgets.
+- Follow buttons and follow-list items.
+- Suggested-topic sections.
+- Newsletter signup prompts.
+- Media-player controls and captions unrelated to article text.
+- Image licensing and rights notices.
+- Trust, standards, correction-policy, or about-us notices.
+- Reporting, editing, production, or sign-off credits unless used only as byline metadata.
+- Short disconnected labels, names, or action text that do not form article prose.
 
 # CONTENT QUALITY RULES
 
@@ -350,10 +377,12 @@ Reject an extracted post body when any condition is true:
 
 - It contains anti-bot, CAPTCHA, verification, login, subscription, payment-wall, or cookie-wall text.
 - It contains fewer than 200 meaningful characters after stripping HTML.
-- It lacks normal article-content signals such as multiple paragraphs, article markup, or structured article metadata.
+- It lacks a coherent sequence of narrative article paragraphs.
+- It lacks normal article-content signals such as multiple prose paragraphs, article markup, or structured article metadata.
 - It substantially matches a generic challenge or access-control template.
 - Its extracted title does not reasonably match the candidate title.
-- It is mostly navigation, promotion, comments, or boilerplate.
+- It is mostly navigation, promotion, comments, forms, sidebar text, metadata, topic labels, entity lists, follow actions, credits, or boilerplate.
+- It is mostly short disconnected fragments rather than continuous story, analysis, review, or argument text.
 
 Prefer full-post content only when it passes these checks.
 
@@ -461,11 +490,13 @@ Before replacing {RSS path}:
 10. Confirm no article body contains challenge, CAPTCHA, login, payment-wall, cookie-wall, or browser-verification text.
 11. Confirm `description` and `content:encoded` do not contain entity-encoded HTML tag markers such as `&lt;a`, `&lt;br`, `&lt;div`, `&lt;p`, `&lt;img`, `&lt;strong`, `&lt;/`, or `&gt;`.
 12. Confirm every article body contains at least 200 meaningful characters after stripping HTML.
-13. Save validation results to:
+13. Confirm every article body is mostly coherent narrative prose from the primary reading flow.
+14. Confirm no article body is mostly labels, names, buttons, topics, metadata, credits, ads, promos, footer text, sidebar text, or short disconnected fragments.
+15. Save validation results to:
 
 `{Temporary workspace}/validation.json`
 
-14. Confirm listing freshness coverage:
+16. Confirm listing freshness coverage:
     - Read `{Temporary workspace}/listing-inventory.json`.
     - Confirm every in-age inventory candidate is included in the candidate RSS or rejected in `{Temporary workspace}/posts.json`.
     - Treat dated URL slugs like `/2026-07-11/` and visible relative timestamps like `2 hours ago`, `Yesterday`, or `N days ago` as listing-date evidence.
