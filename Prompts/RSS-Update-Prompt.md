@@ -168,19 +168,26 @@ For Reuters-style Arc/Fusion pages:
 
 # HARD FRESHNESS GATE
 
-Before preserving existing RSS items, collect all visible same-domain article candidates from {Source URL} rendered DOM.
+Before preserving existing RSS items, create `{Temporary workspace}/listing-inventory.json` from the rendered {Source URL} DOM.
 
-For every visible candidate newer than the newest generated RSS item:
+The listing inventory must include every visible same-domain candidate that appears to be an article post, including:
+- Candidate title.
+- Candidate URL.
+- Visible date text or relative timestamp.
+- Parsed date when available.
+- Listing card text.
+- Preview image when available.
+- Selector or extraction method used.
 
-- Extract it into the feed, or
-- Record a concrete rejection reason in {Temporary workspace}/posts.json.
+For every in-age candidate in `{Temporary workspace}/listing-inventory.json`, validation must prove exactly one outcome:
 
-Validation must fail when:
+- The candidate is included in the candidate RSS by canonical URL.
+- The candidate is included in the candidate RSS by normalized headline plus normalized publication date.
+- The candidate is recorded in `{Temporary workspace}/posts.json` with a concrete rejection reason.
 
-- The feed contains only preserved existing items, and
-- The rendered listing contains newer valid-looking article candidates.
+Do not treat preserved existing items as freshness coverage unless they match the current listing candidate by canonical URL or normalized headline plus normalized publication date.
 
-Do not treat preserved items as proof of success.
+Validation must fail when {Source URL} contains any candidate newer than the newest existing RSS item and the candidate RSS has `added=0` and `updated=0`, unless every newer candidate is recorded in `{Temporary workspace}/posts.json` with a concrete rejection reason.
 
 If freshness validation fails:
 
@@ -459,10 +466,11 @@ Before replacing {RSS path}:
 `{Temporary workspace}/validation.json`
 
 14. Confirm listing freshness coverage:
-    - From the rendered listing DOM, collect all visible same-domain article links that appear to be posts.
+    - Read `{Temporary workspace}/listing-inventory.json`.
+    - Confirm every in-age inventory candidate is included in the candidate RSS or rejected in `{Temporary workspace}/posts.json`.
     - Treat dated URL slugs like `/2026-07-11/` and visible relative timestamps like `2 hours ago`, `Yesterday`, or `N days ago` as listing-date evidence.
-    - If the rendered listing contains newer valid-looking article candidates than the newest generated RSS item, validation fails unless those candidates are explicitly recorded as rejected with a concrete content-quality reason.
-    - A feed must not pass validation when all or nearly all items are preserved existing items and the rendered listing contains newer candidates.
+    - If any candidate is newer than the newest existing RSS item, validation fails when `added=0` and `updated=0` unless every newer candidate has a concrete rejection reason.
+    - A feed must not pass validation merely because it preserved existing items.
 
 If validation fails:
 
