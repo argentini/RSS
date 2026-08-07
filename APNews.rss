@@ -3,8 +3,8 @@
 <channel>
 <title>AP News RSS</title>
 <link>https://apnews.com/hub/latest-news/</link>
-<description>AP News latest posts</description>
-<lastBuildDate>Fri, 07 Aug 2026 18:36:15 GMT</lastBuildDate>
+<description>AP News RSS</description>
+<lastBuildDate>Fri, 07 Aug 2026 19:31:54 GMT</lastBuildDate>
 <item>
 <title>Senate passes Russia sanctions bill pushed by late Sen. Lindsey Graham</title>
 <link>https://apnews.com/article/senate-russia-sanctions-graham-tariffs-8d37498c3f27d96cae7da147250ebe9f</link>
@@ -4924,4 +4924,5 @@
 <p>For more AP pet stories, go to <a href="https://apnews.com/hub/pets">https://apnews.com/hub/pets</a></p>]]></content:encoded>
 <media:content url="https://dims.apnews.com/dims4/default/e6f8640/2147483647/strip/false/crop/3000x2000+0+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fcf%2F94%2F4f59217f4bb83413cc0b09e11865%2F4e4bc00dd4d441d9bc8d11cbf2aea817" medium="image" />
 </item>
-</channel></rss>
+</channel>
+</rss>

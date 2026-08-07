@@ -3,8 +3,8 @@
 <channel>
 <title>ProPublica RSS</title>
 <link>https://www.propublica.org/</link>
-<description>ProPublica latest posts</description>
-<lastBuildDate>Fri, 07 Aug 2026 19:03:40 GMT</lastBuildDate>
+<description>ProPublica RSS</description>
+<lastBuildDate>Fri, 07 Aug 2026 19:24:48 GMT</lastBuildDate>
 <item>
 <title>House Democrats Demand Answers From Trump’s VA on Vets Struggling to Access Mental Healthcare</title>
 <link>https://www.propublica.org/article/democrats-veterans-affairs-doug-collins-letter-mental-health</link>
@@ -951,4 +951,5 @@
 	</ul>]]></content:encoded>
 <media:content url="https://www.propublica.org/wp-content/uploads/2026/07/GettyImages-2255654564_96e1a0.jpg?resize=2000,1050" medium="image" />
 </item>
-</channel></rss>
+</channel>
+</rss>

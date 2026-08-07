@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
-<title>AppleInsider RSS</title>
+<title>AppleInsider</title>
 <link>https://appleinsider.com/</link>
-<description>AppleInsider latest posts</description>
-<lastBuildDate>Fri, 07 Aug 2026 18:29:05 GMT</lastBuildDate>
+<description>AppleInsider</description>
+<lastBuildDate>Fri, 07 Aug 2026 19:24:48 GMT</lastBuildDate>
 <item>
 <title>B&amp;H's $1,349 M5 MacBook Air deal with 24GB RAM ends this weekend</title>
 <link>https://appleinsider.com/articles/26/08/07/bhs-1349-m5-macbook-air-deal-with-24gb-ram-ends-this-weekend</link>
 <guid isPermaLink="true">https://appleinsider.com/articles/26/08/07/bhs-1349-m5-macbook-air-deal-with-24gb-ram-ends-this-weekend</guid>
 <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-<author>Christine McKee</author>
 <description><![CDATA[<p>The upgraded M5 MacBook Air has 24GB of memory to boost performance, and it's $150 off this weekend only.</p>]]></description>
 <content:encoded><![CDATA[<p>
                             <time datetime="">Fri Aug 07 2026, 01:11 PM EDT</time>
@@ -65,7 +64,6 @@
 <link>https://appleinsider.com/articles/26/08/07/apple-memory-supplier-bets-on-ai-boom-lasting-till-2029-with-38b-investment</link>
 <guid isPermaLink="true">https://appleinsider.com/articles/26/08/07/apple-memory-supplier-bets-on-ai-boom-lasting-till-2029-with-38b-investment</guid>
 <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-<author>Amber Neely</author>
 <description><![CDATA[<p>One of Apple's memory suppliers is making a massive investment to expand chip production amid global shortages, but it won't make your next iPhone any cheaper.</p>]]></description>
 <content:encoded><![CDATA[<p>
                             <time datetime="2026-08-07T17:32:41+00:00">Fri Aug 07 2026, 12:18 PM EDT</time>
@@ -364,101 +362,6 @@
 <h2>Comments</h2>
 <h2>No comments here, yet</h2>]]></content:encoded>
 <media:content url="https://media.appleinsider.com/gallery/68493-144314-macbook-air-up-to-200-off-xl.jpg" medium="image" />
-</item>
-<item>
-<title>Adobe is hell-bent on becoming the creative engine behind AI</title>
-<link>https://appleinsider.com/articles/26/08/06/adobe-is-hell-bent-on-becoming-the-creative-engine-behind-ai</link>
-<guid isPermaLink="true">https://appleinsider.com/articles/26/08/06/adobe-is-hell-bent-on-becoming-the-creative-engine-behind-ai</guid>
-<pubDate>Thu, 06 Aug 2026 15:56:00 GMT</pubDate>
-<description><![CDATA[<p>
-                            Thu Aug 06 2026, 11:56 AM EDT
-                            ·
-                            3 minute read
-                        </p>
-<p title="Image generated with Adobe and ChatGPT">Image generated with Adobe and ChatGPT</p>]]></description>
-<content:encoded><![CDATA[<h2>News</h2>
-<p>
-                            Thu Aug 06 2026, 11:56 AM EDT
-                            ·
-                            3 minute read
-                        </p>
-<p title="Image generated with Adobe and ChatGPT">Image generated with Adobe and ChatGPT</p>
-<p>Adobe's newest AI ChatGPT plugin shows that the company doesn't care where people create, but more on ensuring they create with Adobe.
-</p>
-<p>On Thursday, Adobe and OpenAI rolled out a new feature. A new ChatGPT tool that would combine more than 70 of Adobe's creative tools into a single plugin, accessible by typing @Adobe.
-</p>
-<p>If you've <a href="https://adobe.prf.hn/click/camref:1011lreeH/creativeref:1011l134937">got an Adobe account</a>, you can go to ChatGPT, install the Adobe plugin, and begin generating... Well, whatever you want, really.
-</p>
-<p>For example, you could type:
-</p>
-<blockquote>@Adobe Create a 16:9 hero image of a robot artist working over a drawing desk or at a computer. Give it a vaporwave paper collage aesthetic. It should feel lightly foreboding.</blockquote>
-<p>And you'd get something like the image above.
-</p>
-<p>It's an interesting tool, primarily because it doesn't <em>just</em> generate images. You could make short videos or even PDFs thanks to its Acrobat integration.
-</p>
-<p>Currently, anyone can use this for free. Both paid ChatGPT and paid Adobe accounts offer more expansive features.
-</p>
-<p>The benefits for OpenAI are numerous, obviously. The company wants to turn ChatGPT into a one-stop shop for everything from creative output to <a href="https://appleinsider.com/articles/25/12/02/be-wary-of-the-rumored-connection-between-chatgpt-and-apple-health">medical triage.</a>
-</p>
-<p>But what's in it for Adobe?
-</p>
-<p>While the all-in-one plugin is new, it's not Adobe's first plugin for ChatGPT. Before, you could install individual plugins that allowed you to use a single tool, like Photoshop at a time.
-</p>
-<p>And Adobe doesn't <em>just</em> partner with OpenAI. There is an Adobe Photoshop plugin for Anthropic's Claude, with Google Gemini and Slack versions set to release in the future.
-</p>
-<p>I suspect that Adobe will eventually package this all-in-one plugin for other platforms, too. Adobe's all in on AI; that much is clear.
-</p>
-<p>As always, it's worth taking a little time to look at how we got here.
-</p>
-<h2>Adobe, everywhere.</h2>
-<p>For decades, Adobe has stood atop the digital creative software mountain without many competitors. This allowed the company to become industry standard in many fields.
-</p>
-<p>Even smaller, independent artists usually found themselves beholden to Adobe. At least until they were priced out and forced to seek alternatives.
-</p>
-<p>Hell, Adobe even influenced the vocabulary around image manipulation. For years, everyone referred to seemingly unbelievable images as "being Photoshopped."
-</p>
-<p>Though now I suspect we'll hear that term replaced with "that's AI." It's already being wrongly thrown about as an excuse why a reader doesn't like something that's been written by a human, so why not?
-</p>
-<p>Its reign as creative king gave Adobe incredible power in the space. When competitors like Affinity and Procreate peeled off the smaller, independent artists, Adobe knew that it could weather the storm because it had the industry money.
-</p>
-<p>Unfortunately, that's not the case anymore. Some of it is Adobe's fault, to be clear.
-</p>
-<p>At the time of publication, Adobe stock has lost nearly 60% of its value in the past five years.</p>
-<p>Adobe's pricing practices and cancellation flows are, to put it lightly, abhorrent. So much so that the Department of Justice had to <a href="https://appleinsider.com/articles/26/03/13/adobe-begrudgingly-admits-defeat-agrees-to-pay-150m-over-confusing-cancellation-fees">step in.</a>
-</p>
-<p>Coupled with aggressive price increases, Adobe's burnt through the last of the goodwill it had built up with artists. Many people have decided that Adobe's products, good as they may be, aren't worth it anymore.
-</p>
-<p>But, it's not <em>entirely</em> Adobe's fault, either. Some of it is the market Adobe is forced to operate in.
-</p>
-<p>The creative industry, and especially the <em>commercial</em> sector, has been restructuring for years. Instead of having full-time staff, many corporate creative jobs are now per-project, and rely heavily on small teams of independent contractors.
-</p>
-<p>This means that Adobe doesn't get to rely on a fat paycheck from a large corporation buying hundreds of full-ride software license packages.
-</p>
-<p>The problem becomes compounded, again, when the creative industry finds ways to cut ties with the artists who long held it up. Artificial intelligence is being used to reduce the number of working artists even further, which could directly affect Adobe's bottom line as well.
-</p>
-<p>Unless...
-</p>
-<h2>No, really: Adobe <em>everywhere</em>.</h2>
-<p>I've spoken at length about Adobe's rush to embrace AI several times. As a person who has been using Adobe products since about 2001, I can say that this was probably inevitable.
-</p>
-<p>And, while I don't agree with it, I get it. For the first time, possibly ever, Adobe's on the back foot.
-</p>
-<p>Not only is it dealing with an industry that is feeding itself into a wood chipper, but it also has actual competition in products like Canva. This is especially true in relatively young markets like social media platforms.
-</p>
-<p>Adobe needs to find its place again, or the company risks facing the same layoffs and restructuring that plague the rest of the tech industry. By selling subscriptions to ChatGPT users, Adobe may be able to buy itself a little breathing room.
-</p>
-<p>Eric Shinseki, a retired United States Army general who served in senior roles under Presidents Clinton, Bush, and Obama, once said, "if you don't like change, you're going to like irrelevance even less."
-</p>
-<p>Adobe knows this. It probably doesn't love the idea of hocking subscriptions to users of another service.
-</p>
-<p>Unfortunately, if you've built your livelihood in an industry cannibalizing the very creative labor that made it, adapting may mean becoming bedfellows with the technology threatening to replace you.</p>
-<h2>Amber Neely</h2>
-<h3>Reviews Editor</h3>
-<p><a href="https://appleinsider.com/editor/amber+neely">Amber worked at MacNN and Electronista from 2015 until 2017, reviewing software, apps, games, and tech accessories. In 2019, she signed up with AppleInsider, where she covers all things Apple, with a focus on tech rev...</a></p>
-<h2>More Ways to Read AppleInsider</h2>
-<h2>Comments</h2>
-<p>I've used Adobe since they were barely Adobe. I'm an old GenX, who cut my teeth in advertising just as digital tools came into it. Adobe is a habit with me, but I suspect not with anyone under age 35 or 40. I am, for better and actually much worse, tied to them as I use three of four of their apps daily for what's left of a creative career in 2026. I use a few other solutions but whatever value I have in speed and production know how comes from this set of base tools that I have used for an embarrassingly long time. And when I stop paying - years of work will become almost unusable and maybe inoperable. I have not quite figured that out either. Except when I stop making enough that the tools are reasonable, I will just be done working digitally with anything from the previous 35 years. Ugh. </p>]]></content:encoded>
-<media:content url="https://media.appleinsider.com/gallery/68488-144311-adobe-ai-art-header-xl.jpg" medium="image" />
 </item>
 <item>
 <title>Apple sweetens its trade-in deals, but you can still do better</title>
@@ -929,7 +832,6 @@ I read that as looking to create a more competitive dynamic over time and perhap
 <link>https://appleinsider.com/articles/26/08/06/apple-continues-to-dominate-premium-smartphone-market-share-in-2026</link>
 <guid isPermaLink="true">https://appleinsider.com/articles/26/08/06/apple-continues-to-dominate-premium-smartphone-market-share-in-2026</guid>
 <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-<author>Wesley Hilliard</author>
 <description><![CDATA[<p>For smartphones selling at over $600, Apple owns 65% of that market and grew 9% year over year in the first half of 2026. However, Chinese brands are making a dent in local market share.</p>]]></description>
 <content:encoded><![CDATA[<p>
                             <time datetime="">Thu Aug 06 2026, 06:56 PM EDT</time>
@@ -991,7 +893,6 @@ I read that as looking to create a more competitive dynamic over time and perhap
 <link>https://appleinsider.com/articles/26/08/06/jon-prossers-baby-forces-extension-to-apples-legal-battle-again</link>
 <guid isPermaLink="true">https://appleinsider.com/articles/26/08/06/jon-prossers-baby-forces-extension-to-apples-legal-battle-again</guid>
 <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-<author>Wesley Hilliard</author>
 <description><![CDATA[<p>Jon Prosser was sued by Apple over the alleged theft of pre-release information, saw a default ruling due to inaction, had that overturned, and is once again failing to provide discovery materials. There's a reason this time.</p>]]></description>
 <content:encoded><![CDATA[<p>
                             <time datetime="2026-08-06T21:49:30+00:00">Thu Aug 06 2026, 05:38 PM EDT</time>
@@ -1131,58 +1032,6 @@ so it’s probably in his interest to dither and delay for as long as possible h
 <p>The default settings in email should be to show the email address of the sender not the "name". <br>
 Most people thinks that if it says UBER that's legit. They would be concerned if it came from scamming@pieceofshit.com. Apple, Google,… should know better. A very simple change could make a huge dent in the scamming industry.</p>]]></content:encoded>
 <media:content url="https://media.appleinsider.com/gallery/68480-144285-Apple-Mail-app-Liquid-Glass-icon-xl.jpg" medium="image" />
-</item>
-<item>
-<title>Meta's Muse Code is yet another AI coding agent on macOS</title>
-<link>https://appleinsider.com/articles/26/08/05/metas-muse-code-is-yet-another-ai-coding-agent-on-macos</link>
-<guid isPermaLink="true">https://appleinsider.com/articles/26/08/05/metas-muse-code-is-yet-another-ai-coding-agent-on-macos</guid>
-<pubDate>Wed, 05 Aug 2026 20:50:00 GMT</pubDate>
-<description><![CDATA[<p>
-                            Wed Aug 05 2026, 04:50 PM EDT
-                            ·
-                            2 minute read
-                        </p>
-<p title="Meta&apos;s Muse Code is a new AI coding tool for macOS. Image source: Meta">Meta's Muse Code is a new AI coding tool for macOS. Image source: Meta</p>]]></description>
-<content:encoded><![CDATA[<h2>News</h2>
-<p>
-                            Wed Aug 05 2026, 04:50 PM EDT
-                            ·
-                            2 minute read
-                        </p>
-<p title="Meta&apos;s Muse Code is a new AI coding tool for macOS. Image source: Meta">Meta's Muse Code is a new AI coding tool for macOS. Image source: Meta</p>
-<p>A one-line command in your <a href="https://appleinsider.com/inside/macos" title="macOS">macOS</a> terminal can get you access to Meta's Muse Code, which aims to be a transparent AI coding tool that can work across large repositories.
-</p>
-<p>There are already coding agents like <a href="https://appleinsider.com/articles/26/02/03/boost-your-vibe-coding-with-ai-agents-in-apples-new-xcode-263">Claude Code</a> and <a href="https://appleinsider.com/articles/26/04/24/chatbots-take-a-back-seat-as-new-gpt-55-model-focuses-on-getting-work-done">ChatGPT Codex</a> available for macOS, but Meta wants to enter the ring with its latest AI toolset. Unlike the others, it doesn't have an app interface and runs through the Terminal.
-</p>
-<p>According to an <a href="https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2">announcement post</a> from Meta, Muse Code can take on complex software engineering tasks across large repositories. It is capable of planning changes, writing code, and validating the results while coordinating multiple persistent subagents.
-</p>
-<p>As always with these AI announcements, remember that the language being used attempts to anthropomorphize the tools to be more human-like. Nothing about an AI behaves like a human —  they don't think, reason, organize, sympathize, or understand.
-</p>
-<p>AI is a tool, and if Muse Code sounds like it could help you develop software, it might be a particularly useful tool. Developers <a href="https://appleinsider.com/articles/26/07/26/game-development-diary-launched-but-far-from-finished">have shared</a> just how useful having a coding agent available can be, especially for troubleshooting bugs.
-</p>
-<p>To install Muse Code, you'll just need to paste in a single command into Terminal:
-</p>
-<p><code>curl -fsSL https://dev.meta.ai/install.sh | bash</code>
-</p>
-<p>Of course, this isn't free. Those that install Muse Code will start on Meta's contributor tier. Developers join with a pay-as-you-go option which charges $1.25 per million tokens in input and $4.25 per million tokens of output.
-</p>
-<p>The Muse Code announcement was paired with the release of Muse Spark 1.2, which was trained with coding assistance in mind. Meta says the training included rejection-sampled harness trajectories and recipe optimizations for goals, compaction, and subagents.
-</p>
-<h2>Choose your AI partner</h2>
-<p>Meta's inevitable introduction of a coding agent was a long time coming. The company has <a href="https://forums.appleinsider.com/discussion/241186/apples-ai-brain-drain-continues-as-fourth-researcher-goes-to-meta">been poaching</a> Apple employees in its expensive chase for so-called superintelligence.
-</p>
-<p>Muse Code is also another revenue stream to cover the incredible costs of AI and research around it. Meta <a href="https://appleinsider.com/articles/26/01/27/metas-latest-subscription-move-is-an-attempt-to-offset-its-ai-bets">previously tied</a> some of its premium subscriptions to AI tool use as well.
-</p>
-<p>There are several AI coding tools to choose from, so it will be interesting to observe if Meta can make a dent in the market. Not having a direct UI and interfacing via Terminal could be a problem for some.
-</p>
-<p>Then there's the privacy aspect. Meta is known for its <a href="https://appleinsider.com/articles/19/07/24/facebook-fined-5b-by-ftc-over-cambridge-analytica-scandal-charges">horrific history</a> of scraping every piece of data it can from users, and while it might have safeguards in place for its AI tools, it seems unwise to trust Meta software installed with access to so much information.</p>
-<h2>Wesley Hilliard</h2>
-<h3>Rumor Expert</h3>
-<p><a href="https://appleinsider.com/editor/wesley+hilliard">Wesley was in the US Navy for ten years, serving as a carrier-based nuclear trained electrician, then jumped careers in 2019. Today, he is Assistant Editor, Podcast Cohost, SEO Specialist, and Social Media Manager for...</a></p>
-<h2>More Ways to Read AppleInsider</h2>
-<h2>Comments</h2>
-<p>Create a new <strong>standard</strong> account on macOS and run it there to protect your data.  Other coding agents also use macOS seatbelt as another sandbox.  </p>]]></content:encoded>
-<media:content url="https://media.appleinsider.com/gallery/68478-144284-IMG_4884-xl.jpg" medium="image" />
 </item>
 <item>
 <title>Small, Siri, and smart: What to expect from HomePod mini 2</title>
@@ -1328,85 +1177,6 @@ Most people thinks that if it says UBER that's legit. They would be concerned if
 </p>
 <p>Oh yeah, Vision Pro is a bargain compared to the cost of typical medical equipment or equipment in other industries. </p>]]></content:encoded>
 <media:content url="https://photos5.appleinsider.com/gallery/67490-142065-AVPsurgery-xl.jpg" medium="image" />
-</item>
-<item>
-<title>Unsafe iMessage for Android app Sunbird just will not die</title>
-<link>https://appleinsider.com/articles/26/08/05/unsafe-imessage-for-android-app-sunbird-just-will-not-die</link>
-<guid isPermaLink="true">https://appleinsider.com/articles/26/08/05/unsafe-imessage-for-android-app-sunbird-just-will-not-die</guid>
-<pubDate>Wed, 05 Aug 2026 16:02:40 GMT</pubDate>
-<description><![CDATA[<p>
-                            Wed Aug 05 2026, 12:02 PM EDT
-                            ·
-                            3 minute read
-                        </p>
-<p title="That would be Android phones it&apos;s talking about. You&apos;re on an iPhone, you&apos;re fine. Image credit: Sunbird">That would be Android phones it's talking about. You're on an iPhone, you're fine. Image credit: Sunbird</p>]]></description>
-<content:encoded><![CDATA[<h2>News</h2>
-<p>
-                            Wed Aug 05 2026, 12:02 PM EDT
-                            ·
-                            3 minute read
-                        </p>
-<p title="That would be Android phones it&apos;s talking about. You&apos;re on an iPhone, you&apos;re fine. Image credit: Sunbird">That would be Android phones it's talking about. You're on an iPhone, you're fine. Image credit: Sunbird</p>
-<p>Even though Apple now supports RCS to let Android users join in <a href="https://appleinsider.com/inside/imessage" title="iMessage">iMessage</a> conversations, the risky Sunbird app is back to persuade them to route everything through its servers anyway. Don't do it to yourself.
-</p>
-<p>Previously on Sunbird... it was an <a href="https://appleinsider.com/articles/22/12/01/imessage-may-be-coming-to-android-with-sunbird">Android app</a> that let users partake in Apple iMessage conversations without a <a href="https://appleinsider.com/articles/23/12/21/if-you-want-blue-imessage-bubbles-that-much-buy-an-iphone">green bubble</a>, and with myriad security problems. It came and it went, and then Apple <a href="https://appleinsider.com/articles/26/05/13/rcs-encryption-havent-fixed-the-green-bubble-problem">added RCS support</a> so that Android users could do exactly this without the privacy issues.
-</p>
-<p>Sunbird tried <a href="https://appleinsider.com/articles/24/04/08/astoundingly-unsafe-imessage-bridge-sunbird-is-back-and-you-still-shouldnt-use-it">coming back</a> in 2024 having promised to have fixed its security problems, but it really didn't because it really can't. Your data still went through its servers and the company can say all it likes that it doesn't peek, but this remains a firm you've never heard of and are expected to trust.
-</p>
-<p>Now having retreated back into beta testing to brood for a couple of years, Sunbird is reborn yet again. There's no longer a sign-up process or a waiting list, it's launched with various in-app purchases from $2.99 to $24.99, which you can guess must be monthly and annual subscription prices, although the developer sees no reason to tell you that.
-</p>
-<p>What the developer does want you to know is that despite it being available and taking money, it isn't really launched, it's just in an "open beta."
-</p>
-<p>And the developers also say that, well, yes, sure. Apple does support RCS now, but that's not the point.
-</p>
-<p>"The real problem is that an Android user in a group chat still breaks it for everyone: reactions, replies, high-quality video, and group management often just do not work," said Danny Mizrahi, CEO of Sunbird Messaging <a href="https://www.sunbirdapp.com/content/imessage-on-android">in a statement</a>. "Sunbird fixes that, so the Android user becomes a full participant, and their <a href="https://appleinsider.com/inside/iphone" title="iPhone">iPhone</a> friends get the experience they expect too."
-</p>
-<p>To back this up, Sunbird quotes survey statistics that say "38% of Android users had missed or misunderstood messages because of the incompatibility." We all know people who don't read to the end of a message, it doesn't mean iMessage is broken.
-</p>
-<p>Similarly, "30% had considered switching to an iPhone over pressure and mockery." That's a shame for them, but Sunbird quotes a percentage while ignoring that it can at most be 30% of Americans.
-</p>
-<p>That's because it is only in the US that users can even remember whether a green or a blue bubble means an iPhone without looking. Everywhere else on the planet, the messaging app being used is WhatsApp, and that's equally ugly on iPhone and Android.
-</p>
-<p>So Sunbird is claiming to solve a problem that most global users do not have, and which Apple has already sorted for US users. Sunbird is definitely right that Apple's RCS support isn't perfect, but it will do and it is not exposed to a third-party company.
-</p>
-<p>Notice the line "It Just Works" at bottom left. The company itself admits that you sometimes have to try installing it twice. Image credit: Sunbird.</p>
-<p>Then if Sunbird is going to knock Apple for its solution sometimes breaking, it should get its own software sorted first. 
-</p>
-<p>"Because Sunbird is in open beta," says the developer, "getting connected can occasionally take a second try."
-</p>
-<p>"Open beta" is just a way of denying responsibility for problems in future lawsuits, it isn't a technical thing that will somehow change when that label is removed.
-</p>
-<h2>Talking it up and adding AI</h2>
-<p>Sunbird's app is now in this "open beta" and available on the Google Play Store where you can easily search for it. We looked at it before and we're not going to do it again as there is no real need.
-</p>
-<p><em>AppleInsider</em> is not going to give the link to something it so strongly advises against.
-</p>
-<p>Still, according to the company, "more than 181,000 people" signed up to the closed beta. Figures for Android adoption vary widely, but one <a href="https://www.tekrevol.com/blogs/android-vs-ios-statistics/">2026 source</a> puts the figure at 155 million Americans.
-</p>
-<p>So Sunbird has what it might call potential for growth, and to get there, it is of course going to add AI. The only thing more sure of AI being in an app today is it being promised to come tomorrow.
-</p>
-<p>Consequently, Sunbird Intelligence is coming at some unspecified date later in 2026. It will summarize messages you've missed, presumably through being away rather than technical problems.
-</p>
-<p>It will also, in some way, help users draft a reply, given how hard it is to write a short message or tap an emoji.
-</p>
-<p>Look, you have to applaud a company for keeping on trying even when Apple has removed any real need for it's product. You have to applaud that Sunbird keeps on rising like a phoenix when other similar apps <a href="https://appleinsider.com/articles/23/11/18/nothing-kills-imessage-bridge-because-it-profoundly-violated-user-privacy-security">have failed forever</a>.
-</p>
-<p>But this is an app that isn't needed. It's an app that exposes your data to a third party. And it's an app that even the makers can't always get to install correctly.
-</p>
-<p>Other than that, it's fine.</p>
-<h2>William Gallagher</h2>
-<h3>Apple Historian &amp; Senior Editor</h3>
-<p><a href="https://appleinsider.com/editor/william+gallagher">William Gallagher has 30 years of experience between the BBC and AppleInsider discussing Apple technology. Outside of AppleInsider, he's best known for writing Doctor Who radio dramas for BBC/Big Finish, and is the De...</a></p>
-<h2>More Ways to Read AppleInsider</h2>
-<h2>Comments</h2>
-<p>Apple promised to open the iMessage protocol.  Apple lied.</p>
-<p>This shouldn't be necessary at all.  There should be open source third party iMessage clients.</p>
-<p><a href="https://forums.appleinsider.com/discussion/comment/3506913#Comment_3506913">https://forums.appleinsider.com/discussion/comment/3506913#Comment_3506913</a></p>
-<p>Steve Jobs said FaceTime would be open sourced, but that came as a surprise to the engineering team, and it was pushed aside and forgotten. iMessage was never promised to be open source.</p>
-<p>The level of security around iMessage would make it incredibly difficult to open source. The issue isn't so much about whether or not third-party iMessage apps would work on iPhone, but how you could execute such a system on Android with the same level of security.</p>
-<p>iMessage and end-to-end encryption on Apple devices work so well because they control the whole stack. Bring iMessage to Android and you're introducing vulnerabilities and failure points outside of Apple's control. iMessage is no longer 100% safe unless you're talking to an iPhone user, then you're back to square one where green bubbles are treated differently.</p>
-<p>I think it's fine that iMessage is unique to Apple platforms. There are cross-platform alternatives if you need them.</p>]]></content:encoded>
-<media:content url="https://media.appleinsider.com/gallery/68474-144262-000-lead-Sunbird-xl.jpg" medium="image" />
 </item>
 <item>
 <title>Apple's loaded M5 Max MacBook Pro with 40-core GPU is $500 off right now</title>
@@ -3083,247 +2853,5 @@ https://sfstandard.com/2026/07/29/san-francisco-hotel-booking-lawsuit-city-attor
 <p>That's something to consider if someone can't decide among each brand's models based on hardware merits alone, and they want that mobile utility instead of having to wait and download it to their laptop or desktop.</p>]]></content:encoded>
 <media:content url="https://photos5.appleinsider.com/gallery/65614-142019-djiosmo360rvw5-xl.jpg" medium="image" />
 </item>
-<item>
-<title>iPhones and home hardware: What to expect from Apple for the rest of 2026</title>
-<link>https://appleinsider.com/articles/26/08/03/iphones-and-home-hardware-what-to-expect-from-apple-for-the-rest-of-2026</link>
-<guid isPermaLink="true">https://appleinsider.com/articles/26/08/03/iphones-and-home-hardware-what-to-expect-from-apple-for-the-rest-of-2026</guid>
-<pubDate>Mon, 03 Aug 2026 13:46:55 GMT</pubDate>
-<description><![CDATA[<p>
-                            Mon Aug 03 2026, 09:46 AM EDT
-                            ·
-                            10 minute read
-                        </p>
-<p title="John Ternus will be CEO in time for Apple&apos;s fall events. Expect a lot of screen time from him - Image Credit: Apple">John Ternus will be CEO in time for Apple's fall events. Expect a lot of screen time from him - Image Credit: Apple</p>]]></description>
-<content:encoded><![CDATA[<h2>News</h2>
-<p>
-                            Mon Aug 03 2026, 09:46 AM EDT
-                            ·
-                            10 minute read
-                        </p>
-<p title="John Ternus will be CEO in time for Apple&apos;s fall events. Expect a lot of screen time from him - Image Credit: Apple">John Ternus will be CEO in time for Apple's fall events. Expect a lot of screen time from him - Image Credit: Apple</p>
-<p>August is upon us, and there is about a month left until Apple's end-of-year product releases start. The iPhone 18 Pro and folding iPhone are coming, but there's a lot more on the docket.
-</p>
-<p>Apple has a historically busy schedule of announcements, launches, and major events, and 2026 is no exception. However, while the first half has already been packed with launches, the second half of the year is always busier.
-</p>
-<p>This is chiefly because Apple tends to hold many of its major launches in the fall, making it the busiest period of its calendar.
-</p>
-<p>While the bulk of events that matter will be product launch-related, not everything will be hardware being prepped for sale.
-</p>
-<p>Though Apple's very regular with its scheduling, it doesn't telegraph specific dates far in advance for most events. However, it's not hard to make an educated guess where appropriate.
-</p>
-<p>What follows is a schedule of when you can expect important events to occur before 2027 arrives, and what should emerge from them.
-</p>
-<h2>September 1: John Ternus becomes CEO</h2>
-<p><a href="https://appleinsider.com/inside/john-ternus" title="John Ternus">John Ternus</a> will inherit the role of CEO on <a href="https://appleinsider.com/articles/26/04/20/john-ternus-in-as-apple-ceo-cook-becoming-apple-executive-chairman">September 1</a>. He will be taking over the position from <a href="https://appleinsider.com/inside/tim-cook" title="Tim Cook">Tim Cook</a>, who will move to a new executive chairman role.
-</p>
-<p>This is the only event on this list with a definitive date, as Apple indicated it was transitioning between CEOs back in April. The aim was to give the company a smooth leadership change, giving Ternus and the entire organization a chance to prepare and gradually shift over.
-</p>
-<p>John Ternus [left] with Tim Cook [right] - Image Credit: Apple</p>
-<p>While this isn't an event that will directly impact consumers in the short term, it is a major one for Apple itself. The CEO sets the tone for future projects and product changes, affecting the company years down the road.
-</p>
-<p>Based on the long tenures of <a href="https://appleinsider.com/inside/steve-jobs" title="Steve Jobs">Steve Jobs</a> and Tim Cook, Ternus can easily be in the same role for a decade or more.
-</p>
-<p>Apple has already made some changes to its structure, including quite a few <a href="https://appleinsider.com/articles/26/04/21/new-apple-hardware-chief-wastes-little-time-in-introducing-five-underlings">hardware team</a> alterations. But there will probably be <a href="https://appleinsider.com/articles/26/04/22/report-new-apple-ceos-biggest-challenge-will-be-retiring-leadership-regular-churn">more reshuffles</a> in the months after Ternus takes the reins, as he sets things up for his turn in the saddle.
-</p>
-<h2>Early September: iPhone 18 Pro and iPhone 18 Pro Max</h2>
-<p>The first major event in the Ternus era will happen only a few weeks later. It is also the biggest one for the company.
-</p>
-<p>Typically held in the second week of September, the event is known for Apple's <a href="https://appleinsider.com/inside/iphone" title="iPhone">iPhone</a> launches. It's a major presentation, since it will show off the <a href="https://appleinsider.com/inside/iphone-18" title="iPhone 18">iPhone 18</a> generation and other hardware.
-</p>
-<p>The main launches will be the iPhone 18 Pro and iPhone 18 Pro Max, but <a href="https://appleinsider.com/articles/26/07/31/2027-iphone-18-rumors-smaller-dynamic-island-12gb-or-9gb-ram-2nm-a20-chip">crucially not</a> the iPhone 18. Apple is expected to be <a href="https://appleinsider.com/articles/26/01/30/iphone-18-split-launch-strategy-is-about-more-than-marketing">splitting up</a> the iPhone 18 generation, delaying the non-Pro models until early 2027.
-</p>
-<p>It's a decent idea, as it does allow Apple to concentrate its promotion on the higher-end devices that tend to sell more in the holiday shopping season. It also reduces the strain on the Apple supply chain as mass production for those models can happen later.
-</p>
-<p>iPhone 17 Pro in a case. The iPhone 18 Pro should look very similar. </p>
-<p>The iPhone 18 Pro line will be largely similar to the <a href="https://appleinsider.com/inside/iphone-17" title="iPhone 17">iPhone 17 Pro</a> generation in terms of construction and appearance. The camera bump could be a <a href="https://appleinsider.com/articles/26/07/07/iphone-18-pros-camera-bump-could-be-a-little-bit-thicker">tiny bit bigger</a> this time around, but aside from new colorways like <a href="https://appleinsider.com/articles/26/04/17/cosmic-orange-is-out-dark-cherry-rumored-to-be-new-hot-iphone-18-pro-color">dark cherry</a>, they should be practically the same.
-</p>
-<p>As usual for Apple, the main changes are internal, with the use of the <a href="https://appleinsider.com/articles/26/06/29/a20-pro-leak-shows-how-iphone-18-pro-will-run-faster-and-cooler">A20 Pro chip</a> bringing massive performance improvements. Some schematic leaks also show that changes to the packaging will help the chip run cooler for longer, which will reduce the instances of thermal throttling.
-</p>
-<p>The C2 modem is also a good bet for the inbound model.
-</p>
-<p>Sadly, another good bet is a change in cost, as the iPhone temporarily escaped the <a href="https://appleinsider.com/articles/26/06/25/apple-confirms-price-nikes-across-macs-ipads-and-more">June price rises</a> of other products. Analysts believe that the iPhone 18 Pro will be more expensive this fall, possibly costing consumers <a href="https://appleinsider.com/articles/26/07/31/huge-300-iphone-18-pro-price-hike-rumored-as-chip-shortage-bites">up to $300</a> more than the iPhone 17 Pro counterparts.
-</p>
-<h2>Early September: iPhone Fold/Ultra</h2>
-<p>The <a href="https://appleinsider.com/inside/iphone-fold" title="iPhone Fold">iPhone Fold</a> has been a long-rumored device, but it seems that it will be <a href="https://appleinsider.com/articles/26/06/08/ios-27-code-has-clear-signs-that-a-folding-iphone-is-coming-soon">finally making</a> its debut this fall. That is, barring anything that can delay it further.
-</p>
-<p>Even if there is a delay, it could just be one that affects the ship date, not the unveiling. It's possible that Apple can introduce it in September but actually put it on sale <a href="https://appleinsider.com/articles/26/07/05/folding-iphone-may-launch-in-september-good-luck-getting-it-before-2027">months later</a>.
-</p>
-<p>This happened for the iPhone X, which was shown in September 2017 but couldn't be preordered until late October and then actually shipped in early November.
-</p>
-<p>As for what to actually expect from the iPhone Fold, you could end up calling it something different for a start.
-</p>
-<p>There have been rumors of Apple potentially using the <a href="https://appleinsider.com/articles/26/04/27/ultra-branding-expanding-iphone-fold-oled-macbook-may-join">Ultra name</a> for the iPhone Fold, following its usage elsewhere in its empire.
-</p>
-<p>A render of what the iPhone Fold could look like - Image Credit: AppleInsider</p>
-<p>You can expect it to have two displays, with an external 5.3-inch screen always in view. The internal screen can be unfolded, book style, to reveal a 7.8-inch display.
-</p>
-<p>One that will be supported by a hinge that has been the subject of <a href="https://appleinsider.com/articles/26/05/19/seamless-hinges-for-the-iphone-fold-may-be-copied-by-rivals-and-by-apple-itself-for-an-ipad-fold">so many rumors</a> of delays and technical difficulties. The screen, too, has also been talked about a lot, as Apple is keen to eliminate any creasing issues with the model.
-</p>
-<p>Around the back, on the side that doesn't have a screen, is anticipated to be a dual-camera system with 48MP sensors. Both displays should also have front-facing versions, with the exterior using a punch-hole style and the internal potentially using an under-display system.
-</p>
-<p>Powering the arrangement will be an A20 Pro chip, as you would expect for such a high-end device.
-</p>
-<p>As for how much it will cost, early estimates put it at between $2,000 and $2,500, later rising to as high as $2,900. With the current RAM and SSD crisis in play, it'll probably be at the higher end of that range.
-</p>
-<h2>Early September: Apple Watch Series 12, Apple Watch Ultra</h2>
-<p>When it comes to things Apple could launch alongside the iPhone, it's best to look at items that could either be bought as an accessory to it. Or at least for things that can be announced quickly.
-</p>
-<p>The Apple Watch Series 12 fits both categories neatly, for better or for worse.
-</p>
-<p>For a start, the rumors are that Apple isn't going to make a <a href="https://appleinsider.com/articles/26/05/17/apple-watch-series-12-probably-wont-get-a-major-update">major update</a> to the design at all. Externally, it will seem that the Apple Watch Series 12 will resemble the <a href="https://appleinsider.com/inside/apple-watch-series-11" title="Apple Watch Series 11">Apple Watch Series 11</a> closely.
-</p>
-<p>Apple Watch Series 11, which the Series 12 will probably look like. </p>
-<p>While the most plausible rumor involves borrowing <a href="https://appleinsider.com/articles/26/05/03/apple-watch-ultras-modular-face-is-being-simplified-for-watchos-27">a watch face</a> from the <a href="https://appleinsider.com/inside/apple-watch-ultra" title="Apple Watch Ultra">Apple Watch Ultra</a>, it may still gain some new hardware. One leaker said in early July that there would be a <a href="https://appleinsider.com/articles/26/07/03/apple-watch-series-12-may-get-new-health-sensor-in-its-band">new health sensor</a> added via a fluoroelastomer band.
-</p>
-<p>We don't know what that sensor will do, but it could involve <a href="https://appleinsider.com/articles/20/06/02/muscle-sensing-apple-watch-band-could-detect-gestures-more-accurately">muscle movement</a> sensing or <a href="https://appleinsider.com/articles/21/08/17/apple-may-finally-include-hydration-sensor-in-an-apple-watch-band">hydration</a>.
-</p>
-<p>The other <a href="https://appleinsider.com/inside/apple-watch" title="Apple Watch">Apple Watch</a> update could be for the Apple Watch Ultra, which would bring it up to <a href="https://appleinsider.com/articles/26/05/18/apple-watch-ultra-could-get-first-major-redesign-for-version-4">version 4</a>. The rumors have pointed to a redesign and the inclusion of new sensors, albeit again without saying what they are for.
-</p>
-<p>As it stands, new Apple Watch models are always a decent bet for a September event launch.
-</p>
-<h2>Early September: iPad mini 8</h2>
-<p>You can usually expect there to be some form of <a href="https://appleinsider.com/inside/ipad" title="iPad">iPad</a> representation in the fall. However, with rumors saying an iPad or <a href="https://appleinsider.com/inside/ipad-air" title="iPad Air">iPad Air</a> refresh won't arrive <a href="https://appleinsider.com/articles/26/07/16/ipad-ipad-air-refreshes-are-coming-but-not-until-2027">until 2027</a>, the honor falls to the <a href="https://appleinsider.com/inside/ipad-mini" title="iPad mini">iPad mini</a>.
-</p>
-<p>The eighth-generation model is anticipated to have a <a href="https://appleinsider.com/articles/26/07/16/ipad-mini-with-oled-release-imminent-pricing-unclear">major glow-up</a> this time around. Alongside the usual upgrade to <a href="https://appleinsider.com/articles/25/12/16/ipad-mini-8-now-believed-to-use-the-iphone-18-a20-pro-chip">a new chip</a>, possibly the A20, it'll have a new display, too.
-</p>
-<p>iPad mini, sans OLED</p>
-<p>Repeated rumors and even a <a href="https://appleinsider.com/articles/25/08/14/ipad-mini-8-to-feature-oled-a19-pro">code leak</a> have indicated that OLED is on the way for Apple's smallest iPad. The rumors say it will have an 8.4-inch LTPS rear panel with hybrid OLED.
-</p>
-<p>However, while it will have a brighter and fancier screen, it won't necessarily be Pro level. It is reportedly having a refresh rate capped at 60Hz, meaning it won't have ProMotion.
-</p>
-<p>Like any other hardware coming out in 2026, pricing for the model is unclear. The current non-OLED model was increased to $599, and an OLED edition will certainly put the price even higher.
-</p>
-<h2>September/October: Smart home push</h2>
-<p>One thing that has repeatedly been discussed throughout the year is the smart home, and Apple's plan for it. However, while a bunch of things are expected to surface this fall, it may not necessarily take place in September.
-</p>
-<p>Apple often spreads its launches in successive months, with an October event frequently being used for overflow hardware. Rarely, this also includes November.
-</p>
-<p>Since the September event will include the significant iPhone Fold launch, which will consume a lot of event time, there's a probability that <a href="https://appleinsider.com/articles/26/03/09/apples-smart-home-hub-delayed-again-because-updating-siri-is-hard">repeatedly-delayed</a> smart home items will be pushed to October.
-</p>
-<p>As for what Apple will announce as part of this push, there are <a href="https://appleinsider.com/articles/26/07/28/apples-smart-home-hardware-refresh-draws-closer-with-siri-ai-smarts">three products</a> rumored to be on the way.
-</p>
-<p>An early artist's rendition of the Home Hub - Image Credit: AppleInsider</p>
-<p>The simplest update is the <a href="https://appleinsider.com/inside/homepod-mini" title="HomePod mini">HomePod mini</a>. Expected to cost consumers $129, <a href="https://appleinsider.com/articles/26/05/31/apple-tv-homepod-mini-updates-are-waiting-for-siris-upgrade">its refinements</a> will chiefly be processing-based, so it can support <a href="https://appleinsider.com/inside/siri" title="Siri">Siri</a> AI.
-</p>
-<p>The second is <a href="https://appleinsider.com/inside/apple-tv" title="Apple TV">Apple TV</a>, as in the hardware not the streaming service. Again, little is known about the change, aside from a $199 price tag and that all-important chip update for Siri AI.
-</p>
-<p>The element that everyone's eyes will be focused on is the tentatively-named Home Hub. An <a href="https://appleinsider.com/articles/25/07/13/apple-smart-home-hub-release-pushed-back-to-2026">all-new device</a>, it's said to consist of a seven-inch-square screen on a half-dome base, and will be the center of your smart home network.
-</p>
-<p>It may not even be a table-based screen, either. There's been talk of it having magnetic capabilities, possibly to attach to different mounting points.
-</p>
-<p>The display will facilitate communications with others, including an in-home intercom system and <a href="https://appleinsider.com/inside/facetime" title="FaceTime">FaceTime</a>. It will also be used for notifications, scheduling with calendars and reminders, and other household tasks.
-</p>
-<p>It'll naturally handle smart home devices, too, acting as a central control point for everything from <a href="https://appleinsider.com/inside/homepod" title="HomePod">HomePods</a> to smart locks, to security cameras.
-</p>
-<h2>September: Operating Systems</h2>
-<p>Since <a href="https://appleinsider.com/inside/wwdc" title="WWDC">WWDC</a>, Apple has been holding developer beta testing of its next generation of operating systems. Since it releases them to coincide with the introduction of new products, you can anticipate the beta tests ending and the public getting to use the final releases.
-</p>
-<p>While there are many changes in <a href="https://appleinsider.com/inside/ios-27" title="iOS 27">iOS 27</a>, <a href="https://appleinsider.com/inside/ipados-27" title="iPadOS 27">iPadOS 27</a>, <a href="https://appleinsider.com/inside/macos-27" title="macOS 27">macOS 27</a> Golden Gate, <a href="https://appleinsider.com/inside/watchos-27" title="watchOS 27">watchOS 27</a>, <a href="https://appleinsider.com/inside/tvos-27" title="tvOS 27">tvOS 27</a>, and <a href="https://appleinsider.com/inside/visionos-27" title="visionOS 27">visionOS 27</a>, the biggest is Siri AI. Apple's major overhaul of its digital assistant, designed to compete with other AI rivals like ChatGPT and Claude.
-</p>
-<h2>September/October: AirPods Pro, sans cameras</h2>
-<p>An obvious accessory to the iPhone would be <a href="https://appleinsider.com/inside/airpods" title="AirPods">AirPods</a>. Therefore, you would expect there to be a new version launching alongside the new smartphone models.
-</p>
-<p>However, this is where things get a bit difficult to determine.
-</p>
-<p>Apple has long been working on <a href="https://appleinsider.com/inside/airpods-pro" title="AirPods Pro">AirPods Pro</a> with cameras, providing users with AI features similar to smart glasses, complete with computer vision elements. Except without the frames and the glass.
-</p>
-<p>AirPods Pro in a charging case</p>
-<p>While Apple was close to getting them out the door in 2026, the <a href="https://appleinsider.com/articles/26/05/07/airpods-pro-with-cameras-probably-arent-arriving-in-2026-but-they-are-close">production schedule</a> works against that from happening. It's more likely they will come out in 2027.
-</p>
-<p>That said, there has been a report <a href="https://appleinsider.com/articles/26/07/03/airpods-with-cameras-show-up-in-ios-27-beta-code">or two</a> indicating <a href="https://appleinsider.com/articles/26/08/02/apple-still-plans-a-camera-free-airpods-pro-update-for-2026">another product</a> in the range may see a launch in 2026. On August 2, it was claimed that a device codenamed B790 was further along in development at the same time as the camera-equipped versions.
-</p>
-<p>That particular model is expected to launch as early as 2026, if claims about Apple's internal roadmap are true.
-</p>
-<p>As for what this other model will bring, it's probably going to be a general improvement to the current versions, rather than adding cameras to the mix.
-</p>
-<h2>October: MacBook Pro</h2>
-<p>Apple habitually makes its <a href="https://appleinsider.com/inside/mac" title="Mac">Mac</a> announcements separate from the iPhone ones, usually in a second event one month later. While there is always a small chance of a September launch, it's more likely for an October event to occur.
-</p>
-<p>The most likely introduction in the <a href="https://appleinsider.com/inside/macbook-pro" title="MacBook Pro">MacBook Pro</a> lineup is a new entry-level <a href="https://appleinsider.com/inside/14-inch-macbook-pro" title="14-inch MacBook Pro">14-inch MacBook Pro</a>. There's not a massive amount to expect here, except for the usual spec-bump update to the M6 generation.
-</p>
-<p>Expect a very short M6 MacBook Pro generation. </p>
-<p>It's an interesting release, since the M6 is believed to have a very short generational lifespan. Apple's apparently keen to move to the M7 quickly, which promises <a href="https://appleinsider.com/articles/26/06/25/apple-will-skip-m6-pro-max-chips-in-favor-of-m7-ai-alternatives">massive AI processing</a> improvements.
-</p>
-<p>As for how short, <a href="https://appleinsider.com/articles/26/07/01/apple-readying-four-ipad-pro-models-entry-m7-macbook-pro-for-early-2027-release">Apple's teeing up</a> multiple MacBook Pro and <a href="https://appleinsider.com/inside/ipad-pro" title="iPad Pro">iPad Pro</a> launches for early 2027 using the M7 range.
-</p>
-<p>There is a small chance of something exciting happening in the MacBook Pro space, though. The <a href="https://appleinsider.com/articles/26/07/28/oled-macbook-pro-will-get-displays-exclusively-from-samsung">long-awaited shift</a> to an OLED MacBook Pro is finally going to happen as part of a major refresh.
-</p>
-<p>However, we don't know if that will take place in late 2026, or if it will slip to early 2027. The conventional wisdom on this is for it to arrive in the fall, coinciding with other major launches.
-</p>
-<h2>October: Desktop Macs</h2>
-<p>There's a strong possibility of a <a href="https://appleinsider.com/inside/mac-mini" title="Mac mini">Mac mini</a> update this fall, since it is usually associated with the low-end chip updates of <a href="https://appleinsider.com/inside/apple-silicon" title="Apple Silicon">Apple Silicon</a>. Rumors in <a href="https://appleinsider.com/articles/26/03/08/a-long-wait-new-imac-colors-mac-mini-update-expected-much-later-in-2026">March</a> also said it was a possibility, as well as a <a href="https://appleinsider.com/inside/macos-tahoe" title="macOS Tahoe">macOS Tahoe</a> leak shared with <em>AppleInsider</em> hinting at a <a href="https://appleinsider.com/articles/25/10/10/macos-tahoe-itself-has-leaked-2025-and-2026-mac-release-timelines">summer update</a>.
-</p>
-<p>That summer refresh has probably translated into a fall update. As usual, you can probably expect a spec-bump update to M6 for the Mac mini.
-</p>
-<p>An M5 Ultra Mac Studio is a very real possibility</p>
-<p>There have also been <a href="https://appleinsider.com/articles/26/03/08/a-long-wait-new-imac-colors-mac-mini-update-expected-much-later-in-2026">rumblings</a> about an update to the <a href="https://appleinsider.com/inside/24-inch-imac" title="24-inch iMac">24-inch iMac</a>. Again, a spec-bump update to M6 is anticipated, as well as some color changes.
-</p>
-<p>One product that may not make it to M6 just yet is the <a href="https://appleinsider.com/inside/mac-studio" title="Mac Studio">Mac Studio</a>. <a href="https://appleinsider.com/articles/26/07/22/upgraded-mac-mini-mac-studio-and-oled-imac-are-all-in-the-pipeline">In July</a>, Apple was reportedly testing the Mac Studio with M5 Max and M5 Ultra chips.
-</p>
-<p>If true, it would bring a fitting end to the M5 generation.</p>
-<h2>Malcolm Owen</h2>
-<h3>Product Comparison Expert</h3>
-<p><a href="https://appleinsider.com/editor/malcolm+owen">Based in South Wales, Malcolm Owen has written about tech since 2012, previously for Electronista and MacNN. His interests include photography, magic tricks, game development, and annoying his cats. </a></p>
-<h2>More Ways to Read AppleInsider</h2>
-<h2>Comments</h2>
-<p>I think one thing we <em>do</em> know about both the Home Hub and the next Apple TV is that they won't be running local vision transformer models, or probably even lesser classifiers, because Apple has already signaled it wants you paying for iCloud to process your home security footage. People who want to keep it all local, or subscription-free, will need to find a different option.</p>
-<p><a href="https://forums.appleinsider.com/discussion/comment/3506822#Comment_3506822">https://forums.appleinsider.com/discussion/comment/3506822#Comment_3506822</a></p>
-<p>I think it's tough because if Apple made the hardware powerful enough to process those images locally, it would be much more expensive, plus if models improved beyond the capability of the local hardware, you're quickly out of date from the available server-side models. The end result would be the same: you'd pass the info to the cloud.</p>
-<p>Compute costs aren't zero, so Apple is tying the costs to higher iCloud subscriptions the same way it has for HomeKit Secure Video. It's stuff you'd already be paying for in the ecosystem, and it didn't go up in price. If you aren't paying for it now, chances are, you still won't. It's more of a bonus for the user that is already paying.</p>
-<p>HomeKit Secure Video is the way to go. I know multiple people that bought Blink cameras amazed at how cheap they were only to find the annual subscription is $300. AI analysis home security is more expensive depending on where you go. Sure, you could DIY a system and train a local model using something like Home Assistant and OpenClaw but that's taking some various security risks.</p>
-<p>With HomeKit Secure Video and a 2TB iCloud subscription (or Apple One Premier) I get unlimited cameras and 4K recordings, AI video analysis, and encrypted video that is only accessible by me. I doubt there is anything close to that value elsewhere on the market.</p>]]></content:encoded>
-<media:content url="https://media.appleinsider.com/gallery/68429-144197-66449-139348-John-Ternus-outside-xl-xl.jpg" medium="image" />
-</item>
-<item>
-<title>Inside Beats lab: Outside Apple, because AirPods can't do everything well</title>
-<link>https://appleinsider.com/articles/26/07/31/inside-beats-lab-outside-apple-because-airpods-cant-do-everything-well</link>
-<guid isPermaLink="true">https://appleinsider.com/articles/26/07/31/inside-beats-lab-outside-apple-because-airpods-cant-do-everything-well</guid>
-<pubDate>Fri, 31 Jul 2026 18:36:00 GMT</pubDate>
-<description><![CDATA[<p>Apple has spent 12 years strengthening <a href="https://appleinsider.com/inside/beats-by-dre">Beats</a> without folding it into AirPods, preserving a separate brand that can reach Android users, compete at lower prices, and sell products that wouldn't fit under Apple's own name. Here's what it looks like inside the Beats lab.
-</p>
-<p>The strategy emerged from a rare look inside Beats' Culver City operations. Executives described how the company combines its original design and marketing culture with Apple's engineering resources.
-</p>]]></description>
-<content:encoded><![CDATA[<p>Apple has spent 12 years strengthening <a href="https://appleinsider.com/inside/beats-by-dre">Beats</a> without folding it into AirPods, preserving a separate brand that can reach Android users, compete at lower prices, and sell products that wouldn't fit under Apple's own name. Here's what it looks like inside the Beats lab.
-</p>
-<p>The strategy emerged from a rare look inside Beats' Culver City operations. Executives described how the company combines its original design and marketing culture with Apple's engineering resources.
-</p>
-<p>Apple completed its <a href="https://appleinsider.com/articles/14/08/01/apple-officially-closes-on-3b-purchase-of-beats-headphones-streaming-service">$3 billion</a> acquisition in 2014. Many employees who worked at Beats before the deal remain with the company.
-</p>
-<p>Matthew Costello, Apple's vice president of hardware engineering, told <em>TechRadar</em> that Beats was developed to complement AirPods rather than duplicate them. The company sells colorful headphones, fitness-focused earbuds and lower-cost products with support for both Apple and Google platforms.
-</p>
-<p>"We took this bet that we would be sort of the dual ecosystem play," <a href="https://www.techradar.com/audio/headphones/exclusive-we-ask-the-impossible-of-these-guys-and-they-figure-it-out-i-saw-inside-beats-labs-to-see-how-12-years-with-apple-changed-the-company-and-why-the-testing-the-tuning-the-science-behind-the-fit-and-the-sound-is-the-hidden-secret">Costello said</a>. "And we said, Google and Apple together."
-</p>
-<p>The approach expanded Beats' potential customer base and gives Apple access to buyers who might never consider AirPods. Beats Studio Buds and other products support native features on Android, while AirPods remain designed primarily around Apple devices and services.
-</p>
-<p>Beats also operates at prices Apple has largely avoided with its own audio products. <a href="https://appleinsider.com/articles/24/06/18/beats-solo-buds-review-apples-best-wireless-audio-bargain-yet">Solo Buds</a> cost $79.99 and use a case without a battery, charging electronics or a pairing button, allowing Beats to make the smallest earbud case either company has shipped.
-</p>
-<p>The buds instead provide up to 18 hours of listening from a single charge. A mechanical switch inside the case wakes the earbuds when the lid opens, preserving the familiar pairing experience without adding electronics to the enclosure.
-</p>
-<p>The design illustrates why maintaining Beats as a separate operation matters. Apple can apply its manufacturing standards and engineering expertise while allowing Beats to make unconventional trade-offs that would be harder to introduce under the AirPods name.
-</p>
-<p>Beats products now go through the same reliability, environmental, wireless and quality testing used for Apple hardware. Its engineering facility includes five anechoic chambers, laboratories dedicated to studying human ears, a listening room and equipment used to examine returned products for recurring failures.
-</p>
-<p>"We've learned so much from the teams up in Cupertino, and leveraged the core technologies, the processes, the discipline," Costello said.
-</p>
-<p>Apple's influence has also changed the Beats sound. Costello acknowledged that early products were "super boomy," while newer models have moved toward a more balanced profile shaped by customer feedback and improved testing.
-</p>
-<p>Beats has retained control over its product shapes, colors and cultural partnerships. The company maintains a small customization team that produces one-off headphones for athletes, musicians and celebrities while experimenting with materials and finishes that can later reach retail products.
-</p>
-<p>The transparent Beats Studio Buds Plus followed that path. Engineers originally made a clear prototype to inspect the product's internal construction, but the marketing team pushed to turn the engineering sample into something customers could buy.
-</p>
-<p>The positive response influenced the later Solo Buds line, which launched with another transparent option. Beats executives described the <a href="https://www.techradar.com/audio/headphones/exclusive-we-ask-the-impossible-of-these-guys-and-they-figure-it-out-i-saw-inside-beats-labs-to-see-how-12-years-with-apple-changed-the-company-and-why-the-testing-the-tuning-the-science-behind-the-fit-and-the-sound-is-the-hidden-secret">custom operation</a> as an incubator where concepts developed for individual partners can eventually become commercial products.
-</p>
-<p>Beats' value to Apple extends beyond headphones. The company has moved into iPhone cases and <a href="https://appleinsider.com/articles/25/04/15/beats-cables-adds-more-color-to-apples-connectivity-accessory-lineup">charging cables</a>, and executives said it could explore additional categories as long as the products reflect Beats' emphasis on design, color and culture.
-</p>
-<p>The difference in style protects Apple from stretching its own brand too far. Beats can support Android, use louder styling, pursue athlete-focused designs and compete at lower prices without changing what customers expect from AirPods.
-</p>
-<p>Apple also benefits from Beats' approach to marketing. The company has repeatedly placed unannounced products with prominent athletes before formally introducing them, including a forthcoming pair of <a href="https://appleinsider.com/articles/26/06/15/beats-continues-world-cup-tease-of-its-mystery-headphones">over-ear headphones</a> spotted at sporting events.
-</p>
-<p>Beats hasn't announced the product's name, price or release date. An FCC filing has confirmed that the headphones are real, but predictions about their features or competitive position remain speculative.
-</p>
-<p>Apple's ownership strategy is clear from what Beats has become. The company didn't keep the Beats brand just for its logo or celebrity ties, but turned it into a capable hardware business that reaches customers, price points and platforms beyond AirPods.
-</p>
-<p>Beats still looks and behaves like a separate brand from the outside. Underneath, Apple provides much of the technology and discipline that allow it to remain one.</p>]]></content:encoded>
-<media:content url="https://media.appleinsider.com/gallery/68426-144192-Beats-Solo3-xl.jpg" medium="image" />
-</item>
-</channel></rss>
+</channel>
+</rss>
