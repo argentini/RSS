@@ -300,6 +300,13 @@ Exclude content that functions as metadata, navigation, promotion, attribution, 
 
 Do not treat bylines, datelines alone, topic chips, entity widgets, sidebar cards, sign-offs, or recommendation modules as article body.
 
+Before scoring article-body candidates, remove nodes from the candidate tree when the node or any ancestor has:
+- Interactive roles such as `menu`, `menuitem`, `button`, `navigation`, `complementary`, `dialog`, `tablist`, or `search`.
+- UI attributes such as `aria-label` or `data-testid` containing share, toolbar, menu, button, follow, tag, topic, widget, related, newsletter, promo, ad, sidebar, footer, header, or navigation.
+- Class names containing share, toolbar, menu, button, follow, tag, topic, widget, related, newsletter, promo, ad, sidebar, footer, header, or navigation.
+
+Do this pruning before measuring body length. Removed nodes must not contribute to `description`, `content:encoded`, meaningful-character counts, or prose-quality checks.
+
 Reject a full article page when it contains any of:
 
 - Enable JavaScript and cookies to continue
@@ -340,7 +347,7 @@ Preserve useful article HTML where possible:
 - Links.
 - Code blocks.
 
-Remove:
+Remove before output and before body-quality scoring:
 
 - Navigation.
 - Site headers.
@@ -354,6 +361,11 @@ Remove:
 - Related-post sections.
 - Comment sections.
 - Social-sharing widgets.
+- Text-size controls.
+- Toolbar controls.
+- Menus and menu items.
+- Buttons and button groups.
+- SVG icons and icon labels.
 - Forms.
 - Scripts.
 - Styles.
@@ -364,6 +376,7 @@ Remove:
 - Company, stock, person, place, or topic widgets.
 - Follow buttons and follow-list items.
 - Suggested-topic sections.
+- Tag lists and topic chips.
 - Newsletter signup prompts.
 - Media-player controls and captions unrelated to article text.
 - Image licensing and rights notices.
@@ -377,12 +390,15 @@ Reject an extracted post body when any condition is true:
 
 - It contains anti-bot, CAPTCHA, verification, login, subscription, payment-wall, or cookie-wall text.
 - It contains fewer than 200 meaningful characters after stripping HTML.
-- It lacks a coherent sequence of narrative article paragraphs.
+- It has fewer than two coherent prose paragraphs.
+- Prose paragraph text is not the dominant text after stripping HTML.
+- It contains more utility controls, links, labels, list items, buttons, menus, SVGs, or widgets than prose paragraphs.
 - It lacks normal article-content signals such as multiple prose paragraphs, article markup, or structured article metadata.
 - It substantially matches a generic challenge or access-control template.
 - Its extracted title does not reasonably match the candidate title.
 - It is mostly navigation, promotion, comments, forms, sidebar text, metadata, topic labels, entity lists, follow actions, credits, or boilerplate.
 - It is mostly short disconnected fragments rather than continuous story, analysis, review, or argument text.
+- Its first meaningful HTML block is a toolbar, share menu, topic list, entity widget, related module, or credit line.
 
 Prefer full-post content only when it passes these checks.
 
@@ -486,17 +502,19 @@ Before replacing {RSS path}:
 6. Confirm no item exceeds {Maximum post age}.
 7. Confirm publication dates parse successfully.
 8. Confirm the feed has at least one valid item.
-9. Confirm no obvious navigation, ad, or paywall text appears in article bodies.
+9. Confirm no obvious navigation, ad, toolbar, widget, or paywall text appears in article bodies.
 10. Confirm no article body contains challenge, CAPTCHA, login, payment-wall, cookie-wall, or browser-verification text.
 11. Confirm `description` and `content:encoded` do not contain entity-encoded HTML tag markers such as `&lt;a`, `&lt;br`, `&lt;div`, `&lt;p`, `&lt;img`, `&lt;strong`, `&lt;/`, or `&gt;`.
 12. Confirm every article body contains at least 200 meaningful characters after stripping HTML.
-13. Confirm every article body is mostly coherent narrative prose from the primary reading flow.
-14. Confirm no article body is mostly labels, names, buttons, topics, metadata, credits, ads, promos, footer text, sidebar text, or short disconnected fragments.
-15. Save validation results to:
+13. Confirm every article body has at least two coherent prose paragraphs from the primary reading flow.
+14. Confirm prose paragraph text dominates utility text after stripping HTML.
+15. Confirm no article body or description contains utility markup such as `<button`, `<svg`, `role="menu"`, `role="menuitem"`, `aria-label="Share`, or `data-testid` values containing toolbar, share, follow, tag, widget, menu, or button.
+16. Confirm no article body is mostly labels, names, buttons, topics, metadata, credits, ads, promos, footer text, sidebar text, or short disconnected fragments.
+17. Save validation results to:
 
 `{Temporary workspace}/validation.json`
 
-16. Confirm listing freshness coverage:
+18. Confirm listing freshness coverage:
     - Read `{Temporary workspace}/listing-inventory.json`.
     - Confirm every in-age inventory candidate is included in the candidate RSS or rejected in `{Temporary workspace}/posts.json`.
     - Treat dated URL slugs like `/2026-07-11/` and visible relative timestamps like `2 hours ago`, `Yesterday`, or `N days ago` as listing-date evidence.
