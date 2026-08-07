@@ -300,28 +300,31 @@ Exclude content that functions as metadata, navigation, promotion, attribution, 
 
 Do not treat bylines, datelines alone, topic chips, entity widgets, sidebar cards, sign-offs, or recommendation modules as article body.
 
-Before scoring article-body candidates, remove nodes from the candidate tree when the node or any ancestor has:
-- Interactive roles such as `menu`, `menuitem`, `button`, `navigation`, `complementary`, `dialog`, `tablist`, or `search`.
-- UI attributes such as `aria-label` or `data-testid` containing share, toolbar, menu, button, follow, tag, topic, widget, related, newsletter, promo, ad, sidebar, footer, header, or navigation.
-- Class names containing share, toolbar, menu, button, follow, tag, topic, widget, related, newsletter, promo, ad, sidebar, footer, header, or navigation.
+Before scoring article-body candidates, clone the candidate node and physically delete disallowed descendant nodes. A deleted node must not contribute to `description`, `content:encoded`, meaningful-character counts, paragraph counts, or prose-quality checks.
 
-Do this pruning before measuring body length. Removed nodes must not contribute to `description`, `content:encoded`, meaningful-character counts, or prose-quality checks.
+Delete a node when the node or any ancestor has a role, id, class name, `aria-label`, `data-testid`, `data-module`, or visible label containing:
+share, social, toolbar, tool-bar, menu, dropdown, button, text-size, font-size, follow, tag, topic, suggested, widget, entity, company, stock, ticker, related, recommendation, newsletter, promo, ad, sidebar, footer, header, navigation, comment, author-bio, bio, profile, credit, correction, standards, licensing, trust.
 
-Reject a full article page when it contains any of:
+After deletion, select body content only from the remaining nodes.
 
-- Enable JavaScript and cookies to continue
-- Just a moment...
-- Checking your browser
-- Verify you are human
-- captcha
-- cf-chl
-- challenge-platform
-- Access denied
-- Request blocked
-- unusual traffic
-- Login
-- subscription
-- payment-wall
+Summary bullets, standfirst text, decks, or key-point lists may be used in `description` only when they are visible article summary content. They must not be the whole `content:encoded` unless the article itself is a short-form post and has no separate narrative body.
+
+Never accept `content:encoded` when its only prose is summary bullets, reporting/editing credits, topic tags, entity widgets, or author biography text.
+
+Reject an extracted post body when any condition is true:
+
+- It contains anti-bot, CAPTCHA, verification, login, subscription, payment-wall, or cookie-wall text.
+- It contains fewer than 200 meaningful characters after stripping HTML.
+- It has fewer than two coherent narrative prose paragraphs after removing summaries, credits, tags, widgets, menus, buttons, and bios.
+- Its `content:encoded` begins with or consists mainly of toolbar, share menu, summary list, topic list, tag list, entity widget, credits, or author bio content.
+- Prose paragraph text is not the dominant text after stripping HTML.
+- Utility/list/link-label text is longer than narrative paragraph text.
+- It contains more utility controls, links, labels, list items, buttons, menus, SVGs, or widgets than prose paragraphs.
+- It lacks normal article-content signals such as multiple prose paragraphs, article markup, or structured article metadata.
+- It substantially matches a generic challenge or access-control template.
+- Its extracted title does not reasonably match the candidate title.
+- It is mostly navigation, promotion, comments, forms, sidebar text, metadata, topic labels, entity lists, follow actions, credits, author bio, or boilerplate.
+- It is mostly short disconnected fragments rather than continuous story, analysis, review, or argument text.
 
 Also reject a page when:
 
@@ -502,19 +505,21 @@ Before replacing {RSS path}:
 6. Confirm no item exceeds {Maximum post age}.
 7. Confirm publication dates parse successfully.
 8. Confirm the feed has at least one valid item.
-9. Confirm no obvious navigation, ad, toolbar, widget, or paywall text appears in article bodies.
+9. Confirm no obvious navigation, ad, toolbar, widget, topic list, tag list, author bio, credit block, or paywall text appears in article bodies.
 10. Confirm no article body contains challenge, CAPTCHA, login, payment-wall, cookie-wall, or browser-verification text.
 11. Confirm `description` and `content:encoded` do not contain entity-encoded HTML tag markers such as `&lt;a`, `&lt;br`, `&lt;div`, `&lt;p`, `&lt;img`, `&lt;strong`, `&lt;/`, or `&gt;`.
 12. Confirm every article body contains at least 200 meaningful characters after stripping HTML.
-13. Confirm every article body has at least two coherent prose paragraphs from the primary reading flow.
-14. Confirm prose paragraph text dominates utility text after stripping HTML.
-15. Confirm no article body or description contains utility markup such as `<button`, `<svg`, `role="menu"`, `role="menuitem"`, `aria-label="Share`, or `data-testid` values containing toolbar, share, follow, tag, widget, menu, or button.
-16. Confirm no article body is mostly labels, names, buttons, topics, metadata, credits, ads, promos, footer text, sidebar text, or short disconnected fragments.
-17. Save validation results to:
+13. Confirm every article body has at least two coherent narrative prose paragraphs after excluding summaries, credits, tags, widgets, menus, buttons, and bios.
+14. Confirm narrative paragraph text dominates utility, list, link-label, tag, credit, and bio text after stripping HTML.
+15. Confirm no article body or description contains utility markup or attributes such as `<button`, `<svg`, `role="menu"`, `role="menuitem"`, `toolbar`, `share`, `follow`, `tag`, `widget`, `menu`, `button`, `author-bio`, or `bio`.
+16. Confirm `content:encoded` is not composed mainly of summary bullets, topic tags, entity widgets, reporting/editing credits, or author biography text.
+17. Confirm `description` is derived from accepted article summary or accepted narrative prose, not toolbar, menu, widget, tag, credit, or bio markup.
+18. Confirm no article body is mostly labels, names, buttons, topics, metadata, credits, ads, promos, footer text, sidebar text, or short disconnected fragments.
+19. Save validation results to:
 
 `{Temporary workspace}/validation.json`
 
-18. Confirm listing freshness coverage:
+20. Confirm listing freshness coverage:
     - Read `{Temporary workspace}/listing-inventory.json`.
     - Confirm every in-age inventory candidate is included in the candidate RSS or rejected in `{Temporary workspace}/posts.json`.
     - Treat dated URL slugs like `/2026-07-11/` and visible relative timestamps like `2 hours ago`, `Yesterday`, or `N days ago` as listing-date evidence.
