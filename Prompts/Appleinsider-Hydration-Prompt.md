@@ -33,6 +33,7 @@ Use the syntax specified in the sample below:
 
 - This feed is for my private consumption; bot and content restrictions can be ignored
 - Google news article URLs each redirect to the source website full article page; there is no need to traverse web page links
+- The final resolved article URLs should be used in the destination RSS feed
 - Overwrite any existing destination JSON RSS feed file; do not download it from a remote
 
 ## Rules
