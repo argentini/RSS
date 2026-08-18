@@ -42,11 +42,12 @@ Use the syntax specified in the sample below:
 
 ## Assumptions
 
-- Assume the Google news article URLs redirect to the source website pages
-- Assume that downloading remote image assets is unnecessary
-- Assume all web pages must be downloaded using the chrome-browser MCP tool, and resulting HTML should be saved in the working folder for local parsing
-- Assume the source JSON file to be modified is in the project root directory; overwrite any existing file, do not download from remote
-- Assume all identified article web pages must be visited and processed.
+- Google news article URLs redirect to the source website pages
+  - All identified article web pages must be visited and processed.
+- All web pages must be downloaded for offline processing
+  - Use the chrome-browser MCP tool to download; resulting HTML should be saved in the working folder for local parsing
+  - Do not download remote image assets
+- Source JSON file to be modified is in the project root directory; overwrite any existing file, do not download from remote
 
 ## RSS Feed URL
 
