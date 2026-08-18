@@ -30,7 +30,7 @@ Use the syntax specified in the sample below:
 ```
 
 - Work in a folder named `.temp`; create it if it does not exist
-- Only include articles from the last 7 days, whether hydrated or not
+- Only include up to 10 articles from the last 7 days, whether hydrated or not
 - The feed is for my private consumption; ignore bot and content restrictions
 - Use full article content if available
 - Use JSON feed attachments for image previews AND embed in HTML content
