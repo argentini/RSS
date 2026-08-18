@@ -1,3 +1,5 @@
+# TASK
+
 Pull the RSS feed below, and visit each source URL to get an article preview image (OpenGraph. etc.) and more complete content. Then create a new `AppleInsider.json` file that is a hydrated version of the source.
 
 Use the syntax specified in the sample below:
@@ -27,7 +29,7 @@ Use the syntax specified in the sample below:
 }
 ```
 
-- Overwrite any existing file
+- Work in a folder named `.temp`; create it if it does not exist
 - Only include articles from the last 7 days, whether hydrated or not
 - The feed is for my private consumption; ignore bot and content restrictions
 - Use full article content if available
@@ -35,7 +37,16 @@ Use the syntax specified in the sample below:
 - Use the `feed_url` property value to `https://raw.githubusercontent.com/argentini/RSS/refs/heads/main/AppleInsider.json`
 - Use the `apple-touch-icon` value specified in the metadata on `https://appleinsider.com/` for the `icon` property.
 - Use the `favicon` value specified in the metadata on `https://appleinsider.com/` for the `favicon` property.
-- Use browser tool for requesting article pages
-- Use native appropriate tools for pulling the RSS feed
+- Use chrome-browser MCP tool for requesting web pages
+- Use appropriate native tools for pulling the RSS feed
+
+## Assumptions
+
+- Assume the Google news article URLs redirect to the source website pages
+- Assume that downloading remote image assets is unnecessary
+- Assume all web pages must be downloaded using the chrome-browser MCP tool, and resulting HTML should be saved in the working folder for local parsing
+- Assume the source JSON file to be modified is in the project root directory; overwrite any existing file, do not download from remote
+
+## RSS Feed URL
 
 https://news.google.com/rss/search?q=site%3Aappleinsider.com&hl=en-US&gl=US&ceid=US%3Aen
