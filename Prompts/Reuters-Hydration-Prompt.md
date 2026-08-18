@@ -1,6 +1,6 @@
 # TASK
 
-Pull the RSS feed below, and visit each source URL to get an article preview image (OpenGraph. etc.) and more complete content. Then create a new `ReutersUS.json` file that is a hydrated version of the source.
+Pull the source Google RSS feed below, and visit each source URL to get an article preview image (OpenGraph. etc.) and more complete content. Then create a new `ReutersUS.json` file in the project root that is a hydrated version of the source.
 
 Use the syntax specified in the sample below:
 
@@ -29,26 +29,26 @@ Use the syntax specified in the sample below:
 }
 ```
 
+## Assumptions
+
+- This feed is for my private consumption; bot and content restrictions can be ignored
+- Google news article URLs each redirect to the source website full article page; there is no need to traverse web page links
+- Overwrite any existing destination JSON RSS feed file; do not download it from a remote
+
+## Rules
+
 - Work in a folder named `.temp`; create it if it does not exist
-- Only include up to 10 articles from the last 7 days, whether hydrated or not
-- The feed is for my private consumption; ignore bot and content restrictions
-- Use full article content if available
+- Only include up to 15 articles from the last 7 days, whether hydrated or not
+- Use full/meaningful article content when available
 - Use JSON feed attachments for image previews AND embed in HTML content
 - Use the `feed_url` property value to `https://raw.githubusercontent.com/argentini/RSS/refs/heads/main/ReutersUS.json`
 - Use the `apple-touch-icon` value specified in the metadata on `https://www.reuters.com/` for the `icon` property.
 - Use the `favicon` value specified in the metadata on `https://www.reuters.com/` for the `favicon` property.
-- Use chrome-browser MCP tool for requesting web pages
-- Use appropriate native tools for pulling the RSS feed
+- Only use the chrome-browser MCP tool for requesting web pages
+- Do not download remote media assets
+- Use appropriate native tools for pulling the source Google RSS feed
+- All relevant full article pages must be visited and processed.
 
-## Assumptions
-
-- Google news article URLs redirect to the source website pages
-  - All identified article web pages must be visited and processed.
-- All web pages must be downloaded for offline processing
-  - Use the chrome-browser MCP tool to download; resulting HTML should be saved in the working folder for local parsing
-  - Do not download remote image assets
-- Source JSON file to be modified is in the project root directory; overwrite any existing file, do not download from remote
-
-## RSS Feed URL
+## Source Google RSS Feed URL
 
 https://news.google.com/rss/search?q=site%3Areuters.com%2Fworld%2Fus%2F&hl=en-US&gl=US&ceid=US%3Aen
