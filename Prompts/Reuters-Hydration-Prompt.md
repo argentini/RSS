@@ -49,7 +49,7 @@ Use the syntax specified in the sample below:
 - Do not download remote media assets
 - Use appropriate native tools for pulling the source Google RSS feed
 - All relevant full article pages must be visited and processed.
-- When pages are unavailable just skip them and move on to the next URL; do not try to perform web searches or otherwise find the missing page.
+- When pages are unavailable just skip them and move on to the next URL; do not try to perform web searches or guess URLs or otherwise find the missing page.
 
 ## Source Google RSS Feed URL
 
