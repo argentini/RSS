@@ -44,19 +44,18 @@ Use the syntax specified in the sample below:
 }
 ```
 
-## Assumptions
+## Rules
 
 - This feed is for my private consumption; bot and content restrictions can be ignored
 - Google news article URLs each redirect to the source website full article page; there is no need to traverse web page links
 - The final resolved article URLs should be used in the destination RSS feed
 - Overwrite any existing destination JSON RSS feed file; do not download it from a remote
 
-## Rules
-
 - Work in a folder named `.temp`; create it if it does not exist
-- Only include up to 15 articles from the last 7 days, whether hydrated or not
+- Only include the newest 15 articles, whether hydrated or not
 - Use full/meaningful article content when available
 - Use JSON feed attachments for image previews AND embed in HTML content
+- Use the first full article image as the preview
 - Use the `feed_url` property value to `https://raw.githubusercontent.com/argentini/RSS/refs/heads/main/AppleInsider.json`
 - Use the `apple-touch-icon` value specified in the metadata on `https://appleinsider.com/` for the `icon` property.
 - Use the `favicon` value specified in the metadata on `https://appleinsider.com/` for the `favicon` property.
