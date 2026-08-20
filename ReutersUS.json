@@ -7,48 +7,186 @@
    "favicon": "https://www.reuters.com/pf/resources/images/reuters/favicon/tr_fvcn_kinesis_32x32_v2.ico?d=376&mxId=00000000",
    "items": [
       {
-         "title": "US judge allows Trump to end thousands of Ethiopians' deportation protections",
-         "date_published": "2026-08-18T14:50:00Z",
-         "date_modified": "2026-08-18T15:13:00Z",
-         "id": "https://www.reuters.com/world/us-judge-allows-trump-end-thousands-ethiopians-deportation-protections-2026-08-18/",
-         "url": "https://www.reuters.com/world/us-judge-allows-trump-end-thousands-ethiopians-deportation-protections-2026-08-18/",
-         "external_url": "https://www.reuters.com/world/us-judge-allows-trump-end-thousands-ethiopians-deportation-protections-2026-08-18/",
+         "title": "US unemployment claims dipped last week, showing stability in job market",
+         "date_published": "2026-08-20T12:39:00Z",
+         "date_modified": "2026-08-20T12:39:00Z",
+         "id": "https://www.reuters.com/world/us/us-weekly-jobless-claims-dip-latest-week-2026-08-20/",
+         "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-dip-latest-week-2026-08-20/",
+         "external_url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-dip-latest-week-2026-08-20/",
          "authors": [
-            "Nate Raymond"
+            "Dan Burns"
          ],
-         "content_html": "<p>BOSTON, Aug 18 (Reuters) - A federal judge allowed U.S. President Donald Trump's administration on Tuesday to end legal protections granted to over 5,000 Ethiopians that have allowed them to live and work in the United States.</p><p>U.S. District Judge Brian Murphy in Boston lifted the last judicial block on the U.S. Department of Homeland Security terminating the Temporary Protected Status designation for individual countries after the U.S. Supreme Court allowed the administration in June to end similar protections for thousands of people from Haiti and Syria.</p><p>The Supreme Court's ruling, backed by its 6-3 conservative majority, curtailed the ability of judges to review DHS efforts under Trump to end TPS designations for 13 countries that provided humanitarian immigration protection to eligible migrants from those nations. James Percival, DHS' general counsel, hailed the decision in a social media post. \"All TPS terminations are in effect!\" he wrote.</p><h2>LIVES AT RISK: ADVOCACY GROUP</h2><p>The termination of Ethiopia's TPS designation had been challenged by several Ethiopian nationals and the advocacy group African Communities Together, which expressed disappointment in Tuesday's ruling. \"The crisis in Ethiopia is still ongoing, and this decision puts the lives of thousands of Ethiopians living in the U.S. at severe risk,\" said Diana Konaté, the group's deputy executive director of policy and advocacy.</p><p>TPS under federal law is available to people whose home countries have experienced natural disasters, armed conflicts or other extraordinary events. It provides eligible migrants with work authorization and temporary protection from deportation. Former Democratic President Joe Biden's administration first granted Ethiopians already in the United States that status beginning in 2022, citing the need to protect the African nation's citizens from armed conflict and humanitarian suffering.</p><p>DHS under former Homeland Security Secretary Kristi Noem announced in December it would end those protections on the grounds that conditions no longer posed a serious threat to Ethiopians returning safely. Murphy blocked DHS' action in April, saying it disregarded statutory procedures and provided a \"pretextual\" rationale for ending the protections.</p><p>After the Supreme Court ruled, Murphy issued a new order that continued to temporarily block the end of the Ethiopians' TPS while he considered whether to continue to halt DHS' action on grounds that the Supreme Court's ruling did not address. Those arguments included that the 1990 statute creating TPS gave only the attorney general authority to extend or terminate the deportation protections, not DHS.</p><p>Judges in similar cases involving people from South Sudan, Myanmar and Somalia have rejected that argument in recent days, and Murphy did as well on Tuesday. He dismissed that and other claims, but he said he would allow the plaintiffs to continue to litigate over whether DHS's action was motivated by racial or national origin animus in violation of the U.S. Constitution's Fifth Amendment.</p><p>Reporting by Nate Raymond in Boston; Editing by Aurora Ellis and Rod Nickel</p>",
-         "attachments": []
+         "content_html": "<p>WASHINGTON, Aug 20 (Reuters) - The number of Americans filing claims for unemployment benefits slipped last week, suggesting that the labor market remains stable despite a surprise drop in employment in July and leaving the Federal Reserve in position to keep its focus on containing inflation. Initial claims for state unemployment benefits fell 6,000 to a seasonally adjusted 206,000 for the week ended August 15 from the prior week's upwardly revised 212,000, the Labor Department said on Thursday. Economists polled by Reuters had forecast 210,000 claims for the latest week.</p><p>Some economists had expected an uptick in claims from states affected hardest by recent wildfires, such as Oregon and Washington, but the report showed no evidence of that. Advance measures of new claims in both states fell last week. Jobless benefits claims appear for now to be anchored in the lower end of their 189,000-230,000 range for this year, indicating that layoffs remain low even if hiring is soft.</p><p>The latest level is notably lower than it was at this time in each of the last three years, emblematic of a low-hire-low-fire job market. While the U.S. shed 23,000 jobs in July, the loss was centered in local government education, and the private sector added 30,000 jobs.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/now-hiring-sign-at-business-in-encinitas/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMkhZRkFDNUJYQw%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "\"Now hiring\" sign at business in Encinitas"
+            }
+         ]
       },
       {
-         "title": "US housing market remains under pressure in July; factory output rises",
-         "date_published": "2026-08-18T12:55:00Z",
-         "date_modified": "2026-08-18T14:55:00Z",
-         "id": "https://www.reuters.com/world/us/us-single-family-housing-starts-slide-july-2026-08-18/",
-         "url": "https://www.reuters.com/world/us/us-single-family-housing-starts-slide-july-2026-08-18/",
-         "external_url": "https://www.reuters.com/world/us/us-single-family-housing-starts-slide-july-2026-08-18/",
+         "title": "US debt crosses $40 trillion threshold after doubling under Trump and Biden",
+         "date_published": "2026-08-19T20:17:00Z",
+         "date_modified": "2026-08-19T20:17:00Z",
+         "id": "https://www.reuters.com/world/us-debt-crosses-40-trillion-threshold-after-doubling-under-trump-biden-2026-08-19/",
+         "url": "https://www.reuters.com/world/us-debt-crosses-40-trillion-threshold-after-doubling-under-trump-biden-2026-08-19/",
+         "external_url": "https://www.reuters.com/world/us-debt-crosses-40-trillion-threshold-after-doubling-under-trump-biden-2026-08-19/",
          "authors": [
-            "Reuters"
+            "David Lawder",
+            "Jacob Bogage"
          ],
-         "content_html": "<p>Aug 18 (Reuters) - U.S. single-family homebuilding fell sharply in July to the lowest in more than three-and-a-half-years and contract signings for purchases of existing homes also slid in the latest signal that the housing market remains under pressure from higher mortgage rates and economic uncertainty from the Iran war.</p><p>The manufacturing sector, meanwhile, continues to ride the coattails of the artificial intelligence build out, with a Federal Reserve measure of factory output hitting its highest in more than four years last month, led by production gains for high-tech equipment and industrial and construction supplies.</p><p>Single-family housing starts, which account for the bulk of homebuilding, dropped 9.9% last month to a seasonally adjusted annual rate of 808,000 units, the Commerce Department's Census Bureau said on Tuesday. That was the lowest since November 2022.</p><p>Single-family homebuilding slid 15.7% year-on-year in July. Permits for future construction of single-family homes — an indicator of future new construction activity — rose 2.5% last month to a rate of 894,000 units.</p><p>\"Until mortgage rates decline and allow builders to unload currently completed homes or those under construction, we expect home builders to remain hesitant to make significant investments in new projects,\" Nationwide Senior Economist Ben Ayers said.</p><p>Total new home starts — including multifamily structures such as apartments — fell 12.4% to 1.239 million in July. Economists polled by Reuters had estimated an annualized rate of 1.35 million.</p><h2>AI BOOM HELPS FACTORIES</h2><p>The weak housing market stands in contrast to a robust factory sector, buoyed yet again by hefty AI investment activity that is driving demand for high-tech equipment and the supplies needed to build and run massive data centers.</p><p>The Fed reported its manufacturing output index rose 0.2% in July on the heels of an upwardly revised 0.3% increase in June. The index was at its highest since April 2022.</p><p>\"The usual suspects, including AI-linked industries, drove industrial production, and particularly durable goods manufacturing, higher,\" Bernard Yaros, lead U.S. economist at Oxford Economics, said in a note.</p><p>Semiconductor output rose 2.4% and computer and peripheral tech gear production rose 1.8%. Oxford's Yaros expects the momentum to broaden out and lift other sectors beyond high tech.</p><p>Defense production also rose 1.8% amid continued high spending from the U.S.-led war with Iran.</p><p>Reporting By Dan Burns; Editing by Chizu Nomiyama</p>",
-         "attachments": []
+         "content_html": "<p>WASHINGTON, Aug 19 (Reuters) - Total U.S. debt has topped $40 trillion for the first time, the Treasury Department said on Wednesday, drawing fresh warnings that a fiscal crisis is brewing as ballooning costs for social safety-net programs and interest payments far outstrip revenues held back by tax cuts.</p><p>The Treasury's latest daily cash and debt balances statement showed total public debt outstanding at $40.047 trillion on Tuesday, a total that includes Treasury securities held by the public of $32.266 trillion and intra-governmental debt holdings of $7.782 trillion.</p><p>The federal government's IOU has now more than doubled in less than a decade, from $19.95 trillion when President Donald Trump was sworn in for the first time in January 2017. Roughly one-third of that increase occurred during two years of frantic government borrowing to fund the COVID-19 pandemic responses undertaken by Trump and former President Joe Biden.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/the-department-of-the-treasury/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMlFCTUE5UEdINg%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "The US Department of the Treasury Building in Washington, D.C."
+            }
+         ]
       },
       {
-         "title": "Florida, Alaska primaries offer early clues to battle for control of Congress",
-         "date_published": "2026-08-18T10:05:00Z",
-         "date_modified": "2026-08-18T13:05:00Z",
-         "id": "https://www.reuters.com/world/us/florida-alaska-primaries-offer-early-clues-battle-control-congress-2026-08-18/",
-         "url": "https://www.reuters.com/world/us/florida-alaska-primaries-offer-early-clues-battle-control-congress-2026-08-18/",
-         "external_url": "https://www.reuters.com/world/us/florida-alaska-primaries-offer-early-clues-battle-control-congress-2026-08-18/",
+         "title": "Trump the builder carves his legacy in stone as pressures mount",
+         "date_published": "2026-08-19T19:58:00Z",
+         "date_modified": "2026-08-19T19:58:00Z",
+         "id": "https://www.reuters.com/world/us/trump-builder-carves-his-legacy-stone-pressures-mount-2026-08-19/",
+         "url": "https://www.reuters.com/world/us/trump-builder-carves-his-legacy-stone-pressures-mount-2026-08-19/",
+         "external_url": "https://www.reuters.com/world/us/trump-builder-carves-his-legacy-stone-pressures-mount-2026-08-19/",
          "authors": [
-            "Andy Sullivan"
+            "Steve Holland"
          ],
-         "content_html": "<p>Aug 18 (Reuters) - Voters in Florida and Alaska go to the polls on Tuesday in primary contests that could provide clues about which party will emerge with control of the House of Representatives and the Senate in November's midterm elections.</p><p>Alaska's unusual Senate primary, in particular, could serve as a preview of the most competitive Senate races, as incumbent Republican Senator Dan S. Sullivan and Democratic challenger Mary Peltola will be on the same nonpartisan ballot. Democrats need to pick up at least four seats from Republicans to win control of the 100-seat chamber, and analysts view Alaska as one of their strongest opportunities.</p><p>Florida's primary election, by contrast, is likely to bolster Republicans' chances of maintaining control of the House, as it will be the first election since the state approved a new district map that is expected to net them up to four seats.</p><h2>FLORIDA'S NEW MAP</h2><p>Florida's new map, pushed through by the Republican-controlled legislature this spring, could leave the state with a House delegation of 24 Republicans and only four Democrats, in a state that Republican President Donald Trump won by 13 percentage points in 2024.</p><p>States usually redraw their congressional maps only at the beginning of every decade, to reflect census results. But several have redistricted over the past year at Trump's urging to shore up the Republican majority, prompting some Democratic-led states to redraw their own maps in response.</p><p>The reshuffle has forced some incumbent Democrats to scramble for new footing. Representative Debbie Wasserman Schultz, first elected to Congress in 2004, is running for a new seat in Florida's 20th congressional district, centered in Broward County, after her existing seat was redrawn to favor Republicans.</p><h2>SHOWDOWN IN THE NORTH</h2><p>In the Alaska Senate race, some opinion polls show Democratic candidate Peltola, a moderate who formerly held the state's sole House seat, leading Sullivan — an unusual result for a state that typically backs Republican candidates. Sullivan also must contend with another Republican candidate with the same name.</p><p>The top four candidates in the nonpartisan primary advance to the November election, which could cause further headaches for Senator Dan S. Sullivan if challenger Dan J. Sullivan makes the cut.</p><p>Reporting by Andy Sullivan in Washington; Editing by Michael Learmonth and Matthew Lewis</p>",
-         "attachments": []
+         "content_html": "<p>WASHINGTON, Aug 19 (Reuters) - With Iran diplomacy stalled, financial markets uneasy and his approval rating at another low point, President Donald Trump reverted to familiar territory on Wednesday, leading reporters on a tour of White House construction projects he hopes will cement his legacy.</p><p>The former real estate developer spent about 30 minutes guiding reporters across the South Lawn, touting a new granite helipad, a $400 million ballroom and other renovations he said would modernize the historic complex while preserving it for future generations.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/construction-of-a-helipad-at-the-white-house-continues-in-washington/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMlZSTUEzWVVTMg%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "Construction of a helipad at the White House continues in Washington"
+            }
+         ]
       },
       {
-         "title": "Meta targeted children to boost Facebook, Instagram use, lawyer says as landmark trial begins",
+         "title": "US could cut key tariffs as part of proposed Canada deal, source says",
+         "date_published": "2026-08-19T16:19:00Z",
+         "date_modified": "2026-08-19T16:19:00Z",
+         "id": "https://www.reuters.com/world/us-canada-trade-negotiators-meet-after-trump-sets-new-tariff-deadline-2026-08-19/",
+         "url": "https://www.reuters.com/world/us-canada-trade-negotiators-meet-after-trump-sets-new-tariff-deadline-2026-08-19/",
+         "external_url": "https://www.reuters.com/world/us-canada-trade-negotiators-meet-after-trump-sets-new-tariff-deadline-2026-08-19/",
+         "authors": [
+            "David Shepardson",
+            "Promit Mukherjee"
+         ],
+         "content_html": "<p>WASHINGTON/OTTAWA, Aug 19 (Reuters) - The U.S. and Canada are closing in on a trade deal in which Washington could cut some contentious tariff rates on Canadian-built cars and trucks, and key metals, a source familiar with the matter said on Wednesday.</p><p>The proposed deal was expected to cut top-line tariff rates on Canadian-built cars and trucks to 15% from the existing 25%. Industry executives say that rate threatens to kill Canadian auto manufacturing. The 15% top-line autos tariff also would come before deductions for the value of U.S.-produced content, bringing the effective rate substantially lower.</p><p>The proposed deal would also halve the top-line tariff rates on Canadian steel and aluminum to 25%, the source said.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/trump-annouces-three-day-pause-on-new-50-us-tariffs-on-canadian-goods/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMlIxTkFOQzBOMw%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "A log boom on the Fraser River, as U.S. President Donald Trump announced a three-day pause on a new round of 50% U.S. tariffs on Canadian goods"
+            }
+         ]
+      },
+      {
+         "title": "US warns Siemens devices can be hacked amid fears Iran is breaching water plants",
+         "date_published": "2026-08-19T16:00:00Z",
+         "date_modified": "2026-08-19T16:00:00Z",
+         "id": "https://www.reuters.com/world/us-warns-siemens-devices-can-be-hacked-amid-fears-iran-is-breaching-water-plants-2026-08-19/",
+         "url": "https://www.reuters.com/world/us-warns-siemens-devices-can-be-hacked-amid-fears-iran-is-breaching-water-plants-2026-08-19/",
+         "external_url": "https://www.reuters.com/world/us-warns-siemens-devices-can-be-hacked-amid-fears-iran-is-breaching-water-plants-2026-08-19/",
+         "authors": [
+            "A.J. Vicens"
+         ],
+         "content_html": "<p>Aug 19 (Reuters) - Several U.S. government agencies warned that unidentified hackers are trying to breach devices made by Siemens that are used to monitor and operate water facilities and other critical infrastructure systems, according to a cybersecurity advisory published on Wednesday.</p><p>The advisory describes an \"active threat\" to all Siemens S7 Series programmable logic controllers across multiple critical infrastructure sectors, including manufacturing, energy, water and wastewater, chemical, food and agriculture facilities.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/illustration-shows-siemens-logo/dGFnOnJldXRlcnMuY29tLDIwMjQ6bmV3c21sX1JDMlhENUE2M1BNOA%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "Illustration shows Siemens logo"
+            }
+         ]
+      },
+      {
+         "title": "Treasury Secretary Bessent doubles US long-bond buybacks in the face of surging yields",
+         "date_published": "2026-08-19T13:41:00Z",
+         "date_modified": "2026-08-19T13:41:00Z",
+         "id": "https://www.reuters.com/world/us-treasury-double-sizes-some-debt-buyback-operations-least-4-billion-2026-08-19/",
+         "url": "https://www.reuters.com/world/us-treasury-double-sizes-some-debt-buyback-operations-least-4-billion-2026-08-19/",
+         "external_url": "https://www.reuters.com/world/us-treasury-double-sizes-some-debt-buyback-operations-least-4-billion-2026-08-19/",
+         "authors": [
+            "David Lawder",
+            "Tatiana Bautzer"
+         ],
+         "content_html": "<p>WASHINGTON/NEW YORK, Aug 19 (Reuters) - The U.S. Treasury announced on Wednesday support measures for long-duration bonds, stepping in to staunch, at least temporarily, an upward march in yields that had unnerved global investors.</p><p>The move to double buyback sizes for long-duration debt came after a major bond selloff pushed the 30-year Treasury yield to its highest level since 2007 amid worries of an imminent escalation in the U.S.-Israeli war with Iran and rising concerns over a deteriorating U.S. fiscal picture.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/illustration-shows-united-states-department-of-the-treasury-logo-and-us-flag/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMjY0RUFFOUFJVw%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "United States Department of the Treasury logo and U.S. flag"
+            }
+         ]
+      },
+      {
+         "title": "Trump put thousands of soldiers on Washington's streets. They seldom stop crime",
+         "date_published": "2026-08-19T10:03:00Z",
+         "date_modified": "2026-08-19T10:03:00Z",
+         "id": "https://www.reuters.com/world/us/trump-put-thousands-soldiers-washingtons-streets-they-seldom-stop-crime-2026-08-19/",
+         "url": "https://www.reuters.com/world/us/trump-put-thousands-soldiers-washingtons-streets-they-seldom-stop-crime-2026-08-19/",
+         "external_url": "https://www.reuters.com/world/us/trump-put-thousands-soldiers-washingtons-streets-they-seldom-stop-crime-2026-08-19/",
+         "authors": [
+            "Brad Heath"
+         ],
+         "content_html": "<p>WASHINGTON, Aug 19 (Reuters) - Well past midnight one day this spring, three police officers pulled up to a nightclub where a man was stomping on a young woman lying on the sidewalk. The officers stopped the attack and arrested him.</p><p>\"But one detail stood out to police officer Xavier Jimenez, who wrote the report: 'There was approximately 15 national guard members in the area on routine patrol who did not take any action.'</p><p>Since their arrival last August, the National Guard soldiers Trump ordered to Washington have been mentioned in only a tiny fraction -- about 1.3% -- of the criminal cases filed in the Superior Court of the District of Columbia.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersagency.com/en/licensereuterscontent/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "U.S. military members walk near the Washington Monument"
+            }
+         ]
+      },
+      {
+         "title": "DOJ issues subpoenas in probe of Alaska candidate with same name as Senate incumbent, source says",
+         "date_published": "2026-08-18T22:21:00Z",
+         "date_modified": "2026-08-18T22:21:00Z",
+         "id": "https://www.reuters.com/world/us/doj-issues-subpoenas-probe-alaska-candidate-with-same-name-senate-incumbent-2026-08-18/",
+         "url": "https://www.reuters.com/world/us/doj-issues-subpoenas-probe-alaska-candidate-with-same-name-senate-incumbent-2026-08-18/",
+         "external_url": "https://www.reuters.com/world/us/doj-issues-subpoenas-probe-alaska-candidate-with-same-name-senate-incumbent-2026-08-18/",
+         "authors": [
+            "Jasper Ward",
+            "Christian Martinez",
+            "Andrew Goudsward"
+         ],
+         "content_html": "<p>Aug 18 (Reuters) - The U.S. Department of Justice has issued subpoenas in an investigation into whether a Senate candidate in Alaska with the same name as a Republican incumbent entered the race to confuse voters, according to a source familiar with the probe.</p><p>The grand jury subpoenas are part of a federal probe into the candidacy of Dan J. Sullivan, who is running against incumbent Dan S. Sullivan, the source said.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/congressional-tribute-and-lying-in-state-for-the-honorable-donald-edwin-young/dGFnOnJldXRlcnMuY29tLDIwMjI6bmV3c21sX1JDMkdDVDlRN0ZINQ%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "Congressional Tribute and Lying in State for The Honorable Donald Edwin Young"
+            }
+         ]
+      },
+      {
+         "title": "US securities regulator proposes long-awaited crypto rules",
+         "date_published": "2026-08-18T18:48:00Z",
+         "date_modified": "2026-08-18T18:48:00Z",
+         "id": "https://www.reuters.com/world/us-sec-proposes-new-rules-crypto-assets-2026-08-18/",
+         "url": "https://www.reuters.com/world/us-sec-proposes-new-rules-crypto-assets-2026-08-18/",
+         "external_url": "https://www.reuters.com/world/us-sec-proposes-new-rules-crypto-assets-2026-08-18/",
+         "authors": [
+            "Hannah Lang",
+            "Chris Prentice"
+         ],
+         "content_html": "<p>WASHINGTON, Aug 18 (Reuters) - The U.S. Securities and Exchange Commission on Tuesday proposed a new regulatory framework for crypto assets, the first major step under U.S. President Donald Trump's administration to give the industry the tailored rules it has long pushed for.</p><p>The SEC's proposal would exempt certain crypto companies and offerings from U.S. securities rules, which should make it easier for crypto companies to issue tokens and raise money.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/illustration-shows-representation-of-cryptocurrencies/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMjJQR0FNNVNBTg%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "Illustration shows representation of cryptocurrencies"
+            }
+         ]
+      },
+      {
+         "title": "Meta rejects claims it sought to hook children to Facebook, Instagram",
          "date_published": "2026-08-18T10:03:00Z",
-         "date_modified": "2026-08-18T10:09:00Z",
+         "date_modified": "2026-08-18T10:03:00Z",
          "id": "https://www.reuters.com/world/us/meta-faces-29-state-trial-that-could-reshape-instagram-facebook-2026-08-18/",
          "url": "https://www.reuters.com/world/us/meta-faces-29-state-trial-that-could-reshape-instagram-facebook-2026-08-18/",
          "external_url": "https://www.reuters.com/world/us/meta-faces-29-state-trial-that-could-reshape-instagram-facebook-2026-08-18/",
@@ -56,87 +194,110 @@
             "Diana Novak Jones",
             "Jonathan Stempel"
          ],
-         "content_html": "<p>Aug 18 (Reuters) - Meta Platforms intentionally sought to addict children to its Facebook and Instagram platforms, a lawyer for California said on Tuesday at the start of a trial that could reshape some of the most popular apps on the planet.</p><p>A bipartisan group of 29 U.S. states is suing Meta, seeking potentially tens or hundreds of billions of dollars in penalties and changes to how Meta does business.</p><p>Four lead states — California, Colorado, Kentucky and New Jersey — accuse Meta of designing Facebook and Instagram to hook young users, fueling anxiety, depression and even suicide, and misleading consumers about the platforms' safety. Jurors will hear claims by all 29 states that Meta violated federal law by improperly collecting and using personal data of children while they used its platforms.</p><p>Megan O'Neill, a deputy attorney general for California, told the eight-person jury in Oakland, California, that Meta's business model was to \"hook the users, hold them for as long as they can, harvest their data, and then hide the truth from the public.\" \"It worked especially well for kids,\" she added. \"Meta needed kids, and it needed to reassure the people who cared about those kids that the kids are safe.\"</p><p>Jurors are expected to issue an advisory verdict, but U.S. District Judge Yvonne Gonzalez Rogers will determine Meta's liability. If she finds Meta liable, Rogers could impose civil penalties and order changes to Facebook and Instagram.</p><p>Lawyers for Meta are expected to tell the jury that the company has made a huge effort to keep kids safe online. Meta has said it did not make misleading statements about safety, and the states failed to show their residents were harmed. Meta co-founder and CEO Mark Zuckerberg and Instagram chief Adam Mosseri are expected to testify.</p><h2>BIGGEST TEST YET</h2><p>Experts have said the trial is the biggest legal test yet of social media's effects on young users, and comes amid a broader reckoning across the globe over those effects. Meta has said penalties could be as high as $1.4 trillion, close to the Menlo Park, California-based company's market value.</p><p>Attorneys general have yet to specify penalties but said at a hearing last week the amount could be closer to $200 billion — equivalent to about three years of after-tax profit for Meta.</p><h2>CRITICS SPEAK UP AT COURTHOUSE</h2><p>In a statement before the trial, a Meta spokesperson said the states' claims are unsubstantiated and the company stands by its record of creating strong protections for teenagers. \"The AGs offer no proof anyone in their states was misled, claim benign features like having an additional Instagram account somehow harmed their residents, and attempt to penalize Meta for industry-wide challenges like age verification,\" the spokesperson said.</p><p>Some critics of Meta spoke outside the courthouse as the trial began. Among them was Mary Rodee, who said her 15-year-old son Riley Basford was victimized by a predator on Facebook before he died by suicide in 2021.</p><p>The lawsuit began in 2023, two years after whistleblower Frances Haugen testified to a U.S. Senate committee that Meta knew its products were unsafe for children and knew how to fix the problem, but did nothing in favor of pursuing higher profits.</p><p>Reporting by Diana Novak Jones; Editing by Alexia Garamfalvi and Nia Williams</p>",
-         "attachments": []
+         "content_html": "<p>Aug 18 (Reuters) - Meta Platforms rejected accusations by U.S. states that it intentionally sought to addict children to its Facebook and Instagram platforms in pursuit of profit, at the start of a trial that could reshape some of the most popular apps on the planet.</p><p>A bipartisan group of 29 U.S. states is suing Meta, seeking potentially tens or hundreds of billions of dollars in penalties and changes to how Meta does business.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/meta-faces-a-landmark-trial-in-federal-court-over-claims-from-29-states-alleging-it-improperly-captured-data-from-minors-in-oakland/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMjcxTkFJRUFUTQ%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "Meta's lawyer Paul Schmidt makes opening statements before U.S. District Judge Yvonne Gonzalez Rogers"
+            }
+         ]
       },
       {
-         "title": "Board overseeing Washington Dulles airport to vote on $19.9 billion overhaul plan",
-         "date_published": "2026-08-17T22:54:00Z",
-         "date_modified": "2026-08-18T13:54:00Z",
-         "id": "https://www.reuters.com/world/us/board-overseeing-washington-dulles-airport-vote-199-billion-overhaul-plan-2026-08-17/",
-         "url": "https://www.reuters.com/world/us/board-overseeing-washington-dulles-airport-vote-199-billion-overhaul-plan-2026-08-17/",
-         "external_url": "https://www.reuters.com/world/us/board-overseeing-washington-dulles-airport-vote-199-billion-overhaul-plan-2026-08-17/",
-         "authors": [
-            "David Shepardson"
-         ],
-         "content_html": "<p>WASHINGTON, Aug 17 (Reuters) - The board that oversees Washington Dulles airport will vote on Wednesday on a $19.9 billion overhaul plan that includes $3.75 billion to build new underground tunnels and replace slow vehicles that transport passengers across the tarmac.</p><p>The $6.2 billion reconstruction of the main terminal at the primary international airport serving the Washington region is set to begin in late 2027, the Metropolitan Washington Airports Authority said in a summary of the tentative plan posted Monday.</p><p>Construction on one new planned concourse would not be completed until at least 2039. Of the total, $4.4 billion was previously approved. President Donald Trump announced the $22 billion plan last month.</p><p>The $19.9 billion proposal to be voted on does not include a massive new parking garage and transportation center. The announcement is the latest in a series of major projects Trump has announced in and around the U.S. capital.</p><p>The plan includes 5 million square feet of new or renovated airport space. The plan, one of the largest U.S. airport overhauls ever proposed, will be largely funded through municipal bonds.</p><p>Dulles was the fastest-growing large U.S. airport last year by passenger traffic. The airport had a record year in 2025, handling 29 million total passengers, up 6.4%.</p><p>Finnish architect Eero Saarinen designed the airport's terminal building, a distinctive structure with a sloping roof that sweeps up toward the sky on opposite sides.</p><p>Reporting by David Shepardson; Editing by Mark Porter and David Gregorio</p>",
-         "attachments": []
-      },
-      {
-         "title": "US judge blocks Trump administration's plan to scrap FBI headquarters move to Maryland",
-         "date_published": "2026-08-17T21:48:00Z",
-         "date_modified": "2026-08-18T13:48:00Z",
-         "id": "https://www.reuters.com/world/us-judge-blocks-trump-administrations-plan-scrap-fbi-headquarters-move-maryland-2026-08-17/",
-         "url": "https://www.reuters.com/world/us-judge-blocks-trump-administrations-plan-scrap-fbi-headquarters-move-maryland-2026-08-17/",
-         "external_url": "https://www.reuters.com/world/us-judge-blocks-trump-administrations-plan-scrap-fbi-headquarters-move-maryland-2026-08-17/",
+         "title": "US judge allows Trump to end thousands of Ethiopians' deportation protections",
+         "date_published": "2026-08-18T14:50:00Z",
+         "date_modified": "2026-08-18T14:50:00Z",
+         "id": "https://www.reuters.com/world/us-judge-allows-trump-end-thousands-ethiopians-deportation-protections-2026-08-18/",
+         "url": "https://www.reuters.com/world/us-judge-allows-trump-end-thousands-ethiopians-deportation-protections-2026-08-18/",
+         "external_url": "https://www.reuters.com/world/us-judge-allows-trump-end-thousands-ethiopians-deportation-protections-2026-08-18/",
          "authors": [
             "Nate Raymond"
          ],
-         "content_html": "<p>Aug 17 (Reuters) - A federal judge on Monday blocked a Trump administration plan to relocate the new FBI headquarters to Washington, D.C., rather than in nearby Maryland, which had been picked in 2023 to host the building.</p><p>U.S. District Judge Theodore Chuang sided with the Democratic-led state of Maryland and Prince George's County in ruling that the administration had unlawfully scrapped a plan to construct a new FBI headquarters in Greenbelt, Maryland, and diverted money approved by Congress for that project to an alternate location, the Ronald Reagan Building in Washington.</p><p>The judge said the selection of Ronald Reagan Building violated measures passed by Congress in 2022 and 2023 that required the General Services Administration to pick from one of three short-listed sites outside of Washington. \"Notably, the text provides no conditions under which the selection could be unilaterally rescinded or switched to a nonconforming site,\" wrote Chuang, an appointee of Democratic President Barack Obama.</p><p>He said that because the administration lacked authority to pick the Ronald Reagan Building to serve as the new FBI headquarters, it likewise could not legally divert $555 million of funding approved by Congress to prepare the site for that purpose.</p><p>Maryland Attorney General Anthony Brown, a Democrat, in a statement said the ruling cleared the way for the headquarters project to return to Greenbelt. \"Congress made a promise,\" he said. \"The Trump administration tried to break it. Now, the jobs, investment, and opportunity Marylanders deserve are within reach.\"</p><p>\"This is not the first time courts have tried to undermine the administration in its goal to make government more cost-effective for American taxpayers,\" an FBI spokesperson said in a statement to Reuters.</p><p>For almost 15 years, the federal government has worked to develop plans for a new FBI headquarters and received funding from Congress for that project. The GSA in 2023 during Democratic President Joe Biden's administration picked Greenbelt. But the Trump administration scrapped those plans in July 2025 and announced plans to relocate the FBI to the existing Ronald Reagan Building.</p><p>Reporting by Nate Raymond in Boston; Editing by Cynthia Osterman and Saad Sayeed</p>",
-         "attachments": []
+         "content_html": "<p>BOSTON, Aug 18 (Reuters) - A federal judge allowed U.S. President Donald Trump's administration on Tuesday to end legal protections granted to over 5,000 Ethiopians that have allowed them to live and work in the United States.</p><p>U.S. District Judge Brian Murphy in Boston lifted the last judicial block on the U.S. Department of Homeland Security terminating the Temporary Protected Status designation for individual countries after the U.S. Supreme Court allowed the administration in June to end similar protections for thousands of people from Haiti and Syria.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/us-homeland-security-department-partial-shutdown/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMktNSkE3N0w4MA%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "US Homeland Security Department Partial Shutdown"
+            }
+         ]
       },
       {
          "title": "EXCLUSIVE: Trump approval falls to 33%, lowest of his presidency, Reuters/Ipsos poll finds",
          "date_published": "2026-08-17T18:47:00Z",
-         "date_modified": "2026-08-17T20:47:00Z",
+         "date_modified": "2026-08-17T18:47:00Z",
          "id": "https://www.reuters.com/world/us/trump-approval-falls-33-lowest-his-presidency-reutersipsos-poll-finds-2026-08-17/",
          "url": "https://www.reuters.com/world/us/trump-approval-falls-33-lowest-his-presidency-reutersipsos-poll-finds-2026-08-17/",
          "external_url": "https://www.reuters.com/world/us/trump-approval-falls-33-lowest-his-presidency-reutersipsos-poll-finds-2026-08-17/",
          "authors": [
             "Jason Lange"
          ],
-         "content_html": "<p>WASHINGTON, Aug 17 (Reuters) - President Donald Trump's approval rating fell to the lowest level of his presidency, with an overwhelming majority of Americans concerned the U.S. war with Iran will last a long time, according to a Reuters/Ipsos poll that concluded on Monday.</p><p>Just 33% of respondents in the four-day survey said they approved of Trump's performance in the White House, while 64% disapproved. Trump's approval rating, down from 35% in a poll that closed earlier this month and lower than at any point in his current term, has now tied the lowest level of his prior term reached in December 2017.</p><p>After returning to the White House in 2025 with just under half the country approving of his presidency, Trump's popularity this year took a hit after he ordered strikes on Iran alongside U.S. ally Israel. The ensuing conflict paralyzed a fifth of the global oil trade, triggering a surge in the price of gasoline that is weighing on U.S. households — and on Trump's Republican allies defending congressional majorities in November's midterm elections.</p><p>Trump, who campaigned on promises to keep inflation in check and avoid long-lasting wars, initially pledged the conflict with Iran would take a few weeks. But Iran has proved resilient and has kept the oil trade through the Strait of Hormuz largely bottled up even as the conflict has cooled.</p><p>Some 80% of Americans — including 87% of Democrats and 71% of Republicans — think U.S. involvement in Iran \"will go on for an extended period of time,\" the Reuters/Ipsos poll found. Just 16% said the conflict would likely end in a few weeks.</p><h2>TRUMP JUSTIFIES HIGH GAS PRICES</h2><p>Trump told a political rally in Garden City, New York, on Friday that paying \"a tiny little bit more for your gasoline\" is worth the cost of ensuring \"a very evil country\" could not have a nuclear weapon, one of his stated rationales for the war.</p><p>Only one in five Americans — and just half of Republicans — think the war has been worth it, the latest Reuters/Ipsos poll found. Concerns about the war and gasoline prices have Republicans nervous about their hopes of defending their slim majority in the U.S. House of Representatives.</p><p>The Republican approach to immigration has remained more popular than that of Democrats throughout Trump's term, with a sharp fall in border crossings and sustained nationwide crackdown ordered by Trump. But Republicans are losing ground amid deadly confrontations and a surge in detainees.</p><p>Some 40% of registered voters said Republicans have the better approach on immigration policy, compared to 38% who pick Democrats, according to the latest Reuters/Ipsos poll. That 2 percentage point spread is the lowest of Trump's term.</p><p>The Reuters/Ipsos poll, which was conducted online, gathered responses from 1,166 U.S. adults nationwide and had a margin of error of 3 percentage points in either direction.</p><p>Reporting by Jason Lange; editing by Scott Malone, Chizu Nomiyama and Rosalba O'Brien</p>",
-         "attachments": []
+         "content_html": "<p>WASHINGTON, Aug 17 (Reuters) - President Donald Trump's approval rating fell to the lowest level of his presidency, with an overwhelming majority of Americans concerned the U.S. war with Iran will last a long time, according to a Reuters/Ipsos poll that concluded on Monday.</p><p>Just 33% of respondents in the four-day survey said they approved of Trump's performance in the White House, while 64% disapproved. Trump's approval rating, down from 35% in a poll that closed earlier this month and lower than at any point in his current term, has now tied the lowest level of his prior term reached in December 2017.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/us-president-trump-greets-lifeguard-ryder-williams-who-saved-a-child-off-the-coast-of-santa-cruz-at-the-white-house-in-washington/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMkgwTkEwWVkwQw%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "U.S. President Donald Trump speaks as he hosts 16-year-old lifeguard Ryder Williams"
+            }
+         ]
       },
       {
-         "title": "US Supreme Court again rebuffs Trump in $5 million E. Jean Carroll case",
-         "date_published": "2026-08-17T13:41:00Z",
-         "date_modified": "2026-08-17T22:41:00Z",
-         "id": "https://www.reuters.com/world/us-supreme-court-again-rebuffs-trump-5-million-e-jean-carroll-case-2026-08-17/",
-         "url": "https://www.reuters.com/world/us-supreme-court-again-rebuffs-trump-5-million-e-jean-carroll-case-2026-08-17/",
-         "external_url": "https://www.reuters.com/world/us-supreme-court-again-rebuffs-trump-5-million-e-jean-carroll-case-2026-08-17/",
+         "title": "US housing market remains under pressure in July; factory output rises",
+         "date_published": "2026-08-18T12:55:00Z",
+         "date_modified": "2026-08-18T12:55:00Z",
+         "id": "https://www.reuters.com/world/us/us-single-family-housing-starts-slide-july-2026-08-18/",
+         "url": "https://www.reuters.com/world/us/us-single-family-housing-starts-slide-july-2026-08-18/",
+         "external_url": "https://www.reuters.com/world/us/us-single-family-housing-starts-slide-july-2026-08-18/",
          "authors": [
-            "Andrew Chung"
+            "Dan Burns"
          ],
-         "content_html": "<p>Aug 17 (Reuters) - Rebuffing President Donald Trump for a second time, the U.S. Supreme Court declined on Monday to hear his appeal of a $5 million verdict in favor of E. Jean Carroll after a jury found him liable for sexually abusing and defaming the former magazine columnist.</p><p>The justices rejected Trump's request to reconsider their previous decision in June denying his appeal of the 2023 jury verdict stemming from allegations that he raped her in the 1990s in a Manhattan department store's dressing room. Trump's lawyers contend that the trial was unfair.</p><p>The court's order was unsigned and came with no explanation. The Supreme Court rarely grants requests for reconsideration.</p><p>The justices also are weighing the Republican president's appeal of a separate $83.3 million jury verdict for defaming Carroll in 2019 during his first term as president, when he denied the claims and asserted that she lied about the accusations. Trump's lawyers in that appeal argue that presidential immunity shields him from Carroll's claims.</p><p>Trump has been battling Carroll, a former advice columnist for Elle magazine, ever since she published an excerpt from her memoir in 2019 in which she alleged that Trump had raped her around 1996 in a Bergdorf Goodman department store dressing room in Manhattan.</p><p>The case that led to the $5 million verdict concerned Trump's statements in 2022 when he called Carroll's claim a \"hoax\" and a \"con job\" in a post on social media. Jurors in that case decided in 2023 that Trump had sexually abused Carroll and defamed her, but did not find that Trump raped Carroll.</p><p>\"We are pleased that the United States Supreme Court has declined again to hear this case,\" Carroll's attorney, Roberta Kaplan, said in a statement. \"As a result, the jury's unanimous verdict that Donald Trump sexually assaulted and then defamed E. Jean Carroll is now final and cannot be challenged in any court,\" Kaplan said.</p><p>Following the Supreme Court's denial in June of Trump's appeal in the case, Carroll collected nearly $5.63 million from Trump — the original $5 million civil verdict plus interest.</p><p>Reporting by Andrew Chung in New York; Editing by Will Dunham</p>",
-         "attachments": []
+         "content_html": "<p>Aug 18 (Reuters) - U.S. single-family homebuilding fell sharply in July to the lowest in more than three-and-a-half-years and contract signings for purchases of existing homes also slid in the latest signal that the housing market remains under pressure from higher mortgage rates and economic uncertainty from the Iran war.</p><p>The manufacturing sector, meanwhile, continues to ride the coattails of the artificial intelligence build out, with a Federal Reserve measure of factory output hitting its highest in more than four years last month, led by production gains for high-tech equipment and industrial and construction supplies.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/construction-workers-during-heat-wave-in-california/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMktJRkEzVTFUUw%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "Construction workers during heat wave in California"
+            }
+         ]
       },
       {
-         "title": "Trump's 2024 grocery photo op now haunts Republicans in the midterms",
-         "date_published": "2026-08-15T10:10:00Z",
-         "date_modified": "2026-08-17T10:10:00Z",
-         "id": "https://www.reuters.com/world/us/trumps-2024-grocery-photo-op-now-haunts-republicans-midterms-2026-08-15/",
-         "url": "https://www.reuters.com/world/us/trumps-2024-grocery-photo-op-now-haunts-republicans-midterms-2026-08-15/",
-         "external_url": "https://www.reuters.com/world/us/trumps-2024-grocery-photo-op-now-haunts-republicans-midterms-2026-08-15/",
+         "title": "Washington Dulles airport gains approval for $19.9 billion overhaul",
+         "date_published": "2026-08-19T14:59:00Z",
+         "date_modified": "2026-08-19T14:59:00Z",
+         "id": "https://www.reuters.com/world/us/board-approves-199-billion-plan-overhaul-washington-dulles-airport-2026-08-19/",
+         "url": "https://www.reuters.com/world/us/board-approves-199-billion-plan-overhaul-washington-dulles-airport-2026-08-19/",
+         "external_url": "https://www.reuters.com/world/us/board-approves-199-billion-plan-overhaul-washington-dulles-airport-2026-08-19/",
          "authors": [
-            "Nathan Layne"
+            "David Shepardson"
          ],
-         "content_html": "<p>BEDMINSTER, New Jersey, Aug 15 (Reuters) - Two years after Republican presidential candidate Donald Trump staged a New Jersey press conference flanked by grocery staples to spotlight inflation under Democrats, food prices are still rising despite his pledge to bring them down.</p><p>The gap between promise and reality now looms as a vulnerability for Republicans ahead of November's midterm elections. Standing between tables piled high with fruit, beef, cereal, milk and other household staples at his Bedminster golf club on August 15, 2024, Trump blamed the Biden administration for sharp increases in groceries.</p><p>Two years on, higher gasoline and grocery prices are squeezing household budgets and turning the cost of living into the top issue for American voters. Voters now give Democrats a slight edge over Republicans in who they view as better stewards of the economy for the first time in nearly a decade, according to Reuters/Ipsos polling.</p><p>Sheila Carney, a 68-year-old Trump voter, punctuated her frustration with an expletive as she unloaded $70 worth of groceries into her car outside a supermarket not far from Trump's Bedminster club. \"This is real. He can say it's not, but it is,\" said Carney.</p><p>A Reuters analysis of 26 grocery categories tracked by the Bureau of Labor Statistics and featured in Trump's Bedminster display found prices have risen 3.4% in the first 19 months of his second term. That's less than a quarter of the pace recorded at the same point in former President Joe Biden's term, but still falls short of Trump's pledge to lower prices.</p><h2>LACK OF ENTHUSIASM</h2><p>A registered Republican, Carney said high grocery and gasoline prices due to the Iran war were among the reasons she had grown disillusioned enough to consider sitting out the midterms.</p><p>Francesco Trebbi, a public policy professor at the University of California, Berkeley, recently co-authored research finding that Trump drew stronger support in the 2024 election in counties where inflation outpaced income growth. \"I expect the same anti-incumbent shift to happen in 2026, this time possibly weakening Republicans,\" he said.</p><h2>TRUMP SUPPORT</h2><p>To be sure, presidents have limited influence over inflation, which is driven by a range of factors and more directly addressed by the Federal Reserve. And many Republicans appear willing to give Trump the benefit of the doubt, even as his tariffs and the Iran war have contributed to rising prices.</p><p>According to BLS data, egg prices have fallen nearly 40% under Trump, reflecting a market correction after avian flu-driven shortages triggered a surge that began during Biden's presidency. Yet most of the items Trump displayed at Bedminster are now pricier, some by a lot. Uncooked beef has jumped 19.2%, fresh fish and seafood 8.6%, apples 14%, and coffee nearly 23%.</p><h2>HITTING CLOSE TO HOME</h2><p>A Reuters/Ipsos poll that concluded earlier this month found Trump's net approval rating on his handling of the cost of living was at -47%, down from -6% at the start of his term. It is his weakest issue by a wide margin.</p><p>Reporting By Nathan Layne in Bedminster, New Jersey, Dan Burns in New York, and Jason Lange in Washington; editing by Ross Colvin and Alistair Bell</p>",
-         "attachments": []
+         "content_html": "<p>WASHINGTON, Aug 19 (Reuters) - The board that oversees Washington Dulles airport voted on Wednesday to approve a $19.9 billion overhaul plan that includes $3.75 billion to build new underground tunnels to replace slow vehicles that transport passengers across the tarmac.</p><p>The $6.2 billion reconstruction of the main terminal at the primary international airport serving the Washington D.C. region is set to begin in late 2027, the Metropolitan Washington Airports Authority said.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/dulles-international-airport-which-us-president-trump-has-proposed-a-22-billion-renovation-plan-in-virginia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1JDMkJWTUEzSFpYTQ%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "Dulles International Airport, which U.S. President Trump has proposed a $22 billion renovation plan"
+            }
+         ]
       },
       {
-         "title": "Trump administration to impose tariffs on drone imports, White House says",
-         "date_published": "2026-08-13T21:43:00Z",
-         "date_modified": "2026-08-14T21:43:00Z",
-         "id": "https://www.reuters.com/world/us/trump-administration-impose-tariffs-drone-imports-white-house-says-2026-08-13/",
-         "url": "https://www.reuters.com/world/us/trump-administration-impose-tariffs-drone-imports-white-house-says-2026-08-13/",
-         "external_url": "https://www.reuters.com/world/us/trump-administration-impose-tariffs-drone-imports-white-house-says-2026-08-13/",
+         "title": "US regulator approves bank charter for Trump-backed crypto company World Liberty Financial",
+         "date_published": "2026-08-14T20:05:00Z",
+         "date_modified": "2026-08-14T20:05:00Z",
+         "id": "https://www.reuters.com/world/us-regulator-approves-bank-charter-trump-backed-crypto-company-world-liberty-2026-08-14/",
+         "url": "https://www.reuters.com/world/us-regulator-approves-bank-charter-trump-backed-crypto-company-world-liberty-2026-08-14/",
+         "external_url": "https://www.reuters.com/world/us-regulator-approves-bank-charter-trump-backed-crypto-company-world-liberty-2026-08-14/",
          "authors": [
-            "Kanishka Singh",
-            "Ismail Shakil"
+            "Lawrence Delevingne",
+            "Pete Schroeder"
          ],
-         "content_html": "<p>WASHINGTON, Aug 13 (Reuters) - President Donald Trump said on Thursday he will impose tariffs on imports of drones and their components, including from some key U.S. allies, with the Trump administration saying the country was \"too reliant\" on foreign sources of drones.</p><p>A proclamation signed by Trump imposes a 100% ad valorem tariff on drones of a certain size or with certain capabilities that are particularly sensitive for national security purposes, the White House said, adding that a tariff of 25% will be imposed on drones that are smaller in size.</p><p>A 15% tariff will be imposed on drones and components from the European Union, Japan, Liechtenstein, South Korea, Switzerland, and Taiwan, and a 10% ad valorem tariff will be imposed on drones from the UK, the White House added.</p><p>Trump said in the proclamation text released by the White House that Commerce Secretary Howard Lutnick had probed the effects of imports of unmanned aircraft systems or drones. \"The Secretary found that import penetration from foreign producers of UAS is substantial and that the United States is too reliant on foreign sources of UAS and UAS components,\" Trump said.</p><p>Lutnick found that drone and drone components from certain foreign entities \"pose security and safety risks\" and that the domestic U.S. industry does not produce enough to meet security needs, Trump said.</p><p>The tariffs will take effect in 21 days, the White House said. For components of drones that are not particularly sensitive, the tariffs will take effect 180 days after signing.</p><p>Reporting by Kanishka Singh and Ismail Shakil in Washington</p>",
-         "attachments": []
+         "content_html": "<p>Aug 14 (Reuters) - A national U.S. bank regulator on Friday conditionally approved a bank charter application linked to President and his family's crypto venture, World Liberty Financial, effectively greenlighting an expansion of its stablecoin operations.</p><p>The Office of the Comptroller of the Currency said in a letter published on its website that it has granted conditional preliminary approval of World Liberty Trust Company's application for a national trust charter.</p>",
+         "attachments": [
+            {
+               "url": "https://www.reutersconnect.com/item/world-liberty-financial-and-alt5-sigma-at-the-nasdaq-market-in-new-york/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1JDMkU2R0EzVVU1VQ%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+               "mime_type": "image/jpeg",
+               "title": "World Liberty Financial and ALT5 Sigma at the Nasdaq Market, in New York"
+            }
+         ]
       }
    ]
 }
