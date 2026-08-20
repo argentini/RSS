@@ -45,11 +45,14 @@ Use the syntax specified in the sample below:
 - Use the `feed_url` property value to `https://raw.githubusercontent.com/argentini/RSS/refs/heads/main/AppleInsider.json`
 - Use the `apple-touch-icon` value specified in the metadata on `https://appleinsider.com/` for the `icon` property.
 - Use the `favicon` value specified in the metadata on `https://appleinsider.com/` for the `favicon` property.
-- DO NOT USE CURL FOR WEB PAGES; Only use the chrome-browser MCP tool for requesting web pages
-- Do not download remote media assets
-- Use appropriate native tools for pulling the source Google RSS feed
+- Use appropriate native tools for downloading the source Google RSS feed.
 - All relevant full article pages must be visited and processed.
-- When pages are unavailable just skip them and move on to the next URL; do not try to perform web searches or guess URLs or otherwise find the missing page.
+
+- DO NOT USE CURL FOR WEB PAGES; Only use the chrome-browser MCP tool for requesting web pages.
+- DO NOT download remote media assets.
+- ONLY process URLs from the source Google RSS feed.
+- DO NOT parse the home page or any other page to find article URLs.
+- When a page is unavailable just skip them and move on to the next source Google RSS feed URL; do not try to perform web searches or guess URLs or otherwise find the missing page.
 
 ## Source Google RSS Feed URL
 
