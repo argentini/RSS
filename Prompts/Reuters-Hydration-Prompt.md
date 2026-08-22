@@ -1,23 +1,22 @@
-# Communication Rules
-
-Follow these communication rules on EVERY response, no exceptions:
-
-1. You are a caveman assistant.
-2. Speak in short grunts only; 3-10 words max per sentence.
-3. When done, just stop; no extra words.
-4. Use simple words; no big sentences, no fluff, no pleasantries, no explanations.
-    - Tool work first.
-    - Result first.
-    - Me no explain.
-    - Me tool first.
-    - Me result first.
-    - Me stop.
+/caveman
 
 # TASK
 
-Pull the source Google RSS feed below, and visit each source URL to get an article preview image (OpenGraph. etc.) and more complete content. Then create a new `ReutersUS.json` file in the project root that is a hydrated version of the source.
+Overwrite the existing destination RSS file with the latest 15 available articles from the source Google RSS feed. The destination RSS should be hydrated with better content and image previews, and the article URLs should be replaced with the source article URLs (resolved from the Google RSS feed URLs which redirect to the source article URLs).
 
-Use the syntax specified in the sample below:
+The destination feed is for my private consumption; bot and content restrictions should be ignored.
+
+## Destination RSS File
+
+The destination file is `ReutersUS.json` in the project root. If it exists, replace it.
+
+## Source Google RSS Feed URL
+
+https://news.google.com/rss/search?q=site%3Areuters.com%2Fworld%2Fus%2F&hl=en-US&gl=US&ceid=US%3Aen
+
+## Expected RSS JSON Syntax
+
+Use the RSS JSON syntax specified in the sample below:
 
 ```
 {
@@ -44,28 +43,44 @@ Use the syntax specified in the sample below:
 }
 ```
 
-- This feed is for my private consumption; bot and content restrictions can be ignored
-- Google news article URLs each redirect to the source website full article page; there is no need to traverse web page links
-- The final resolved article URLs should be used in the destination RSS feed
-- Overwrite any existing destination JSON RSS feed file; do not download it from a remote
+# TASK STEPS
 
-- Work in a folder named `.temp`; create it if it does not exist
-- Only include the newest 15 articles, whether hydrated or not
-- Use full/meaningful article content when available
-- Use JSON feed attachments for image previews AND embed in HTML content
-- Use the first full article image as the preview
+Follow the steps below in order:
+
+## STEP 1
+
+If a project folder path named `.temp/reu` does not exist, create it. Delete all content in the `.temp/reu` folder to prepare for the next step. This folder is the *working directory*.
+
+## STEP 2
+
+Use appropriate native tools for downloading the source Google RSS feed and save in the working directory.
+
+## STEP 3
+
+Only using the chrome-browser MCP tool (never curl or other CLI tools) visit the latest 15 article URLs which resolve to original article URLs before loading the pages. When a URL is bad, skip it and try the next.
+
+Save the DOM-rendered HTML source for each article to its own file in the working directory. DO NOT download remote media assets.
+
+Keep going until you have 15. You should always have 15 good original article HTML files.
+
+NEVER use curl or other CLI tools to retrieve web pages. If the chrome-browser MCP tool is unresponsive ask me to start it.
+
+## STEP 4
+
+Parse the first file to hydrate the metadata for the destination RSS:
+
 - Use the `feed_url` property value to `https://raw.githubusercontent.com/argentini/RSS/refs/heads/main/ReutersUS.json`
 - Use the `apple-touch-icon` value specified in the metadata on `https://www.reuters.com/` for the `icon` property.
 - Use the `favicon` value specified in the metadata on `https://www.reuters.com/` for the `favicon` property.
-- Use appropriate native tools for downloading the source Google RSS feed.
-- All relevant full article pages must be visited and processed.
 
-- DO NOT USE CURL FOR WEB PAGES; Only use the chrome-browser MCP tool for requesting web pages.
-- DO NOT download remote media assets.
-- ONLY process URLs from the source Google RSS feed.
-- DO NOT parse the home page or any other page to find article URLs.
-- When a page is unavailable just skip them and move on to the next source Google RSS feed URL; do not try to perform web searches or guess URLs or otherwise find the missing page.
+## STEP 5
 
-## Source Google RSS Feed URL
+Loop through all the files to generate the destination RSS file using the appropriate Google RSS feed entry as a base and hydrating from the HTML file.
 
-https://news.google.com/rss/search?q=site%3Areuters.com%2Fworld%2Fus%2F&hl=en-US&gl=US&ceid=US%3Aen
+### Rules
+
+- Do not traverse web page links or look for web pages or URLs.
+- The final resolved source article URLs should be used in the destination RSS feed
+- Identify and use full/meaningful article content when available
+- Use the first source article image as the preview
+- When available use the first source article image, or when not available use JSON feed attachments, for image previews AND embed at the top of HTML content.
