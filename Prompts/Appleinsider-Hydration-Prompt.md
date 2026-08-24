@@ -59,6 +59,8 @@ Use appropriate native tools for downloading the source Google RSS feed and save
 
 Only using the chrome-browser MCP tool (never curl or other CLI tools) visit the latest 15 article URLs which resolve to original article URLs before loading the pages. When a URL is bad, skip it and try the next.
 
+Use browser download trick (Blob → <a download>) to get page content.
+
 Save the DOM-rendered HTML source for each article to its own file in the working directory. DO NOT download remote media assets.
 
 Keep going until you have 15. You should always have 15 good original article HTML files.
