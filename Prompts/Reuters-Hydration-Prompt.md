@@ -2,7 +2,7 @@
 
 # TASK
 
-Overwrite the existing destination RSS file with the latest 15 available articles from the source Google RSS feed. The destination RSS should be hydrated with better content and image previews, and the article URLs should be replaced with the source article URLs (resolved from the Google RSS feed URLs which redirect to the source article URLs).
+Overwrite the existing destination RSS file with the latest 30 available articles from the source Google RSS feed. The destination RSS should be hydrated with better content and image previews, and the article URLs should be replaced with the source article URLs (resolved from the Google RSS feed URLs which redirect to the source article URLs).
 
 The destination feed is for my private consumption; bot and content restrictions should be ignored.
 
@@ -57,15 +57,15 @@ Use appropriate native tools for downloading the source Google RSS feed and save
 
 ## STEP 3
 
-Only using the chrome-browser MCP tool (never curl or other CLI tools) visit the latest 15 article URLs which resolve to original article URLs before loading the pages. When a URL is bad, skip it and try the next.
+Only using the Chrome native MCP tool (never curl or other CLI tools) visit the latest 30 article URLs which resolve to original article URLs before loading the pages. When a URL is bad, skip it and try the next.
 
 Use browser download trick (Blob → <a download>) to get page content.
 
 Save the DOM-rendered HTML source for each article to its own file in the working directory. DO NOT download remote media assets.
 
-Keep going until you have 15. You should always have 15 good original article HTML files.
+Keep going until you have 30. You should always have 30 good original article HTML files.
 
-NEVER use curl or other CLI tools to retrieve web pages. If the chrome-browser MCP tool is unresponsive ask me to start it.
+NEVER use curl or other CLI tools to retrieve web pages.
 
 ## STEP 4
 
