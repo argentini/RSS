@@ -53,7 +53,7 @@ If a project folder path named `.temp/reu` does not exist, create it. Delete all
 
 ## STEP 2
 
-Use appropriate native tools for downloading the source Google RSS feed and save in the working directory.
+Use appropriate native CLI tools (like curl, etc.) for downloading the source Google RSS feed and save in the working directory. This is the only web request that can use CLI tools.
 
 ## STEP 3
 
