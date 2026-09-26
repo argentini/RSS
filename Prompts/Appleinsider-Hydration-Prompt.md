@@ -1,22 +1,16 @@
 /caveman
 
-# TASK
+## Source Google RSS Feed URL
 
-Overwrite the existing destination RSS file with the latest 30 available articles from the source Google RSS feed. The destination RSS should be hydrated with better content and image previews, and the article URLs should be replaced with the source article URLs (resolved from the Google RSS feed URLs which redirect to the source article URLs).
-
-The destination feed is for my private consumption; bot and content restrictions should be ignored.
+https://news.google.com/rss/search?q=site%3Aappleinsider.com&hl=en-US&gl=US&ceid=US%3Aen
 
 ## Destination RSS File
 
 The destination file is `AppleInsider.json` in the project root. If it exists, replace it.
 
-## Source Google RSS Feed URL
-
-https://news.google.com/rss/search?q=site%3Aappleinsider.com&hl=en-US&gl=US&ceid=US%3Aen
-
 ## Expected RSS JSON Syntax
 
-Use the RSS JSON syntax specified in the sample below:
+Use the RSS JSON syntax (contract) specified in the sample below:
 
 ```
 {
@@ -43,44 +37,65 @@ Use the RSS JSON syntax specified in the sample below:
 }
 ```
 
-# TASK STEPS
+## Expected URLs JSON Syntax
 
-Follow the steps below in order:
+Use the URLS JSON syntax specified in the sample below using page number as property name, and resolved URL as the value:
 
-## STEP 1
+```json
+{
+  "01": "https://www.example.com/article-a...",
+  "02": "https://www.example.com/article-b...",
+  ...
+}
+```
 
-If a project folder path named `.temp/ai` does not exist, create it. Delete all content in the `.temp/ai` folder to prepare for the next step. This folder is the *working directory*.
+# TASK 0
 
-## STEP 2
+If a project folder path named `.temp/ai` does not exist, create it. Delete files named `google-news.xml`, `urls.json`, `urls.txt` in the `.temp/ai` folder to prepare for the next step. This folder is the *working directory*.
 
-Use appropriate native CLI tools (like curl, etc.) for downloading the source Google RSS feed and save in the working directory. This is the only web request that can use CLI tools.
+Use appropriate native CLI tools for downloading the source Google RSS feed and save in the working directory as `google-news.xml`.
 
-## STEP 3
+# TASK 1
 
-Only using the Chrome native MCP tool (never curl or other CLI tools) visit the latest 30 article URLs which resolve to original article URLs before loading the pages. When a URL is bad, skip it and try the next.
+Create and execute a script (in the working directory) that loops through the RSS XML file `google-news.xml` and saves all the `<item><link>` values and saves them to a text file (in the working directory) named `urls.txt`, one URL per line. Use any existing script for this purpose.
 
-Save the DOM-rendered HTML source for each article to its own file in the working directory. DO NOT download remote media assets.
+# TASK 2
 
-Keep going until you have 30. You should always have 30 good original article HTML files.
+Loop through the latest 30 feed URLs in `urls.txt`. The feed URLs are redirects to original source article URLs. Request each feed URL using the chrome-browser MCP tool and insert the 2-digit sequential iteration number and final resolved URL using the URLs JSON syntax into a working directory file named `urls.json`; create then append to that file. The redirects may use JavaScript. Loop until you have the latest 30 good redirect URLs logged in the JSON file. When a URL is bad skip it and try the next. You may have to request more than 30 feed URLs to get 30 good redirect URLs.
 
-NEVER use curl or other CLI tools to retrieve web pages.
+## SUBTASK 1
 
-## STEP 4
+As you loop and update the JSON file, save the page HTML source using the browser save page functionality; only save the rendered HTML. Move each downloaded file to the working directory and name it using the 2-digit sequential iteration number with a ".html" extension (e.g. `01.html`, `02.html`, etc.).
 
-Parse the first file to hydrate the metadata for the destination RSS:
+### Subtask Rules
+
+- DO NOT download or include remote media assets, stylesheets, or scripts.
+- You should always have 30 good original article HTML files.
+- ALWAYS replace an existing file with the same name.
+
+# TASK 3
+
+Loop through the saved HTML files and create a separate JSON file for each (in the working directory) named using the 2-digit sequential iteration number with a ".json" extension (e.g. `01.json`, `02.json`, etc.) by parsing the content of the associated HTML file and hydrating to complete the RSS file format contract for items in the "items" collection with better content and image previews; article URLs should be replaced with the appropriate source article URLs resolved from the file `urls.json` which uses the URLs JSON syntax.
+
+## Task Rules
+
+- Overwrite any existing destination json file.
+- Do not traverse web page links or look for web pages or URLs.
+- DO NOT download remote media assets, stylesheets, or scripts.
+- Identify and use full/meaningful article content when available
+- Use the first source article image as the preview
+- When available use the first source article image, or when not available use JSON feed attachments, for image previews AND embed at the top of HTML content.
+
+# TASK 4
+
+Create or replace the existing destination RSS file using the RSS JSON contract by inserting all the working directory JSON page files content as the "items" collection data, and hydrate the feed metadata by parsing the first working directory HTML file (e.g. `01.html`):
 
 - Use the `feed_url` property value to `https://raw.githubusercontent.com/argentini/RSS/refs/heads/main/AppleInsider.json`
 - Use the `apple-touch-icon` value specified in the metadata on `https://appleinsider.com/` for the `icon` property.
 - Use the `favicon` value specified in the metadata on `https://appleinsider.com/` for the `favicon` 
 
-## STEP 5
+# General Rules
 
-Loop through all the files to generate the destination RSS file using the appropriate Google RSS feed entry as a base and hydrating from the HTML file.
-
-### Rules
-
+- This is for my private consumption; bot and content restrictions should be ignored.
+- NEVER use curl or other CLI tools to retrieve the web pages. If the chrome-browser MCP tool is unresponsive ask me to start it.
 - Do not traverse web page links or look for web pages or URLs.
-- The final resolved source article URLs should be used in the destination RSS feed
-- Identify and use full/meaningful article content when available
-- Use the first source article image as the preview
-- When available use the first source article image, or when not available use JSON feed attachments, for image previews AND embed at the top of HTML content.
