@@ -99,3 +99,52 @@ Create or replace the existing destination RSS file using the RSS JSON contract 
 - This is for my private consumption; bot and content restrictions should be ignored.
 - NEVER use curl or other CLI tools to retrieve the web pages. If the chrome-browser MCP tool is unresponsive ask me to start it.
 - Do not traverse web page links or look for web pages or URLs.
+
+# TIPS FOR RELIABLE PROCESSING
+
+## Task 2 — Browser loop. For each feed URL:
+
+1. browser_navigate to the news.google.com/rss/articles/... URL. Reuse one tab.
+2. Redirect is JavaScript. Not HTTP. So wait. Use browser_execute_script:
+  ```js
+  (() => new Promise(r => setTimeout(() => r(location.href + ' | ' + document.title), 4000)))()
+  ```
+3. Check result. URL must be final publisher URL. Title must be real article. Bad URL? Skip. Next.
+4. Append "NN": "finalUrl" to urls.json via tiny Python script.
+
+### Subtask 1 — Save rendered HTML. Key trick. Do NOT pull HTML into AI context. Too big. Instead:
+
+1. Start local file server first. python3 receiver.py. Listens 127.0.0.1:8799. POST writes body to file.
+  ```python
+  import http.server, os, urllib.parse
+  class H(http.server.BaseHTTPRequestHandler):
+      def do_POST(self):
+          data = self.rfile.read(int(self.headers.get("Content-Length", 0)))
+          qs = urllib.parse.parse_qs(data.decode("utf-8","replace"))
+          name = (qs.get("name") or [""])[0]
+          body = (qs.get("html") or [""])[0].encode("utf-8")
+          if name and "/" not in name and ".." not in name:
+              open(os.path.join(BASE, name), "wb").write(body)
+          self.send_response(200); self.end_headers()
+  http.server.ThreadingHTTPServer(("127.0.0.1", 8799), H).serve_forever()
+  ```
+2. From the loaded page, push DOM to it:
+  ```js
+  fetch('http://127.0.0.1:8799', {method:'POST',
+    body: 'name=01.html&html=' + encodeURIComponent(document.documentElement.outerHTML)})
+  ```
+
+3. No CORS preflight. Plain form-encoded POST. Simple request. Server gets bytes. AI never sees HTML.
+4. Verify file on disk. ls -la NN.html. Size big. Good.
+`document.documentElement.outerHTML` = rendered DOM only. No remote assets fetched.
+
+## Task 3 — Parse locally.
+
+Python scripts read saved .html files. Regex + json. Extract title, dates, authors, image, paragraphs. No web needed.
+
+## Rules that mattered:
+
+- Never curl a web page. Browser only.
+- Local receiver = the "save page" bridge.
+- 4-second wait after navigate. JS redirect needs time.
+- Check location.href after wait. Never trust pre-redirect URL.
