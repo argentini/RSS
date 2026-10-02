@@ -104,10 +104,10 @@ Create or replace the existing destination RSS file using the RSS JSON contract 
 
 ## Task 2 — Browser loop. For each feed URL:
 
-1. browser_navigate to the news.google.com/rss/articles/... URL. Reuse one tab.
+1. Use chrome-browser tool to navigate to the news.google.com/rss/articles/... URL. Reuse one tab.
 2. Redirect is JavaScript. Not HTTP. So wait. Use browser_execute_script:
   ```js
-  (() => new Promise(r => setTimeout(() => r(location.href + ' | ' + document.title), 4000)))()
+  (() => new Promise(r => setTimeout(() => r(location.href + ' | ' + document.title), 5000)))()
   ```
 3. Check result. URL must be final publisher URL. Title must be real article. Bad URL? Skip. Next.
 4. Append "NN": "finalUrl" to urls.json via tiny Python script.
@@ -135,7 +135,8 @@ Create or replace the existing destination RSS file using the RSS JSON contract 
   ```
 
 3. No CORS preflight. Plain form-encoded POST. Simple request. Server gets bytes. AI never sees HTML.
-4. Verify file on disk. ls -la NN.html. Size big. Good.
+4. Verify file on disk. `ls -la NN.html`. Size big. Good.
+
 `document.documentElement.outerHTML` = rendered DOM only. No remote assets fetched.
 
 ## Task 3 — Parse locally.
