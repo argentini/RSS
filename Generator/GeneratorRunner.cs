@@ -212,9 +212,13 @@ public sealed class GeneratorRunner(
 
             try
             {
+                var promptHtml = HtmlPromptContent.Prepare(html);
+                output.WriteLine(
+                    $"[Step 5/6] {article.Number}: Prepared " +
+                    $"{promptHtml.Length:N0} of {html.Length:N0} HTML characters.");
                 var item = await HydrateWithRetryAsync(
                     article,
-                    html,
+                    promptHtml,
                     cancellationToken);
                 var itemPath = Path.Combine(
                     workingDirectory,

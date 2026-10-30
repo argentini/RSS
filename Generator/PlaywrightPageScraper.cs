@@ -49,10 +49,7 @@ public sealed class PlaywrightPageScraper : IPageScraper, IAsyncDisposable
 
     public async ValueTask DisposeAsync()
     {
-        if (_context is not null)
-            await _context.CloseAsync();
-
-        if (_browser is not null)
+        if (_browser is { IsConnected: true })
             await _browser.CloseAsync();
 
         _playwright?.Dispose();
