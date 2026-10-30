@@ -1,0 +1,10 @@
+{
+    "GoogleNewsUrl": "https://news.google.com/rss/search?q=site%3Areuters.com%2Fworld%2Fus%2F&hl=en-US&gl=US&ceid=US%3Aen",
+    "LatestCount": 30,
+    "DestinationRssFilePath": "../ReutersUS.json",
+    "FeedName": "Reuters US",
+    "FeedHomePageUrl": "https://www.reuters.com/",
+    "FeedUrl": "https://raw.githubusercontent.com/argentini/RSS/refs/heads/main/ReutersUS.json",
+    "FeedIconUrl": "https://www.reuters.com/pf/resources/images/reuters/favicon/tr_fvcn_kinesis_180x180_v2.png?d=393&mxId=00000000",
+    "FeedFaviconUrl": "https://www.reuters.com/pf/resources/images/reuters/favicon/tr_fvcn_kinesis_32x32_v2.ico?d=393&mxId=00000000"
+}

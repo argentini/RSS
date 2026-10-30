@@ -1,0 +1,10 @@
+{
+    "GoogleNewsUrl": "https://news.google.com/rss/search?q=site%3Aappleinsider.com&hl=en-US&gl=US&ceid=US%3Aen",
+    "LatestCount": 30,
+    "DestinationRssFilePath": "../AppleInsider.json",
+    "FeedName": "AppleInsider",
+    "FeedHomePageUrl": "https://appleinsider.com/",
+    "FeedUrl": "https://raw.githubusercontent.com/argentini/RSS/refs/heads/main/AppleInsider.json",
+    "FeedIconUrl": "https://media.appleinsider.com/v11/icon-512.png",
+    "FeedFaviconUrl": "https://media.appleinsider.com/v11/favicon.ico"
+}
