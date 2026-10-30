@@ -1,6 +1,19 @@
 using System.Net;
 using Generator;
 
+using var cancellation = new CancellationTokenSource();
+Console.CancelKeyPress += (_, eventArgs) =>
+{
+    eventArgs.Cancel = true;
+    cancellation.Cancel();
+};
+
+if (args.Length != 0)
+{
+    Console.Error.WriteLine("Usage: Generator");
+    return 2;
+}
+
 var generatorRoot = ProjectPaths.FindGeneratorRoot();
 var projectRoot = Directory.GetParent(generatorRoot)?.FullName
     ?? throw new InvalidOperationException("RSS project root was not found.");
@@ -14,13 +27,6 @@ var settings = GeneratorSettings.Load(
 var configurationResult = ConfigurationLoader.LoadAll(
     context,
     Console.Error);
-
-using var cancellation = new CancellationTokenSource();
-Console.CancelKeyPress += (_, eventArgs) =>
-{
-    eventArgs.Cancel = true;
-    cancellation.Cancel();
-};
 
 using var webHandler = new SocketsHttpHandler
 {
@@ -42,7 +48,9 @@ using var modelClient = new HttpClient
     BaseAddress = settings.BaseUrl,
     Timeout = Timeout.InfiniteTimeSpan
 };
-await using var scraper = new PlaywrightPageScraper();
+await using var scraper = new Agent360PageScraper(
+    Console.Out,
+    Console.Error);
 var runner = new GeneratorRunner(
     new WebFeedClient(webClient),
     scraper,
@@ -57,6 +65,7 @@ var runner = new GeneratorRunner(
 
 try
 {
+    await scraper.StartAsync(cancellation.Token);
     var summary = await runner.RunAsync(
         context,
         configurationResult.Configurations,
