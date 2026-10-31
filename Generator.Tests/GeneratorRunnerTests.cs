@@ -11,6 +11,10 @@ public sealed class GeneratorRunnerTests
     {
         using var workspace = new TestWorkspace();
         var configuration = workspace.CreateConfiguration("FeedOne");
+        WriteExistingFeed(
+            configuration,
+            CreateItem(new Uri("https://source.test/prior-one")),
+            CreateItem(new Uri("https://source.test/prior-two")));
         var oldWorkingDirectory = Path.Combine(
             workspace.TempRoot,
             configuration.Name);
@@ -36,7 +40,7 @@ public sealed class GeneratorRunnerTests
             CancellationToken.None);
 
         Assert.AreEqual(1, summary.FeedCount);
-        Assert.AreEqual(1, summary.ItemCount);
+        Assert.AreEqual(2, summary.ItemCount);
         Assert.AreEqual(1, summary.SkippedArticles);
         Assert.AreEqual(0, summary.ConfigurationFailures);
         Assert.IsFalse(File.Exists(stalePath));
@@ -95,7 +99,7 @@ public sealed class GeneratorRunnerTests
             configuration.Settings.FeedFaviconUrl,
             feed.RootElement.GetProperty("favicon").GetString());
         Assert.AreEqual(
-            1,
+            2,
             feed.RootElement.GetProperty("items").GetArrayLength());
         Assert.AreEqual(1, publisher.CallCount);
         Assert.HasCount(1, publisher.Destinations);
@@ -191,6 +195,10 @@ public sealed class GeneratorRunnerTests
     {
         using var workspace = new TestWorkspace();
         var configuration = workspace.CreateConfiguration("FeedOne");
+        WriteExistingFeed(
+            configuration,
+            CreateItem(new Uri("https://source.test/prior-one")),
+            CreateItem(new Uri("https://source.test/prior-two")));
         var publisher = new RecordingGitPublisher();
         var hydrator = new DelegateArticleHydrator((_, sourceUrl) =>
         {
@@ -213,7 +221,7 @@ public sealed class GeneratorRunnerTests
             [configuration],
             CancellationToken.None);
 
-        Assert.AreEqual(1, summary.ItemCount);
+        Assert.AreEqual(2, summary.ItemCount);
         Assert.AreEqual(1, summary.SkippedArticles);
         var workingDirectory = Path.Combine(
             workspace.TempRoot,
@@ -223,6 +231,113 @@ public sealed class GeneratorRunnerTests
         Assert.IsFalse(File.Exists(
             Path.Combine(workingDirectory, "02.json")));
         Assert.AreEqual(1, publisher.CallCount);
+    }
+
+    [TestMethod]
+    public async Task RunAsync_OneFreshItem_MergesPriorItemsAndPreservesDepth()
+    {
+        using var workspace = new TestWorkspace();
+        var configuration = workspace.CreateConfiguration("FeedOne");
+        WriteExistingFeed(
+            configuration,
+            CreateLegacyItem(new Uri("https://source.test/first")),
+            CreateLegacyItem(new Uri("https://source.test/older-one")),
+            CreateLegacyItem(new Uri("https://source.test/older-two")));
+        var publisher = new RecordingGitPublisher();
+        var runner = CreateRunner(
+            CreateFeedClient("first", "second"),
+            new DelegatePageScraper(url =>
+                url.AbsolutePath.EndsWith(
+                    "second",
+                    StringComparison.Ordinal)
+                    ? throw new HttpRequestException("blocked")
+                    : "<html>Article</html>"),
+            publisher,
+            new RecordingGeneratorConsole());
+
+        var summary = await runner.RunAsync(
+            workspace.Context,
+            [configuration],
+            CancellationToken.None);
+
+        using var feed = JsonDocument.Parse(
+            File.ReadAllText(configuration.DestinationPath));
+        var items = feed.RootElement.GetProperty("items");
+        Assert.AreEqual(1, summary.FeedCount);
+        Assert.AreEqual(3, summary.ItemCount);
+        Assert.AreEqual(3, items.GetArrayLength());
+        Assert.AreEqual(
+            "https://source.test/first",
+            items[0].GetProperty("id").GetString());
+        Assert.AreEqual(
+            "https://source.test/older-one",
+            items[1].GetProperty("id").GetString());
+        Assert.AreEqual(
+            "https://source.test/older-two",
+            items[2].GetProperty("id").GetString());
+        Assert.AreEqual(
+            JsonValueKind.Object,
+            items[1].GetProperty("authors")[0].ValueKind);
+        Assert.AreEqual(
+            "Writer",
+            items[1].GetProperty("authors")[0]
+                .GetProperty("name")
+                .GetString());
+        Assert.AreEqual(1, publisher.CallCount);
+    }
+
+    [TestMethod]
+    public async Task RunAsync_ShallowCandidate_DoesNotCreateDestination()
+    {
+        using var workspace = new TestWorkspace();
+        var configuration = workspace.CreateConfiguration("FeedOne");
+        var publisher = new RecordingGitPublisher();
+        var console = new RecordingGeneratorConsole();
+        var runner = CreateRunner(
+            CreateFeedClient("first"),
+            new DelegatePageScraper(_ => "<html>Article</html>"),
+            publisher,
+            console);
+
+        var summary = await runner.RunAsync(
+            workspace.Context,
+            [configuration],
+            CancellationToken.None);
+
+        Assert.AreEqual(0, summary.FeedCount);
+        Assert.AreEqual(0, summary.ItemCount);
+        Assert.AreEqual(1, summary.ConfigurationFailures);
+        Assert.IsFalse(File.Exists(configuration.DestinationPath));
+        Assert.AreEqual(0, publisher.CallCount);
+        Assert.HasCount(1, console.Warnings);
+        StringAssert.Contains(console.Warnings[0], "2 required");
+    }
+
+    [TestMethod]
+    public async Task RunAsync_InvalidExistingFeed_PreservesDestination()
+    {
+        using var workspace = new TestWorkspace();
+        var configuration = workspace.CreateConfiguration("FeedOne");
+        const string existingFeed = "invalid existing feed";
+        File.WriteAllText(configuration.DestinationPath, existingFeed);
+        var publisher = new RecordingGitPublisher();
+        var runner = CreateRunner(
+            CreateFeedClient("first", "second"),
+            new DelegatePageScraper(_ => "<html>Article</html>"),
+            publisher,
+            new RecordingGeneratorConsole());
+
+        var summary = await runner.RunAsync(
+            workspace.Context,
+            [configuration],
+            CancellationToken.None);
+
+        Assert.AreEqual(0, summary.FeedCount);
+        Assert.AreEqual(1, summary.ConfigurationFailures);
+        Assert.AreEqual(
+            existingFeed,
+            File.ReadAllText(configuration.DestinationPath));
+        Assert.AreEqual(0, publisher.CallCount);
     }
 
     [TestMethod]
@@ -297,9 +412,32 @@ public sealed class GeneratorRunnerTests
             ["id"] = sourceUrl.ToString(),
             ["url"] = sourceUrl.ToString(),
             ["external_url"] = sourceUrl.ToString(),
-            ["authors"] = new JsonArray("Writer"),
+            ["authors"] = new JsonArray
+            {
+                new JsonObject
+                {
+                    ["name"] = "Writer"
+                }
+            },
             ["content_html"] = "<p>Hydrated body.</p>"
         };
+    }
+
+    private static JsonObject CreateLegacyItem(Uri sourceUrl)
+    {
+        var item = CreateItem(sourceUrl);
+        item["authors"] = new JsonArray("Writer");
+        return item;
+    }
+
+    private static void WriteExistingFeed(
+        ConfigurationFile configuration,
+        params JsonObject[] items)
+    {
+        File.WriteAllText(
+            configuration.DestinationPath,
+            JsonFeedFiles.CreateFeed(configuration.Settings, items)
+                .ToJsonString(JsonFeedFiles.SerializerOptions));
     }
 
     private static IFeedClient CreateFeedClient(params string[] names)

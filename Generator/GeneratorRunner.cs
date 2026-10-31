@@ -285,7 +285,7 @@ public sealed class GeneratorRunner(
         var skippedArticles = resolved.Skipped +
             rendered.Skipped + hydrated.Skipped;
 
-        var success = await console.RunPhaseAsync(
+        var feedResult = await console.RunPhaseAsync(
             GenerationPhase.Write,
             configuration.Name,
             1,
@@ -296,25 +296,34 @@ public sealed class GeneratorRunner(
                     progress.Warn(
                         "No articles succeeded; existing feed preserved.");
                     progress.Report(1, "existing feed preserved");
-                    return false;
+                    return new FeedBuildResult(
+                        null,
+                        "existing feed preserved");
                 }
 
-                var feed = JsonFeedFiles.CreateFeed(
+                var result = JsonFeedFiles.BuildFeed(
                     configuration.Settings,
-                    hydrated.Items);
-                await JsonFeedFiles.WriteAtomicAsync(
+                    hydrated.Items,
+                    configuration.DestinationPath);
+
+                if (result.Feed is not JsonObject feed)
+                {
+                    progress.Warn(result.Message);
+                    progress.Report(1, "existing feed preserved");
+                    return result;
+                }
+
+                await JsonFeedFiles.WriteFeedAtomicAsync(
                     configuration.DestinationPath,
                     feed,
                     cancellationToken);
-                progress.Report(
-                    1,
-                    $"wrote {hydrated.Items.Count} items");
-                return true;
+                progress.Report(1, result.Message);
+                return result;
             });
 
         return new ConfigurationResult(
-            success,
-            hydrated.Items.Count,
+            feedResult.Success,
+            feedResult.ItemCount,
             skippedArticles);
     }
 

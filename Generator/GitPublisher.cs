@@ -20,6 +20,22 @@ public interface ICommandRunner
 
 public sealed class ProcessCommandRunner : ICommandRunner
 {
+    private static readonly TimeSpan DefaultTimeout = TimeSpan.FromMinutes(2);
+    private readonly TimeSpan _timeout;
+
+    public ProcessCommandRunner()
+        : this(DefaultTimeout)
+    {
+    }
+
+    public ProcessCommandRunner(TimeSpan timeout)
+    {
+        if (timeout <= TimeSpan.Zero)
+            throw new ArgumentOutOfRangeException(nameof(timeout));
+
+        _timeout = timeout;
+    }
+
     public async Task<CommandResult> RunAsync(
         string fileName,
         IReadOnlyList<string> arguments,
@@ -27,6 +43,7 @@ public sealed class ProcessCommandRunner : ICommandRunner
         CancellationToken cancellationToken,
         IReadOnlyDictionary<string, string>? environment = null)
     {
+        cancellationToken.ThrowIfCancellationRequested();
         var startInfo = new ProcessStartInfo
         {
             FileName = fileName,
@@ -51,16 +68,44 @@ public sealed class ProcessCommandRunner : ICommandRunner
             throw new InvalidOperationException(
                 $"Could not start {fileName}.");
 
-        var outputTask = process.StandardOutput.ReadToEndAsync(
-            cancellationToken);
-        var errorTask = process.StandardError.ReadToEndAsync(
-            cancellationToken);
+        var outputTask = process.StandardOutput.ReadToEndAsync();
+        var errorTask = process.StandardError.ReadToEndAsync();
+        using var deadline = CancellationTokenSource
+            .CreateLinkedTokenSource(cancellationToken);
+        deadline.CancelAfter(_timeout);
 
-        await process.WaitForExitAsync(cancellationToken);
+        try
+        {
+            await process.WaitForExitAsync(deadline.Token);
+        }
+        catch (OperationCanceledException)
+        {
+            KillProcessTree(process);
+            await process.WaitForExitAsync(CancellationToken.None);
+
+            if (cancellationToken.IsCancellationRequested)
+                throw;
+
+            throw new TimeoutException(
+                $"{fileName} exceeded {_timeout.TotalSeconds:g} seconds.");
+        }
+
         return new CommandResult(
             process.ExitCode,
             await outputTask,
             await errorTask);
+    }
+
+    private static void KillProcessTree(Process process)
+    {
+        try
+        {
+            if (process.HasExited == false)
+                process.Kill(true);
+        }
+        catch (InvalidOperationException)
+        {
+        }
     }
 }
 
@@ -115,7 +160,10 @@ public sealed class GitPublisher(
             cancellationToken);
 
         if (diff.ExitCode == 0)
+        {
+            await PushAsync(projectRoot, cancellationToken);
             return false;
+        }
 
         if (diff.ExitCode != 1)
             EnsureSuccess("git diff", diff);
@@ -142,6 +190,15 @@ public sealed class GitPublisher(
                 commitArguments,
                 projectRoot,
                 cancellationToken));
+        await PushAsync(projectRoot, cancellationToken);
+
+        return true;
+    }
+
+    private async Task PushAsync(
+        string projectRoot,
+        CancellationToken cancellationToken)
+    {
         EnsureSuccess(
             "git push",
             await commandRunner.RunAsync(
@@ -150,8 +207,6 @@ public sealed class GitPublisher(
                 projectRoot,
                 cancellationToken,
                 CreatePushEnvironment()));
-
-        return true;
     }
 
     private IReadOnlyDictionary<string, string> CreatePushEnvironment()

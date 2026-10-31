@@ -77,12 +77,13 @@ public sealed class GitPublisherTests
     }
 
     [TestMethod]
-    public async Task PublishAsync_UnchangedFeed_SkipsCommitAndPush()
+    public async Task PublishAsync_UnchangedFeed_PushesWithoutCommitting()
     {
         using var workspace = new TestWorkspace();
         var commandRunner = new RecordingCommandRunner(
             new CommandResult(0, "", ""),
-            new CommandResult(0, "", ""));
+            new CommandResult(0, "", ""),
+            new CommandResult(0, "pushed", ""));
         var publisher = new GitPublisher(
             commandRunner,
             CreateCredentials());
@@ -94,7 +95,50 @@ public sealed class GitPublisherTests
             CancellationToken.None);
 
         Assert.IsFalse(published);
-        Assert.HasCount(2, commandRunner.Invocations);
+        Assert.HasCount(3, commandRunner.Invocations);
+        CollectionAssert.AreEqual(
+            new[] { "push" },
+            commandRunner.Invocations[2].Arguments);
+    }
+
+    [TestMethod]
+    public async Task PublishAsync_ChangedFeedPushFails_UnchangedRunRetriesPush()
+    {
+        using var workspace = new TestWorkspace();
+        var commandRunner = new RecordingCommandRunner(
+            new CommandResult(0, "", ""),
+            new CommandResult(1, "", ""),
+            new CommandResult(0, "committed", ""),
+            new CommandResult(1, "", "network unavailable"),
+            new CommandResult(0, "", ""),
+            new CommandResult(0, "", ""),
+            new CommandResult(0, "pushed", ""));
+        var publisher = new GitPublisher(
+            commandRunner,
+            CreateCredentials());
+        var destination = Path.Combine(workspace.Root, "feed.json");
+
+        var exception = await Assert.ThrowsExactlyAsync<InvalidOperationException>(
+            () => publisher.PublishAsync(
+                workspace.Root,
+                [destination],
+                DateTimeOffset.UtcNow,
+                CancellationToken.None));
+        var published = await publisher.PublishAsync(
+            workspace.Root,
+            [destination],
+            DateTimeOffset.UtcNow,
+            CancellationToken.None);
+
+        StringAssert.Contains(exception.Message, "git push failed");
+        Assert.IsFalse(published);
+        Assert.HasCount(7, commandRunner.Invocations);
+        CollectionAssert.AreEqual(
+            new[] { "push" },
+            commandRunner.Invocations[3].Arguments);
+        CollectionAssert.AreEqual(
+            new[] { "push" },
+            commandRunner.Invocations[6].Arguments);
     }
 
     [TestMethod]

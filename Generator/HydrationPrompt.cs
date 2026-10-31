@@ -15,7 +15,9 @@ Parse the HTML content and hydrate to complete the RSS item format contract with
     "url": "https://www.reuters.com/world/us-appeals-court-blocks-trumps-400-million-white-house-ballroom-project-2026-08-07/",
     "external_url": "https://www.reuters.com/world/us-appeals-court-blocks-trumps-400-million-white-house-ballroom-project-2026-08-07/",
     "authors": [
-        "Mike Scarcella"
+        {
+            "name": "Mike Scarcella"
+        }
     ],
     "content_html": "<p>WASHINGTON, Aug 7 (Reuters) - A U.S. federal appeals court ordered Donald Trump's administration on Friday to stop construction on a $400 million ​ballroom on the site of the White House's demolished East Wing, dealing the Republican leader a major setback in a case testing his presidential authority.</p><p>\"Each ‌President is a temporary tenant, not the owner, of the White House,\" and cannot fundamentally reshape it without congressional approval, the Washington-based U.S. Court of Appeals for the District of Columbia Circuit said in a 2-1 opinion, opens new tab\n.</p>"
 }
@@ -24,6 +26,7 @@ Parse the HTML content and hydrate to complete the RSS item format contract with
 
 - Identify and use full/meaningful article content when available
 - Use the first source article image as the preview
+- Represent every author as an object containing name, url, or avatar
 - When available use the first source article image, or when not available use JSON feed attachments, for image previews AND embed at the top of HTML content.
 
 # General Rules

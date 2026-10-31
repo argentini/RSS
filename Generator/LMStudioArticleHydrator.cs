@@ -185,9 +185,6 @@ public static class ArticleItemParser
         item["url"] = sourceUrl.ToString();
         item["external_url"] = sourceUrl.ToString();
 
-        if (item.ContainsKey("authors") == false)
-            item["authors"] = new JsonArray();
-
         var image = FindPreviewImage(item);
 
         if (image is not null)
@@ -195,6 +192,8 @@ public static class ArticleItemParser
             item["image"] = image;
             item["content_html"] = EmbedPreview(content, image);
         }
+
+        JsonFeedValidator.ValidateItem(item);
 
         return item;
     }

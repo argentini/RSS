@@ -16,7 +16,7 @@ public sealed class ArticleItemParserTests
               "id": "https://wrong.test/id",
               "url": "https://wrong.test/url",
               "external_url": "https://wrong.test/external",
-              "authors": ["Writer"],
+              "authors": [{ "name": "Writer" }],
               "content_html": "<p>Full article body.</p>",
               "image": "https://source.test/preview.jpg"
             }
@@ -107,5 +107,25 @@ public sealed class ArticleItemParserTests
                 new Uri("https://source.test/article")));
 
         StringAssert.Contains(exception.Message, "date_published");
+    }
+
+    [TestMethod]
+    public void Parse_StringAuthor_ThrowsJsonException()
+    {
+        const string response = """
+            {
+              "title": "Article title",
+              "date_published": "2026-10-30T11:53:47Z",
+              "authors": ["Writer"],
+              "content_html": "<p>Body</p>"
+            }
+            """;
+
+        var exception = Assert.ThrowsExactly<JsonException>(
+            () => ArticleItemParser.Parse(
+                response,
+                new Uri("https://source.test/article")));
+
+        StringAssert.Contains(exception.Message, "Author 0 must be an object");
     }
 }
