@@ -198,9 +198,10 @@ public sealed class GeneratorRunner(
 
                     try
                     {
-                        var html = await pageScraper.GetContentAsync(
-                            article.Url,
-                            cancellationToken);
+                        var html = HtmlPromptContent.Prepare(
+                            await pageScraper.GetContentAsync(
+                                article.Url,
+                                cancellationToken));
                         await File.WriteAllTextAsync(
                             Path.Combine(
                                 workingDirectory,
@@ -250,7 +251,7 @@ public sealed class GeneratorRunner(
                     {
                         var item = await HydrateWithRetryAsync(
                             article,
-                            HtmlPromptContent.Prepare(html),
+                            html,
                             progress,
                             index,
                             cancellationToken);

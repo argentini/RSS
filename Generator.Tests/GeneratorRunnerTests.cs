@@ -225,6 +225,44 @@ public sealed class GeneratorRunnerTests
         Assert.AreEqual(1, publisher.CallCount);
     }
 
+    [TestMethod]
+    public async Task RunAsync_RenderedArticle_CleansHtmlBeforeSavingAndHydration()
+    {
+        using var workspace = new TestWorkspace();
+        var configuration = workspace.CreateConfiguration("FeedOne", latestCount: 1);
+        string? hydratedHtml = null;
+        var hydrator = new DelegateArticleHydrator((html, sourceUrl) =>
+        {
+            hydratedHtml = html;
+            return CreateItem(sourceUrl);
+        });
+        var runner = CreateRunner(
+            CreateFeedClient("article"),
+            new DelegatePageScraper(_ => """
+                <article>
+                    <p>Useful body.</p>
+                    <script>script marker</script>
+                </article>
+                """),
+            new RecordingGitPublisher(),
+            new RecordingGeneratorConsole(),
+            hydrator);
+
+        await runner.RunAsync(
+            workspace.Context,
+            [configuration],
+            CancellationToken.None);
+
+        var savedHtml = File.ReadAllText(Path.Combine(
+            workspace.TempRoot,
+            configuration.Name,
+            "01.html"));
+        Assert.AreEqual(savedHtml, hydratedHtml);
+        StringAssert.Contains(savedHtml, "Useful body.");
+        Assert.IsFalse(savedHtml.Contains("script marker", StringComparison.Ordinal));
+        Assert.IsFalse(savedHtml.Contains("<script", StringComparison.OrdinalIgnoreCase));
+    }
+
     private static GeneratorRunner CreateRunner(
         IFeedClient feedClient,
         IPageScraper scraper,

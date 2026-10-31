@@ -1,109 +1,150 @@
 using System.Text;
-using System.Text.RegularExpressions;
+using HtmlAgilityPack;
 
 namespace Generator;
 
 public static class HtmlPromptContent
 {
-    private const RegexOptions ElementOptions =
-        RegexOptions.IgnoreCase |
-        RegexOptions.CultureInvariant |
-        RegexOptions.Singleline;
+    private static readonly HashSet<string> RemovedElements = new(
+        StringComparer.OrdinalIgnoreCase)
+    {
+        "script",
+        "style",
+        "noscript",
+        "template",
+        "nav",
+        "aside",
+        "footer",
+        "dialog",
+        "form",
+        "input",
+        "select",
+        "textarea",
+        "button",
+        "fieldset",
+        "legend",
+        "option",
+        "optgroup",
+        "datalist",
+        "output",
+        "iframe",
+        "canvas",
+        "svg",
+        "object",
+        "embed",
+        "video",
+        "audio"
+    };
 
-    private static readonly TimeSpan MatchTimeout = TimeSpan.FromSeconds(2);
-
-    private static readonly Regex ArticleElement = new(
-        @"<article\b[^>]*>.*?</article\s*>",
-        ElementOptions,
-        MatchTimeout);
-
-    private static readonly Regex MainElement = new(
-        @"<main\b[^>]*>.*?</main\s*>",
-        ElementOptions,
-        MatchTimeout);
-
-    private static readonly Regex Metadata = new(
-        @"<title\b[^>]*>.*?</title\s*>|<meta\b[^>]*>",
-        ElementOptions,
-        MatchTimeout);
-
-    private static readonly Regex Comments = new(
-        @"<!--.*?-->",
-        ElementOptions,
-        MatchTimeout);
-
-    private static readonly Regex TagWhitespace = new(
-        @">\s+<",
-        ElementOptions,
-        MatchTimeout);
-
-    private static readonly Regex[] RemovedElements =
-    [
-        CreateElementRegex("script"),
-        CreateElementRegex("style"),
-        CreateElementRegex("noscript"),
-        CreateElementRegex("svg"),
-        CreateElementRegex("template"),
-        CreateElementRegex("iframe"),
-        CreateElementRegex("video"),
-        CreateElementRegex("audio"),
-        CreateElementRegex("canvas"),
-        CreateElementRegex("form"),
-        CreateElementRegex("button"),
-        CreateElementRegex("dialog"),
-        CreateElementRegex("nav"),
-        CreateElementRegex("aside"),
-        CreateElementRegex("footer")
-    ];
+    private static readonly HashSet<string> RemovedRoles = new(
+        StringComparer.OrdinalIgnoreCase)
+    {
+        "navigation",
+        "complementary",
+        "contentinfo",
+        "dialog",
+        "alertdialog"
+    };
 
     public static string Prepare(string html)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(html);
-        var content = FindLargest(ArticleElement, html);
+        var document = new HtmlDocument();
+        document.LoadHtml(html);
+        Clean(document.DocumentNode);
+        var content = FindLargest(document.DocumentNode, "article")
+            ?? FindLargest(document.DocumentNode, "main")
+            ?? document.DocumentNode;
+        var prepared = new StringBuilder(content.OuterHtml.Length);
 
-        if (content.Length == 0)
-            content = FindLargest(MainElement, html);
+        if (ReferenceEquals(content, document.DocumentNode) == false)
+            AppendMetadata(document.DocumentNode, prepared);
 
-        if (content.Length == 0)
-            content = html;
-
-        var prepared = new StringBuilder(content.Length);
-
-        foreach (Match match in Metadata.Matches(html))
-            prepared.Append(match.Value);
-
-        prepared.Append(Clean(content));
-        return TagWhitespace.Replace(prepared.ToString(), "><").Trim();
+        prepared.Append(content.OuterHtml);
+        return prepared.ToString().Trim();
     }
 
-    private static string Clean(string html)
+    private static void AppendMetadata(HtmlNode root, StringBuilder content)
     {
-        var cleaned = Comments.Replace(html, string.Empty);
+        var nodes = root.SelectNodes(".//title | .//meta");
 
-        for (var index = 0; index < RemovedElements.Length; index++)
-            cleaned = RemovedElements[index].Replace(cleaned, string.Empty);
+        if (nodes is null)
+            return;
 
-        return cleaned;
+        for (var index = 0; index < nodes.Count; index++)
+            content.Append(nodes[index].OuterHtml);
     }
 
-    private static string FindLargest(Regex expression, string html)
+    private static void Clean(HtmlNode root)
     {
-        var result = string.Empty;
+        var nodes = root.SelectNodes(".//* | .//comment()");
 
-        foreach (Match match in expression.Matches(html))
+        if (nodes is null)
+            return;
+
+        for (var index = nodes.Count - 1; index >= 0; index--)
+            if (ShouldRemove(nodes[index]))
+                nodes[index].Remove();
+    }
+
+    private static bool ShouldRemove(HtmlNode node)
+    {
+        if (node.NodeType == HtmlNodeType.Comment)
+            return true;
+
+        if (RemovedElements.Contains(node.Name))
+            return true;
+
+        if (HasRemovedRole(node))
+            return true;
+
+        return HasSidebarMarker(node);
+    }
+
+    private static bool HasRemovedRole(HtmlNode node)
+    {
+        var roles = node
+            .GetAttributeValue("role", string.Empty)
+            .Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries);
+
+        for (var index = 0; index < roles.Length; index++)
+            if (RemovedRoles.Contains(roles[index]))
+                return true;
+
+        return false;
+    }
+
+    private static bool HasSidebarMarker(HtmlNode node)
+    {
+        return node
+                .GetAttributeValue("class", string.Empty)
+                .Contains("sidebar", StringComparison.OrdinalIgnoreCase)
+            || node
+                .GetAttributeValue("id", string.Empty)
+                .Contains("sidebar", StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static HtmlNode? FindLargest(HtmlNode root, string name)
+    {
+        var nodes = root.SelectNodes(".//" + name);
+
+        if (nodes is null)
+            return null;
+
+        HtmlNode? result = null;
+        var largestLength = 0;
+
+        for (var index = 0; index < nodes.Count; index++)
         {
-            if (match.Length > result.Length)
-                result = match.Value;
+            var length = nodes[index].OuterHtml.Length;
+
+            if (length <= largestLength)
+                continue;
+
+            result = nodes[index];
+            largestLength = length;
         }
 
         return result;
-    }
-
-    private static Regex CreateElementRegex(string element)
-    {
-        return new Regex(
-            $@"<{element}\b[^>]*>.*?</{element}\s*>",
-            ElementOptions,
-            MatchTimeout);
     }
 }
