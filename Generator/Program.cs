@@ -1,11 +1,14 @@
 using System.Net;
 using Generator;
+using Spectre.Console;
 
-using var cancellation = new CancellationTokenSource();
+using var shutdown = new CancellationTokenSource();
+var exitCode = 0;
 Console.CancelKeyPress += (_, eventArgs) =>
 {
     eventArgs.Cancel = true;
-    cancellation.Cancel();
+    Interlocked.Exchange(ref exitCode, 130);
+    shutdown.Cancel();
 };
 
 if (args.Length != 0)
@@ -26,9 +29,22 @@ var settings = GeneratorSettings.Load(
     Path.Combine(generatorRoot, "appsettings.json"));
 var gitHubCredentials = GitHubCredentialsLoader.Load(
     Path.Combine(projectRoot, "Credentials.json"));
+using var configurationErrors = new StringWriter();
 var configurationResult = ConfigurationLoader.LoadAll(
     context,
-    Console.Error);
+    configurationErrors);
+var appConsole = new GeneratorConsole(
+    AnsiConsole.Console,
+    TimingHistory.Load(Path.Combine(context.TempRoot, "timings.json")),
+    TimeProvider.System);
+appConsole.ShowStartup(
+    settings.Schedule,
+    TimeProvider.System.LocalTimeZone,
+    configurationResult.Configurations.Count,
+    settings.Model);
+
+if (string.IsNullOrWhiteSpace(configurationErrors.ToString()) == false)
+    appConsole.Warning(configurationErrors.ToString().Trim());
 
 using var webHandler = new SocketsHttpHandler
 {
@@ -50,46 +66,69 @@ using var modelClient = new HttpClient
     BaseAddress = settings.BaseUrl,
     Timeout = Timeout.InfiniteTimeSpan
 };
-await using var scraper = new Agent360PageScraper(
-    Console.Out,
-    Console.Error);
+await using var scraper = new Agent360PageScraper();
 var runner = new GeneratorRunner(
     new WebFeedClient(webClient),
     scraper,
     new LMStudioArticleHydrator(
         modelClient,
-        settings,
-        Console.Out),
+        settings),
     new GitPublisher(
         new ProcessCommandRunner(),
         gitHubCredentials),
     TimeProvider.System,
-    Console.Out,
-    Console.Error);
+    appConsole);
 
 try
 {
-    await scraper.StartAsync(cancellation.Token);
-    var summary = await runner.RunAsync(
-        context,
-        configurationResult.Configurations,
-        cancellation.Token);
-    var failures = configurationResult.Failures + summary.ConfigurationFailures;
+    var keyReader = new SystemConsoleKeyReader();
+    var runImmediately = StartupRunPrompt.Ask(
+        keyReader,
+        Console.Out,
+        shutdown);
 
-    Console.WriteLine(
-        $"Finished {summary.FeedCount} feeds with " +
-        $"{summary.ItemCount} items and {summary.SkippedArticles} skipped articles.");
+    if (shutdown.IsCancellationRequested)
+    {
+        appConsole.ApplicationStopped();
+        return Volatile.Read(ref exitCode);
+    }
 
-    return failures == 0 ? 0 : 1;
+    new ConsoleExitMonitor(keyReader).Start(shutdown);
+    await appConsole.RunActivityAsync(
+        "Connect browser automation",
+        () => scraper.StartAsync(shutdown.Token));
+    var scheduler = new GeneratorScheduler(
+        TimeProvider.System,
+        appConsole);
+
+    await scheduler.RunAsync(
+        settings.Schedule,
+        async cancellationToken =>
+        {
+            appConsole.BeginScheduleItem(
+                configurationResult.Configurations);
+            var summary = await runner.RunAsync(
+                context,
+                configurationResult.Configurations,
+                cancellationToken);
+            var failures = configurationResult.Failures +
+                summary.ConfigurationFailures;
+            appConsole.CompleteScheduleItem(summary, failures);
+        },
+        runImmediately,
+        shutdown.Token);
+
+    appConsole.ApplicationStopped();
+    return Volatile.Read(ref exitCode);
 }
 catch (OperationCanceledException)
-    when (cancellation.IsCancellationRequested)
+    when (shutdown.IsCancellationRequested)
 {
-    Console.Error.WriteLine("Feed generation cancelled.");
-    return 130;
+    appConsole.ApplicationStopped();
+    return Volatile.Read(ref exitCode);
 }
 catch (Exception exception)
 {
-    Console.Error.WriteLine($"Feed generation failed: {exception.Message}");
+    appConsole.FatalError(exception.Message);
     return 1;
 }

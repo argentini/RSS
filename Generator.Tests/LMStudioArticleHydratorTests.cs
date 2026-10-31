@@ -1,6 +1,7 @@
 using System.Net;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 
 namespace Generator.Tests;
 
@@ -8,7 +9,8 @@ namespace Generator.Tests;
 public sealed class LMStudioArticleHydratorTests
 {
     [TestMethod]
-    public async Task HydrateAsync_StreamedResponse_WritesEveryModelToken()
+    [DoNotParallelize]
+    public async Task HydrateAsync_StreamedResponse_BuffersTokensSilently()
     {
         const string firstContent =
             "{\"title\":\"Streamed article\",\"date_published\":" +
@@ -24,30 +26,41 @@ public sealed class LMStudioArticleHydratorTests
         {
             BaseAddress = new Uri("http://127.0.0.1:1235/")
         };
+        var originalOutput = Console.Out;
         using var output = new StringWriter();
+        Console.SetOut(output);
         var hydrator = new LMStudioArticleHydrator(
             client,
             new GeneratorSettings
             {
                 BaseUrl = client.BaseAddress,
                 Model = "test-model",
-                TimeoutMinutes = 1
-            },
-            output);
+                TimeoutMinutes = 1,
+                Schedule = []
+            });
         var sourceUrl = new Uri("https://source.test/article");
+        JsonObject item;
 
-        var item = await hydrator.HydrateAsync(
-            "<html><body>Body</body></html>",
-            sourceUrl,
-            CancellationToken.None);
+        try
+        {
+            item = await hydrator.HydrateAsync(
+                "<html><body>Body</body></html>",
+                sourceUrl,
+                CancellationToken.None);
+        }
+        finally
+        {
+            Console.SetOut(originalOutput);
+        }
 
         Assert.AreEqual(
             "Streamed article",
             item["title"]?.GetValue<string>());
         Assert.AreEqual(sourceUrl.ToString(), item["url"]?.GetValue<string>());
         Assert.AreEqual(
-            "Thinking " + firstContent + secondContent + Environment.NewLine,
-            output.ToString());
+            "<p>Body</p>",
+            item["content_html"]?.GetValue<string>());
+        Assert.AreEqual("", output.ToString());
     }
 
     private static string CreateEvent(string property, string value)

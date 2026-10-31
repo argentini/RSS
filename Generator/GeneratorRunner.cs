@@ -8,8 +8,7 @@ public sealed class GeneratorRunner(
     IArticleHydrator articleHydrator,
     IGitPublisher gitPublisher,
     TimeProvider timeProvider,
-    TextWriter output,
-    TextWriter error)
+    IGeneratorConsole console)
 {
     public async Task<RunSummary> RunAsync(
         GeneratorContext context,
@@ -25,10 +24,10 @@ public sealed class GeneratorRunner(
         for (var index = 0; index < configurations.Count; index++)
         {
             var configuration = configurations[index];
-            output.WriteLine();
-            output.WriteLine(
-                $"=== {configuration.Name} " +
-                $"({index + 1}/{configurations.Count}) ===");
+            console.BeginFeed(
+                configuration.Name,
+                index + 1,
+                configurations.Count);
 
             try
             {
@@ -56,32 +55,36 @@ public sealed class GeneratorRunner(
             catch (Exception exception)
             {
                 configurationFailures++;
-                error.WriteLine(
-                    $"Configuration {configuration.Name} failed: " +
+                console.FeedFailed(
+                    configuration.Name,
                     exception.Message);
             }
         }
 
-        output.WriteLine();
+        await console.RunPhaseAsync(
+            GenerationPhase.Publish,
+            "",
+            1,
+            async progress =>
+            {
+                if (destinations.Count == 0)
+                {
+                    progress.Report(1, "nothing to publish");
+                    return false;
+                }
 
-        if (destinations.Count == 0)
-        {
-            output.WriteLine("[Final] No generated feeds require publishing.");
-        }
-        else
-        {
-            output.WriteLine(
-                $"[Final] Publishing {destinations.Count} generated feed files.");
-            var published = await gitPublisher.PublishAsync(
-                context.ProjectRoot,
-                destinations,
-                timeProvider.GetUtcNow(),
-                cancellationToken);
-            output.WriteLine(
-                published
-                    ? "[Final] Git commit created and pushed."
-                    : "[Final] Feed files are unchanged; Git skipped.");
-        }
+                var published = await gitPublisher.PublishAsync(
+                    context.ProjectRoot,
+                    destinations,
+                    timeProvider.GetUtcNow(),
+                    cancellationToken);
+                progress.Report(
+                    1,
+                    published
+                        ? $"published {destinations.Count} feeds"
+                        : "feeds unchanged");
+                return published;
+            });
 
         return new RunSummary(
             feedCount,
@@ -95,190 +98,239 @@ public sealed class GeneratorRunner(
         ConfigurationFile configuration,
         CancellationToken cancellationToken)
     {
-        output.WriteLine("[Step 1/6] Preparing clean working directory.");
-        var workingDirectory = PrepareWorkingDirectory(
-            context.TempRoot,
-            configuration.Name);
-        output.WriteLine($"[Step 1/6] Ready: {workingDirectory}");
+        var workingDirectory = await console.RunPhaseAsync(
+            GenerationPhase.Prepare,
+            configuration.Name,
+            1,
+            progress =>
+            {
+                var directory = PrepareWorkingDirectory(
+                    context.TempRoot,
+                    configuration.Name);
+                progress.Report(1, "workspace ready");
+                return Task.FromResult(directory);
+            });
 
-        output.WriteLine("[Step 2/6] Downloading Google News feed.");
-        var feedXml = await feedClient.DownloadAsync(
-            new Uri(configuration.Settings.GoogleNewsUrl),
-            cancellationToken);
-        var feedPath = Path.Combine(workingDirectory, "GoogleNews.xml");
-        await File.WriteAllTextAsync(
-            feedPath,
-            feedXml,
-            cancellationToken);
-        output.WriteLine($"[Step 2/6] Saved: {feedPath}");
-
-        output.WriteLine("[Step 3/6] Resolving source article URLs.");
+        var feedXml = await console.RunPhaseAsync(
+            GenerationPhase.Download,
+            configuration.Name,
+            1,
+            async progress =>
+            {
+                var xml = await feedClient.DownloadAsync(
+                    new Uri(configuration.Settings.GoogleNewsUrl),
+                    cancellationToken);
+                var feedPath = Path.Combine(
+                    workingDirectory,
+                    "GoogleNews.xml");
+                await File.WriteAllTextAsync(
+                    feedPath,
+                    xml,
+                    cancellationToken);
+                progress.Report(1, "feed downloaded");
+                return xml;
+            });
         var feedLinks = GoogleNewsParser.ParseLatestLinks(
             feedXml,
             configuration.Settings.LatestCount);
-        var articles = new List<NumberedArticle>(feedLinks.Count);
-        var skipped = 0;
-
-        for (var index = 0; index < feedLinks.Count; index++)
-        {
-            var number = NumberedFiles.Format(
-                index + 1,
-                configuration.Settings.LatestCount);
-
-            try
+        var resolved = await console.RunPhaseAsync(
+            GenerationPhase.Resolve,
+            configuration.Name,
+            feedLinks.Count,
+            async progress =>
             {
-                var resolvedUrl = await feedClient.ResolveAsync(
-                    feedLinks[index],
-                    cancellationToken);
-                articles.Add(new NumberedArticle(number, resolvedUrl));
-                output.WriteLine(
-                    $"[Step 3/6] {number}: {resolvedUrl}");
-            }
-            catch (OperationCanceledException)
-            {
-                throw;
-            }
-            catch (Exception exception)
-            {
-                skipped++;
-                error.WriteLine(
-                    $"[Step 3/6] Skipped {number}: {exception.Message}");
-            }
-        }
+                var articles = new List<NumberedArticle>(feedLinks.Count);
+                var skipped = 0;
 
-        var urls = new JsonObject();
+                for (var index = 0; index < feedLinks.Count; index++)
+                {
+                    var number = NumberedFiles.Format(
+                        index + 1,
+                        configuration.Settings.LatestCount);
 
-        for (var index = 0; index < articles.Count; index++)
-            urls[articles[index].Number] = articles[index].Url.ToString();
+                    try
+                    {
+                        var resolvedUrl = await feedClient.ResolveAsync(
+                            feedLinks[index],
+                            cancellationToken);
+                        articles.Add(new NumberedArticle(number, resolvedUrl));
+                    }
+                    catch (OperationCanceledException)
+                    {
+                        throw;
+                    }
+                    catch (Exception exception)
+                    {
+                        skipped++;
+                        progress.Warn(
+                            $"Article {number} URL skipped: " +
+                            exception.Message);
+                    }
 
-        var urlsPath = Path.Combine(workingDirectory, "URLs.json");
-        await JsonFeedFiles.WriteAsync(
-            urlsPath,
-            urls,
-            cancellationToken);
-        output.WriteLine($"[Step 3/6] Saved: {urlsPath}");
+                    progress.Report(index + 1, $"article {number}");
+                }
 
-        output.WriteLine("[Step 4/6] Rendering article DOM content.");
-        var scrapedArticles = new List<NumberedArticle>(articles.Count);
+                var urls = new JsonObject();
 
-        for (var index = 0; index < articles.Count; index++)
-        {
-            var article = articles[index];
-
-            try
-            {
-                output.WriteLine(
-                    $"[Step 4/6] {article.Number}: Rendering {article.Url}");
-                var html = await pageScraper.GetContentAsync(
-                    article.Url,
-                    cancellationToken);
-                var htmlPath = Path.Combine(
-                    workingDirectory,
-                    article.Number + ".html");
-
-                await File.WriteAllTextAsync(
-                    htmlPath,
-                    html,
-                    cancellationToken);
-                scrapedArticles.Add(article);
-                output.WriteLine(
-                    $"[Step 4/6] {article.Number}: Saved {htmlPath}");
-            }
-            catch (OperationCanceledException)
-            {
-                throw;
-            }
-            catch (Exception exception)
-            {
-                skipped++;
-                error.WriteLine(
-                    $"[Step 4/6] Skipped {article.Number}: " +
-                    exception.Message);
-            }
-        }
-
-        output.WriteLine("[Step 5/6] Hydrating RSS item JSON.");
-        var items = new List<JsonObject>(scrapedArticles.Count);
-
-        for (var index = 0; index < scrapedArticles.Count; index++)
-        {
-            var article = scrapedArticles[index];
-            var htmlPath = Path.Combine(
-                workingDirectory,
-                article.Number + ".html");
-            var html = await File.ReadAllTextAsync(
-                htmlPath,
-                cancellationToken);
-
-            try
-            {
-                var promptHtml = HtmlPromptContent.Prepare(html);
-                output.WriteLine(
-                    $"[Step 5/6] {article.Number}: Prepared " +
-                    $"{promptHtml.Length:N0} of {html.Length:N0} HTML characters.");
-                var item = await HydrateWithRetryAsync(
-                    article,
-                    promptHtml,
-                    cancellationToken);
-                var itemPath = Path.Combine(
-                    workingDirectory,
-                    article.Number + ".json");
+                for (var index = 0; index < articles.Count; index++)
+                    urls[articles[index].Number] =
+                        articles[index].Url.ToString();
 
                 await JsonFeedFiles.WriteAsync(
-                    itemPath,
-                    item,
+                    Path.Combine(workingDirectory, "URLs.json"),
+                    urls,
                     cancellationToken);
-                items.Add(item);
-                output.WriteLine(
-                    $"[Step 5/6] {article.Number}: Saved {itemPath}");
-            }
-            catch (OperationCanceledException)
+                return new ArticlePhaseResult(articles, skipped);
+            });
+        var rendered = await console.RunPhaseAsync(
+            GenerationPhase.Render,
+            configuration.Name,
+            resolved.Articles.Count,
+            async progress =>
             {
-                throw;
-            }
-            catch (Exception exception)
+                var articles = new List<NumberedArticle>(
+                    resolved.Articles.Count);
+                var skipped = 0;
+
+                for (var index = 0; index < resolved.Articles.Count; index++)
+                {
+                    var article = resolved.Articles[index];
+
+                    try
+                    {
+                        var html = await pageScraper.GetContentAsync(
+                            article.Url,
+                            cancellationToken);
+                        await File.WriteAllTextAsync(
+                            Path.Combine(
+                                workingDirectory,
+                                article.Number + ".html"),
+                            html,
+                            cancellationToken);
+                        articles.Add(article);
+                    }
+                    catch (OperationCanceledException)
+                    {
+                        throw;
+                    }
+                    catch (Exception exception)
+                    {
+                        skipped++;
+                        progress.Warn(
+                            $"Article {article.Number} render skipped: " +
+                            exception.Message);
+                    }
+
+                    progress.Report(
+                        index + 1,
+                        $"article {article.Number}");
+                }
+
+                return new ArticlePhaseResult(articles, skipped);
+            });
+        var hydrated = await console.RunPhaseAsync(
+            GenerationPhase.Hydrate,
+            configuration.Name,
+            rendered.Articles.Count,
+            async progress =>
             {
-                skipped++;
-                error.WriteLine(
-                    $"[Step 5/6] Skipped {article.Number}: " +
-                    exception.Message);
-            }
-        }
+                var items = new List<JsonObject>(rendered.Articles.Count);
+                var skipped = 0;
 
-        if (items.Count == 0)
-        {
-            error.WriteLine(
-                "[Step 6/6] No articles succeeded; existing feed preserved.");
-            return new ConfigurationResult(false, 0, skipped);
-        }
+                for (var index = 0; index < rendered.Articles.Count; index++)
+                {
+                    var article = rendered.Articles[index];
+                    var html = await File.ReadAllTextAsync(
+                        Path.Combine(
+                            workingDirectory,
+                            article.Number + ".html"),
+                        cancellationToken);
 
-        output.WriteLine("[Step 6/6] Building final JSON feed.");
-        var feed = JsonFeedFiles.CreateFeed(
-            configuration.Settings,
-            items);
-        await JsonFeedFiles.WriteAtomicAsync(
-            configuration.DestinationPath,
-            feed,
-            cancellationToken);
-        output.WriteLine(
-            $"[Step 6/6] Saved {items.Count} items: " +
-            configuration.DestinationPath);
+                    try
+                    {
+                        var item = await HydrateWithRetryAsync(
+                            article,
+                            HtmlPromptContent.Prepare(html),
+                            progress,
+                            index,
+                            cancellationToken);
+                        await JsonFeedFiles.WriteAsync(
+                            Path.Combine(
+                                workingDirectory,
+                                article.Number + ".json"),
+                            item,
+                            cancellationToken);
+                        items.Add(item);
+                    }
+                    catch (OperationCanceledException)
+                    {
+                        throw;
+                    }
+                    catch (Exception exception)
+                    {
+                        skipped++;
+                        progress.Warn(
+                            $"Article {article.Number} generation skipped: " +
+                            exception.Message);
+                    }
 
-        return new ConfigurationResult(true, items.Count, skipped);
+                    progress.Report(
+                        index + 1,
+                        $"article {article.Number}");
+                }
+
+                return new HydrationPhaseResult(items, skipped);
+            });
+        var skippedArticles = resolved.Skipped +
+            rendered.Skipped + hydrated.Skipped;
+
+        var success = await console.RunPhaseAsync(
+            GenerationPhase.Write,
+            configuration.Name,
+            1,
+            async progress =>
+            {
+                if (hydrated.Items.Count == 0)
+                {
+                    progress.Warn(
+                        "No articles succeeded; existing feed preserved.");
+                    progress.Report(1, "existing feed preserved");
+                    return false;
+                }
+
+                var feed = JsonFeedFiles.CreateFeed(
+                    configuration.Settings,
+                    hydrated.Items);
+                await JsonFeedFiles.WriteAtomicAsync(
+                    configuration.DestinationPath,
+                    feed,
+                    cancellationToken);
+                progress.Report(
+                    1,
+                    $"wrote {hydrated.Items.Count} items");
+                return true;
+            });
+
+        return new ConfigurationResult(
+            success,
+            hydrated.Items.Count,
+            skippedArticles);
     }
 
     private async Task<JsonObject> HydrateWithRetryAsync(
         NumberedArticle article,
         string html,
+        IPhaseProgress progress,
+        int completed,
         CancellationToken cancellationToken)
     {
         Exception? lastError = null;
 
         for (var attempt = 1; attempt <= 2; attempt++)
         {
-            output.WriteLine(
-                $"[Step 5/6] {article.Number}: " +
-                $"Streaming model attempt {attempt}/2.");
+            progress.Report(
+                completed,
+                $"article {article.Number}, attempt {attempt}/2");
 
             try
             {
@@ -294,16 +346,11 @@ public sealed class GeneratorRunner(
             catch (Exception exception)
             {
                 lastError = exception;
-
-                if (attempt < 2)
-                    error.WriteLine(
-                        $"[Step 5/6] {article.Number}: " +
-                        $"Retrying after {exception.Message}");
             }
         }
 
         throw lastError
-            ?? new InvalidOperationException("Article hydration failed.");
+            ?? new InvalidOperationException("Article generation failed.");
     }
 
     private static string PrepareWorkingDirectory(
@@ -331,6 +378,14 @@ public sealed class GeneratorRunner(
         Directory.CreateDirectory(workingDirectory);
         return workingDirectory;
     }
+
+    private sealed record ArticlePhaseResult(
+        IReadOnlyList<NumberedArticle> Articles,
+        int Skipped);
+
+    private sealed record HydrationPhaseResult(
+        IReadOnlyList<JsonObject> Items,
+        int Skipped);
 
     private sealed record ConfigurationResult(
         bool Success,

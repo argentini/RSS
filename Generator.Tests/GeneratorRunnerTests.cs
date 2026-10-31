@@ -18,8 +18,7 @@ public sealed class GeneratorRunnerTests
         var stalePath = Path.Combine(oldWorkingDirectory, "stale.txt");
         File.WriteAllText(stalePath, "stale");
         var publisher = new RecordingGitPublisher();
-        using var output = new StringWriter();
-        using var error = new StringWriter();
+        var console = new RecordingGeneratorConsole();
         var runner = CreateRunner(
             CreateFeedClient("first", "second"),
             new DelegatePageScraper(url =>
@@ -29,8 +28,7 @@ public sealed class GeneratorRunnerTests
                     ? throw new HttpRequestException("blocked")
                     : "<html><body>First</body></html>"),
             publisher,
-            output,
-            error);
+            console);
 
         var summary = await runner.RunAsync(
             workspace.Context,
@@ -104,9 +102,22 @@ public sealed class GeneratorRunnerTests
         Assert.AreEqual(
             configuration.DestinationPath,
             publisher.Destinations[0]);
-        StringAssert.Contains(output.ToString(), "[Step 1/6]");
-        StringAssert.Contains(output.ToString(), "[Step 6/6]");
-        StringAssert.Contains(error.ToString(), "Skipped 02");
+        CollectionAssert.AreEqual(
+            new[]
+            {
+                GenerationPhase.Prepare,
+                GenerationPhase.Download,
+                GenerationPhase.Resolve,
+                GenerationPhase.Render,
+                GenerationPhase.Hydrate,
+                GenerationPhase.Write,
+                GenerationPhase.Publish
+            },
+            console.Phases);
+        Assert.HasCount(1, console.Warnings);
+        StringAssert.Contains(
+            console.Warnings[0],
+            "Article 02 render skipped");
     }
 
     [TestMethod]
@@ -122,8 +133,7 @@ public sealed class GeneratorRunnerTests
             new DelegatePageScraper(_ =>
                 throw new HttpRequestException("blocked")),
             publisher,
-            TextWriter.Null,
-            TextWriter.Null);
+            new RecordingGeneratorConsole());
 
         var summary = await runner.RunAsync(
             workspace.Context,
@@ -164,8 +174,7 @@ public sealed class GeneratorRunnerTests
             CreateFeedClient("article"),
             new DelegatePageScraper(_ => "<html>Article</html>"),
             publisher,
-            TextWriter.Null,
-            TextWriter.Null);
+            new RecordingGeneratorConsole());
 
         var summary = await runner.RunAsync(
             workspace.Context,
@@ -196,8 +205,7 @@ public sealed class GeneratorRunnerTests
             CreateFeedClient("first", "second"),
             new DelegatePageScraper(_ => "<html>Article</html>"),
             publisher,
-            TextWriter.Null,
-            TextWriter.Null,
+            new RecordingGeneratorConsole(),
             hydrator);
 
         var summary = await runner.RunAsync(
@@ -221,8 +229,7 @@ public sealed class GeneratorRunnerTests
         IFeedClient feedClient,
         IPageScraper scraper,
         IGitPublisher publisher,
-        TextWriter output,
-        TextWriter error,
+        IGeneratorConsole console,
         IArticleHydrator? articleHydrator = null)
     {
         return new GeneratorRunner(
@@ -240,8 +247,7 @@ public sealed class GeneratorRunnerTests
                     53,
                     47,
                     TimeSpan.Zero)),
-            output,
-            error);
+            console);
     }
 
     private static JsonObject CreateItem(Uri sourceUrl)

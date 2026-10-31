@@ -1,4 +1,5 @@
 using System.Text.Json;
+using Generator;
 
 namespace Generator.Tests;
 
@@ -75,5 +76,126 @@ internal sealed class TestWorkspace : IDisposable
     {
         if (Directory.Exists(Root))
             Directory.Delete(Root, true);
+    }
+}
+
+internal sealed class RecordingGeneratorConsole : IGeneratorConsole
+{
+    public List<GenerationPhase> Phases { get; } = [];
+    public List<string> Warnings { get; } = [];
+    public List<string> Events { get; } = [];
+    public int OverlapCancellationCount { get; private set; }
+    public int ScheduleFailureCount { get; private set; }
+
+    public void ShowStartup(
+        IReadOnlyList<ScheduleItem> schedule,
+        TimeZoneInfo timeZone,
+        int feedCount,
+        string model)
+    {
+        Events.Add("startup");
+    }
+
+    public async Task RunActivityAsync(
+        string title,
+        Func<Task> action)
+    {
+        Events.Add("activity:" + title);
+        await action();
+    }
+
+    public void ShowNextRun(
+        DateTimeOffset localTime,
+        TimeSpan remaining)
+    {
+        Events.Add("next-run");
+    }
+
+    public void ScheduleItemStarting()
+    {
+        Events.Add("schedule-started");
+    }
+
+    public void ScheduleItemFinished()
+    {
+        Events.Add("schedule-finished");
+    }
+
+    public void ScheduleItemCancelled()
+    {
+        Events.Add("schedule-cancelled");
+    }
+
+    public void ScheduleItemFailed(string message)
+    {
+        ScheduleFailureCount++;
+        Events.Add("schedule-failed:" + message);
+    }
+
+    public void CancellingOverlappingRun()
+    {
+        OverlapCancellationCount++;
+        Events.Add("overlap-cancelled");
+    }
+
+    public void ApplicationStopped()
+    {
+        Events.Add("stopped");
+    }
+
+    public void FatalError(string message)
+    {
+        Events.Add("fatal:" + message);
+    }
+
+    public void Warning(string message)
+    {
+        Warnings.Add(message);
+    }
+
+    public void BeginScheduleItem(
+        IReadOnlyList<ConfigurationFile> configurations)
+    {
+        Events.Add("run-started");
+    }
+
+    public void BeginFeed(string name, int index, int total)
+    {
+        Events.Add("feed:" + name);
+    }
+
+    public async Task<T> RunPhaseAsync<T>(
+        GenerationPhase phase,
+        string scope,
+        int units,
+        Func<IPhaseProgress, Task<T>> action)
+    {
+        Phases.Add(phase);
+        return await action(new RecordingPhaseProgress(Warnings));
+    }
+
+    public void FeedFailed(string name, string message)
+    {
+        Events.Add("feed-failed:" + name + ":" + message);
+    }
+
+    public void CompleteScheduleItem(
+        RunSummary summary,
+        int failures)
+    {
+        Events.Add("run-finished");
+    }
+
+    private sealed class RecordingPhaseProgress(
+        List<string> warnings) : IPhaseProgress
+    {
+        public void Report(int completed, string? detail = null)
+        {
+        }
+
+        public void Warn(string message)
+        {
+            warnings.Add(message);
+        }
     }
 }

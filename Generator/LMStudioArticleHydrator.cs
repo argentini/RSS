@@ -9,8 +9,7 @@ namespace Generator;
 
 public sealed class LMStudioArticleHydrator(
     HttpClient httpClient,
-    GeneratorSettings settings,
-    TextWriter output) : IArticleHydrator
+    GeneratorSettings settings) : IArticleHydrator
 {
     public async Task<JsonObject> HydrateAsync(
         string html,
@@ -93,13 +92,8 @@ public sealed class LMStudioArticleHydrator(
 
                 displayed.Append(delta.Display);
                 content.Append(delta.Content);
-                await output.WriteAsync(
-                    delta.Display.AsMemory(),
-                    cancellationToken);
-                await output.FlushAsync(cancellationToken);
             }
 
-            await output.WriteLineAsync();
             var result = content.Length > 0
                 ? content.ToString()
                 : displayed.ToString();

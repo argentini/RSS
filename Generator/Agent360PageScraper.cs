@@ -8,19 +8,11 @@ namespace Generator;
 public sealed class Agent360PageScraper : IPageScraper, IAsyncDisposable
 {
     private const int MaximumHtmlCharacters = 10_000_000;
-    private readonly TextWriter _output;
-    private readonly TextWriter _error;
     private readonly SemaphoreSlim _lock = new(1, 1);
     private McpClient? _client;
     private McpClientTool? _navigate;
     private McpClientTool? _getPageContent;
     private McpClientTool? _closeTab;
-
-    public Agent360PageScraper(TextWriter output, TextWriter error)
-    {
-        _output = output;
-        _error = error;
-    }
 
     public async Task StartAsync(CancellationToken cancellationToken)
     {
@@ -28,7 +20,6 @@ public sealed class Agent360PageScraper : IPageScraper, IAsyncDisposable
             return;
 
         await OpenChromeAsync(cancellationToken);
-        await _output.WriteLineAsync("Chrome: connecting through Agent360 MCP.");
 
         var transport = new StdioClientTransport(
             new StdioClientTransportOptions
@@ -40,7 +31,7 @@ public sealed class Agent360PageScraper : IPageScraper, IAsyncDisposable
                 EnvironmentVariables =
                     StdioClientTransportOptions.GetDefaultEnvironmentVariables(),
                 ShutdownTimeout = TimeSpan.FromSeconds(10),
-                StandardErrorLines = line => _error.WriteLine(line)
+                StandardErrorLines = _ => { }
             });
         var client = await McpClient.CreateAsync(
             transport,
@@ -52,8 +43,6 @@ public sealed class Agent360PageScraper : IPageScraper, IAsyncDisposable
         _getPageContent = GetRequiredTool(tools, "browser_get_page_content");
         _closeTab = GetRequiredTool(tools, "browser_close_tab");
         _client = client;
-
-        await _output.WriteLineAsync("Chrome: Agent360 MCP connected.");
     }
 
     public async Task<string> GetContentAsync(
