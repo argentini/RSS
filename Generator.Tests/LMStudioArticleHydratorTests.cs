@@ -9,6 +9,45 @@ namespace Generator.Tests;
 public sealed class LMStudioArticleHydratorTests
 {
     [TestMethod]
+    public async Task HydrateAsync_Request_PrefixesSystemPromptWithCavemanSkill()
+    {
+        var stream = CreateEvent(
+            "content",
+            "{\"title\":\"Article\",\"date_published\":" +
+            "\"2026-10-30T11:53:47Z\",\"content_html\":\"<p>Body</p>\"}") +
+            "data: [DONE]\n\n";
+        var handler = new StaticResponseHandler(stream);
+        using var client = new HttpClient(handler)
+        {
+            BaseAddress = new Uri("http://127.0.0.1:1235/")
+        };
+        var hydrator = new LMStudioArticleHydrator(
+            client,
+            new GeneratorSettings
+            {
+                BaseUrl = client.BaseAddress,
+                Model = "test-model",
+                TimeoutMinutes = 1,
+                Schedule = []
+            });
+
+        await hydrator.HydrateAsync(
+            "<html><body>Body</body></html>",
+            new Uri("https://source.test/article"),
+            CancellationToken.None);
+
+        Assert.IsNotNull(handler.RequestContent);
+        using var payload = JsonDocument.Parse(handler.RequestContent);
+        var systemPrompt = payload.RootElement
+            .GetProperty("messages")[0]
+            .GetProperty("content")
+            .GetString();
+
+        Assert.IsNotNull(systemPrompt);
+        Assert.StartsWith("/caveman\n", systemPrompt);
+    }
+
+    [TestMethod]
     [DoNotParallelize]
     public async Task HydrateAsync_StreamedResponse_BuffersTokensSilently()
     {
@@ -85,17 +124,23 @@ public sealed class LMStudioArticleHydratorTests
     private sealed class StaticResponseHandler(string content)
         : HttpMessageHandler
     {
-        protected override Task<HttpResponseMessage> SendAsync(
+        public string? RequestContent { get; private set; }
+
+        protected override async Task<HttpResponseMessage> SendAsync(
             HttpRequestMessage request,
             CancellationToken cancellationToken)
         {
-            return Task.FromResult(new HttpResponseMessage(HttpStatusCode.OK)
+            RequestContent = request.Content is null
+                ? null
+                : await request.Content.ReadAsStringAsync(cancellationToken);
+
+            return new HttpResponseMessage(HttpStatusCode.OK)
             {
                 Content = new StringContent(
                     content,
                     Encoding.UTF8,
                     "text/event-stream")
-            });
+            };
         }
     }
 }
