@@ -27,6 +27,7 @@ internal interface IAgent360BrowserSession : IAsyncDisposable
 public sealed class Agent360PageScraper : IPageScraper, IAsyncDisposable
 {
     private const int MaximumAttempts = 2;
+    private const int MaximumCaptureAttempts = 10;
     private const int MaximumHtmlCharacters = 10_000_000;
     private static readonly TimeSpan DefaultOperationTimeout =
         TimeSpan.FromMinutes(2);
@@ -98,26 +99,33 @@ public sealed class Agent360PageScraper : IPageScraper, IAsyncDisposable
                         "navigation",
                         operationToken);
                     ValidateNavigation(navigation, url);
-                    await Task.Delay(_pageSettleDelay, operationToken);
-                    var page = await RunWithDeadlineAsync(
-                        token => session.GetPageContentAsync(
-                            MaximumHtmlCharacters,
-                            token),
-                        "page capture",
-                        operationToken);
 
-                    if (page["afkortet"]?.GetValue<bool>() == true)
-                        throw new InvalidOperationException(
-                            $"Chrome DOM exceeded {MaximumHtmlCharacters} " +
-                            "characters.");
+                    for (var attempt = 1;
+                        attempt <= MaximumCaptureAttempts;
+                        attempt++)
+                    {
+                        await Task.Delay(_pageSettleDelay, operationToken);
+                        var page = await RunWithDeadlineAsync(
+                            token => session.GetPageContentAsync(
+                                MaximumHtmlCharacters,
+                                token),
+                            "page capture",
+                            operationToken);
 
-                    var html = page["content"]?.GetValue<string>();
+                        if (page["afkortet"]?.GetValue<bool>() == true)
+                            throw new InvalidOperationException(
+                                $"Chrome DOM exceeded {MaximumHtmlCharacters} " +
+                                "characters.");
 
-                    if (string.IsNullOrWhiteSpace(html))
-                        throw new InvalidOperationException(
-                            "Chrome returned an empty DOM.");
+                        var html = page["content"]?.GetValue<string>();
 
-                    return html;
+                        if (html is not null &&
+                            HtmlPromptContent.HasVisibleContent(html))
+                            return html;
+                    }
+
+                    throw new InvalidOperationException(
+                        "Chrome returned no visible DOM content.");
                 },
                 cancellationToken);
         }

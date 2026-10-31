@@ -52,9 +52,20 @@ public static class HtmlPromptContent
         var document = new HtmlDocument();
         document.LoadHtml(html);
         Clean(document.DocumentNode);
-        var content = FindLargest(document.DocumentNode, "article")
-            ?? FindLargest(document.DocumentNode, "main")
+        var article = FindLargest(document.DocumentNode, "article");
+        var main = article is null
+            ? FindLargest(document.DocumentNode, "main")
+            : null;
+        var content = article ?? main ?? document.DocumentNode;
+        var visibleContent = article
+            ?? main
+            ?? document.DocumentNode.SelectSingleNode(".//body")
             ?? document.DocumentNode;
+
+        if (ContainsVisibleText(visibleContent) == false)
+            throw new InvalidOperationException(
+                "HTML contains no visible content.");
+
         var prepared = new StringBuilder(content.OuterHtml.Length);
 
         if (ReferenceEquals(content, document.DocumentNode) == false)
@@ -62,6 +73,21 @@ public static class HtmlPromptContent
 
         prepared.Append(content.OuterHtml);
         return prepared.ToString().Trim();
+    }
+
+    internal static bool HasVisibleContent(string? html)
+    {
+        if (string.IsNullOrWhiteSpace(html))
+            return false;
+
+        var document = new HtmlDocument();
+        document.LoadHtml(html);
+        Clean(document.DocumentNode);
+        var content = FindLargest(document.DocumentNode, "article")
+            ?? FindLargest(document.DocumentNode, "main")
+            ?? document.DocumentNode.SelectSingleNode(".//body")
+            ?? document.DocumentNode;
+        return ContainsVisibleText(content);
     }
 
     private static void AppendMetadata(HtmlNode root, StringBuilder content)
@@ -122,6 +148,27 @@ public static class HtmlPromptContent
             || node
                 .GetAttributeValue("id", string.Empty)
                 .Contains("sidebar", StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static bool ContainsVisibleText(HtmlNode root)
+    {
+        var nodes = root.SelectNodes(".//text()");
+
+        if (nodes is null)
+            return false;
+
+        for (var nodeIndex = 0; nodeIndex < nodes.Count; nodeIndex++)
+        {
+            var text = HtmlEntity.DeEntitize(nodes[nodeIndex].InnerText);
+
+            for (var characterIndex = 0;
+                characterIndex < text.Length;
+                characterIndex++)
+                if (char.IsWhiteSpace(text[characterIndex]) == false)
+                    return true;
+        }
+
+        return false;
     }
 
     private static HtmlNode? FindLargest(HtmlNode root, string name)

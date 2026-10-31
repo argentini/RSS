@@ -191,6 +191,22 @@ public sealed class HtmlPromptContentTests
         Assert.IsFalse(prepared.Contains("script marker", StringComparison.Ordinal));
     }
 
+    [TestMethod]
+    public void Prepare_EmptyBody_ThrowsInvalidOperationException()
+    {
+        const string html = """
+            <html>
+            <head><title>Source</title></head>
+            <body><script>pageCode()</script></body>
+            </html>
+            """;
+
+        var exception = Assert.ThrowsExactly<InvalidOperationException>(
+            () => HtmlPromptContent.Prepare(html));
+
+        StringAssert.Contains(exception.Message, "no visible content");
+    }
+
     private static void AssertElementsRemoved(string html, params string[] names)
     {
         for (var index = 0; index < names.Length; index++)

@@ -341,6 +341,37 @@ public sealed class GeneratorRunnerTests
     }
 
     [TestMethod]
+    public async Task RunAsync_ShallowRenderedArticle_DoesNotHydrate()
+    {
+        using var workspace = new TestWorkspace();
+        var configuration = workspace.CreateConfiguration("FeedOne", latestCount: 1);
+        const string existingFeed = "existing feed content";
+        File.WriteAllText(configuration.DestinationPath, existingFeed);
+        var publisher = new RecordingGitPublisher();
+        var hydrator = new DelegateArticleHydrator(
+            (_, sourceUrl) => CreateItem(sourceUrl));
+        var runner = CreateRunner(
+            CreateFeedClient("article"),
+            new DelegatePageScraper(_ =>
+                "<html><head><title>Source</title></head><body></body></html>"),
+            publisher,
+            new RecordingGeneratorConsole(),
+            hydrator);
+
+        var summary = await runner.RunAsync(
+            workspace.Context,
+            [configuration],
+            CancellationToken.None);
+
+        Assert.AreEqual(0, hydrator.CallCount);
+        Assert.AreEqual(1, summary.SkippedArticles);
+        Assert.AreEqual(
+            existingFeed,
+            File.ReadAllText(configuration.DestinationPath));
+        Assert.AreEqual(0, publisher.CallCount);
+    }
+
+    [TestMethod]
     public async Task RunAsync_RenderedArticle_CleansHtmlBeforeSavingAndHydration()
     {
         using var workspace = new TestWorkspace();
@@ -485,11 +516,14 @@ public sealed class GeneratorRunnerTests
     private sealed class DelegateArticleHydrator(
         Func<string, Uri, JsonObject> hydrate) : IArticleHydrator
     {
+        public int CallCount { get; private set; }
+
         public Task<JsonObject> HydrateAsync(
             string html,
             Uri sourceUrl,
             CancellationToken cancellationToken)
         {
+            CallCount++;
             return Task.FromResult(hydrate(html, sourceUrl));
         }
     }

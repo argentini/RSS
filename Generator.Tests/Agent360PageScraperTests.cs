@@ -55,6 +55,75 @@ public sealed class Agent360PageScraperTests
     }
 
     [TestMethod]
+    public async Task GetContentAsync_ShallowThenVisibleCapture_ReturnsVisibleHtml()
+    {
+        const string visibleHtml = "<html><body>Article body</body></html>";
+        var captureCount = 0;
+        var session = new FakeSession(
+            (_, _) => Task.FromResult(new JsonObject
+            {
+                ["ok"] = true
+            }),
+            (_, _) => Task.FromResult(new JsonObject
+            {
+                ["content"] = ++captureCount == 1
+                    ? "<html><head><title>Source</title></head><body></body></html>"
+                    : visibleHtml,
+                ["afkortet"] = false
+            }));
+        var factory = new FakeSessionFactory(
+            _ => Task.FromResult<IAgent360BrowserSession>(session));
+        await using var scraper = new Agent360PageScraper(
+            factory,
+            TimeSpan.FromSeconds(1),
+            TimeSpan.Zero);
+
+        var html = await scraper.GetContentAsync(
+            new Uri("https://source.test/article"),
+            CancellationToken.None);
+
+        Assert.AreEqual(visibleHtml, html);
+        Assert.AreEqual(1, factory.CreateCount);
+        Assert.AreEqual(1, session.NavigateCount);
+        Assert.AreEqual(2, session.CaptureCount);
+    }
+
+    [TestMethod]
+    public async Task GetContentAsync_ShallowSession_ReconnectsAndReturnsVisibleHtml()
+    {
+        var shallowSession = new FakeSession(
+            (_, _) => Task.FromResult(new JsonObject
+            {
+                ["ok"] = true
+            }),
+            (_, _) => Task.FromResult(new JsonObject
+            {
+                ["content"] =
+                    "<html><head><title>Source</title></head><body></body></html>",
+                ["afkortet"] = false
+            }));
+        var successfulSession = CreateSuccessfulSession();
+        var factory = new FakeSessionFactory(
+            _ => Task.FromResult<IAgent360BrowserSession>(shallowSession),
+            _ => Task.FromResult<IAgent360BrowserSession>(successfulSession));
+        await using var scraper = new Agent360PageScraper(
+            factory,
+            TimeSpan.FromSeconds(1),
+            TimeSpan.Zero);
+
+        var html = await scraper.GetContentAsync(
+            new Uri("https://source.test/article"),
+            CancellationToken.None);
+
+        Assert.AreEqual("<html>Article</html>", html);
+        Assert.AreEqual(2, factory.CreateCount);
+        Assert.AreEqual(10, shallowSession.CaptureCount);
+        Assert.AreEqual(1, shallowSession.CloseCount);
+        Assert.AreEqual(1, shallowSession.DisposeCount);
+        Assert.AreEqual(1, successfulSession.CaptureCount);
+    }
+
+    [TestMethod]
     public async Task GetContentAsync_NavigationExceedsDeadline_RetriesOnceThenThrows()
     {
         var first = CreateHangingSession();
