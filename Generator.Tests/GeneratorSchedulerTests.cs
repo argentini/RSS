@@ -195,6 +195,56 @@ public sealed class GeneratorSchedulerTests
         Assert.AreEqual(1, runCount);
     }
 
+    [TestMethod]
+    public async Task RunAsync_ImmediateRunActive_ShowsNextRunAfterCompletion()
+    {
+        var timeProvider = new MutableTimeProvider(
+            DateTimeOffset.Parse("2026-10-31T07:30:00+00:00"));
+        var runStarted = new TaskCompletionSource(
+            TaskCreationOptions.RunContinuationsAsynchronously);
+        var completeRun = new TaskCompletionSource(
+            TaskCreationOptions.RunContinuationsAsynchronously);
+        var waitStarted = new TaskCompletionSource(
+            TaskCreationOptions.RunContinuationsAsynchronously);
+        using var shutdown = new CancellationTokenSource();
+        var console = new RecordingGeneratorConsole();
+        var scheduler = new GeneratorScheduler(
+            timeProvider,
+            console,
+            (_, cancellationToken) =>
+            {
+                waitStarted.TrySetResult();
+                return Task.Delay(
+                    Timeout.InfiniteTimeSpan,
+                    cancellationToken);
+            });
+
+        var schedulerTask = scheduler.RunAsync(
+            Schedule,
+            async _ =>
+            {
+                runStarted.SetResult();
+                await completeRun.Task;
+            },
+            true,
+            shutdown.Token);
+
+        await runStarted.Task.WaitAsync(TimeSpan.FromSeconds(5));
+        await waitStarted.Task.WaitAsync(TimeSpan.FromSeconds(5));
+        Assert.DoesNotContain("next-run", console.Events);
+
+        completeRun.SetResult();
+        await console.NextRunShown.Task.WaitAsync(TimeSpan.FromSeconds(5));
+        await shutdown.CancelAsync();
+        await schedulerTask.WaitAsync(TimeSpan.FromSeconds(5));
+
+        var finishedIndex = console.Events.IndexOf("schedule-finished");
+        var nextRunIndex = console.Events.IndexOf("next-run");
+        Assert.IsGreaterThan(finishedIndex, nextRunIndex);
+        Assert.AreEqual(1, console.Events.Count(
+            eventName => eventName == "next-run"));
+    }
+
     private sealed class MutableTimeProvider(
         DateTimeOffset utcNow) : TimeProvider
     {

@@ -48,9 +48,34 @@ public sealed class GeneratorScheduler
                     timeProvider.LocalTimeZone);
 
                 var wait = scheduledTime - timeProvider.GetUtcNow();
-                console.ShowNextRun(
-                    localTime,
-                    wait > TimeSpan.Zero ? wait : TimeSpan.Zero);
+
+                if (runCancellation is not null)
+                {
+                    var runCompleted = runTask.IsCompleted;
+
+                    if (runCompleted == false && wait > TimeSpan.Zero)
+                    {
+                        runCompleted = await WaitForRunOrSlotAsync(
+                            runTask,
+                            wait,
+                            cancellationToken);
+
+                        if (runCompleted == false)
+                            wait = TimeSpan.Zero;
+                    }
+
+                    if (runCompleted)
+                    {
+                        await runTask;
+                        runCancellation.Dispose();
+                        runCancellation = null;
+                        cancellationToken.ThrowIfCancellationRequested();
+                        wait = scheduledTime - timeProvider.GetUtcNow();
+
+                        if (wait > TimeSpan.Zero)
+                            console.ShowNextRun(localTime, wait);
+                    }
+                }
 
                 if (wait > TimeSpan.Zero)
                     await delay(wait, cancellationToken);
@@ -151,6 +176,35 @@ public sealed class GeneratorScheduler
         {
             console.ScheduleItemFailed(exception.Message);
         }
+    }
+
+    private async Task<bool> WaitForRunOrSlotAsync(
+        Task runTask,
+        TimeSpan wait,
+        CancellationToken cancellationToken)
+    {
+        using var delayCancellation = CancellationTokenSource
+            .CreateLinkedTokenSource(cancellationToken);
+        var delayTask = delay(wait, delayCancellation.Token);
+
+        if (await Task.WhenAny(runTask, delayTask) == delayTask)
+        {
+            await delayTask;
+            return false;
+        }
+
+        await delayCancellation.CancelAsync();
+
+        try
+        {
+            await delayTask;
+        }
+        catch (OperationCanceledException)
+            when (delayCancellation.IsCancellationRequested)
+        {
+        }
+
+        return true;
     }
 
     private static async Task StopRunAsync(

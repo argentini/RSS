@@ -5,8 +5,11 @@ public static class StartupRunPrompt
     public static bool Ask(
         IConsoleKeyReader keyReader,
         TextWriter output,
+        Action showNextRun,
         CancellationTokenSource shutdown)
     {
+        showNextRun();
+
         if (keyReader.CanRead == false)
         {
             output.WriteLine(

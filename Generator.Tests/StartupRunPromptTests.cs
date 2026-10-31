@@ -23,6 +23,7 @@ public sealed class StartupRunPromptTests
         var actual = StartupRunPrompt.Ask(
             keyReader,
             output,
+            () => { },
             shutdown);
 
         Assert.AreEqual(expected, actual);
@@ -47,10 +48,34 @@ public sealed class StartupRunPromptTests
         var runImmediately = StartupRunPrompt.Ask(
             keyReader,
             output,
+            () => { },
             shutdown);
 
         Assert.IsFalse(runImmediately);
         Assert.IsTrue(shutdown.IsCancellationRequested);
+    }
+
+    [TestMethod]
+    public void Ask_ShowNextRun_RendersBeforeQuestion()
+    {
+        var keyReader = new QueueConsoleKeyReader(ConsoleKey.N);
+        using var output = new StringWriter();
+        using var shutdown = new CancellationTokenSource();
+
+        StartupRunPrompt.Ask(
+            keyReader,
+            output,
+            () => output.WriteLine("Next run Saturday at 19:00"),
+            shutdown);
+
+        var text = output.ToString();
+        var nextRunIndex = text.IndexOf(
+            "Next run",
+            StringComparison.Ordinal);
+        var questionIndex = text.IndexOf(
+            "Run immediately?",
+            StringComparison.Ordinal);
+        Assert.IsGreaterThan(nextRunIndex, questionIndex);
     }
 
     private sealed class QueueConsoleKeyReader(

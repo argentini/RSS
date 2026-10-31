@@ -84,6 +84,8 @@ internal sealed class RecordingGeneratorConsole : IGeneratorConsole
     public List<GenerationPhase> Phases { get; } = [];
     public List<string> Warnings { get; } = [];
     public List<string> Events { get; } = [];
+    public TaskCompletionSource NextRunShown { get; } = new(
+        TaskCreationOptions.RunContinuationsAsynchronously);
     public int OverlapCancellationCount { get; private set; }
     public int ScheduleFailureCount { get; private set; }
 
@@ -109,6 +111,7 @@ internal sealed class RecordingGeneratorConsole : IGeneratorConsole
         TimeSpan remaining)
     {
         Events.Add("next-run");
+        NextRunShown.TrySetResult();
     }
 
     public void ScheduleItemStarting()

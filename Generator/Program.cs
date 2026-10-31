@@ -82,9 +82,20 @@ var runner = new GeneratorRunner(
 try
 {
     var keyReader = new SystemConsoleKeyReader();
+    var now = TimeProvider.System.GetUtcNow();
+    var nextRun = GeneratorScheduler.GetNextOccurrence(
+        settings.Schedule,
+        now,
+        TimeProvider.System.LocalTimeZone);
+    var nextRunLocal = TimeZoneInfo.ConvertTime(
+        nextRun,
+        TimeProvider.System.LocalTimeZone);
     var runImmediately = StartupRunPrompt.Ask(
         keyReader,
         Console.Out,
+        () => appConsole.ShowNextRun(
+            nextRunLocal,
+            nextRun > now ? nextRun - now : TimeSpan.Zero),
         shutdown);
 
     if (shutdown.IsCancellationRequested)
