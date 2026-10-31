@@ -12,7 +12,8 @@ public sealed class GitPublisherTests
             new CommandResult(1, "", ""),
             new CommandResult(0, "committed", ""),
             new CommandResult(0, "pushed", ""));
-        var publisher = new GitPublisher(commandRunner);
+        var credentials = CreateCredentials();
+        var publisher = new GitPublisher(commandRunner, credentials);
         var timestamp = new DateTimeOffset(
             2026,
             10,
@@ -36,6 +37,34 @@ public sealed class GitPublisherTests
         CollectionAssert.AreEqual(
             new[] { "push" },
             commandRunner.Invocations[3].Arguments);
+        var pushEnvironment = commandRunner.Invocations[3].Environment;
+        Assert.AreEqual(
+            credentials.UserName,
+            pushEnvironment["GENERATOR_GITHUB_USERNAME"]);
+        Assert.AreEqual(
+            credentials.PersonalAccessToken,
+            pushEnvironment["GENERATOR_GITHUB_TOKEN"]);
+        Assert.AreEqual("0", pushEnvironment["GIT_TERMINAL_PROMPT"]);
+        Assert.AreEqual("2", pushEnvironment["GIT_CONFIG_COUNT"]);
+        Assert.AreEqual(
+            "credential.helper",
+            pushEnvironment["GIT_CONFIG_KEY_0"]);
+        Assert.AreEqual("", pushEnvironment["GIT_CONFIG_VALUE_0"]);
+        Assert.AreEqual(
+            "credential.helper",
+            pushEnvironment["GIT_CONFIG_KEY_1"]);
+        var helper = pushEnvironment["GIT_CONFIG_VALUE_1"];
+        StringAssert.Contains(helper, "github.com");
+        StringAssert.Contains(helper, "$GENERATOR_GITHUB_USERNAME");
+        StringAssert.Contains(helper, "$GENERATOR_GITHUB_TOKEN");
+        var pushArguments = string.Join('\n',
+            commandRunner.Invocations[3].Arguments);
+        Assert.DoesNotContain(
+            credentials.UserName,
+            pushArguments);
+        Assert.DoesNotContain(
+            credentials.PersonalAccessToken,
+            pushArguments);
         CollectionAssert.Contains(
             commandRunner.Invocations[2].Arguments,
             "Content generated on 2026-10-30T11:53:47Z");
@@ -54,7 +83,9 @@ public sealed class GitPublisherTests
         var commandRunner = new RecordingCommandRunner(
             new CommandResult(0, "", ""),
             new CommandResult(0, "", ""));
-        var publisher = new GitPublisher(commandRunner);
+        var publisher = new GitPublisher(
+            commandRunner,
+            CreateCredentials());
 
         var published = await publisher.PublishAsync(
             workspace.Root,
@@ -71,7 +102,9 @@ public sealed class GitPublisherTests
     {
         using var workspace = new TestWorkspace();
         var commandRunner = new RecordingCommandRunner();
-        var publisher = new GitPublisher(commandRunner);
+        var publisher = new GitPublisher(
+            commandRunner,
+            CreateCredentials());
         var outsidePath = Path.Combine(
             Path.GetDirectoryName(workspace.Root) ?? Path.GetTempPath(),
             "outside.json");
@@ -98,18 +131,32 @@ public sealed class GitPublisherTests
             string fileName,
             IReadOnlyList<string> arguments,
             string workingDirectory,
-            CancellationToken cancellationToken)
+            CancellationToken cancellationToken,
+            IReadOnlyDictionary<string, string>? environment = null)
         {
             Invocations.Add(new Invocation(
                 fileName,
                 arguments.ToArray(),
-                workingDirectory));
+                workingDirectory,
+                environment is null
+                    ? new Dictionary<string, string>()
+                    : new Dictionary<string, string>(environment)));
             return Task.FromResult(results[_index++]);
         }
+    }
+
+    private static GitHubCredentials CreateCredentials()
+    {
+        return new GitHubCredentials
+        {
+            UserName = "octocat",
+            PersonalAccessToken = "test-token"
+        };
     }
 
     private sealed record Invocation(
         string FileName,
         string[] Arguments,
-        string WorkingDirectory);
+        string WorkingDirectory,
+        IReadOnlyDictionary<string, string> Environment);
 }

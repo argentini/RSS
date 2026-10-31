@@ -24,6 +24,8 @@ var context = new GeneratorContext(
     Path.Combine(projectRoot, ".temp"));
 var settings = GeneratorSettings.Load(
     Path.Combine(generatorRoot, "appsettings.json"));
+var gitHubCredentials = GitHubCredentialsLoader.Load(
+    Path.Combine(projectRoot, "Credentials.json"));
 var configurationResult = ConfigurationLoader.LoadAll(
     context,
     Console.Error);
@@ -58,7 +60,9 @@ var runner = new GeneratorRunner(
         modelClient,
         settings,
         Console.Out),
-    new GitPublisher(new ProcessCommandRunner()),
+    new GitPublisher(
+        new ProcessCommandRunner(),
+        gitHubCredentials),
     TimeProvider.System,
     Console.Out,
     Console.Error);

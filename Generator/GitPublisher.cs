@@ -14,7 +14,8 @@ public interface ICommandRunner
         string fileName,
         IReadOnlyList<string> arguments,
         string workingDirectory,
-        CancellationToken cancellationToken);
+        CancellationToken cancellationToken,
+        IReadOnlyDictionary<string, string>? environment = null);
 }
 
 public sealed class ProcessCommandRunner : ICommandRunner
@@ -23,7 +24,8 @@ public sealed class ProcessCommandRunner : ICommandRunner
         string fileName,
         IReadOnlyList<string> arguments,
         string workingDirectory,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken,
+        IReadOnlyDictionary<string, string>? environment = null)
     {
         var startInfo = new ProcessStartInfo
         {
@@ -36,6 +38,12 @@ public sealed class ProcessCommandRunner : ICommandRunner
 
         for (var index = 0; index < arguments.Count; index++)
             startInfo.ArgumentList.Add(arguments[index]);
+
+        if (environment is not null)
+        {
+            foreach (var variable in environment)
+                startInfo.Environment[variable.Key] = variable.Value;
+        }
 
         using var process = new Process { StartInfo = startInfo };
 
@@ -56,8 +64,19 @@ public sealed class ProcessCommandRunner : ICommandRunner
     }
 }
 
-public sealed class GitPublisher(ICommandRunner commandRunner) : IGitPublisher
+public sealed class GitPublisher(
+    ICommandRunner commandRunner,
+    GitHubCredentials credentials) : IGitPublisher
 {
+    private const string CredentialHelper =
+        "!f() { test \"$1\" = get || exit 0; host=; " +
+        "while IFS= read -r line; do case \"$line\" in " +
+        "host=*) host=\"${line#host=}\" ;; esac; done; " +
+        "test \"$host\" = github.com || exit 0; " +
+        "printf '%s\\n' " +
+        "\"username=$GENERATOR_GITHUB_USERNAME\" " +
+        "\"password=$GENERATOR_GITHUB_TOKEN\"; }; f";
+
     public async Task<bool> PublishAsync(
         string projectRoot,
         IReadOnlyList<string> destinationPaths,
@@ -129,9 +148,25 @@ public sealed class GitPublisher(ICommandRunner commandRunner) : IGitPublisher
                 "git",
                 ["push"],
                 projectRoot,
-                cancellationToken));
+                cancellationToken,
+                CreatePushEnvironment()));
 
         return true;
+    }
+
+    private IReadOnlyDictionary<string, string> CreatePushEnvironment()
+    {
+        return new Dictionary<string, string>(StringComparer.Ordinal)
+        {
+            ["GIT_TERMINAL_PROMPT"] = "0",
+            ["GIT_CONFIG_COUNT"] = "2",
+            ["GIT_CONFIG_KEY_0"] = "credential.helper",
+            ["GIT_CONFIG_VALUE_0"] = "",
+            ["GIT_CONFIG_KEY_1"] = "credential.helper",
+            ["GIT_CONFIG_VALUE_1"] = CredentialHelper,
+            ["GENERATOR_GITHUB_USERNAME"] = credentials.UserName,
+            ["GENERATOR_GITHUB_TOKEN"] = credentials.PersonalAccessToken
+        };
     }
 
     private static List<string> GetRepositoryPaths(
