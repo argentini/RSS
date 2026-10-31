@@ -79,7 +79,7 @@ public sealed class GeneratorConsole(
             .Border(TableBorder.Rounded)
             .BorderColor(Color.Grey)
             .AddColumn("[bold]Day[/]")
-            .AddColumn("[bold]Configured slots[/]");
+            .AddColumn("[bold]Slots[/]");
         var days = new[]
         {
             DayOfWeek.Monday,
