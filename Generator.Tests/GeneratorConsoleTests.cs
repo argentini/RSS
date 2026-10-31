@@ -104,9 +104,74 @@ public sealed class GeneratorConsoleTests
             });
 
         var text = output.ToString();
+        StringAssert.Contains(text, "1/6 Prepare workspace");
         StringAssert.Contains(text, "step ETA 2s");
         StringAssert.Contains(text, "run ETA 20s");
+        Assert.DoesNotContain("Schedule item", text);
         Assert.DoesNotContain("\u001b", text);
+    }
+
+    [TestMethod]
+    public async Task RunPhaseAsync_WriteThenPublish_RendersFeedCompletionBeforeUnnumberedPublish()
+    {
+        using var workspace = new TestWorkspace();
+        using var output = new StringWriter();
+        var timeProvider = new ManualTimeProvider();
+        var generatorConsole = new GeneratorConsole(
+            CreatePlainConsole(output),
+            TimingHistory.Load(
+                Path.Combine(workspace.TempRoot, "timings.json")),
+            timeProvider);
+        var configuration = workspace.CreateConfiguration("FeedOne");
+        generatorConsole.BeginFeed(configuration.Name, 1, 1);
+        timeProvider.Advance(TimeSpan.FromSeconds(61));
+
+        await generatorConsole.RunPhaseAsync(
+            GenerationPhase.Write,
+            configuration.Name,
+            1,
+            _ => Task.FromResult(true));
+        await generatorConsole.RunPhaseAsync(
+            GenerationPhase.Publish,
+            "",
+            1,
+            _ => Task.FromResult(true));
+
+        var text = output.ToString();
+        var lines = text.Split(
+            Environment.NewLine,
+            StringSplitOptions.RemoveEmptyEntries);
+        var writeIndex = Array.FindLastIndex(
+            lines,
+            line => line.Contains(
+                "✓ 6/6 Write feed",
+                StringComparison.Ordinal));
+        Assert.IsGreaterThan(-1, writeIndex);
+        Assert.AreEqual("✓ Feed complete • 2m", lines[writeIndex + 1]);
+        StringAssert.Contains(text, "✓ Publish changes");
+        Assert.DoesNotContain("/7", text);
+        Assert.DoesNotContain("6/6 Publish changes", text);
+    }
+
+    [TestMethod]
+    public void FeedFailed_AfterBeginFeed_RendersElapsedTime()
+    {
+        using var workspace = new TestWorkspace();
+        using var output = new StringWriter();
+        var timeProvider = new ManualTimeProvider();
+        var generatorConsole = new GeneratorConsole(
+            CreatePlainConsole(output),
+            TimingHistory.Load(
+                Path.Combine(workspace.TempRoot, "timings.json")),
+            timeProvider);
+        generatorConsole.BeginFeed("FeedOne", 1, 1);
+        timeProvider.Advance(TimeSpan.FromSeconds(30));
+
+        generatorConsole.FeedFailed("FeedOne", "broken");
+
+        StringAssert.Contains(
+            output.ToString(),
+            "Feed failed: FeedOne broken • 30s");
     }
 
     [TestMethod]
@@ -211,5 +276,22 @@ public sealed class GeneratorConsoleTests
         console.Profile.Width = 120;
         console.Profile.Height = 40;
         return console;
+    }
+
+    private sealed class ManualTimeProvider : TimeProvider
+    {
+        private long timestamp;
+
+        public override long TimestampFrequency => TimeSpan.TicksPerSecond;
+
+        public override long GetTimestamp()
+        {
+            return timestamp;
+        }
+
+        public void Advance(TimeSpan duration)
+        {
+            timestamp += duration.Ticks;
+        }
     }
 }

@@ -53,7 +53,9 @@ public sealed class GeneratorConsole(
     TimingHistory timingHistory,
     TimeProvider timeProvider) : IGeneratorConsole
 {
+    private const int FeedPhaseCount = (int)GenerationPhase.Write + 1;
     private RunEtaPlan? runPlan;
+    private long feedStarted;
     private long runStarted;
 
     private bool IsInteractive =>
@@ -206,15 +208,11 @@ public sealed class GeneratorConsole(
     {
         runPlan = new RunEtaPlan(configurations, timingHistory);
         runStarted = timeProvider.GetTimestamp();
-        var eta = runPlan.EstimateRemaining();
-        console.WriteLine();
-        console.Write(new Rule(
-            $"[bold]Schedule item[/] [grey]• ETA {FormatEta(eta)}[/]")
-            .RuleStyle("grey"));
     }
 
     public void BeginFeed(string name, int index, int total)
     {
+        feedStarted = timeProvider.GetTimestamp();
         console.MarkupLine(
             $"[bold deepskyblue1]{Markup.Escape(name)}[/] " +
             $"[grey]({index}/{total})[/]");
@@ -291,7 +289,7 @@ public sealed class GeneratorConsole(
         catch
         {
             console.MarkupLine(
-                $"[red]✗[/] {GetPhaseNumber(phase)}/7 {GetPhaseTitle(phase)}");
+                $"[red]✗[/] {GetPhaseLabel(phase)}");
             throw;
         }
 
@@ -300,8 +298,13 @@ public sealed class GeneratorConsole(
         timingHistory.Save();
         runPlan?.Complete(scope, phase, units);
         console.MarkupLine(
-            $"[green]✓[/] {GetPhaseNumber(phase)}/7 " +
-            $"{GetPhaseTitle(phase)} [grey]• {FormatDuration(elapsed)}[/]");
+            $"[green]✓[/] {GetPhaseLabel(phase)} " +
+            $"[grey]• {FormatDuration(elapsed)}[/]");
+
+        if (phase == GenerationPhase.Write)
+            console.MarkupLine(
+                $"[green]✓[/] Feed complete [grey]• " +
+                $"{FormatDuration(timeProvider.GetElapsedTime(feedStarted))}[/]");
 
         for (var index = 0; index < warnings.Count; index++)
             console.MarkupLine(
@@ -315,7 +318,8 @@ public sealed class GeneratorConsole(
         runPlan?.SkipScope(name);
         console.MarkupLine(
             $"[red]Feed failed:[/] [white]{Markup.Escape(name)}[/] " +
-            Markup.Escape(message));
+            $"{Markup.Escape(message)} [grey]• " +
+            $"{FormatDuration(timeProvider.GetElapsedTime(feedStarted))}[/]");
     }
 
     public void CompleteScheduleItem(
@@ -387,7 +391,11 @@ public sealed class GeneratorConsole(
             ? ""
             : $" [grey]• {Markup.Escape(detail)}[/]";
 
-        return $"[deepskyblue1]{GetPhaseNumber(phase)}/7[/] " +
+        var marker = phase == GenerationPhase.Publish
+            ? ""
+            : $"[deepskyblue1]{GetPhaseNumber(phase)}/{FeedPhaseCount}[/] ";
+
+        return marker +
             $"[white]{GetPhaseTitle(phase)}{count}[/]{detailText} " +
             $"[grey]• step ETA {FormatEta(stepEta)} " +
             $"• run ETA {FormatEta(runEta)}[/]";
@@ -421,6 +429,14 @@ public sealed class GeneratorConsole(
     private static int GetPhaseNumber(GenerationPhase phase)
     {
         return (int)phase + 1;
+    }
+
+    private static string GetPhaseLabel(GenerationPhase phase)
+    {
+        return phase == GenerationPhase.Publish
+            ? GetPhaseTitle(phase)
+            : $"{GetPhaseNumber(phase)}/{FeedPhaseCount} " +
+                GetPhaseTitle(phase);
     }
 
     private static string GetPhaseTitle(GenerationPhase phase)
