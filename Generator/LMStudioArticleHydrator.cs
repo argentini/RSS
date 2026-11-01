@@ -278,6 +278,10 @@ public static class ArticleItemParser
         if (TryGetAbsoluteHttpUrl(item, "image", out var image))
             return image;
 
+        if (item["image"] is JsonObject imageObject &&
+            TryGetAbsoluteHttpUrl(imageObject, "url", out image))
+            return image;
+
         if (item["attachments"] is not JsonArray attachments)
             return null;
 

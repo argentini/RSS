@@ -70,6 +70,33 @@ public sealed class ArticleItemParserTests
     }
 
     [TestMethod]
+    public void Parse_ObjectImage_UsesUrlAsPreview()
+    {
+        const string response = """
+            {
+              "title": "Article title",
+              "date_published": "2026-10-30T11:53:47Z",
+              "content_html": "<p>Full article body.</p>",
+              "image": {
+                "url": "https://source.test/preview.jpg",
+                "alt": "Article preview"
+              }
+            }
+            """;
+
+        var item = ArticleItemParser.Parse(
+            response,
+            new Uri("https://source.test/article"));
+
+        Assert.AreEqual(
+            "https://source.test/preview.jpg",
+            item["image"]?.GetValue<string>());
+        Assert.StartsWith(
+            "<img src=\"https://source.test/preview.jpg\"",
+            item["content_html"]?.GetValue<string>());
+    }
+
+    [TestMethod]
     public void Parse_ImageAfterParagraph_MovesPreviewToContentStart()
     {
         const string response = """

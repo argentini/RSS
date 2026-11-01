@@ -148,7 +148,7 @@ public static class JsonFeedFiles
 
         var feed = JsonNode.Parse(File.ReadAllText(destinationPath)) as JsonObject
             ?? throw new JsonException("Existing feed must be a JSON object.");
-        NormalizeLegacyAuthors(feed);
+        NormalizeLegacyValues(feed);
         JsonFeedValidator.Validate(feed);
         var items = feed["items"]?.AsArray()
             ?? throw new JsonException("Existing feed requires items.");
@@ -186,7 +186,7 @@ public static class JsonFeedFiles
         }
     }
 
-    private static void NormalizeLegacyAuthors(JsonObject feed)
+    private static void NormalizeLegacyValues(JsonObject feed)
     {
         NormalizeAuthors(feed);
 
@@ -194,8 +194,13 @@ public static class JsonFeedFiles
             return;
 
         for (var index = 0; index < items.Count; index++)
-            if (items[index] is JsonObject item)
-                NormalizeAuthors(item);
+        {
+            if (items[index] is not JsonObject item)
+                continue;
+
+            NormalizeAuthors(item);
+            NormalizeImage(item);
+        }
     }
 
     private static void NormalizeAuthors(JsonObject container)
@@ -215,6 +220,17 @@ public static class JsonFeedFiles
                 ["name"] = name
             };
         }
+    }
+
+    private static void NormalizeImage(JsonObject item)
+    {
+        if (item["image"] is not JsonObject image ||
+            image["url"] is not JsonValue value ||
+            value.TryGetValue<string>(out var url) == false ||
+            string.IsNullOrWhiteSpace(url))
+            return;
+
+        item["image"] = url;
     }
 }
 

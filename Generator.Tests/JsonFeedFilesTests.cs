@@ -145,6 +145,40 @@ public sealed class JsonFeedFilesTests
             item["authors"]?[0]?["name"]?.GetValue<string>());
     }
 
+    [TestMethod]
+    public async Task BuildFeed_LegacyImageObject_NormalizesUrlAndMergesItems()
+    {
+        using var workspace = new TestWorkspace();
+        var path = Path.Combine(workspace.Root, "feed.json");
+        var settings = workspace.CreateSettings();
+        var legacyItem = CreateItem("legacy");
+        legacyItem["image"] = new JsonObject
+        {
+            ["url"] = "https://source.test/legacy.jpg",
+            ["alt"] = "Legacy preview"
+        };
+        var priorFeed = JsonFeedFiles.CreateFeed(settings, [legacyItem]);
+        await JsonFeedFiles.WriteAsync(
+            path,
+            priorFeed,
+            CancellationToken.None);
+
+        var result = JsonFeedFiles.BuildFeed(
+            settings,
+            [CreateItem("fresh")],
+            path);
+
+        Assert.IsTrue(result.Success, result.Message);
+        Assert.AreEqual(2, result.ItemCount);
+        var items = Assert.IsInstanceOfType<JsonArray>(result.Feed?["items"]);
+        Assert.AreEqual(
+            "https://source.test/fresh",
+            items[0]?["id"]?.GetValue<string>());
+        Assert.AreEqual(
+            "https://source.test/legacy.jpg",
+            items[1]?["image"]?.GetValue<string>());
+    }
+
     private static JsonObject CreateItem(string identifier)
     {
         var url = "https://source.test/" + identifier;
