@@ -68,6 +68,11 @@ public interface IArticleHydrator
 
 public interface IGitPublisher
 {
+    Task RestorePendingAsync(
+        string projectRoot,
+        IReadOnlyList<string> destinationPaths,
+        CancellationToken cancellationToken);
+
     Task<bool> PublishAsync(
         string projectRoot,
         IReadOnlyList<string> destinationPaths,

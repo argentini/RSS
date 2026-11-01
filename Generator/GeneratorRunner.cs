@@ -16,6 +16,16 @@ public sealed class GeneratorRunner(
         CancellationToken cancellationToken)
     {
         var destinations = new List<string>(configurations.Count);
+
+        for (var index = 0; index < configurations.Count; index++)
+            destinations.Add(configurations[index].DestinationPath);
+
+        if (destinations.Count > 0)
+            await gitPublisher.RestorePendingAsync(
+                context.ProjectRoot,
+                destinations,
+                cancellationToken);
+
         var feedCount = 0;
         var itemCount = 0;
         var skippedArticles = 0;
@@ -46,7 +56,6 @@ public sealed class GeneratorRunner(
 
                 feedCount++;
                 itemCount += result.Items;
-                destinations.Add(configuration.DestinationPath);
             }
             catch (OperationCanceledException)
             {

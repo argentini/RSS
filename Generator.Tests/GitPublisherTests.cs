@@ -1,151 +1,314 @@
+using System.Diagnostics;
+
 namespace Generator.Tests;
 
 [TestClass]
 public sealed class GitPublisherTests
 {
     [TestMethod]
-    public async Task PublishAsync_ChangedFeed_CommitsExactPathsAndPushes()
+    public async Task PublishAsync_RemoteCodeAndLocalFeedChanges_BothAuthoritiesWin()
     {
         using var workspace = new TestWorkspace();
-        var commandRunner = new RecordingCommandRunner(
-            new CommandResult(0, "", ""),
-            new CommandResult(1, "", ""),
-            new CommandResult(0, "committed", ""),
-            new CommandResult(0, "pushed", ""));
-        var credentials = CreateCredentials();
-        var publisher = new GitPublisher(commandRunner, credentials);
-        var timestamp = new DateTimeOffset(
-            2026,
-            10,
-            30,
-            11,
-            53,
-            47,
-            TimeSpan.Zero);
+        var remote = Path.Combine(workspace.Root, "remote.git");
+        var seed = Path.Combine(workspace.Root, "seed");
+        var local = Path.Combine(workspace.Root, "local");
+        var collaborator = Path.Combine(workspace.Root, "collaborator");
+        RunGit(workspace.Root, "init", "--bare", remote);
+        Directory.CreateDirectory(seed);
+        RunGit(seed, "init", "--initial-branch=main");
+        ConfigureIdentity(seed);
+        File.WriteAllText(Path.Combine(seed, "code.txt"), "base code");
+        File.WriteAllText(Path.Combine(seed, "feed.json"), "base feed");
+        RunGit(seed, "add", "--", "code.txt", "feed.json");
+        RunGit(seed, "commit", "-m", "base");
+        RunGit(seed, "remote", "add", "origin", remote);
+        RunGit(seed, "push", "--set-upstream", "origin", "main");
+        RunGit(remote, "symbolic-ref", "HEAD", "refs/heads/main");
+        RunGit(workspace.Root, "clone", remote, local);
+        RunGit(workspace.Root, "clone", remote, collaborator);
+        ConfigureIdentity(local);
+        ConfigureIdentity(collaborator);
+        File.WriteAllText(
+            Path.Combine(collaborator, "code.txt"),
+            "remote code");
+        File.WriteAllText(
+            Path.Combine(collaborator, "feed.json"),
+            "remote feed");
+        RunGit(collaborator, "add", "--", "code.txt", "feed.json");
+        RunGit(collaborator, "commit", "-m", "remote changes");
+        RunGit(collaborator, "push");
+        File.WriteAllText(Path.Combine(local, "code.txt"), "local code");
+        RunGit(local, "add", "--", "code.txt");
+        RunGit(local, "commit", "-m", "local code change");
+        File.WriteAllText(Path.Combine(local, "feed.json"), "local feed");
+        File.WriteAllText(Path.Combine(local, "notes.txt"), "untracked");
+        var publisher = new GitPublisher(
+            new ProcessCommandRunner(),
+            CreateCredentials());
 
         var published = await publisher.PublishAsync(
-            workspace.Root,
-            [
-                Path.Combine(workspace.Root, "ReutersUS.json"),
-                Path.Combine(workspace.Root, "AppleInsider.json")
-            ],
-            timestamp,
+            local,
+            [Path.Combine(local, "feed.json")],
+            new DateTimeOffset(
+                2026,
+                10,
+                30,
+                11,
+                53,
+                47,
+                TimeSpan.Zero),
             CancellationToken.None);
 
         Assert.IsTrue(published);
-        Assert.HasCount(4, commandRunner.Invocations);
-        CollectionAssert.AreEqual(
-            new[] { "push" },
-            commandRunner.Invocations[3].Arguments);
-        var pushEnvironment = commandRunner.Invocations[3].Environment;
+        Assert.AreEqual("remote code", File.ReadAllText(
+            Path.Combine(local, "code.txt")));
+        Assert.AreEqual("local feed", File.ReadAllText(
+            Path.Combine(local, "feed.json")));
+        Assert.AreEqual("untracked", File.ReadAllText(
+            Path.Combine(local, "notes.txt")));
         Assert.AreEqual(
-            credentials.UserName,
-            pushEnvironment["GENERATOR_GITHUB_USERNAME"]);
+            "remote code",
+            RunGit(remote, "show", "refs/heads/main:code.txt"));
         Assert.AreEqual(
-            credentials.PersonalAccessToken,
-            pushEnvironment["GENERATOR_GITHUB_TOKEN"]);
-        Assert.AreEqual("0", pushEnvironment["GIT_TERMINAL_PROMPT"]);
-        Assert.AreEqual("2", pushEnvironment["GIT_CONFIG_COUNT"]);
-        Assert.AreEqual(
-            "credential.helper",
-            pushEnvironment["GIT_CONFIG_KEY_0"]);
-        Assert.AreEqual("", pushEnvironment["GIT_CONFIG_VALUE_0"]);
-        Assert.AreEqual(
-            "credential.helper",
-            pushEnvironment["GIT_CONFIG_KEY_1"]);
-        var helper = pushEnvironment["GIT_CONFIG_VALUE_1"];
-        StringAssert.Contains(helper, "github.com");
-        StringAssert.Contains(helper, "$GENERATOR_GITHUB_USERNAME");
-        StringAssert.Contains(helper, "$GENERATOR_GITHUB_TOKEN");
-        var pushArguments = string.Join('\n',
-            commandRunner.Invocations[3].Arguments);
-        Assert.DoesNotContain(
-            credentials.UserName,
-            pushArguments);
-        Assert.DoesNotContain(
-            credentials.PersonalAccessToken,
-            pushArguments);
+            "local feed",
+            RunGit(remote, "show", "refs/heads/main:feed.json"));
+        Assert.AreEqual("?? notes.txt", RunGit(local, "status", "--short"));
+        Assert.IsFalse(File.Exists(Path.Combine(
+            local,
+            ".git",
+            "generator-pending",
+            "files",
+            "feed.json")));
+    }
+
+    [TestMethod]
+    public async Task PublishAsync_TwoRejectedPushes_RetriesAndVerifiesRemote()
+    {
+        using var workspace = new TestWorkspace();
+        var gitDirectory = Path.Combine(workspace.Root, ".git");
+        Directory.CreateDirectory(gitDirectory);
+        var feed = Path.Combine(workspace.Root, "feed.json");
+        File.WriteAllText(feed, "local feed");
+        var commandRunner = new PublishingCommandRunner(
+            gitDirectory,
+            localFeedChanged: true,
+            rejectedPushes: 2);
+        var credentials = CreateCredentials();
+        var publisher = new GitPublisher(commandRunner, credentials);
+
+        var published = await publisher.PublishAsync(
+            workspace.Root,
+            [feed],
+            new DateTimeOffset(
+                2026,
+                10,
+                30,
+                11,
+                53,
+                47,
+                TimeSpan.Zero),
+            CancellationToken.None);
+
+        Assert.IsTrue(published);
+        Assert.AreEqual(3, commandRunner.PushCount);
+        Assert.AreEqual(1, commandRunner.VerificationCount);
+        var commit = commandRunner.Invocations.First(
+            invocation => invocation.Arguments[0] == "commit");
         CollectionAssert.Contains(
-            commandRunner.Invocations[2].Arguments,
+            commit.Arguments,
             "Content generated on 2026-10-30T11:53:47Z");
-        CollectionAssert.Contains(
-            commandRunner.Invocations[2].Arguments,
-            "ReutersUS.json");
-        CollectionAssert.Contains(
-            commandRunner.Invocations[2].Arguments,
-            "AppleInsider.json");
+        CollectionAssert.Contains(commit.Arguments, "feed.json");
+        var networkInvocations = commandRunner.Invocations
+            .Where(invocation =>
+                invocation.Arguments[0] is "fetch" or "push")
+            .ToArray();
+        Assert.IsNotEmpty(networkInvocations);
+
+        for (var index = 0; index < networkInvocations.Length; index++)
+        {
+            var invocation = networkInvocations[index];
+            Assert.AreEqual(
+                credentials.UserName,
+                invocation.Environment["GENERATOR_GITHUB_USERNAME"]);
+            Assert.AreEqual(
+                credentials.PersonalAccessToken,
+                invocation.Environment["GENERATOR_GITHUB_TOKEN"]);
+            Assert.DoesNotContain(
+                credentials.PersonalAccessToken,
+                string.Join('\n', invocation.Arguments));
+        }
+
+        Assert.IsFalse(File.Exists(Path.Combine(
+            gitDirectory,
+            "generator-pending",
+            "files",
+            "feed.json")));
+    }
+
+    [TestMethod]
+    public async Task PublishAsync_AllPushesFail_RestoresPendingFeedLater()
+    {
+        using var workspace = new TestWorkspace();
+        var gitDirectory = Path.Combine(workspace.Root, ".git");
+        Directory.CreateDirectory(gitDirectory);
+        var feed = Path.Combine(workspace.Root, "feed.json");
+        File.WriteAllText(feed, "local feed");
+        var commandRunner = new PublishingCommandRunner(
+            gitDirectory,
+            localFeedChanged: true,
+            rejectedPushes: 3);
+        var publisher = new GitPublisher(
+            commandRunner,
+            CreateCredentials());
+
+        var exception = await Assert.ThrowsExactlyAsync<InvalidOperationException>(
+            () => publisher.PublishAsync(
+                workspace.Root,
+                [feed],
+                DateTimeOffset.UtcNow,
+                CancellationToken.None));
+        File.WriteAllText(feed, "remote feed");
+        await publisher.RestorePendingAsync(
+            workspace.Root,
+            [feed],
+            CancellationToken.None);
+
+        StringAssert.Contains(exception.Message, "after 3 attempts");
+        Assert.AreEqual(3, commandRunner.PushCount);
+        Assert.AreEqual("local feed", File.ReadAllText(feed));
     }
 
     [TestMethod]
     public async Task PublishAsync_UnchangedFeed_PushesWithoutCommitting()
     {
         using var workspace = new TestWorkspace();
-        var commandRunner = new RecordingCommandRunner(
-            new CommandResult(0, "", ""),
-            new CommandResult(0, "", ""),
-            new CommandResult(0, "pushed", ""));
+        var gitDirectory = Path.Combine(workspace.Root, ".git");
+        Directory.CreateDirectory(gitDirectory);
+        var feed = Path.Combine(workspace.Root, "feed.json");
+        File.WriteAllText(feed, "remote feed");
+        var commandRunner = new PublishingCommandRunner(
+            gitDirectory,
+            localFeedChanged: false,
+            rejectedPushes: 0);
         var publisher = new GitPublisher(
             commandRunner,
             CreateCredentials());
 
         var published = await publisher.PublishAsync(
             workspace.Root,
-            [Path.Combine(workspace.Root, "feed.json")],
+            [feed],
             DateTimeOffset.UtcNow,
             CancellationToken.None);
 
         Assert.IsFalse(published);
-        Assert.HasCount(3, commandRunner.Invocations);
-        CollectionAssert.AreEqual(
-            new[] { "push" },
-            commandRunner.Invocations[2].Arguments);
+        Assert.AreEqual(1, commandRunner.PushCount);
+        Assert.IsFalse(commandRunner.Invocations.Exists(
+            invocation => invocation.Arguments[0] == "commit"));
     }
 
     [TestMethod]
-    public async Task PublishAsync_ChangedFeedPushFails_UnchangedRunRetriesPush()
+    public async Task PublishAsync_UntrackedCollision_StopsBeforeReset()
     {
         using var workspace = new TestWorkspace();
-        var commandRunner = new RecordingCommandRunner(
-            new CommandResult(0, "", ""),
-            new CommandResult(1, "", ""),
-            new CommandResult(0, "committed", ""),
-            new CommandResult(1, "", "network unavailable"),
-            new CommandResult(0, "", ""),
-            new CommandResult(0, "", ""),
-            new CommandResult(0, "pushed", ""));
+        var gitDirectory = Path.Combine(workspace.Root, ".git");
+        Directory.CreateDirectory(gitDirectory);
+        var feed = Path.Combine(workspace.Root, "feed.json");
+        File.WriteAllText(feed, "local feed");
+        var commandRunner = new PublishingCommandRunner(
+            gitDirectory,
+            localFeedChanged: true,
+            rejectedPushes: 0,
+            untracked: "code.txt\0",
+            upstream: "code.txt\0feed.json\0");
         var publisher = new GitPublisher(
             commandRunner,
             CreateCredentials());
-        var destination = Path.Combine(workspace.Root, "feed.json");
 
         var exception = await Assert.ThrowsExactlyAsync<InvalidOperationException>(
             () => publisher.PublishAsync(
                 workspace.Root,
-                [destination],
+                [feed],
                 DateTimeOffset.UtcNow,
                 CancellationToken.None));
-        var published = await publisher.PublishAsync(
-            workspace.Root,
-            [destination],
-            DateTimeOffset.UtcNow,
-            CancellationToken.None);
 
-        StringAssert.Contains(exception.Message, "git push failed");
-        Assert.IsFalse(published);
-        Assert.HasCount(7, commandRunner.Invocations);
+        StringAssert.Contains(exception.Message, "Untracked path");
+        Assert.IsFalse(commandRunner.Invocations.Exists(
+            invocation => invocation.Arguments[0] == "reset"));
+    }
+
+    [TestMethod]
+    public async Task PublishAsync_RemoteVerificationFails_KeepsPendingFeed()
+    {
+        using var workspace = new TestWorkspace();
+        var gitDirectory = Path.Combine(workspace.Root, ".git");
+        Directory.CreateDirectory(gitDirectory);
+        var feed = Path.Combine(workspace.Root, "feed.json");
+        File.WriteAllText(feed, "local feed");
+        var commandRunner = new PublishingCommandRunner(
+            gitDirectory,
+            localFeedChanged: true,
+            rejectedPushes: 0,
+            rejectedVerifications: 3);
+        var publisher = new GitPublisher(
+            commandRunner,
+            CreateCredentials());
+
+        var exception = await Assert.ThrowsExactlyAsync<InvalidOperationException>(
+            () => publisher.PublishAsync(
+                workspace.Root,
+                [feed],
+                DateTimeOffset.UtcNow,
+                CancellationToken.None));
+
+        StringAssert.Contains(exception.Message, "Remote verification");
+        Assert.AreEqual(3, commandRunner.PushCount);
+        Assert.AreEqual(3, commandRunner.VerificationCount);
+        Assert.IsTrue(File.Exists(Path.Combine(
+            gitDirectory,
+            "generator-pending",
+            "files",
+            "feed.json")));
+    }
+
+    [TestMethod]
+    public async Task PublishAsync_ActiveGitOperation_StopsBeforeFetch()
+    {
+        using var workspace = new TestWorkspace();
+        var gitDirectory = Path.Combine(workspace.Root, ".git");
+        Directory.CreateDirectory(gitDirectory);
+        File.WriteAllText(Path.Combine(gitDirectory, "MERGE_HEAD"), "commit");
+        var feed = Path.Combine(workspace.Root, "feed.json");
+        File.WriteAllText(feed, "local feed");
+        var commandRunner = new PublishingCommandRunner(
+            gitDirectory,
+            localFeedChanged: true,
+            rejectedPushes: 0);
+        var publisher = new GitPublisher(
+            commandRunner,
+            CreateCredentials());
+
+        var exception = await Assert.ThrowsExactlyAsync<InvalidOperationException>(
+            () => publisher.PublishAsync(
+                workspace.Root,
+                [feed],
+                DateTimeOffset.UtcNow,
+                CancellationToken.None));
+
+        StringAssert.Contains(exception.Message, "already active");
+        Assert.HasCount(1, commandRunner.Invocations);
         CollectionAssert.AreEqual(
-            new[] { "push" },
-            commandRunner.Invocations[3].Arguments);
-        CollectionAssert.AreEqual(
-            new[] { "push" },
-            commandRunner.Invocations[6].Arguments);
+            new[] { "rev-parse", "--absolute-git-dir" },
+            commandRunner.Invocations[0].Arguments);
     }
 
     [TestMethod]
     public async Task PublishAsync_PathOutsideRoot_ThrowsInvalidOperationException()
     {
         using var workspace = new TestWorkspace();
-        var commandRunner = new RecordingCommandRunner();
+        var commandRunner = new PublishingCommandRunner(
+            Path.Combine(workspace.Root, ".git"),
+            localFeedChanged: true,
+            rejectedPushes: 0);
         var publisher = new GitPublisher(
             commandRunner,
             CreateCredentials());
@@ -164,31 +327,6 @@ public sealed class GitPublisherTests
         Assert.IsEmpty(commandRunner.Invocations);
     }
 
-    private sealed class RecordingCommandRunner(
-        params CommandResult[] results) : ICommandRunner
-    {
-        private int _index;
-
-        public List<Invocation> Invocations { get; } = [];
-
-        public Task<CommandResult> RunAsync(
-            string fileName,
-            IReadOnlyList<string> arguments,
-            string workingDirectory,
-            CancellationToken cancellationToken,
-            IReadOnlyDictionary<string, string>? environment = null)
-        {
-            Invocations.Add(new Invocation(
-                fileName,
-                arguments.ToArray(),
-                workingDirectory,
-                environment is null
-                    ? new Dictionary<string, string>()
-                    : new Dictionary<string, string>(environment)));
-            return Task.FromResult(results[_index++]);
-        }
-    }
-
     private static GitHubCredentials CreateCredentials()
     {
         return new GitHubCredentials
@@ -198,9 +336,157 @@ public sealed class GitPublisherTests
         };
     }
 
+    private static void ConfigureIdentity(string workingDirectory)
+    {
+        RunGit(workingDirectory, "config", "user.name", "Generator Tests");
+        RunGit(
+            workingDirectory,
+            "config",
+            "user.email",
+            "generator@example.test");
+    }
+
+    private static string RunGit(
+        string workingDirectory,
+        params string[] arguments)
+    {
+        var startInfo = new ProcessStartInfo
+        {
+            FileName = "git",
+            WorkingDirectory = workingDirectory,
+            RedirectStandardOutput = true,
+            RedirectStandardError = true,
+            UseShellExecute = false
+        };
+
+        for (var index = 0; index < arguments.Length; index++)
+            startInfo.ArgumentList.Add(arguments[index]);
+
+        using var process = Process.Start(startInfo) ??
+            throw new InvalidOperationException("Could not start git.");
+        var output = process.StandardOutput.ReadToEnd();
+        var error = process.StandardError.ReadToEnd();
+        process.WaitForExit();
+
+        if (process.ExitCode != 0)
+            throw new InvalidOperationException(error.Trim());
+
+        return output.Trim();
+    }
+
+    private sealed class PublishingCommandRunner(
+        string gitDirectory,
+        bool localFeedChanged,
+        int rejectedPushes,
+        string untracked = "",
+        string upstream = "feed.json\0",
+        int rejectedVerifications = 0) : ICommandRunner
+    {
+        public List<Invocation> Invocations { get; } = [];
+        public int PushCount { get; private set; }
+        public int VerificationCount { get; private set; }
+
+        public Task<CommandResult> RunAsync(
+            string fileName,
+            IReadOnlyList<string> arguments,
+            string workingDirectory,
+            CancellationToken cancellationToken,
+            IReadOnlyDictionary<string, string>? environment = null)
+        {
+            var invocation = new Invocation(
+                arguments.ToArray(),
+                environment is null
+                    ? new Dictionary<string, string>()
+                    : new Dictionary<string, string>(environment));
+            Invocations.Add(invocation);
+            var result = GetResult(invocation.Arguments);
+            return Task.FromResult(result);
+        }
+
+        private CommandResult GetResult(string[] arguments)
+        {
+            if (arguments.SequenceEqual(["rev-parse", "--absolute-git-dir"]))
+                return Success(gitDirectory);
+
+            if (arguments.SequenceEqual(
+                ["symbolic-ref", "--quiet", "--short", "HEAD"]))
+                return Success("main");
+
+            if (arguments[0] == "config" &&
+                arguments[^1].EndsWith(".remote", StringComparison.Ordinal))
+                return Success("origin");
+
+            if (arguments[0] == "config" &&
+                arguments[^1].EndsWith(".merge", StringComparison.Ordinal))
+                return Success("refs/heads/main");
+
+            if (arguments[0] == "fetch")
+                return Success();
+
+            if (arguments.SequenceEqual(
+                ["merge-base", "HEAD", "@{upstream}"]))
+                return Success("base-commit");
+
+            if (arguments[0] == "diff" && arguments.Contains("--cached"))
+                return localFeedChanged
+                    ? Failure(1)
+                    : Success();
+
+            if (arguments[0] == "diff")
+                return localFeedChanged
+                    ? Failure(1)
+                    : Success();
+
+            if (arguments[0] == "ls-files" &&
+                arguments.Contains("--error-unmatch"))
+                return Success("feed.json");
+
+            if (arguments[0] == "ls-files")
+                return Success(untracked);
+
+            if (arguments[0] == "ls-tree")
+                return Success(upstream);
+
+            if (arguments[0] is "reset" or "add" or "commit")
+                return Success();
+
+            if (arguments.SequenceEqual(["rev-parse", "HEAD"]))
+                return Success("published-commit");
+
+            if (arguments[0] == "push")
+            {
+                PushCount++;
+                return PushCount <= rejectedPushes
+                    ? Failure(1, "rejected")
+                    : Success();
+            }
+
+            if (arguments.Count(value => value == "--is-ancestor") == 1)
+            {
+                VerificationCount++;
+                return VerificationCount <= rejectedVerifications
+                    ? Failure(1, "missing commit")
+                    : Success();
+            }
+
+            throw new InvalidOperationException(
+                "Unexpected git command: " + string.Join(' ', arguments));
+        }
+
+        private static CommandResult Success(string output = "")
+        {
+            return new CommandResult(0, output, "");
+        }
+
+        private static CommandResult Failure(
+            int exitCode,
+            string error = "failed")
+        {
+            return new CommandResult(exitCode, "", error);
+        }
+    }
+
     private sealed record Invocation(
-        string FileName,
         string[] Arguments,
-        string WorkingDirectory,
         IReadOnlyDictionary<string, string> Environment);
 }

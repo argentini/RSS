@@ -10,7 +10,7 @@ For each configured feed, the application:
 4. Sends the cleaned HTML to a local LM Studio model, which extracts a structured JSON Feed item.
 5. Merges new items with the existing feed while removing duplicates and preserving the configured feed depth.
 6. Validates and atomically writes the JSON Feed file in the repository root.
-7. Commits changed feed files and pushes the Git repository to its configured remote.
+7. Synchronizes tracked files from upstream, restores local feed changes, commits those feeds, and pushes them.
 
 The process runs on the local schedule in `Generator/appsettings.json`. At startup, an interactive prompt also offers to run immediately.
 
@@ -21,7 +21,7 @@ The process runs on the local schedule in `Generator/appsettings.json`. At start
 - **Google Chrome.** Chrome renders source articles before their content is sent to the model.
 - **Node.js and npm.** The application starts Agent360 with `npx --yes @agent360/browser-mcp@1.31.0`. The first run may download that package.
 - **LM Studio.** A loaded model and a running local, OpenAI-compatible chat-completions server are required.
-- **Git.** The repository must have a push remote and configured commit identity.
+- **Git.** The current branch must have an upstream branch, push remote, and configured commit identity.
 - **GitHub credentials.** A username and personal access token with permission to push this repository are required.
 - **Internet access.** The application contacts Google News, configured article sites, npm when needed, and the Git remote.
 
@@ -164,9 +164,21 @@ When input is redirected, the application skips the prompt and waits for the nex
 
 ## Publishing warning
 
-A successful run is a publishing operation. It can overwrite the configured root feed files, stage those files, create a commit named `Content generated on <UTC timestamp>`, and run `git push`. Even when feed contents are unchanged, the application still attempts to push the current branch.
+A publishing run treats the tracked upstream branch as authoritative for every file except the configured feed files. Before publishing, the application:
 
-Run the application only from the intended repository, branch, and remote. Keep unrelated changes out of the generated feed files.
+1. Saves changed configured feeds under `.git/generator-pending`.
+2. Fetches the current branch's configured remote.
+3. Hard-resets all tracked files to the upstream branch.
+4. Restores the saved local feed files.
+5. Stages and commits only configured feed paths.
+6. Pushes up to three times.
+7. Fetches again and verifies the remote contains the published commit.
+
+Tracked local code changes and local-only commits are discarded during this synchronization. Configured local feed changes win over remote feed versions. Untracked files remain untouched; publishing stops before reset when an upstream file would collide with an untracked non-feed path.
+
+Pending feed copies are deleted only after remote verification succeeds. Failed or interrupted publishing leaves them available for restoration before the next generation run. The application also stops when another merge, rebase, cherry-pick, revert, or bisect operation is active.
+
+Run the application only from the intended repository, branch, and remote.
 
 ## Generated data
 
@@ -188,7 +200,7 @@ Confirm that Google Chrome is installed in `/Applications`, and that `node`, `np
 
 ### Git push failures
 
-Check `git remote -v`, the token's repository permissions, and the configured Git username and email. The application disables interactive Git credential prompts, so invalid credentials fail immediately.
+Check `git remote -v`, `git branch -vv`, the token's repository permissions, and the configured Git username and email. The application disables interactive Git credential prompts and retries publishing three times. If all attempts fail, the local feed copies remain under `.git/generator-pending` for the next run.
 
 ### Feed files remain unchanged
 

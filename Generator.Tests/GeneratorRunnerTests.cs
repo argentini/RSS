@@ -102,6 +102,7 @@ public sealed class GeneratorRunnerTests
             2,
             feed.RootElement.GetProperty("items").GetArrayLength());
         Assert.AreEqual(1, publisher.CallCount);
+        Assert.AreEqual(1, publisher.RestoreCount);
         Assert.HasCount(1, publisher.Destinations);
         Assert.AreEqual(
             configuration.DestinationPath,
@@ -151,7 +152,8 @@ public sealed class GeneratorRunnerTests
         Assert.AreEqual(
             existingFeed,
             File.ReadAllText(configuration.DestinationPath));
-        Assert.AreEqual(0, publisher.CallCount);
+        Assert.AreEqual(1, publisher.CallCount);
+        Assert.HasCount(1, publisher.Destinations);
     }
 
     [TestMethod]
@@ -308,7 +310,7 @@ public sealed class GeneratorRunnerTests
         Assert.AreEqual(0, summary.ItemCount);
         Assert.AreEqual(1, summary.ConfigurationFailures);
         Assert.IsFalse(File.Exists(configuration.DestinationPath));
-        Assert.AreEqual(0, publisher.CallCount);
+        Assert.AreEqual(1, publisher.CallCount);
         Assert.HasCount(1, console.Warnings);
         StringAssert.Contains(console.Warnings[0], "2 required");
     }
@@ -337,7 +339,7 @@ public sealed class GeneratorRunnerTests
         Assert.AreEqual(
             existingFeed,
             File.ReadAllText(configuration.DestinationPath));
-        Assert.AreEqual(0, publisher.CallCount);
+        Assert.AreEqual(1, publisher.CallCount);
     }
 
     [TestMethod]
@@ -368,7 +370,7 @@ public sealed class GeneratorRunnerTests
         Assert.AreEqual(
             existingFeed,
             File.ReadAllText(configuration.DestinationPath));
-        Assert.AreEqual(0, publisher.CallCount);
+        Assert.AreEqual(1, publisher.CallCount);
     }
 
     [TestMethod]
@@ -531,8 +533,18 @@ public sealed class GeneratorRunnerTests
     private sealed class RecordingGitPublisher : IGitPublisher
     {
         public int CallCount { get; private set; }
+        public int RestoreCount { get; private set; }
         public IReadOnlyList<string> Destinations { get; private set; } = [];
         public Action<IReadOnlyList<string>>? BeforePublish { get; init; }
+
+        public Task RestorePendingAsync(
+            string projectRoot,
+            IReadOnlyList<string> destinationPaths,
+            CancellationToken cancellationToken)
+        {
+            RestoreCount++;
+            return Task.CompletedTask;
+        }
 
         public Task<bool> PublishAsync(
             string projectRoot,
