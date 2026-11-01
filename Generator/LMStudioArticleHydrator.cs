@@ -36,6 +36,7 @@ public sealed class LMStudioArticleHydrator(
                     content = HydrationPrompt.Create(html)
                 }
             },
+            reasoning_effort = settings.UseReasoning ? "xhigh" : "none",
             temperature = 0,
             stream = true
         };

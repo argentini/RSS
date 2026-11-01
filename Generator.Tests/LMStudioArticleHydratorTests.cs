@@ -9,6 +9,48 @@ namespace Generator.Tests;
 public sealed class LMStudioArticleHydratorTests
 {
     [TestMethod]
+    [DataRow(true, "xhigh", DisplayName = "Reasoning enabled")]
+    [DataRow(false, "none", DisplayName = "Reasoning disabled")]
+    public async Task HydrateAsync_Request_MapsUseReasoningToReasoningEffort(
+        bool useReasoning,
+        string expectedEffort)
+    {
+        var stream = CreateEvent(
+            "content",
+            "{\"title\":\"Article\",\"date_published\":" +
+            "\"2026-10-30T11:53:47Z\",\"content_html\":\"<p>Body</p>\"}") +
+            "data: [DONE]\n\n";
+        var handler = new StaticResponseHandler(stream);
+        using var client = new HttpClient(handler)
+        {
+            BaseAddress = new Uri("http://127.0.0.1:1235/")
+        };
+        var hydrator = new LMStudioArticleHydrator(
+            client,
+            new GeneratorSettings
+            {
+                BaseUrl = client.BaseAddress,
+                Model = "test-model",
+                UseReasoning = useReasoning,
+                TimeoutMinutes = 1,
+                Schedule = []
+            });
+
+        await hydrator.HydrateAsync(
+            "<html><body>Body</body></html>",
+            new Uri("https://source.test/article"),
+            CancellationToken.None);
+
+        Assert.IsNotNull(handler.RequestContent);
+        using var payload = JsonDocument.Parse(handler.RequestContent);
+        Assert.AreEqual(
+            expectedEffort,
+            payload.RootElement
+                .GetProperty("reasoning_effort")
+                .GetString());
+    }
+
+    [TestMethod]
     public async Task HydrateAsync_Request_PrefixesSystemPromptWithCavemanSkill()
     {
         var stream = CreateEvent(

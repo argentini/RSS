@@ -7,6 +7,7 @@ public sealed class GeneratorSettings
 {
     public required Uri BaseUrl { get; init; }
     public required string Model { get; init; }
+    public bool UseReasoning { get; init; } = true;
     public required int TimeoutMinutes { get; init; }
     public required IReadOnlyList<ScheduleItem> Schedule { get; init; }
 
@@ -45,10 +46,23 @@ public sealed class GeneratorSettings
             throw new InvalidOperationException(
                 "LMStudio:TimeoutMinutes must exceed zero.");
 
+        var useReasoning = section.TryGetProperty(
+            "UseReasoning",
+            out var useReasoningValue)
+            ? useReasoningValue.ValueKind switch
+            {
+                JsonValueKind.True => true,
+                JsonValueKind.False => false,
+                _ => throw new InvalidOperationException(
+                    "LMStudio:UseReasoning must be a boolean.")
+            }
+            : true;
+
         return new GeneratorSettings
         {
             BaseUrl = new Uri(baseUrl.ToString().TrimEnd('/') + "/"),
             Model = GetRequiredString(section, "Model", "LMStudio"),
+            UseReasoning = useReasoning,
             TimeoutMinutes = timeoutMinutes,
             Schedule = LoadSchedule(root)
         };
