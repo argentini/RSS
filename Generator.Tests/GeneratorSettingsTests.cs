@@ -15,7 +15,8 @@ public sealed class GeneratorSettingsTests
               "LMStudio": {
                 "Model": "local-model",
                 "BaseUrl": "http://127.0.0.1:1235",
-                "UseReasoning": false,
+                "UseReasoning": true,
+                "ReasoningEffort": "medium",
                 "TimeoutMinutes": 15
               },
               "Schedule": [
@@ -37,7 +38,8 @@ public sealed class GeneratorSettingsTests
         Assert.AreEqual(
             "http://127.0.0.1:1235/",
             settings.BaseUrl.ToString());
-        Assert.IsFalse(settings.UseReasoning);
+        Assert.IsTrue(settings.UseReasoning);
+        Assert.AreEqual("medium", settings.ReasoningEffort);
         Assert.AreEqual(15, settings.TimeoutMinutes);
         Assert.HasCount(2, settings.Schedule);
         Assert.AreEqual(
@@ -49,7 +51,7 @@ public sealed class GeneratorSettingsTests
     }
 
     [TestMethod]
-    public void Load_MissingUseReasoning_DefaultsToTrue()
+    public void Load_MissingReasoningSettings_ReturnsEnabledLowDefaults()
     {
         using var workspace = new TestWorkspace();
         var path = Path.Combine(workspace.Root, "appsettings.json");
@@ -74,6 +76,7 @@ public sealed class GeneratorSettingsTests
         var settings = GeneratorSettings.Load(path);
 
         Assert.IsTrue(settings.UseReasoning);
+        Assert.AreEqual("low", settings.ReasoningEffort);
     }
 
     [TestMethod]
@@ -104,6 +107,37 @@ public sealed class GeneratorSettingsTests
             () => GeneratorSettings.Load(path));
 
         StringAssert.Contains(exception.Message, "UseReasoning");
+    }
+
+    [TestMethod]
+    public void Load_InvalidReasoningEffort_ThrowsInvalidOperationException()
+    {
+        using var workspace = new TestWorkspace();
+        var path = Path.Combine(workspace.Root, "appsettings.json");
+        File.WriteAllText(
+            path,
+            """
+            {
+              "LMStudio": {
+                "Model": "local-model",
+                "BaseUrl": "http://127.0.0.1:1235",
+                "UseReasoning": true,
+                "ReasoningEffort": "maximum",
+                "TimeoutMinutes": 15
+              },
+              "Schedule": [
+                {
+                  "DayOfWeek": "Monday",
+                  "TimeOfDay": "08:00"
+                }
+              ]
+            }
+            """);
+
+        var exception = Assert.ThrowsExactly<InvalidOperationException>(
+            () => GeneratorSettings.Load(path));
+
+        StringAssert.Contains(exception.Message, "ReasoningEffort");
     }
 
     [TestMethod]

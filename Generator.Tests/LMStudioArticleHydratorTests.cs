@@ -9,10 +9,13 @@ namespace Generator.Tests;
 public sealed class LMStudioArticleHydratorTests
 {
     [TestMethod]
-    [DataRow(true, "xhigh", DisplayName = "Reasoning enabled")]
-    [DataRow(false, "none", DisplayName = "Reasoning disabled")]
-    public async Task HydrateAsync_Request_MapsUseReasoningToReasoningEffort(
+    [DataRow(true, "low", "low", DisplayName = "Low reasoning")]
+    [DataRow(true, "medium", "medium", DisplayName = "Medium reasoning")]
+    [DataRow(true, "xhigh", "xhigh", DisplayName = "Xhigh reasoning")]
+    [DataRow(false, "low", "none", DisplayName = "Reasoning disabled")]
+    public async Task HydrateAsync_Request_MapsReasoningSettingsToEffort(
         bool useReasoning,
+        string reasoningEffort,
         string expectedEffort)
     {
         var stream = CreateEvent(
@@ -32,6 +35,7 @@ public sealed class LMStudioArticleHydratorTests
                 BaseUrl = client.BaseAddress,
                 Model = "test-model",
                 UseReasoning = useReasoning,
+                ReasoningEffort = reasoningEffort,
                 TimeoutMinutes = 1,
                 Schedule = []
             });

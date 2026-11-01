@@ -8,6 +8,7 @@ public sealed class GeneratorSettings
     public required Uri BaseUrl { get; init; }
     public required string Model { get; init; }
     public bool UseReasoning { get; init; } = true;
+    public string ReasoningEffort { get; init; } = "low";
     public required int TimeoutMinutes { get; init; }
     public required IReadOnlyList<ScheduleItem> Schedule { get; init; }
 
@@ -57,12 +58,25 @@ public sealed class GeneratorSettings
                     "LMStudio:UseReasoning must be a boolean.")
             }
             : true;
+        var reasoningEffort = section.TryGetProperty(
+            "ReasoningEffort",
+            out _)
+            ? GetRequiredString(
+                section,
+                "ReasoningEffort",
+                "LMStudio").ToLowerInvariant()
+            : "low";
+
+        if (reasoningEffort is not ("low" or "medium" or "xhigh"))
+            throw new InvalidOperationException(
+                "LMStudio:ReasoningEffort must be low, medium, or xhigh.");
 
         return new GeneratorSettings
         {
             BaseUrl = new Uri(baseUrl.ToString().TrimEnd('/') + "/"),
             Model = GetRequiredString(section, "Model", "LMStudio"),
             UseReasoning = useReasoning,
+            ReasoningEffort = reasoningEffort,
             TimeoutMinutes = timeoutMinutes,
             Schedule = LoadSchedule(root)
         };

@@ -63,14 +63,15 @@ Edit the `LMStudio` section in `Generator/appsettings.json` when using another m
   "LMStudio": {
     "Model": "qwen3.8-27b-mlx",
     "BaseUrl": "http://127.0.0.1:1235",
-    "UseReasoning": false,
+    "UseReasoning": true,
+    "ReasoningEffort": "low",
     "TimeoutMinutes": 60
   }
 }
 ```
 
 `BaseUrl` must be an absolute loopback URL. Remote model servers are intentionally rejected.
-`UseReasoning` sends `xhigh` when true and `none` when false. It defaults to true when omitted.
+`UseReasoning` sends `none` when false. When true, `ReasoningEffort` sends `low`, `medium`, or `xhigh`. Both settings default to enabled reasoning with `low` effort.
 
 ### 3. Add GitHub credentials
 
