@@ -1,6 +1,6 @@
 {
     "GoogleNewsUrl": "https://news.google.com/rss/search?q=site%3Areuters.com%2Fworld%2Fus%2F&hl=en-US&gl=US&ceid=US%3Aen",
-    "LatestCount": 10,
+    "LatestCount": 15,
     "DestinationRssFilePath": "../ReutersUS.json",
     "FeedName": "Reuters US",
     "FeedHomePageUrl": "https://www.reuters.com/",
