@@ -91,6 +91,75 @@ public sealed class LMStudioArticleHydratorTests
 
         Assert.IsNotNull(systemPrompt);
         Assert.StartsWith("/caveman\n", systemPrompt);
+        Assert.DoesNotContain("id, url, and external_url", systemPrompt);
+    }
+
+    [TestMethod]
+    public async Task HydrateAsync_Request_IncludesStrictJsonFeedSchema()
+    {
+        var stream = CreateEvent(
+            "content",
+            "{\"title\":\"Article\",\"date_published\":" +
+            "\"2026-10-30T11:53:47Z\",\"content_html\":\"<p>Body</p>\"}") +
+            "data: [DONE]\n\n";
+        var handler = new StaticResponseHandler(stream);
+        using var client = new HttpClient(handler)
+        {
+            BaseAddress = new Uri("http://127.0.0.1:1235/")
+        };
+        var hydrator = new LMStudioArticleHydrator(
+            client,
+            new GeneratorSettings
+            {
+                BaseUrl = client.BaseAddress,
+                Model = "test-model",
+                TimeoutMinutes = 1,
+                Schedule = []
+            });
+
+        await hydrator.HydrateAsync(
+            "<html><body>Body</body></html>",
+            new Uri("https://source.test/article"),
+            CancellationToken.None);
+
+        Assert.IsNotNull(handler.RequestContent);
+        using var payload = JsonDocument.Parse(handler.RequestContent);
+        var responseFormat = payload.RootElement.GetProperty("response_format");
+        Assert.AreEqual(
+            "json_schema",
+            responseFormat.GetProperty("type").GetString());
+        var jsonSchema = responseFormat.GetProperty("json_schema");
+        Assert.AreEqual(
+            "json_feed_item",
+            jsonSchema.GetProperty("name").GetString());
+        Assert.IsTrue(jsonSchema.GetProperty("strict").GetBoolean());
+        var schema = jsonSchema.GetProperty("schema");
+        Assert.IsFalse(schema.GetProperty("additionalProperties").GetBoolean());
+        var required = schema.GetProperty("required")
+            .EnumerateArray()
+            .Select(property => property.GetString())
+            .ToArray();
+        CollectionAssert.AreEqual(
+            new[] { "title", "date_published", "content_html" },
+            required);
+        var properties = schema.GetProperty("properties");
+        Assert.AreEqual(
+            "string",
+            properties.GetProperty("image").GetProperty("type").GetString());
+        var author = properties.GetProperty("authors").GetProperty("items");
+        Assert.AreEqual(1, author.GetProperty("minProperties").GetInt32());
+        Assert.IsFalse(
+            author.GetProperty("additionalProperties").GetBoolean());
+        var authorProperties = author.GetProperty("properties")
+            .EnumerateObject()
+            .Select(property => property.Name)
+            .ToArray();
+        CollectionAssert.AreEqual(
+            new[] { "name", "url", "avatar" },
+            authorProperties);
+        Assert.IsFalse(properties.TryGetProperty("id", out _));
+        Assert.IsFalse(properties.TryGetProperty("url", out _));
+        Assert.IsFalse(properties.TryGetProperty("external_url", out _));
     }
 
     [TestMethod]

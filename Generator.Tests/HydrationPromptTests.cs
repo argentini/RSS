@@ -14,4 +14,15 @@ public sealed class HydrationPromptTests
             "\"authors\": [\n        \"Mike Scarcella\"",
             prompt);
     }
+
+    [TestMethod]
+    public void Create_OmitsApplicationOwnedUrlFields()
+    {
+        var prompt = HydrationPrompt.Create("<article>Body</article>");
+
+        Assert.DoesNotContain("\"id\":", prompt);
+        Assert.DoesNotContain("\"url\":", prompt);
+        Assert.DoesNotContain("\"external_url\":", prompt);
+        Assert.DoesNotContain("article URLs should be replaced", prompt);
+    }
 }
