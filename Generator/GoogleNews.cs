@@ -289,7 +289,7 @@ public static class GoogleNewsParser
         if (latestCount <= 0)
             throw new ArgumentOutOfRangeException(nameof(latestCount));
 
-        var links = new List<Uri>(latestCount);
+        var items = new List<FeedItem>();
         var settings = new XmlReaderSettings
         {
             DtdProcessing = DtdProcessing.Prohibit,
@@ -299,39 +299,99 @@ public static class GoogleNewsParser
         };
         using var textReader = new StringReader(xml);
         using var reader = XmlReader.Create(textReader, settings);
+        var index = 0;
 
-        while (reader.Read() && links.Count < latestCount)
+        while (reader.Read())
         {
             if (reader.NodeType != XmlNodeType.Element ||
                 reader.LocalName != "item")
                 continue;
 
             using var itemReader = reader.ReadSubtree();
+            Uri? link = null;
+            DateTimeOffset? published = null;
 
-            while (itemReader.Read())
+            while (itemReader.EOF == false)
             {
-                if (itemReader.NodeType != XmlNodeType.Element ||
-                    itemReader.LocalName != "link")
-                    continue;
-
-                var value = itemReader.ReadElementContentAsString().Trim();
-
-                if (Uri.TryCreate(
-                    value,
-                    UriKind.Absolute,
-                    out var link) &&
-                    (link.Scheme == Uri.UriSchemeHttp ||
-                    link.Scheme == Uri.UriSchemeHttps))
+                if (itemReader.NodeType != XmlNodeType.Element)
                 {
-                    links.Add(link);
+                    itemReader.Read();
+                    continue;
                 }
 
-                break;
+                if (itemReader.LocalName == "link")
+                {
+                    var value = itemReader
+                        .ReadElementContentAsString()
+                        .Trim();
+
+                    if (Uri.TryCreate(
+                        value,
+                        UriKind.Absolute,
+                        out var candidate) &&
+                        (candidate.Scheme == Uri.UriSchemeHttp ||
+                        candidate.Scheme == Uri.UriSchemeHttps))
+                        link = candidate;
+                }
+                else if (itemReader.LocalName == "pubDate")
+                {
+                    var value = itemReader
+                        .ReadElementContentAsString()
+                        .Trim();
+
+                    if (DateTimeOffset.TryParse(
+                        value,
+                        CultureInfo.InvariantCulture,
+                        DateTimeStyles.AllowWhiteSpaces |
+                        DateTimeStyles.AssumeUniversal |
+                        DateTimeStyles.AdjustToUniversal,
+                        out var candidate))
+                        published = candidate;
+                }
+                else
+                    itemReader.Read();
             }
+
+            if (link is not null)
+                items.Add(new FeedItem(link, published, index));
+
+            index++;
         }
+
+        items.Sort(static (left, right) =>
+        {
+            if (left.Published.HasValue)
+            {
+                if (right.Published.HasValue)
+                {
+                    var dateComparison = right.Published.Value.CompareTo(
+                        left.Published.Value);
+
+                    if (dateComparison != 0)
+                        return dateComparison;
+                }
+                else
+                    return -1;
+            }
+            else if (right.Published.HasValue)
+                return 1;
+
+            return left.Index.CompareTo(right.Index);
+        });
+
+        var count = Math.Min(latestCount, items.Count);
+        var links = new List<Uri>(count);
+
+        for (var itemIndex = 0; itemIndex < count; itemIndex++)
+            links.Add(items[itemIndex].Link);
 
         return links;
     }
+
+    private sealed record FeedItem(
+        Uri Link,
+        DateTimeOffset? Published,
+        int Index);
 }
 
 public static class NumberedFiles
