@@ -30,11 +30,10 @@ public static class JsonFeedFiles
         string destinationPath)
     {
         List<JsonObject> priorItems;
-        var priorDepth = 0;
 
         try
         {
-            priorItems = LoadPriorItems(destinationPath, out priorDepth);
+            priorItems = LoadPriorItems(configuration, destinationPath);
 
             for (var index = 0; index < freshItems.Count; index++)
                 JsonFeedValidator.ValidateItem(freshItems[index]);
@@ -48,7 +47,7 @@ public static class JsonFeedFiles
                 "Candidate feed rejected: " + exception.Message);
         }
 
-        var targetDepth = Math.Max(configuration.LatestCount, priorDepth);
+        var targetDepth = Math.Max(configuration.LatestCount, priorItems.Count);
         var mergedItems = new List<JsonObject>(targetDepth);
         var identifiers = new HashSet<string>(StringComparer.Ordinal);
         AddUniqueItems(freshItems, targetDepth, mergedItems, identifiers);
@@ -138,11 +137,9 @@ public static class JsonFeedFiles
     }
 
     private static List<JsonObject> LoadPriorItems(
-        string destinationPath,
-        out int depth)
+        FeedConfiguration configuration,
+        string destinationPath)
     {
-        depth = 0;
-
         if (File.Exists(destinationPath) == false)
             return [];
 
@@ -152,14 +149,23 @@ public static class JsonFeedFiles
         JsonFeedValidator.Validate(feed);
         var items = feed["items"]?.AsArray()
             ?? throw new JsonException("Existing feed requires items.");
-        depth = items.Count;
-        var result = new List<JsonObject>(depth);
+        var result = new List<JsonObject>(items.Count);
 
         for (var index = 0; index < items.Count; index++)
         {
             if (items[index] is not JsonObject item)
                 throw new JsonException(
                     $"Existing feed item {index} must be an object.");
+
+            var itemLink = item["url"] ?? item["external_url"] ?? item["id"];
+
+            if (configuration.ExcludedHosts is { Length: > 0 } &&
+                Uri.TryCreate(
+                    itemLink?.GetValue<string>(),
+                    UriKind.Absolute,
+                    out var url) &&
+                configuration.ExcludesHost(url))
+                continue;
 
             result.Add((JsonObject)item.DeepClone());
         }

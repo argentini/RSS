@@ -18,12 +18,25 @@ public sealed class FeedConfiguration
 {
     public string GoogleNewsUrl { get; init; } = "";
     public int LatestCount { get; init; }
+    public string[]? ExcludedHosts { get; init; }
     public string DestinationRssFilePath { get; init; } = "";
     public string FeedName { get; init; } = "";
     public string FeedHomePageUrl { get; init; } = "";
     public string FeedUrl { get; init; } = "";
     public string FeedIconUrl { get; init; } = "";
     public string FeedFaviconUrl { get; init; } = "";
+
+    internal bool ExcludesHost(Uri url)
+    {
+        if (ExcludedHosts is not { Length: > 0 } hosts)
+            return false;
+
+        var urlHost = url.IdnHost.TrimEnd('.');
+        return Array.Exists(hosts, host => string.Equals(
+            host?.TrimEnd('.'),
+            urlHost,
+            StringComparison.OrdinalIgnoreCase));
+    }
 }
 
 public sealed record ConfigurationLoadResult(

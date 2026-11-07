@@ -289,6 +289,72 @@ public sealed class GeneratorRunnerTests
     }
 
     [TestMethod]
+    public async Task RunAsync_ExcludedHosts_SkipsNewAndSavedItemsAcrossRuns()
+    {
+        using var workspace = new TestWorkspace();
+        var configuration = workspace.CreateConfiguration("FeedOne");
+        var settings = JsonNode.Parse(File.ReadAllText(configuration.Path))?.AsObject()
+            ?? throw new InvalidOperationException("Test configuration is missing.");
+        settings["ExcludedHosts"] = new JsonArray("FORUMS.source.test", "community.source.test");
+        File.WriteAllText(configuration.Path, settings.ToJsonString());
+        configuration = ConfigurationLoader.Load(configuration.Path, workspace.Context);
+
+        var first = new Uri("https://source.test/first");
+        var second = new Uri("https://source.test/second");
+        var older = new Uri("https://source.test/older");
+        WriteExistingFeed(
+            configuration,
+            CreateItem(first),
+            CreateItem(second),
+            CreateItem(older),
+            CreateItem(new Uri("https://forums.source.test/old-copy")),
+            CreateItem(new Uri("https://community.source.test/another-copy")));
+
+        var scraped = new List<Uri>();
+        var runner = CreateRunner(
+            new FakeFeedClient(
+                """
+                <rss><channel>
+                  <item><link>https://news.test/forum</link></item>
+                  <item><link>https://news.test/community</link></item>
+                  <item><link>https://news.test/first</link></item>
+                  <item><link>https://news.test/second</link></item>
+                </channel></rss>
+                """,
+                url => url.AbsolutePath switch
+                {
+                    "/forum" => new Uri("https://forums.source.test./new-copy"),
+                    "/community" => new Uri("https://community.source.test/new-copy"),
+                    "/first" => first,
+                    _ => second
+                }),
+            new DelegatePageScraper(url =>
+            {
+                scraped.Add(url);
+                return "<html>Article</html>";
+            }),
+            new RecordingGitPublisher(),
+            new RecordingGeneratorConsole());
+
+        var firstRun = await runner.RunAsync(
+            workspace.Context, [configuration], CancellationToken.None);
+        var firstFeed = File.ReadAllText(configuration.DestinationPath);
+        var secondRun = await runner.RunAsync(
+            workspace.Context, [configuration], CancellationToken.None);
+        var secondFeed = File.ReadAllText(configuration.DestinationPath);
+
+        Assert.AreEqual(1, firstRun.FeedCount);
+        Assert.AreEqual(firstRun, secondRun);
+        Assert.AreEqual(firstFeed, secondFeed);
+        CollectionAssert.AreEqual(new[] { first, second, first, second }, scraped);
+        using var feed = JsonDocument.Parse(secondFeed);
+        var ids = feed.RootElement.GetProperty("items").EnumerateArray()
+            .Select(item => item.GetProperty("id").GetString()).ToArray();
+        CollectionAssert.AreEqual(
+            new[] { first.AbsoluteUri, second.AbsoluteUri, older.AbsoluteUri }, ids);
+    }
+
+    [TestMethod]
     public async Task RunAsync_ShallowCandidate_DoesNotCreateDestination()
     {
         using var workspace = new TestWorkspace();
@@ -486,7 +552,9 @@ public sealed class GeneratorRunnerTests
         return new FakeFeedClient(items.ToString());
     }
 
-    private sealed class FakeFeedClient(string feed) : IFeedClient
+    private sealed class FakeFeedClient(
+        string feed,
+        Func<Uri, Uri>? resolve = null) : IFeedClient
     {
         public Task<string> DownloadAsync(
             Uri url,
@@ -499,8 +567,8 @@ public sealed class GeneratorRunnerTests
             Uri url,
             CancellationToken cancellationToken)
         {
-            return Task.FromResult(new Uri(
-                "https://source.test" + url.AbsolutePath));
+            return Task.FromResult(resolve?.Invoke(url) ??
+                new Uri("https://source.test" + url.AbsolutePath));
         }
     }
 

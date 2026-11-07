@@ -139,29 +139,41 @@ public sealed class GeneratorRunner(
                 progress.Report(1, "feed downloaded");
                 return xml;
             });
+        var settings = configuration.Settings;
+        var latestCount = settings.LatestCount;
         var feedLinks = GoogleNewsParser.ParseLatestLinks(
             feedXml,
-            configuration.Settings.LatestCount);
+            settings.ExcludedHosts is { Length: > 0 }
+                ? int.MaxValue
+                : latestCount);
+        var candidateCount = Math.Min(feedLinks.Count, latestCount);
         var resolved = await console.RunPhaseAsync(
             GenerationPhase.Resolve,
             configuration.Name,
-            feedLinks.Count,
+            candidateCount,
             async progress =>
             {
-                var articles = new List<NumberedArticle>(feedLinks.Count);
+                var articles = new List<NumberedArticle>(candidateCount);
                 var skipped = 0;
+                var candidateNumber = 1;
 
-                for (var index = 0; index < feedLinks.Count; index++)
+                for (var index = 0;
+                    index < feedLinks.Count && candidateNumber <= latestCount;
+                    index++)
                 {
                     var number = NumberedFiles.Format(
-                        index + 1,
-                        configuration.Settings.LatestCount);
+                        candidateNumber,
+                        latestCount);
 
                     try
                     {
                         var resolvedUrl = await feedClient.ResolveAsync(
                             feedLinks[index],
                             cancellationToken);
+
+                        if (settings.ExcludesHost(resolvedUrl))
+                            continue;
+
                         articles.Add(new NumberedArticle(number, resolvedUrl));
                     }
                     catch (OperationCanceledException)
@@ -176,7 +188,8 @@ public sealed class GeneratorRunner(
                             exception.Message);
                     }
 
-                    progress.Report(index + 1, $"article {number}");
+                    progress.Report(candidateNumber, $"article {number}");
+                    candidateNumber++;
                 }
 
                 var urls = new JsonObject();
