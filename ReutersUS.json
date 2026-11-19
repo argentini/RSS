@@ -7,123 +7,96 @@
   "favicon": "https://www.reuters.com/pf/resources/images/reuters/favicon/tr_fvcn_kinesis_32x32_v2.ico?d=393&mxId=00000000",
   "items": [
     {
-      "title": "Democrats probe whether Lutnick helped Cantor Fitzgerald avoid Nvidia-linked losses",
-      "date_published": "2026-11-18T10:00:47.9Z",
-      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/WCRDGHPPHROBVHSD4T6H5UCNBY.jpg?auth=a7b6009adaa0ca1e2a0f64adedb2c0d3792fe752051b8666e3a65d5acb079c29&height=1005&width=1920&quality=80&smart=true\" alt=\"US Secretary of Commerce Howard Lutnick attends a meeting with members of the Quad (Quadrilateral Security Dialogue), which includes US, India, Japan and Australia, at the Solaire hotel in Paranaque, Metro Manila, Philippines, November 17, 2026. REUTERS/Carlos Barria\" /><p>WASHINGTON, Nov 18 (Reuters) - Democratic lawmakers have opened a probe into whether US Commerce Secretary Howard Lutnick used his office to help investment firm Cantor Fitzgerald, which is controlled by his sons, avoid losses stemming from scrutiny of AI chip firm Nvidia's (NVDA.O) ties to a Chinese firm, according to a letter reviewed by Reuters.</p><p>In the letter dated November 17, House Democrats notified Brandon Lutnick, chairman of Cantor Fitzgerald and Howard Lutnick's son, that they are requesting information to ascertain if any actions taken by the commerce secretary were \"improperly influenced by Cantor Fitzgerald's holdings or business interests.\"</p><p>The lawmakers — US Representatives Jamie Raskin of Maryland, Gregory Meeks of New York and Sydney Kamlager-Dove of California — asked if concerns about Cantor Fitzgerald's \"financial exposure, business relationships, or contracts with or commitments to foreign governments\" influenced Secretary Lutnick's refusal to add Chinese firm Megaspeed to the Commerce Department's trade blacklist for certain technology or require a license for the export of advanced AI chips to the company.</p><p>The US puts companies on its trade blacklist that it has determined pose risks to US national security or foreign policy.</p><p>\"The Secretary has fully complied with the terms of his ethics agreement, including all divestiture and recusal requirements, and will continue to do so. He has divested all financial interests in Cantor Fitzgerald, Newmark, and BGC,\" a Commerce spokesperson said in a statement in response to the letter, which was first reported by the Financial Times.</p><p>Megaspeed has been in the spotlight after reports that Nvidia's former CEO, Jensen Huang, had an affair with former Megaspeed executive Alice Huang, whom US authorities suspect of being a Chinese spy.</p><p>Cantor Fitzgerald denied the lawmakers' claims, saying in an emailed statement it holds no material proprietary position in Nvidia, and that its Nvidia holdings arise primarily from equity swaps executed for clients. The firm also said it has no role in US export control or blacklist decisions.</p><p>Earlier this month, US Treasury Secretary Scott Bessent said four government agencies had favored putting Megaspeed on a trade blacklist known as the Entity List but the Commerce Department, which was in charge, had not.</p><p>\"If Secretary Bessent is now writing export-control rules and Attorney General Blanche is investigating violators, why hasn't Secretary Lutnick been implementing export controls?\" Democratic Senator Maria Cantwell said on Wednesday. \"Who is responsible for putting Megaspeed on the Entity List?\"</p><p>House Energy and Commerce chair US Representative Brett Guthrie, a Kentucky Republican, separately asked Nvidia interim CEO Colette Kress, Lutnick and Commerce official Jeff Kessler to give briefings to lawmakers on reports about Jensen Huang's relationship with Alice Huang.</p><p>US Senator Tim Scott, a South Carolina Republican who chairs the Senate Banking Committee, said he wanted Lutnick and Jensen Huang to testify publicly. \"We have the power of subpoena if they don't come voluntarily,\" Scott said on CNBC.</p>",
+      "title": "Trump administration makes it easier for companies to classify workers as contractors",
+      "date_published": "2026-11-19T18:52:59.984Z",
+      "date_modified": "2026-11-19T18:59:52.608Z",
       "authors": [
         {
-          "name": "David Shepardson",
-          "url": "https://www.reuters.com/authors/david-shepardson/"
-        },
-        {
-          "name": "Rishabh Jaiswal",
-          "url": "https://www.reuters.com/authors/rishabh-jaiswal/"
+          "name": "Daniel Wiessner",
+          "url": "/authors/daniel-wiessner/"
         }
       ],
-      "image": "https://www.reuters.com/resizer/v2/WCRDGHPPHROBVHSD4T6H5UCNBY.jpg?auth=a7b6009adaa0ca1e2a0f64adedb2c0d3792fe752051b8666e3a65d5acb079c29&height=1005&width=1920&quality=80&smart=true",
-      "attachments": [
-        {
-          "url": "https://www.reuters.com/resizer/v2/WCRDGHPPHROBVHSD4T6H5UCNBY.jpg?auth=a7b6009adaa0ca1e2a0f64adedb2c0d3792fe752051b8666e3a65d5acb079c29&height=1005&width=1920&quality=80&smart=true",
-          "mime_type": "image/jpeg",
-          "title": "US Secretary of Commerce Howard Lutnick attends a meeting with members of the Quad (Quadrilateral Security Dialogue), which includes US, India, Japan and Australia, at the Solaire hotel in Paranaque, Metro Manila, Philippines, November 17, 2026. REUTERS/Carlos Barria"
-        }
-      ],
-      "id": "https://www.reuters.com/world/us/democrats-probe-whether-howard-lutnick-helped-cantor-avoid-nvidia-losses-ft-2026-11-18/",
-      "url": "https://www.reuters.com/world/us/democrats-probe-whether-howard-lutnick-helped-cantor-avoid-nvidia-losses-ft-2026-11-18/",
-      "external_url": "https://www.reuters.com/world/us/democrats-probe-whether-howard-lutnick-helped-cantor-avoid-nvidia-losses-ft-2026-11-18/"
+      "content_html": "<img src=",
+      "id": "https://www.reuters.com/world/us/trump-administration-makes-it-easier-companies-classify-workers-contractors-2026-11-19/",
+      "url": "https://www.reuters.com/world/us/trump-administration-makes-it-easier-companies-classify-workers-contractors-2026-11-19/",
+      "external_url": "https://www.reuters.com/world/us/trump-administration-makes-it-easier-companies-classify-workers-contractors-2026-11-19/"
     },
     {
-      "title": "Democrats nominate Hakeem Jeffries for next US House speaker",
-      "date_published": "2026-11-18T15:36:30.743Z",
-      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/RC3URU3RSNMWTBZOEBI7NN3RAE.jpg?auth=3e9d03d007a2304bf0eba7f87245959e4d78820f0fa083564c9d605ea628c94a&height=1005&width=1920&quality=80&smart=true\" alt=\"US House Minority Leader Hakeem Jeffries (D-NY) attends a press conference in the US Capitol on Capitol Hill in Washington, DC, US, November 17, 2026. REUTERS/Nathan Howard\" /><p>WASHINGTON, Nov 18 (Reuters) - Democrats elected this month to the US House of Representatives nominated Hakeem Jeffries on Wednesday to lead them in the next Congress, putting him on the precipice of becoming the nation's first Black House speaker.</p><p>\"It's a high honor and a distinct privilege to stand before the American people today as the Democratic nominee to be the next speaker of the United States House of Representatives,\" Jeffries told a press conference.</p><p>The incoming House Democratic Caucus nominated Jeffries in a closed-door, secret-ballot vote. Jeffries won 251 votes with 11 Democrats opposing him.</p><p>Jeffries told reporters the overwhelming majority of Democrats spoke \"clearly and decisively from all corners.\" He said Democrats need to fight \"MAGA extremism,\" not each other, so they can \"get big things done for the American people.\"</p><p>Many incoming progressives declined to say whether they would back Jeffries after the November 3 midterm elections, with several saying they wanted a leader who would support a bold agenda to pass populist policies that candidates campaigned on.</p><p>A group of seven incoming House progressives said in a joint statement that they voted against Jeffries because they're still working to secure commitments from the New York Democrat.</p><p>\"While we have seen meaningful progress, there is still work to be done to ensure that the direction our party takes this coming Congress reflects what our constituents are demanding of leadership,\" they said. \"Those conversations are ongoing.\"</p><h2>DEMOCRATS MINIMIZE INTERNAL DIVISIONS</h2><p>Leaders of the Congressional Progressive Caucus congratulated Jeffries in a separate statement that pledged to work with him to pass \"the first year of Medicare For All, an end to for-profit immigrant detention centers, and so much more.\"</p><p>Representative Pramila Jayapal, a former chair of the progressive group who voted for Jeffries, said it's legitimate for new members to \"want to respond to the anger of the moment that's out there, and I think Leader Jeffries — soon-to-be Speaker Jeffries — understands that, in part because the movement has been so effective at communicating that.\"</p><p>Other Democrats downplayed the significance of the opposition. Representative Rosa DeLauro, the top Democrat on the Appropriations Committee, told reporters there will always be naysayers, and Representative Jonathan Jackson said Democrats \"can have a majority without being a monopoly.\"</p><p>\"Rarely are great people able to reach their ultimate goal without somebody saying no,\" Representative Emanuel Cleaver told Reuters. \"It just doesn't happen.\"</p><p>Despite some opposition, Jeffries is expected to be elected speaker, a powerful position that puts him second in line to the presidency, when the new Congress convenes in early January. The speaker election requires 218 votes on the House floor. Democrats will have a majority of at least 257 seats. Several competitive races remain uncalled.</p><h2>HISTORIC MILESTONE CELEBRATED</h2><p>Several Democrats celebrated the historic nature of Jeffries' nomination. Representative Jim Clyburn of South Carolina, who was the highest-ranking Black House Democrat until Jeffries became Democratic leader, told reporters that Wednesday's vote was \"very historic.\"</p><p>Representative Joe Morelle, a fellow New York Democrat, said he was overjoyed for Jeffries, someone he's known for nearly two decades.</p><p>\"He's going to be a great speaker,\" he told Reuters.</p><p>Asked about the members Jeffries has yet to win over, Morelle said there was broad consensus in the caucus on advancing an affordability and accountability agenda that Democrats campaigned on.</p><p>\"I'm sure there'll be other voices,\" he said. \"But I think he is focused on delivering on what we talked about this fall.\"</p><p>Representative Madeleine Dean of Pennsylvania framed the vote as a continuation of the \"bright turnaround\" Democrats have experienced since Election Day.</p><p>\"I didn't allow myself to dream of this sweeping set of wins,\" she said, referring to Democrats winning control of the House and Senate. \"And yet here we are on a much brighter day, with an extraordinarily capable leadership team that will serve for the American people.\"</p><p>House Republicans last week nominated Judiciary Committee Chairman Jim Jordan to lead their conference in January. Jordan won the post over Majority Leader Steve Scalise after Speaker Mike Johnson said he would not seek to lead Republicans in the minority.</p><p>Reporting by Nolan D. McCaskill and David Morgan; Additional reporting by Richard Cowan and Katharine Jackson; Editing by Nick Zieminski and Alistair Bell</p>",
+      "title": "Trump's challenge: courting friends and rivals",
+      "date_published": "2026-11-19T18:30:00Z",
+      "date_modified": "2026-11-19T18:30:00.831Z",
       "authors": [
         {
-          "name": "Nolan D. McCaskill",
-          "url": "https://www.reuters.com/authors/nolan-d-mccaskill/"
-        },
-        {
-          "name": "David Morgan",
-          "url": "https://www.reuters.com/authors/david-morgan/"
+          "name": "Trevor Hunnicutt",
+          "url": "/authors/trevor-hunnicutt/"
         }
       ],
-      "image": "https://www.reuters.com/resizer/v2/RC3URU3RSNMWTBZOEBI7NN3RAE.jpg?auth=3e9d03d007a2304bf0eba7f87245959e4d78820f0fa083564c9d605ea628c94a&height=1005&width=1920&quality=80&smart=true",
-      "attachments": [],
-      "id": "https://www.reuters.com/world/us/urgent-democrats-nominate-hakeem-jeffries-next-us-house-speaker-2026-11-18/",
-      "url": "https://www.reuters.com/world/us/urgent-democrats-nominate-hakeem-jeffries-next-us-house-speaker-2026-11-18/",
-      "external_url": "https://www.reuters.com/world/us/urgent-democrats-nominate-hakeem-jeffries-next-us-house-speaker-2026-11-18/"
+      "content_html": "<figure><img src=",
+      "id": "https://www.reuters.com/world/us/trumps-challenge-courting-friends-rivals-2026-11-19/",
+      "url": "https://www.reuters.com/world/us/trumps-challenge-courting-friends-rivals-2026-11-19/",
+      "external_url": "https://www.reuters.com/world/us/trumps-challenge-courting-friends-rivals-2026-11-19/"
     },
     {
-      "title": "US single-family housing starts rebound, but trend remains subdued",
-      "date_published": "2026-11-18T13:39:52Z",
-      "content_html": "<figure><img src=\"https://www.reuters.com/resizer/v2/VPSECAUHGRO63JDBFWMTGPJ6HM.jpg?auth=aa2892b1f1ecfdd860254d1781d0ec04471de31385234a90ee227d6356944dbc&height=1005&width=1920&quality=80&smart=true\" alt=\"A drone view shows a sold sign next to newly built single-family residential homes at a small costal development in Encinitas, California, U.S., August 20, 2026. REUTERS/Mike Blake/File Photo\" /><figcaption>A drone view shows a sold sign next to newly built single-family residential homes at a small costal development in Encinitas, California, U.S., August 20, 2026. REUTERS/Mike Blake/File Photo</figcaption></figure><ul><li>Single-family housing starts increase 4.0% to a rate of 864,000 units in October</li><li>Building permits for single-family housing drop 8.7% to lowest level since early 2023</li><li>Overall housing starts surge 9.9%; building permits dive 7.4%</li></ul><p>WASHINGTON, Nov 18 (Reuters) - US single-family homebuilding rebounded in October, but the improvement is likely temporary, with permits for future construction dropping to their lowest level in over 3-1/2 years as high mortgage rates continued to depress housing demand.</p><p>The housing market has been in a slump since mid-2024, a downturn exacerbated by the US-Israeli war with Iran, which is fanning inflation and driving up borrowing costs, leaving many young Americans unable to afford buying a home.</p><p>Economists expect the housing market downturn to persist in 2027, especially with the Federal Reserve forecast to continue raising interest rates after next month's widely expected hike to quell inflation. Contracts to buy previously owned homes fell to a record low in October, other data showed on Wednesday.</p><p>The reports followed on the heels of a survey on Tuesday showing sentiment among single-family homebuilders diving to a more than 14-1/2-year low in November.</p><p>\"The US housing market is in a funk,\" said Heather Long, chief economist at Navy Federal Credit Union. \"Buyers don't want to purchase a home at these high prices and high mortgage rates, and builders don't want to build new homes or take risks in this market. This is a key reason home prices are staying high despite the lack of buyers.\"</p><p>Single-family housing starts, which account for the bulk of homebuilding, increased 4.0% to a seasonally adjusted annual rate of 864,000 units last month, the Commerce Department's Census Bureau said. Homebuilding declined 3.2% on a year-over-year basis in October.</p><p>Building permits for single-family housing projects tumbled 8.7% to a rate of 772,000 units, the lowest level since January 2023. They have now declined for three straight months. Building permits fell in all four regions, with a double-digit decline in the West. Permits decreased 12.9% year-on-year in October.</p><p>The rate on the 30-year fixed mortgage has surged by 120 basis points since the conflict started in late February, data from mortgage finance agency Freddie Mac showed, averaging 7.18% last week. Financial markets have priced in a 25-basis-point rate hike at the US central bank's December 8-9 meeting and anticipated another increase in borrowing costs in January, CME's FedWatch tool showed.</p><p>Fed Governor Christopher Waller said on Wednesday the central bank needs to get more aggressive in its response to inflation that he fears is changing public psychology about prices, and either approve a half-point hike at the December meeting or communicate a faster pace of hikes in 2027.</p><p>The Fed left its benchmark overnight interest rate in the 3.75%-4.00% range last month.</p><h2>HOMEBUILDER SENTIMENT DETERIORATES</h2><p>Homebuilding is also being constrained by the Trump administration's immigration crackdown, which the National Association of Home Builders said on Tuesday was \"keeping legal workers off construction sites, deepening labor shortages and driving up costs.\" Developers were also facing growing cost pressures from high energy and material prices.</p><p>Subdued demand has left an overhang of unsold new homes on the market that is also discouraging builders from breaking ground on single-family housing projects.</p><p>The number of single-family houses approved for construction that are yet to be started dropped 3.2% to 151,000 units in October. The inventory of single-family housing under construction fell 0.2% to 581,000 units.</p><p>\"This figure likely needs to decline in light of weaker demand for homes, which means that housing starts probably need to slow down, or at a minimum remain below the prevailing trend, in the coming months to avoid a backup in new home inventories,\" said Stephen Stanley, chief US economist at Santander US Capital Markets.</p><p>Residential investment, which includes homebuilding, has contracted in eight of the last 10 quarters. The housing market drag has not dented the economy as it accounts for a small share of gross domestic product.</p><p>Starts for housing projects with five units or more, a very volatile segment, soared 25.5% to a rate of 433,000 units in October. Multifamily housing starts increased 22.0% on a year-over-year basis. Overall housing starts rebounded 9.9% to a pace of 1.309 million units. Economists polled by Reuters had forecast starts rising to a rate of 1.245 million units.</p><p>They rose 2.8% on a year-over-year basis in October.</p><p>Building permits for multifamily housing projects fell 5.2% to a rate of 475,000 units last month. Overall building permits tumbled 7.4% to a rate of 1.295 million units. Permits declined 8.7% on a year-over-year basis in October.</p><p>\"Builders are trying to unload current inventory heading into 2027, offering more incentives and lowering prices,\" said Ben Ayers, senior economist at Nationwide. \"But with mortgage rates likely to remain elevated, activity could increasingly shift to apartments and condos with more renters staying in place due to housing affordability concerns.\"</p><p>Reporting by Lucia Mutikani; Editing by Chizu Nomiyama, Andrea Ricci and Deepa Babington</p>",
+      "title": "US Treasury sanctions three people linked to Southeast Asia scam centers",
+      "date_published": "2026-11-19T16:03:25.609Z",
+      "date_modified": "2026-11-19T17:38:21.888Z",
+      "authors": [
+        {
+          "name": "Gregor Stuart Hunter",
+          "url": "/authors/gregor-stuart-hunter/"
+        }
+      ],
+      "content_html": "<figure><img src=",
+      "id": "https://www.reuters.com/world/us-treasury-sanctions-three-people-linked-southeast-asia-scam-centers-2026-11-19/",
+      "url": "https://www.reuters.com/world/us-treasury-sanctions-three-people-linked-southeast-asia-scam-centers-2026-11-19/",
+      "external_url": "https://www.reuters.com/world/us-treasury-sanctions-three-people-linked-southeast-asia-scam-centers-2026-11-19/"
+    },
+    {
+      "title": "US weekly jobless claims edge up, but labor market remains resilient",
+      "date_published": "2026-11-19T13:44:04.537Z",
+      "date_modified": "2026-11-19T17:06:57.261Z",
       "authors": [
         {
           "name": "Lucia Mutikani",
-          "url": "https://www.reuters.com/authors/lucia-mutikani/"
+          "url": "/authors/lucia-mutikani/"
         }
       ],
-      "image": "https://www.reuters.com/resizer/v2/VPSECAUHGRO63JDBFWMTGPJ6HM.jpg?auth=aa2892b1f1ecfdd860254d1781d0ec04471de31385234a90ee227d6356944dbc&height=1005&width=1920&quality=80&smart=true",
-      "tags": [
-        "REP",
-        "AGN",
-        "BISV",
-        "BNK",
-        "BSVC",
-        "CEN",
-        "COFS",
-        "CONFIG",
-        "DBT",
-        "ECI",
-        "ECO",
-        "FIN",
-        "FINS",
-        "GEN",
-        "HOSAL",
-        "ILEI",
-        "INT",
-        "MCE",
-        "MTG",
-        "PLCY",
-        "POL",
-        "REA",
-        "REAM",
-        "WASH",
-        "AMERS",
-        "US",
-        "NAMER",
-        "US/HOUSE1"
+      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/HHMGBSDFRRPBRPXN5T5YANBHOM.jpg?auth=6c6ad22b8f13b9a6ef3638223288f785326171be2e15fe0c8ea142e89bcbcbc8&amp;height=1005&amp;width=1920&amp;quality=80&amp;smart=true\" alt=\"\"><p>WASHINGTON, Nov 19 (Reuters) - The number of Americans filing new claims for unemployment benefits increased slightly last week, suggesting that labor market conditions remained stable, though some laid-off workers are struggling to find new opportunities.</p><p>Labor market resilience gives the Federal Reserve greater scope to focus on stamping out inflation, which is being fueled by the ongoing US-Israeli war with Iran.</p><p>It's a 'medium-hire, low-fire' job market right now, said Heather Long, chief economist at Navy Federal Credit Union. It's still tough for young Americans trying to get onto the career ladder, but it's easier than it was a year ago.</p><p>Initial claims for state unemployment benefits rose 1,000 to a seasonally adjusted 203,000 for the week ended November 14, the Labor Department said. Economists polled by Reuters had forecast 197,000 claims for the latest week. Claims had hovered at or below 200,000 since mid-September.</p><p>Four states, including Texas and California, reported declines in unadjusted applications of more than 1,000 last week. But filings in Michigan surged by 6,095, more than reversing the prior week's decline. Economists said Michigan's launch last week of a new online platform for filing unemployment claims could account for the increase.</p><p>The four-week moving average of claims, which irons out week-to-week volatility, increased 2,000 to 197,750.</p><p>Economists said strong growth in profits amid robust domestic demand and a smaller workforce resulting from retirements and an immigration crackdown by the Trump administration were shielding workers from layoffs.</p><p>The unemployment rate dropped from 4.5% in November 2025 to 4.1% in October this year, raising the possibility that the labor market could be tightening, though moderate wage growth suggests otherwise.</p><p>Minutes of the US central bank's October 27-28 policy meeting, published on Wednesday, showed officials saw a growing risk last month that they might need to intensify their efforts to control inflation. The minutes also noted that many pointed to signs of modest tightening in the labor market, adding that policymakers generally expected labor market conditions to remain stable in the near term and viewed upside and downside risks to the labor market as broadly balanced.</p><h2>MORE AGGRESSIVE RESPONSE</h2><p>Stocks on Wall Street were trading mostly lower. The dollar was steady against a basket of currencies. US Treasury yields rose.</p><p>Fed Governor Christopher Waller said on Wednesday the central bank needs to get more aggressive in its response to inflation that he fears is changing public psychology about prices, and either approve a half-percentage-point interest rate hike at its December 8-9 meeting or communicate a faster pace of hikes in 2027.</p><p>The central bank left its benchmark overnight interest rate in the 3.75%-4.00% range at a meeting last month. Financial markets have priced in a 25-basis-point increase at the Fed's meeting next month and anticipate another increase in borrowing costs in January, CME Group's FedWatch tool showed.</p><p>The claims report covered the period during which the government surveyed businesses for the nonfarm payrolls component of November's employment report.</p><p>The four-week average of claims was little changed between the October and November survey periods. Nonfarm payrolls increased by 165,000 jobs in October.</p><p>Despite the increase in payrolls, employers remain reluctant to boost head counts, with economists saying some businesses were probably uncertain about their staffing needs as they incorporate AI into their operations. Economists also view the drawn-out Middle East conflict as hampering hiring.</p><p>The claims report showed the number of people receiving unemployment benefits after an initial week of aid, a proxy for hiring, increased by 70,000 to a seasonally adjusted 1.763 million during the week ended November 7. The jump pushed so-called continuing claims to their highest level since the end of August and suggested that some people who have lost their jobs are experiencing long bouts of unemployment.</p><p>Unadjusted continuing claims in Michigan increased by 39,343, accounting for the lion's share of the national increase that week. Continuing claims in Michigan had dropped considerably in the prior week.</p><p>Averaging the last two weeks likely provides a more accurate signal than focusing on either report individually, said Veronica Clark, an economist at Citigroup. Even after smoothing through that volatility, the data may point to a modest uptick in continuing claims over the last couple of weeks. If sustained, that could suggest job finding is becoming slightly more difficult even as layoffs remain low.</p><p>The median duration of unemployment surged to 11.9 weeks in October, the longest since November 2021, from 11.5 weeks in September.</p><p>Reporting by Lucia Mutikani; Editing by Chizu Nomiyama and Paul Simao</p>",
+      "image": "https://www.reuters.com/resizer/v2/HHMGBSDFRRPBRPXN5T5YANBHOM.jpg?auth=6c6ad22b8f13b9a6ef3638223288f785326171be2e15fe0c8ea142e89bcbcbc8&height=1005&width=1920&quality=80&smart=true",
+      "id": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/",
+      "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/",
+      "external_url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/"
+    },
+    {
+      "title": "Trump pressures Congress to pass farm bill this year",
+      "date_published": "2026-11-19T13:58:41.839Z",
+      "date_modified": "2026-11-19T16:22:30.046Z",
+      "authors": [
+        {
+          "name": "Leah Douglas",
+          "url": "/authors/leah-douglas/"
+        },
+        {
+          "name": "Katharine Jackson",
+          "url": "/authors/katharine-jackson/"
+        }
       ],
-      "attachments": [],
-      "id": "https://www.reuters.com/world/us/us-single-family-housing-starts-rebound-october-building-permits-plunge-2026-11-18/",
-      "url": "https://www.reuters.com/world/us/us-single-family-housing-starts-rebound-october-building-permits-plunge-2026-11-18/",
-      "external_url": "https://www.reuters.com/world/us/us-single-family-housing-starts-rebound-october-building-permits-plunge-2026-11-18/"
+      "content_html": "<figure><img src=",
+      "id": "https://www.reuters.com/world/us/trump-urges-congress-pass-new-farm-bill-2026-11-19/",
+      "url": "https://www.reuters.com/world/us/trump-urges-congress-pass-new-farm-bill-2026-11-19/",
+      "external_url": "https://www.reuters.com/world/us/trump-urges-congress-pass-new-farm-bill-2026-11-19/"
     },
     {
       "title": "Threats from Iran have increased substantially, US intelligence director says",
       "date_published": "2026-11-18T17:04:52.961Z",
-      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/3VWLBJ4YCVOXTI5CKJMMKAQ2LA.jpg?auth=2fe6dc911cbb63e1c4811d2a670272d1d58d8c6bd32fe0f160a0df53c8973e05&height=1005&width=1920&quality=80&smart=true\" alt=\"Director of National Intelligence (DNI) Jay Clayton attends a House Homeland Security Committee hearing titled, 'Worldwide Threats to the Homeland: 25 Years After 9/11,' on Capitol Hill in Washington, DC, US, November 18, 2026. REUTERS/Nathan Howard\" /><p>WASHINGTON, Nov 18 (Reuters) - Threats from Iran to Americans inside and outside the United States have increased substantially, Director of National Intelligence Jay Clayton told lawmakers on Wednesday.</p><p>\"We remain committed to detecting, deterring, and combating the Iranian lethal plotting outside the United States and inside the United States,\" Clayton said at a House of Representatives Homeland Security Committee hearing.</p><p>\"These threats have substantially increased. Our women and men abroad, our women and men here in the United States, are under greater threat.\"</p><p>Iran has warned that it would attack American forces and regional allies in retaliation for US strikes on the country, which continue more than eight months after the US and Israel launched coordinated strikes on Iran in February.</p><p>In a <a href=\"https://www.reuters.com/world/middle-east/iran-has-ramped-up-efforts-target-us-personnel-intelligence-memo-warns-2026-10-24/\">memo</a> seen last month by Reuters, Clayton said Iran has ramped up efforts to target US personnel, and lethal plots by Tehran against American citizens have reached \"advanced stages.\"</p><p>A CNN report this week cited US intelligence assessments on the possibility that Iran may be planning an attack involving a dirty bomb in Washington.</p><p>Asked about the report during Wednesday's hearing, Clayton said he would not discuss any specific matters but acknowledged such threats were not new.</p><p>\"There are a suite of threats that are that we refer to as, you know, civilian mass destruction threats or whatever you want, and they have been around for a long time,\" Clayton said.</p><p>US Secretary of State Marco Rubio <a href=\"https://www.reuters.com/world/middle-east/tehran-denies-report-potential-iranian-plan-detonate-dirty-bomb-washington-2026-11-17/\">said</a> on Wednesday he did not think there was any imminent threat to the US capital, when asked about the report during a trip to Asia with President Donald Trump.</p><p>Trump said on Tuesday the US was taking seriously the possibility that Iran could be planning an attack.</p><p>Reporting by Doina Chiacu; Editing by Sanjeev Miglani</p>",
+      "date_modified": "2026-11-19T09:58:07.529Z",
       "authors": [
         {
           "name": "Reuters"
-        },
-        {
-          "name": "Doina Chiacu"
         }
       ],
+      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/3VWLBJ4YCVOXTI5CKJMMKAQ2LA.jpg?auth=2fe6dc911cbb63e1c4811d2a670272d1d58d8c6bd32fe0f160a0df53c8973e05&amp;height=1005&amp;width=1920&amp;quality=80&amp;smart=true\" alt=\"\"><p>WASHINGTON, Nov 18 (Reuters) - Threats from Iran to Americans inside and outside the United States have increased substantially, Director of National Intelligence Jay Clayton told lawmakers on Wednesday.</p><p>“We remain committed to detecting, deterring, and combating the Iranian lethal plotting outside the United States and inside the United States,” Clayton said at a House of Representatives Homeland Security Committee hearing.</p><p>“These threats have substantially increased. Our women and men abroad, our women and men here in the United States, are under greater threat.”</p><p>Iran has warned that it would attack American forces and regional allies in retaliation for US strikes on the country, which continue more than eight months after the US and Israel launched coordinated strikes on Iran in February.</p><p>In a memo seen last month by Reuters, Clayton said Iran has ramped up efforts to target US personnel, and lethal plots by Tehran against American citizens have reached “advanced stages.”</p><p>A CNN report this week cited US intelligence assessments on the possibility that Iran may be planning an attack involving a dirty bomb in Washington.</p><p>Asked about the report during Wednesday's hearing, Clayton said he would not discuss any specific matters but acknowledged such threats were not new.</p><p>“There are a suite of threats that are that we refer to as, you know, civilian mass destruction threats or whatever you want, and they have been around for a long time,” Clayton said.</p><p>US Secretary of State Marco Rubio said on Wednesday he did not think there was any imminent threat to the US capital, when asked about the report during a trip to Asia with President Donald Trump.</p><p>Trump said on Tuesday the US was taking seriously the possibility that Iran could be planning an attack.</p><p>Reporting by Doina Chiacu; Editing by Sanjeev Miglani</p>",
       "image": "https://www.reuters.com/resizer/v2/3VWLBJ4YCVOXTI5CKJMMKAQ2LA.jpg?auth=2fe6dc911cbb63e1c4811d2a670272d1d58d8c6bd32fe0f160a0df53c8973e05&height=1005&width=1920&quality=80&smart=true",
-      "language": "en",
-      "tags": [
-        "IRAN",
-        "IRAN-CRISIS",
-        "DEF",
-        "DIP",
-        "NUCL",
-        "POL",
-        "SECUR",
-        "US",
-        "WAR"
-      ],
-      "attachments": [],
       "id": "https://www.reuters.com/world/us/threats-iran-have-increased-substantially-us-intelligence-director-says-2026-11-18/",
       "url": "https://www.reuters.com/world/us/threats-iran-have-increased-substantially-us-intelligence-director-says-2026-11-18/",
       "external_url": "https://www.reuters.com/world/us/threats-iran-have-increased-substantially-us-intelligence-director-says-2026-11-18/"
@@ -131,54 +104,83 @@
     {
       "title": "Transportation Secretary Duffy says US taking steps to avoid future aviation disruptions",
       "date_published": "2026-11-18T16:47:18.604Z",
-      "content_html": "<figure><img src=\"https://www.reuters.com/resizer/v2/RMNM7OWSGZJLBI4DN3CFGLJ2GA.jpg?auth=d339cc874445ab016b343dfbd379607a297665744e49283f53737ec994e14d41&height=1005&width=1920&quality=80&smart=true\" alt=\"US Secretary of Transportation Sean Duffy speaks to the press on Capitol Hill in Washington, DC, US, November 17, 2026. REUTERS/Evelyn Hockstein\"><figcaption>US Secretary of Transportation Sean Duffy speaks to the press on Capitol Hill in Washington, DC, US, November 17, 2026. REUTERS/Evelyn Hockstein</figcaption></figure><p>WASHINGTON, Nov 18 (Reuters) - US Transportation Secretary Sean Duffy said on Wednesday a problem with a router that led to a nationwide aviation ground stop should have been identified faster and officials are taking steps to prevent future disruptions.</p><p>\"There's a lot of lessons that have been learned, performance lessons from some of our contractors that we are thoroughly addressing right now,\" Duffy said during an appearance on the online podcast \"The Morning Meeting.\"</p><p>Duffy has said a Juniper router installed by L3Harris Technologies (LHX.N) in a remote Arkansas facility triggered a nearly five-hour nationwide aviation ground stop on Friday, the longest in the United States since the September 11, 2001, attacks.</p><p>\"The team you have monitoring the network to see any issue and isolate that issue and remove it from the network -- that is critical when you do this work,\" Duffy said. \"This was not identified quick enough. It was not isolated quick enough. We're working on how to remedy that right now.\"</p><p>L3Harris did not immediately respond to a request for comment.</p><p>Duffy said the installation of 68 prior routers, which are made by Hewlett Packard Enterprise-owned (HPE.N) Juniper Networks, had not led to any problems. But he said the Federal Aviation Administration has paused installations of Juniper routers as testing continues at an L3Harris laboratory in Florida with the FAA, Cisco (CSCO.O) and the FBI on site.</p><p>Duffy has asked Congress to quickly approve another $50 billion to complete massive upgrades in the aging US air traffic control system and airports after lawmakers last year approved $12.5 billion. Some lawmakers support a smaller amount of money targeted at the safety upgrades.</p><p>FAA Administrator Bryan Bedford took responsibility for the ground stop that disrupted the travel plans of 1 million travelers.</p><p>\"I am the chief accountability officer. I take full responsibility for it,\" Bedford said at a forum with the Hill newspaper. \"I've been hired to get this done. So blame me if we need to blame somebody. Blame me.\"</p><p>Reporting by David Shepardson; Editing by Sanjeev Miglani</p>",
+      "date_modified": "2026-11-18T16:47:43.392Z",
       "authors": [
         {
           "name": "David Shepardson",
-          "url": "https://www.reuters.com/authors/david-shepardson/"
+          "url": "/authors/david-shepardson/"
         }
       ],
-      "image": "https://www.reuters.com/resizer/v2/RMNM7OWSGZJLBI4DN3CFGLJ2GA.jpg?auth=d339cc874445ab016b343dfbd379607a297665744e49283f53737ec994e14d41&height=1005&width=1920&quality=80&smart=true",
-      "attachments": [],
+      "content_html": "<figure><img src=",
       "id": "https://www.reuters.com/world/us/transportation-secretary-duffy-says-us-taking-steps-avoid-future-aviation-2026-11-18/",
       "url": "https://www.reuters.com/world/us/transportation-secretary-duffy-says-us-taking-steps-avoid-future-aviation-2026-11-18/",
       "external_url": "https://www.reuters.com/world/us/transportation-secretary-duffy-says-us-taking-steps-avoid-future-aviation-2026-11-18/"
     },
     {
+      "title": "Democrats nominate Hakeem Jeffries for next US House speaker",
+      "date_published": "2026-11-18T15:36:30.743Z",
+      "date_modified": "2026-11-19T17:01:20.225Z",
+      "authors": [
+        {
+          "name": "Nolan D. McCaskill",
+          "url": "/authors/nolan-d-mccaskill/"
+        },
+        {
+          "name": "David Morgan",
+          "url": "/authors/david-morgan/"
+        }
+      ],
+      "content_html": "<img src=",
+      "id": "https://www.reuters.com/world/us/urgent-democrats-nominate-hakeem-jeffries-next-us-house-speaker-2026-11-18/",
+      "url": "https://www.reuters.com/world/us/urgent-democrats-nominate-hakeem-jeffries-next-us-house-speaker-2026-11-18/",
+      "external_url": "https://www.reuters.com/world/us/urgent-democrats-nominate-hakeem-jeffries-next-us-house-speaker-2026-11-18/"
+    },
+    {
+      "title": "US single-family housing starts rebound, but trend remains subdued",
+      "date_published": "2026-11-18T13:39:52.029Z",
+      "date_modified": "2026-11-19T15:48:58.931Z",
+      "authors": [
+        {
+          "name": "Lucia Mutikani",
+          "url": "/authors/lucia-mutikani/"
+        }
+      ],
+      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/VPSECAUHGRO63JDBFWMTGPJ6HM.jpg?auth=aa2892b1f1ecfdd860254d1781d0ec04471de31385234a90ee227d6356944dbc&amp;height=1005&amp;width=1920&amp;quality=80&amp;smart=true\" alt=\"\"><p>WASHINGTON, Nov 18 (Reuters) - US single-family homebuilding rebounded in October, but the improvement is likely temporary, with permits for future construction dropping to their lowest level in over 3-1/2 years as high mortgage rates continued to depress housing demand.</p><p>The housing market has been in a slump since mid-2024, a downturn exacerbated by the US-Israeli war with Iran, which is fanning inflation and driving up borrowing costs, leaving many young Americans unable to afford buying a home.</p><p>Economists expect the housing market downturn to persist in 2027, especially with the Federal Reserve forecast to continue raising interest rates after next month's widely expected hike to quell inflation. Contracts to buy previously owned homes fell to a record low in October, other data showed on Wednesday.</p><p>The reports followed on the heels of a survey on Tuesday showing sentiment among single-family homebuilders diving to a more than 14-1/2-year low in November.</p><p>“The US housing market is in a funk,” said Heather Long, chief economist at Navy Federal Credit Union. “Buyers don't want to purchase a home at these high prices and high mortgage rates, and builders don't want to build new homes or take risks in this market. This is a key reason home prices are staying high despite the lack of buyers.”</p><p>Single-family housing starts, which account for the bulk of homebuilding, increased 4.0% to a seasonally adjusted annual rate of 864,000 units last month, the Commerce Department's Census Bureau said. Homebuilding declined 3.2% on a year-over-year basis in October.</p><p>Building permits for single-family housing projects tumbled 8.7% to a rate of 772,000 units, the lowest level since January 2023. They have now declined for three straight months. Building permits fell in all four regions, with a double-digit decline in the West. Permits decreased 12.9% year-on-year in October.</p><p>The rate on the 30-year fixed mortgage has surged by 120 basis points since the conflict started in late February, data from mortgage finance agency Freddie Mac showed, averaging 7.18% last week. Financial markets have priced in a 25-basis-point rate hike at the US central bank's December 8-9 meeting and anticipated another increase in borrowing costs in January, CME's FedWatch tool showed.</p><p>Fed Governor Christopher Waller said on Wednesday the central bank needs to get more aggressive in its response to inflation that he fears is changing public psychology about prices, and either approve a half-point hike at the December meeting or communicate a faster pace of hikes in 2027.</p><p>The Fed left its benchmark overnight interest rate in the 3.75%-4.00% range last month.</p><h2>HOMEBUILDER SENTIMENT DETERIORATES</h2><p>Homebuilding is also being constrained by the Trump administration's immigration crackdown, which the National Association of Home Builders said on Tuesday was “keeping legal workers off construction sites, deepening labor shortages and driving up costs.” Developers were also facing growing cost pressures from high energy and material prices.</p><p>Subdued demand has left an overhang of unsold new homes on the market that is also discouraging builders from breaking ground on single-family housing projects.</p><p>The number of single-family houses approved for construction that are yet to be started dropped 3.2% to 151,000 units in October. The inventory of single-family housing under construction fell 0.2% to 581,000 units.</p><p>“This figure likely needs to decline in light of weaker demand for homes, which means that housing starts probably need to slow down, or at a minimum remain below the prevailing trend, in the coming months to avoid a backup in new home inventories,” said Stephen Stanley, chief US economist at Santander US Capital Markets.</p><p>Residential investment, which includes homebuilding, has contracted in eight of the last 10 quarters. The housing market drag has not dented the economy as it accounts for a small share of gross domestic product.</p><p>Starts for housing projects with five units or more, a very volatile segment, soared 25.5% to a rate of 433,000 units in October. Multifamily housing starts increased 22.0% on a year-over-year basis. Overall housing starts rebounded 9.9% to a pace of 1.309 million units. Economists polled by Reuters had forecast starts rising to a rate of 1.245 million units.</p><p>They rose 2.8% on a year-over-year basis in October.</p><p>Building permits for multifamily housing projects fell 5.2% to a rate of 475,000 units last month. Overall building permits tumbled 7.4% to a rate of 1.295 million units. Permits declined 8.7% on a year-over-year basis in October.</p><p>“Builders are trying to unload current inventory heading into 2027, offering more incentives and lowering prices,” said Ben Ayers, senior economist at Nationwide. “But with mortgage rates likely to remain elevated, activity could increasingly shift to apartments and condos with more renters staying in place due to housing affordability concerns.”</p><p>Reporting by Lucia Mutikani; Editing by Chizu Nomiyama, Andrea Ricci and Deepa Babington</p>",
+      "image": "https://www.reuters.com/resizer/v2/VPSECAUHGRO63JDBFWMTGPJ6HM.jpg?auth=aa2892b1f1ecfdd860254d1781d0ec04471de31385234a90ee227d6356944dbc&height=1005&width=1920&quality=80&smart=true",
+      "id": "https://www.reuters.com/world/us/us-single-family-housing-starts-rebound-october-building-permits-plunge-2026-11-18/",
+      "url": "https://www.reuters.com/world/us/us-single-family-housing-starts-rebound-october-building-permits-plunge-2026-11-18/",
+      "external_url": "https://www.reuters.com/world/us/us-single-family-housing-starts-rebound-october-building-permits-plunge-2026-11-18/"
+    },
+    {
+      "title": "Democrats probe whether Lutnick helped Cantor Fitzgerald avoid Nvidia-linked losses",
+      "date_published": "2026-11-18T10:00:47.9Z",
+      "date_modified": "2026-11-19T16:57:15.285Z",
+      "authors": [
+        {
+          "name": "David Shepardson",
+          "url": "/authors/david-shepardson/"
+        },
+        {
+          "name": "Rishabh Jaiswal",
+          "url": "/authors/rishabh-jaiswal/"
+        }
+      ],
+      "content_html": "<img src=",
+      "id": "https://www.reuters.com/world/us/democrats-probe-whether-howard-lutnick-helped-cantor-avoid-nvidia-losses-ft-2026-11-18/",
+      "url": "https://www.reuters.com/world/us/democrats-probe-whether-howard-lutnick-helped-cantor-avoid-nvidia-losses-ft-2026-11-18/",
+      "external_url": "https://www.reuters.com/world/us/democrats-probe-whether-howard-lutnick-helped-cantor-avoid-nvidia-losses-ft-2026-11-18/"
+    },
+    {
       "title": "Democrat Mary Peltola wins in Alaska, securing 56-44 US Senate majority",
-      "date_published": "2026-11-18T03:27:46Z",
-      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/BN2L76ULWVNYRLKD5ZB4QZRRQM.jpg?auth=a96ceb1204910f848619f92bb3628f1538d69b7970ab860f42b8946540a58659&height=1005&width=1920&quality=80&smart=true\" alt=\"REUTERS/Kerry Tasker\" style=\"max-width:100%;height:auto;\" /><p>WASHINGTON, Nov 17 (Reuters) - Democrat Mary Peltola won Alaska's US Senate race on Tuesday, projections from US media showed, defeating Republican incumbent Dan Sullivan and giving her party its ninth Senate flip of the midterm elections and a commanding 56-44 majority in the upper house of Congress.</p><p>Peltola, 53, who made a living in the commercial fishing industry before entering politics, also becomes the first Democrat to win a US Senate seat in her home state in nearly 20 years and the first Alaska Native ever to do so.</p><p>Alaska Natives account for roughly 15% to 18% of Alaska's population, the highest Indigenous proportion of any US state.</p><p>The contest was the final uncalled midterm race in the Senate. Peltola's win gives Democrats their largest Senate majority since 2009 which, combined with securing control over the House of Representatives, sets up two years of possible deadlock between Congress and Republican President Donald Trump.</p><p>Peltola was projected to have won 50% of first-place votes to Sullivan's 46%, enough to clear the 50% threshold and avoid additional rounds under Alaska's ranked-choice voting system.</p><p>Trump won Alaska by 13 percentage points in 2024, but voter frustration with the high cost of living and the state's strong independent political streak put it back in play for Democrats.</p><p>\"As a lifelong Alaskan who has dedicated my career to serving our state, there is no greater honor than having Alaskans' support in our fight to take on corporate greed, lower costs, and put Alaska first,\" Peltola said on X after media projected her victory. \"Thank you, Alaska. Let's get to work.\"</p><p>Senate Democratic leader Chuck Schumer, who enlisted Peltola to challenge Sullivan, hailed her victory in a separate message posted on X as a \"gift to Alaska, the Senate, and all of America.\"</p><h2>'FISH, FAMILY AND FREEDOM'</h2><p>\"It's official: 56 Democratic Senate seats!\" Schumer wrote. \"Her knowledge and love for Alaska are unparalleled, and she ran a pitch-perfect campaign devoted to the issues Alaskans care most about – fish, family, and freedom.\"</p><p>Alaska's far-flung and isolated communities can make its election counts unusually lengthy. The race was further complicated by allegations that Democrats helped recruit an independent candidate as a spoiler.</p><p>Two other candidates were on the general-election ballot: Republican Gerry Heikes, a drywall contractor, and Dan J. Sullivan Jr., a retired schoolteacher running as an independent.</p><p>Republicans alleged that Sullivan Jr. was recruited to confuse voters who supported the incumbent senator and unsuccessfully sought to remove him from the ballot, arguing he was not a \"good faith\" candidate. Alaska's Supreme Court rejected that argument.</p><p>Just before Election Day, the New York Times reported that Peltola's campaign had helped recruit Sullivan Jr. into the race. Peltola's campaign denied any involvement. Republican Governor Mike Dunleavy ordered a state investigation into the allegations and has said it was examining anything that could \"resemble perjury.\"</p><p>The Justice Department also launched a criminal investigation into possible wrongdoing. US Attorney General Todd Blanche has described the reported recruitment effort as \"fraud.\"</p><p>The department has sent more than 140 subpoenas, letters and notices in its investigation, Reuters previously reported, though those actions do not indicate guilt.</p><p>Peltola became the first Alaska Native ever elected to Congress in 2022 in a special election to fill Alaska's lone House seat following the death of longtime Republican incumbent Don Young.</p><p>In that race, she defeated two brand-name Alaska Republicans in an upset victory over former Governor Sarah Palin and Nick Begich III, helped by the endorsement of Alaska Republican Senator Lisa Murkowski and Young's congressional staff. She was re-elected to a full two-year term in 2022, but lost her bid for a second full term in 2024 to Begich.</p><p>Born in Anchorage, Peltola grew up in several communities along the Kuskokwim River in southwestern Alaska. Her mother was a member of the Yup'ik group of Alaska Natives and her father was a German American who moved to Alaska from Nebraska.</p><p>Reporting by Dan Rosenzweig-Ziff, Jason Lange, Dan Catchpole and Steve Gorman; Editing by Michael Learmonth, Howard Goller, Lincoln Feast and Stephen Coates</p>",
+      "date_published": "2026-11-18T03:27:46.317Z",
+      "date_modified": "2026-11-18T11:37:26.754Z",
       "authors": [
         {
           "name": "Reuters"
-        },
-        {
-          "name": "Dan Rosenzweig-Ziff"
-        },
-        {
-          "name": "Jason Lange"
-        },
-        {
-          "name": "Dan Catchpole"
-        },
-        {
-          "name": "Steve Gorman"
         }
       ],
+      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/BN2L76ULWVNYRLKD5ZB4QZRRQM.jpg?auth=a96ceb1204910f848619f92bb3628f1538d69b7970ab860f42b8946540a58659&amp;height=1005&amp;width=1920&amp;quality=80&amp;smart=true\" alt=\"\"><p>WASHINGTON, Nov 17 (Reuters) - Democrat Mary Peltola won Alaska's US Senate race on Tuesday, projections from US media showed, defeating Republican incumbent Dan Sullivan and giving her party its ninth Senate flip of the midterm elections and a commanding 56-44 majority in the upper house of Congress.</p><p>Peltola, 53, who made a living in the commercial fishing industry before entering politics, also becomes the first Democrat to win a US Senate seat in her home state in nearly 20 years and the first Alaska Native ever to do so.</p><p>Alaska Natives account for roughly 15% to 18% of Alaska's population, the highest Indigenous proportion of any US state.</p><p>The contest was the final uncalled midterm race in the Senate. Peltola's win gives Democrats their largest Senate majority since 2009 which, combined with securing control over the House of Representatives, sets up two years of possible deadlock between Congress and Republican President Donald Trump.</p><p>Peltola was projected to have won 50% of first-place votes to Sullivan's 46%, enough to clear the 50% threshold and avoid additional rounds under Alaska's ranked-choice voting system.</p><p>Trump won Alaska by 13 percentage points in 2024, but voter frustration with the high cost of living and the state's strong independent political streak put it back in play for Democrats.</p><p>As a lifelong Alaskan who has dedicated my career to serving our state, there is no greater honor than having Alaskans' support in our fight to take on corporate greed, lower costs, and put Alaska first, Peltola said on X after media projected her victory. Thank you, Alaska. Let's get to work.</p><p>Senate Democratic leader Chuck Schumer, who enlisted Peltola to challenge Sullivan, hailed her victory in a separate message posted on X as a gift to Alaska, the Senate, and all of America.</p><h2>'FISH, FAMILY AND FREEDOM'</h2><p>It's official: 56 Democratic Senate seats! Schumer wrote. Her knowledge and love for Alaska are unparalleled, and she ran a pitch-perfect campaign devoted to the issues Alaskans care most about – fish, family, and freedom.</p><p>Alaska's far-flung and isolated communities can make its election counts unusually lengthy. The race was further complicated by allegations that Democrats helped recruit an independent candidate as a spoiler.</p><p>Two other candidates were on the general-election ballot: Republican Gerry Heikes, a drywall contractor, and Dan J. Sullivan Jr., a retired schoolteacher running as an independent.</p><p>Republicans alleged that Sullivan Jr. was recruited to confuse voters who supported the incumbent senator and unsuccessfully sought to remove him from the ballot, arguing he was not a good faith candidate. Alaska's Supreme Court rejected that argument.</p><p>Just before Election Day, the New York Times reported that Peltola's campaign had helped recruit Sullivan Jr. into the race. Peltola's campaign denied any involvement. Republican Governor Mike Dunleavy ordered a state investigation into the allegations and has said it was examining anything that could resemble perjury.</p><p>The Justice Department also launched a criminal investigation into possible wrongdoing. US Attorney General Todd Blanche has described the reported recruitment effort as fraud.</p><p>The department has sent more than 140 subpoenas, letters and notices in its investigation, Reuters previously reported, though those actions do not indicate guilt.</p><p>Peltola became the first Alaska Native ever elected to Congress in 2022 in a special election to fill Alaska's lone House seat following the death of longtime Republican incumbent Don Young.</p><p>In that race, she defeated two brand-name Alaska Republicans in an upset victory over former Governor Sarah Palin and Nick Begich III, helped by the endorsement of Alaska Republican Senator Lisa Murkowski and Young's congressional staff. She was re-elected to a full two-year term in 2022, but lost her bid for a second full term in 2024 to Begich.</p><p>Born in Anchorage, Peltola grew up in several communities along the Kuskokwim River in southwestern Alaska. Her mother was a member of the Yup'ik group of Alaska Natives and her father was a German American who moved to Alaska from Nebraska.</p><p>Reporting by Dan Rosenzweig-Ziff, Jason Lange, Dan Catchpole and Steve Gorman; Editing by Michael Learmonth, Howard Goller, Lincoln Feast and Stephen Coates</p>",
       "image": "https://www.reuters.com/resizer/v2/BN2L76ULWVNYRLKD5ZB4QZRRQM.jpg?auth=a96ceb1204910f848619f92bb3628f1538d69b7970ab860f42b8946540a58659&height=1005&width=1920&quality=80&smart=true",
-      "language": "en",
-      "tags": [
-        "USA-ELECTION",
-        "POL",
-        "SEN",
-        "VOTE",
-        "WASH",
-        "US",
-        "ALASKA",
-        "US-POLITICS",
-        "US-TOP-NEWS"
-      ],
-      "attachments": [],
       "id": "https://www.reuters.com/world/us/democrat-peltola-wins-alaska-securing-56-44-us-senate-majority-2026-11-18/",
       "url": "https://www.reuters.com/world/us/democrat-peltola-wins-alaska-securing-56-44-us-senate-majority-2026-11-18/",
       "external_url": "https://www.reuters.com/world/us/democrat-peltola-wins-alaska-securing-56-44-us-senate-majority-2026-11-18/"
@@ -186,23 +188,22 @@
     {
       "title": "Five takeaways from Trump's Asia tour: cabinet feuds, Rubio love and a Kim Jong Un curveball",
       "date_published": "2026-11-17T23:49:04.523Z",
-      "content_html": "<figure><img src=\"https://www.reuters.com/resizer/v2/OM6RK3TSOBMN7H3YLQHX5ET4VI.jpg?auth=1e12355ee3b16dd1a35a5403f4b4155884d41e912dc22f00201ec97a681fe7bc&height=1005&width=1920&quality=80&smart=true\" alt=\"US President Donald Trump, Secretary of State Marco Rubio, Treasury Secretary Scott Bessent, Secretary of Commerce Howard Lutnick, White House Chief of Staff Stephen Miller and Japanese Prime Minister Sanae Takaichi attend a Quad (Quadrilateral Security Dialogue) meeting, at the Solaire hotel in Paranaque, Metro Manila, Philippines, November 17, 2026. REUTERS/Carlos Barria\" /></figure><p>WASHINGTON, Nov 17 (Reuters) - US President Donald Trump is in Asia this week for talks with foreign leaders in Manila, followed by a visit to China to meet President Xi Jinping, Russian President Vladimir Putin and possibly the elusive North Korean leader Kim Jong Un.</p><p>Here are some takeaways from Trump's journey so far.</p><h2>TROUBLES FROM HOME FOLLOW TRUMP ABROAD</h2><p>Trump may be thousands of miles from Washington, but a string of disruptions back home has followed him to Asia.</p><p>National outages affecting flights, online banking, Microsoft and other services have unsettled some of Trump's allies and prompted Republicans in Congress to call for the administration to brief lawmakers.</p><p>“I’m checking my bank account with a little bit of worry,” former White House press secretary Karoline Leavitt said on “Fox &amp; Friends” on Tuesday, urging the White House to be transparent.</p><p>Vice President JD Vance said he had heard similar worries.</p><p>“I’ve had a lot of my friends reach out and say, ‘Should we be preparing to build a bunker and stock up on food and water?’ and my answer to that is no, we do not see some crisis coming down but you have to be prepared for everything,” Vance told Fox News’ “The Ingraham Angle” on Monday.</p><p>Trump, speaking to reporters in the Philippines on Tuesday, brushed aside concerns about the outages.</p><p>“It's life. When you're big and powerful and you have all the money, things like that happen. It's fine,” the president said, standing beside the leaders of Japan, Australia and India. “It's going to be very much under control.”</p><h2>BESSENT VS LUTNICK, WITH TRUMP AS REFEREE</h2><p>A feud inside Trump's cabinet also followed him to Asia, putting two competing approaches to China side by side as the president prepares for one of the trip's most consequential meetings.</p><p>Treasury Secretary Scott Bessent is at odds with Commerce Secretary Howard Lutnick, a visible strain within a second-term Trump team that has largely avoided the infighting that marked his first term.</p><p>Bessent has said he is unhappy with Lutnick for stalling Trump's crackdown on companies suspected of diverting Nvidia's (NVDA.O) chips to China.</p><p>Lutnick has cautioned he wants to avoid reigniting a trade war with Beijing over the issue, which has drawn renewed scrutiny since revelations about former Nvidia CEO Jensen Huang's affair with a suspected Chinese spy.</p><p>Bessent and Lutnick flew together on Air Force One to Manila as TVs on the plane played up tensions within the cabinet. The two men avoided eye contact when they sat next to each other at a meeting in Manila.</p><p>Trump, for now, seems to have taken a let-them-fight-it-out attitude.</p><p>“One wants to be friendly with China, and one wants to have a blowup with China. They both are acceptable, but they are different views,” Trump told reporters on Monday as he departed the White House, adding later: “I'll make a decision.”</p><h2>HARRY HOUDINI MAKES AN APPEARANCE ON AIR FORCE ONE</h2><p>Add Harry Houdini to the list of unexpected cameos in Trump's Asia tour.</p><p>Reporters on Air Force One are used to having their TV screens on the plane locked on the president's favorite network, the Fox News Channel, nearly all the time, with Trump in command of the remote control.</p><p>But during the 18-hour flight to Manila, the screens abruptly switched to a Fox Nation documentary about Houdini, the Hungarian-born escape artist, complete with AI-generated images. Houdini died in 1926 and is buried in Trump's native Queens, New York.</p><p>After the detour into the television drama, the cabin TVs went back to Fox News and Laura Ingraham's interview with Vance.</p><h2>TRUMP PRAISES RUBIO</h2><p>Trump doesn't appear ready to anoint a 2028 successor, but Secretary of State Marco Rubio keeps getting conspicuous praise from the president.</p><p>The attention has added intrigue to the question of whether he could eventually favor Rubio over Vance in the Republican nominating race. Trump has noted a lot of Republicans will probably run and at times has queried Oval Office visitors on whether they prefer “JD or Marco?”</p><p>Neither man has announced plans to run, although the Vance team has said he is considering it.</p><p>Rubio, a former US senator from Florida, has been coy about his plans for 2028. Some people in his orbit say he does not want to run against Vance and may choose to enter the private sector before considering a run in 2032.</p><p>Trump has repeatedly highlighted Rubio's political appeal, including the cheers he received when Trump brought him on stage at campaign rallies before the midterm elections.</p><p>In Manila, Trump joked that he would fire Rubio if he did not respond to calls from regional leaders in the room, but then he turned up the praise.</p><p>“How hot is Marco, right? Is Marco doing a great job? He's been fantastic,” said Trump.</p><p>At the ASEAN dinner Tuesday night, Rubio sat directly across the table from Trump.</p><h2>A KIM JONG UN CURVEBALL</h2><p>Trump's planned talks with Xi and Putin in China are expected to be the centerpiece of his Asia trip.</p><p>But as he left the White House on Monday, Trump dangled the prospect that he might also meet with North Korea's Kim on the final stop.</p><p>In his first term, Trump had three high-profile summits with Kim that were long on optics but short on addressing North Korea's status as a nuclear weapons power. Trump has tried to renew personal diplomacy in his second term with no success.</p><p>So far there has been no sign Kim plans to make the trip. As Trump prepared for Thursday's trilateral summit with Xi and Putin, Kim was seen at a ski resort near the Chinese border.</p><p>Reporting by Trevor Hunnicutt, Bo Erickson and Steve Holland; Editing by Colleen Jenkins and Sanjeev Miglani</p>",
+      "date_modified": "2026-11-18T07:27:30.624Z",
       "authors": [
         {
           "name": "Steve Holland",
-          "url": "https://www.reuters.com/authors/steve-holland/"
+          "url": "/authors/steve-holland/"
         },
         {
           "name": "Bo Erickson",
-          "url": "https://www.reuters.com/authors/bo-erickson/"
+          "url": "/authors/bo-erickson/"
         },
         {
           "name": "Trevor Hunnicutt",
-          "url": "https://www.reuters.com/authors/trevor-hunnicutt/"
+          "url": "/authors/trevor-hunnicutt/"
         }
       ],
-      "image": "https://www.reuters.com/resizer/v2/OM6RK3TSOBMN7H3YLQHX5ET4VI.jpg?auth=1e12355ee3b16dd1a35a5403f4b4155884d41e912dc22f00201ec97a681fe7bc&height=1005&width=1920&quality=80&smart=true",
-      "attachments": [],
+      "content_html": "<img src=",
       "id": "https://www.reuters.com/world/us/five-takeaways-trumps-asia-tour-cabinet-feuds-rubio-love-kim-jong-un-curveball-2026-11-17/",
       "url": "https://www.reuters.com/world/us/five-takeaways-trumps-asia-tour-cabinet-feuds-rubio-love-kim-jong-un-curveball-2026-11-17/",
       "external_url": "https://www.reuters.com/world/us/five-takeaways-trumps-asia-tour-cabinet-feuds-rubio-love-kim-jong-un-curveball-2026-11-17/"
@@ -210,22 +211,14 @@
     {
       "title": "US Democratic senator introduces bill to end China's trade status ahead of Trump-Xi meeting",
       "date_published": "2026-11-17T17:30:36.823Z",
-      "content_html": "<figure><img src=\"https://www.reuters.com/resizer/v2/L7UZOZN22FM6ZENKHWVYLBHE6Q.jpg?auth=35a55c11ba345096a2c2f4f736d74db390268f154ee07b78c1ad0ebf4843b51f&height=1005&width=1920&quality=80&smart=true\" alt=\"US President Donald Trump looks at Chinese President Xi Jinping as Xi arrives ahead of a state visit at Joint Base Andrews, Maryland, US, September 23, 2026. REUTERS/Jonathan Ernst/File Photo\"/><figcaption>US President Donald Trump looks at Chinese President Xi Jinping as Xi arrives ahead of a state visit at Joint Base Andrews, Maryland, US, September 23, 2026. REUTERS/Jonathan Ernst/File Photo</figcaption></figure><p>WASHINGTON, Nov 17 (Reuters) - US Democratic Senator Tammy Baldwin on Tuesday introduced legislation to revoke China's normal trade status and favorable tariff treatment just days before US President Donald Trump and Chinese President Xi Jinping are due to meet for a third time this year to discuss a delicate trade truce.</p><p>Baldwin's bill, which argues that Beijing had failed to uphold the principles of fair trade, would set a deadline to end the permanent normal trade relations that have been in effect since 2002 a year after the legislation is enacted.</p><p>The legislation, which could have more support under a Congress controlled by Democrats next year, would shift Chinese imports to higher regular US tariff rates under the Harmonized Tariff Schedule.</p><p>The existing US \"Most Favored Nation\" tariff rates for China and other countries average about 2.5%, but Trump has heaped punitive duties on Chinese imports, about 25% during his first term and up to 20% during his second term under a trade truce with Beijing.</p><p>Baldwin's bill also would direct the US Trade Representative's office to issue a report together with the Commerce Department and US International Trade Commission and other bodies on ongoing trade and economic challenges posed by China.</p><p>Lawmakers have repeatedly sought to revoke China's special treatment in recent years, but the bills have failed due to competing economic priorities, legislative bottlenecks, and shifting trade dynamics, with Republicans not challenging Trump's tariff pressure. But there is growing anti-China sentiment in Congress, particularly among Democrats who won control of both the Senate and House of Representatives in elections this month.</p><p>Trump, who meets with Xi in Shenzhen, China, this week, could still veto the bill if it passes.</p><p>\"We need to reset our trade relationship with China, be honest that they have undercut us at every turn, and put the focus back where it matters — prioritizing American workers, manufacturers and families,\" said Baldwin, who voted against the change in China's tariff treatment in 2000 while serving in the House of Representatives.</p><p>She said in a statement that the US had \"rolled out the red carpet for China\" for two decades while Beijing had engaged in market manipulation, intellectual property theft and other unfair trade practices, noting that the US-China Economic and Security Review Commission, an independent, bipartisan legislative agency, also recommended revoking the PNTR status of China in November 2024.</p><p>Western concerns about China's efforts to dominate global markets have grown in recent years, fueled by Beijing's threats to shut off exports of critical minerals needed for advanced manufacturing — and its actual moves to do so for Japan.</p><p>Trump, who ordered a review of China's trade status when he took office in January 2025, and Xi are expected to discuss a fragile trade-war truce that will expire in January when they meet later this week amid growing tensions over trade. China's foreign ministry has accused the US of \"economic coercion\" over its latest restrictions on Chinese access to advanced chips.</p><p>Baldwin's office said there was \"growing recognition that granting China PNTR failed to deliver the changes in China's economic and trade practices that were promised,\" and the bill would establish a more durable US trade policy.</p><p>Revoking China's current trade status would increase the price of Chinese imports, especially for manufactured goods, and in the long run, raise US consumer prices by 0.7% and reduce US economic output by 0.2%, the US International Trade Commission said in a 319-page report released in August.</p><p>But two ITC commissioners — a Republican and a Democrat — challenged the notion that ending PNTR status for China would raise costs, arguing that the analysis failed to account for economic harm caused by granting it in the first place.</p><p>The ITC concluded that revoking PNTR would raise trade-weighted average tariffs by 35.2 percentage points.</p><p><em>Reporting by Andrea Shalal; Editing by Andrea Ricci</em></p>",
+      "date_modified": "2026-11-17T23:01:15.274Z",
       "authors": [
         {
           "name": "Andrea Shalal",
-          "url": "https://www.reuters.com/authors/andrea-shalal/"
+          "url": "/authors/andrea-shalal/"
         }
       ],
-      "image": "https://www.reuters.com/resizer/v2/L7UZOZN22FM6ZENKHWVYLBHE6Q.jpg?auth=35a55c11ba345096a2c2f4f736d74db390268f154ee07b78c1ad0ebf4843b51f&height=1005&width=1920&quality=80&smart=true",
-      "tags": [
-        "BUSINESS-TARIFFS",
-        "WORLD-CHINA",
-        "US",
-        "POLITICS",
-        "TRADE"
-      ],
-      "attachments": [],
+      "content_html": "<img src=",
       "id": "https://www.reuters.com/world/us/us-democratic-senator-introduces-bill-end-chinas-trade-status-ahead-trump-xi-2026-11-17/",
       "url": "https://www.reuters.com/world/us/us-democratic-senator-introduces-bill-end-chinas-trade-status-ahead-trump-xi-2026-11-17/",
       "external_url": "https://www.reuters.com/world/us/us-democratic-senator-introduces-bill-end-chinas-trade-status-ahead-trump-xi-2026-11-17/"
@@ -233,99 +226,32 @@
     {
       "title": "At hearing, US Navy chief blasted over Iran war and its toll on sailors",
       "date_published": "2026-11-17T21:30:20.623Z",
-      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/4DKFBE2J5BM7PAFHE3JDH2XHOE.jpg?auth=df5ee01a6c0096e527f1c9335c0d2c55f441d695820f5ae7c80be1bd9bf57be3&amp;height=1005&amp;width=1920&amp;quality=80&amp;smart=true\" alt=\"\"><figure><img src=\"https://www.reuters.com/resizer/v2/4DKFBE2J5BM7PAFHE3JDH2XHOE.jpg?auth=df5ee01a6c0096e527f1c9335c0d2c55f441d695820f5ae7c80be1bd9bf57be3&width=1080&quality=80\" alt=\"US Senator Elizabeth Warren (D-MA) attends Senate Committee on Armed Services confirmation hearing for Acting US Secretary of the Navy Hung Cao on Capitol Hill in Washington, DC, US, November 17, 2026. REUTERS/Eric Lee\" /><figcaption>US Senator Elizabeth Warren (D-MA) attends Senate Committee on Armed Services confirmation hearing for Acting US Secretary of the Navy Hung Cao on Capitol Hill in Washington, DC, US, November 17, 2026. REUTERS/Eric Lee</figcaption></figure><p>WASHINGTON, Nov 17 (Reuters) - Democratic lawmakers tore into President Donald Trump's acting head of the Navy on Tuesday, accusing him of being a Trump \"yes man\" on the Iran war and downplaying its toll on sailors' mental health after eight suicide attempts on an aircraft carrier.</p><p>The contentious hearing during the waning days of the Republican-led Senate could be a preview of what's to come when Democrats take control in January after victories in midterm elections earlier this month.</p><p>Acting Navy Secretary Hung Cao, who is seeking to win Senate confirmation to keep the job, did not directly respond to some of the toughest questions before the Senate Armed Services Committee about the Iran war. Those included the cost of the US naval blockade on Iran and the damage to the Navy's headquarters in the Middle East after attacks by Iran.</p><p>But it was his defense of Navy conditions on board the Abraham Lincoln carrier strike group and his praise for the Navy's mental health crisis response that drew the fiercest criticism from Democratic senators.</p><p>Senator Kirsten Gillibrand, a Democrat from New York, asked him about a sailor who went overboard.</p><p>\"Senator, that sailor was not trying to kill himself and he admitted that,\" Cao told her, saying he used a life preserver.</p><p>Gillibrand responded: \"What was he trying to do? Swim to Guam?\"</p><p>\"I think you are minimizing what mental health strain is on these service members,\" Gillibrand replied, adding she thought Cao's response was \"inhumane\" and \"inadequate.\"</p><p>Republican Representative Rob Wittman from Virginia extolled Cao as he introduced him as \"a remarkable American story,\" a refugee from Vietnam who served in the Navy for 25 years, including in Iraq, Afghanistan and Somalia, retiring at the rank of captain.</p><p>Cao, whose son is in the Marine Corps, told the committee he wanted the job to ensure sailors \"don't go to war the way we did\" in Iraq, without armored vehicles or enough body armor.</p><p>Senator Angus King, an independent from Maine who caucuses with the Democrats, said he was moved by Cao's personal story but said it was also ironic as Trump's administration cuts refugee admissions.</p><p>\"Today, your family wouldn't be let in the country,\" King said.</p><h2>QUANTITY FOR QUALITY?</h2><p>Republican Senator Tom Cotton of Arkansas dismissed talk of poor conditions on Navy ships. \"If the picture painted by the Democrats were so bleak, would the Navy have reached its recruiting goals three months early?\" he asked.</p><p>Cao responded, \"Senator, we would not be there.\"</p><p>Senator Jack Reed, a Democrat from Rhode Island, pointed to data he said showed most new Navy recruits required waivers from standard qualification requirements — including on issues like mental health.</p><p>\"Are you sort of sacrificing quality for quantity?\" Reed asked, to a denial from Cao.</p><p>Cao will himself require a waiver to be confirmed to the job, since he only retired from the Navy in 2021 — putting him below the required seven-year cooling-off period to become its civilian leader.</p><p>Voter anger over the Iran war, which has settled into an effective stalemate focused on securing the Strait of Hormuz, helped Democrats win control of Congress. A Reuters/Ipsos poll published last week found a majority of Americans want the newly elected Democratic-majority US Congress to act to end the war with Iran once and for all.</p><p>The Navy has played a critical role in the war, imposing a punishing naval blockade on Iran and helping deliver strikes on Iranian territory. This week, a third aircraft carrier entered Middle East waters, though officials say it is expected to replace one of the two carriers present.</p><p>While the US military points to the heavy toll imposed on Iran's conventional military, and its ability to help escort tankers through the Strait of Hormuz past Iranian shores, the Pentagon has not yet explained how it sees the conflict ending.</p><p>Senator Tammy Duckworth, a Democrat from Illinois, asked whether Cao ever stood up to Defense Secretary Pete Hegseth over the war.</p><p>\"Senator, it's not within my purview to do that,\" Cao said.</p><p>Duckworth responded sharply: \"It is within your purview!\"</p><p>\"This is a failure of leadership by President Trump and the unqualified yes-men he's installed, and it sounds like you want to be one of those,\" she said.</p>",
+      "date_modified": "2026-11-17T21:31:43.569Z",
       "authors": [
         {
           "name": "Phil Stewart",
-          "url": "https://www.reuters.com/authors/phil-stewart/"
+          "url": "/authors/phil-stewart/"
         },
         {
           "name": "Patricia Zengerle",
-          "url": "https://www.reuters.com/authors/patricia-zengerle/"
+          "url": "/authors/patricia-zengerle/"
         }
       ],
-      "image": "https://www.reuters.com/resizer/v2/4DKFBE2J5BM7PAFHE3JDH2XHOE.jpg?auth=df5ee01a6c0096e527f1c9335c0d2c55f441d695820f5ae7c80be1bd9bf57be3&height=1005&width=1920&quality=80&smart=true",
-      "attachments": [
-        {
-          "url": "https://www.reuters.com/resizer/v2/4DKFBE2J5BM7PAFHE3JDH2XHOE.jpg?auth=df5ee01a6c0096e527f1c9335c0d2c55f441d695820f5ae7c80be1bd9bf57be3&height=1005&width=1920&quality=80&smart=true",
-          "mime_type": "image/jpeg",
-          "title": "US Senator Elizabeth Warren (D-MA) attends Senate Committee on Armed Services confirmation hearing for Acting US Secretary of the Navy Hung Cao on Capitol Hill in Washington, DC, US, November 17, 2026. REUTERS/Eric Lee"
-        }
-      ],
+      "content_html": "<img src=",
       "id": "https://www.reuters.com/world/us/hearing-us-navy-chief-blasted-over-iran-war-its-toll-sailors-2026-11-17/",
       "url": "https://www.reuters.com/world/us/hearing-us-navy-chief-blasted-over-iran-war-its-toll-sailors-2026-11-17/",
       "external_url": "https://www.reuters.com/world/us/hearing-us-navy-chief-blasted-over-iran-war-its-toll-sailors-2026-11-17/"
     },
     {
       "title": "Root cause of US aviation shutdown not yet determined, Duffy says",
-      "date_published": "2026-11-17T20:03:55Z",
-      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/I4WPW5ADCVNFDMJ5GDHCZXGRFU.jpg?auth=0327d79336652c30c5c7f5c3c366ae6f17757a13ccf1ed959543e7c79de77be0&height=1005&width=1920&quality=80&smart=true\" alt=\"US Secretary of Transportation Sean Duffy speaks to the press on Capitol Hill in Washington, DC, US, November 17, 2026. REUTERS/Evelyn Hockstein\" /><p>WASHINGTON, Nov 17 (Reuters) - US Transportation Secretary Sean Duffy said on Tuesday that no root cause had yet been determined for the router that failed on Friday, triggering a nationwide aviation shutdown and more than 18,000 flight cancellations.</p><p>Duffy said it remained unclear why L3Harris Technologies' (LHX.N) installation of a router in a remote El Dorado, Arkansas, facility had a big enough impact on the network to lead to a nearly five-hour aviation ground stop that affected hundreds of thousands of airline passengers.</p><p>\"We've been able to recreate what happened in El Dorado, but the root cause of what happened, we don't have clarity yet,\" Duffy told reporters after a meeting with senators.</p><p>The swap was part of a routine switchover from copper wire to digital fiber to modernize equipment, and FAA head Bryan Bedford told reporters that speculation that AI was involved in the outage was unfounded.</p><p>Duffy said the installation of 68 prior routers, which are made by Hewlett Packard Enterprise-owned (HPE.N) Juniper Networks, had not led to any issues. But he said the FAA has paused installations of Juniper routers as testing continues at an L3Harris laboratory in Florida with the FAA, Cisco (CSCO.O) and the FBI on site.</p><p>L3Harris has said it is cooperating with the official investigation into what went wrong.</p><p>Duffy said that during the Biden administration, the FAA replaced 19% of its telecom network from copper to fiber and in one year the Trump administration has replaced just over 50%. \"We do have to get this work done. Otherwise, staying on the old system for longer is going to mean more risk,\" he said.</p><p>L3Harris had been installing Juniper routers to replace Cisco routers, produced in 2001, which were supposed to have been replaced in 2006, the FAA said.</p><p>Duffy said the FAA had spent a year at its tech center testing the Juniper routers, but the installation at the Arkansas radio communications site led to an overload of a key government communications system. That destabilized aircraft communications and radar feeds, affecting 17 of 22 FAA en route air traffic control centers.</p><p>After the incident, the broadcasting function was also disabled on all the new routers as well as 60 other routers in the system as a precaution, the FAA said.</p><p>Juniper owner HPE said it believed its equipment was working as configured. \"The FAA is assessing the configuration and performance of all infrastructure involved to determine the cause,\" the company said.</p><p>Reporting by David Shepardson, Daphne Psaledakis and Christian Martinez; Editing by Caitlin Webber and Jamie Freed</p>",
+      "date_published": "2026-11-17T20:03:55.897Z",
+      "date_modified": "2026-11-18T06:44:11.285Z",
       "authors": [
         {
-          "name": "David Shepardson",
-          "url": "https://www.reuters.com/authors/david-shepardson/"
+          "name": "David Shepardson"
         }
       ],
-      "image": "https://www.reuters.com/resizer/v2/I4WPW5ADCVNFDMJ5GDHCZXGRFU.jpg?auth=0327d79336652c30c5c7f5c3c366ae6f17757a13ccf1ed959543e7c79de77be0&height=1005&width=1920&quality=80&smart=true",
-      "tags": [
-        "AIR",
-        "AIRL",
-        "AIRL1",
-        "AIRP",
-        "AIRPOP",
-        "CBSEC",
-        "GEN",
-        "INDS",
-        "ITEC",
-        "POL",
-        "PSSNGR",
-        "SCI",
-        "TECH",
-        "TMT",
-        "TNSI",
-        "TPT",
-        "TRAN",
-        "WASH",
-        "AMERS",
-        "US",
-        "NAMER",
-        "AER",
-        "AERO",
-        "AERO1",
-        "AIRFRT",
-        "CMPNY",
-        "COMS",
-        "DIP",
-        "HACK",
-        "HARW",
-        "HARW1",
-        "HOT",
-        "MTPIX",
-        "MTVID",
-        "NEWS1",
-        "PUBL",
-        "REGAIR",
-        "REGS",
-        "SECUR",
-        "SEN",
-        "STX",
-        "TNPT",
-        "TOPNWS",
-        "XDNP",
-        "CLJ",
-        "CMPELC",
-        "COM",
-        "COMS1",
-        "CPAFR",
-        "CRIM",
-        "CWP",
-        "FRAUD1",
-        "FRGT",
-        "INDG",
-        "TEEQ",
-        "TOPCMB"
-      ],
-      "attachments": [],
+      "content_html": "<p>WASHINGTON, Nov 17 (Reuters) - US Transportation Secretary Sean Duffy said on Tuesday that no root cause had yet been determined for the router that failed on Friday, triggering a nationwide aviation shutdown and more than 18,000 flight cancellations.</p><p>Duffy said it remained unclear why L3Harris Technologies' (LHX.N) installation of a router in a remote El Dorado, Arkansas, facility had a big enough impact on the network to lead to a nearly five-hour aviation ground stop that affected hundreds of thousands of airline passengers.</p><p>“We've been able to recreate what happened in El Dorado, but the root cause of what happened, we don't have clarity yet,” Duffy told reporters after a meeting with senators.</p><p>The swap was part of a routine switchover from copper wire to digital fiber to modernize equipment, and FAA head Bryan Bedford told reporters that speculation that AI was involved in the outage was unfounded.</p><p>Duffy said the installation of 68 prior routers, which are made by Hewlett Packard Enterprise-owned (HPE.N) Juniper Networks, had not led to any issues. But he said the FAA has paused installations of Juniper routers as testing continues at an L3Harris laboratory in Florida with the FAA, Cisco (CSCO.O) and the FBI on site.</p><figure><img src=",
       "id": "https://www.reuters.com/world/us/duffy-says-no-root-cause-yet-found-router-failure-that-caused-ground-stop-2026-11-17/",
       "url": "https://www.reuters.com/world/us/duffy-says-no-root-cause-yet-found-router-failure-that-caused-ground-stop-2026-11-17/",
       "external_url": "https://www.reuters.com/world/us/duffy-says-no-root-cause-yet-found-router-failure-that-caused-ground-stop-2026-11-17/"
@@ -703,165 +629,6 @@
       "id": "https://www.reuters.com/world/us/here-are-republicans-emerging-potential-2028-contenders-2026-11-16/",
       "url": "https://www.reuters.com/world/us/here-are-republicans-emerging-potential-2028-contenders-2026-11-16/",
       "external_url": "https://www.reuters.com/world/us/here-are-republicans-emerging-potential-2028-contenders-2026-11-16/"
-    },
-    {
-      "title": "US and Russia to oppose talks on limiting autonomous weapons",
-      "date_published": "2026-11-16T00:03:45.771Z",
-      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/4SJ3UIK62BM6TL5KRNYW47EAOY.jpg?auth=86af818a7cee187a29c8ea9976921506355217a4daed4392bc9b09b6ad841c91&height=1005&width=1920&quality=80&smart=true\" alt=\"A view shows an interceptor FPV-drone of the 1129th Bilotserkivskyi Anti-Aircraft Missile Regiment during its flight, amid Russia's attack on Ukraine, in an undisclosed location in Dnipropetrovsk region, Ukraine July 8, 2025. REUTERS/Valentyn Ogirenko/File Photo\" /><p>GENEVA, Nov 16 (Reuters) - Major arms producers the United States and Russia look set to oppose a push at a global meeting in Geneva this week to launch negotiations on legally binding rules for autonomous weapons, diplomats and rights groups said.</p><p>The rise of artificial intelligence has boosted development of drones, robots, tanks, submarines and other military hardware capable of killing without human involvement. Semi-autonomous, AI-assisted weapons have already been used in Ukraine, Sudan and the Middle East, despite ethical concerns.</p><p>The UN-hosted meeting from Monday is due to decide whether to start talks for a legally binding pact on prohibitions and regulations for Lethal Autonomous Weapons Systems (LAWS).</p><p>But while most of the 128 states party to the Convention on Certain Conventional Weapons support that, major military nations including the US, Russia and Israel oppose it, arguing that existing humanitarian law is sufficient.</p><p>In a video message, the UN secretary-general urged states to agree to move towards negotiating a legally binding instrument including clear prohibitions and restrictions.</p><p>\"The nature of warfare is changing. New technologies – including autonomous weapon systems – present new humanitarian, legal, ethical and security challenges,\" Antonio Guterres said.</p><p>But Russia stymied the start of talks on Monday with its objection to a procedural rule allowing observers, including the EU and non-governmental organisations, to take the floor. Delegates including Ireland and Canada opposed that.</p><p>The International Committee of the Red Cross, along with the pope, has also warned of the dangers from autonomous weapons.</p><h2>'DYSTOPIAN REALITY'</h2><p>\"Machines should never be allowed to decide who lives and dies on a battlefield but that is the dystopian reality that is fast approaching,\" said Verity Coyle from Human Rights Watch, which is also urging the Review Conference to take firm action.</p><p>Two diplomats told Reuters the discussions would be challenging but that a compromise may be found by the end of the week. All options are on the table, from legally binding to non-legally binding, as well as a hybrid agreement with both elements, one of the diplomats said.</p><p>Campaigners say autonomous weapons systems can behave unpredictably, raising the risk of fatal errors.</p><p>Anna Hehir, head of military AI governance at the Future of Life Institute – a US-based nonprofit organization focused on reducing the risks of advanced technologies, including AI – said LAWS were no longer science fiction, pointing to media reporting of early use of fully autonomous systems in Ukraine.</p><p>The US favours guidelines over binding rules on LAWS, arguing that international law already provides a framework to govern warfare. It has proposed a five-year mandate for talks towards a non-binding agreement.</p><p>Hehir told Reuters the US and Russia would probably seek to water down any outcome as they did in September with a text about autonomous weapons and their potential for harm.</p><p>The chair of this week's talks has proposed a two-year mandate to negotiate a legally binding protocol.</p><p>The UK, Germany and France propose negotiations on an instrument that leaves open whether it would be legally binding or not, Coyle told Reuters.</p>",
-      "authors": [
-        {
-          "name": "Olivia Le Poidevin",
-          "url": "https://www.reuters.com/authors/olivia-le-poidevin/"
-        },
-        {
-          "name": "Emma Farge"
-        },
-        {
-          "name": "Andrew Cawthorne"
-        }
-      ],
-      "image": "https://www.reuters.com/resizer/v2/4SJ3UIK62BM6TL5KRNYW47EAOY.jpg?auth=86af818a7cee187a29c8ea9976921506355217a4daed4392bc9b09b6ad841c91&height=1005&width=1920&quality=80&smart=true",
-      "tags": [
-        "World",
-        "Autonomous Weapons",
-        "AI",
-        "UN",
-        "Geneva",
-        "Human Rights",
-        "Russia",
-        "United States"
-      ],
-      "attachments": [],
-      "id": "https://www.reuters.com/world/us-russia-oppose-talks-limiting-autonomous-weapons-2026-11-16/",
-      "url": "https://www.reuters.com/world/us-russia-oppose-talks-limiting-autonomous-weapons-2026-11-16/",
-      "external_url": "https://www.reuters.com/world/us-russia-oppose-talks-limiting-autonomous-weapons-2026-11-16/"
-    },
-    {
-      "title": "US DOJ warns Senator Warren about potential Trump-related probes",
-      "date_published": "2026-11-16T02:13:17Z",
-      "content_html": "<figure><img src=\"https://www.reuters.com/resizer/v2/5O55MAVNSVJAJFP3VY53LFPR2I.jpg?auth=21fc8caf90f4fb4958b55781301bb5f0a6494ca6dbca83bd987c775d056dfbd9&height=1005&width=1920&quality=80&smart=true\" alt=\"US Senator Elizabeth Warren (D-MA) speaks during a press conference calling for stronger AI export controls with China on Capitol Hill in Washington, D.C., US, September 23, 2026. REUTERS/Evelyn Hockstein/File Photo\"><figcaption>US Senator Elizabeth Warren (D-MA) speaks during a press conference calling for stronger AI export controls with China on Capitol Hill in Washington, D.C., US, September 23, 2026. REUTERS/Evelyn Hockstein/File Photo</figcaption></figure><p>Nov 15 (Reuters) - The US Department of Justice on Sunday warned Senator Elizabeth Warren, the likely incoming chair of the Senate Banking Committee, of potential \"significant legal consequences\" if she fails to preserve records related to investigations into President Donald Trump.</p><p>Sunday's warning is the latest sent by the Justice Department to congressional Democrats about their potential plans to investigate the administration or Trump associates.</p><p>Trump last week ordered the department to look into Democratic lawmakers for \"threatening\" people, and US Attorney General Todd Blanche subsequently indicated that his agency was prepared to battle congressional Democrats.</p><p>In a letter to Warren, US Attorney Aaron Reitz in Houston told the Massachusetts Democrat she appeared \"eager to wield your future gavel like a tomahawk, hunting for the scalps of President Trump's private associates.\"</p><p>Reitz told her to preserve materials \"relevant to your intent to weaponize congressional investigations and deprive citizens of their core constitutional rights.\"</p><p>Notices to preserve records can presage investigations. Warren's office did not immediately respond to a request for comment.</p><p>Reitz shared the letter on social media, and Trump reposted it to his Truth Social account several hours later.</p><p>Warren and other Democrats have signaled that when their party takes control of Congress in January, they plan to investigate large corporations, White House Chief of Staff Stephen Miller and Elon Musk, the world's richest person, among others.</p><h2>OTHER LETTERS</h2><p>A progressive and onetime presidential candidate, Warren is a vocal Wall Street critic and has repeatedly condemned the Trump administration and its policies.</p><p>She is the top Democrat on the Senate Banking Committee, and is widely expected to become chair when Democrats take over Congress.</p><p>Reitz's letter to Warren cited her statements on investigating corporate leaders.</p><p>\"The context sends a strong smoke signal: you intend to target private individuals close to President Trump,\" he wrote.</p><p>Other Democratic lawmakers who have received similar letters include Senators Richard Blumenthal and Elissa Slotkin as well as Representative Robert Garcia, who is in line to lead the House Oversight Committee.</p><p>Political experts and Trump's opponents have raised concerns about efforts by the Republican president and his administration to target their own critics and political opponents.</p><p>Reporting by Jonathan Stempel in New York; Editing by Tom Hogue and Christian Schmollinger</p>",
-      "authors": [
-        {
-          "name": "Reuters"
-        }
-      ],
-      "image": "https://www.reuters.com/resizer/v2/5O55MAVNSVJAJFP3VY53LFPR2I.jpg?auth=21fc8caf90f4fb4958b55781301bb5f0a6494ca6dbca83bd987c775d056dfbd9&height=1005&width=1920&quality=80&smart=true",
-      "tags": [
-        "World",
-        "United States",
-        "Legal",
-        "Government",
-        "Politics"
-      ],
-      "attachments": [],
-      "id": "https://www.reuters.com/world/us-justice-department-warns-senator-warren-over-records-preservation-2026-11-16/",
-      "url": "https://www.reuters.com/world/us-justice-department-warns-senator-warren-over-records-preservation-2026-11-16/",
-      "external_url": "https://www.reuters.com/world/us-justice-department-warns-senator-warren-over-records-preservation-2026-11-16/"
-    },
-    {
-      "title": "Steering problem on tanker caused collision in New Orleans, NTSB says",
-      "date_published": "2026-11-15T21:23:27Z",
-      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/RFEPWHVHEFKATI24UCKEG5V4FA.jpg?auth=2136c135206af51eb71ac5708d94ca3516e0399cffd3f3eebdfcfe5f3bc59c1f&height=1005&width=1920&quality=80&smart=true\" alt=\"Emergency personnel work at the scene of a crash between a tanker ship and an American Cruise Lines passenger ship that was docked, in New Orleans, Louisiana, US, November 13, 2026. REUTERS/Christiana Botic\" /><p>Nov 15 (Reuters) - The asphalt tanker vessel that struck a docked paddlewheel cruise boat in the Mississippi River at New Orleans last week experienced a steering problem in which its rudder was stuck in one position, US transportation safety officials said on Sunday.</p><p>The American Cruise Lines paddlewheeler American Heritage, with 190 people aboard, capsized at the dock. No one was killed in the collision on Friday.</p><p>The Atlantic Asphalt tanker was headed upriver when it experienced a \"steering casualty\" in which its rudder stayed in a starboard position and the vessel veered toward the river's east bank, National Transportation Safety Board senior marine accident investigator Bart Barnum told a news conference in New Orleans.</p><p>NTSB officials said they do not know what caused the steering problem. The tanker's voyage-data recorder was recovered on Saturday.</p><p>Investigators downloaded more than nine hours of data and began analyzing information that includes bridge audio, rudder angle, propulsion performance and vessel speed, Barnum said.</p><p>Recorder data showed the asphalt tanker was traveling upriver on Friday near the Crescent City Connection Bridge at about 12:26 p.m. local time (1826 GMT), two minutes before the collision, when it experienced the steering issue, Barnum said.</p><p>The cruise ship capsized in about 22 minutes, NTSB officials said on Sunday. As the American Heritage toppled over into the river after the impact, harbor personnel, firefighters and onlookers scrambled to pull passengers to safety.</p><p>Audio captured by the recorder included the vessel's whistle, radio warnings and requests for assistance, as well as commands to deploy anchors and other emergency ship-handling orders, he added.</p><p>Issues under investigation include whether the tanker's anchors were deployed and, if so, at what depth, as well as interviews with crew members and passengers, officials said. Interviews with the crew of the Atlantic Asphalt are scheduled over the next week, NTSB officials said.</p><p>The agency will release a preliminary report in about 30 days, the agency said.</p><p>Reporting by Siddharth Cavale in New York; Editing by Sergio Non, Will Dunham and Andrea Ricci</p>",
-      "authors": [
-        {
-          "name": "Siddharth Cavale",
-          "url": "https://www.reuters.com/authors/siddharth-cavale/"
-        },
-        {
-          "name": "Sergio Non"
-        },
-        {
-          "name": "Will Dunham"
-        },
-        {
-          "name": "Andrea Ricci"
-        }
-      ],
-      "image": "https://www.reuters.com/resizer/v2/RFEPWHVHEFKATI24UCKEG5V4FA.jpg?auth=2136c135206af51eb71ac5708d94ca3516e0399cffd3f3eebdfcfe5f3bc59c1f&height=1005&width=1920&quality=80&smart=true",
-      "language": "en",
-      "tags": [
-        "DLI",
-        "GEN",
-        "INDG",
-        "INDS",
-        "MACH",
-        "POL",
-        "SHPB",
-        "SOCI",
-        "TOUR",
-        "WASH",
-        "AMERS",
-        "US",
-        "USAMS",
-        "NAMER",
-        "COM",
-        "SHPREP",
-        "TNPT",
-        "USALA",
-        "TOPIC:WORLD-US-LOUISIANA",
-        "TOPIC:WORLD-US-MISSISSIPPI",
-        "DIS",
-        "DRWN",
-        "SEAFT",
-        "FRGT",
-        "TPT",
-        "TRAN"
-      ],
-      "attachments": [],
-      "id": "https://www.reuters.com/world/us/tanker-new-orleans-ship-collision-suffered-steering-casualty-ntsb-says-2026-11-15/",
-      "url": "https://www.reuters.com/world/us/tanker-new-orleans-ship-collision-suffered-steering-casualty-ntsb-says-2026-11-15/",
-      "external_url": "https://www.reuters.com/world/us/tanker-new-orleans-ship-collision-suffered-steering-casualty-ntsb-says-2026-11-15/"
-    },
-    {
-      "title": "Fed 'has some work to do on inflation,' KC Fed chief says",
-      "date_published": "2026-11-15T18:42:52Z",
-      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/EUYBCKWKS5MQPLIVGJ2ZHHPXOY.jpg?auth=7c9b9bbaea5e4a7b00b0387f76cb20577a97e4944e4dc2cfdfb8415e12f72b9e&height=1005&width=1920&quality=80&smart=true\" alt=\"View of the facade as construction continues on the Federal Reserve Board building, in Washington, D.C., U.S., September 17, 2025. REUTERS/Ken Cedeno/File Photo\" /><p>Nov 15 (Reuters) - The US Federal Reserve has the tools and responsibility to deal with price pressures that are \"running too hot,\" and the central bank \"has some work to do on inflation,\" Kansas City Federal Reserve President Jeff Schmid said on Sunday.</p><p>Schmid, speaking to a credit union conference in Hawaii, did not specifically call for additional rate hikes, but said inflation is \"uncomfortably above the 2% price stability target, and moving in the wrong direction.\"</p><p>Common narratives that have recently evolved around the nature of current inflation and the Fed's ability to contain it are off-base, Schmid said.</p><p>First, Schmid said, the view that high inflation is a reflection of repeated supply shocks neglects that \"inflation is always the result of an imbalance between supply and demand. It is in the context of strong demand that a disruption to supply drives up prices. Demand always plays a role in inflation, and the Fed, through its influence on demand, always has the tools and responsibility to address inflation.\"</p><p>Schmid, who is not a Federal Open Market Committee voting member this year, said he also disagrees with the narrative that the sources of demand-induced inflation right now -- like the artificial intelligence buildout -- are resistant to Fed policy.</p><p>The Fed raised rates by a quarter-percentage point in September to 3.75%-4.00% but opted not to lift them again at last month's meeting.</p><p>Following recent inflation readings that were higher than expected and comments from other Fed officials, including influential Governor Christopher Waller, interest rate futures markets are now fully priced for a quarter-point increase at December's meeting, with a small probability of a half-point hike.</p><p>\"I would also push back on the idea that meeting our inflation objective requires a reaction from any particular set of prices, for example prices for AI-related technology goods,\" Schmid said.</p><p>\"Both narratives - that inflation is being driven by either supply shocks or by demand that is impervious to higher interest rates - have a common core,\" Schmid said. \"Mainly, that inflation is somehow beyond the Fed's power to control. I don't believe this to be true. The Fed does have the tools to address inflation and has the responsibility to achieve price stability. As Chairman (Kevin) Warsh said, we have work to do.\"</p><p>Reporting by Dan Burns; Editing by Andrea Ricci</p>",
-      "authors": [
-        {
-          "name": "Reuters"
-        },
-        {
-          "name": "Dan Burns"
-        }
-      ],
-      "image": "https://www.reuters.com/resizer/v2/EUYBCKWKS5MQPLIVGJ2ZHHPXOY.jpg?auth=7c9b9bbaea5e4a7b00b0387f76cb20577a97e4944e4dc2cfdfb8415e12f72b9e&height=1005&width=1920&quality=80&smart=true",
-      "tags": [
-        "FED",
-        "INFLATION",
-        "US",
-        "MARKETS",
-        "ECONOMY"
-      ],
-      "attachments": [],
-      "id": "https://www.reuters.com/world/us/fed-has-some-work-do-inflation-kc-fed-chief-says-2026-11-15/",
-      "url": "https://www.reuters.com/world/us/fed-has-some-work-do-inflation-kc-fed-chief-says-2026-11-15/",
-      "external_url": "https://www.reuters.com/world/us/fed-has-some-work-do-inflation-kc-fed-chief-says-2026-11-15/"
-    },
-    {
-      "title": "After days of flight disruptions, officials see system back to normal by Monday",
-      "date_published": "2026-11-15T16:49:04.561Z",
-      "content_html": "<img src=\"https://www.reuters.com/resizer/v2/CBUZNB6H5BLDPKP7S6JLF7CAKU.jpg?auth=ae38c42478934f5a4281906adae67fea8352e7a0dcf94cafb8b47dcbe49d0758&height=1005&width=1920&quality=80&smart=true\" alt=\"A JetBlue and American Airlines planes park at gates at Ronald Reagan Washington National Airport after the US Federal Aviation Administration lifted a national ground stop, in Washington, DC, US, November 14, 2026. REUTERS/Eric Lee\" /><p>WASHINGTON/NEW YORK, Nov 15 (Reuters) - US air travel disruptions continued for a third day with more than 11,500 flights affected on Sunday, but Transportation Secretary Sean Duffy predicted a return to normalcy by Monday even as airlines scrambled to get back on schedule following a systemwide ground stop.</p><p>Some 2,100 flights nationwide were canceled and 9,400 were delayed on Sunday, according to aviation data site FlightAware. Airlines on Saturday had canceled nearly 6,700 US flights and delayed more than 9,100.</p><p>About 28% of JetBlue (JBLU.O) flights and 20% of American Airlines (AAL.O) flights were canceled, with United Airlines (UAL.O), Southwest and Delta (DAL.N) reporting cancellations of 3% to 5% of their flights.</p><p>The outlook for the next day was better, with just 88 Monday cancellations as of 8:28 p.m. ET (0128 GMT) on Sunday, FlightAware reported. On Saturday night, more than 875 Sunday flights had been canceled.</p><p>Duffy said on ABC's \"This Week\" program that there was no evidence of a cyberattack or other malicious intent in the matter, but the cause remained unclear. Duffy said that flights would come \"back to normal\" on Sunday \"but probably fully normal\" on Monday, and emphasized the Federal Aviation Administration's focus on keeping passengers safe.</p><p>The FAA issued a nationwide ground stop on Friday that halted nearly all departing flights for almost five hours. It was the longest nationwide halt to US air travel since the September 11, 2001, al Qaeda attacks on the United States.</p><p>The installation by FAA contractor L3Harris (LHX.N) of at least one new router at a remote facility led to a situation in which other air traffic control centers were overloaded with a flood of data that hampered communications systems, according to officials.</p><p>Duffy said on Sunday that the replacement of a router at an FAA facility in El Dorado, Arkansas, triggered problems with a recently replaced router in Amarillo, Texas, which started broadcasting and overloading routers at other air traffic control centers across the country.</p><p>The \"functionality of the originating routers\" has been disabled, the FAA said on Sunday, adding that it did the same for about 60 similar routers in the air traffic control system. But the FAA still does not know what ultimately caused the problem that occurred with maintenance work that had been done thousands of times before without issue, Duffy said.</p><p>The worker who installed the router was \"a good American patriot, we believe, a veteran — so we don't think that someone tried to sabotage the network on the install,\" Duffy said. \"But we don't actually have the root cause.\"</p><p>Two people familiar with the investigation said the router installation itself went smoothly. Any issues with the FAA's communication system developed only after the router replacement was \"successfully\" completed as an agency employee oversaw the work, one of the people said.</p><p>A detailed procedure of each step of the process is submitted to the FAA, they said.</p><p>Friday's problems were triggered \"sometime shortly\" after service at the facility was turned back over to the FAA, which had signed off on the work performed, the other person said.</p><p>Friday's disruption is the latest and most dramatic sign of strain on a US air traffic control system beset by aging technology, equipment and communications problems and a shortage of several thousand controllers.</p><p>The routers that experienced issues were purchased in 2001 and were obsolete by 2006, Duffy said. Since Friday, Duffy has called for $50 billion in funding to upgrade air traffic control systems, up from his earlier request of $30 billion — after Congress approved $12.5 billion last year.</p><h2>MORE SPENDING SOUGHT</h2><p>President Donald Trump on Sunday made his first public comments on this weekend's air travel issues, also calling for additional funding from US lawmakers.</p><p>\"We have already started the work, but it should be done all at once, not in drips and drabs,\" Trump wrote on social media. \"Congress must approve.\"</p><p>Democrats are set to take control of Congress from Trump's fellow Republicans in January following their gains in the November 3 US midterm elections.</p><p>Duffy's plea for more money drew skepticism from US Representatives Rick Larsen and André Carson, the top Democrats on the House of Representatives Committee on Transportation and Infrastructure and its aviation subcommittee, respectively.</p><p>Of the $12.5 billion approved in 2025 for upgrades to the air traffic control system, about $11 billion remains unspent, Larsen and Carson said in a statement on Saturday.</p><p>\"Explain to Congress, again, why they need more money?\" Larsen and Carson asked in their statement.</p><p>Duffy on Sunday said that the money allocated last year was earmarked only for certain spending, and did not include funds for new software to manage the airspace.</p><p>Air travel observers have also called for increased spending by private investors.</p><p>\"We can't rely only on government investments. … You have to have private investment,\" said Justin Erbacci, director general of the Airports Council International global trade group.</p><p>Erbacci, speaking at a Montreal aviation infrastructure forum on Sunday, did not mention Friday's ground stop, but he said that investment must be made in air transport to accommodate rising traffic and outdated systems.</p><p>Global air passenger traffic is projected to more than double by 2050, according to data from airline trade group IATA.</p><p>Reporting by David Shepardson in Washington and Helen Coster in New York; Additional reporting by Allison Lambert in Montreal and Mike Stone in Washington; Editing by Sergio Non, Will Dunham and Andrea Ricci</p>",
-      "authors": [
-        {
-          "name": "David Shepardson",
-          "url": "https://www.reuters.com/authors/david-shepardson/"
-        },
-        {
-          "name": "Helen Coster",
-          "url": "https://www.reuters.com/authors/helen-coster/"
-        }
-      ],
-      "image": "https://www.reuters.com/resizer/v2/CBUZNB6H5BLDPKP7S6JLF7CAKU.jpg?auth=ae38c42478934f5a4281906adae67fea8352e7a0dcf94cafb8b47dcbe49d0758&height=1005&width=1920&quality=80&smart=true",
-      "attachments": [
-        {
-          "url": "https://www.reuters.com/resizer/v2/CBUZNB6H5BLDPKP7S6JLF7CAKU.jpg?auth=ae38c42478934f5a4281906adae67fea8352e7a0dcf94cafb8b47dcbe49d0758&height=1005&width=1920&quality=80&smart=true",
-          "mime_type": "image/jpeg",
-          "title": "A JetBlue and American Airlines planes park at gates at Ronald Reagan Washington National Airport after the US Federal Aviation Administration lifted a national ground stop, in Washington, DC, US, November 14, 2026. REUTERS/Eric Lee"
-        }
-      ],
-      "id": "https://www.reuters.com/world/us/us-air-travel-disruptions-continue-into-third-day-2026-11-15/",
-      "url": "https://www.reuters.com/world/us/us-air-travel-disruptions-continue-into-third-day-2026-11-15/",
-      "external_url": "https://www.reuters.com/world/us/us-air-travel-disruptions-continue-into-third-day-2026-11-15/"
     }
   ]
 }
