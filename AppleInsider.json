@@ -7,6 +7,38 @@
   "favicon": "https://media.appleinsider.com/v11/favicon.ico",
   "items": [
     {
+      "title": "Apple AI agents are coming to help you code, browse, & perform tasks",
+      "date_published": "2026-11-19T22:04:39Z",
+      "date_modified": "2026-11-19T22:04:39Z",
+      "authors": [
+        {
+          "name": "Wesley Hilliard",
+          "url": "https://appleinsider.com/editor/wesley+hilliard",
+          "avatar": "https://media.appleinsider.com/gallery/wesley+hilliard.jpg"
+        }
+      ],
+      "content_html": "<img src=",
+      "id": "https://appleinsider.com/articles/26/11/19/apple-ai-agents-are-coming-to-help-you-code-browse-perform-tasks",
+      "url": "https://appleinsider.com/articles/26/11/19/apple-ai-agents-are-coming-to-help-you-code-browse-perform-tasks",
+      "external_url": "https://appleinsider.com/articles/26/11/19/apple-ai-agents-are-coming-to-help-you-code-browse-perform-tasks"
+    },
+    {
+      "title": "Gemini can now control Mac apps, but you still shouldn't let it",
+      "date_published": "2026-11-19T14:49:00-05:00",
+      "date_modified": "2026-11-19T14:49:00-05:00",
+      "authors": [
+        {
+          "name": "Andrew Orr",
+          "url": "https://appleinsider.com/editor/andrew+orr",
+          "avatar": "https://media.appleinsider.com/gallery/andrew+orr.jpg"
+        }
+      ],
+      "content_html": "<img src=",
+      "id": "https://appleinsider.com/articles/26/11/19/gemini-can-now-control-mac-apps-but-you-still-shouldnt-let-it",
+      "url": "https://appleinsider.com/articles/26/11/19/gemini-can-now-control-mac-apps-but-you-still-shouldnt-let-it",
+      "external_url": "https://appleinsider.com/articles/26/11/19/gemini-can-now-control-mac-apps-but-you-still-shouldnt-let-it"
+    },
+    {
       "title": "AppleInsider favorite 'Oxygen Not Included' is now Apple SIlicon native",
       "date_published": "2026-11-19T14:05:00-05:00",
       "date_modified": "2026-11-19T14:05:00-05:00",
@@ -21,6 +53,54 @@
       "id": "https://appleinsider.com/articles/26/11/19/oxygen-not-included-is-now-apple-silicon-native",
       "url": "https://appleinsider.com/articles/26/11/19/oxygen-not-included-is-now-apple-silicon-native",
       "external_url": "https://appleinsider.com/articles/26/11/19/oxygen-not-included-is-now-apple-silicon-native"
+    },
+    {
+      "title": "iPhone camera chief Jon McCormack has retired",
+      "date_published": "2026-11-19T13:03:00-05:00",
+      "date_modified": "2026-11-19T13:03:00-05:00",
+      "authors": [
+        {
+          "name": "William Gallagher",
+          "url": "https://appleinsider.com/editor/william+gallagher",
+          "avatar": "https://media.appleinsider.com/gallery/william+gallagher.jpg"
+        }
+      ],
+      "content_html": "<img src=",
+      "id": "https://appleinsider.com/articles/26/11/19/iphone-camera-chief-jon-mccormack-has-retired",
+      "url": "https://appleinsider.com/articles/26/11/19/iphone-camera-chief-jon-mccormack-has-retired",
+      "external_url": "https://appleinsider.com/articles/26/11/19/iphone-camera-chief-jon-mccormack-has-retired"
+    },
+    {
+      "title": "Every F1 Academy race will stream on Apple TV in 2027",
+      "date_published": "2026-11-19T11:40:00-05:00",
+      "date_modified": "2026-11-19T11:40:00-05:00",
+      "authors": [
+        {
+          "name": "Amber Neely",
+          "url": "https://appleinsider.com/editor/amber+neely",
+          "avatar": "https://media.appleinsider.com/gallery/amber+neely.jpg"
+        }
+      ],
+      "content_html": "<img src=",
+      "id": "https://appleinsider.com/articles/26/11/19/every-f1-academy-race-will-stream-on-apple-tv-in-2027",
+      "url": "https://appleinsider.com/articles/26/11/19/every-f1-academy-race-will-stream-on-apple-tv-in-2027",
+      "external_url": "https://appleinsider.com/articles/26/11/19/every-f1-academy-race-will-stream-on-apple-tv-in-2027"
+    },
+    {
+      "title": "uGreen Black Friday deals slash up to $200 off docks, NAS, chargers",
+      "date_published": "2026-11-19T10:18:00-05:00",
+      "date_modified": "2026-11-19T10:18:00-05:00",
+      "authors": [
+        {
+          "name": "Christine McKee",
+          "url": "https://appleinsider.com/editor/christine+mckee",
+          "avatar": "https://media.appleinsider.com/gallery/christine+mckee.jpg"
+        }
+      ],
+      "content_html": "<img src=",
+      "id": "https://appleinsider.com/articles/26/11/19/ugreen-black-friday-deals-slash-up-to-200-off-docks-nas-chargers",
+      "url": "https://appleinsider.com/articles/26/11/19/ugreen-black-friday-deals-slash-up-to-200-off-docks-nas-chargers",
+      "external_url": "https://appleinsider.com/articles/26/11/19/ugreen-black-friday-deals-slash-up-to-200-off-docks-nas-chargers"
     },
     {
       "title": "Apple reveals its Black Friday deals, but you can do much better elsewhere",
@@ -71,9 +151,41 @@
       "external_url": "https://appleinsider.com/articles/26/11/19/owning-an-apple-home-bye-bye-switchbot"
     },
     {
+      "title": "Amazon's Black Friday Beats deals drive prices down to as low as $89",
+      "date_published": "2026-11-19T03:54:00-05:00",
+      "date_modified": "2026-11-19T03:54:00-05:00",
+      "authors": [
+        {
+          "name": "Christine McKee",
+          "url": "https://appleinsider.com/editor/christine+mckee",
+          "avatar": "https://media.appleinsider.com/gallery/christine+mckee.jpg"
+        }
+      ],
+      "content_html": "<img src=",
+      "id": "https://appleinsider.com/articles/26/11/19/amazons-black-friday-beats-deals-drive-prices-down-to-as-low-as-89",
+      "url": "https://appleinsider.com/articles/26/11/19/amazons-black-friday-beats-deals-drive-prices-down-to-as-low-as-89",
+      "external_url": "https://appleinsider.com/articles/26/11/19/amazons-black-friday-beats-deals-drive-prices-down-to-as-low-as-89"
+    },
+    {
+      "title": "Apple Studio Display plunges to $1,399 in Amazon's Black Friday sale",
+      "date_published": "2026-11-19T03:05:00-05:00",
+      "date_modified": "2026-11-19T03:05:00-05:00",
+      "authors": [
+        {
+          "name": "Christine McKee",
+          "url": "https://appleinsider.com/editor/christine+mckee",
+          "avatar": "https://media.appleinsider.com/gallery/christine+mckee.jpg"
+        }
+      ],
+      "content_html": "<p class=",
+      "id": "https://appleinsider.com/articles/26/11/19/apple-studio-display-plunges-to-1399-in-amazons-black-friday-sale",
+      "url": "https://appleinsider.com/articles/26/11/19/apple-studio-display-plunges-to-1399-in-amazons-black-friday-sale",
+      "external_url": "https://appleinsider.com/articles/26/11/19/apple-studio-display-plunges-to-1399-in-amazons-black-friday-sale"
+    },
+    {
       "title": "Senators turn up the pressure on Apple after teen access to AI nudify apps",
-      "date_published": "2026-11-18T15:59:00-05:00",
-      "date_modified": "2026-11-18T15:59:00-05:00",
+      "date_published": "2026-11-19T20:09:42Z",
+      "date_modified": "2026-11-19T20:09:42Z",
       "authors": [
         {
           "name": "Amber Neely",
@@ -166,118 +278,6 @@
       "id": "https://appleinsider.com/articles/26/11/18/nvidias-chip-smuggling-scandal-goes-deeper-than-jensen-huang",
       "url": "https://appleinsider.com/articles/26/11/18/nvidias-chip-smuggling-scandal-goes-deeper-than-jensen-huang",
       "external_url": "https://appleinsider.com/articles/26/11/18/nvidias-chip-smuggling-scandal-goes-deeper-than-jensen-huang"
-    },
-    {
-      "title": "Final Cut Pro finally gets MotionVFX integration, Pixelmator Pro edits",
-      "date_published": "2026-11-18T18:07:58Z",
-      "date_modified": "2026-11-18T18:07:58Z",
-      "authors": [
-        {
-          "name": "Malcolm Owen",
-          "url": "https://appleinsider.com/editor/malcolm+owen",
-          "avatar": "https://media.appleinsider.com/gallery/malcolm+owen.jpg"
-        }
-      ],
-      "content_html": "<img src=",
-      "id": "https://appleinsider.com/articles/26/11/18/final-cut-pro-finally-gets-motionvfx-integration-pixelmator-pro-edits",
-      "url": "https://appleinsider.com/articles/26/11/18/final-cut-pro-finally-gets-motionvfx-integration-pixelmator-pro-edits",
-      "external_url": "https://appleinsider.com/articles/26/11/18/final-cut-pro-finally-gets-motionvfx-integration-pixelmator-pro-edits"
-    },
-    {
-      "title": "Qobuz has a new Apple TV app",
-      "date_published": "2026-11-18T10:59:00-05:00",
-      "date_modified": "2026-11-18T10:59:00-05:00",
-      "authors": [
-        {
-          "name": "Mike Wuerthele",
-          "url": "https://appleinsider.com/editor/mike+wuerthele",
-          "avatar": "https://media.appleinsider.com/gallery/mike+wuerthele.jpg"
-        }
-      ],
-      "content_html": "<img src=",
-      "id": "https://appleinsider.com/articles/26/11/18/qobuz-has-a-new-apple-tv-app",
-      "url": "https://appleinsider.com/articles/26/11/18/qobuz-has-a-new-apple-tv-app",
-      "external_url": "https://appleinsider.com/articles/26/11/18/qobuz-has-a-new-apple-tv-app"
-    },
-    {
-      "title": "Nvidia's board is clear that they don't want Jensen Huang back",
-      "date_published": "2026-11-18T15:15:39Z",
-      "date_modified": "2026-11-18T15:15:39Z",
-      "authors": [
-        {
-          "name": "William Gallagher",
-          "url": "https://appleinsider.com/editor/william+gallagher",
-          "avatar": "https://media.appleinsider.com/gallery/william+gallagher.jpg"
-        }
-      ],
-      "content_html": "<img src=",
-      "id": "https://appleinsider.com/articles/26/11/18/nvidias-board-is-clear-that-they-dont-want-jensen-huang-back",
-      "url": "https://appleinsider.com/articles/26/11/18/nvidias-board-is-clear-that-they-dont-want-jensen-huang-back",
-      "external_url": "https://appleinsider.com/articles/26/11/18/nvidias-board-is-clear-that-they-dont-want-jensen-huang-back"
-    },
-    {
-      "title": "See all the finalists for Apple's 2026 App Store Awards",
-      "date_published": "2026-11-18T14:43:47Z",
-      "date_modified": "2026-11-18T14:43:47Z",
-      "authors": [
-        {
-          "name": "William Gallagher",
-          "url": "https://appleinsider.com/editor/william+gallagher",
-          "avatar": "https://media.appleinsider.com/gallery/william+gallagher.jpg"
-        }
-      ],
-      "content_html": "<img src=",
-      "id": "https://appleinsider.com/articles/26/11/18/see-all-the-finalists-for-apples-2026-app-store-awards",
-      "url": "https://appleinsider.com/articles/26/11/18/see-all-the-finalists-for-apples-2026-app-store-awards",
-      "external_url": "https://appleinsider.com/articles/26/11/18/see-all-the-finalists-for-apples-2026-app-store-awards"
-    },
-    {
-      "title": "M5 Pro Mac mini drops to $1,549 with Amazon's early Black Friday markdown",
-      "date_published": "2026-11-18T09:41:00-05:00",
-      "date_modified": "2026-11-18T09:41:00-05:00",
-      "authors": [
-        {
-          "name": "Christine McKee",
-          "url": "https://appleinsider.com/editor/christine+mckee",
-          "avatar": "https://media.appleinsider.com/gallery/christine+mckee.jpg"
-        }
-      ],
-      "content_html": "<img src=",
-      "id": "https://appleinsider.com/articles/26/11/18/m5-pro-mac-mini-drops-to-1549-with-amazons-early-black-friday-markdown",
-      "url": "https://appleinsider.com/articles/26/11/18/m5-pro-mac-mini-drops-to-1549-with-amazons-early-black-friday-markdown",
-      "external_url": "https://appleinsider.com/articles/26/11/18/m5-pro-mac-mini-drops-to-1549-with-amazons-early-black-friday-markdown"
-    },
-    {
-      "title": "Curved glass edges of iPhone 20 will be practically invisible from the front",
-      "date_published": "2026-11-18T14:06:46Z",
-      "content_html": "<figure><img src=\"https://media.appleinsider.com/gallery/69905-147328-68554-144441-68457-144239-67460-141985-Air-Dynamic-Island-xl-xl-xl-xl.jpg\" alt=\"Curved glass of iPhone 20 will be almost invisible from the front\"><figcaption>The iPhone 20 was previously rumored to borrow design elements from the iPhone Air.</figcaption></figure><p>The curved glass elements of the <a href=\"https://appleinsider.com/inside/iphone-20\">iPhone 20</a> could be just a millimeter thick, a leaker adds to their previous claims about the anniversary model.</p><p>On Tuesday, serial leaker Ice Universe <a href=\"https://appleinsider.com/articles/26/11/17/this-is-what-the-iphone-20-pro-curved-glass-screen-could-look-like\">posted a video</a> to X, seemingly showing off what they thought was the curved glass of the iPhone 20 Pro. One day later, the leaker added a bit of extra information about the inbound models.</p><p>Posting <a href=\"https://weibo.com/5673255066/5366561065927278\">to Weibo</a> on Wednesday, Ice Universe claims Apple is working on four models. Two allegedly use flat glass covers, while two will have curved glass.</p><p>The curved glass has also been prototyped for three years and underwent several revisions, they add. This isn't exactly new information, as Apple's patent filings have discussed the advantages of curved glass enclosures <a href=\"https://appleinsider.com/articles/25/08/24/apple-has-been-teasing-the-20th-anniversary-all-glass-iphone-for-years\">for far longer</a> than that.</p><p>The leaker continues, insisting that the curved bezels of the glass are approximately 1mm deep. This seems plausible if the previous video truly is from an Apple supplier working on the glass and not an accessory producer prototyping screen protectors.</p><p>Those bezels will apparently be close to invisible to users when viewed from the front. The result will be something close to a borderless design.</p><p>The size of the bezels are also seemingly not as extreme as what Apple previously intended. Ice Universe says that the earliest version had a very large curvature, which was later reduced.</p><p>They conclude their post by saying that the industry is optimistic about the curved design versus the foldable <a href=\"https://appleinsider.com/inside/iphone-duo\">iPhone Duo</a>.</p><p>Generally speaking, Weibo leakers aren't known for their accuracy, due to regurgitating rumors from elsewhere with little in the way of fact-checking. Ice Universe does have a reasonably good track record among Weibo leakers, but it should still be taken with caution.</p><p>Ice Universe's posts continue a line of claims about the glass of the anniversary model, such as using a <a href=\"https://appleinsider.com/articles/26/08/03/glass-heavy-iphone-20-borrows-from-iphone-air-gets-better-cooling\">glass assembly</a> similar to the iPhone Air. The curved glass has also been claimed to create a <a href=\"https://appleinsider.com/articles/26/08/12/iphone-20-pro-will-be-bigger-with-familiar-aspect-ratios-be-bezel-free\">bezel-less effect</a>, thanks to optical refraction.</p><p>There has also been claims that Apple will use a <a href=\"https://appleinsider.com/articles/26/05/21/rumor-2027-iphone-production-testing-underway-with-quad-curved-oled-display\">quad-curved OLED display</a> for the Pro model.</p>",
-      "authors": [
-        {
-          "name": "Malcolm Owen",
-          "url": "https://appleinsider.com/editor/malcolm+owen",
-          "avatar": "https://media.appleinsider.com/gallery/malcolm+owen.jpg"
-        }
-      ],
-      "image": "https://media.appleinsider.com/gallery/69905-147328-68554-144441-68457-144239-67460-141985-Air-Dynamic-Island-xl-xl-xl-xl.jpg",
-      "id": "https://appleinsider.com/articles/26/11/18/curved-glass-edges-of-iphone-20-will-be-practically-invisible-from-the-front",
-      "url": "https://appleinsider.com/articles/26/11/18/curved-glass-edges-of-iphone-20-will-be-practically-invisible-from-the-front",
-      "external_url": "https://appleinsider.com/articles/26/11/18/curved-glass-edges-of-iphone-20-will-be-practically-invisible-from-the-front"
-    },
-    {
-      "title": "Phishing scams get a new watchdog as Moonlock expands to iPhone",
-      "date_published": "2026-11-18T13:03:00Z",
-      "content_html": "<img src=\"https://media.appleinsider.com/gallery/69887-147296-IMG_9870-xl.jpg\" alt=\"Moonlock on iPhone\"><p>MacPaw is bringing Moonlock to the <a href=\"https://appleinsider.com/inside/iphone\" title=\"iPhone\">iPhone</a>, giving users tools to spot phishing scams and check their security settings without relying on traditional antivirus software.</p><p><a href=\"https://apps.apple.com/us/app/moonlock/id6799935865\">The iPhone app</a> centers on Scam Detect, which analyzes content that users paste, scan or share with Moonlock. Rather than flagging something as suspicious, it explains what might be wrong, including links that don't match the sender they're supposed to represent.</p><p>Users can send content to Moonlock directly from other apps through the <a href=\"https://appleinsider.com/inside/ios\" title=\"iOS\">iOS</a> share sheet. The QR code scanner also lets them inspect a destination before opening it, which could help with scams that hide fraudulent websites behind seemingly ordinary codes.</p><p>Moonlock's Safe SMS feature takes a more automatic approach. When enabled in iPhone Settings, it filters suspected scam messages from unknown senders into the Junk folder in Messages and explains why each message was flagged.</p><p>The filter only checks new texts from unknown senders, so it won't examine existing conversations or older messages. Users can still review anything it catches, and Moonlock doesn't delete the filtered texts.</p><p>MacPaw's Email Breach History feature checks up to five email addresses against known data breaches. If it finds a match, Moonlock identifies the affected service, when the breach happened and what information was exposed, then helps users secure their accounts.</p><p>A separate Security Score rates an iPhone's configuration on a scale from zero to 100. Moonlock checks Wi-Fi security, passcode protection, iOS updates and signs of jailbreaking, then recommends changes users can make to improve their score.</p><h2>Moonlock for iPhone isn't the same as its Mac counterpart</h2><p>MacPaw <a href=\"https://appleinsider.com/articles/25/10/28/macpaws-new-moonlock-app-challenges-the-myth-of-virus-proof-macs\">launched Moonlock</a> for <a href=\"https://appleinsider.com/inside/macos\" title=\"macOS\">macOS</a> in October 2025 with real-time malware protection, scheduled scans, network monitoring and a built-in <a href=\"https://appleinsider.com/deals/best-vpn-deals\" title=\"VPN\">VPN</a>. The iPhone version doesn't include those antivirus capabilities.</p><p>Apple's security restrictions prevent third-party iPhone apps from scanning other apps and their files for malware. MacPaw has instead focused on detecting scams and helping people understand the protections already available on their devices.</p><p>There's some overlap with Apple's existing tools. The iPhone already supports <a href=\"https://appleinsider.com/articles/26/10/26/how-to-keep-politicians-from-flooding-your-iphone-with-campaign-texts\">message filtering</a> for unknown senders, and third-party extensions can identify suspected spam without requiring a separate security app.</p><div class=\"block align-center\"><a href=\"https://media.appleinsider.com/gallery/69887-147299-IMG_9875-xl.jpg\" target=\"_blank\"><img src=\"https://media.appleinsider.com/gallery/69887-147299-IMG_9875-xl.jpg\" alt=\"iPad settings screen showing password options: Detect Compromised Passwords, Allow Automatic Passkey Upgrades, and Allow Contacting Websites, each enabled with green toggle switches and brief explanatory text underneath\" loading=\"lazy\" class=\"img-responsive article-image\"></a><span class=\"image-caption\">Apple's Passwords app also warns you when a login you've saved turns up in a known data leak.</span></div><p>Apple's Passwords app also warns you when a login you've saved turns up in a known data leak. Moonlock checks your email addresses against reported breaches, even if you haven't saved the affected logins in Passwords.</p><p>Moonlock's main advantage is bringing those checks together with tools for examining suspicious content. Whether that makes it more effective at catching scams is another question, particularly when some of its detection features involve sending information to outside services.</p><p>According to MacPaw's privacy disclosures, Safe SMS initially analyzes incoming messages on the iPhone. If its local model can't confidently classify a text, the message may be sent through MacPaw's servers to OpenAI for further analysis.</p><p>Content submitted through Scam Detect is also processed by OpenAI. MacPaw says it doesn't store SMS content on its own servers, although OpenAI may retain submitted information for up to 30 days for abuse monitoring without using it to train models.</p><p>If you use Moonlock to check for scams, you're letting the app examine your private communications. MacPaw's launch announcement didn't include independent detection benchmarks or false-positive rates, so it's hard to judge how reliably Moonlock catches scams or how often it flags legitimate messages.</p><p><a href=\"https://apps.apple.com/us/app/moonlock/id6799935865\">Moonlock for iPhone</a> arrives November 18, 2026, through the <a href=\"https://appleinsider.com/inside/app-store\" title=\"App Store\">App Store</a> and Setapp. The App Store lists a seven-day free trial, followed by subscriptions costing $9.99 per month or $49.99 annually, and the app requires <a href=\"https://appleinsider.com/inside/ios-26\" title=\"iOS 26\">iOS 26</a> or later.</p><p>Existing Setapp subscribers won't need a separate iPhone purchase. MacPaw says one Moonlock subscription through Setapp covers both Mac and iPhone without requiring another account.</p>",
-      "authors": [
-        {
-          "name": "Andrew Orr",
-          "url": "https://appleinsider.com/editor/andrew+orr",
-          "avatar": "https://media.appleinsider.com/gallery/andrew+orr.jpg"
-        }
-      ],
-      "image": "https://media.appleinsider.com/gallery/69887-147296-IMG_9870-xl.jpg",
-      "id": "https://appleinsider.com/articles/26/11/18/phishing-scams-get-a-new-watchdog-as-moonlock-expands-to-iphone",
-      "url": "https://appleinsider.com/articles/26/11/18/phishing-scams-get-a-new-watchdog-as-moonlock-expands-to-iphone",
-      "external_url": "https://appleinsider.com/articles/26/11/18/phishing-scams-get-a-new-watchdog-as-moonlock-expands-to-iphone"
     }
   ]
 }
