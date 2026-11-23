@@ -33,11 +33,18 @@ internal sealed class TestWorkspace : IDisposable
     public FeedConfiguration CreateSettings(
         string destinationFile = "feed.json",
         int latestCount = 2,
-        string feedName = "Test Feed")
+        string feedName = "Test Feed",
+        bool useIndexPage = false,
+        string basePageUrl = "",
+        string googleNewsUrl = "https://news.google.test/rss",
+        string[]? excludedHosts = null)
     {
         return new FeedConfiguration
         {
-            GoogleNewsUrl = "https://news.google.test/rss",
+            GoogleNewsUrl = googleNewsUrl,
+            BasePageUrl = basePageUrl,
+            UseIndexPage = useIndexPage,
+            ExcludedHosts = excludedHosts,
             LatestCount = latestCount,
             DestinationRssFilePath = "../" + destinationFile,
             FeedName = feedName,

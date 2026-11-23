@@ -6,6 +6,7 @@ public sealed class GeneratorRunner(
     IFeedClient feedClient,
     IPageScraper pageScraper,
     IArticleHydrator articleHydrator,
+    IIndexPageParser indexPageParser,
     IGitPublisher gitPublisher,
     TimeProvider timeProvider,
     IGeneratorConsole console)
@@ -120,40 +121,48 @@ public sealed class GeneratorRunner(
                 return Task.FromResult(directory);
             });
 
-        var feedXml = await console.RunPhaseAsync(
+        var settings = configuration.Settings;
+        var latestCount = settings.LatestCount;
+        var sourceContent = await console.RunPhaseAsync(
             GenerationPhase.Download,
             configuration.Name,
             1,
             async progress =>
             {
-                var xml = await feedClient.DownloadAsync(
-                    new Uri(configuration.Settings.GoogleNewsUrl),
-                    cancellationToken);
+                var content = settings.UseIndexPage
+                    ? await pageScraper.GetContentAsync(
+                        new Uri(settings.BasePageUrl),
+                        cancellationToken)
+                    : await feedClient.DownloadAsync(
+                        new Uri(settings.GoogleNewsUrl),
+                        cancellationToken);
                 var feedPath = Path.Combine(
                     workingDirectory,
-                    "GoogleNews.xml");
+                    settings.UseIndexPage ? "Index.html" : "GoogleNews.xml");
                 await File.WriteAllTextAsync(
                     feedPath,
-                    xml,
+                    content,
                     cancellationToken);
-                progress.Report(1, "feed downloaded");
-                return xml;
+                progress.Report(1, settings.UseIndexPage ? "index captured" : "feed downloaded");
+                return content;
             });
-        var settings = configuration.Settings;
-        var latestCount = settings.LatestCount;
-        var feedLinks = GoogleNewsParser.ParseLatestLinks(
-            feedXml,
-            settings.ExcludedHosts is { Length: > 0 }
-                ? int.MaxValue
-                : latestCount);
-        var candidateCount = Math.Min(feedLinks.Count, latestCount);
         var resolved = await console.RunPhaseAsync(
             GenerationPhase.Resolve,
             configuration.Name,
-            candidateCount,
+            latestCount,
             async progress =>
             {
-                var articles = new List<NumberedArticle>(candidateCount);
+                var feedLinks = settings.UseIndexPage
+                    ? await indexPageParser.ParseAsync(
+                        sourceContent,
+                        settings,
+                        cancellationToken)
+                    : GoogleNewsParser.ParseLatestLinks(
+                        sourceContent,
+                        settings.ExcludedHosts is { Length: > 0 }
+                            ? int.MaxValue
+                            : latestCount);
+                var articles = new List<NumberedArticle>(Math.Min(feedLinks.Count, latestCount));
                 var skipped = 0;
                 var candidateNumber = 1;
 
@@ -167,9 +176,11 @@ public sealed class GeneratorRunner(
 
                     try
                     {
-                        var resolvedUrl = await feedClient.ResolveAsync(
-                            feedLinks[index],
-                            cancellationToken);
+                        var resolvedUrl = settings.UseIndexPage
+                            ? feedLinks[index]
+                            : await feedClient.ResolveAsync(
+                                feedLinks[index],
+                                cancellationToken);
 
                         if (settings.ExcludesHost(resolvedUrl))
                             continue;

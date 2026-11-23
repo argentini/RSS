@@ -7,6 +7,142 @@ namespace Generator.Tests;
 public sealed class GeneratorRunnerTests
 {
     [TestMethod]
+    [DataRow(1, DisplayName = "Index exceeds requested count")]
+    [DataRow(2, DisplayName = "Index matches requested count")]
+    [DataRow(5, DisplayName = "Index has fewer than requested")]
+    public async Task RunAsync_IndexMode_CapturesPageAndWritesArticleUrlsWithoutGoogle(int latestCount)
+    {
+        using var workspace = new TestWorkspace();
+        var configuration = CreateIndexConfiguration(workspace, latestCount);
+        WriteExistingFeed(configuration,
+            CreateItem(new Uri("https://source.test/prior-one")),
+            CreateItem(new Uri("https://source.test/prior-two")),
+            CreateItem(new Uri("https://source.test/prior-three")),
+            CreateItem(new Uri("https://source.test/prior-four")),
+            CreateItem(new Uri("https://source.test/prior-five")));
+        const string indexHtml = """
+            <main><article><a href="/first">First report</a></article>
+            <article><a href="/second">Second report</a></article></main>
+            """;
+        var feedClient = new FakeFeedClient("invalid Google response");
+        var captured = new List<Uri>();
+        var parsed = 0;
+        var parser = new DelegateIndexPageParser((html, settings) =>
+        {
+            parsed++;
+            Assert.AreEqual(indexHtml, html);
+            Assert.AreSame(configuration.Settings, settings);
+            return [new Uri("https://source.test/first"), new Uri("https://source.test/second")];
+        });
+        var runner = CreateRunner(feedClient, new DelegatePageScraper(url =>
+        {
+            captured.Add(url);
+            return url.AbsolutePath == "/news/" ? indexHtml : "<article>Written reporting.</article>";
+        }), new RecordingGitPublisher(), new RecordingGeneratorConsole(), indexPageParser: parser);
+
+        var summary = await runner.RunAsync(workspace.Context, [configuration], CancellationToken.None);
+
+        Assert.AreEqual(1, summary.FeedCount);
+        Assert.AreEqual(0, summary.ConfigurationFailures);
+        Assert.AreEqual(0, feedClient.DownloadCount);
+        Assert.AreEqual(0, feedClient.ResolveCount);
+        Assert.AreEqual(1, parsed);
+        CollectionAssert.AreEqual(new[]
+        {
+            "https://source.test/news/", "https://source.test/first", "https://source.test/second"
+        }.Take(Math.Min(latestCount, 2) + 1).ToArray(), captured.Select(url => url.AbsoluteUri).ToArray());
+        var workingDirectory = Path.Combine(workspace.TempRoot, configuration.Name);
+        Assert.AreEqual(indexHtml, File.ReadAllText(Path.Combine(workingDirectory, "Index.html")));
+        Assert.IsFalse(File.Exists(Path.Combine(workingDirectory, "GoogleNews.xml")));
+        using var urls = JsonDocument.Parse(File.ReadAllText(Path.Combine(workingDirectory, "URLs.json")));
+        Assert.AreEqual(Math.Min(latestCount, 2), urls.RootElement.EnumerateObject().Count());
+        Assert.AreEqual("https://source.test/first", urls.RootElement.GetProperty("01").GetString());
+        if (latestCount >= 2)
+            Assert.AreEqual("https://source.test/second", urls.RootElement.GetProperty("02").GetString());
+        Assert.IsTrue(File.Exists(Path.Combine(workingDirectory, "01.json")));
+    }
+
+    [TestMethod]
+    public async Task RunAsync_IndexWithoutArticles_WritesEmptyUrlsAndPreservesFeed()
+    {
+        using var workspace = new TestWorkspace();
+        var configuration = CreateIndexConfiguration(workspace, 2);
+        const string existing = "existing feed content";
+        File.WriteAllText(configuration.DestinationPath, existing);
+        var captured = 0;
+        var hydrator = new DelegateArticleHydrator((_, url) => CreateItem(url));
+        var runner = CreateRunner(new FakeFeedClient("unused"), new DelegatePageScraper(_ =>
+        {
+            captured++;
+            return "<body>No written articles.</body>";
+        }), new RecordingGitPublisher(), new RecordingGeneratorConsole(), hydrator,
+            new DelegateIndexPageParser((_, _) => []));
+
+        var summary = await runner.RunAsync(workspace.Context, [configuration], CancellationToken.None);
+
+        Assert.AreEqual(1, captured);
+        Assert.AreEqual(0, hydrator.CallCount);
+        Assert.AreEqual(1, summary.ConfigurationFailures);
+        Assert.AreEqual(existing, File.ReadAllText(configuration.DestinationPath));
+        using var urls = JsonDocument.Parse(File.ReadAllText(Path.Combine(
+            workspace.TempRoot, configuration.Name, "URLs.json")));
+        Assert.AreEqual(0, urls.RootElement.EnumerateObject().Count());
+    }
+
+    [TestMethod]
+    public async Task RunAsync_IndexModelFailure_PreservesFeedAndReportsFailure()
+    {
+        using var workspace = new TestWorkspace();
+        var configuration = CreateIndexConfiguration(workspace, 2);
+        const string existing = "existing feed content";
+        File.WriteAllText(configuration.DestinationPath, existing);
+        var console = new RecordingGeneratorConsole();
+        var runner = CreateRunner(new FakeFeedClient("unused"),
+            new DelegatePageScraper(_ => "<body>Index content</body>"),
+            new RecordingGitPublisher(), console, indexPageParser:
+            new DelegateIndexPageParser((_, _) => throw new JsonException("Invalid index selection")));
+
+        var summary = await runner.RunAsync(workspace.Context, [configuration], CancellationToken.None);
+
+        Assert.AreEqual(1, summary.ConfigurationFailures);
+        Assert.AreEqual(existing, File.ReadAllText(configuration.DestinationPath));
+        Assert.Contains("feed-failed:Index:Invalid index selection", console.Events);
+        Assert.IsFalse(File.Exists(Path.Combine(workspace.TempRoot, configuration.Name, "URLs.json")));
+    }
+
+    [TestMethod]
+    public async Task RunAsync_IndexCancellation_PropagatesAndSkipsPublishing()
+    {
+        using var workspace = new TestWorkspace();
+        var configuration = CreateIndexConfiguration(workspace, 2);
+        using var cancellation = new CancellationTokenSource();
+        var publisher = new RecordingGitPublisher();
+        var runner = CreateRunner(new FakeFeedClient("unused"),
+            new DelegatePageScraper(_ => "<body>Index content</body>"),
+            publisher, new RecordingGeneratorConsole(), indexPageParser:
+            new DelegateIndexPageParser((_, _) =>
+            {
+                cancellation.Cancel();
+                throw new OperationCanceledException(cancellation.Token);
+            }));
+
+        await Assert.ThrowsExactlyAsync<OperationCanceledException>(async () =>
+            await runner.RunAsync(workspace.Context, [configuration], cancellation.Token));
+
+        Assert.AreEqual(0, publisher.CallCount);
+    }
+
+    private static ConfigurationFile CreateIndexConfiguration(TestWorkspace workspace, int latestCount)
+    {
+        var path = workspace.WriteConfiguration("Index", workspace.CreateSettings(
+            latestCount: latestCount,
+            useIndexPage: true,
+            basePageUrl: "https://source.test/news/",
+            googleNewsUrl: ""));
+        return ConfigurationLoader.Load(path, workspace.Context);
+    }
+
+    [TestMethod]
     public async Task RunAsync_ArticleFailure_WritesSuccessfulArtifactsAndFeed()
     {
         using var workspace = new TestWorkspace();
@@ -482,13 +618,16 @@ public sealed class GeneratorRunnerTests
         IPageScraper scraper,
         IGitPublisher publisher,
         IGeneratorConsole console,
-        IArticleHydrator? articleHydrator = null)
+        IArticleHydrator? articleHydrator = null,
+        IIndexPageParser? indexPageParser = null)
     {
         return new GeneratorRunner(
             feedClient,
             scraper,
             articleHydrator ?? new DelegateArticleHydrator(
                 (_, sourceUrl) => CreateItem(sourceUrl)),
+            indexPageParser ?? new DelegateIndexPageParser(
+                (_, _) => throw new AssertFailedException("Unexpected index parsing.")),
             publisher,
             new FixedTimeProvider(
                 new DateTimeOffset(
@@ -556,10 +695,14 @@ public sealed class GeneratorRunnerTests
         string feed,
         Func<Uri, Uri>? resolve = null) : IFeedClient
     {
+        public int DownloadCount { get; private set; }
+        public int ResolveCount { get; private set; }
+
         public Task<string> DownloadAsync(
             Uri url,
             CancellationToken cancellationToken)
         {
+            DownloadCount++;
             return Task.FromResult(feed);
         }
 
@@ -567,6 +710,7 @@ public sealed class GeneratorRunnerTests
             Uri url,
             CancellationToken cancellationToken)
         {
+            ResolveCount++;
             return Task.FromResult(resolve?.Invoke(url) ??
                 new Uri("https://source.test" + url.AbsolutePath));
         }
@@ -595,6 +739,18 @@ public sealed class GeneratorRunnerTests
         {
             CallCount++;
             return Task.FromResult(hydrate(html, sourceUrl));
+        }
+    }
+
+    private sealed class DelegateIndexPageParser(
+        Func<string, FeedConfiguration, IReadOnlyList<Uri>> parse) : IIndexPageParser
+    {
+        public Task<IReadOnlyList<Uri>> ParseAsync(
+            string html,
+            FeedConfiguration configuration,
+            CancellationToken cancellationToken)
+        {
+            return Task.FromResult(parse(html, configuration));
         }
     }
 

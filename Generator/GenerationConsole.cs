@@ -444,7 +444,7 @@ public sealed class GeneratorConsole(
         return phase switch
         {
             GenerationPhase.Prepare => "Prepare workspace",
-            GenerationPhase.Download => "Download feed",
+            GenerationPhase.Download => "Load source page or feed",
             GenerationPhase.Resolve => "Resolve article URLs",
             GenerationPhase.Render => "Render article pages",
             GenerationPhase.Hydrate => "Generate RSS items",

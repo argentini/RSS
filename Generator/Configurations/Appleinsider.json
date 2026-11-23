@@ -7,5 +7,7 @@
     "FeedHomePageUrl": "https://appleinsider.com/",
     "FeedUrl": "https://raw.githubusercontent.com/argentini/RSS/refs/heads/main/AppleInsider.json",
     "FeedIconUrl": "https://media.appleinsider.com/v11/icon-512.png",
-    "FeedFaviconUrl": "https://media.appleinsider.com/v11/favicon.ico"
+    "FeedFaviconUrl": "https://media.appleinsider.com/v11/favicon.ico",
+    "BasePageUrl": "",
+    "UseIndexPage": false
 }

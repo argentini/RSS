@@ -1,11 +1,11 @@
 # RSS JSON Feed Generator
 
-This repository contains a scheduled .NET console application that builds and publishes JSON Feed 1.1 files from Google News search feeds. The included configurations generate feeds for Reuters US and AppleInsider.
+This repository contains a scheduled .NET console application that builds and publishes JSON Feed 1.1 files from Google News search feeds or publisher index pages. The included configurations generate feeds for Reuters US and AppleInsider.
 
 For each configured feed, the application:
 
-1. Downloads the configured Google News RSS search.
-2. Resolves the newest Google News links to their source articles.
+1. Downloads the configured Google News RSS search, or captures the configured publisher index page through the same Agent360 browser path used for articles.
+2. Resolves Google News links to their source articles, or asks the local model to select written article links from the index DOM.
 3. Opens each article in Google Chrome through Agent360 Browser MCP and captures its rendered HTML.
 4. Sends the cleaned HTML to a local LM Studio model, which extracts a structured JSON Feed item.
 5. Merges new items with the existing feed while removing duplicates and preserving the configured feed depth.
@@ -110,8 +110,11 @@ Each configuration supports these fields:
 
 | Field | Purpose |
 | --- | --- |
-| `GoogleNewsUrl` | Absolute Google News RSS search URL. |
-| `LatestCount` | Number of newest articles to process. Must exceed zero. |
+| `GoogleNewsUrl` | Absolute Google News RSS search URL. Required when `UseIndexPage` is false. |
+| `BasePageUrl` | Absolute HTTP or HTTPS publisher index URL. Required when `UseIndexPage` is true. |
+| `UseIndexPage` | Uses the publisher index instead of Google News for this configuration. Defaults to false. |
+| `LatestCount` | Maximum article URLs to process. Must exceed zero. Index mode uses page order and processes all qualifying links if fewer are available. |
+| `ExcludedHosts` | Optional host names to exclude from discovery and generated feeds. |
 | `DestinationRssFilePath` | Output path. It must resolve directly into the repository root. |
 | `FeedName` | JSON Feed title. |
 | `FeedHomePageUrl` | Public home page for the source. |
@@ -120,6 +123,10 @@ Each configuration supports these fields:
 | `FeedFaviconUrl` | Absolute feed favicon URL. |
 
 To add another feed, copy an existing configuration, give it a unique filename, and update every field. Place its destination file directly in the repository root.
+
+In index mode, the browser captures the rendered DOM without injecting page scripts. The index parser preserves all article cards and their surrounding labels, rather than applying the single-article content cleanup. The local model uses that context to exclude ads, sponsored promotions, social posts, community discussions, podcasts, standalone audio/video, navigation, and other non-article content. It can select only IDs assigned to actual HTTP(S) anchors on the publisher's host or its subdomains; relative URLs are resolved, fragments and duplicate URLs are removed, and `ExcludedHosts` still applies. The parser reads the first page only and does not follow pagination.
+
+The working directory contains `Index.html` instead of `GoogleNews.xml`, followed by the same numbered `URLs.json` and article files. Index mode makes no Google News requests. Empty selections write an empty `URLs.json` and preserve the existing feed. Model or page-capture failures are reported for that configuration. Article merging and the existing minimum feed-depth validation still apply when fewer URLs are found.
 
 ### 5. Review the schedule
 

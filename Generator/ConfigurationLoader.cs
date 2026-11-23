@@ -78,7 +78,10 @@ public static class ConfigurationLoader
 
     private static void Validate(FeedConfiguration settings)
     {
-        EnsureAbsoluteHttpUrl(settings.GoogleNewsUrl, "GoogleNewsUrl");
+        if (settings.UseIndexPage)
+            EnsureAbsoluteHttpUrl(settings.BasePageUrl, "BasePageUrl");
+        else
+            EnsureAbsoluteHttpUrl(settings.GoogleNewsUrl, "GoogleNewsUrl");
 
         if (settings.LatestCount <= 0)
             throw new InvalidOperationException(

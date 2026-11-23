@@ -17,6 +17,8 @@ public sealed record ConfigurationFile(
 public sealed class FeedConfiguration
 {
     public string GoogleNewsUrl { get; init; } = "";
+    public string BasePageUrl { get; init; } = "";
+    public bool UseIndexPage { get; init; }
     public int LatestCount { get; init; }
     public string[]? ExcludedHosts { get; init; }
     public string DestinationRssFilePath { get; init; } = "";
@@ -76,6 +78,14 @@ public interface IArticleHydrator
     Task<JsonObject> HydrateAsync(
         string html,
         Uri sourceUrl,
+        CancellationToken cancellationToken);
+}
+
+public interface IIndexPageParser
+{
+    Task<IReadOnlyList<Uri>> ParseAsync(
+        string html,
+        FeedConfiguration configuration,
         CancellationToken cancellationToken);
 }
 

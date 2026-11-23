@@ -73,6 +73,9 @@ var runner = new GeneratorRunner(
     new LMStudioArticleHydrator(
         modelClient,
         settings),
+    new LMStudioIndexPageParser(
+        modelClient,
+        settings),
     new GitPublisher(
         new ProcessCommandRunner(),
         gitHubCredentials),
